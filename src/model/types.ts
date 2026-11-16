@@ -1,13 +1,19 @@
 import type { Vec2 } from './vec';
 
 export type Flexibility = 'low' | 'medium' | 'high';
+export type Ankling = 'heelDrop' | 'neutral' | 'toePoint';
+export type Effort = 'easy' | 'tempo' | 'hard';
+export type HandsPref = 'hoods' | 'mixed' | 'drops';
 
 export interface Segments {
   femur: number;
   tibia: number;
   ankleHeight: number;
+  footLength: number;
   footBack: number;
-  hipUp: number;
+  toeAhead: number;
+  pelvis: number;
+  pelvicShare: number;
   kneeFront: number;
   torso: number;
   upperArm: number;
@@ -15,12 +21,19 @@ export interface Segments {
   headRadius: number;
 }
 
+export type SegmentOverrides = Partial<
+  Pick<Segments, 'femur' | 'tibia' | 'torso' | 'upperArm' | 'forearmGrip' | 'footLength'>
+>;
+
 /** Physiology, mm. */
 export interface Body {
   height: number;
   inseam: number;
   flexibility: Flexibility;
-  overrides: Partial<Segments>;
+  shoeSize: number | null;
+  armLength: number | null;
+  ankling: Ankling;
+  overrides: SegmentOverrides;
 }
 
 export interface Frame {
@@ -36,6 +49,7 @@ export interface Frame {
   wheelbase: number;
   bbDrop: number;
   maxSpacers: number;
+  tyreWidth: number;
 }
 
 export type CockpitKind = 'dropbar'; // later: 'flatbar' | 'aerobar'
@@ -48,6 +62,7 @@ export interface Components {
   hoodRise: number;
   headsetCap: number;
   footStack: number;
+  saddleLength: number;
 }
 
 export interface FitParams {
@@ -58,6 +73,7 @@ export interface FitParams {
   stemLength: number;
   stemAngle: number;
   crankLength: number;
+  cleatOffset: number;
 }
 export type ParamKey = keyof FitParams;
 
@@ -68,33 +84,38 @@ export interface PartOptions {
   seatpostSetbacks: number[];
   saddleHeightRange: [number, number];
   railRange: [number, number];
+  cleatRange: [number, number];
   spacerStep: number;
 }
 
 export interface Layout {
   saddle: Vec2;
-  hand: Vec2;
+  nose: Vec2;
+  hoods: Vec2;
+  drops: Vec2;
   crankLength: number;
+  cleatOffset: number;
   stemBase: Vec2;
   clamp: Vec2;
   headTop: Vec2;
   seatAxisTop: Vec2;
 }
 
-export type MetricId = 'knee' | 'hip' | 'torso' | 'shoulder' | 'elbow' | 'kops';
+export type MetricId =
+  | 'knee' | 'kneeTop' | 'hip' | 'torso' | 'shoulder' | 'elbow' | 'seatAngle' | 'handLoad' | 'kops';
 export interface Band {
   min: number;
   max: number;
   weight: number;
   scale: number;
-  unit: '°' | 'mm';
+  center: number;
+  unit: '°' | 'mm' | '%';
 }
-export type HandContact = 'hoods'; // later: 'drops' | 'tops' | 'pads'
+export type HandContact = 'hoods' | 'drops';
 export interface PoseTarget {
   handContact: HandContact;
   elbowPref: number;
-  bands: Record<MetricId, Band>;
-  weight: number;
+  bands: Partial<Record<MetricId, Band>>;
 }
 export type StyleId = 'endurance' | 'race' | 'gravel';
 export interface Style {
@@ -102,11 +123,29 @@ export interface Style {
   name: string;
   blurb: string;
   cockpit: CockpitKind;
-  poses: PoseTarget[];
+  defaultEffort: Effort;
+  defaultHands: HandsPref;
+  poses: PoseTarget[]; // [0] hoods, [1] drops
 }
-export interface Evaluation {
+
+export interface FitContext {
+  footStack: number;
+  ankling: Ankling;
+  wkg: number;
+  frontAxle: Vec2 | null;
+  wheelRadius: number;
+}
+
+export interface PoseEval {
+  contact: HandContact;
   metrics: Record<MetricId, number>;
   overextended: boolean;
   overreach: boolean;
+  pelvicTilt: number;
+  comX: number;
+}
+export interface Evaluation {
+  poses: PoseEval[];
   peakKneeCrank: number;
+  toeClearance: number; // Infinity when there is no front wheel
 }

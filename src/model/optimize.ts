@@ -1,17 +1,21 @@
-import { forwardLayout } from './geometry';
+import { dropsFromHoods, forwardLayout } from './geometry';
 import { evaluateFit } from './pose';
-import { changePenalty, evaluationCost, fitScore, outside, partPenalty } from './score';
+import { makeContext } from './riding';
+import { changePenalty, fitCost, fitScore, outside, partPenalty } from './score';
 import { METRIC_LABELS, METRIC_ORDER } from './styles';
 import type {
-  Band, Components, Evaluation, FitParams, Frame, Layout, MetricId, ParamKey, PartOptions, Segments,
+  Ankling, Components, Effort, Evaluation, FitContext, FitParams, Frame, Layout, MetricId, ParamKey,
+  PartOptions, PoseTarget, Segments,
 } from './types';
 import { clamp, type Vec2 } from './vec';
 
 export interface FitProblem {
   segments: Segments;
   inseam: number;
-  bands: Record<MetricId, Band>;
-  elbowPref: number;
+  targets: PoseTarget[];
+  poseWeights: number[];
+  ankling: Ankling;
+  effort: Effort;
   frame: Frame;
   components: Components;
   options: PartOptions;
@@ -42,58 +46,63 @@ export const PARAM_LABELS: Record<ParamKey, string> = {
   stemLength: 'Stem length',
   stemAngle: 'Stem angle',
   crankLength: 'Crank length',
+  cleatOffset: 'Cleat position',
 };
 
-export function costOf(problem: FitProblem, p: FitParams): { cost: number; evaluation: Evaluation } {
+function costWith(problem: FitProblem, ctx: FitContext, p: FitParams, steps: number, withToe = false) {
   const layout = forwardLayout(problem.frame, problem.components, p);
-  const evaluation = evaluateFit(problem.segments, layout, problem.components.footStack, problem.elbowPref);
-  let cost = evaluationCost(evaluation, problem.bands) + partPenalty(p, problem.options);
+  const evaluation = evaluateFit(problem.segments, layout, ctx, problem.targets, steps, withToe);
+  let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p);
   if (problem.mode === 'tune') cost += changePenalty(p, problem.baseline);
   return { cost, evaluation };
+}
+
+export function costOf(problem: FitProblem, p: FitParams, steps = 36): { cost: number; evaluation: Evaluation } {
+  const ctx = makeContext(problem.frame, problem.components, problem.ankling, problem.effort);
+  return costWith(problem, ctx, p, steps, true);
 }
 
 const snap = (x: number, step: number) => Math.round(x / step) * step;
 
 export function optimizeFit(problem: FitProblem): FitResult {
   const { options: o, baseline: b, locks, frame } = problem;
+  const ctx = makeContext(frame, problem.components, problem.ankling, problem.effort);
   const pick = <T>(key: ParamKey, list: T[], base: T): T[] => (locks[key] ? [base] : list);
   const stems = pick('stemLength', o.stemLengths, b.stemLength);
   const angles = pick('stemAngle', o.stemAngles, b.stemAngle);
   const cranks = pick('crankLength', o.crankLengths, b.crankLength);
   const setbacks = pick('seatpostSetback', o.seatpostSetbacks, b.seatpostSetback);
 
-  const lo = [o.saddleHeightRange[0], o.railRange[0], 0];
-  const hi = [o.saddleHeightRange[1], o.railRange[1], frame.maxSpacers];
-  const minStep = [0.5, 0.5, o.spacerStep];
-  const startStep = [16, 8, 2 * o.spacerStep];
-  const lockedC = [!!locks.saddleHeight, !!locks.railOffset, !!locks.spacers];
+  // Continuous variables: saddleHeight, railOffset, spacers, cleatOffset.
+  const lo = [o.saddleHeightRange[0], o.railRange[0], 0, o.cleatRange[0]];
+  const hi = [o.saddleHeightRange[1], o.railRange[1], frame.maxSpacers, o.cleatRange[1]];
+  const lockedC = [!!locks.saddleHeight, !!locks.railOffset, !!locks.spacers, !!locks.cleatOffset];
+  const baseC = [b.saddleHeight, b.railOffset, b.spacers, b.cleatOffset];
+  const grid = [0.5, 0.5, o.spacerStep, 1];
 
-  let start: number[];
-  if (problem.mode === 'tune') start = [b.saddleHeight, b.railOffset, b.spacers];
-  else start = [0.883 * problem.inseam, 0, 20];
-  start = start.map((x, i) => {
-    if (lockedC[i]) return [b.saddleHeight, b.railOffset, b.spacers][i];
-    return clamp(snap(x, minStep[i]), lo[i], hi[i]);
+  const startRaw = problem.mode === 'tune' ? baseC : [0.883 * problem.inseam, 0, 20, 5];
+  const start = startRaw.map((x, i) => (lockedC[i] ? baseC[i] : clamp(snap(x, grid[i]), lo[i], hi[i])));
+
+  type Combo = Omit<FitParams, 'saddleHeight' | 'railOffset' | 'spacers' | 'cleatOffset'>;
+  interface Cand { cost: number; x: number[]; combo: Combo }
+  const mkP = (c: Combo, x: number[]): FitParams => ({
+    saddleHeight: x[0], railOffset: x[1], spacers: x[2], cleatOffset: x[3], ...c,
   });
 
-  interface Cand { cost: number; x: number[]; combo: Omit<FitParams, 'saddleHeight' | 'railOffset' | 'spacers'> }
-  const mkP = (c: Cand['combo'], x: number[]): FitParams => ({ saddleHeight: x[0], railOffset: x[1], spacers: x[2], ...c });
-
-  // Pattern search over the continuous knobs for one discrete combination.
-  const search = (combo: Cand['combo'], from: number[], steps: number[], mins: number[]): Cand => {
+  const search = (combo: Combo, from: number[], steps: number[], mins: number[], samples: number): Cand => {
     let x = [...from];
-    let cx = costOf(problem, mkP(combo, x)).cost;
+    let cx = costWith(problem, ctx, mkP(combo, x), samples).cost;
     let evals = 1;
     const step = [...steps];
-    while (evals < 400) {
+    while (evals < 500) {
       let improved = false;
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 4; i++) {
         if (lockedC[i]) continue;
         for (const dir of [1, -1]) {
           const y = [...x];
           y[i] = clamp(y[i] + dir * step[i], lo[i], hi[i]);
           if (y[i] === x[i]) continue;
-          const cy = costOf(problem, mkP(combo, y)).cost;
+          const cy = costWith(problem, ctx, mkP(combo, y), samples).cost;
           evals++;
           if (cy < cx - 1e-9) {
             x = y;
@@ -105,23 +114,24 @@ export function optimizeFit(problem: FitProblem): FitResult {
       }
       if (improved) continue;
       if (step.every((s, i) => lockedC[i] || s <= mins[i])) break;
-      for (let i = 0; i < 3; i++) step[i] = Math.max(mins[i], step[i] / 2);
+      for (let i = 0; i < 4; i++) step[i] = Math.max(mins[i], step[i] / 2);
     }
     return { cost: cx, x, combo };
   };
 
-  // Stage 1: coarse search on every combination. Stage 2: refine the best few.
+  // Stage 1: coarse search (12 crank samples) on every combination. Stage 2: refine the best few.
   const coarse: Cand[] = [];
-  const coarseMin = [2, 2, o.spacerStep];
+  const startStep = [16, 8, 2 * o.spacerStep, 4];
+  const coarseMin = [2, 2, o.spacerStep, 2];
   for (const stemLength of stems)
     for (const stemAngle of angles)
       for (const crankLength of cranks)
         for (const seatpostSetback of setbacks)
-          coarse.push(search({ stemLength, stemAngle, crankLength, seatpostSetback }, start, startStep, coarseMin));
+          coarse.push(search({ stemLength, stemAngle, crankLength, seatpostSetback }, start, startStep, coarseMin, 12));
   coarse.sort((p, q) => p.cost - q.cost);
   let best: Cand | null = null;
-  for (const c of coarse.slice(0, 6)) {
-    const r = search(c.combo, c.x, [2, 2, o.spacerStep], minStep);
+  for (const c of coarse.slice(0, 8)) {
+    const r = search(c.combo, c.x, [2, 2, o.spacerStep, 2], [0.5, 0.5, o.spacerStep, 1], 36);
     if (!best || r.cost < best.cost) best = r;
   }
   const bestParams = mkP(best!.combo, best!.x);
@@ -140,23 +150,33 @@ export function optimizeFit(problem: FitProblem): FitResult {
 
 export function idealLayout(
   segments: Segments,
-  bands: Record<MetricId, Band>,
-  elbowPref: number,
-  components: Components,
+  targets: PoseTarget[],
+  poseWeights: number[],
+  ctx: FitContext,
+  comp: Components,
   crankLengths: number[],
-): { saddle: Vec2; hand: Vec2; crankLength: number } {
+): { saddle: Vec2; hoods: Vec2; crankLength: number } {
   const H = segments.torso / 0.288;
   const s0 = [-0.126 * H, 0.396 * H, 0.322 * H, 0.372 * H];
   let best: { cost: number; x: number[]; crank: number } | null = null;
   for (const crank of crankLengths) {
-    const pen = partPenalty({ crankLength: crank } as FitParams);
+    const pen = partPenalty({
+      saddleHeight: 0, railOffset: 0, seatpostSetback: 0, spacers: 0, stemLength: 100, stemAngle: 0,
+      crankLength: crank, cleatOffset: 5,
+    });
     const cost = (x: number[]) => {
+      const hoods = { x: x[2], y: x[3] };
       const layout: Layout = {
-        saddle: { x: x[0], y: x[1] }, hand: { x: x[2], y: x[3] }, crankLength: crank,
-        stemBase: { x: x[2], y: x[3] }, clamp: { x: x[2], y: x[3] }, headTop: { x: x[2], y: x[3] },
+        saddle: { x: x[0], y: x[1] },
+        nose: { x: x[0] + comp.saddleLength - 120, y: x[1] },
+        hoods,
+        drops: dropsFromHoods(hoods, comp),
+        crankLength: crank,
+        cleatOffset: 5,
+        stemBase: hoods, clamp: hoods, headTop: hoods,
         seatAxisTop: { x: x[0], y: x[1] },
       };
-      return evaluationCost(evaluateFit(segments, layout, components.footStack, elbowPref), bands) + pen;
+      return fitCost(evaluateFit(segments, layout, ctx, targets, 36, false), targets, poseWeights) + pen;
     };
     let x = [...s0];
     let cx = cost(x);
@@ -170,7 +190,9 @@ export function idealLayout(
           if (y[i] === x[i]) continue;
           const cy = cost(y);
           if (cy < cx - 1e-9) {
-            x = y; cx = cy; improved = true;
+            x = y;
+            cx = cy;
+            improved = true;
             break;
           }
         }
@@ -180,32 +202,43 @@ export function idealLayout(
     if (!best || cx < best.cost) best = { cost: cx, x, crank };
   }
   const b = best!;
-  return { saddle: { x: b.x[0], y: b.x[1] }, hand: { x: b.x[2], y: b.x[3] }, crankLength: b.crank };
+  return { saddle: { x: b.x[0], y: b.x[1] }, hoods: { x: b.x[2], y: b.x[3] }, crankLength: b.crank };
 }
 
 const fmtNum = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
+const unitText = (u: string) => (u === 'mm' ? ' mm' : u);
 
 export function bindingNotes(problem: FitProblem, result: FitResult): string[] {
-  const { bands, options: o, locks, frame } = problem;
+  const { options: o, locks, frame } = problem;
   const ev = result.evaluation;
-  const offMetrics = METRIC_ORDER.filter((k) => outside(ev.metrics[k], bands[k]) > 0);
-  if (!offMetrics.length && !ev.overextended && !ev.overreach) return ['Every angle is inside its target range.'];
   const notes: string[] = [];
-  for (const k of offMetrics) {
-    const band = bands[k];
-    const v = ev.metrics[k];
-    notes.push(
-      `${METRIC_LABELS[k].short} ends at ${Math.round(v)}${band.unit}, ${v < band.min ? 'below' : 'above'} the ${Math.round(band.min)}–${Math.round(band.max)}${band.unit} target.`,
-    );
-  }
-  if (ev.overextended) notes.push('Leg is overextended at the bottom of the stroke: lower the saddle or shorten the cranks.');
-  if (ev.overreach) notes.push('The bars are out of reach: the rider cannot get to the hoods.');
-  if (offMetrics.length) {
+  let anyOff = false;
+  problem.targets.forEach((t, i) => {
+    const pe = ev.poses[i];
+    for (const k of METRIC_ORDER) {
+      const band = t.bands[k as MetricId];
+      if (!band || band.weight === 0) continue;
+      const v = pe.metrics[k];
+      if (outside(v, band) <= 0.5) continue;
+      anyOff = true;
+      const prefix = t.handContact === 'drops' ? 'In the drops: ' : '';
+      notes.push(
+        `${prefix}${METRIC_LABELS[k].short} ends at ${Math.round(v)}${unitText(band.unit)}, ${v < band.min ? 'below' : 'above'} the ${Math.round(band.min)}–${Math.round(band.max)}${unitText(band.unit)} target.`,
+      );
+    }
+  });
+  const over = ev.poses.some((p) => p.overextended);
+  const reach = ev.poses.some((p) => p.overreach);
+  if (!anyOff && !over && !reach) return ['Every angle is inside its target range.'];
+  if (over) notes.push('Leg is overextended at the bottom of the stroke: lower the saddle or shorten the cranks.');
+  if (reach) notes.push('The bars are out of reach: the rider cannot get to the hoods.');
+  if (anyOff) {
     const p = result.params;
     const cont: [ParamKey, number, number, number][] = [
       ['saddleHeight', p.saddleHeight, o.saddleHeightRange[0], o.saddleHeightRange[1]],
       ['railOffset', p.railOffset, o.railRange[0], o.railRange[1]],
       ['spacers', p.spacers, 0, frame.maxSpacers],
+      ['cleatOffset', p.cleatOffset, o.cleatRange[0], o.cleatRange[1]],
     ];
     for (const [key, val, min, max] of cont) {
       if (locks[key]) continue;
@@ -221,8 +254,9 @@ export function bindingNotes(problem: FitProblem, result: FitResult): string[] {
     for (const [key, list, unit, loWord, hiWord] of disc) {
       if (locks[key]) continue;
       const val = p[key];
-      if (val === list[0]) notes.push(`${PARAM_LABELS[key]} is at the ${loWord} option (${fmtNum(val)}${unit === '°' ? '°' : ' mm'}).`);
-      else if (val === list[list.length - 1]) notes.push(`${PARAM_LABELS[key]} is at the ${hiWord} option (${fmtNum(val)}${unit === '°' ? '°' : ' mm'}).`);
+      const u = unit === '°' ? '°' : ' mm';
+      if (val === list[0]) notes.push(`${PARAM_LABELS[key]} is at the ${loWord} option (${fmtNum(val)}${u}).`);
+      else if (val === list[list.length - 1]) notes.push(`${PARAM_LABELS[key]} is at the ${hiWord} option (${fmtNum(val)}${u}).`);
     }
   }
   return notes;
@@ -244,6 +278,9 @@ export function wrenchList(base: FitParams, next: FitParams): string[] {
   if (Math.abs(next.stemLength - base.stemLength) >= 0.5 || Math.abs(next.stemAngle - base.stemAngle) >= 0.5)
     out.push(`Swap the ${fmtNum(base.stemLength)} mm ${signed(base.stemAngle)} stem for a ${fmtNum(next.stemLength)} mm ${signed(next.stemAngle)} stem`);
   if (Math.abs(next.crankLength - base.crankLength) >= 0.5) out.push(`Swap to ${fmtNum(next.crankLength)} mm cranks`);
+  const dc = next.cleatOffset - base.cleatOffset;
+  if (Math.abs(dc) >= 0.5)
+    out.push(dc > 0 ? `Move the cleats ${fmtNum(dc)} mm back toward the midfoot` : `Move the cleats ${fmtNum(-dc)} mm forward toward the ball of the foot`);
   return out.length ? out : ['No changes from your current setup.'];
 }
 

@@ -1,64 +1,100 @@
-import type { Band, Flexibility, MetricId, Style, StyleId } from './types';
+import type { Band, Flexibility, MetricId, PoseTarget, Style, StyleId } from './types';
 
-const W: Record<MetricId, number> = { knee: 1, hip: 0.6, torso: 1, shoulder: 0.6, elbow: 0.4, kops: 0.3 };
+const W: Record<MetricId, number> = {
+  knee: 1, kneeTop: 0.5, hip: 0.6, torso: 1, shoulder: 0.6, elbow: 0.4, seatAngle: 0.4, handLoad: 0.5, kops: 0,
+};
 
-function bands(r: Record<MetricId, [number, number]>): Record<MetricId, Band> {
-  const out = {} as Record<MetricId, Band>;
-  for (const k of Object.keys(r) as MetricId[]) {
-    out[k] = {
-      min: r[k][0],
-      max: r[k][1],
-      weight: W[k],
-      scale: k === 'kops' ? 10 : 5,
-      unit: k === 'kops' ? 'mm' : '°',
-    };
-  }
+function band(k: MetricId, r: [number, number]): Band {
+  return {
+    min: r[0],
+    max: r[1],
+    weight: W[k],
+    scale: k === 'kops' ? 10 : k === 'seatAngle' ? 1.5 : k === 'handLoad' ? 4 : 5,
+    center: k === 'kneeTop' ? 0 : 0.05,
+    unit: k === 'kops' ? 'mm' : k === 'handLoad' ? '%' : '°',
+  };
+}
+
+function bands(r: Partial<Record<MetricId, [number, number]>>): Partial<Record<MetricId, Band>> {
+  const out: Partial<Record<MetricId, Band>> = {};
+  for (const k of Object.keys(r) as MetricId[]) out[k] = band(k, r[k]!);
   return out;
 }
 
-function style(id: StyleId, name: string, blurb: string, elbowPref: number, r: Record<MetricId, [number, number]>): Style {
+function style(
+  id: StyleId, name: string, blurb: string, defaults: Pick<Style, 'defaultEffort' | 'defaultHands'>,
+  hoodsElbow: number,
+  hoods: Partial<Record<MetricId, [number, number]>>,
+  drops: Partial<Record<MetricId, [number, number]>>,
+): Style {
   return {
-    id,
-    name,
-    blurb,
-    cockpit: 'dropbar',
-    poses: [{ handContact: 'hoods', elbowPref, bands: bands(r), weight: 1 }],
+    id, name, blurb, cockpit: 'dropbar', ...defaults,
+    poses: [
+      { handContact: 'hoods', elbowPref: hoodsElbow, bands: bands(hoods) },
+      { handContact: 'drops', elbowPref: 140, bands: bands(drops) },
+    ],
   };
 }
 
 export const STYLES: Record<StyleId, Style> = {
-  endurance: style('endurance', 'Endurance', 'Upright and comfortable for long days.', 158, {
-    knee: [140, 148], hip: [55, 75], torso: [45, 55], shoulder: [80, 92], elbow: [150, 165], kops: [-10, 20],
-  }),
-  race: style('race', 'Race', 'Low and long for speed.', 155, {
-    knee: [140, 148], hip: [45, 62], torso: [32, 42], shoulder: [88, 100], elbow: [150, 165], kops: [-10, 20],
-  }),
-  gravel: style('gravel', 'Gravel', 'Stable and a little more upright for rough ground.', 155, {
-    knee: [138, 146], hip: [50, 70], torso: [40, 50], shoulder: [82, 95], elbow: [148, 162], kops: [-15, 15],
-  }),
+  endurance: style(
+    'endurance', 'Endurance', 'Upright and comfortable for long days.',
+    { defaultEffort: 'easy', defaultHands: 'hoods' }, 158,
+    {
+      knee: [140, 148], kneeTop: [62, 120], hip: [55, 75], torso: [45, 55], shoulder: [80, 92],
+      elbow: [150, 165], seatAngle: [71, 75], handLoad: [18, 30], kops: [-10, 40],
+    },
+    { hip: [45, 65], torso: [32, 45], shoulder: [78, 95], elbow: [125, 155], handLoad: [22, 36] },
+  ),
+  race: style(
+    'race', 'Race', 'Low and long for speed.',
+    { defaultEffort: 'hard', defaultHands: 'mixed' }, 155,
+    {
+      knee: [140, 148], kneeTop: [62, 120], hip: [45, 62], torso: [32, 42], shoulder: [85, 100],
+      elbow: [150, 165], seatAngle: [72, 76], handLoad: [20, 32], kops: [-10, 40],
+    },
+    { hip: [40, 55], torso: [22, 35], shoulder: [80, 100], elbow: [125, 155], handLoad: [24, 38] },
+  ),
+  gravel: style(
+    'gravel', 'Gravel', 'Stable and a little more upright for rough ground.',
+    { defaultEffort: 'tempo', defaultHands: 'hoods' }, 155,
+    {
+      knee: [138, 146], kneeTop: [62, 120], hip: [50, 70], torso: [40, 50], shoulder: [80, 95],
+      elbow: [148, 162], seatAngle: [71.5, 75.5], handLoad: [18, 30], kops: [-15, 40],
+    },
+    { hip: [42, 60], torso: [28, 40], shoulder: [78, 95], elbow: [125, 155], handLoad: [22, 36] },
+  ),
 };
 
-export function bandsFor(style: Style, flexibility: Flexibility): Record<MetricId, Band> {
-  const src = style.poses[0].bands;
-  const out = {} as Record<MetricId, Band>;
-  for (const k of Object.keys(src) as MetricId[]) out[k] = { ...src[k] };
+export function bandsFor(style: Style, flexibility: Flexibility): PoseTarget[] {
   const shift = flexibility === 'low' ? 5 : flexibility === 'high' ? -3 : 0;
-  if (shift) {
-    for (const k of ['torso', 'hip'] as const) {
-      out[k].min += shift;
-      out[k].max += shift;
+  return style.poses.map((p) => {
+    const b: Partial<Record<MetricId, Band>> = {};
+    for (const k of Object.keys(p.bands) as MetricId[]) {
+      const src = p.bands[k]!;
+      b[k] = { ...src };
+      if (shift && (k === 'torso' || k === 'hip')) {
+        b[k]!.min += shift;
+        b[k]!.max += shift;
+      }
     }
-  }
-  return out;
+    return { handContact: p.handContact, elbowPref: p.elbowPref, bands: b };
+  });
 }
 
 export const METRIC_LABELS: Record<MetricId, { short: string; long: string }> = {
   knee: { short: 'Knee', long: 'Knee extension (most open point of the stroke)' },
+  kneeTop: { short: 'Knee (top)', long: 'Knee angle at the top of the stroke (most closed)' },
   hip: { short: 'Hip', long: 'Hip angle (most closed point)' },
   torso: { short: 'Torso', long: 'Torso angle from horizontal' },
   shoulder: { short: 'Shoulder', long: 'Shoulder angle' },
   elbow: { short: 'Elbow', long: 'Elbow angle' },
-  kops: { short: 'Knee/pedal', long: 'Knee ahead of pedal at 3 o\'clock' },
+  seatAngle: { short: 'Seat angle', long: 'Effective seat angle: bottom bracket to saddle, from horizontal' },
+  handLoad: { short: 'Hand load', long: 'Share of body weight on the hands at your effort level' },
+  kops: { short: 'Knee/pedal', long: "Knee ahead of the pedal axle at 3 o'clock (for information)" },
 };
 
-export const METRIC_ORDER: MetricId[] = ['knee', 'hip', 'torso', 'shoulder', 'elbow', 'kops'];
+export const METRIC_ORDER: MetricId[] = [
+  'knee', 'kneeTop', 'hip', 'torso', 'shoulder', 'elbow', 'seatAngle', 'handLoad', 'kops',
+];
+export const SIMPLE_METRICS: MetricId[] = ['knee', 'hip', 'torso', 'handLoad'];

@@ -1,11 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
+import { dropsFromHoods } from './geometry';
 import { costOf, idealLayout, optimizeFit, wrenchList, type FitProblem } from './optimize';
 import { evaluateFit } from './pose';
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
+import { makeContext, poseWeights } from './riding';
 import { outside } from './score';
 import { bandsFor, STYLES } from './styles';
-import type { Frame, MetricId, StyleId } from './types';
+import type { Evaluation, Frame, MetricId, PoseTarget, StyleId } from './types';
 
 const segments = resolveSegments(DEFAULT_BODY);
 const frame = (id: string) => EXAMPLE_FRAMES.find((f) => f.id === id)!;
@@ -13,25 +15,32 @@ const frame = (id: string) => EXAMPLE_FRAMES.find((f) => f.id === id)!;
 function problem(style: StyleId, f: Frame, mode: 'shop' | 'tune' = 'shop'): FitProblem {
   const st = STYLES[style];
   return {
-    segments, inseam: DEFAULT_BODY.inseam, bands: bandsFor(st, 'medium'), elbowPref: st.poses[0].elbowPref,
-    frame: f, components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, locks: {}, mode,
+    segments, inseam: DEFAULT_BODY.inseam, targets: bandsFor(st, 'medium'), poseWeights: poseWeights(st.defaultHands),
+    ankling: 'neutral', effort: st.defaultEffort, frame: f, components: DEFAULT_COMPONENTS,
+    options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, locks: {}, mode,
   };
 }
-const allIn = (p: FitProblem, ev: ReturnType<typeof optimizeFit>['evaluation']) =>
-  (Object.keys(p.bands) as MetricId[]).every((k) => outside(ev.metrics[k], p.bands[k]) < 0.05);
+function allIn(targets: PoseTarget[], ev: Evaluation) {
+  return targets.every((t, i) =>
+    (Object.keys(t.bands) as MetricId[]).every((k) => {
+      const b = t.bands[k]!;
+      return b.weight === 0 || outside(ev.poses[i].metrics[k], b) < 0.05;
+    }),
+  );
+}
 
 describe('optimizeFit', () => {
   it('fits endurance on the endurance frame', () => {
     const p = problem('endurance', frame('endurance-56'));
     const t = performance.now();
     const r = optimizeFit(p);
-    expect(performance.now() - t).toBeLessThan(2000);
-    expect(allIn(p, r.evaluation)).toBe(true);
-    expect(r.score).toBeGreaterThanOrEqual(95);
+    expect(performance.now() - t).toBeLessThan(1500);
+    expect(allIn(p.targets, r.evaluation)).toBe(true);
+    expect(r.params.stemLength).toBeLessThanOrEqual(120);
   });
   it('fits race on the race frame', () => {
     const p = problem('race', frame('race-56'));
-    expect(allIn(p, optimizeFit(p).evaluation)).toBe(true);
+    expect(allIn(p.targets, optimizeFit(p).evaluation)).toBe(true);
   });
   it('a tall, short-reach frame fits a racer worse and says why', () => {
     const odd: Frame = { ...frame('race-56'), id: 'odd', stack: 650, reach: 340 };
@@ -40,13 +49,15 @@ describe('optimizeFit', () => {
     expect(bad.score).toBeLessThan(good.score);
     expect(bad.notes.join(' ')).toContain('Torso');
   });
-  it('respects locks and spacer steps', () => {
+  it('respects locks, spacer steps and the cleat range', () => {
     const p = { ...problem('race', frame('race-56')), locks: { crankLength: true } };
     const r = optimizeFit(p);
     expect(r.params.crankLength).toBe(172.5);
     expect(r.params.spacers % 5).toBe(0);
     expect(r.params.spacers).toBeGreaterThanOrEqual(0);
     expect(r.params.spacers).toBeLessThanOrEqual(30);
+    expect(r.params.cleatOffset).toBeGreaterThanOrEqual(0);
+    expect(r.params.cleatOffset).toBeLessThanOrEqual(20);
   });
   it('tune mode never ends worse than the baseline', () => {
     const p = problem('endurance', frame('endurance-56'), 'tune');
@@ -55,16 +66,17 @@ describe('optimizeFit', () => {
 });
 
 describe('idealLayout', () => {
-  it('puts every race metric in band', () => {
+  it('puts every race metric of both poses in band', () => {
     const st = STYLES.race;
-    const bands = bandsFor(st, 'medium');
-    const ideal = idealLayout(segments, bands, st.poses[0].elbowPref, DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths);
+    const targets = bandsFor(st, 'medium');
+    const ctx = makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort);
+    const ideal = idealLayout(segments, targets, poseWeights(st.defaultHands), ctx, DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths);
     const L = {
-      saddle: ideal.saddle, hand: ideal.hand, crankLength: ideal.crankLength,
-      stemBase: ideal.hand, clamp: ideal.hand, headTop: ideal.hand, seatAxisTop: ideal.saddle,
+      saddle: ideal.saddle, nose: { x: ideal.saddle.x + 150, y: ideal.saddle.y }, hoods: ideal.hoods,
+      drops: dropsFromHoods(ideal.hoods, DEFAULT_COMPONENTS), crankLength: ideal.crankLength, cleatOffset: 5,
+      stemBase: ideal.hoods, clamp: ideal.hoods, headTop: ideal.hoods, seatAxisTop: ideal.saddle,
     };
-    const ev = evaluateFit(segments, L, DEFAULT_COMPONENTS.footStack, st.poses[0].elbowPref);
-    for (const k of Object.keys(bands) as MetricId[]) expect(outside(ev.metrics[k], bands[k])).toBeLessThan(0.05);
+    expect(allIn(targets, evaluateFit(segments, L, ctx, targets))).toBe(true);
   });
 });
 
@@ -73,6 +85,11 @@ describe('wrenchList', () => {
     expect(wrenchList(DEFAULT_PARAMS, { ...DEFAULT_PARAMS, saddleHeight: 743, stemLength: 110 })).toEqual([
       'Raise the saddle 8 mm',
       'Swap the 100 mm −6° stem for a 110 mm −6° stem',
+    ]);
+  });
+  it('describes cleat moves', () => {
+    expect(wrenchList(DEFAULT_PARAMS, { ...DEFAULT_PARAMS, cleatOffset: 10 })).toEqual([
+      'Move the cleats 5 mm back toward the midfoot',
     ]);
   });
   it('reports no change', () => {

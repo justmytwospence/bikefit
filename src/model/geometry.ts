@@ -13,14 +13,40 @@ const steerAxis = (frame: Frame): Vec2 => ({
 export function forwardLayout(frame: Frame, comp: Components, p: FitParams): Layout {
   const seatAxisTop = scale(seatAxis(frame), p.saddleHeight);
   const saddle = add(seatAxisTop, { x: p.railOffset - p.seatpostSetback, y: 0 });
+  const nose: Vec2 = { x: saddle.x + comp.saddleLength - 120, y: saddle.y };
   const headTop: Vec2 = { x: frame.reach, y: frame.stack };
   const h = steerAxis(frame);
   const stemBase = add(headTop, scale(h, p.spacers + comp.headsetCap + 20));
   const hta = rad(frame.headTubeAngle);
   const n: Vec2 = { x: Math.sin(hta), y: Math.cos(hta) };
   const clamp = add(stemBase, scale(rotate(n, p.stemAngle), p.stemLength));
-  const hand = add(clamp, { x: comp.barReach + comp.hoodReach, y: comp.hoodRise });
-  return { saddle, hand, crankLength: p.crankLength, stemBase, clamp, headTop, seatAxisTop };
+  const hoods = add(clamp, { x: comp.barReach + comp.hoodReach, y: comp.hoodRise });
+  const drops = add(clamp, { x: comp.barReach - 40, y: -comp.barDrop + 15 });
+  return {
+    saddle, nose, hoods, drops, crankLength: p.crankLength, cleatOffset: p.cleatOffset,
+    stemBase, clamp, headTop, seatAxisTop,
+  };
+}
+
+export function dropsFromHoods(hoods: Vec2, comp: Components): Vec2 {
+  return add(hoods, { x: -40 - comp.hoodReach, y: -comp.barDrop + 15 - comp.hoodRise });
+}
+
+/** Distance the saddle nose sits behind the bottom bracket. */
+export function noseSetback(frame: Frame, comp: Components, p: FitParams): number {
+  return -forwardLayout(frame, comp, p).nose.x;
+}
+
+export function railForSetback(frame: Frame, comp: Components, p: FitParams, setback: number): number {
+  const L0 = forwardLayout(frame, comp, { ...p, railOffset: 0 });
+  return Math.round((-setback - L0.nose.x) * 2) / 2;
+}
+
+export function setbackRange(
+  frame: Frame, comp: Components, p: FitParams, railRange: [number, number],
+): [number, number] {
+  const L0 = forwardLayout(frame, comp, { ...p, railOffset: 0 });
+  return [-(L0.nose.x + railRange[1]), -(L0.nose.x + railRange[0])];
 }
 
 export function frameSkeleton(frame: Frame) {
