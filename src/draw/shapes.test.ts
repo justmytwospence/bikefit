@@ -58,6 +58,10 @@ describe('shoeLocal', () => {
     expect(Math.max(...s.outline.map((p) => p.x))).toBe(seg.toeAhead);
     expect(Math.min(...s.cleat.map((p) => p.y))).toBeLessThan(-SOLE_T);
   });
+  it('draws a road-sized cleat', () => {
+    const xs = shoeLocal(seg, 20, 5).cleat.map((p) => p.x);
+    expect(Math.max(...xs) - Math.min(...xs)).toBe(78);
+  });
   it('keeps the cleat below the sole at low stack', () => {
     expect(Math.min(...shoeLocal(seg, 5, 5).cleat.map((p) => p.y))).toBeLessThanOrEqual(-SOLE_T - 3);
   });

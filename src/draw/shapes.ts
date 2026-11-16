@@ -68,7 +68,7 @@ export const toWorld = (fr: FootFrame, p: Vec2): Vec2 =>
   add(fr.o, add(scale(fr.u, p.x), scale(fr.n, p.y)));
 
 export const SOLE_T = 7;
-export const PEDAL_HALF = 5;
+export const PEDAL_HALF = 8;
 
 /** Shoe, cleat and pedal in the foot frame (x forward along the sole from the ball, y up). */
 export function shoeLocal(seg: Segments, footStack: number, cleatOffset: number) {
@@ -99,16 +99,16 @@ export function shoeLocal(seg: Segments, footStack: number, cleatOffset: number)
   const cleatBottom = Math.min(sb - 3, -footStack + PEDAL_HALF);
   const cx = -cleatOffset;
   const cleat: Vec2[] = [
-    { x: cx - 26, y: sb },
-    { x: cx + 26, y: sb },
-    { x: cx + 18, y: cleatBottom },
-    { x: cx - 18, y: cleatBottom },
+    { x: cx - 39, y: sb },
+    { x: cx + 39, y: sb },
+    { x: cx + 32, y: cleatBottom },
+    { x: cx - 32, y: cleatBottom },
   ];
   const pedal: Vec2[] = [
     { x: cx - 44, y: -footStack + PEDAL_HALF },
-    { x: cx + 40, y: -footStack + PEDAL_HALF },
-    { x: cx + 44, y: -footStack - PEDAL_HALF },
-    { x: cx - 38, y: -footStack - PEDAL_HALF - 3 },
+    { x: cx + 42, y: -footStack + PEDAL_HALF },
+    { x: cx + 46, y: -footStack - PEDAL_HALF },
+    { x: cx - 40, y: -footStack - PEDAL_HALF - 2 },
   ];
   return {
     outline, sole, cleat, pedal, heel, toe,
