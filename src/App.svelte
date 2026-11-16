@@ -53,6 +53,7 @@
   const pi = $derived(contact === 'drops' ? 1 : 0);
   const crankDeg = $derived(ui.playing ? ui.crank : evaluation.peakKneeCrank);
   const pose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg));
+  const farPose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg + 180));
   const ghostPose = $derived(
     ui.ghost
       ? riderPose(segments, forwardLayout(frame, app.components, ui.ghost), ctx, contact, targets[pi].elbowPref, crankDeg)
@@ -101,9 +102,9 @@
   <section class="view">
     <div class="canvas">
       <BikeView
-        {frame} components={app.components} {layout} {pose} {ghostPose} {ideal}
+        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ideal}
         target={targets[pi]} poseEval={evaluation.poses[pi]} level={resultsLevel}
-        height={app.body.height} spacers={shown.current.spacers}
+        height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
     </div>

@@ -11,6 +11,12 @@
   --near: #d89614;
   --off: #d64545;
   --info: #8a8a90;
+  --rider-far: #9b9ba3;
+  --shoe: #ffffff;
+  --shoe-far: #dcdce1;
+  --pedal: #3a3a40;
+  --part: #6b6b70;
+  --helmet: var(--accent);
   --frame: #a8adb4;
   --rider: #26262b;
   --radius: 14px;
@@ -27,6 +33,10 @@
     --line: #2f2f34;
     --frame: #5c6168;
     --rider: #e9e9ec;
+    --rider-far: #5a5a62;
+    --shoe: #d8d8de;
+    --shoe-far: #45454c;
+    --part: #8a8a92;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.3);
   }
 }
