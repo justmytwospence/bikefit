@@ -20,16 +20,17 @@ export function solveFoot(seg: Segments, spindle: Vec2, soleDeg: number, footSta
 export function solveLeg(seg: Segments, hip: Vec2, layout: Layout, ctx: FitContext, crankDeg: number) {
   const phi = crankDeg * RAD;
   const spindle: Vec2 = { x: layout.crankLength * Math.cos(phi), y: layout.crankLength * Math.sin(phi) };
-  const { ball, ankle, toe } = solveFoot(seg, spindle, soleAngle(ctx.ankling, crankDeg), ctx.footStack, layout.cleatOffset);
+  const soleDeg = soleAngle(ctx.ankling, crankDeg);
+  const { ball, ankle, toe } = solveFoot(seg, spindle, soleDeg, ctx.footStack, layout.cleatOffset);
   const d = len(sub(ankle, hip));
   const dir = unit(sub(ankle, hip));
   if (d >= seg.femur + seg.tibia) {
-    return { spindle, ball, ankle, toe, knee: add(hip, scale(dir, seg.femur)), kneeAngle: 180, overextended: true };
+    return { spindle, ball, ankle, toe, soleDeg, knee: add(hip, scale(dir, seg.femur)), kneeAngle: 180, overextended: true };
   }
   const kneeAngle = lawOfCosAngle(seg.femur, seg.tibia, d);
   const beta = lawOfCosAngle(seg.femur, d, seg.tibia);
   const knee = add(hip, scale(rotate(dir, beta), seg.femur));
-  return { spindle, ball, ankle, toe, knee, kneeAngle, overextended: false };
+  return { spindle, ball, ankle, toe, soleDeg, knee, kneeAngle, overextended: false };
 }
 
 export function solveUpperBody(seg: Segments, hip: Vec2, hand: Vec2, elbowPref: number) {
@@ -87,6 +88,8 @@ export interface RiderPose {
   hand: Vec2;
   head: Vec2;
   contact: HandContact;
+  soleDeg: number;
+  crankDeg: number;
   pelvicTilt: number;
   kneeAngle: number;
   hipAngle: number;
@@ -106,7 +109,7 @@ export function riderPose(
   const head = add(add(up.shoulder, scale(unit(sub(up.shoulder, hip)), 0.03 * H)), { x: 0.02 * H, y: 0.03 * H });
   return {
     hip, knee: leg.knee, ankle: leg.ankle, ball: leg.ball, toe: leg.toe, spindle: leg.spindle,
-    shoulder: up.shoulder, elbow: up.elbow, hand: up.handDrawn, head, contact, pelvicTilt: tilt,
+    shoulder: up.shoulder, elbow: up.elbow, hand: up.handDrawn, head, contact, soleDeg: leg.soleDeg, crankDeg, pelvicTilt: tilt,
     kneeAngle: leg.kneeAngle,
     hipAngle: angleBetween(sub(up.shoulder, hip), sub(leg.knee, hip)),
     torsoAngle: up.torsoAngle, shoulderAngle: up.shoulderAngle, elbowAngle: up.elbowAngle,
