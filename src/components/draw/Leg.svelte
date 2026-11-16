@@ -1,15 +1,19 @@
 <script lang="ts">
-  import { capsulePath, type Radii } from '../../draw/shapes';
+  import { legArt, TENSION, type ArtBody } from '../../draw/body';
+  import { smoothClosedPath } from '../../draw/shapes';
   import type { RiderPose } from '../../model/pose';
   import type { Segments } from '../../model/types';
+  import type { Vec2 } from '../../model/vec';
   import Shoe from './Shoe.svelte';
 
   let {
-    pose, seg, radii, footStack, cleatOffset, variant = 'near', showBallMark = false, highlightCleat = false,
+    pose, seg, body, saddle, nose, footStack, cleatOffset, variant = 'near', showBallMark = false, highlightCleat = false,
   }: {
     pose: RiderPose;
     seg: Segments;
-    radii: Radii;
+    body: ArtBody;
+    saddle: Vec2;
+    nose: Vec2;
     footStack: number;
     cleatOffset: number;
     variant?: 'near' | 'far' | 'ghost';
@@ -17,11 +21,12 @@
     highlightCleat?: boolean;
   } = $props();
   const fill = $derived(variant === 'far' ? 'var(--rider-far)' : 'var(--rider)');
+  const art = $derived(legArt(pose, body, saddle, nose));
 </script>
 
 <g {fill} stroke="none" opacity={variant === 'ghost' ? 0.14 : 1}>
-  <path d={capsulePath(pose.hip, pose.knee, radii.thighHip, radii.thighKnee)} />
-  <path d={capsulePath(pose.knee, pose.ankle, radii.shinKnee, radii.shinAnkle)} />
+  <path d={smoothClosedPath(art.thigh, TENSION)} />
+  <path d={smoothClosedPath(art.calf, TENSION)} />
 </g>
 <Shoe
   ball={pose.ball} soleDeg={pose.soleDeg} {seg} {footStack} {cleatOffset} {variant}

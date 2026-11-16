@@ -104,7 +104,7 @@
       <BikeView
         {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ideal}
         target={targets[pi]} poseEval={evaluation.poses[pi]} level={resultsLevel}
-        height={app.body.height} seg={segments} params={shown.current}
+        height={app.body.height} seg={segments} params={shown.current} sex={app.body.sex}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
     </div>

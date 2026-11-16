@@ -1,22 +1,26 @@
 <script lang="ts">
-  import { capsulePath, helmetPoints, smoothClosedPath, type Radii } from '../../draw/shapes';
+  import { TENSION, torsoArt, type ArtBody } from '../../draw/body';
+  import { smoothClosedPath } from '../../draw/shapes';
   import type { RiderPose } from '../../model/pose';
   import type { Vec2 } from '../../model/vec';
 
-  let { pose, saddle, radii, variant = 'near' }: {
+  let { pose, body, saddle, nose, variant = 'near' }: {
     pose: RiderPose;
+    body: ArtBody;
     saddle: Vec2;
-    radii: Radii;
+    nose: Vec2;
     variant?: 'near' | 'ghost';
   } = $props();
+  const art = $derived(torsoArt(pose, body, saddle, nose));
+  const d = (pts: Vec2[]) => smoothClosedPath(pts, TENSION);
 </script>
 
 <g fill="var(--rider)" stroke="none" opacity={variant === 'ghost' ? 0.14 : 1}>
-  <path d={capsulePath({ x: saddle.x - 25, y: saddle.y + radii.pelvis }, pose.hip, radii.pelvis, radii.torsoHip)} />
-  <path d={capsulePath(pose.hip, pose.shoulder, radii.torsoHip, radii.torsoShoulder)} />
-  <path d={capsulePath(pose.shoulder, pose.head, radii.neck, radii.neck)} />
-  <circle cx={pose.head.x} cy={pose.head.y} r={radii.head} />
+  <path d={d(art.torso)} />
+  <path d={d(art.seat)} />
+  <path d={d(art.head)} />
 </g>
 {#if variant === 'near'}
-  <path d={smoothClosedPath(helmetPoints(pose.head, radii.head))} fill="var(--helmet)" stroke="none" />
+  <path d={d(art.jersey)} fill="var(--jersey)" stroke="none" />
+  <path d={d(art.helmet)} fill="var(--helmet)" stroke="none" />
 {/if}

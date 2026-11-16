@@ -19,6 +19,8 @@ Every section (Rider, Bike, Setup, Results) has a Simple, Detailed and Expert le
 
 Feet (shoe size, cleat position, ankling), pelvic tilt, effective seat angle, hand load at your effort level (a whole-body balance estimate), knee angle at the top of the stroke, a second drops pose, toe overlap and contact-point readouts. Knee-over-pedal is shown for information only.
 
+Rider shapes are derived from the MakeHuman base mesh and targets (CC0); regenerate them with `python3 scripts/body-profiles/extract.py`.
+
 ```sh
 npm install
 npm run dev     # local dev server
