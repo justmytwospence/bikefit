@@ -46,7 +46,7 @@
         options={units} ariaLabel="Units"
         bind:value={() => app.units, (v) => (app.units = v as Units)}
       />
-      <p class="muted small">Body measurements and shoe size. Bike geometry and fit settings stay in mm.</p>
+      <p class="muted small">Body measurements and shoe size (EU or US). Bike geometry and fit settings stay in mm.</p>
     </div>
   {/if}
 </div>

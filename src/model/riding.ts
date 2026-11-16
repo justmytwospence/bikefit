@@ -41,7 +41,5 @@ export function makeContext(
 
 const trim = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
 export function shoeLabel(eu: number, units: 'metric' | 'imperial' = 'metric'): string {
-  return units === 'imperial'
-    ? `US M ${trim(eu - 33.5)} · EU ${trim(eu)}`
-    : `EU ${trim(eu)} · US M ${trim(eu - 33.5)}`;
+  return units === 'imperial' ? `US ${trim(eu - 33.5)} (men's)` : `EU ${trim(eu)}`;
 }
