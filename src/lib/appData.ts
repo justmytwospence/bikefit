@@ -1,4 +1,5 @@
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from '../model/presets';
+import type { Units } from './units';
 import type {
   Body, Components, Effort, FitParams, Frame, HandsPref, ParamKey, PartOptions, StyleId,
 } from '../model/types';
@@ -22,6 +23,7 @@ export interface AppData {
   effort: Effort | null;
   hands: HandsPref | null;
   detail: { global: Level; overrides: Partial<Record<SectionId, Level>> };
+  units: Units;
 }
 
 export function defaults(): AppData {
@@ -43,6 +45,7 @@ export function defaults(): AppData {
     effort: null,
     hands: null,
     detail: { global: 1 as Level, overrides: {} },
+    units: 'metric' as Units,
   });
 }
 
@@ -66,6 +69,7 @@ export function migrate(raw: unknown): AppData | null {
     frames: d.frames.map((f: Frame) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     effort: d.effort ?? null,
     hands: d.hands ?? null,
+    units: d.units === 'imperial' ? 'imperial' : 'metric',
   } as AppData;
 }
 

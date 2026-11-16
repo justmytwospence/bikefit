@@ -2,6 +2,7 @@
   import { hiddenRiderValues, level } from '../lib/appData';
   import { resolveSegments, SEGMENT_LABELS } from '../model/body';
   import { ANKLING, EFFORT_LABELS, HANDS_LABELS, shoeLabel } from '../model/riding';
+  import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
   import { STYLES } from '../model/styles';
   import type { Ankling, Effort, Flexibility, HandsPref } from '../model/types';
   import { app, setSectionDetail } from '../state.svelte';
@@ -26,20 +27,37 @@
   const hands = (Object.keys(HANDS_LABELS) as HandsPref[]).map((k) => ({ value: k, label: HANDS_LABELS[k] }));
   const effort = $derived(app.effort ?? style.defaultEffort);
   const handsPref = $derived(app.hands ?? style.defaultHands);
-  const getOv = (k: keyof typeof SEGMENT_LABELS) => app.body.overrides[k] ?? Math.round(est[k]);
+  const getOv = (k: keyof typeof SEGMENT_LABELS) => app.body.overrides[k] ?? est[k];
+  const imperial = $derived(app.units === 'imperial');
+  const heightF = $derived(lengthField(app.units, 'cm', 1400, 2100));
+  const inseamF = $derived(lengthField(app.units, 'cm', 600, 1050));
+  const armF = $derived(lengthField(app.units, 'cm', 500, 900));
+  const segF = $derived(lengthField(app.units, 'mm', 50, 900));
+  const fi = $derived(feetInches(app.body.height));
 </script>
 
 <DetailToggle section="rider" />
 <div class="scroll">
   <h2>Body</h2>
   <div class="two">
+    {#if imperial}
+      <NumberField
+        label="Height" unit="ft" min={4} max={7} step={1}
+        bind:value={() => fi.ft, (v) => (app.body.height = fromFeetInches(v, fi.inch))}
+      />
+      <NumberField
+        label="Height" unit="in" min={0} max={11.5} step={0.5}
+        bind:value={() => fi.inch, (v) => (app.body.height = fromFeetInches(fi.ft, v))}
+      />
+    {:else}
+      <NumberField
+        label="Height" unit={heightF.unit} min={heightF.min} max={heightF.max} step={heightF.step}
+        bind:value={() => toDisplay(app.body.height, heightF), (v) => (app.body.height = fromDisplay(v, heightF))}
+      />
+    {/if}
     <NumberField
-      label="Height" unit="cm" min={140} max={210} step={0.5}
-      bind:value={() => app.body.height / 10, (v) => (app.body.height = v * 10)}
-    />
-    <NumberField
-      label="Inseam" unit="cm" min={60} max={105} step={0.5}
-      bind:value={() => app.body.inseam / 10, (v) => (app.body.inseam = v * 10)}
+      label="Inseam" unit={inseamF.unit} min={inseamF.min} max={inseamF.max} step={inseamF.step}
+      bind:value={() => toDisplay(app.body.inseam, inseamF), (v) => (app.body.inseam = fromDisplay(v, inseamF))}
     />
   </div>
   <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly.</p>
@@ -47,7 +65,7 @@
   <label class="shoe">
     <span class="l">Shoe size</span>
     <select value={String(app.body.shoeSize)} onchange={(e) => (app.body.shoeSize = Number(e.currentTarget.value))}>
-      {#each shoes as s (s)}<option value={String(s)}>{shoeLabel(s)}</option>{/each}
+      {#each shoes as s (s)}<option value={String(s)}>{shoeLabel(s, app.units)}</option>{/each}
     </select>
   </label>
   <p class="muted small hint">The size of your cycling shoes.</p>
@@ -59,10 +77,10 @@
   {#if lv >= 2}
     <h2>Arms and feet</h2>
     <NumberField
-      label="Arm length" unit="cm" min={50} max={90} step={0.5}
+      label="Arm length" unit={armF.unit} min={armF.min} max={armF.max} step={armF.step}
       estimated={app.body.armLength == null}
       hint="Arm hanging straight: bony point of the shoulder to the centre of your closed fist"
-      bind:value={() => Math.round((app.body.armLength ?? 0.375 * app.body.height) / 1) / 10, (v) => (app.body.armLength = v * 10)}
+      bind:value={() => toDisplay(app.body.armLength ?? 0.375 * app.body.height, armF), (v) => (app.body.armLength = fromDisplay(v, armF))}
     />
     {#if app.body.armLength != null}
       <button type="button" class="link" onclick={() => (app.body.armLength = null)}>Use estimate</button>
@@ -88,9 +106,9 @@
     <div class="two">
       {#each keys as k (k)}
         <NumberField
-          label={SEGMENT_LABELS[k]} unit="mm" min={50} max={900} step={5}
+          label={SEGMENT_LABELS[k]} unit={segF.unit} min={segF.min} max={segF.max} step={segF.step}
           estimated={app.body.overrides[k] == null}
-          bind:value={() => getOv(k), (v) => (app.body.overrides[k] = v)}
+          bind:value={() => toDisplay(getOv(k), segF), (v) => (app.body.overrides[k] = fromDisplay(v, segF))}
         />
       {/each}
     </div>
