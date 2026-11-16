@@ -1,7 +1,7 @@
 import type { Body, Components, FitParams, Frame, PartOptions } from './types';
 
 export const DEFAULT_BODY: Body = {
-  height: 1780, inseam: 840, flexibility: 'medium', shoeSize: null, armLength: null, ankling: 'neutral', overrides: {},
+  height: 1780, inseam: 840, flexibility: 'medium', shoeSize: 43, armLength: null, ankling: 'neutral', overrides: {},
 };
 
 export const DEFAULT_COMPONENTS: Components = {

@@ -45,15 +45,12 @@
   <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly.</p>
 
   <label class="shoe">
-    <span class="l">Shoe size {#if app.body.shoeSize == null}<span class="estb">est.</span>{/if}</span>
-    <select
-      value={app.body.shoeSize == null ? '' : String(app.body.shoeSize)}
-      onchange={(e) => (app.body.shoeSize = e.currentTarget.value ? Number(e.currentTarget.value) : null)}
-    >
-      <option value="">Estimate from height</option>
+    <span class="l">Shoe size</span>
+    <select value={String(app.body.shoeSize)} onchange={(e) => (app.body.shoeSize = Number(e.currentTarget.value))}>
       {#each shoes as s (s)}<option value={String(s)}>{shoeLabel(s)}</option>{/each}
     </select>
   </label>
+  <p class="muted small hint">The size of your cycling shoes.</p>
 
   <h2>Flexibility</h2>
   <Segmented options={flex} bind:value={app.body.flexibility} ariaLabel="Flexibility" />
@@ -115,7 +112,6 @@
   .shoe { display: block; margin-top: 4px; }
   .l, .label { display: block; font-weight: 600; font-size: 13px; margin-bottom: 4px; }
   .label { margin-top: 12px; }
-  .estb { font-size: 11px; color: var(--muted); background: var(--surface-2); border-radius: 999px; padding: 1px 6px; }
   .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
   .hid { margin-top: 22px; }
 </style>

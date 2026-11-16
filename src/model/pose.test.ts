@@ -4,11 +4,11 @@ import { forwardLayout } from './geometry';
 import { evaluateFit, riderPose, solveLeg } from './pose';
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
 import { makeContext } from './riding';
-import { SPIKE_FRAME } from './testFrames';
+import { SPIKE_BODY, SPIKE_FRAME } from './testFrames';
 import type { Ankling, Frame, PoseTarget } from './types';
 import { len, sub } from './vec';
 
-const seg = resolveSegments(DEFAULT_BODY);
+const seg = resolveSegments(SPIKE_BODY);
 const P = { ...DEFAULT_PARAMS };
 const layout = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, P);
 const ctx = (a: Ankling = 'neutral', wkg = 2.5) => ({
@@ -68,7 +68,7 @@ describe('evaluateFit', () => {
     expect(riderPose(seg, L, ctx(), 'hoods', 160, 0).elbowAngle).toBeCloseTo(180, 3);
   });
   it('flags an overextended leg with a high saddle on a short rider', () => {
-    const s = resolveSegments({ ...DEFAULT_BODY, height: 1650, inseam: 770 });
+    const s = resolveSegments({ ...SPIKE_BODY, height: 1650, inseam: 770 });
     const L = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, saddleHeight: 900 });
     expect(evaluateFit(s, L, ctx(), targets()).poses[0].overextended).toBe(true);
   });
@@ -78,7 +78,7 @@ describe('toe clearance', () => {
   const tg = targets();
   it('overlaps on a small frame with a short rider', () => {
     const f: Frame = { ...SPIKE_FRAME, stack: 545, reach: 385, headTubeAngle: 73, chainstay: 408, wheelbase: 985 };
-    const s = resolveSegments({ ...DEFAULT_BODY, height: 1600, inseam: 740 });
+    const s = resolveSegments({ ...DEFAULT_BODY, height: 1600, inseam: 740, overrides: { footLength: 0.152 * 1600 } });
     const c = makeContext(f, DEFAULT_COMPONENTS, 'neutral', 'tempo');
     const L = forwardLayout(f, DEFAULT_COMPONENTS, { ...P, saddleHeight: 650, crankLength: 170 });
     expect(evaluateFit(s, L, c, tg).toeClearance).toBeCloseTo(-11.6, 1);

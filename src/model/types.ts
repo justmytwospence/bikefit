@@ -30,7 +30,8 @@ export interface Body {
   height: number;
   inseam: number;
   flexibility: Flexibility;
-  shoeSize: number | null;
+  /** EU shoe size; people know this, so it is asked for rather than estimated. */
+  shoeSize: number;
   armLength: number | null;
   ankling: Ankling;
   overrides: SegmentOverrides;

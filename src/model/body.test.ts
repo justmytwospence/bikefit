@@ -7,11 +7,13 @@ describe('resolveSegments', () => {
     const s = resolveSegments(DEFAULT_BODY);
     expect(s.femur).toBeCloseTo(437.87, 1);
     expect(s.torso).toBeCloseTo(512.64, 2);
-    expect(s.footLength).toBeCloseTo(270.56, 2);
-    expect(s.footBack).toBeCloseTo(148.81, 2);
   });
-  it('derives foot length from shoe size', () => {
-    expect(resolveSegments({ ...DEFAULT_BODY, shoeSize: 43 }).footLength).toBeCloseTo(269.67, 2);
+  it('derives foot length from shoe size, not height', () => {
+    const s = resolveSegments({ ...DEFAULT_BODY, shoeSize: 43 });
+    expect(s.footLength).toBeCloseTo(269.67, 2);
+    expect(s.footBack).toBeCloseTo(0.55 * 269.67, 1);
+    expect(resolveSegments({ ...DEFAULT_BODY, shoeSize: 43, height: 1600 }).footLength).toBeCloseTo(269.67, 2);
+    expect(resolveSegments({ ...DEFAULT_BODY, shoeSize: 46 }).footLength).toBeCloseTo(289.67, 2);
   });
   it('scales the arm from a measured arm length; overrides still win', () => {
     const s = resolveSegments({ ...DEFAULT_BODY, armLength: 700 });

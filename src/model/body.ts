@@ -8,7 +8,7 @@ export function resolveSegments(body: Body): Segments {
     femur: 0.245 * H * k,
     tibia: 0.246 * H * k,
     ankleHeight: 0.039 * H * k,
-    footLength: body.shoeSize ? (body.shoeSize * 20) / 3 - 17 : 0.152 * H,
+    footLength: (body.shoeSize * 20) / 3 - 17,
     pelvis: 0.05 * H,
     pelvicShare: { low: 0.35, medium: 0.5, high: 0.6 }[body.flexibility],
     kneeFront: 0.022 * H,

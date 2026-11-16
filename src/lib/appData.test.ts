@@ -20,6 +20,12 @@ describe('migrate', () => {
     expect(m.frames[0].tyreWidth).toBe(30);
     expect(m.detail.global).toBe(1);
     expect(m.locks.cleatOffset).toBe(false);
+    expect(m.body.shoeSize).toBe(43);
+  });
+  it('replaces a stored null shoe size with the default', () => {
+    const d: any = defaults();
+    d.body.shoeSize = null;
+    expect(migrate(d)!.body.shoeSize).toBe(43);
   });
   it('rejects junk', () => {
     expect(migrate(null)).toBeNull();
