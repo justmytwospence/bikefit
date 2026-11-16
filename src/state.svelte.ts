@@ -1,55 +1,25 @@
 import { runCompare, runOptimize } from './lib/optimizeClient';
+import {
+  defaults, effectiveLocks, level, migrate, type AppData, type Level, type SectionId,
+} from './lib/appData';
 import { resolveSegments } from './model/body';
 import type { CompareRow, FitProblem } from './model/optimize';
-import {
-  DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES,
-} from './model/presets';
+import { EXAMPLE_FRAMES } from './model/presets';
+import { poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
-import type { Body, Components, FitParams, Frame, ParamKey, PartOptions, StyleId } from './model/types';
+import type { FitParams, Frame } from './model/types';
 
-export type Tab = 'rider' | 'bike' | 'fit' | 'compare';
+export type { Tab } from './lib/appData';
 
-export interface AppData {
-  v: 1;
-  body: Body;
-  styleId: StyleId;
-  frames: Frame[];
-  activeFrameId: string;
-  components: Components;
-  options: PartOptions;
-  current: FitParams;
-  baseline: FitParams;
-  locks: Record<ParamKey, boolean>;
-  tab: Tab;
-}
-
-const KEY = 'bikefit:v1';
-
-function defaults(): AppData {
-  return structuredClone({
-    v: 1 as const,
-    body: DEFAULT_BODY,
-    styleId: 'endurance' as StyleId,
-    frames: EXAMPLE_FRAMES,
-    activeFrameId: 'endurance-56',
-    components: DEFAULT_COMPONENTS,
-    options: DEFAULT_OPTIONS,
-    current: DEFAULT_PARAMS,
-    baseline: DEFAULT_PARAMS,
-    locks: {
-      saddleHeight: false, railOffset: false, seatpostSetback: false, spacers: false,
-      stemLength: false, stemAngle: false, crankLength: false,
-    },
-    tab: 'fit' as Tab,
-  });
-}
+const KEY = 'bikefit:v2';
+const OLD_KEY = 'bikefit:v1';
 
 function load(): AppData {
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(KEY) ?? localStorage.getItem(OLD_KEY);
     if (raw) {
-      const d = JSON.parse(raw);
-      if (d && d.v === 1 && Array.isArray(d.frames) && d.frames.length > 0) return { ...defaults(), ...d };
+      const d = migrate(JSON.parse(raw));
+      if (d) return d;
     }
   } catch {
     /* fall through to defaults */
@@ -70,6 +40,7 @@ export const ui = $state({
   crank: 0,
   playing: false,
   animate: false,
+  viewPose: 'hoods' as 'hoods' | 'drops',
 });
 
 export function save() {
@@ -91,15 +62,26 @@ export function problem(mode: 'tune' | 'shop'): FitProblem {
   return snap({
     segments: resolveSegments(app.body),
     inseam: app.body.inseam,
-    bands: bandsFor(st, app.body.flexibility),
-    elbowPref: st.poses[0].elbowPref,
+    targets: bandsFor(st, app.body.flexibility),
+    poseWeights: poseWeights(app.hands ?? st.defaultHands),
+    ankling: app.body.ankling,
+    effort: app.effort ?? st.defaultEffort,
     frame: activeFrame(),
     components: app.components,
     options: app.options,
     baseline: app.baseline,
-    locks: app.locks,
+    locks: effectiveLocks(level(app, 'setup'), app.locks),
     mode,
   });
+}
+
+export function setGlobalDetail(l: Level) {
+  app.detail.global = l;
+  app.detail.overrides = {};
+}
+
+export function setSectionDetail(s: SectionId, l: Level) {
+  app.detail.overrides[s] = l;
 }
 
 export function clearGhost() {
@@ -150,7 +132,10 @@ export function markAsMine() {
 
 export function compareKey(): string {
   return JSON.stringify(
-    snap({ body: app.body, styleId: app.styleId, frames: app.frames, components: app.components, options: app.options }),
+    snap({
+      body: app.body, styleId: app.styleId, frames: app.frames, components: app.components,
+      options: app.options, effort: app.effort, hands: app.hands,
+    }),
   );
 }
 

@@ -1,6 +1,6 @@
 <script lang="ts">
   let {
-    label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, locked = $bindable(false), hint, onedit,
+    label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, locked = $bindable(false), hint, onedit, showLock = true,
   }: {
     label: string;
     value: number;
@@ -12,6 +12,7 @@
     locked?: boolean;
     hint?: string;
     onedit?: () => void;
+    showLock?: boolean;
   } = $props();
   const pct = $derived(Math.max(0, Math.min(100, ((value - min) / (max - min)) * 100)));
 </script>
@@ -23,7 +24,7 @@
     {#if Math.abs(delta) >= 0.5}
       <span class="delta">{delta > 0 ? '+' : '−'}{Math.abs(delta) % 1 ? Math.abs(delta).toFixed(1) : Math.abs(delta)}</span>
     {/if}
-    <button
+    {#if showLock}<button
       type="button" class="lock" class:on={locked} aria-pressed={locked} aria-label="Lock {label}"
       title="Lock: optimizer won't change this" onclick={() => (locked = !locked)}
     >
@@ -31,7 +32,7 @@
         <rect x="5" y="11" width="14" height="9" rx="2" />
         {#if locked}<path d="M8 11V8a4 4 0 0 1 8 0v3" />{:else}<path d="M8 11V8a4 4 0 0 1 7.5-2" />{/if}
       </svg>
-    </button>
+    </button>{/if}
   </div>
   <input
     type="range" {min} {max} {step} bind:value style="--p:{pct}%" aria-label={label}

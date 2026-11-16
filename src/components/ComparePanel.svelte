@@ -1,12 +1,13 @@
 <script lang="ts">
+  import { level } from '../lib/appData';
   import { STYLES } from '../model/styles';
   import { app, compareKey, runCompareAll, ui, useCompareRow } from '../state.svelte';
   import ScoreRing from './ScoreRing.svelte';
 
   const stale = $derived(!!ui.compareRows && ui.compareKey !== compareKey());
   const OK = 'Every angle is inside its target range.';
-  const build = (p: { stemLength: number; stemAngle: number; spacers: number; crankLength: number; seatpostSetback: number }) =>
-    `${p.stemLength} mm ${p.stemAngle < 0 ? '−' : p.stemAngle > 0 ? '+' : ''}${Math.abs(p.stemAngle)}° stem · ${p.spacers} mm spacers · ${p.crankLength} mm cranks · ${p.seatpostSetback === 0 ? 'inline post' : p.seatpostSetback + ' mm setback'}`;
+  const build = (p: { stemLength: number; stemAngle: number; spacers: number; crankLength: number; seatpostSetback: number; cleatOffset: number }) =>
+    `${p.stemLength} mm ${p.stemAngle < 0 ? '−' : p.stemAngle > 0 ? '+' : ''}${Math.abs(p.stemAngle)}° stem · ${p.spacers} mm spacers · ${p.crankLength} mm cranks · ${p.seatpostSetback === 0 ? 'inline post' : p.seatpostSetback + ' mm setback'}${level(app, 'setup') >= 2 ? ` · cleats ${p.cleatOffset} mm back` : ''}`;
 </script>
 
 <div class="scroll">

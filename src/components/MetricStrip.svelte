@@ -1,29 +1,45 @@
 <script lang="ts">
-  import { status } from '../model/score';
-  import { METRIC_LABELS, METRIC_ORDER } from '../model/styles';
-  import type { Band, Evaluation, MetricId } from '../model/types';
+  import type { Level } from '../lib/appData';
+  import { metricCost, status } from '../model/score';
+  import { METRIC_LABELS, METRIC_ORDER, SIMPLE_METRICS } from '../model/styles';
+  import type { Band, MetricId, PoseEval, PoseTarget } from '../model/types';
 
-  let { evaluation, bands }: { evaluation: Evaluation; bands: Record<MetricId, Band> } = $props();
+  let { poseEval, target, level }: { poseEval: PoseEval; target: PoseTarget; level: Level } = $props();
+
+  const ids = $derived(
+    METRIC_ORDER.filter((k) => {
+      const b = target.bands[k];
+      if (!b) return false;
+      if (level === 1) return SIMPLE_METRICS.includes(k);
+      if (level === 2) return b.weight > 0;
+      return true;
+    }),
+  );
 
   const pos = (v: number, b: Band) => {
     const lo = b.min - 3 * b.scale;
     const hi = b.max + 3 * b.scale;
     return Math.max(0, Math.min(100, ((v - lo) / (hi - lo)) * 100));
   };
+  const text = (k: MetricId, v: number, b: Band) => (k === 'seatAngle' ? v.toFixed(1) : String(Math.round(v)));
+  const unit = (u: string) => (u === 'mm' ? 'mm' : u);
 </script>
 
 <div class="strip">
-  {#each METRIC_ORDER as k (k)}
-    {@const b = bands[k]}
-    {@const v = evaluation.metrics[k]}
+  {#each ids as k (k)}
+    {@const b = target.bands[k]!}
+    {@const v = poseEval.metrics[k]}
     {@const st = status(v, b)}
-    <div class="card" title="{METRIC_LABELS[k].long}: target {Math.round(b.min)}–{Math.round(b.max)}{b.unit}">
+    <div class="card" title="{METRIC_LABELS[k].long}: target {b.min}–{b.max}{unit(b.unit)}">
       <div class="name">{METRIC_LABELS[k].short}</div>
-      <div class="num">{Math.round(v)}<span>{b.unit}</span></div>
+      <div class="num">{text(k, v, b)}<span>{unit(b.unit)}</span></div>
       <div class="bar">
-        <div class="band" style="left:{pos(b.min, b)}%; width:{pos(b.max, b) - pos(b.min, b)}%"></div>
+        {#if st !== 'info'}
+          <div class="band" style="left:{pos(b.min, b)}%; width:{pos(b.max, b) - pos(b.min, b)}%"></div>
+        {/if}
         <div class="dot" style="left:{pos(v, b)}%; background:var(--{st})"></div>
       </div>
+      {#if level === 3}<div class="cost">cost {metricCost(v, b).toFixed(2)}</div>{/if}
     </div>
   {/each}
 </div>
@@ -42,5 +58,8 @@
   .bar { position: relative; height: 10px; margin-top: 4px; background: var(--surface-2); border-radius: 5px; }
   .band { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--ok) 28%, transparent); border-radius: 5px; }
   .dot { position: absolute; top: 0; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; transition: left 0.2s; }
-  @media (min-width: 900px) { .strip { display: grid; grid-template-columns: repeat(6, 1fr); overflow: visible; padding: 10px 16px; } }
+  .cost { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  @media (min-width: 900px) {
+    .strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(78px, 1fr)); overflow: visible; padding: 10px 16px; }
+  }
 </style>

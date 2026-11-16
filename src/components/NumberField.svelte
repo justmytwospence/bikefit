@@ -1,6 +1,6 @@
 <script lang="ts">
   let {
-    label, value = $bindable(), unit = '', min, max, step = 1, hint, placeholder,
+    label, value = $bindable(), unit = '', min, max, step = 1, hint, placeholder, estimated = false,
   }: {
     label: string;
     value: number;
@@ -10,6 +10,7 @@
     step?: number;
     hint?: string;
     placeholder?: string;
+    estimated?: boolean;
   } = $props();
 
   const round = (n: number) => Math.round(n * 1000) / 1000;
@@ -27,7 +28,7 @@
 </script>
 
 <label class="nf">
-  <span class="l">{label}{#if unit} <span class="muted">({unit})</span>{/if}</span>
+  <span class="l">{label}{#if unit} <span class="muted">({unit})</span>{/if}{#if estimated} <span class="est">est.</span>{/if}</span>
   <span class="row">
     <button type="button" aria-label="Decrease {label}" onclick={() => bump(-step)}>−</button>
     <input type="number" inputmode="decimal" {step} {min} {max} {placeholder} value={value} oninput={input} onblur={blur} />
@@ -42,5 +43,6 @@
   .row { display: flex; gap: 6px; }
   button { flex: none; width: 44px; min-height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-size: 20px; line-height: 1; }
   input { text-align: center; min-width: 0; }
+  .est { font-size: 11px; font-weight: 600; color: var(--muted); background: var(--surface-2); border-radius: 999px; padding: 1px 6px; margin-left: 2px; }
   .hint { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
 </style>
