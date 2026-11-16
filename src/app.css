@@ -17,7 +17,6 @@
   --pedal: #3a3a40;
   --part: #6b6b70;
   --helmet: var(--accent);
-  --jersey: #b9583a;
   --frame: #a8adb4;
   --rider: #26262b;
   --radius: 14px;
@@ -38,7 +37,6 @@
     --shoe: #d8d8de;
     --shoe-far: #45454c;
     --part: #8a8a92;
-    --jersey: #d0714f;
     --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.3);
   }
 }

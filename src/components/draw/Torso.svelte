@@ -1,26 +1,14 @@
 <script lang="ts">
-  import { TENSION, torsoArt, type ArtBody } from '../../draw/body';
-  import { smoothClosedPath } from '../../draw/shapes';
+  import { HEAD_R, headCenter } from '../../draw/body';
   import type { RiderPose } from '../../model/pose';
-  import type { Vec2 } from '../../model/vec';
+  import { pts } from './line';
 
-  let { pose, body, saddle, nose, variant = 'near' }: {
-    pose: RiderPose;
-    body: ArtBody;
-    saddle: Vec2;
-    nose: Vec2;
-    variant?: 'near' | 'ghost';
-  } = $props();
-  const art = $derived(torsoArt(pose, body, saddle, nose));
-  const d = (pts: Vec2[]) => smoothClosedPath(pts, TENSION);
+  let { pose, height, variant = 'near' }: { pose: RiderPose; height: number; variant?: 'near' | 'ghost' } = $props();
+  const head = $derived(headCenter(pose, height));
+  const ghost = $derived(variant === 'ghost');
 </script>
 
-<g fill="var(--rider)" stroke="none" opacity={variant === 'ghost' ? 0.14 : 1}>
-  <path d={d(art.torso)} />
-  <path d={d(art.seat)} />
-  <path d={d(art.head)} />
+<g stroke="var(--rider)" fill="none" opacity={ghost ? 0.25 : 1} stroke-dasharray={ghost ? '18 14' : undefined}>
+  <polyline points={pts(pose.hip, pose.shoulder, head)} stroke-width="12" />
+  <circle cx={head.x} cy={head.y} r={HEAD_R * height} stroke-width="10" fill={ghost ? 'none' : 'var(--bg)'} />
 </g>
-{#if variant === 'near'}
-  <path d={d(art.jersey)} fill="var(--jersey)" stroke="none" />
-  <path d={d(art.helmet)} fill="var(--helmet)" stroke="none" />
-{/if}

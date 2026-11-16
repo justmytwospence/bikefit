@@ -1,19 +1,12 @@
 <script lang="ts">
-  import { armArt, TENSION, type ArtBody } from '../../draw/body';
-  import { smoothClosedPath } from '../../draw/shapes';
   import type { RiderPose } from '../../model/pose';
-  import type { Vec2 } from '../../model/vec';
+  import { pts } from './line';
 
-  let { pose, body, variant = 'near' }: { pose: RiderPose; body: ArtBody; variant?: 'near' | 'ghost' } = $props();
-  const art = $derived(armArt(pose, body));
-  const d = (pts: Vec2[]) => smoothClosedPath(pts, TENSION);
+  let { pose, variant = 'near' }: { pose: RiderPose; variant?: 'near' | 'ghost' } = $props();
+  const ghost = $derived(variant === 'ghost');
 </script>
 
-<g fill="var(--rider)" stroke="none" opacity={variant === 'ghost' ? 0.14 : 1}>
-  <path d={d(art.upper)} />
-  <path d={d(art.forearm)} />
-  <path d={d(art.fist)} />
-</g>
-{#if variant === 'near'}
-  <path d={d(art.sleeve)} fill="var(--jersey)" stroke="none" />
-{/if}
+<polyline
+  points={pts(pose.shoulder, pose.elbow, pose.hand)} stroke="var(--rider)" stroke-width="12" fill="none"
+  opacity={ghost ? 0.25 : 1} stroke-dasharray={ghost ? '18 14' : undefined}
+/>

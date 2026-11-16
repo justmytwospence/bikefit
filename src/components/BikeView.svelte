@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { halfDepth } from '../draw/body';
+  import { HEAD_R, headCenter } from '../draw/body';
   import { distToSegment, placeLabel, type Obstacle } from '../draw/shapes';
   import type { Level } from '../lib/appData';
   import { frameSkeleton } from '../model/geometry';
   import type { RiderPose } from '../model/pose';
   import { status } from '../model/score';
   import type {
-    Components, FitParams, Frame, Layout, MetricId, PoseEval, PoseTarget, Segments, Sex,
+    Components, FitParams, Frame, Layout, MetricId, PoseEval, PoseTarget, Segments,
   } from '../model/types';
   import { deg, type Vec2 } from '../model/vec';
   import { ui } from '../state.svelte';
@@ -19,7 +19,7 @@
   import Segmented from './Segmented.svelte';
 
   let {
-    frame, components, layout, pose, farPose, ghostPose, ideal, target, poseEval, level, height, seg, params, sex,
+    frame, components, layout, pose, farPose, ghostPose, ideal, target, poseEval, level, height, seg, params,
     toeTip, toeClearance, peakCrank,
   }: {
     frame: Frame;
@@ -35,16 +35,14 @@
     height: number;
     seg: Segments;
     params: FitParams;
-    sex: Sex;
     toeTip: Vec2 | null;
     toeClearance: number;
     peakCrank: number;
   } = $props();
 
   const sk = $derived(frameSkeleton(frame));
-  const body = $derived({ sex, height });
-  const hd = (s: Parameters<typeof halfDepth>[1]) => halfDepth(sex, s, height);
-  const ob = (s: Parameters<typeof halfDepth>[1]) => hd(s) * 0.8;
+  const LINE = 14; // obstacle radius for the skeleton lines, mm
+  const head = $derived(headCenter(pose, height));
   const vb = $derived.by(() => {
     const minX = sk.rearAxle.x - 380;
     const maxX = sk.frontAxle.x + 380;
@@ -75,22 +73,23 @@
   }
 
   const obstacles = $derived<Obstacle[]>([
-    { a: pose.hip, b: pose.knee, r: ob('thigh') },
-    { a: pose.knee, b: pose.ankle, r: ob('calf') },
-    { a: pose.hip, b: pose.shoulder, r: ob('torso') },
-    { a: layout.saddle, b: pose.hip, r: ob('torso') },
-    { a: pose.shoulder, b: pose.elbow, r: ob('upperArm') },
-    { a: pose.elbow, b: pose.hand, r: ob('forearm') },
-    { a: pose.head, b: pose.head, r: ob('head') },
+    { a: pose.hip, b: pose.knee, r: LINE },
+    { a: pose.knee, b: pose.ankle, r: LINE },
+    { a: pose.hip, b: pose.shoulder, r: LINE },
+    { a: pose.shoulder, b: head, r: LINE },
+    { a: pose.shoulder, b: pose.elbow, r: LINE },
+    { a: pose.elbow, b: pose.hand, r: LINE },
+    { a: head, b: head, r: HEAD_R * height },
+    { a: layout.saddle, b: layout.nose, r: 20 },
   ]);
 
   const joints = $derived.by(() => {
     const p = pose;
     const defs: { id: MetricId; c: Vec2; a: number; b: number; r: number; value: number }[] = ([
-      { id: 'knee', c: p.knee, a: ang(p.knee, p.hip), b: ang(p.knee, p.ankle), r: hd('calf') + 45, value: p.kneeAngle },
-      { id: 'hip', c: p.hip, a: ang(p.hip, p.shoulder), b: ang(p.hip, p.knee), r: hd('torso') + 45, value: p.hipAngle },
-      { id: 'shoulder', c: p.shoulder, a: ang(p.shoulder, p.hip), b: ang(p.shoulder, p.elbow), r: hd('torso') * 0.8 + 30, value: p.shoulderAngle },
-      { id: 'elbow', c: p.elbow, a: ang(p.elbow, p.shoulder), b: ang(p.elbow, p.hand), r: hd('upperArm') + 30, value: p.elbowAngle },
+      { id: 'knee', c: p.knee, a: ang(p.knee, p.hip), b: ang(p.knee, p.ankle), r: 85, value: p.kneeAngle },
+      { id: 'hip', c: p.hip, a: ang(p.hip, p.shoulder), b: ang(p.hip, p.knee), r: 85, value: p.hipAngle },
+      { id: 'shoulder', c: p.shoulder, a: ang(p.shoulder, p.hip), b: ang(p.shoulder, p.elbow), r: 70, value: p.shoulderAngle },
+      { id: 'elbow', c: p.elbow, a: ang(p.elbow, p.shoulder), b: ang(p.elbow, p.hand), r: 65, value: p.elbowAngle },
       { id: 'torso', c: p.hip, a: 0, b: ang(p.hip, p.shoulder), r: 220, value: p.torsoAngle },
     ] as typeof defs).filter((d) => (d.id !== 'hip' || ui.playing) && (level >= 2 || d.id === 'knee' || d.id === 'torso' || d.id === 'hip'));
     const placed: Obstacle[] = [];
@@ -136,7 +135,7 @@
       <line x1={vb.x} x2={vb.x + vb.w} y1={groundY} y2={groundY} stroke="var(--line)" stroke-width="4" />
 
       <Leg
-        pose={farPose} {seg} {body} saddle={layout.saddle} nose={layout.nose} footStack={components.footStack} cleatOffset={params.cleatOffset} variant="far"
+        pose={farPose} {seg} footStack={components.footStack} cleatOffset={params.cleatOffset} variant="far"
       />
       <line x1="0" y1="0" x2={farPose.spindle.x} y2={farPose.spindle.y} stroke="var(--rider-far)" stroke-width="14" />
 
@@ -146,17 +145,17 @@
       <circle cx="0" cy="0" r="16" fill="var(--ink)" stroke="none" />
 
       {#if ghostPose}
-        <Torso pose={ghostPose} {body} saddle={layout.saddle} nose={layout.nose} variant="ghost" />
-        <Leg pose={ghostPose} {seg} {body} saddle={layout.saddle} nose={layout.nose} footStack={components.footStack} cleatOffset={params.cleatOffset} variant="ghost" />
-        <Arm pose={ghostPose} {body} variant="ghost" />
+        <Torso pose={ghostPose} {height} variant="ghost" />
+        <Leg pose={ghostPose} {seg} footStack={components.footStack} cleatOffset={params.cleatOffset} variant="ghost" />
+        <Arm pose={ghostPose} variant="ghost" />
       {/if}
 
-      <Torso {pose} {body} saddle={layout.saddle} nose={layout.nose} />
+      <Torso {pose} {height} />
       <Leg
-        {pose} {seg} {body} saddle={layout.saddle} nose={layout.nose} footStack={components.footStack} cleatOffset={params.cleatOffset}
+        {pose} {seg} footStack={components.footStack} cleatOffset={params.cleatOffset}
         showBallMark={level >= 2}
       />
-      <Arm {pose} {body} />
+      <Arm {pose} />
 
       {#each targets as t (t.key)}
         {@const d = Math.hypot(t.cur.x - t.tgt.x, t.cur.y - t.tgt.y)}
@@ -178,11 +177,9 @@
       {/each}
 
 
-      {#if level === 3}
-        {#each [pose.hip, pose.knee, pose.ankle, pose.shoulder, pose.elbow] as j}
-          <circle cx={j.x} cy={j.y} r="8" fill="var(--surface)" stroke="none" />
-        {/each}
-      {/if}
+      {#each [pose.hip, pose.knee, pose.ankle, pose.shoulder, pose.elbow, pose.hand] as j}
+        <circle cx={j.x} cy={j.y} r="16" fill="var(--bg)" stroke="var(--rider)" stroke-width="7" />
+      {/each}
 
       {#if level >= 2 && toeTip && toeClearance < 10}
         <circle cx={toeTip.x} cy={toeTip.y} r="26" stroke={toeClearance < 0 ? 'var(--off)' : 'var(--near)'} stroke-width="8" />
