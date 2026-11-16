@@ -11,6 +11,14 @@ Four concepts are kept separate:
 
 The Compare tab ranks all saved frames for your body and style, with the build each needs.
 
+## Detail levels
+
+Every section (Rider, Bike, Setup, Results) has a Simple, Detailed and Expert level, set globally from the header menu and overridable per section. Inputs are things you can measure or already know; hidden inputs keep their estimated or entered values. At Simple, Optimize only changes the visible setup knobs (saddle height and setback, spacers, stem).
+
+## What is modelled
+
+Feet (shoe size, cleat position, ankling), pelvic tilt, effective seat angle, hand load at your effort level (a whole-body balance estimate), knee angle at the top of the stroke, a second drops pose, toe overlap and contact-point readouts. Knee-over-pedal is shown for information only.
+
 ```sh
 npm install
 npm run dev     # local dev server
@@ -19,6 +27,6 @@ npm run check   # svelte-check
 npm run build
 ```
 
-Needs Node 22 (`.nvmrc`). Angle bands and body proportions are heuristics kept in `src/model/styles.ts` and `src/model/body.ts`.
+Needs Node 22 (`.nvmrc`). Angle bands, hand-load bands and body proportions are heuristics kept in `src/model/styles.ts`, `src/model/body.ts` and `src/model/pose.ts`.
 
 A starting point, not a substitute for a professional fit.
