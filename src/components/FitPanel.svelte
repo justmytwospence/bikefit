@@ -8,6 +8,7 @@
   import {
     activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, ui, undo,
   } from '../state.svelte';
+  import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
   import DetailToggle from './DetailToggle.svelte';
   import SliderField from './SliderField.svelte';
@@ -37,11 +38,14 @@
 <DetailToggle section="setup" />
 <div class="scroll">
   <h2>Saddle</h2>
+  <div use:measure={'saddleHeight'}>
   <SliderField
     label="Saddle height" min={o.saddleHeightRange[0]} max={o.saddleHeightRange[1]} step={0.5}
     bind:value={app.current.saddleHeight} bind:locked={app.locks.saddleHeight} showLock={lv >= 2}
     delta={c.saddleHeight - b.saddleHeight} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
   />
+  </div>
+  <div use:measure={'setback'}>
   <SliderField
     label="Setback to saddle nose" min={Math.ceil(sbRange[0] * 2) / 2} max={Math.floor(sbRange[1] * 2) / 2} step={0.5}
     bind:value={() => Math.round(setback * 2) / 2, setSetback} bind:locked={app.locks.railOffset} showLock={lv >= 2}
@@ -52,12 +56,16 @@
       Rails: {c.railOffset === 0 ? 'centred' : Math.abs(c.railOffset) + ' mm ' + (c.railOffset > 0 ? 'forward' : 'back') + ' of centre'}
     </p>
   {/if}
+  </div>
   {#if lv >= 2}
+    <div use:measure={'cleat'}>
     <SliderField
       label="Cleat position" unit="mm back" min={o.cleatRange[0]} max={o.cleatRange[1]} step={1}
       bind:value={app.current.cleatOffset} bind:locked={app.locks.cleatOffset}
       delta={c.cleatOffset - b.cleatOffset} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
     />
+    </div>
+    <div use:measure={'setback'}>
     <div class="chiphead">
       <span>Seatpost setback</span>
       <label class="lk"><input type="checkbox" bind:checked={app.locks.seatpostSetback} /> Lock</label>
@@ -66,14 +74,18 @@
       options={o.seatpostSetbacks} bind:value={app.current.seatpostSetback} disabled={app.locks.seatpostSetback}
       format={setbackLabel} onedit={clearGhost}
     />
+    </div>
   {/if}
 
   <h2>Cockpit</h2>
+  <div use:measure={'spacers'}>
   <SliderField
     label="Spacers" min={0} max={frame.maxSpacers} step={o.spacerStep}
     bind:value={app.current.spacers} bind:locked={app.locks.spacers} showLock={lv >= 2}
     delta={c.spacers - b.spacers} onedit={clearGhost}
   />
+  </div>
+  <div use:measure={'stem'}>
   <div class="chiphead">
     <span>Stem length</span>
     {#if lv >= 2}<label class="lk"><input type="checkbox" bind:checked={app.locks.stemLength} /> Lock</label>{/if}
@@ -90,9 +102,11 @@
     options={o.stemAngles} bind:value={app.current.stemAngle} disabled={lv >= 2 && app.locks.stemAngle}
     format={(n) => (n === 0 ? '0°' : (n > 0 ? '+' : '−') + Math.abs(n) + '°')} onedit={clearGhost}
   />
+  </div>
 
   {#if lv >= 2}
     <h2>Drivetrain</h2>
+    <div use:measure={'crank'}>
     <div class="chiphead">
       <span>Crank length</span>
       <label class="lk"><input type="checkbox" bind:checked={app.locks.crankLength} /> Lock</label>
@@ -101,6 +115,7 @@
       options={o.crankLengths} bind:value={app.current.crankLength} disabled={app.locks.crankLength}
       format={(n) => n + ' mm'} onedit={clearGhost}
     />
+    </div>
   {:else}
     <p class="muted small fixed">
       Cranks {c.crankLength} mm · cleats {c.cleatOffset} mm back · {c.seatpostSetback === 0 ? 'inline' : c.seatpostSetback + ' mm setback'} seatpost. Change these in Detailed.

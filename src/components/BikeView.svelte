@@ -13,6 +13,8 @@
   import Bike from './draw/Bike.svelte';
   import Leg from './draw/Leg.svelte';
   import Torso from './draw/Torso.svelte';
+  import FootInset from './FootInset.svelte';
+  import Measurements from './draw/Measurements.svelte';
   import Segmented from './Segmented.svelte';
 
   let {
@@ -198,8 +200,13 @@
           <text transform="translate({j.lbl.x},{j.lbl.y}) scale(1,-1)">{Math.round(j.shownValue)}°</text>
         {/each}
       </g>
+      <Measurements id={ui.measure} {layout} {frame} {components} {params} {pose} {fs} />
     </g>
   </svg>
+
+  {#if ui.measure === 'cleat' || level === 3}
+    <FootInset {seg} footStack={components.footStack} cleatOffset={params.cleatOffset} />
+  {/if}
 
   <div class="legend">
     <span><i class="t"></i> target</span>

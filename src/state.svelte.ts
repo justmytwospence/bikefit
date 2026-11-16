@@ -7,6 +7,7 @@ import type { CompareRow, FitProblem } from './model/optimize';
 import { EXAMPLE_FRAMES } from './model/presets';
 import { poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
+import type { MeasureId } from './lib/measure';
 import type { FitParams, Frame } from './model/types';
 
 export type { Tab } from './lib/appData';
@@ -41,6 +42,7 @@ export const ui = $state({
   playing: false,
   animate: false,
   viewPose: 'hoods' as 'hoods' | 'drops',
+  measure: null as MeasureId | null,
 });
 
 export function save() {
