@@ -83,7 +83,7 @@ export function riderPose(
   const up = solveUpperBody(seg, hip, layout.hand, elbowPref);
   const leg = solveLeg(seg, hip, layout.crankLength, footStack, crankDeg);
   const H = seg.torso / 0.288;
-  const head = add(add(up.shoulder, scale(unit(sub(up.shoulder, hip)), 0.06 * H)), { x: 0.02 * H, y: 0.06 * H });
+  const head = add(add(up.shoulder, scale(unit(sub(up.shoulder, hip)), 0.03 * H)), { x: 0.02 * H, y: 0.03 * H });
   return {
     hip,
     knee: leg.knee,
