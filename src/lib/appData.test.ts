@@ -10,6 +10,8 @@ describe('migrate', () => {
     delete v1.hands;
     delete v1.current.cleatOffset;
     delete v1.locks.cleatOffset;
+    delete v1.body.shoeSizeAuto;
+    delete v1.body.sex;
     v1.frames = v1.frames.map((f: any) => {
       const { tyreWidth: _t, ...rest } = f;
       return rest;
@@ -21,12 +23,17 @@ describe('migrate', () => {
     expect(m.detail.global).toBe(1);
     expect(m.locks.cleatOffset).toBe(false);
     expect(m.body.shoeSize).toBe(43);
+    expect(m.body.shoeSizeAuto).toBe(false);
+    expect(m.body.sex).toBe('male');
     expect(m.units).toBe('metric');
   });
   it('replaces a stored null shoe size with the default', () => {
     const d: any = defaults();
     d.body.shoeSize = null;
-    expect(migrate(d)!.body.shoeSize).toBe(43);
+    delete d.body.shoeSizeAuto;
+    const m = migrate(d)!;
+    expect(m.body.shoeSize).toBe(43);
+    expect(m.body.shoeSizeAuto).toBe(true);
   });
   it('rejects junk', () => {
     expect(migrate(null)).toBeNull();

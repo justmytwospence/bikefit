@@ -3,19 +3,20 @@ import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
 import { costOf, idealLayout, optimizeFit, wrenchList, type FitProblem } from './optimize';
 import { evaluateFit } from './pose';
-import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
+import { TEST_BODY } from './testFrames';
+import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
 import { makeContext, poseWeights } from './riding';
 import { outside } from './score';
 import { bandsFor, STYLES } from './styles';
 import type { Evaluation, Frame, MetricId, PoseTarget, StyleId } from './types';
 
-const segments = resolveSegments(DEFAULT_BODY);
+const segments = resolveSegments(TEST_BODY);
 const frame = (id: string) => EXAMPLE_FRAMES.find((f) => f.id === id)!;
 
 function problem(style: StyleId, f: Frame, mode: 'shop' | 'tune' = 'shop'): FitProblem {
   const st = STYLES[style];
   return {
-    segments, inseam: DEFAULT_BODY.inseam, targets: bandsFor(st, 'medium'), poseWeights: poseWeights(st.defaultHands),
+    segments, inseam: TEST_BODY.inseam, targets: bandsFor(st, 'medium'), poseWeights: poseWeights(st.defaultHands),
     ankling: 'neutral', effort: st.defaultEffort, frame: f, components: DEFAULT_COMPONENTS,
     options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, locks: {}, mode,
   };

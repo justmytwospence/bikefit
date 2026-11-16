@@ -1,20 +1,42 @@
-import type { Body, Segments } from './types';
+import type { Body, Segments, Sex } from './types';
+
+/** Female proportions relative to male for the same height (ANSUR II means). */
+export const SEX_FACTORS: Record<
+  Sex,
+  Partial<Record<'torso' | 'forearmGrip' | 'femur' | 'tibia' | 'ankleHeight', number>>
+> = {
+  male: {},
+  female: { torso: 0.978, forearmGrip: 0.982, femur: 0.989, tibia: 1.009, ankleHeight: 0.928 },
+};
+
+/** EU shoe size suggested from sex and height (foot length regressions from ANSUR II). */
+export function suggestShoeSize(sex: Sex, height: number): number {
+  const footLength = sex === 'female' ? 18.5 + 0.1399 * height : 30.1 + 0.1373 * height;
+  const eu = Math.round(((footLength + 17) * 3) / 20 * 2) / 2;
+  return Math.min(50, Math.max(36, eu));
+}
+
+export function effectiveShoeSize(body: Body): number {
+  return body.shoeSizeAuto ? suggestShoeSize(body.sex, body.height) : body.shoeSize;
+}
 
 export function resolveSegments(body: Body): Segments {
   const H = body.height;
   const k = body.inseam / (0.47 * H);
-  const armScale = body.armLength ? body.armLength / (0.375 * H) : 1;
+  const f = SEX_FACTORS[body.sex];
+  const arm = 0.186 * H + 0.189 * H * (f.forearmGrip ?? 1);
+  const armScale = body.armLength ? body.armLength / arm : 1;
   const base = {
-    femur: 0.245 * H * k,
-    tibia: 0.246 * H * k,
-    ankleHeight: 0.039 * H * k,
-    footLength: (body.shoeSize * 20) / 3 - 17,
+    femur: 0.245 * H * k * (f.femur ?? 1),
+    tibia: 0.246 * H * k * (f.tibia ?? 1),
+    ankleHeight: 0.039 * H * k * (f.ankleHeight ?? 1),
+    footLength: (effectiveShoeSize(body) * 20) / 3 - 17,
     pelvis: 0.05 * H,
     pelvicShare: { low: 0.35, medium: 0.5, high: 0.6 }[body.flexibility],
     kneeFront: 0.022 * H,
-    torso: 0.288 * H,
+    torso: 0.288 * H * (f.torso ?? 1),
     upperArm: 0.186 * H * armScale,
-    forearmGrip: 0.189 * H * armScale,
+    forearmGrip: 0.189 * H * (f.forearmGrip ?? 1) * armScale,
     headRadius: 0.06 * H,
   };
   for (const key of Object.keys(body.overrides) as (keyof typeof body.overrides)[]) {

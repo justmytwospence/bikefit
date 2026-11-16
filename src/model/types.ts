@@ -1,6 +1,7 @@
 import type { Vec2 } from './vec';
 
 export type Flexibility = 'low' | 'medium' | 'high';
+export type Sex = 'male' | 'female';
 export type Ankling = 'heelDrop' | 'neutral' | 'toePoint';
 export type Effort = 'easy' | 'tempo' | 'hard';
 export type HandsPref = 'hoods' | 'mixed' | 'drops';
@@ -32,6 +33,9 @@ export interface Body {
   flexibility: Flexibility;
   /** EU shoe size; people know this, so it is asked for rather than estimated. */
   shoeSize: number;
+  /** While true the shoe size follows sex and height; picking a size turns it off. */
+  shoeSizeAuto: boolean;
+  sex: Sex;
   armLength: number | null;
   ankling: Ankling;
   overrides: SegmentOverrides;

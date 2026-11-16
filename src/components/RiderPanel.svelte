@@ -1,10 +1,10 @@
 <script lang="ts">
   import { hiddenRiderValues, level } from '../lib/appData';
-  import { resolveSegments, SEGMENT_LABELS } from '../model/body';
+  import { effectiveShoeSize, resolveSegments, SEGMENT_LABELS } from '../model/body';
   import { ANKLING, EFFORT_LABELS, HANDS_LABELS, shoeLabel } from '../model/riding';
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
   import { STYLES } from '../model/styles';
-  import type { Ankling, Effort, Flexibility, HandsPref } from '../model/types';
+  import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
   import { app, setSectionDetail } from '../state.svelte';
   import DetailToggle from './DetailToggle.svelte';
   import NumberField from './NumberField.svelte';
@@ -17,6 +17,10 @@
   const hidden = $derived(hiddenRiderValues(app));
   const shoes = Array.from({ length: 29 }, (_, i) => 36 + i * 0.5);
 
+  const sexes: { value: Sex; label: string }[] = [
+    { value: 'male', label: 'Male' },
+    { value: 'female', label: 'Female' },
+  ];
   const flex: { value: Flexibility; label: string }[] = [
     { value: 'low', label: 'Low' },
     { value: 'medium', label: 'Medium' },
@@ -39,6 +43,8 @@
 <DetailToggle section="rider" />
 <div class="scroll">
   <h2>Body</h2>
+  <Segmented options={sexes} bind:value={app.body.sex} ariaLabel="Body type" />
+  <p class="muted small hint sexhint">Sets typical proportions. Your own measurements override them.</p>
   <div class="two">
     {#if imperial}
       <NumberField
@@ -63,12 +69,18 @@
   <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly.</p>
 
   <label class="shoe">
-    <span class="l">Shoe size</span>
-    <select value={String(app.body.shoeSize)} onchange={(e) => (app.body.shoeSize = Number(e.currentTarget.value))}>
+    <span class="l">Shoe size {#if app.body.shoeSizeAuto}<span class="estb">suggested</span>{/if}</span>
+    <select
+      value={String(effectiveShoeSize(app.body))}
+      onchange={(e) => { app.body.shoeSize = Number(e.currentTarget.value); app.body.shoeSizeAuto = false; }}
+    >
       {#each shoes as s (s)}<option value={String(s)}>{shoeLabel(s, app.units)}</option>{/each}
     </select>
   </label>
   <p class="muted small hint">The size of your cycling shoes.</p>
+  {#if !app.body.shoeSizeAuto}
+    <button type="button" class="link" onclick={() => (app.body.shoeSizeAuto = true)}>Use suggested size</button>
+  {/if}
 
   <h2>Flexibility</h2>
   <Segmented options={flex} bind:value={app.body.flexibility} ariaLabel="Flexibility" />
@@ -127,6 +139,8 @@
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
   .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .hint { margin-top: 6px; }
+  .sexhint { margin-bottom: 14px; }
+  .estb { font-size: 11px; font-weight: 600; color: var(--muted); background: var(--surface-2); border-radius: 999px; padding: 1px 6px; margin-left: 2px; }
   .shoe { display: block; margin-top: 4px; }
   .l, .label { display: block; font-weight: 600; font-size: 13px; margin-bottom: 4px; }
   .label { margin-top: 12px; }

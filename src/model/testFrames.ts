@@ -2,7 +2,10 @@ import { DEFAULT_BODY } from './presets';
 import type { Body, Frame } from './types';
 
 /** The body the spike golden values were computed with (foot length 0.152·H). */
-export const SPIKE_BODY: Body = { ...DEFAULT_BODY, overrides: { footLength: 0.152 * 1780 } };
+export const SPIKE_BODY: Body = { ...DEFAULT_BODY, shoeSizeAuto: false, overrides: { footLength: 0.152 * 1780 } };
+
+/** Default rider with a fixed shoe size, so tests do not move when the suggestion changes. */
+export const TEST_BODY: Body = { ...DEFAULT_BODY, shoeSize: 43, shoeSizeAuto: false };
 
 export const SPIKE_FRAME: Frame = {
   id: 's', name: 's', stack: 565, reach: 385, seatTubeAngle: 73.5, headTubeAngle: 73,
