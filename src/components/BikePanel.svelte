@@ -1,9 +1,11 @@
 <script lang="ts">
   import { level } from '../lib/appData';
   import { activeFrame, app, deleteFrame, duplicateFrame, newFrame, selectFrame } from '../state.svelte';
+  import FramePicker from './FramePicker.svelte';
   import DetailToggle from './DetailToggle.svelte';
   import NumberField from './NumberField.svelte';
 
+  let picking = $state(false);
   const lv = $derived(level(app, 'bike'));
   const frame = $derived(activeFrame());
   const o = $derived(app.options);
@@ -17,10 +19,12 @@
     {#each app.frames as f (f.id)}<option value={f.id}>{f.name}</option>{/each}
   </select>
   <div class="btns">
+    <button type="button" class="btn small" onclick={() => (picking = !picking)}>Find a bike</button>
     <button type="button" class="btn small" onclick={duplicateFrame}>Duplicate</button>
     <button type="button" class="btn small" onclick={newFrame}>New</button>
     <button type="button" class="btn small" disabled={app.frames.length <= 1} onclick={() => deleteFrame(frame.id)}>Delete</button>
   </div>
+  {#if picking}<div class="card picker"><FramePicker onclose={() => (picking = false)} /></div>{/if}
 
   <h2>Frame geometry</h2>
   {#key frame.id}
@@ -35,7 +39,7 @@
         <NumberField label="Seat tube angle" unit="°" min={65} max={80} step={0.1} bind:value={frame.seatTubeAngle} />
         <NumberField label="Head tube angle" unit="°" min={65} max={80} step={0.1} bind:value={frame.headTubeAngle} />
         <NumberField label="Head tube length" unit="mm" min={80} max={260} step={1} bind:value={frame.headTubeLength} />
-        <NumberField label="Seat tube length" unit="mm" min={380} max={650} step={1} bind:value={frame.seatTubeLength} />
+        <NumberField label="Seat tube length" unit="mm" min={330} max={650} step={1} bind:value={frame.seatTubeLength} />
         <NumberField label="Chainstay" unit="mm" min={380} max={470} step={1} bind:value={frame.chainstay} />
         <NumberField label="Wheelbase" unit="mm" min={900} max={1200} step={1} bind:value={frame.wheelbase} />
         <NumberField label="BB drop" unit="mm" min={40} max={90} step={1} bind:value={frame.bbDrop} />
@@ -76,6 +80,7 @@
 
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
+  .picker { margin-top: 12px; }
   .btns { display: flex; gap: 8px; margin-top: 10px; }
   .grid { display: grid; grid-template-columns: 1fr; gap: 0 10px; }
   @media (min-width: 420px) { .grid { grid-template-columns: 1fr 1fr; } }

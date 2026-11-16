@@ -11,6 +11,8 @@ Four concepts are kept separate:
 
 The Compare tab ranks all saved frames for your body and style, with the build each needs.
 
+Find a bike (Bike tab) searches a bundled catalog of manufacturer geometry (`src/data/frames/`, one JSON file per brand, each model with its source URL) and copies a size, or every size, into your saved frames.
+
 ## Detail levels
 
 Every section (Rider, Bike, Setup, Results) has a Simple, Detailed and Expert level, set globally from the header menu and overridable per section. Inputs are things you can measure or already know; hidden inputs keep their estimated or entered values. At Simple, Optimize only changes the visible setup knobs (saddle height and setback, spacers, stem).
@@ -28,6 +30,8 @@ npm test        # model and optimizer tests
 npm run check   # svelte-check
 npm run build
 ```
+
+To add a frame model, edit its brand's file in `src/data/frames/`; `npm test` validates every entry.
 
 Needs Node 22 (`.nvmrc`). Angle bands, hand-load bands and body proportions are heuristics kept in `src/model/styles.ts`, `src/model/body.ts` and `src/model/pose.ts`.
 

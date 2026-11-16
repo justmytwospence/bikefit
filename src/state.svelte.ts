@@ -193,3 +193,20 @@ export function deleteFrame(id: string) {
   app.frames.splice(i, 1);
   if (app.activeFrameId === id) app.activeFrameId = app.frames[0].id;
 }
+
+export function addCatalogFrame(f: Frame) {
+  if (!app.frames.some((x) => x.id === f.id)) app.frames.push(structuredClone(f));
+  app.activeFrameId = f.id;
+  clearFeedback();
+}
+
+/** Saves every given frame not already saved; returns how many were new. Keeps the active frame. */
+export function addCatalogModel(frames: Frame[]): number {
+  let n = 0;
+  for (const f of frames) {
+    if (app.frames.some((x) => x.id === f.id)) continue;
+    app.frames.push(structuredClone(f));
+    n++;
+  }
+  return n;
+}
