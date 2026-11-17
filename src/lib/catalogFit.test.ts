@@ -3,7 +3,8 @@ import { toFrame } from '../data/catalog';
 import { FIXTURE } from '../data/fixture';
 import { forwardLayout } from '../model/geometry';
 import { DEFAULT_COMPONENTS, DEFAULT_PARAMS } from '../model/presets';
-import { screenCatalog } from './catalogFit';
+import { DEFAULT_OPTIONS } from '../model/presets';
+import { nearStems, screenCatalog } from './catalogFit';
 
 const tarmac = FIXTURE.find((m) => m.model === 'Tarmac SL8')!;
 const hoodsOf = (i: number) => {
@@ -30,5 +31,27 @@ describe('screenCatalog', () => {
   it('sorts nearest first', () => {
     const d = screenCatalog(FIXTURE, toFrame, DEFAULT_COMPONENTS, hoodsOf(3)).map((x) => x.dist);
     expect(d).toEqual([...d].sort((a, b) => a - b));
+  });
+});
+
+describe('nearStems', () => {
+  const f = toFrame(tarmac, tarmac.sizes[3]);
+  const hoods = forwardLayout(f, DEFAULT_COMPONENTS, { ...DEFAULT_PARAMS, spacers: 20 }).hoods;
+  it('keeps the current stem and angle when the hoods are already ideal', () => {
+    const r = nearStems(f, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, hoods, 10);
+    expect(r.stemLengths).toContain(100);
+    expect(r.stemAngles).toContain(-6);
+  });
+  it('returns an ordered subset of the options', () => {
+    const r = nearStems(f, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, hoods, 1);
+    expect(r.stemLengths).toHaveLength(1);
+    expect(r.stemAngles).toHaveLength(1);
+    const ordered = DEFAULT_OPTIONS.stemLengths.filter((s) => r.stemLengths.includes(s));
+    expect(r.stemLengths).toEqual(ordered);
+  });
+  it('returns everything when k covers all pairs', () => {
+    const r = nearStems(f, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, hoods, 999);
+    expect(r.stemLengths).toEqual(DEFAULT_OPTIONS.stemLengths);
+    expect(r.stemAngles).toEqual(DEFAULT_OPTIONS.stemAngles);
   });
 });

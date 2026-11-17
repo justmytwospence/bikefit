@@ -3,7 +3,7 @@
   import type { FrameCategory } from '../data/catalog';
   import { groupRows } from '../lib/sizes';
   import { VERDICT_RANK, type Verdict } from '../model/optimize';
-  import { app, catalogKey, runCatalogFit, ui, useCatalogRow } from '../state.svelte';
+  import { app, catalogKey, hasCachedCatalog, runCatalogFit, ui, useCatalogRow } from '../state.svelte';
   import FrameCard from './FrameCard.svelte';
   import Segmented from './Segmented.svelte';
 
@@ -51,6 +51,10 @@
   );
   const stale = $derived(!!ui.catalog && !ui.catalog.running && ui.catalog.key !== catalogKey());
   const withCleats = $derived(app.detail.results >= 2);
+
+  $effect(() => {
+    if (stale && hasCachedCatalog(catalogKey())) void runCatalogFit();
+  });
 
   $effect(() => {
     query; category; brand; show; since;

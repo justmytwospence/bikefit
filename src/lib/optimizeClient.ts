@@ -1,5 +1,6 @@
 import type { CompareRow, FitProblem, FitResult } from '../model/optimize';
 import type { Frame, ParamKey } from '../model/types';
+import type { Vec2 } from '../model/vec';
 
 type Pending = { resolve: (v: any) => void; reject: (e: Error) => void };
 
@@ -47,10 +48,18 @@ export const runCompare = (
 
 let pool: { workers: Worker[]; reject: (e: Error) => void } | null = null;
 
+/** Cancels a running catalog check. */
+export function stopCatalog(): void {
+  if (!pool) return;
+  for (const w of pool.workers) w.terminate();
+  pool.reject(new Error('Superseded'));
+  pool = null;
+}
+
 /** Runs compareFrames over many frames on a pool of workers, reporting rows as chunks finish. Best score first. */
 export function runCatalog(
   problem: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>, jobs: { frames: Frame[]; start: number }[],
-  onChunk: (rows: CompareRow[], done: number) => void, locks: Partial<Record<ParamKey, boolean>> = {},
+  onChunk: (rows: CompareRow[], done: number) => void, locks: Partial<Record<ParamKey, boolean>> = {}, idealHoods: Vec2,
 ): Promise<CompareRow[]> {
   if (pool) {
     for (const w of pool.workers) w.terminate();
@@ -76,7 +85,7 @@ export function runCatalog(
     const post = (w: Worker) => {
       if (next >= chunks.length) return;
       const i = next++;
-      w.postMessage({ id: i, kind: 'walk', payload: { problem, jobs: chunks[i], locks } });
+      w.postMessage({ id: i, kind: 'walk', payload: { problem, jobs: chunks[i], locks, idealHoods } });
     };
     for (let k = 0; k < Math.min(n, chunks.length); k++) {
       const w = new Worker(new URL('../worker/optimize.worker.ts', import.meta.url), { type: 'module' });

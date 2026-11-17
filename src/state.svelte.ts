@@ -1,5 +1,5 @@
 import { screenCatalog } from './lib/catalogFit';
-import { runCatalog, runCompare, runOptimize, runSizes } from './lib/optimizeClient';
+import { runCatalog, runCompare, runOptimize, runSizes, stopCatalog } from './lib/optimizeClient';
 import { sizeFamily, type SizeOption } from './lib/sizes';
 import { defaults, migrate, type AppData } from './lib/appData';
 import { resolveSegments } from './model/body';
@@ -229,11 +229,25 @@ export function catalogKey(): string {
 }
 
 let catalogRun = 0;
+const catalogCache = new Map<string, CatalogView>();
+function remember(v: CatalogView) {
+  catalogCache.delete(v.key);
+  catalogCache.set(v.key, v);
+  while (catalogCache.size > 6) catalogCache.delete(catalogCache.keys().next().value!);
+}
+export const hasCachedCatalog = (key: string): boolean => catalogCache.has(key);
 
 /** Checks every catalog model for this rider and style, walking its sizes outward from the best start. */
 export async function runCatalogFit() {
   const run = ++catalogRun;
   ui.error = '';
+  const key = catalogKey();
+  const hit = catalogCache.get(key);
+  if (hit) {
+    stopCatalog();
+    ui.catalog = hit;
+    return;
+  }
   const cat = await import('./data/catalog');
   const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = problem('shop');
   const ideal = idealLayout(
@@ -243,7 +257,8 @@ export async function runCatalogFit() {
   const jobs = screenCatalog(cat.CATALOG, cat.toFrame, rest.components, ideal.hoods);
   const modelOf: Record<string, string> = {};
   for (const j of jobs) for (const f of j.frames) modelOf[f.id] = j.modelId;
-  ui.catalog = new CatalogView([], jobs.flatMap((j) => j.frames), modelOf, 0, jobs.length, catalogKey(), true);
+  ui.catalog = new CatalogView([], jobs.flatMap((j) => j.frames), modelOf, 0, jobs.length, key, true);
+  let finished = false;
   let latest: { rows: CompareRow[]; done: number } | null = null;
   let timer: ReturnType<typeof setTimeout> | null = null;
   const flush = () => {
@@ -254,16 +269,20 @@ export async function runCatalogFit() {
     const rows = await runCatalog(rest, jobs, (r, done) => {
       latest = { rows: r, done };
       if (!timer) timer = setTimeout(flush, 250);
-    }, snap(app.locks));
+    }, snap(app.locks), ideal.hoods);
     if (timer) clearTimeout(timer);
     latest = { rows, done: jobs.length };
     flush();
+    finished = true;
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     if (msg !== 'Superseded' && run === catalogRun) ui.error = msg;
   } finally {
     if (timer) clearTimeout(timer);
-    if (run === catalogRun && ui.catalog) ui.catalog = ui.catalog.with({ running: false });
+    if (run === catalogRun && ui.catalog) {
+      ui.catalog = ui.catalog.with({ running: false });
+      if (finished) remember(ui.catalog);
+    }
   }
 }
 

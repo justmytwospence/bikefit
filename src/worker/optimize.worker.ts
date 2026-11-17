@@ -1,4 +1,5 @@
 import type { Frame } from '../model/types';
+import { nearStems } from '../lib/catalogFit';
 import { walkSizes } from '../lib/sizeWalk';
 import { compareFrames, optimizeFit, optimizeSizes } from '../model/optimize';
 
@@ -9,7 +10,11 @@ self.onmessage = (e: MessageEvent) => {
       ? optimizeFit(payload)
       : kind === 'walk'
         ? payload.jobs.flatMap((j: { frames: Frame[]; start: number }) =>
-            walkSizes(j.frames.length, j.start, (i) => compareFrames(payload.problem, [j.frames[i]], payload.locks)[0]))
+            walkSizes(j.frames.length, j.start, (i) => {
+              const f = j.frames[i];
+              const options = { ...payload.problem.options, ...nearStems(f, payload.problem.components, payload.problem.options, payload.idealHoods) };
+              return compareFrames({ ...payload.problem, options }, [f], payload.locks)[0];
+            }))
       : kind === 'sizes'
         ? optimizeSizes(payload.problem, payload.frames)
         : compareFrames(payload.problem, payload.frames, payload.locks);
