@@ -105,11 +105,9 @@
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
-    </div>
-    <div class="results">
       <ScoreCard {score} />
-      <MetricStrip poseEval={evaluation.poses[pi]} target={shownTarget} level={resultsLevel} />
     </div>
+    <MetricStrip poseEval={evaluation.poses[pi]} target={shownTarget} level={resultsLevel} />
   </section>
 
   <aside class="panel">
@@ -134,9 +132,8 @@
     grid-template: "view" auto "panel" minmax(0, 1fr) / minmax(0, 1fr);
   }
   .view { grid-area: view; height: 50dvh; display: flex; flex-direction: column; min-height: 0; }
-  .results { display: flex; align-items: stretch; border-top: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter: blur(12px); }
-  .results > :global(.score) { margin: 8px 0 8px 12px; }
-  .canvas { flex: 1; min-height: 0; }
+  .canvas { position: relative; flex: 1; min-height: 0; }
+  .canvas > :global(.score) { position: absolute; right: 12px; bottom: 12px; }
   .panel { grid-area: panel; display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); background: var(--bg); }
   .tabs { display: flex; border-bottom: 1px solid var(--line); background: var(--surface); }
   .tabs button { flex: 1; min-height: 46px; border: 0; border-bottom: 3px solid transparent; background: transparent; font-weight: 600; color: var(--muted); }
@@ -146,7 +143,6 @@
 
   @media (min-width: 900px) {
     .app { grid-template: "view panel" minmax(0, 1fr) / minmax(0, 1fr) 400px; }
-    .results > :global(.score) { margin: 10px 0 10px 16px; }
     .view { height: auto; min-height: 0; }
     .panel { border-top: 0; border-left: 1px solid var(--line); }
   }

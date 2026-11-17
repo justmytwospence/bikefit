@@ -43,7 +43,7 @@
 </div>
 
 <style>
-  .inset { position: absolute; right: 12px; bottom: 12px; width: 240px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 8px; pointer-events: none; }
+  .inset { position: absolute; right: 12px; bottom: 68px; width: 240px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 8px; pointer-events: none; }
   .title { font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); font-weight: 600; margin-bottom: 4px; }
   svg { width: 100%; display: block; }
 </style>
