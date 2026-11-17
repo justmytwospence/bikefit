@@ -3,7 +3,8 @@ import { buildCatalog, toFrame, type BrandFile } from '../data/catalog';
 import { FIXTURE } from '../data/fixture';
 import type { CompareRow } from '../model/optimize';
 import { EXAMPLE_FRAMES } from '../model/presets';
-import { catalogModelFor, sizeFamily, sizeVerdictLine } from './sizes';
+import type { Frame } from '../model/types';
+import { catalogModelFor, groupRows, sizeFamily, sizeVerdictLine } from './sizes';
 
 const tarmac = FIXTURE.find((m) => m.model === 'Tarmac SL8')!;
 
@@ -45,5 +46,24 @@ describe('sizeVerdictLine', () => {
   });
   it('says closer fit when the verdicts match', () => {
     expect(sizeVerdictLine([row('b', 'fits', 1), row('a', 'fits', 2)], 'a', sizeOf)).toBe('Size B is a closer fit.');
+  });
+});
+
+describe('groupRows', () => {
+  it('merges the sizes of a model and keeps the best-first order', () => {
+    const named = (id: string, name: string, v: 'fits' | 'compromise' | 'no', cost: number) =>
+      ({ ...row(id, v, cost), frameName: name }) as CompareRow;
+    const rows = [
+      named('cat:t-56', 'Tarmac · 56', 'fits', 1),
+      named('mine', 'My frame', 'compromise', 2),
+      named('cat:t-54', 'Tarmac · 54', 'compromise', 3),
+    ];
+    const frames = [{ id: 'cat:t-54' }, { id: 'cat:t-56' }, { id: 'mine' }] as Frame[];
+    const groups = groupRows(rows, frames);
+    expect(groups.map((g) => g.name)).toEqual(['Tarmac', 'My frame']);
+    expect(groups[0].sizes.map((s) => s.size)).toEqual(['54', '56']);
+    expect(groups[0].best.frameId).toBe('cat:t-56');
+    expect(groups[1].key).toBe('f:mine');
+    expect(groups[1].sizes.map((s) => s.size)).toEqual(['']);
   });
 });

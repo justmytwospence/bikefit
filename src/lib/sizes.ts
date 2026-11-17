@@ -36,3 +36,26 @@ export function sizeVerdictLine(rows: CompareRow[], activeId: string, sizeOf: (i
   if (VERDICT_RANK[best.result.verdict] < VERDICT_RANK[cur.result.verdict]) return `Size ${sizeOf(best.frameId)} fits better.`;
   return `Size ${sizeOf(best.frameId)} is a closer fit.`;
 }
+
+export interface ModelGroup {
+  key: string;
+  name: string;
+  sizes: { size: string; row: CompareRow }[];
+  best: CompareRow;
+}
+
+/** Compare rows with the sizes of one catalog model merged; groups keep the order of their best row. */
+export function groupRows(rows: CompareRow[], frames: Frame[]): ModelGroup[] {
+  const order = new Map(frames.map((f, i) => [f.id, i]));
+  const groups: ModelGroup[] = [];
+  for (const row of rows) {
+    const cut = row.frameName.lastIndexOf(' · ');
+    const model = row.frameId.startsWith('cat:') && cut >= 0;
+    const key = model ? 'm:' + row.frameName.slice(0, cut) : 'f:' + row.frameId;
+    let g = groups.find((x) => x.key === key);
+    if (!g) groups.push((g = { key, name: model ? row.frameName.slice(0, cut) : row.frameName, sizes: [], best: row }));
+    g.sizes.push({ size: model ? row.frameName.slice(cut + 3) : '', row });
+  }
+  for (const g of groups) g.sizes.sort((a, b) => (order.get(a.row.frameId) ?? 0) - (order.get(b.row.frameId) ?? 0));
+  return groups;
+}
