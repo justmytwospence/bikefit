@@ -83,6 +83,10 @@
     save();
   });
 
+  $effect(() => {
+    if (app.current.spacers > frame.maxSpacers) app.current.spacers = frame.maxSpacers;
+  });
+
   const styleOptions = Object.values(STYLES).map((s) => ({ value: s.id as StyleId, label: s.name, title: s.blurb }));
   const tabs: { id: Tab; label: string }[] = [
     { id: 'rider', label: 'Rider' },
