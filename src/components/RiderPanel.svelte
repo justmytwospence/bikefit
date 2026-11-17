@@ -66,7 +66,7 @@
       bind:value={() => toDisplay(app.body.inseam, inseamF), (v) => (app.body.inseam = fromDisplay(v, inseamF))}
     />
   </div>
-  <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly.</p>
+  <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly. This is usually 3 to 5 cm longer than your trouser inseam.</p>
 
   <label class="shoe">
     <span class="l">Shoe size {#if app.body.shoeSizeAuto}<span class="estb">suggested</span>{/if}</span>
