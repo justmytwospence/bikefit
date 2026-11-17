@@ -187,10 +187,22 @@ async function main() {
   } else if (cmd === 'firstseen') {
     for (const b of sel) {
       const m = manifestOf(b);
-      const urls = new Set(m.pages.map((p) => p.url));
-      for (const u of urls) await firstSeenOf(u);
-      writeManifest({ ...m, pages: m.pages.map((p) => ({ ...p, firstSeen: (firstSeenCache.get(p.url) ?? p.firstSeen) || undefined })) });
-      console.log(`${b.file}: ${urls.size} urls`);
+      const known = new Map(m.pages.filter((p) => p.firstSeen).map((p) => [p.url, p.firstSeen!]));
+      const urls = [...new Set(m.pages.map((p) => p.url))];
+      let missing = 0;
+      for (const u of urls) {
+        if (known.has(u)) continue;
+        try {
+          const ts = await firstCapture(u);
+          if (ts) known.set(u, ts);
+        } catch (e) {
+          missing++;
+          console.error(`${b.file}: ${u}: ${e instanceof Error ? e.message : e}`);
+        }
+        if (known.size % 20 === 0) writeManifest({ ...m, pages: m.pages.map((p) => ({ ...p, firstSeen: known.get(p.url) })) });
+      }
+      writeManifest({ ...m, pages: m.pages.map((p) => ({ ...p, firstSeen: known.get(p.url) })) });
+      console.log(`${b.file}: ${urls.length} urls, ${missing} failed`);
     }
   } else if (cmd === 'fetch') {
     for (const b of sel) await fetchAll(b);
