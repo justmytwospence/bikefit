@@ -17,7 +17,7 @@ Find a bike (Bike tab) searches a bundled catalog of manufacturer geometry (`src
 
 ## Detail levels
 
-Every section (Rider, Bike, Setup, Results) has a Simple, Detailed and Expert level, set globally from the header menu and overridable per section. Inputs are things you can measure or already know; hidden inputs keep their estimated or entered values. At Simple, Optimize only changes the visible setup knobs (saddle height and setback, spacers, stem).
+One Simple, Detailed or Expert switch, above the tabs, sets how much every section shows. Inputs are things you can measure or already know; hidden inputs keep their estimated or entered values. At Simple, Optimize only changes the visible setup knobs (saddle height and setback, spacers, stem).
 
 ## What is modelled
 

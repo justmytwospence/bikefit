@@ -62,11 +62,12 @@ describe('detail levels', () => {
     const mine = { ...none, spacers: true };
     expect(effectiveLocks(2, mine)).toEqual(mine);
   });
-  it('section overrides win over the global level', () => {
-    const d = defaults();
+  it('migrate folds section overrides into the global level', () => {
+    const d: any = defaults();
     d.detail = { global: 1, overrides: { setup: 3 } };
-    expect(level(d, 'setup')).toBe(3);
-    expect(level(d, 'rider')).toBe(1);
+    const m = migrate(d)!;
+    expect(m.detail).toEqual({ global: 3 });
+    expect(level(m)).toBe(3);
   });
   it('counts values hidden by the rider level', () => {
     const d = defaults();
@@ -76,9 +77,9 @@ describe('detail levels', () => {
     d.effort = 'hard';
     d.body.overrides = { femur: 440 };
     expect(hiddenRiderValues(d)).toBe(4);
-    d.detail.overrides.rider = 2;
+    d.detail.global = 2;
     expect(hiddenRiderValues(d)).toBe(1);
-    d.detail.overrides.rider = 3;
+    d.detail.global = 3;
     expect(hiddenRiderValues(d)).toBe(0);
   });
 });

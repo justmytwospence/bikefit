@@ -1,9 +1,8 @@
 <script lang="ts">
-  import { level, type Level, type SectionId } from '../lib/appData';
-  import { app, setSectionDetail } from '../state.svelte';
+  import { level, type Level } from '../lib/appData';
+  import { app, setGlobalDetail } from '../state.svelte';
   import Segmented from './Segmented.svelte';
 
-  let { section, label = 'Detail' }: { section: SectionId; label?: string } = $props();
   const options = [
     { value: '1', label: 'Simple' },
     { value: '2', label: 'Detailed' },
@@ -12,10 +11,10 @@
 </script>
 
 <div class="row">
-  <span class="muted small">{label}</span>
+  <span class="muted small">Detail</span>
   <Segmented
-    {options} compact ariaLabel="{section} detail level"
-    bind:value={() => String(level(app, section)), (v) => setSectionDetail(section, Number(v) as Level)}
+    {options} compact ariaLabel="Detail level"
+    bind:value={() => String(level(app)), (v) => setGlobalDetail(Number(v) as Level)}
   />
 </div>
 

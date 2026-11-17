@@ -10,7 +10,6 @@
   } from '../state.svelte';
   import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
-  import DetailToggle from './DetailToggle.svelte';
   import Segmented from './Segmented.svelte';
   import SliderField from './SliderField.svelte';
 
@@ -21,8 +20,8 @@
 
   let { layout, evaluation }: { layout: Layout; evaluation: Evaluation } = $props();
 
-  const lv = $derived(level(app, 'setup'));
-  const resultsLv = $derived(level(app, 'results'));
+  const lv = $derived(level(app));
+  const resultsLv = $derived(level(app));
   const frame = $derived(activeFrame());
   const o = $derived(app.options);
   const c = $derived(app.current);
@@ -41,7 +40,6 @@
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 </script>
 
-<DetailToggle section="setup" />
 <div class="scroll">
   <Segmented
     options={starts} ariaLabel="Starting point"

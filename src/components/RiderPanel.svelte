@@ -5,12 +5,11 @@
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
   import { STYLES } from '../model/styles';
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
-  import { app, setSectionDetail } from '../state.svelte';
-  import DetailToggle from './DetailToggle.svelte';
+  import { app, setGlobalDetail } from '../state.svelte';
   import NumberField from './NumberField.svelte';
   import Segmented from './Segmented.svelte';
 
-  const lv = $derived(level(app, 'rider'));
+  const lv = $derived(level(app));
   const est = $derived(resolveSegments({ ...app.body, overrides: {} }));
   const keys = Object.keys(SEGMENT_LABELS) as (keyof typeof SEGMENT_LABELS)[];
   const style = $derived(STYLES[app.styleId]);
@@ -40,7 +39,6 @@
   const fi = $derived(feetInches(app.body.height));
 </script>
 
-<DetailToggle section="rider" />
 <div class="scroll">
   <h2>Body</h2>
   <Segmented options={sexes} bind:value={app.body.sex} ariaLabel="Body type" />
@@ -130,7 +128,7 @@
   {#if hidden > 0}
     <p class="muted small hid">
       Using {hidden} value{hidden === 1 ? '' : 's'} from a more detailed level.
-      <button type="button" class="link" onclick={() => setSectionDetail('rider', Object.keys(app.body.overrides).length ? 3 : 2)}>Show</button>
+      <button type="button" class="link" onclick={() => setGlobalDetail(Object.keys(app.body.overrides).length ? 3 : 2)}>Show</button>
     </p>
   {/if}
 </div>

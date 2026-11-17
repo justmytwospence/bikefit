@@ -2,17 +2,15 @@
   import { level } from '../lib/appData';
   import { activeFrame, app, deleteFrame, duplicateFrame, newFrame, selectFrame } from '../state.svelte';
   import FramePicker from './FramePicker.svelte';
-  import DetailToggle from './DetailToggle.svelte';
   import NumberField from './NumberField.svelte';
 
   let picking = $state(false);
-  const lv = $derived(level(app, 'bike'));
+  const lv = $derived(level(app));
   const frame = $derived(activeFrame());
   const o = $derived(app.options);
   const list = (a: number[], u: string) => a.map((x) => x + u).join(', ');
 </script>
 
-<DetailToggle section="bike" />
 <div class="scroll">
   <h2>Frame</h2>
   <select aria-label="Frame" value={app.activeFrameId} onchange={(e) => selectFrame(e.currentTarget.value)}>

@@ -6,7 +6,6 @@ import type {
 
 export type Tab = 'rider' | 'bike' | 'fit' | 'compare';
 export type Level = 1 | 2 | 3;
-export type SectionId = 'rider' | 'bike' | 'setup' | 'results';
 
 export interface AppData {
   v: 2;
@@ -22,7 +21,7 @@ export interface AppData {
   tab: Tab;
   effort: Effort | null;
   hands: HandsPref | null;
-  detail: { global: Level; overrides: Partial<Record<SectionId, Level>> };
+  detail: { global: Level };
   units: Units;
   /** False until the user says they have a bike set up; until then Optimize suggests a build from scratch. */
   hasSetup: boolean;
@@ -46,7 +45,7 @@ export function defaults(): AppData {
     tab: 'fit' as Tab,
     effort: null,
     hands: null,
-    detail: { global: 1 as Level, overrides: {} },
+    detail: { global: 1 as Level },
     units: 'metric' as Units,
     hasSetup: false,
   });
@@ -74,7 +73,11 @@ export function migrate(raw: unknown): AppData | null {
     current: { ...base.current, ...d.current },
     baseline: { ...base.baseline, ...d.baseline },
     locks: { ...base.locks, ...d.locks },
-    detail: { ...base.detail, ...d.detail },
+    detail: {
+      global: Math.min(
+        3, Math.max(1, d.detail?.global ?? 1, ...Object.values(d.detail?.overrides ?? {}).map(Number)),
+      ) as Level,
+    },
     frames: d.frames.map((f: Frame) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     effort: d.effort ?? null,
     hands: d.hands ?? null,
@@ -87,8 +90,8 @@ export function migrate(raw: unknown): AppData | null {
   } as AppData;
 }
 
-export function level(d: Pick<AppData, 'detail'>, s: SectionId): Level {
-  return d.detail.overrides[s] ?? d.detail.global;
+export function level(d: Pick<AppData, 'detail'>): Level {
+  return d.detail.global;
 }
 
 /** At the Simple setup level only the visible knobs may be changed by the optimizer. */
@@ -103,7 +106,7 @@ export function effectiveLocks(setupLevel: Level, locks: Record<ParamKey, boolea
 }
 
 export function hiddenRiderValues(d: AppData): number {
-  const lv = level(d, 'rider');
+  const lv = level(d);
   let n = 0;
   if (lv < 2) {
     if (d.body.armLength != null) n++;

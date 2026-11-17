@@ -6,7 +6,7 @@
 
   const stale = $derived(!!ui.compareRows && ui.compareKey !== compareKey());
   const OK = 'Every angle is inside its target range.';
-  const withCleats = $derived(level(app, 'setup') >= 2);
+  const withCleats = $derived(level(app) >= 2);
   const GROUPS: { id: Verdict; title: string; chip: string }[] = [
     { id: 'fits', title: 'Fits', chip: 'Fits' },
     { id: 'compromise', title: 'Fits with compromises', chip: 'Compromise' },

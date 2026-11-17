@@ -30,7 +30,7 @@
   const effort = $derived(app.effort ?? style.defaultEffort);
   const frame = $derived(activeFrame());
   const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
-  const resultsLevel = $derived(level(app, 'results'));
+  const resultsLevel = $derived(level(app));
 
   const shown = new Tween($state.snapshot(app.current), { duration: 450, easing: cubicOut });
   $effect(() => {
@@ -115,7 +115,6 @@
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
     </div>
-    <DetailToggle section="results" label="Results" />
     <MetricStrip poseEval={evaluation.poses[pi]} target={targets[pi]} level={resultsLevel} />
   </section>
 
@@ -125,6 +124,7 @@
         <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => (app.tab = t.id)}>{t.label}</button>
       {/each}
     </div>
+    <DetailToggle />
     <div class="body">
       {#if app.tab === 'rider'}<RiderPanel />
       {:else if app.tab === 'bike'}<BikePanel />
@@ -150,7 +150,7 @@
     .styles { display: none; }
     .stylesel { display: block; }
   }
-  .view { grid-area: view; height: 52dvh; display: flex; flex-direction: column; min-height: 0; }
+  .view { grid-area: view; height: 46dvh; display: flex; flex-direction: column; min-height: 0; }
   .canvas { flex: 1; min-height: 0; }
   .panel { grid-area: panel; display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); background: var(--bg); }
   .tabs { display: flex; border-bottom: 1px solid var(--line); background: var(--surface); }

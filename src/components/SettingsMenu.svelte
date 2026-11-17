@@ -1,7 +1,6 @@
 <script lang="ts">
-  import type { Level } from '../lib/appData';
   import type { Units } from '../lib/units';
-  import { app, setGlobalDetail } from '../state.svelte';
+  import { app } from '../state.svelte';
   import Segmented from './Segmented.svelte';
 
   const units = [
@@ -10,11 +9,6 @@
   ];
   let open = $state(false);
   let root: HTMLElement | undefined = $state();
-  const options = [
-    { value: '1', label: 'Simple' },
-    { value: '2', label: 'Detailed' },
-    { value: '3', label: 'Expert' },
-  ];
 
   function away(e: PointerEvent) {
     if (open && root && !root.contains(e.target as Node)) open = false;
@@ -35,12 +29,6 @@
   </button>
   {#if open}
     <div class="pop card">
-      <h2>Detail level</h2>
-      <Segmented
-        {options} ariaLabel="Detail level"
-        bind:value={() => String(app.detail.global), (v) => setGlobalDetail(Number(v) as Level)}
-      />
-      <p class="muted small">Sets every section. Each tab can still go deeper.</p>
       <h2>Units</h2>
       <Segmented
         options={units} ariaLabel="Units"
