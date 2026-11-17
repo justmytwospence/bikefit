@@ -3,18 +3,41 @@
   import { activeFrame, app, deleteFrame, duplicateFrame, newFrame, selectFrame } from '../state.svelte';
   import FramePicker from './FramePicker.svelte';
   import NumberField from './NumberField.svelte';
+  import type { Frame } from '../model/types';
 
   let picking = $state(false);
   const lv = $derived(level(app));
   const frame = $derived(activeFrame());
   const o = $derived(app.options);
+  /** Catalog sizes of one model share an optgroup; other frames are listed first. */
+  const grouped = $derived.by(() => {
+    const plain: Frame[] = [];
+    const groups: { label: string; frames: { id: string; size: string }[] }[] = [];
+    for (const f of app.frames) {
+      const cut = f.name.lastIndexOf(' · ');
+      if (!f.id.startsWith('cat:') || cut < 0) {
+        plain.push(f);
+        continue;
+      }
+      const label = f.name.slice(0, cut);
+      let g = groups.find((x) => x.label === label);
+      if (!g) groups.push((g = { label, frames: [] }));
+      g.frames.push({ id: f.id, size: f.name.slice(cut + 3) });
+    }
+    return { plain, groups };
+  });
   const list = (a: number[], u: string) => a.map((x) => x + u).join(', ');
 </script>
 
 <div class="scroll">
   <h2>Frame</h2>
   <select aria-label="Frame" value={app.activeFrameId} onchange={(e) => selectFrame(e.currentTarget.value)}>
-    {#each app.frames as f (f.id)}<option value={f.id}>{f.name}</option>{/each}
+    {#each grouped.plain as f (f.id)}<option value={f.id}>{f.name}</option>{/each}
+    {#each grouped.groups as g (g.label)}
+      <optgroup label={g.label}>
+        {#each g.frames as f (f.id)}<option value={f.id}>{f.size}</option>{/each}
+      </optgroup>
+    {/each}
   </select>
   <div class="btns">
     <button type="button" class="btn small" onclick={() => (picking = !picking)}>Find a bike</button>

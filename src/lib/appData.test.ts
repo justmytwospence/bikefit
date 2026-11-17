@@ -8,6 +8,8 @@ describe('migrate', () => {
     delete v1.detail;
     delete v1.effort;
     delete v1.hands;
+    delete v1.seenIntro;
+    delete v1.hasSetup;
     delete v1.current.cleatOffset;
     delete v1.locks.cleatOffset;
     delete v1.body.shoeSizeAuto;
@@ -26,6 +28,7 @@ describe('migrate', () => {
     expect(m.body.shoeSizeAuto).toBe(false);
     expect(m.body.sex).toBe('male');
     expect(m.units).toBe('metric');
+    expect(m.seenIntro).toBe(true);
   });
   it('replaces a stored null shoe size with the default', () => {
     const d: any = defaults();
@@ -42,6 +45,10 @@ describe('migrate', () => {
   });
   it('new data starts without a setup', () => {
     expect(defaults().hasSetup).toBe(false);
+  });
+  it('new data opens on the Rider tab with the guide', () => {
+    expect(defaults().tab).toBe('rider');
+    expect(defaults().seenIntro).toBe(false);
   });
   it('stored data with a changed baseline keeps tune mode', () => {
     const changed: any = defaults();

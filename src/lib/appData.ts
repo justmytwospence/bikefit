@@ -25,6 +25,8 @@ export interface AppData {
   units: Units;
   /** False until the user says they have a bike set up; until then Optimize suggests a build from scratch. */
   hasSetup: boolean;
+  /** Whether the first-run guide on the Rider tab has been dismissed. */
+  seenIntro: boolean;
 }
 
 export function defaults(): AppData {
@@ -42,12 +44,13 @@ export function defaults(): AppData {
       saddleHeight: false, railOffset: false, seatpostSetback: false, spacers: false,
       stemLength: false, stemAngle: false, crankLength: false, cleatOffset: false,
     },
-    tab: 'fit' as Tab,
+    tab: 'rider' as Tab,
     effort: null,
     hands: null,
     detail: { global: 1 as Level },
     units: 'metric' as Units,
     hasSetup: false,
+    seenIntro: false,
   });
 }
 
@@ -82,6 +85,7 @@ export function migrate(raw: unknown): AppData | null {
     effort: d.effort ?? null,
     hands: d.hands ?? null,
     units: d.units === 'imperial' ? 'imperial' : 'metric',
+    seenIntro: d.seenIntro ?? true,
     hasSetup: typeof d.hasSetup === 'boolean'
       ? d.hasSetup
       : (Object.keys(base.baseline) as ParamKey[]).some(

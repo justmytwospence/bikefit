@@ -40,6 +40,17 @@
 </script>
 
 <div class="scroll">
+  {#if !app.seenIntro}
+    <div class="card intro">
+      <b>Start here</b>
+      <ol>
+        <li>Enter your height and inseam below.</li>
+        <li>Pick your frame in the Bike tab.</li>
+        <li>Press Optimize in the Fit tab.</li>
+      </ol>
+      <button type="button" class="btn small" onclick={() => (app.seenIntro = true)}>Got it</button>
+    </div>
+  {/if}
   <h2>Body</h2>
   <Segmented options={sexes} bind:value={app.body.sex} ariaLabel="Body type" />
   <p class="muted small hint sexhint">Sets typical proportions. Your own measurements override them.</p>
@@ -144,4 +155,5 @@
   .label { margin-top: 12px; }
   .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
   .hid { margin-top: 22px; }
+  .intro ol { margin: 6px 0 10px; padding-left: 20px; }
 </style>
