@@ -1,17 +1,23 @@
 <script lang="ts">
   import { level } from '../lib/appData';
   import { noseSetback, railForSetback, setbackRange } from '../model/geometry';
-  import { wrenchList } from '../model/optimize';
+  import { buildSummary, wrenchList } from '../model/optimize';
   import { contactReadouts } from '../model/readouts';
   import type { Evaluation, Layout } from '../model/types';
   import { clamp } from '../model/vec';
   import {
-    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, ui, undo,
+    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo,
   } from '../state.svelte';
   import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
   import DetailToggle from './DetailToggle.svelte';
+  import Segmented from './Segmented.svelte';
   import SliderField from './SliderField.svelte';
+
+  const starts = [
+    { value: 'new' as const, label: 'New build' },
+    { value: 'mine' as const, label: 'My current setup' },
+  ];
 
   let { layout, evaluation }: { layout: Layout; evaluation: Evaluation } = $props();
 
@@ -37,19 +43,28 @@
 
 <DetailToggle section="setup" />
 <div class="scroll">
+  <Segmented
+    options={starts} ariaLabel="Starting point"
+    bind:value={() => (app.hasSetup ? 'mine' : 'new'), (v) => setHasSetup(v === 'mine')}
+  />
+  <p class="muted small start">
+    {app.hasSetup
+      ? 'Changes are counted from your setup. Optimize prefers adjustments over new parts.'
+      : 'No bike set up yet: Optimize picks the best build for this frame.'}
+  </p>
   <h2>Saddle</h2>
   <div use:measure={'saddleHeight'}>
   <SliderField
     label="Saddle height" min={o.saddleHeightRange[0]} max={o.saddleHeightRange[1]} step={0.5}
     bind:value={app.current.saddleHeight} bind:locked={app.locks.saddleHeight} showLock={lv >= 2}
-    delta={c.saddleHeight - b.saddleHeight} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
+    delta={app.hasSetup ? c.saddleHeight - b.saddleHeight : 0} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
   />
   </div>
   <div use:measure={'setback'}>
   <SliderField
     label="Setback to saddle nose" min={Math.ceil(sbRange[0] * 2) / 2} max={Math.floor(sbRange[1] * 2) / 2} step={0.5}
     bind:value={() => Math.round(setback * 2) / 2, setSetback} bind:locked={app.locks.railOffset} showLock={lv >= 2}
-    delta={setbackDelta} hint="Plumb line from the saddle nose to the floor; distance behind the bottom bracket" onedit={clearGhost}
+    delta={app.hasSetup ? setbackDelta : 0} hint="Plumb line from the saddle nose to the floor; distance behind the bottom bracket" onedit={clearGhost}
   />
   {#if lv >= 3}
     <p class="muted small rails">
@@ -62,7 +77,7 @@
     <SliderField
       label="Cleat position" unit="mm back" min={o.cleatRange[0]} max={o.cleatRange[1]} step={1}
       bind:value={app.current.cleatOffset} bind:locked={app.locks.cleatOffset}
-      delta={c.cleatOffset - b.cleatOffset} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
+      delta={app.hasSetup ? c.cleatOffset - b.cleatOffset : 0} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
     />
     </div>
     <div use:measure={'setback'}>
@@ -82,7 +97,7 @@
   <SliderField
     label="Spacers" min={0} max={frame.maxSpacers} step={o.spacerStep}
     bind:value={app.current.spacers} bind:locked={app.locks.spacers} showLock={lv >= 2}
-    delta={c.spacers - b.spacers} onedit={clearGhost}
+    delta={app.hasSetup ? c.spacers - b.spacers : 0} onedit={clearGhost}
   />
   </div>
   <div use:measure={'stem'}>
@@ -137,7 +152,22 @@
     {:else if ui.verdict === 'no'}<p class="verdict off">Does not fit this style</p>{/if}
   {/snippet}
 
-  {#if hasChanges}
+  {#if !app.hasSetup && ui.verdict}
+    <div class="card changes">
+      <h2>Suggested build</h2>
+      <p>Saddle height {c.saddleHeight} mm</p>
+      <p>{buildSummary(c, lv >= 2)}</p>
+      {@render verdictLine()}
+      {#if ui.notes && resultsLv >= 2}
+        <h3>Why it stops here</h3>
+        <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
+      {/if}
+      <div class="row">
+        {#if ui.undo}<button type="button" class="btn small" onclick={undo}>Undo</button>{/if}
+        <button type="button" class="btn small" onclick={() => setHasSetup(true)}>Mark as my setup</button>
+      </div>
+    </div>
+  {:else if app.hasSetup && hasChanges}
     <div class="card changes">
       <h2>Changes from your setup</h2>
       <ul>{#each changes as line}<li>{line}</li>{/each}</ul>
@@ -165,7 +195,9 @@
   <button type="button" class="btn primary grow" disabled={ui.busy} onclick={optimize}>
     {#if ui.busy}<span class="spin"></span>Optimizing…{:else}Optimize{/if}
   </button>
-  <button type="button" class="btn" disabled={!hasChanges} onclick={resetToBaseline}>Reset</button>
+  {#if app.hasSetup}
+    <button type="button" class="btn" disabled={!hasChanges} onclick={resetToBaseline}>Reset</button>
+  {/if}
 </div>
 
 <style>
@@ -173,6 +205,7 @@
   .chiphead { display: flex; justify-content: space-between; align-items: center; min-height: 36px; font-weight: 600; }
   .lk { font-size: 12px; font-weight: 500; color: var(--muted); display: flex; gap: 6px; align-items: center; min-height: 36px; }
   .rails { margin: -4px 0 10px; }
+  .start { margin-top: 6px; }
   .fixed { margin-top: 18px; }
   .changes h2, .readouts h2 { margin-top: 0; }
   dl { margin: 0; }

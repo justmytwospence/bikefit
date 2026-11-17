@@ -24,6 +24,8 @@ export interface AppData {
   hands: HandsPref | null;
   detail: { global: Level; overrides: Partial<Record<SectionId, Level>> };
   units: Units;
+  /** False until the user says they have a bike set up; until then Optimize suggests a build from scratch. */
+  hasSetup: boolean;
 }
 
 export function defaults(): AppData {
@@ -46,6 +48,7 @@ export function defaults(): AppData {
     hands: null,
     detail: { global: 1 as Level, overrides: {} },
     units: 'metric' as Units,
+    hasSetup: false,
   });
 }
 
@@ -76,6 +79,11 @@ export function migrate(raw: unknown): AppData | null {
     effort: d.effort ?? null,
     hands: d.hands ?? null,
     units: d.units === 'imperial' ? 'imperial' : 'metric',
+    hasSetup: typeof d.hasSetup === 'boolean'
+      ? d.hasSetup
+      : (Object.keys(base.baseline) as ParamKey[]).some(
+        (k) => d.baseline?.[k] !== undefined && d.baseline[k] !== base.baseline[k],
+      ),
   } as AppData;
 }
 

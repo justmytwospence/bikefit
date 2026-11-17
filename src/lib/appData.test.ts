@@ -40,6 +40,18 @@ describe('migrate', () => {
     expect(migrate({ v: 3 })).toBeNull();
     expect(migrate({ v: 2, frames: [] })).toBeNull();
   });
+  it('new data starts without a setup', () => {
+    expect(defaults().hasSetup).toBe(false);
+  });
+  it('stored data with a changed baseline keeps tune mode', () => {
+    const changed: any = defaults();
+    delete changed.hasSetup;
+    changed.baseline.saddleHeight = 720;
+    expect(migrate(changed)!.hasSetup).toBe(true);
+    const same: any = defaults();
+    delete same.hasSetup;
+    expect(migrate(same)!.hasSetup).toBe(false);
+  });
 });
 
 describe('detail levels', () => {

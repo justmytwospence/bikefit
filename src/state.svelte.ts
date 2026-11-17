@@ -106,7 +106,7 @@ export async function optimize() {
   ui.error = '';
   try {
     const before = snap(app.current);
-    const result = await runOptimize(problem('tune'));
+    const result = await runOptimize(problem(app.hasSetup ? 'tune' : 'shop'));
     ui.undo = before;
     ui.ghost = before;
     ui.animate = true;
@@ -131,6 +131,12 @@ export function undo() {
 export function resetToBaseline() {
   ui.animate = true;
   Object.assign(app.current, snap(app.baseline));
+  clearFeedback();
+}
+
+export function setHasSetup(on: boolean) {
+  if (on) Object.assign(app.baseline, snap(app.current));
+  app.hasSetup = on;
   clearFeedback();
 }
 
