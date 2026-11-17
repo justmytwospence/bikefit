@@ -51,6 +51,10 @@
   );
   const contact = $derived(resultsLevel >= 2 ? ui.viewPose : 'hoods');
   const pi = $derived(contact === 'drops' ? 1 : 0);
+  // The drops pose has no knee bands of its own; borrow the hoods ones so the knee card stays.
+  const shownTarget = $derived(
+    pi === 0 ? targets[0] : { ...targets[1], bands: { ...targets[0].bands, ...targets[1].bands } },
+  );
   const crankDeg = $derived(ui.playing ? ui.crank : evaluation.peakKneeCrank);
   const pose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg));
   const farPose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg + 180));
@@ -60,7 +64,8 @@
       : null,
   );
   const toeTip = $derived(
-    resultsLevel >= 2 && Number.isFinite(evaluation.toeClearance) && evaluation.toeClearance < 10
+    (resultsLevel >= 2 || evaluation.toeClearance < 0) && Number.isFinite(evaluation.toeClearance)
+      && evaluation.toeClearance < 10
       ? riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, 0).toe
       : null,
   );
@@ -110,12 +115,12 @@
     <div class="canvas">
       <BikeView
         {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ideal}
-        target={targets[pi]} poseEval={evaluation.poses[pi]} level={resultsLevel}
+        target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
     </div>
-    <MetricStrip poseEval={evaluation.poses[pi]} target={targets[pi]} level={resultsLevel} />
+    <MetricStrip poseEval={evaluation.poses[pi]} target={shownTarget} level={resultsLevel} />
   </section>
 
   <aside class="panel">

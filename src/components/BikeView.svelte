@@ -4,7 +4,7 @@
   import type { Level } from '../lib/appData';
   import { frameSkeleton } from '../model/geometry';
   import type { RiderPose } from '../model/pose';
-  import { status } from '../model/score';
+  import { outside, status } from '../model/score';
   import type {
     Components, FitParams, Frame, Layout, MetricId, PoseEval, PoseTarget, Segments,
   } from '../model/types';
@@ -119,7 +119,14 @@
     ui.playing = !ui.playing;
   }
 
-  const targets = $derived([
+  const inBand = $derived(
+    !poseEval.overextended && !poseEval.overreach
+      && (Object.keys(target.bands) as MetricId[]).every((k) => {
+        const b = target.bands[k]!;
+        return b.weight === 0 || outside(poseEval.metrics[k], b) === 0;
+      }),
+  );
+  const targets = $derived(inBand ? [] : [
     { key: 'saddle', cur: layout.saddle, tgt: ideal.saddle },
     ...(pose.contact === 'hoods' ? [{ key: 'hand', cur: layout.hoods, tgt: ideal.hoods }] : []),
   ]);
@@ -172,7 +179,7 @@
           <text
             transform="translate({t.tgt.x + 44},{t.tgt.y + 44}) scale(1,-1)" fill="var(--accent)" stroke="none"
             font-size={fs * 0.8} font-weight="700"
-          >target</text>
+          >suggested</text>
         {/if}
       {/each}
 
@@ -181,7 +188,7 @@
         <circle cx={j.x} cy={j.y} r="16" fill="var(--bg)" stroke="var(--rider)" stroke-width="7" />
       {/each}
 
-      {#if level >= 2 && toeTip && toeClearance < 10}
+      {#if toeTip && toeClearance < 10}
         <circle cx={toeTip.x} cy={toeTip.y} r="26" stroke={toeClearance < 0 ? 'var(--off)' : 'var(--near)'} stroke-width="8" />
       {/if}
       {#if level >= 3}
@@ -210,9 +217,9 @@
   {/if}
 
   <div class="legend">
-    <span><i class="t"></i> target</span>
+    {#if !inBand}<span><i class="t"></i> suggested</span>{/if}
     {#if ghostPose}<span><i class="g"></i> before</span>{/if}
-    {#if level >= 2 && Number.isFinite(toeClearance) && toeClearance < 10}
+    {#if (level >= 2 || toeClearance < 0) && Number.isFinite(toeClearance) && toeClearance < 10}
       <span class="warn" class:bad={toeClearance < 0}>
         {toeClearance < 0 ? 'Toe overlap ' + Math.round(-toeClearance) : 'Toe clearance ' + Math.round(toeClearance)} mm
       </span>

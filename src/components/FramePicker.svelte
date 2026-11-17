@@ -64,7 +64,7 @@
         <div class="open">
           <div class="chips">
             {#each m.sizes as s (s.size)}
-              <button type="button" class:on={saved(m, s.size) || h.size === s.size} onclick={() => pick(m, s.size)}>{s.size}</button>
+              <button type="button" class:on={saved(m, s.size)} class:match={h.size === s.size && !saved(m, s.size)} onclick={() => pick(m, s.size)}>{s.size}</button>
             {/each}
           </div>
           <button type="button" class="btn small" onclick={() => addAll(m)}>Add all sizes</button>
@@ -100,6 +100,7 @@
   .open { padding: 4px 10px 10px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; width: 100%; }
   .chips button { min-height: 36px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); font-weight: 600; }
+  .chips button.match { border-color: var(--accent); color: var(--accent); }
   .chips button.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
   .foot { margin-top: 14px; }
 </style>
