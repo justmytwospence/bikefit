@@ -1,0 +1,236 @@
+{
+  "brand": "Look",
+  "models": [
+    {
+      "model": "795 Blade RS 3",
+      "year": 2026,
+      "category": "aero",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-3-frameset",
+      "retrieved": "2026-11-16",
+      "estimated": [
+        "wheelbase",
+        "bbDrop"
+      ],
+      "aliases": [
+        "795 Blade RS",
+        "Blade RS",
+        "Blade RS 3"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 501.2,
+          "reach": 371.3,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 90.4,
+          "seatTubeLength": 479.6,
+          "chainstay": 410,
+          "wheelbase": 969,
+          "bbDrop": 73
+        },
+        {
+          "size": "S",
+          "stack": 525.2,
+          "reach": 381.3,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 115.6,
+          "seatTubeLength": 504.4,
+          "chainstay": 410,
+          "wheelbase": 986,
+          "bbDrop": 73
+        },
+        {
+          "size": "M",
+          "stack": 549.2,
+          "reach": 391.2,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 136.7,
+          "seatTubeLength": 529.9,
+          "chainstay": 410,
+          "wheelbase": 986,
+          "bbDrop": 70.5
+        },
+        {
+          "size": "L",
+          "stack": 573.2,
+          "reach": 401.2,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 161.8,
+          "seatTubeLength": 554.8,
+          "chainstay": 410,
+          "wheelbase": 1004,
+          "bbDrop": 70.5
+        },
+        {
+          "size": "XL",
+          "stack": 597.2,
+          "reach": 411.2,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 189.5,
+          "seatTubeLength": 579.7,
+          "chainstay": 410,
+          "wheelbase": 1022,
+          "bbDrop": 68
+        }
+      ]
+    },
+    {
+      "model": "795 Blade RS",
+      "year": 2021,
+      "category": "aero",
+      "source": "https://www.lookcycle.com/us-en/products/blade-rs-2/795-blade-rs-red-axs",
+      "retrieved": "2026-11-16",
+      "estimated": [
+        "wheelbase",
+        "bbDrop"
+      ],
+      "aliases": [
+        "Blade RS 2"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 501.2,
+          "reach": 371.3,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 90.4,
+          "seatTubeLength": 479.6,
+          "chainstay": 415,
+          "wheelbase": 974,
+          "bbDrop": 73
+        },
+        {
+          "size": "S",
+          "stack": 525.2,
+          "reach": 381.3,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 115.6,
+          "seatTubeLength": 504.4,
+          "chainstay": 415,
+          "wheelbase": 992,
+          "bbDrop": 73
+        },
+        {
+          "size": "M",
+          "stack": 549.2,
+          "reach": 391.2,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 136.7,
+          "seatTubeLength": 529.9,
+          "chainstay": 415,
+          "wheelbase": 991,
+          "bbDrop": 70.5
+        },
+        {
+          "size": "L",
+          "stack": 573.2,
+          "reach": 401.2,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 161.8,
+          "seatTubeLength": 554.8,
+          "chainstay": 415,
+          "wheelbase": 1009,
+          "bbDrop": 70.5
+        },
+        {
+          "size": "XL",
+          "stack": 597.2,
+          "reach": 411.2,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 189.5,
+          "seatTubeLength": 579.7,
+          "chainstay": 415,
+          "wheelbase": 1027,
+          "bbDrop": 68
+        }
+      ]
+    },
+    {
+      "model": "785 Huez",
+      "year": 2022,
+      "category": "race",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-frameset-new",
+      "retrieved": "2026-11-16",
+      "estimated": [
+        "wheelbase",
+        "bbDrop"
+      ],
+      "aliases": [
+        "785 Huez RS",
+        "Huez"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 519.2,
+          "reach": 365.3,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 94.4,
+          "seatTubeLength": 480,
+          "chainstay": 410,
+          "wheelbase": 969,
+          "bbDrop": 73
+        },
+        {
+          "size": "S",
+          "stack": 543.3,
+          "reach": 375.3,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 119.6,
+          "seatTubeLength": 504,
+          "chainstay": 410,
+          "wheelbase": 986,
+          "bbDrop": 73
+        },
+        {
+          "size": "M",
+          "stack": 567.3,
+          "reach": 385.6,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 140.7,
+          "seatTubeLength": 530,
+          "chainstay": 410,
+          "wheelbase": 986,
+          "bbDrop": 70.5
+        },
+        {
+          "size": "L",
+          "stack": 591.3,
+          "reach": 395.5,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 165.8,
+          "seatTubeLength": 554,
+          "chainstay": 410,
+          "wheelbase": 1004,
+          "bbDrop": 70.5
+        },
+        {
+          "size": "XL",
+          "stack": 615.3,
+          "reach": 405.6,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 193.5,
+          "seatTubeLength": 579,
+          "chainstay": 410,
+          "wheelbase": 1022,
+          "bbDrop": 68
+        }
+      ]
+    }
+  ]
+}

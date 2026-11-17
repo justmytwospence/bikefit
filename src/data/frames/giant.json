@@ -1,0 +1,345 @@
+{
+  "brand": "Giant",
+  "models": [
+    {
+      "model": "TCR Advanced",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.giant-bicycles.com/us/tcr-advanced-pro-1-di2-2025",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "TCR",
+        "TCR Advanced Pro",
+        "TCR Advanced SL"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 517,
+          "reach": 376,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 120,
+          "seatTubeLength": 425,
+          "chainstay": 405,
+          "wheelbase": 976,
+          "bbDrop": 72
+        },
+        {
+          "size": "S",
+          "stack": 528,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 130,
+          "seatTubeLength": 445,
+          "chainstay": 405,
+          "wheelbase": 977,
+          "bbDrop": 69.5
+        },
+        {
+          "size": "M",
+          "stack": 545,
+          "reach": 388,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 145,
+          "seatTubeLength": 470,
+          "chainstay": 405,
+          "wheelbase": 980,
+          "bbDrop": 69.5
+        },
+        {
+          "size": "ML",
+          "stack": 562,
+          "reach": 393,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 165,
+          "seatTubeLength": 500,
+          "chainstay": 405,
+          "wheelbase": 991,
+          "bbDrop": 67
+        },
+        {
+          "size": "L",
+          "stack": 581,
+          "reach": 402,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 185,
+          "seatTubeLength": 530,
+          "chainstay": 405,
+          "wheelbase": 1006,
+          "bbDrop": 67
+        },
+        {
+          "size": "XL",
+          "stack": 596,
+          "reach": 412,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 200,
+          "seatTubeLength": 560,
+          "chainstay": 405,
+          "wheelbase": 1020,
+          "bbDrop": 67
+        }
+      ]
+    },
+    {
+      "model": "Propel Advanced",
+      "year": 2023,
+      "category": "aero",
+      "source": "https://www.giant-bicycles.com/us/propel-advanced-1",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Propel"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 517,
+          "reach": 376,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 120,
+          "seatTubeLength": 465,
+          "chainstay": 405,
+          "wheelbase": 976,
+          "bbDrop": 72
+        },
+        {
+          "size": "S",
+          "stack": 528,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 130,
+          "seatTubeLength": 500,
+          "chainstay": 405,
+          "wheelbase": 977,
+          "bbDrop": 70
+        },
+        {
+          "size": "M",
+          "stack": 545,
+          "reach": 388,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 145,
+          "seatTubeLength": 520,
+          "chainstay": 405,
+          "wheelbase": 980,
+          "bbDrop": 70
+        },
+        {
+          "size": "ML",
+          "stack": 562,
+          "reach": 393,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 165,
+          "seatTubeLength": 545,
+          "chainstay": 405,
+          "wheelbase": 991,
+          "bbDrop": 67
+        },
+        {
+          "size": "L",
+          "stack": 581,
+          "reach": 402,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 185,
+          "seatTubeLength": 575,
+          "chainstay": 405,
+          "wheelbase": 1006,
+          "bbDrop": 67
+        },
+        {
+          "size": "XL",
+          "stack": 596,
+          "reach": 412,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 200,
+          "seatTubeLength": 595,
+          "chainstay": 405,
+          "wheelbase": 1020,
+          "bbDrop": 67
+        }
+      ]
+    },
+    {
+      "model": "Defy Advanced",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.giant-bicycles.com/us/defy-advanced-pro-1-2024",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Defy",
+        "Defy Advanced Pro"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 527,
+          "reach": 369,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 125,
+          "seatTubeLength": 410,
+          "chainstay": 420,
+          "wheelbase": 995,
+          "bbDrop": 75
+        },
+        {
+          "size": "S",
+          "stack": 541,
+          "reach": 375,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 135,
+          "seatTubeLength": 445,
+          "chainstay": 420,
+          "wheelbase": 994,
+          "bbDrop": 75
+        },
+        {
+          "size": "M",
+          "stack": 558,
+          "reach": 380,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 150,
+          "seatTubeLength": 480,
+          "chainstay": 420,
+          "wheelbase": 998,
+          "bbDrop": 75
+        },
+        {
+          "size": "ML",
+          "stack": 577,
+          "reach": 384,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 175,
+          "seatTubeLength": 515,
+          "chainstay": 420,
+          "wheelbase": 1010,
+          "bbDrop": 70
+        },
+        {
+          "size": "L",
+          "stack": 596,
+          "reach": 393,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 195,
+          "seatTubeLength": 535,
+          "chainstay": 420,
+          "wheelbase": 1025,
+          "bbDrop": 70
+        },
+        {
+          "size": "XL",
+          "stack": 615,
+          "reach": 402,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 215,
+          "seatTubeLength": 565,
+          "chainstay": 420,
+          "wheelbase": 1040,
+          "bbDrop": 70
+        }
+      ]
+    },
+    {
+      "model": "Revolt Advanced",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.giant-bicycles.com/us/revolt-advanced-1",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Revolt",
+        "Revolt Advanced Pro"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 556,
+          "reach": 381,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70,
+          "headTubeLength": 125,
+          "seatTubeLength": 430,
+          "chainstay": 425,
+          "wheelbase": 1024,
+          "bbDrop": 80
+        },
+        {
+          "size": "S",
+          "stack": 570,
+          "reach": 381,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 135,
+          "seatTubeLength": 450,
+          "chainstay": 425,
+          "wheelbase": 1020,
+          "bbDrop": 80
+        },
+        {
+          "size": "M",
+          "stack": 586,
+          "reach": 387,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 150,
+          "seatTubeLength": 470,
+          "chainstay": 425,
+          "wheelbase": 1026,
+          "bbDrop": 80
+        },
+        {
+          "size": "ML",
+          "stack": 602,
+          "reach": 391,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 165,
+          "seatTubeLength": 490,
+          "chainstay": 425,
+          "wheelbase": 1031,
+          "bbDrop": 80
+        },
+        {
+          "size": "L",
+          "stack": 616,
+          "reach": 397,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 180,
+          "seatTubeLength": 510,
+          "chainstay": 425,
+          "wheelbase": 1041,
+          "bbDrop": 80
+        },
+        {
+          "size": "XL",
+          "stack": 630,
+          "reach": 407,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 195,
+          "seatTubeLength": 530,
+          "chainstay": 425,
+          "wheelbase": 1056,
+          "bbDrop": 80
+        }
+      ]
+    }
+  ]
+}

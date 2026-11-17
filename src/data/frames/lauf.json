@@ -1,0 +1,75 @@
+{
+  "brand": "Lauf",
+  "models": [
+    {
+      "model": "Seigla",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.laufcycles.com/product/lauf-seigla",
+      "retrieved": "2026-11-16",
+      "tyreWidth": 45,
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 523,
+          "reach": 378,
+          "seatTubeAngle": 72.9,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 84,
+          "seatTubeLength": 461,
+          "chainstay": 425,
+          "wheelbase": 1009,
+          "bbDrop": 65
+        },
+        {
+          "size": "S",
+          "stack": 537,
+          "reach": 383,
+          "seatTubeAngle": 72.7,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 99,
+          "seatTubeLength": 500,
+          "chainstay": 425,
+          "wheelbase": 1020,
+          "bbDrop": 65
+        },
+        {
+          "size": "M",
+          "stack": 564,
+          "reach": 394,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 129,
+          "seatTubeLength": 528,
+          "chainstay": 425,
+          "wheelbase": 1040,
+          "bbDrop": 65
+        },
+        {
+          "size": "L",
+          "stack": 593,
+          "reach": 405,
+          "seatTubeAngle": 72.4,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 159,
+          "seatTubeLength": 548,
+          "chainstay": 425,
+          "wheelbase": 1061,
+          "bbDrop": 65
+        },
+        {
+          "size": "XL",
+          "stack": 623,
+          "reach": 416,
+          "seatTubeAngle": 72.3,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 191,
+          "seatTubeLength": 575,
+          "chainstay": 425,
+          "wheelbase": 1084,
+          "bbDrop": 65
+        }
+      ]
+    }
+  ]
+}

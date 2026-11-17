@@ -1,0 +1,660 @@
+{
+  "brand": "Trek",
+  "models": [
+    {
+      "model": "Madone Gen 8",
+      "year": 2025,
+      "category": "aero",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-gen-8-frameset/p/46775/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Madone SLR",
+        "Madone SL",
+        "Madone"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 507,
+          "reach": 370,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 100,
+          "seatTubeLength": 404,
+          "chainstay": 410,
+          "wheelbase": 971,
+          "bbDrop": 72
+        },
+        {
+          "size": "S",
+          "stack": 530,
+          "reach": 378,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 121,
+          "seatTubeLength": 440,
+          "chainstay": 410,
+          "wheelbase": 976,
+          "bbDrop": 72
+        },
+        {
+          "size": "M",
+          "stack": 546,
+          "reach": 384,
+          "seatTubeAngle": 73.6,
+          "headTubeAngle": 72.9,
+          "headTubeLength": 136,
+          "seatTubeLength": 476,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 70
+        },
+        {
+          "size": "ML",
+          "stack": 562,
+          "reach": 389,
+          "seatTubeAngle": 73.4,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 150,
+          "seatTubeLength": 512,
+          "chainstay": 410,
+          "wheelbase": 980,
+          "bbDrop": 70
+        },
+        {
+          "size": "L",
+          "stack": 582,
+          "reach": 394,
+          "seatTubeAngle": 73.4,
+          "headTubeAngle": 73.8,
+          "headTubeLength": 172,
+          "seatTubeLength": 548,
+          "chainstay": 411,
+          "wheelbase": 990,
+          "bbDrop": 68
+        },
+        {
+          "size": "XL",
+          "stack": 610,
+          "reach": 402,
+          "seatTubeAngle": 73.4,
+          "headTubeAngle": 73.9,
+          "headTubeLength": 201,
+          "seatTubeLength": 609,
+          "chainstay": 412,
+          "wheelbase": 1007,
+          "bbDrop": 68
+        }
+      ]
+    },
+    {
+      "model": "Madone Gen 7",
+      "year": 2023,
+      "category": "aero",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7-gen-7/a/41467/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Madone SLR Gen 7"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 507,
+          "reach": 373,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 100,
+          "seatTubeLength": 424,
+          "chainstay": 410,
+          "wheelbase": 972,
+          "bbDrop": 72
+        },
+        {
+          "size": "50",
+          "stack": 521,
+          "reach": 378,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 111,
+          "seatTubeLength": 453,
+          "chainstay": 410,
+          "wheelbase": 974,
+          "bbDrop": 72
+        },
+        {
+          "size": "52",
+          "stack": 533,
+          "reach": 383,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 72.8,
+          "headTubeLength": 121,
+          "seatTubeLength": 483,
+          "chainstay": 410,
+          "wheelbase": 977,
+          "bbDrop": 72
+        },
+        {
+          "size": "54",
+          "stack": 541,
+          "reach": 386,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 73,
+          "headTubeLength": 131,
+          "seatTubeLength": 496,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 70
+        },
+        {
+          "size": "56",
+          "stack": 563,
+          "reach": 391,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 151,
+          "seatTubeLength": 525,
+          "chainstay": 410,
+          "wheelbase": 983,
+          "bbDrop": 70
+        },
+        {
+          "size": "58",
+          "stack": 581,
+          "reach": 396,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.8,
+          "headTubeLength": 171,
+          "seatTubeLength": 553,
+          "chainstay": 411,
+          "wheelbase": 992,
+          "bbDrop": 68
+        },
+        {
+          "size": "60",
+          "stack": 601,
+          "reach": 399,
+          "seatTubeAngle": 72.8,
+          "headTubeAngle": 73.9,
+          "headTubeLength": 191,
+          "seatTubeLength": 573,
+          "chainstay": 411,
+          "wheelbase": 1001,
+          "bbDrop": 68
+        },
+        {
+          "size": "62",
+          "stack": 620,
+          "reach": 403,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 73.9,
+          "headTubeLength": 211,
+          "seatTubeLength": 593,
+          "chainstay": 412,
+          "wheelbase": 1010,
+          "bbDrop": 68
+        }
+      ]
+    },
+    {
+      "model": "Domane Gen 5",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/f/F221/domane-slr-7-gen-5/79925/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Domane SL",
+        "Domane SLR",
+        "Domane"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 524,
+          "reach": 368,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.3,
+          "headTubeLength": 106,
+          "seatTubeLength": 444,
+          "chainstay": 420,
+          "wheelbase": 987,
+          "bbDrop": 80
+        },
+        {
+          "size": "S",
+          "stack": 555,
+          "reach": 371,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 71.1,
+          "headTubeLength": 139,
+          "seatTubeLength": 476,
+          "chainstay": 420,
+          "wheelbase": 1002,
+          "bbDrop": 80
+        },
+        {
+          "size": "M",
+          "stack": 575,
+          "reach": 374,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.2,
+          "headTubeLength": 159,
+          "seatTubeLength": 500,
+          "chainstay": 420,
+          "wheelbase": 1011,
+          "bbDrop": 80
+        },
+        {
+          "size": "ML",
+          "stack": 596,
+          "reach": 377,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 71.9,
+          "headTubeLength": 170,
+          "seatTubeLength": 533,
+          "chainstay": 420,
+          "wheelbase": 1010,
+          "bbDrop": 78
+        },
+        {
+          "size": "L",
+          "stack": 618,
+          "reach": 380,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 72,
+          "headTubeLength": 192,
+          "seatTubeLength": 553,
+          "chainstay": 420,
+          "wheelbase": 1019,
+          "bbDrop": 78
+        },
+        {
+          "size": "XL",
+          "stack": 648,
+          "reach": 384,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 226,
+          "seatTubeLength": 593,
+          "chainstay": 420,
+          "wheelbase": 1033,
+          "bbDrop": 75
+        }
+      ]
+    },
+    {
+      "model": "Domane Gen 4",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-7-gen-4/p/57892/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Domane SL",
+        "Domane SLR",
+        "Domane"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 527,
+          "reach": 364,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 71,
+          "headTubeLength": 110,
+          "seatTubeLength": 420,
+          "chainstay": 420,
+          "wheelbase": 986,
+          "bbDrop": 80
+        },
+        {
+          "size": "50",
+          "stack": 546,
+          "reach": 368,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 71.1,
+          "headTubeLength": 130,
+          "seatTubeLength": 450,
+          "chainstay": 420,
+          "wheelbase": 996,
+          "bbDrop": 80
+        },
+        {
+          "size": "52",
+          "stack": 561,
+          "reach": 371,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 71.3,
+          "headTubeLength": 145,
+          "seatTubeLength": 475,
+          "chainstay": 420,
+          "wheelbase": 1003,
+          "bbDrop": 80
+        },
+        {
+          "size": "54",
+          "stack": 575,
+          "reach": 374,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 71.3,
+          "headTubeLength": 160,
+          "seatTubeLength": 500,
+          "chainstay": 420,
+          "wheelbase": 1010,
+          "bbDrop": 80
+        },
+        {
+          "size": "56",
+          "stack": 591,
+          "reach": 377,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 71.9,
+          "headTubeLength": 175,
+          "seatTubeLength": 525,
+          "chainstay": 420,
+          "wheelbase": 1008,
+          "bbDrop": 78
+        },
+        {
+          "size": "58",
+          "stack": 611,
+          "reach": 380,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 195,
+          "seatTubeLength": 548,
+          "chainstay": 425,
+          "wheelbase": 1022,
+          "bbDrop": 78
+        },
+        {
+          "size": "60",
+          "stack": 632,
+          "reach": 383,
+          "seatTubeAngle": 72.8,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 220,
+          "seatTubeLength": 567,
+          "chainstay": 425,
+          "wheelbase": 1032,
+          "bbDrop": 75
+        },
+        {
+          "size": "62",
+          "stack": 656,
+          "reach": 386,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 245,
+          "seatTubeLength": 586,
+          "chainstay": 425,
+          "wheelbase": 1042,
+          "bbDrop": 75
+        }
+      ]
+    },
+    {
+      "model": "Checkpoint SL Gen 3",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-sl/f/F224-1/checkpoint-sl-7-axs-gen-3/55097/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Checkpoint"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 535,
+          "reach": 380,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 86,
+          "seatTubeLength": 445,
+          "chainstay": 430,
+          "wheelbase": 1013,
+          "bbDrop": 76
+        },
+        {
+          "size": "S",
+          "stack": 556,
+          "reach": 386,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.4,
+          "headTubeLength": 106,
+          "seatTubeLength": 480,
+          "chainstay": 430,
+          "wheelbase": 1022,
+          "bbDrop": 76
+        },
+        {
+          "size": "M",
+          "stack": 579,
+          "reach": 391,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 130,
+          "seatTubeLength": 505,
+          "chainstay": 430,
+          "wheelbase": 1034,
+          "bbDrop": 76
+        },
+        {
+          "size": "ML",
+          "stack": 601,
+          "reach": 397,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 72,
+          "headTubeLength": 151,
+          "seatTubeLength": 530,
+          "chainstay": 430,
+          "wheelbase": 1042,
+          "bbDrop": 76
+        },
+        {
+          "size": "L",
+          "stack": 620,
+          "reach": 402,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 171,
+          "seatTubeLength": 550,
+          "chainstay": 430,
+          "wheelbase": 1052,
+          "bbDrop": 76
+        },
+        {
+          "size": "XL",
+          "stack": 640,
+          "reach": 408,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 72.4,
+          "headTubeLength": 191,
+          "seatTubeLength": 575,
+          "chainstay": 430,
+          "wheelbase": 1062,
+          "bbDrop": 76
+        }
+      ]
+    },
+    {
+      "model": "Checkpoint ALR Gen 3",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/f/F224-2/checkpoint-alr-5-gen-3/49946/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Checkpoint",
+        "Checkpoint ALR"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 545,
+          "reach": 380,
+          "seatTubeAngle": 74.1,
+          "headTubeAngle": 71.2,
+          "headTubeLength": 96,
+          "seatTubeLength": 445,
+          "chainstay": 435,
+          "wheelbase": 1025,
+          "bbDrop": 78
+        },
+        {
+          "size": "S",
+          "stack": 566,
+          "reach": 385,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 117,
+          "seatTubeLength": 480,
+          "chainstay": 435,
+          "wheelbase": 1033,
+          "bbDrop": 78
+        },
+        {
+          "size": "M",
+          "stack": 589,
+          "reach": 391,
+          "seatTubeAngle": 73.2,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 140,
+          "seatTubeLength": 505,
+          "chainstay": 435,
+          "wheelbase": 1041,
+          "bbDrop": 76
+        },
+        {
+          "size": "ML",
+          "stack": 611,
+          "reach": 397,
+          "seatTubeAngle": 72.8,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 162,
+          "seatTubeLength": 530,
+          "chainstay": 435,
+          "wheelbase": 1048,
+          "bbDrop": 76
+        },
+        {
+          "size": "L",
+          "stack": 630,
+          "reach": 402,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 181,
+          "seatTubeLength": 550,
+          "chainstay": 435,
+          "wheelbase": 1058,
+          "bbDrop": 74
+        },
+        {
+          "size": "XL",
+          "stack": 650,
+          "reach": 408,
+          "seatTubeAngle": 72.1,
+          "headTubeAngle": 72.6,
+          "headTubeLength": 201,
+          "seatTubeLength": 575,
+          "chainstay": 435,
+          "wheelbase": 1070,
+          "bbDrop": 74
+        }
+      ]
+    },
+    {
+      "model": "Domane AL Gen 4",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/f/F221-5/domane-al-2-gen-4/80164/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Domane AL"
+      ],
+      "sizes": [
+        {
+          "size": "44",
+          "stack": 510,
+          "reach": 360,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 70.3,
+          "headTubeLength": 95,
+          "seatTubeLength": 390,
+          "chainstay": 420,
+          "wheelbase": 983,
+          "bbDrop": 80
+        },
+        {
+          "size": "49",
+          "stack": 540,
+          "reach": 368,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 70.8,
+          "headTubeLength": 123,
+          "seatTubeLength": 440,
+          "chainstay": 425,
+          "wheelbase": 1001,
+          "bbDrop": 80
+        },
+        {
+          "size": "52",
+          "stack": 561,
+          "reach": 371,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 71.3,
+          "headTubeLength": 145,
+          "seatTubeLength": 475,
+          "chainstay": 420,
+          "wheelbase": 1003,
+          "bbDrop": 80
+        },
+        {
+          "size": "54",
+          "stack": 575,
+          "reach": 374,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 71.3,
+          "headTubeLength": 160,
+          "seatTubeLength": 500,
+          "chainstay": 420,
+          "wheelbase": 1010,
+          "bbDrop": 80
+        },
+        {
+          "size": "56",
+          "stack": 591,
+          "reach": 377,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 71.9,
+          "headTubeLength": 175,
+          "seatTubeLength": 525,
+          "chainstay": 420,
+          "wheelbase": 1018,
+          "bbDrop": 78
+        },
+        {
+          "size": "58",
+          "stack": 611,
+          "reach": 380,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 195,
+          "seatTubeLength": 548,
+          "chainstay": 425,
+          "wheelbase": 1022,
+          "bbDrop": 78
+        },
+        {
+          "size": "61",
+          "stack": 646,
+          "reach": 385,
+          "seatTubeAngle": 72.7,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 235,
+          "seatTubeLength": 576,
+          "chainstay": 425,
+          "wheelbase": 1038,
+          "bbDrop": 75
+        }
+      ]
+    }
+  ]
+}

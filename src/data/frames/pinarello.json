@@ -1,0 +1,389 @@
+{
+  "brand": "Pinarello",
+  "models": [
+    {
+      "model": "Dogma F",
+      "year": 2021,
+      "category": "race",
+      "source": "https://pinarello.com/storage/download/e06bfb8386a9908d0f7681076e24f64a.pdf",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "F",
+        "Dogma F12",
+        "Dogma F Disk"
+      ],
+      "estimated": [
+        "wheelbase"
+      ],
+      "sizes": [
+        {
+          "size": "430",
+          "stack": 502.4,
+          "reach": 351.4,
+          "seatTubeAngle": 74.4,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 97,
+          "seatTubeLength": 425,
+          "chainstay": 406,
+          "wheelbase": 961,
+          "bbDrop": 67
+        },
+        {
+          "size": "465",
+          "stack": 517.6,
+          "reach": 364.8,
+          "seatTubeAngle": 74.4,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 104,
+          "seatTubeLength": 450,
+          "chainstay": 406,
+          "wheelbase": 968,
+          "bbDrop": 72
+        },
+        {
+          "size": "500",
+          "stack": 525.4,
+          "reach": 372.1,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.4,
+          "headTubeLength": 109,
+          "seatTubeLength": 465,
+          "chainstay": 406,
+          "wheelbase": 970,
+          "bbDrop": 72
+        },
+        {
+          "size": "515",
+          "stack": 532.3,
+          "reach": 378,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 72,
+          "headTubeLength": 114,
+          "seatTubeLength": 485,
+          "chainstay": 406,
+          "wheelbase": 972,
+          "bbDrop": 72
+        },
+        {
+          "size": "530",
+          "stack": 542.6,
+          "reach": 383.3,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 123,
+          "seatTubeLength": 500,
+          "chainstay": 406,
+          "wheelbase": 976,
+          "bbDrop": 72
+        },
+        {
+          "size": "540",
+          "stack": 551.2,
+          "reach": 385,
+          "seatTubeAngle": 73.4,
+          "headTubeAngle": 72.8,
+          "headTubeLength": 131,
+          "seatTubeLength": 510,
+          "chainstay": 408,
+          "wheelbase": 980,
+          "bbDrop": 72
+        },
+        {
+          "size": "550",
+          "stack": 561.6,
+          "reach": 388.8,
+          "seatTubeAngle": 73.4,
+          "headTubeAngle": 72.8,
+          "headTubeLength": 142,
+          "seatTubeLength": 520,
+          "chainstay": 408,
+          "wheelbase": 987,
+          "bbDrop": 72
+        },
+        {
+          "size": "560",
+          "stack": 570.2,
+          "reach": 390.7,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.2,
+          "headTubeLength": 149.5,
+          "seatTubeLength": 525,
+          "chainstay": 408,
+          "wheelbase": 988,
+          "bbDrop": 72
+        },
+        {
+          "size": "575",
+          "stack": 584.8,
+          "reach": 396.7,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.7,
+          "headTubeLength": 163,
+          "seatTubeLength": 540,
+          "chainstay": 408,
+          "wheelbase": 993,
+          "bbDrop": 72
+        },
+        {
+          "size": "595",
+          "stack": 613.3,
+          "reach": 393.3,
+          "seatTubeAngle": 72.4,
+          "headTubeAngle": 73.4,
+          "headTubeLength": 199,
+          "seatTubeLength": 560,
+          "chainstay": 408,
+          "wheelbase": 1003,
+          "bbDrop": 67
+        },
+        {
+          "size": "620",
+          "stack": 651.7,
+          "reach": 410.1,
+          "seatTubeAngle": 72,
+          "headTubeAngle": 73.4,
+          "headTubeLength": 239,
+          "seatTubeLength": 600,
+          "chainstay": 411,
+          "wheelbase": 1035,
+          "bbDrop": 67
+        }
+      ]
+    },
+    {
+      "model": "Dogma X",
+      "year": 2027,
+      "category": "endurance",
+      "source": "https://pinarello.com/storage/download/fb53f57a3c241de1b0c0000c5daf5fa4.pdf",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "X",
+        "New Dogma X"
+      ],
+      "tyreWidth": 35,
+      "estimated": [
+        "wheelbase"
+      ],
+      "sizes": [
+        {
+          "size": "430",
+          "stack": 524.2,
+          "reach": 349.3,
+          "seatTubeAngle": 74.4,
+          "headTubeAngle": 70,
+          "headTubeLength": 111,
+          "seatTubeLength": 415,
+          "chainstay": 422,
+          "wheelbase": 977,
+          "bbDrop": 77
+        },
+        {
+          "size": "465",
+          "stack": 535.5,
+          "reach": 358.1,
+          "seatTubeAngle": 74.4,
+          "headTubeAngle": 70,
+          "headTubeLength": 123,
+          "seatTubeLength": 425,
+          "chainstay": 422,
+          "wheelbase": 990,
+          "bbDrop": 77
+        },
+        {
+          "size": "500",
+          "stack": 542.1,
+          "reach": 365.4,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 128,
+          "seatTubeLength": 450,
+          "chainstay": 422,
+          "wheelbase": 995,
+          "bbDrop": 77
+        },
+        {
+          "size": "515",
+          "stack": 548.6,
+          "reach": 371.7,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 71,
+          "headTubeLength": 133,
+          "seatTubeLength": 470,
+          "chainstay": 422,
+          "wheelbase": 999,
+          "bbDrop": 77
+        },
+        {
+          "size": "530",
+          "stack": 559,
+          "reach": 379.4,
+          "seatTubeAngle": 73.7,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 142,
+          "seatTubeLength": 495,
+          "chainstay": 422,
+          "wheelbase": 1005,
+          "bbDrop": 77
+        },
+        {
+          "size": "540",
+          "stack": 568.4,
+          "reach": 381.2,
+          "seatTubeAngle": 73.4,
+          "headTubeAngle": 72,
+          "headTubeLength": 150,
+          "seatTubeLength": 510,
+          "chainstay": 422,
+          "wheelbase": 1005,
+          "bbDrop": 77
+        },
+        {
+          "size": "550",
+          "stack": 578.9,
+          "reach": 383,
+          "seatTubeAngle": 73.4,
+          "headTubeAngle": 72,
+          "headTubeLength": 161,
+          "seatTubeLength": 520,
+          "chainstay": 422,
+          "wheelbase": 1010,
+          "bbDrop": 77
+        },
+        {
+          "size": "560",
+          "stack": 588.4,
+          "reach": 384.6,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 169,
+          "seatTubeLength": 525,
+          "chainstay": 422,
+          "wheelbase": 1010,
+          "bbDrop": 77
+        },
+        {
+          "size": "575",
+          "stack": 601.7,
+          "reach": 390.8,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.8,
+          "headTubeLength": 182,
+          "seatTubeLength": 540,
+          "chainstay": 422,
+          "wheelbase": 1017,
+          "bbDrop": 77
+        },
+        {
+          "size": "595",
+          "stack": 632,
+          "reach": 395.3,
+          "seatTubeAngle": 72.4,
+          "headTubeAngle": 73,
+          "headTubeLength": 218,
+          "seatTubeLength": 560,
+          "chainstay": 422,
+          "wheelbase": 1031,
+          "bbDrop": 72
+        },
+        {
+          "size": "620",
+          "stack": 670.3,
+          "reach": 403.8,
+          "seatTubeAngle": 72,
+          "headTubeAngle": 73,
+          "headTubeLength": 258,
+          "seatTubeLength": 600,
+          "chainstay": 422,
+          "wheelbase": 1052,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "Grevil F",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://pinarello.com/storage/download/0ac92c00c20c399a1a02ca112fafbb8f.pdf",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Grevil",
+        "New Grevil F"
+      ],
+      "tyreWidth": 50,
+      "sizes": [
+        {
+          "size": "470",
+          "stack": 553.2,
+          "reach": 368.4,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.25,
+          "headTubeLength": 115,
+          "seatTubeLength": 410,
+          "chainstay": 430,
+          "wheelbase": 1023.5,
+          "bbDrop": 72
+        },
+        {
+          "size": "500",
+          "stack": 568.3,
+          "reach": 376.1,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 130,
+          "seatTubeLength": 440,
+          "chainstay": 430,
+          "wheelbase": 1034.2,
+          "bbDrop": 72
+        },
+        {
+          "size": "530",
+          "stack": 583.2,
+          "reach": 383.7,
+          "seatTubeAngle": 73.75,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 150,
+          "seatTubeLength": 470,
+          "chainstay": 430,
+          "wheelbase": 1047,
+          "bbDrop": 67
+        },
+        {
+          "size": "550",
+          "stack": 598.4,
+          "reach": 390.4,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.75,
+          "headTubeLength": 160,
+          "seatTubeLength": 490,
+          "chainstay": 430,
+          "wheelbase": 1043,
+          "bbDrop": 67
+        },
+        {
+          "size": "575",
+          "stack": 613.6,
+          "reach": 398.2,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 175,
+          "seatTubeLength": 510,
+          "chainstay": 430,
+          "wheelbase": 1053.1,
+          "bbDrop": 67
+        },
+        {
+          "size": "600",
+          "stack": 633.7,
+          "reach": 406.9,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.25,
+          "headTubeLength": 195,
+          "seatTubeLength": 545,
+          "chainstay": 430,
+          "wheelbase": 1065.5,
+          "bbDrop": 67
+        }
+      ]
+    }
+  ]
+}

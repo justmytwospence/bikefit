@@ -1,4 +1,712 @@
 {
   "brand": "Specialized",
-  "models": []
+  "models": [
+    {
+      "model": "Tarmac SL9",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl9-expert-shimano-ultegra-di2/p/4293531",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "SL9"
+      ],
+      "sizes": [
+        {
+          "size": "44",
+          "stack": 501,
+          "reach": 366,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 99,
+          "seatTubeLength": 433,
+          "chainstay": 410,
+          "wheelbase": 970,
+          "bbDrop": 74
+        },
+        {
+          "size": "49",
+          "stack": 514,
+          "reach": 375,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 71.75,
+          "headTubeLength": 109,
+          "seatTubeLength": 445,
+          "chainstay": 410,
+          "wheelbase": 973,
+          "bbDrop": 74
+        },
+        {
+          "size": "52",
+          "stack": 527,
+          "reach": 380,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 120,
+          "seatTubeLength": 456,
+          "chainstay": 410,
+          "wheelbase": 975,
+          "bbDrop": 74
+        },
+        {
+          "size": "54",
+          "stack": 544,
+          "reach": 384,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 140,
+          "seatTubeLength": 473,
+          "chainstay": 410,
+          "wheelbase": 986,
+          "bbDrop": 72
+        },
+        {
+          "size": "56",
+          "stack": 565,
+          "reach": 395,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 157,
+          "seatTubeLength": 494,
+          "chainstay": 410,
+          "wheelbase": 991,
+          "bbDrop": 72
+        },
+        {
+          "size": "58",
+          "stack": 591,
+          "reach": 402,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 184,
+          "seatTubeLength": 515,
+          "chainstay": 410,
+          "wheelbase": 1006,
+          "bbDrop": 72
+        },
+        {
+          "size": "61",
+          "stack": 612,
+          "reach": 408,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 74,
+          "headTubeLength": 204,
+          "seatTubeLength": 545,
+          "chainstay": 410,
+          "wheelbase": 1013,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "Tarmac SL8",
+      "year": 2024,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/s-works-tarmac-sl8-frameset-fact-12r-carbon/p/4221540",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "SL8"
+      ],
+      "sizes": [
+        {
+          "size": "44",
+          "stack": 501,
+          "reach": 366,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 99,
+          "seatTubeLength": 433,
+          "chainstay": 410,
+          "wheelbase": 970,
+          "bbDrop": 74
+        },
+        {
+          "size": "49",
+          "stack": 514,
+          "reach": 375,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 71.75,
+          "headTubeLength": 109,
+          "seatTubeLength": 445,
+          "chainstay": 410,
+          "wheelbase": 973,
+          "bbDrop": 74
+        },
+        {
+          "size": "52",
+          "stack": 527,
+          "reach": 380,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 120,
+          "seatTubeLength": 456,
+          "chainstay": 410,
+          "wheelbase": 975,
+          "bbDrop": 74
+        },
+        {
+          "size": "54",
+          "stack": 544,
+          "reach": 384,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 73,
+          "headTubeLength": 137,
+          "seatTubeLength": 473,
+          "chainstay": 410,
+          "wheelbase": 978,
+          "bbDrop": 72
+        },
+        {
+          "size": "56",
+          "stack": 565,
+          "reach": 395,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 157,
+          "seatTubeLength": 494,
+          "chainstay": 410,
+          "wheelbase": 991,
+          "bbDrop": 72
+        },
+        {
+          "size": "58",
+          "stack": 591,
+          "reach": 402,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 184,
+          "seatTubeLength": 515,
+          "chainstay": 410,
+          "wheelbase": 1006,
+          "bbDrop": 72
+        },
+        {
+          "size": "61",
+          "stack": 612,
+          "reach": 408,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 74,
+          "headTubeLength": 204,
+          "seatTubeLength": 545,
+          "chainstay": 410,
+          "wheelbase": 1013,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "Aethos 2",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/aethos-2-pro-sram-force-axs/p/4221564",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Aethos"
+      ],
+      "sizes": [
+        {
+          "size": "49",
+          "stack": 522,
+          "reach": 373,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 71.4,
+          "headTubeLength": 114,
+          "seatTubeLength": 450,
+          "chainstay": 410,
+          "wheelbase": 978,
+          "bbDrop": 76.5
+        },
+        {
+          "size": "52",
+          "stack": 538,
+          "reach": 377,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 72.1,
+          "headTubeLength": 128,
+          "seatTubeLength": 470,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 76.5
+        },
+        {
+          "size": "54",
+          "stack": 559,
+          "reach": 384,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 150,
+          "seatTubeLength": 490,
+          "chainstay": 410,
+          "wheelbase": 992,
+          "bbDrop": 75
+        },
+        {
+          "size": "56",
+          "stack": 580,
+          "reach": 391,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 73,
+          "headTubeLength": 169,
+          "seatTubeLength": 510,
+          "chainstay": 410,
+          "wheelbase": 998,
+          "bbDrop": 75
+        },
+        {
+          "size": "58",
+          "stack": 606,
+          "reach": 398,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 73,
+          "headTubeLength": 198,
+          "seatTubeLength": 535,
+          "chainstay": 410,
+          "wheelbase": 1013,
+          "bbDrop": 73.5
+        },
+        {
+          "size": "61",
+          "stack": 627,
+          "reach": 404,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 218,
+          "seatTubeLength": 570,
+          "chainstay": 410,
+          "wheelbase": 1020,
+          "bbDrop": 73.5
+        }
+      ]
+    },
+    {
+      "model": "Aethos",
+      "year": 2023,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/aethos-pro-shimano-ultegra-di2/p/4221544",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Aethos 1"
+      ],
+      "sizes": [
+        {
+          "size": "49",
+          "stack": 514,
+          "reach": 375,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 71.75,
+          "headTubeLength": 109,
+          "seatTubeLength": 431,
+          "chainstay": 410,
+          "wheelbase": 973,
+          "bbDrop": 74
+        },
+        {
+          "size": "52",
+          "stack": 527,
+          "reach": 380,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 120,
+          "seatTubeLength": 462,
+          "chainstay": 410,
+          "wheelbase": 975,
+          "bbDrop": 74
+        },
+        {
+          "size": "54",
+          "stack": 544,
+          "reach": 384,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 73,
+          "headTubeLength": 137,
+          "seatTubeLength": 481,
+          "chainstay": 410,
+          "wheelbase": 978,
+          "bbDrop": 72
+        },
+        {
+          "size": "56",
+          "stack": 565,
+          "reach": 395,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 157,
+          "seatTubeLength": 504,
+          "chainstay": 410,
+          "wheelbase": 991,
+          "bbDrop": 72
+        },
+        {
+          "size": "58",
+          "stack": 591,
+          "reach": 402,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 184,
+          "seatTubeLength": 532,
+          "chainstay": 410,
+          "wheelbase": 1005,
+          "bbDrop": 72
+        },
+        {
+          "size": "61",
+          "stack": 612,
+          "reach": 408,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 74,
+          "headTubeLength": 204,
+          "seatTubeLength": 567,
+          "chainstay": 410,
+          "wheelbase": 1012,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "Roubaix SL8",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/s-works-roubaix-sl8-frameset-fact-12r-carbon/p/4263272",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Roubaix"
+      ],
+      "sizes": [
+        {
+          "size": "44",
+          "stack": 543,
+          "reach": 353,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 69.3,
+          "headTubeLength": 90,
+          "seatTubeLength": 365,
+          "chainstay": 418,
+          "wheelbase": 994,
+          "bbDrop": 80
+        },
+        {
+          "size": "49",
+          "stack": 549,
+          "reach": 363,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.8,
+          "headTubeLength": 90,
+          "seatTubeLength": 410,
+          "chainstay": 418,
+          "wheelbase": 992,
+          "bbDrop": 80
+        },
+        {
+          "size": "52",
+          "stack": 566,
+          "reach": 370,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 105,
+          "seatTubeLength": 445,
+          "chainstay": 418,
+          "wheelbase": 988,
+          "bbDrop": 80
+        },
+        {
+          "size": "54",
+          "stack": 585,
+          "reach": 381,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 122,
+          "seatTubeLength": 465,
+          "chainstay": 420,
+          "wheelbase": 1005,
+          "bbDrop": 78
+        },
+        {
+          "size": "56",
+          "stack": 605,
+          "reach": 389,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 140,
+          "seatTubeLength": 485,
+          "chainstay": 420,
+          "wheelbase": 1012,
+          "bbDrop": 78
+        },
+        {
+          "size": "58",
+          "stack": 630,
+          "reach": 397,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 168,
+          "seatTubeLength": 505,
+          "chainstay": 423,
+          "wheelbase": 1031,
+          "bbDrop": 78
+        },
+        {
+          "size": "61",
+          "stack": 665,
+          "reach": 403,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 202,
+          "seatTubeLength": 545,
+          "chainstay": 423,
+          "wheelbase": 1042,
+          "bbDrop": 78
+        }
+      ]
+    },
+    {
+      "model": "Diverge 4",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-4-pro-sram-force-xplr/p/4293747",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Diverge"
+      ],
+      "tyreWidth": 45,
+      "sizes": [
+        {
+          "size": "49",
+          "stack": 563,
+          "reach": 365,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70,
+          "headTubeLength": 90,
+          "seatTubeLength": 400,
+          "chainstay": 430,
+          "wheelbase": 1019,
+          "bbDrop": 85
+        },
+        {
+          "size": "52",
+          "stack": 578,
+          "reach": 374,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 104,
+          "seatTubeLength": 430,
+          "chainstay": 430,
+          "wheelbase": 1031,
+          "bbDrop": 85
+        },
+        {
+          "size": "54",
+          "stack": 592,
+          "reach": 387,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 116,
+          "seatTubeLength": 470,
+          "chainstay": 430,
+          "wheelbase": 1041,
+          "bbDrop": 85
+        },
+        {
+          "size": "56",
+          "stack": 610,
+          "reach": 400,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 135,
+          "seatTubeLength": 500,
+          "chainstay": 430,
+          "wheelbase": 1060,
+          "bbDrop": 85
+        },
+        {
+          "size": "58",
+          "stack": 634,
+          "reach": 412,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 161,
+          "seatTubeLength": 530,
+          "chainstay": 430,
+          "wheelbase": 1081,
+          "bbDrop": 85
+        },
+        {
+          "size": "61",
+          "stack": 659,
+          "reach": 425,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 187,
+          "seatTubeLength": 560,
+          "chainstay": 430,
+          "wheelbase": 1102,
+          "bbDrop": 85
+        }
+      ]
+    },
+    {
+      "model": "Crux 5",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/s-works-crux-5-frameset-fact-12r-carbon/p/4294842",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Crux"
+      ],
+      "tyreWidth": 45,
+      "sizes": [
+        {
+          "size": "49",
+          "stack": 530,
+          "reach": 375,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 95,
+          "seatTubeLength": 445,
+          "chainstay": 425,
+          "wheelbase": 1008,
+          "bbDrop": 80
+        },
+        {
+          "size": "52",
+          "stack": 547,
+          "reach": 382,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 110,
+          "seatTubeLength": 456,
+          "chainstay": 425,
+          "wheelbase": 1016,
+          "bbDrop": 80
+        },
+        {
+          "size": "54",
+          "stack": 560,
+          "reach": 388,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 125,
+          "seatTubeLength": 473,
+          "chainstay": 425,
+          "wheelbase": 1026,
+          "bbDrop": 78
+        },
+        {
+          "size": "56",
+          "stack": 578,
+          "reach": 400,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 142,
+          "seatTubeLength": 497,
+          "chainstay": 425,
+          "wheelbase": 1039,
+          "bbDrop": 78
+        },
+        {
+          "size": "58",
+          "stack": 598,
+          "reach": 412,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 163,
+          "seatTubeLength": 515,
+          "chainstay": 425,
+          "wheelbase": 1057,
+          "bbDrop": 78
+        },
+        {
+          "size": "61",
+          "stack": 621,
+          "reach": 425,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 188,
+          "seatTubeLength": 545,
+          "chainstay": 425,
+          "wheelbase": 1078,
+          "bbDrop": 78
+        }
+      ]
+    },
+    {
+      "model": "Allez Sprint",
+      "year": 2025,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-sprint-frameset-daluisio-smartweld-alloy/p/4221551",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        {
+          "size": "49",
+          "stack": 508,
+          "reach": 378,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 71.75,
+          "headTubeLength": 105,
+          "seatTubeLength": 470,
+          "chainstay": 410,
+          "wheelbase": 974,
+          "bbDrop": 74
+        },
+        {
+          "size": "52",
+          "stack": 520,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 115,
+          "seatTubeLength": 495,
+          "chainstay": 410,
+          "wheelbase": 976,
+          "bbDrop": 74
+        },
+        {
+          "size": "54",
+          "stack": 537,
+          "reach": 387,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 73,
+          "headTubeLength": 133,
+          "seatTubeLength": 510,
+          "chainstay": 410,
+          "wheelbase": 979,
+          "bbDrop": 72
+        },
+        {
+          "size": "56",
+          "stack": 558,
+          "reach": 398,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 153,
+          "seatTubeLength": 530,
+          "chainstay": 410,
+          "wheelbase": 992,
+          "bbDrop": 72
+        },
+        {
+          "size": "58",
+          "stack": 584,
+          "reach": 405,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 74,
+          "headTubeLength": 180,
+          "seatTubeLength": 550,
+          "chainstay": 410,
+          "wheelbase": 1006,
+          "bbDrop": 72
+        },
+        {
+          "size": "61",
+          "stack": 605,
+          "reach": 411,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 200,
+          "seatTubeLength": 570,
+          "chainstay": 410,
+          "wheelbase": 1013,
+          "bbDrop": 72
+        }
+      ]
+    }
+  ]
 }

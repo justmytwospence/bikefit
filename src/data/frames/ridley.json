@@ -1,0 +1,306 @@
+{
+  "brand": "Ridley",
+  "models": [
+    {
+      "model": "Noah Fast",
+      "year": 2025,
+      "category": "aero",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBINF3RID004",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Noah Fast 3.0",
+        "Noah"
+      ],
+      "sizes": [
+        {
+          "size": "XXS",
+          "stack": 497,
+          "reach": 386,
+          "seatTubeAngle": 76.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 95,
+          "seatTubeLength": 480,
+          "chainstay": 407,
+          "wheelbase": 981,
+          "bbDrop": 72
+        },
+        {
+          "size": "XS",
+          "stack": 504,
+          "reach": 399,
+          "seatTubeAngle": 76,
+          "headTubeAngle": 72,
+          "headTubeLength": 100,
+          "seatTubeLength": 485,
+          "chainstay": 407,
+          "wheelbase": 993,
+          "bbDrop": 72
+        },
+        {
+          "size": "S",
+          "stack": 521,
+          "reach": 410,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 115,
+          "seatTubeLength": 510,
+          "chainstay": 407,
+          "wheelbase": 996,
+          "bbDrop": 70
+        },
+        {
+          "size": "M",
+          "stack": 541,
+          "reach": 420,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 135,
+          "seatTubeLength": 540,
+          "chainstay": 407,
+          "wheelbase": 1007,
+          "bbDrop": 70
+        },
+        {
+          "size": "L",
+          "stack": 565,
+          "reach": 428,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 160,
+          "seatTubeLength": 560,
+          "chainstay": 407,
+          "wheelbase": 1023,
+          "bbDrop": 70
+        }
+      ]
+    },
+    {
+      "model": "Helium",
+      "year": 2022,
+      "category": "race",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIHEDRID172",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Helium Disc"
+      ],
+      "sizes": [
+        {
+          "size": "XXS",
+          "stack": 507,
+          "reach": 379,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 110,
+          "seatTubeLength": 450,
+          "chainstay": 405,
+          "wheelbase": 970,
+          "bbDrop": 68
+        },
+        {
+          "size": "XS",
+          "stack": 527,
+          "reach": 374,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 130,
+          "seatTubeLength": 480,
+          "chainstay": 405,
+          "wheelbase": 970,
+          "bbDrop": 68
+        },
+        {
+          "size": "S",
+          "stack": 542,
+          "reach": 384,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 145,
+          "seatTubeLength": 510,
+          "chainstay": 405,
+          "wheelbase": 977,
+          "bbDrop": 66
+        },
+        {
+          "size": "M",
+          "stack": 573,
+          "reach": 390,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 175,
+          "seatTubeLength": 540,
+          "chainstay": 405,
+          "wheelbase": 987,
+          "bbDrop": 66
+        },
+        {
+          "size": "L",
+          "stack": 599,
+          "reach": 396,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 205,
+          "seatTubeLength": 570,
+          "chainstay": 408,
+          "wheelbase": 1005,
+          "bbDrop": 63
+        },
+        {
+          "size": "XL",
+          "stack": 624,
+          "reach": 403,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 74,
+          "headTubeLength": 230,
+          "seatTubeLength": 600,
+          "chainstay": 408,
+          "wheelbase": 1014,
+          "bbDrop": 63
+        }
+      ]
+    },
+    {
+      "model": "Grifn",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKARRID685",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Grifn Road"
+      ],
+      "sizes": [
+        {
+          "size": "XXS",
+          "stack": 524,
+          "reach": 375,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71,
+          "headTubeLength": 100,
+          "seatTubeLength": 440,
+          "chainstay": 420,
+          "wheelbase": 992,
+          "bbDrop": 75
+        },
+        {
+          "size": "XS",
+          "stack": 540,
+          "reach": 375,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 115,
+          "seatTubeLength": 470,
+          "chainstay": 420,
+          "wheelbase": 993,
+          "bbDrop": 75
+        },
+        {
+          "size": "S",
+          "stack": 563,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 140,
+          "seatTubeLength": 500,
+          "chainstay": 420,
+          "wheelbase": 1005,
+          "bbDrop": 73
+        },
+        {
+          "size": "M",
+          "stack": 587,
+          "reach": 391,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72,
+          "headTubeLength": 165,
+          "seatTubeLength": 520,
+          "chainstay": 420,
+          "wheelbase": 1021,
+          "bbDrop": 73
+        },
+        {
+          "size": "L",
+          "stack": 614,
+          "reach": 403,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72,
+          "headTubeLength": 195,
+          "seatTubeLength": 545,
+          "chainstay": 420,
+          "wheelbase": 1043,
+          "bbDrop": 71
+        },
+        {
+          "size": "XL",
+          "stack": 633,
+          "reach": 412,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 215,
+          "seatTubeLength": 570,
+          "chainstay": 420,
+          "wheelbase": 1058,
+          "bbDrop": 71
+        }
+      ]
+    },
+    {
+      "model": "Kanzo Fast",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKF2RID019",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Kanzo Fast 2.0"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 541,
+          "reach": 375,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 105,
+          "seatTubeLength": 475,
+          "chainstay": 425,
+          "wheelbase": 1006,
+          "bbDrop": 80
+        },
+        {
+          "size": "S",
+          "stack": 561,
+          "reach": 394,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 125,
+          "seatTubeLength": 500,
+          "chainstay": 425,
+          "wheelbase": 1028,
+          "bbDrop": 80
+        },
+        {
+          "size": "M",
+          "stack": 585,
+          "reach": 408,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 150,
+          "seatTubeLength": 520,
+          "chainstay": 425,
+          "wheelbase": 1049,
+          "bbDrop": 80
+        },
+        {
+          "size": "L",
+          "stack": 609,
+          "reach": 427,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 175,
+          "seatTubeLength": 550,
+          "chainstay": 425,
+          "wheelbase": 1076,
+          "bbDrop": 80
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "brand": "Ribble",
+  "models": [
+    {
+      "model": "Ultra-Road",
+      "year": 2025,
+      "category": "endurance",
+      "source": "https://www.ribblecycles.co.uk/ribble-ultra-road/",
+      "aliases": [
+        "Endurance SL R",
+        "Endurance SL",
+        "Ultra Road"
+      ],
+      "sizes": [
+        {
+          "size": "XXS",
+          "stack": 499,
+          "reach": 356,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 100,
+          "seatTubeLength": 420,
+          "chainstay": 415,
+          "wheelbase": 976,
+          "bbDrop": 69
+        },
+        {
+          "size": "XS",
+          "stack": 516,
+          "reach": 367,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71,
+          "headTubeLength": 112,
+          "seatTubeLength": 450,
+          "chainstay": 415,
+          "wheelbase": 978,
+          "bbDrop": 69
+        },
+        {
+          "size": "S",
+          "stack": 538,
+          "reach": 376,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 72,
+          "headTubeLength": 132,
+          "seatTubeLength": 480,
+          "chainstay": 415,
+          "wheelbase": 985,
+          "bbDrop": 69
+        },
+        {
+          "size": "M",
+          "stack": 560,
+          "reach": 379,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 152,
+          "seatTubeLength": 500,
+          "chainstay": 415,
+          "wheelbase": 986,
+          "bbDrop": 69
+        },
+        {
+          "size": "L",
+          "stack": 579,
+          "reach": 393,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 172,
+          "seatTubeLength": 520,
+          "chainstay": 415,
+          "wheelbase": 1006,
+          "bbDrop": 69
+        },
+        {
+          "size": "XL",
+          "stack": 599,
+          "reach": 408,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 192,
+          "seatTubeLength": 540,
+          "chainstay": 415,
+          "wheelbase": 1027,
+          "bbDrop": 69
+        }
+      ],
+      "retrieved": "2026-11-16"
+    },
+    {
+      "model": "Ultra-Grit",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.ribblecycles.co.uk/ribble-ultra-grit/",
+      "aliases": [
+        "Gravel SL",
+        "Ultra Grit"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 526,
+          "reach": 386,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 105,
+          "seatTubeLength": 470,
+          "chainstay": 430,
+          "wheelbase": 1025,
+          "bbDrop": 70
+        },
+        {
+          "size": "S",
+          "stack": 545,
+          "reach": 394,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 125,
+          "seatTubeLength": 490,
+          "chainstay": 430,
+          "wheelbase": 1031,
+          "bbDrop": 67
+        },
+        {
+          "size": "M",
+          "stack": 562,
+          "reach": 404,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 145,
+          "seatTubeLength": 510,
+          "chainstay": 430,
+          "wheelbase": 1048,
+          "bbDrop": 65
+        },
+        {
+          "size": "L",
+          "stack": 588,
+          "reach": 410,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 72,
+          "headTubeLength": 170,
+          "seatTubeLength": 530,
+          "chainstay": 430,
+          "wheelbase": 1058,
+          "bbDrop": 65
+        },
+        {
+          "size": "XL",
+          "stack": 607,
+          "reach": 417,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 190,
+          "seatTubeLength": 550,
+          "chainstay": 430,
+          "wheelbase": 1070,
+          "bbDrop": 65
+        }
+      ],
+      "retrieved": "2026-11-16"
+    }
+  ]
+}

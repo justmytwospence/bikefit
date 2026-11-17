@@ -1,0 +1,402 @@
+{
+  "brand": "Colnago",
+  "models": [
+    {
+      "model": "V5Rs",
+      "year": 2025,
+      "category": "aero",
+      "source": "https://a.storyblok.com/f/263970/x/b9d4da1335/v5rs-geometry-chart.pdf",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "V5Rs Disc"
+      ],
+      "estimated": [
+        "wheelbase"
+      ],
+      "sizes": [
+        {
+          "size": "420",
+          "stack": 509,
+          "reach": 371,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.6,
+          "headTubeLength": 101,
+          "seatTubeLength": 420,
+          "chainstay": 408,
+          "wheelbase": 975.5,
+          "bbDrop": 74
+        },
+        {
+          "size": "455",
+          "stack": 523,
+          "reach": 377,
+          "seatTubeAngle": 75.3,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 112,
+          "seatTubeLength": 455,
+          "chainstay": 408,
+          "wheelbase": 978,
+          "bbDrop": 74
+        },
+        {
+          "size": "485",
+          "stack": 539,
+          "reach": 384,
+          "seatTubeAngle": 74.8,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 127,
+          "seatTubeLength": 485,
+          "chainstay": 408,
+          "wheelbase": 983.7,
+          "bbDrop": 72
+        },
+        {
+          "size": "510",
+          "stack": 557,
+          "reach": 390,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 146,
+          "seatTubeLength": 510,
+          "chainstay": 408,
+          "wheelbase": 993.7,
+          "bbDrop": 72
+        },
+        {
+          "size": "530",
+          "stack": 575,
+          "reach": 397,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 73,
+          "headTubeLength": 162,
+          "seatTubeLength": 530,
+          "chainstay": 408,
+          "wheelbase": 997.3,
+          "bbDrop": 72
+        },
+        {
+          "size": "550",
+          "stack": 593,
+          "reach": 404,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 181,
+          "seatTubeLength": 550,
+          "chainstay": 408,
+          "wheelbase": 1009.9,
+          "bbDrop": 72
+        },
+        {
+          "size": "570",
+          "stack": 612,
+          "reach": 411,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 199,
+          "seatTubeLength": 570,
+          "chainstay": 408,
+          "wheelbase": 1019.4,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "V4Rs",
+      "year": 2022,
+      "category": "aero",
+      "source": "https://139650070.fs1.hubspotusercontent-eu1.net/hubfs/139650070/Geometrie%20schede/Scheda%20A4%20-%20COLNAGO%20V4Rs.pdf",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "V4-Rs"
+      ],
+      "estimated": [
+        "wheelbase"
+      ],
+      "sizes": [
+        {
+          "size": "420",
+          "stack": 510,
+          "reach": 370,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.6,
+          "headTubeLength": 103,
+          "seatTubeLength": 420,
+          "chainstay": 408,
+          "wheelbase": 973.1,
+          "bbDrop": 72
+        },
+        {
+          "size": "455",
+          "stack": 522,
+          "reach": 375,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71,
+          "headTubeLength": 114,
+          "seatTubeLength": 455,
+          "chainstay": 408,
+          "wheelbase": 979.1,
+          "bbDrop": 72
+        },
+        {
+          "size": "485",
+          "stack": 539,
+          "reach": 383,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 130,
+          "seatTubeLength": 485,
+          "chainstay": 408,
+          "wheelbase": 988.2,
+          "bbDrop": 72
+        },
+        {
+          "size": "510",
+          "stack": 557,
+          "reach": 388,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 148,
+          "seatTubeLength": 510,
+          "chainstay": 408,
+          "wheelbase": 994.2,
+          "bbDrop": 72
+        },
+        {
+          "size": "530",
+          "stack": 575,
+          "reach": 395,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 164,
+          "seatTubeLength": 530,
+          "chainstay": 408,
+          "wheelbase": 996.3,
+          "bbDrop": 72
+        },
+        {
+          "size": "550",
+          "stack": 593,
+          "reach": 403,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.9,
+          "headTubeLength": 181,
+          "seatTubeLength": 550,
+          "chainstay": 408,
+          "wheelbase": 1005.3,
+          "bbDrop": 72
+        },
+        {
+          "size": "570",
+          "stack": 612,
+          "reach": 410,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.1,
+          "headTubeLength": 200,
+          "seatTubeLength": 570,
+          "chainstay": 408,
+          "wheelbase": 1016.4,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "C72 Road",
+      "year": 2025,
+      "category": "race",
+      "source": "https://a.storyblok.com/f/263970/x/ddc1668eb7/scheda-geometria-c72.pdf",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "C72"
+      ],
+      "estimated": [
+        "seatTubeLength"
+      ],
+      "sizes": [
+        {
+          "size": "420",
+          "stack": 512,
+          "reach": 370,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.8,
+          "headTubeLength": 101,
+          "seatTubeLength": 420,
+          "chainstay": 408,
+          "wheelbase": 971,
+          "bbDrop": 74
+        },
+        {
+          "size": "455",
+          "stack": 525,
+          "reach": 375,
+          "seatTubeAngle": 75.3,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 112,
+          "seatTubeLength": 455,
+          "chainstay": 408,
+          "wheelbase": 974,
+          "bbDrop": 74
+        },
+        {
+          "size": "485",
+          "stack": 543,
+          "reach": 382,
+          "seatTubeAngle": 74.8,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 129.5,
+          "seatTubeLength": 485,
+          "chainstay": 408,
+          "wheelbase": 979,
+          "bbDrop": 72
+        },
+        {
+          "size": "510",
+          "stack": 562,
+          "reach": 387,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 72.9,
+          "headTubeLength": 148,
+          "seatTubeLength": 510,
+          "chainstay": 410,
+          "wheelbase": 988,
+          "bbDrop": 72
+        },
+        {
+          "size": "530",
+          "stack": 580,
+          "reach": 394,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 72.9,
+          "headTubeLength": 167,
+          "seatTubeLength": 530,
+          "chainstay": 410,
+          "wheelbase": 1001,
+          "bbDrop": 72
+        },
+        {
+          "size": "550",
+          "stack": 599,
+          "reach": 402,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.9,
+          "headTubeLength": 187,
+          "seatTubeLength": 550,
+          "chainstay": 412,
+          "wheelbase": 1017,
+          "bbDrop": 72
+        },
+        {
+          "size": "570",
+          "stack": 619,
+          "reach": 409,
+          "seatTubeAngle": 73.3,
+          "headTubeAngle": 72.9,
+          "headTubeLength": 207,
+          "seatTubeLength": 570,
+          "chainstay": 412,
+          "wheelbase": 1030,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "C68 Road",
+      "year": 2019,
+      "category": "race",
+      "source": "https://139650070.fs1.hubspotusercontent-eu1.net/hubfs/139650070/Geometrie%20schede/C68_road.pdf",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "C68"
+      ],
+      "estimated": [
+        "wheelbase",
+        "seatTubeLength"
+      ],
+      "sizes": [
+        {
+          "size": "420",
+          "stack": 510,
+          "reach": 370,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.6,
+          "headTubeLength": 103,
+          "seatTubeLength": 420,
+          "chainstay": 408,
+          "wheelbase": 973.1,
+          "bbDrop": 72
+        },
+        {
+          "size": "455",
+          "stack": 522,
+          "reach": 375,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71,
+          "headTubeLength": 114,
+          "seatTubeLength": 455,
+          "chainstay": 408,
+          "wheelbase": 979.1,
+          "bbDrop": 72
+        },
+        {
+          "size": "485",
+          "stack": 539,
+          "reach": 383,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 130,
+          "seatTubeLength": 485,
+          "chainstay": 408,
+          "wheelbase": 988.2,
+          "bbDrop": 72
+        },
+        {
+          "size": "510",
+          "stack": 557,
+          "reach": 388,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.8,
+          "headTubeLength": 148,
+          "seatTubeLength": 510,
+          "chainstay": 410,
+          "wheelbase": 998.3,
+          "bbDrop": 72
+        },
+        {
+          "size": "530",
+          "stack": 575,
+          "reach": 395,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 164,
+          "seatTubeLength": 530,
+          "chainstay": 414,
+          "wheelbase": 1008.4,
+          "bbDrop": 72
+        },
+        {
+          "size": "550",
+          "stack": 593,
+          "reach": 403,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.9,
+          "headTubeLength": 181,
+          "seatTubeLength": 550,
+          "chainstay": 414,
+          "wheelbase": 1018,
+          "bbDrop": 72
+        },
+        {
+          "size": "570",
+          "stack": 612,
+          "reach": 410,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.1,
+          "headTubeLength": 200,
+          "seatTubeLength": 570,
+          "chainstay": 414,
+          "wheelbase": 1028.5,
+          "bbDrop": 72
+        }
+      ]
+    }
+  ]
+}

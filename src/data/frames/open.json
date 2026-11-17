@@ -1,0 +1,129 @@
+{
+  "brand": "Open",
+  "models": [
+    {
+      "model": "U.P. 2.0",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://opencycle.com/up-upper-20",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "UP|UPPER 2.0",
+        "UPPER",
+        "UP"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 520,
+          "reach": 356,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 70,
+          "headTubeLength": 113,
+          "seatTubeLength": 418,
+          "chainstay": 425,
+          "wheelbase": 1000,
+          "bbDrop": 82
+        },
+        {
+          "size": "S",
+          "stack": 545,
+          "reach": 368,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 136,
+          "seatTubeLength": 449,
+          "chainstay": 425,
+          "wheelbase": 1003,
+          "bbDrop": 77
+        },
+        {
+          "size": "M",
+          "stack": 570,
+          "reach": 380,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 165,
+          "seatTubeLength": 483,
+          "chainstay": 425,
+          "wheelbase": 1024,
+          "bbDrop": 75
+        },
+        {
+          "size": "L",
+          "stack": 595,
+          "reach": 392,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 172,
+          "seatTubeLength": 504,
+          "chainstay": 425,
+          "wheelbase": 1028,
+          "bbDrop": 73
+        },
+        {
+          "size": "XL",
+          "stack": 620,
+          "reach": 404,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 200,
+          "seatTubeLength": 518,
+          "chainstay": 425,
+          "wheelbase": 1049,
+          "bbDrop": 72
+        }
+      ]
+    },
+    {
+      "model": "WI.DE. 2.0",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://opencycle.com/wide-20",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "WIDE 2.0",
+        "WIDE"
+      ],
+      "tyreWidth": 50,
+      "sizes": [
+        {
+          "size": "M",
+          "stack": 590,
+          "reach": 374,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 156,
+          "seatTubeLength": 480,
+          "chainstay": 440,
+          "wheelbase": 1055,
+          "bbDrop": 88
+        },
+        {
+          "size": "L",
+          "stack": 615,
+          "reach": 386,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 173,
+          "seatTubeLength": 504,
+          "chainstay": 440,
+          "wheelbase": 1058,
+          "bbDrop": 87
+        },
+        {
+          "size": "XL",
+          "stack": 640,
+          "reach": 398,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 200,
+          "seatTubeLength": 518,
+          "chainstay": 440,
+          "wheelbase": 1079,
+          "bbDrop": 86
+        }
+      ]
+    }
+  ]
+}

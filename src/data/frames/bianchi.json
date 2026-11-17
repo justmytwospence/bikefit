@@ -1,0 +1,423 @@
+{
+  "brand": "Bianchi",
+  "models": [
+    {
+      "model": "Specialissima",
+      "year": 2022,
+      "category": "race",
+      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-rc-2027/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Specialissima RC",
+        "Specialissima Pro",
+        "Specialissima Comp"
+      ],
+      "tyreWidth": 30,
+      "sizes": [
+        {
+          "size": "470",
+          "stack": 486,
+          "reach": 379,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 100,
+          "seatTubeLength": 420,
+          "chainstay": 410,
+          "wheelbase": 982,
+          "bbDrop": 58
+        },
+        {
+          "size": "500",
+          "stack": 494,
+          "reach": 386,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 105,
+          "seatTubeLength": 450,
+          "chainstay": 410,
+          "wheelbase": 983,
+          "bbDrop": 58
+        },
+        {
+          "size": "530",
+          "stack": 520,
+          "reach": 387,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 120,
+          "seatTubeLength": 480,
+          "chainstay": 410,
+          "wheelbase": 984,
+          "bbDrop": 68
+        },
+        {
+          "size": "550",
+          "stack": 536,
+          "reach": 391,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 135,
+          "seatTubeLength": 500,
+          "chainstay": 410,
+          "wheelbase": 988,
+          "bbDrop": 68
+        },
+        {
+          "size": "570",
+          "stack": 552,
+          "reach": 397,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 150,
+          "seatTubeLength": 520,
+          "chainstay": 412,
+          "wheelbase": 996,
+          "bbDrop": 68
+        },
+        {
+          "size": "590",
+          "stack": 571,
+          "reach": 400,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 170,
+          "seatTubeLength": 540,
+          "chainstay": 412,
+          "wheelbase": 1005,
+          "bbDrop": 68
+        }
+      ]
+    },
+    {
+      "model": "Oltre",
+      "year": 2023,
+      "category": "aero",
+      "source": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-4/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Oltre RC",
+        "Oltre Pro",
+        "Oltre Comp"
+      ],
+      "sizes": [
+        {
+          "size": "470",
+          "stack": 470,
+          "reach": 385,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 83,
+          "seatTubeLength": 450,
+          "chainstay": 410,
+          "wheelbase": 982,
+          "bbDrop": 58
+        },
+        {
+          "size": "500",
+          "stack": 478,
+          "reach": 392,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 88,
+          "seatTubeLength": 480,
+          "chainstay": 410,
+          "wheelbase": 983,
+          "bbDrop": 58
+        },
+        {
+          "size": "530",
+          "stack": 504,
+          "reach": 393,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 103,
+          "seatTubeLength": 510,
+          "chainstay": 410,
+          "wheelbase": 984,
+          "bbDrop": 68
+        },
+        {
+          "size": "550",
+          "stack": 520,
+          "reach": 397,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 118,
+          "seatTubeLength": 530,
+          "chainstay": 410,
+          "wheelbase": 988,
+          "bbDrop": 68
+        },
+        {
+          "size": "570",
+          "stack": 536,
+          "reach": 402,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 133,
+          "seatTubeLength": 550,
+          "chainstay": 412,
+          "wheelbase": 996,
+          "bbDrop": 68
+        },
+        {
+          "size": "590",
+          "stack": 555,
+          "reach": 406,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 153,
+          "seatTubeLength": 570,
+          "chainstay": 412,
+          "wheelbase": 1005,
+          "bbDrop": 68
+        }
+      ]
+    },
+    {
+      "model": "Infinito",
+      "year": 2025,
+      "category": "endurance",
+      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-pro-4/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Infinito Pro"
+      ],
+      "tyreWidth": 35,
+      "sizes": [
+        {
+          "size": "470",
+          "stack": 531,
+          "reach": 370,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 115,
+          "seatTubeLength": 420,
+          "chainstay": 420,
+          "wheelbase": 990,
+          "bbDrop": 73
+        },
+        {
+          "size": "500",
+          "stack": 552,
+          "reach": 372,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 135,
+          "seatTubeLength": 450,
+          "chainstay": 422,
+          "wheelbase": 997,
+          "bbDrop": 73
+        },
+        {
+          "size": "530",
+          "stack": 566,
+          "reach": 373,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 150,
+          "seatTubeLength": 480,
+          "chainstay": 422,
+          "wheelbase": 1002,
+          "bbDrop": 73
+        },
+        {
+          "size": "550",
+          "stack": 584,
+          "reach": 377,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72,
+          "headTubeLength": 165,
+          "seatTubeLength": 500,
+          "chainstay": 422,
+          "wheelbase": 1003,
+          "bbDrop": 73
+        },
+        {
+          "size": "570",
+          "stack": 600,
+          "reach": 382,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 180,
+          "seatTubeLength": 520,
+          "chainstay": 422,
+          "wheelbase": 1008,
+          "bbDrop": 73
+        },
+        {
+          "size": "590",
+          "stack": 614.5,
+          "reach": 384,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 195,
+          "seatTubeLength": 540,
+          "chainstay": 424,
+          "wheelbase": 1017,
+          "bbDrop": 73
+        },
+        {
+          "size": "610",
+          "stack": 629,
+          "reach": 387,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 210,
+          "seatTubeLength": 560,
+          "chainstay": 424,
+          "wheelbase": 1024,
+          "bbDrop": 73
+        }
+      ]
+    },
+    {
+      "model": "Arcadex",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.bianchi.com/shop/bikes/gravel/adventure/arcadex/arcadex-pro/arcadex-pro-4/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Arcadex Pro",
+        "Arcadex Comp"
+      ],
+      "tyreWidth": 45,
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 544,
+          "reach": 376,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 90,
+          "seatTubeLength": 410,
+          "chainstay": 430,
+          "wheelbase": 1020,
+          "bbDrop": 75
+        },
+        {
+          "size": "SM",
+          "stack": 563,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 110,
+          "seatTubeLength": 448,
+          "chainstay": 430,
+          "wheelbase": 1034,
+          "bbDrop": 75
+        },
+        {
+          "size": "MD",
+          "stack": 584,
+          "reach": 391,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 130,
+          "seatTubeLength": 485,
+          "chainstay": 430,
+          "wheelbase": 1044,
+          "bbDrop": 75
+        },
+        {
+          "size": "LG",
+          "stack": 610,
+          "reach": 402,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 155,
+          "seatTubeLength": 515,
+          "chainstay": 430,
+          "wheelbase": 1059,
+          "bbDrop": 75
+        },
+        {
+          "size": "XL",
+          "stack": 638,
+          "reach": 410,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 185,
+          "seatTubeLength": 550,
+          "chainstay": 432,
+          "wheelbase": 1077,
+          "bbDrop": 75
+        }
+      ]
+    },
+    {
+      "model": "Arcadex AL",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.bianchi.com/shop/bikes/gravel/adventure/arcadex-al/arcadex-al/arcadex-alu/",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Arcadex Alu",
+        "Arcadex Alloy"
+      ],
+      "tyreWidth": 45,
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 537,
+          "reach": 389,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 100,
+          "seatTubeLength": 410,
+          "chainstay": 430,
+          "wheelbase": 1027,
+          "bbDrop": 75
+        },
+        {
+          "size": "SM",
+          "stack": 556,
+          "reach": 396,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 120,
+          "seatTubeLength": 450,
+          "chainstay": 430,
+          "wheelbase": 1041,
+          "bbDrop": 75
+        },
+        {
+          "size": "MD",
+          "stack": 576,
+          "reach": 404,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 140,
+          "seatTubeLength": 490,
+          "chainstay": 435,
+          "wheelbase": 1056,
+          "bbDrop": 75
+        },
+        {
+          "size": "LG",
+          "stack": 597,
+          "reach": 413,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 160,
+          "seatTubeLength": 520,
+          "chainstay": 435,
+          "wheelbase": 1067,
+          "bbDrop": 75
+        },
+        {
+          "size": "XL",
+          "stack": 616,
+          "reach": 423,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 180,
+          "seatTubeLength": 550,
+          "chainstay": 435,
+          "wheelbase": 1083,
+          "bbDrop": 75
+        }
+      ]
+    }
+  ]
+}

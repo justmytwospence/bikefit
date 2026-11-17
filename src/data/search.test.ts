@@ -41,7 +41,7 @@ describe('editDistance', () => {
 });
 
 describe('real catalog', () => {
-  it.skip('finds the Tarmac under Specialized', () => {
+  it('finds the Tarmac under Specialized', () => {
     expect(searchCatalog(CATALOG, 'tarmac')[0].model.brand).toBe('Specialized');
   });
 });

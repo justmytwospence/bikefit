@@ -1,0 +1,453 @@
+{
+  "brand": "Cube",
+  "models": [
+    {
+      "model": "Litening Aero C:68X",
+      "year": 2027,
+      "category": "aero",
+      "source": "https://www.cube.eu/cube-litening-aero-c-68x-race-carbon-n-chrome/1133300",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Litening",
+        "Litening Aero",
+        "Cube Litening"
+      ],
+      "sizes": [
+        {
+          "size": "50",
+          "stack": 514,
+          "reach": 389,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 110,
+          "seatTubeLength": 460,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 72
+        },
+        {
+          "size": "52",
+          "stack": 524,
+          "reach": 389,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 74.2,
+          "headTubeLength": 120,
+          "seatTubeLength": 480,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 72
+        },
+        {
+          "size": "54",
+          "stack": 542,
+          "reach": 389,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 140,
+          "seatTubeLength": 500,
+          "chainstay": 410,
+          "wheelbase": 984,
+          "bbDrop": 69
+        },
+        {
+          "size": "56",
+          "stack": 563,
+          "reach": 398,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 160,
+          "seatTubeLength": 520,
+          "chainstay": 410,
+          "wheelbase": 995,
+          "bbDrop": 69
+        },
+        {
+          "size": "58",
+          "stack": 580,
+          "reach": 403,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 180,
+          "seatTubeLength": 540,
+          "chainstay": 410,
+          "wheelbase": 1005,
+          "bbDrop": 67
+        },
+        {
+          "size": "60",
+          "stack": 594,
+          "reach": 405,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 195,
+          "seatTubeLength": 560,
+          "chainstay": 410,
+          "wheelbase": 1011,
+          "bbDrop": 67
+        },
+        {
+          "size": "62",
+          "stack": 609,
+          "reach": 412,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 210,
+          "seatTubeLength": 580,
+          "chainstay": 410,
+          "wheelbase": 1023,
+          "bbDrop": 67
+        }
+      ]
+    },
+    {
+      "model": "Litening Air C:68X",
+      "year": 2023,
+      "category": "race",
+      "source": "https://www.cube.eu/cube-litening-air-c-68x-race-blackpearl-n-black/1134300",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Litening",
+        "Litening Air",
+        "Cube Litening"
+      ],
+      "sizes": [
+        {
+          "size": "50",
+          "stack": 514,
+          "reach": 389,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 107,
+          "seatTubeLength": 440,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 72
+        },
+        {
+          "size": "52",
+          "stack": 524,
+          "reach": 389,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 117,
+          "seatTubeLength": 460,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 72
+        },
+        {
+          "size": "54",
+          "stack": 542,
+          "reach": 390,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 137,
+          "seatTubeLength": 480,
+          "chainstay": 410,
+          "wheelbase": 984,
+          "bbDrop": 69
+        },
+        {
+          "size": "56",
+          "stack": 563,
+          "reach": 398,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 157,
+          "seatTubeLength": 500,
+          "chainstay": 410,
+          "wheelbase": 995,
+          "bbDrop": 69
+        },
+        {
+          "size": "58",
+          "stack": 580,
+          "reach": 403,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 177,
+          "seatTubeLength": 520,
+          "chainstay": 410,
+          "wheelbase": 1005,
+          "bbDrop": 67
+        },
+        {
+          "size": "60",
+          "stack": 594,
+          "reach": 405,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 192,
+          "seatTubeLength": 540,
+          "chainstay": 410,
+          "wheelbase": 1011,
+          "bbDrop": 67
+        }
+      ]
+    },
+    {
+      "model": "Agree C:62",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.cube.eu/cube-agree-c-62-pro-carbon-n-black/1132200",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Agree"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 513,
+          "reach": 376,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 71,
+          "headTubeLength": 112,
+          "seatTubeLength": 410,
+          "chainstay": 412,
+          "wheelbase": 986,
+          "bbDrop": 73
+        },
+        {
+          "size": "50",
+          "stack": 523,
+          "reach": 378,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 120,
+          "seatTubeLength": 440,
+          "chainstay": 412,
+          "wheelbase": 987,
+          "bbDrop": 73
+        },
+        {
+          "size": "53",
+          "stack": 544,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 140,
+          "seatTubeLength": 470,
+          "chainstay": 412,
+          "wheelbase": 994,
+          "bbDrop": 73
+        },
+        {
+          "size": "56",
+          "stack": 572,
+          "reach": 391,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 170,
+          "seatTubeLength": 500,
+          "chainstay": 412,
+          "wheelbase": 1007,
+          "bbDrop": 71
+        },
+        {
+          "size": "58",
+          "stack": 591,
+          "reach": 394,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 190,
+          "seatTubeLength": 520,
+          "chainstay": 412,
+          "wheelbase": 1017,
+          "bbDrop": 71
+        },
+        {
+          "size": "60",
+          "stack": 606,
+          "reach": 399,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 208,
+          "seatTubeLength": 540,
+          "chainstay": 412,
+          "wheelbase": 1027,
+          "bbDrop": 69
+        },
+        {
+          "size": "62",
+          "stack": 628,
+          "reach": 402,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 231,
+          "seatTubeLength": 560,
+          "chainstay": 412,
+          "wheelbase": 1037,
+          "bbDrop": 69
+        }
+      ]
+    },
+    {
+      "model": "Attain C:62",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.cube.eu/cube-attain-c-62-race-carbon-n-coalchrome/1131300",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Attain"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 525,
+          "reach": 365,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 70.6,
+          "headTubeLength": 120,
+          "seatTubeLength": 410,
+          "chainstay": 420,
+          "wheelbase": 991,
+          "bbDrop": 74
+        },
+        {
+          "size": "50",
+          "stack": 538,
+          "reach": 369,
+          "seatTubeAngle": 74.6,
+          "headTubeAngle": 71.1,
+          "headTubeLength": 130,
+          "seatTubeLength": 440,
+          "chainstay": 420,
+          "wheelbase": 994,
+          "bbDrop": 74
+        },
+        {
+          "size": "53",
+          "stack": 561,
+          "reach": 376,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 152,
+          "seatTubeLength": 470,
+          "chainstay": 420,
+          "wheelbase": 1000,
+          "bbDrop": 74
+        },
+        {
+          "size": "56",
+          "stack": 591,
+          "reach": 385,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 182,
+          "seatTubeLength": 500,
+          "chainstay": 420,
+          "wheelbase": 1014,
+          "bbDrop": 74
+        },
+        {
+          "size": "58",
+          "stack": 610,
+          "reach": 388,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 202,
+          "seatTubeLength": 520,
+          "chainstay": 420,
+          "wheelbase": 1023,
+          "bbDrop": 74
+        },
+        {
+          "size": "60",
+          "stack": 629,
+          "reach": 392,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 222,
+          "seatTubeLength": 540,
+          "chainstay": 420,
+          "wheelbase": 1033,
+          "bbDrop": 74
+        },
+        {
+          "size": "62",
+          "stack": 648,
+          "reach": 391,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 242,
+          "seatTubeLength": 560,
+          "chainstay": 420,
+          "wheelbase": 1038,
+          "bbDrop": 74
+        }
+      ]
+    },
+    {
+      "model": "Nuroad C:62",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.cube.eu/cube-nuroad-c-62-pro-cedar-n-stone/1136200",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Nuroad"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 520,
+          "reach": 388,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 69,
+          "headTubeLength": 102,
+          "seatTubeLength": 430,
+          "chainstay": 440,
+          "wheelbase": 1043,
+          "bbDrop": 70
+        },
+        {
+          "size": "S",
+          "stack": 544,
+          "reach": 388,
+          "seatTubeAngle": 74.7,
+          "headTubeAngle": 70,
+          "headTubeLength": 124,
+          "seatTubeLength": 460,
+          "chainstay": 440,
+          "wheelbase": 1044,
+          "bbDrop": 70
+        },
+        {
+          "size": "M",
+          "stack": 579,
+          "reach": 393,
+          "seatTubeAngle": 73.9,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 155,
+          "seatTubeLength": 490,
+          "chainstay": 440,
+          "wheelbase": 1046,
+          "bbDrop": 70
+        },
+        {
+          "size": "L",
+          "stack": 599,
+          "reach": 392,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 174,
+          "seatTubeLength": 510,
+          "chainstay": 442,
+          "wheelbase": 1048,
+          "bbDrop": 70
+        },
+        {
+          "size": "XL",
+          "stack": 623,
+          "reach": 402,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 197,
+          "seatTubeLength": 540,
+          "chainstay": 442,
+          "wheelbase": 1060,
+          "bbDrop": 70
+        }
+      ]
+    }
+  ]
+}

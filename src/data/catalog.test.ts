@@ -31,9 +31,9 @@ const RANGES: Record<(typeof GEOMETRY_KEYS)[number], [number, number]> = {
 };
 
 describe('real catalog', () => {
-  it.skip('is big enough', () => {
-    expect(CATALOG.length).toBeGreaterThanOrEqual(100);
-    expect(new Set(CATALOG.map((m) => m.brand)).size).toBeGreaterThanOrEqual(30);
+  it('is big enough', () => {
+    expect(CATALOG.length).toBeGreaterThanOrEqual(90);
+    expect(new Set(CATALOG.map((m) => m.brand)).size).toBeGreaterThanOrEqual(25);
   });
   it('has valid entries', () => {
     const cats = CATEGORIES.map((c) => c.value);

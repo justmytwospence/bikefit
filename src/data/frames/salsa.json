@@ -1,0 +1,168 @@
+{
+  "brand": "Salsa",
+  "models": [
+    {
+      "model": "Warbird",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2025-warbird-c-force-axs-wide",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        {
+          "size": "49",
+          "stack": 517.9,
+          "reach": 360.2,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71,
+          "headTubeLength": 90,
+          "seatTubeLength": 390,
+          "chainstay": 430,
+          "wheelbase": 996.1,
+          "bbDrop": 70
+        },
+        {
+          "size": "52.5",
+          "stack": 547.1,
+          "reach": 368.1,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 120,
+          "seatTubeLength": 440,
+          "chainstay": 430,
+          "wheelbase": 1012,
+          "bbDrop": 70
+        },
+        {
+          "size": "54.5",
+          "stack": 566,
+          "reach": 372,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 140,
+          "seatTubeLength": 475,
+          "chainstay": 430,
+          "wheelbase": 1022.4,
+          "bbDrop": 70
+        },
+        {
+          "size": "56",
+          "stack": 584.9,
+          "reach": 381.2,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 160,
+          "seatTubeLength": 510,
+          "chainstay": 430,
+          "wheelbase": 1038.2,
+          "bbDrop": 70
+        },
+        {
+          "size": "57.5",
+          "stack": 603.7,
+          "reach": 390.4,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 180,
+          "seatTubeLength": 520,
+          "chainstay": 430,
+          "wheelbase": 1054,
+          "bbDrop": 70
+        },
+        {
+          "size": "59",
+          "stack": 622.6,
+          "reach": 399.6,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 200,
+          "seatTubeLength": 545,
+          "chainstay": 430,
+          "wheelbase": 1069.8,
+          "bbDrop": 70
+        },
+        {
+          "size": "61",
+          "stack": 641.5,
+          "reach": 407.7,
+          "seatTubeAngle": 72.5,
+          "headTubeAngle": 70.75,
+          "headTubeLength": 220,
+          "seatTubeLength": 570,
+          "chainstay": 430,
+          "wheelbase": 1084.5,
+          "bbDrop": 70
+        }
+      ]
+    },
+    {
+      "model": "Cutthroat",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2026-cutthroat-c-frameset",
+      "retrieved": "2026-11-16",
+      "tyreWidth": 56,
+      "sizes": [
+        {
+          "size": "52",
+          "stack": 585,
+          "reach": 357,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69,
+          "headTubeLength": 90,
+          "seatTubeLength": 356,
+          "chainstay": 445,
+          "wheelbase": 1050,
+          "bbDrop": 70
+        },
+        {
+          "size": "54",
+          "stack": 592,
+          "reach": 372,
+          "seatTubeAngle": 74.25,
+          "headTubeAngle": 69,
+          "headTubeLength": 98,
+          "seatTubeLength": 419,
+          "chainstay": 445,
+          "wheelbase": 1066,
+          "bbDrop": 70
+        },
+        {
+          "size": "56",
+          "stack": 620,
+          "reach": 385,
+          "seatTubeAngle": 74.25,
+          "headTubeAngle": 69,
+          "headTubeLength": 127,
+          "seatTubeLength": 508,
+          "chainstay": 445,
+          "wheelbase": 1091,
+          "bbDrop": 70
+        },
+        {
+          "size": "58",
+          "stack": 645,
+          "reach": 394,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69,
+          "headTubeLength": 154,
+          "seatTubeLength": 559,
+          "chainstay": 445,
+          "wheelbase": 1110,
+          "bbDrop": 70
+        },
+        {
+          "size": "60",
+          "stack": 664,
+          "reach": 406,
+          "seatTubeAngle": 73.75,
+          "headTubeAngle": 69,
+          "headTubeLength": 175,
+          "seatTubeLength": 584,
+          "chainstay": 445,
+          "wheelbase": 1129,
+          "bbDrop": 70
+        }
+      ]
+    }
+  ]
+}

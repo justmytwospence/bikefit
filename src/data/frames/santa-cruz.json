@@ -1,0 +1,86 @@
+{
+  "brand": "Santa Cruz",
+  "models": [
+    {
+      "model": "Stigmata",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.santacruzbicycles.com/products/stigmata-force-1x-axs-rsv-2027",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 550,
+          "reach": 375,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 90,
+          "seatTubeLength": 450,
+          "chainstay": 423,
+          "wheelbase": 1023,
+          "bbDrop": 78
+        },
+        {
+          "size": "S",
+          "stack": 564,
+          "reach": 390,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 105,
+          "seatTubeLength": 455,
+          "chainstay": 423,
+          "wheelbase": 1043,
+          "bbDrop": 78
+        },
+        {
+          "size": "M",
+          "stack": 576,
+          "reach": 405,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 120,
+          "seatTubeLength": 485,
+          "chainstay": 423,
+          "wheelbase": 1063,
+          "bbDrop": 76
+        },
+        {
+          "size": "L",
+          "stack": 600,
+          "reach": 420,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 145,
+          "seatTubeLength": 515,
+          "chainstay": 423,
+          "wheelbase": 1087,
+          "bbDrop": 76
+        },
+        {
+          "size": "XL",
+          "stack": 612,
+          "reach": 435,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 160,
+          "seatTubeLength": 545,
+          "chainstay": 423,
+          "wheelbase": 1108,
+          "bbDrop": 74
+        },
+        {
+          "size": "XXL",
+          "stack": 631,
+          "reach": 450,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 180,
+          "seatTubeLength": 575,
+          "chainstay": 423,
+          "wheelbase": 1130,
+          "bbDrop": 74
+        }
+      ]
+    }
+  ]
+}

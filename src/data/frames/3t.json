@@ -1,0 +1,92 @@
+{
+  "brand": "3T",
+  "models": [
+    {
+      "model": "Racemax+",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://cdn.shopify.com/s/files/1/0651/6411/6125/files/3T_Frameset_Tech_Sheet_Racemax_WPNT_R00_1.pdf",
+      "aliases": [
+        "Exploro",
+        "Racemax",
+        "Racemax+ WPNT",
+        "Exploro Racemax"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 525,
+          "reach": 354,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 69,
+          "headTubeLength": 121,
+          "seatTubeLength": 440,
+          "chainstay": 425,
+          "wheelbase": 1015,
+          "bbDrop": 77
+        },
+        {
+          "size": "S",
+          "stack": 547,
+          "reach": 367,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 138,
+          "seatTubeLength": 463,
+          "chainstay": 425,
+          "wheelbase": 1022,
+          "bbDrop": 77
+        },
+        {
+          "size": "M",
+          "stack": 569,
+          "reach": 377,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 154,
+          "seatTubeLength": 490,
+          "chainstay": 425,
+          "wheelbase": 1020,
+          "bbDrop": 77
+        },
+        {
+          "size": "L",
+          "stack": 589,
+          "reach": 385,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 175,
+          "seatTubeLength": 509,
+          "chainstay": 425,
+          "wheelbase": 1035,
+          "bbDrop": 77
+        },
+        {
+          "size": "XL",
+          "stack": 609,
+          "reach": 393,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 196,
+          "seatTubeLength": 537,
+          "chainstay": 425,
+          "wheelbase": 1050,
+          "bbDrop": 77
+        },
+        {
+          "size": "XXL",
+          "stack": 637,
+          "reach": 404,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 225,
+          "seatTubeLength": 565,
+          "chainstay": 425,
+          "wheelbase": 1065,
+          "bbDrop": 77
+        }
+      ],
+      "retrieved": "2026-11-16"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "brand": "Cervélo",
+  "models": [
+    {
+      "model": "S5",
+      "year": 2023,
+      "category": "aero",
+      "source": "https://www.cervelo.com/en-US/bikes/s5",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        {
+          "size": "51",
+          "stack": 519,
+          "reach": 376,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 82,
+          "seatTubeLength": 459,
+          "chainstay": 405,
+          "wheelbase": 974,
+          "bbDrop": 74.5
+        },
+        {
+          "size": "54",
+          "stack": 542,
+          "reach": 384,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 104,
+          "seatTubeLength": 480,
+          "chainstay": 405,
+          "wheelbase": 975,
+          "bbDrop": 72
+        },
+        {
+          "size": "56",
+          "stack": 565,
+          "reach": 392,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 125,
+          "seatTubeLength": 502,
+          "chainstay": 405,
+          "wheelbase": 982,
+          "bbDrop": 72
+        },
+        {
+          "size": "58",
+          "stack": 588,
+          "reach": 401,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 152,
+          "seatTubeLength": 523,
+          "chainstay": 405,
+          "wheelbase": 999,
+          "bbDrop": 69.5
+        },
+        {
+          "size": "61",
+          "stack": 608,
+          "reach": 409,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 173,
+          "seatTubeLength": 542,
+          "chainstay": 405,
+          "wheelbase": 1013,
+          "bbDrop": 69.5
+        }
+      ]
+    },
+    {
+      "model": "Soloist",
+      "year": 2023,
+      "category": "race",
+      "source": "https://www.cervelo.com/en-US/bikes/soloist",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        {
+          "size": "48",
+          "stack": 496,
+          "reach": 369,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 71,
+          "headTubeLength": 89.6,
+          "seatTubeLength": 432.2,
+          "chainstay": 410,
+          "wheelbase": 976.8,
+          "bbDrop": 76.5
+        },
+        {
+          "size": "51",
+          "stack": 520,
+          "reach": 377,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 109.3,
+          "seatTubeLength": 481.7,
+          "chainstay": 410,
+          "wheelbase": 977.6,
+          "bbDrop": 76.5
+        },
+        {
+          "size": "54",
+          "stack": 545,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 73,
+          "headTubeLength": 132,
+          "seatTubeLength": 507,
+          "chainstay": 410,
+          "wheelbase": 978,
+          "bbDrop": 74
+        },
+        {
+          "size": "56",
+          "stack": 568,
+          "reach": 391,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 156,
+          "seatTubeLength": 530.4,
+          "chainstay": 410,
+          "wheelbase": 992.8,
+          "bbDrop": 74
+        },
+        {
+          "size": "58",
+          "stack": 591,
+          "reach": 400,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 182.8,
+          "seatTubeLength": 553,
+          "chainstay": 410,
+          "wheelbase": 1010.3,
+          "bbDrop": 71.5
+        },
+        {
+          "size": "61",
+          "stack": 611,
+          "reach": 408,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73,
+          "headTubeLength": 203.7,
+          "seatTubeLength": 571.6,
+          "chainstay": 410,
+          "wheelbase": 1024.5,
+          "bbDrop": 71.5
+        }
+      ]
+    },
+    {
+      "model": "Caledonia",
+      "year": 2025,
+      "category": "endurance",
+      "source": "https://www.cervelo.com/en-US/bikes/caledonia",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        {
+          "size": "48",
+          "stack": 505,
+          "reach": 360,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 90,
+          "seatTubeLength": 447,
+          "chainstay": 415,
+          "wheelbase": 983,
+          "bbDrop": 76.5
+        },
+        {
+          "size": "51",
+          "stack": 530,
+          "reach": 369,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 110,
+          "seatTubeLength": 496,
+          "chainstay": 415,
+          "wheelbase": 986,
+          "bbDrop": 76.5
+        },
+        {
+          "size": "54",
+          "stack": 555,
+          "reach": 378,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 136,
+          "seatTubeLength": 530,
+          "chainstay": 415,
+          "wheelbase": 996,
+          "bbDrop": 74
+        },
+        {
+          "size": "56",
+          "stack": 580,
+          "reach": 387,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 163,
+          "seatTubeLength": 554,
+          "chainstay": 415,
+          "wheelbase": 1013,
+          "bbDrop": 74
+        },
+        {
+          "size": "58",
+          "stack": 605,
+          "reach": 396,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 192,
+          "seatTubeLength": 577,
+          "chainstay": 415,
+          "wheelbase": 1032,
+          "bbDrop": 71.5
+        },
+        {
+          "size": "61",
+          "stack": 630,
+          "reach": 405,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72,
+          "headTubeLength": 218,
+          "seatTubeLength": 601,
+          "chainstay": 415,
+          "wheelbase": 1049,
+          "bbDrop": 71.5
+        }
+      ]
+    },
+    {
+      "model": "Áspero-5",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.cervelo.com/en-US/bikes/aspero-5",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Aspero",
+        "Aspero 5",
+        "Áspero"
+      ],
+      "sizes": [
+        {
+          "size": "51",
+          "stack": 525,
+          "reach": 377,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.1,
+          "headTubeLength": 99,
+          "seatTubeLength": 471,
+          "chainstay": 422.5,
+          "wheelbase": 1002,
+          "bbDrop": 80
+        },
+        {
+          "size": "54",
+          "stack": 550,
+          "reach": 386,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 122,
+          "seatTubeLength": 499,
+          "chainstay": 422.5,
+          "wheelbase": 1012,
+          "bbDrop": 80
+        },
+        {
+          "size": "56",
+          "stack": 575,
+          "reach": 395,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 148,
+          "seatTubeLength": 519,
+          "chainstay": 422.5,
+          "wheelbase": 1029,
+          "bbDrop": 80
+        },
+        {
+          "size": "58",
+          "stack": 600,
+          "reach": 404,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 177,
+          "seatTubeLength": 542,
+          "chainstay": 422.5,
+          "wheelbase": 1047,
+          "bbDrop": 78
+        },
+        {
+          "size": "61",
+          "stack": 625,
+          "reach": 413,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 203,
+          "seatTubeLength": 568,
+          "chainstay": 422.5,
+          "wheelbase": 1064,
+          "bbDrop": 78
+        }
+      ]
+    }
+  ]
+}

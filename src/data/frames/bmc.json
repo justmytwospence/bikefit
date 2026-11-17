@@ -1,0 +1,421 @@
+{
+  "brand": "BMC",
+  "models": [
+    {
+      "model": "Teammachine SLR",
+      "year": 2026,
+      "category": "race",
+      "source": "https://bmc-switzerland.com/products/teammachine-slr-01-one-bikes-bmc-27a-000030",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "SLR",
+        "Teammachine SLR 01",
+        "Teammachine SLR Gen 5"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 506,
+          "reach": 367,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 108,
+          "seatTubeLength": 422,
+          "chainstay": 410,
+          "wheelbase": 968,
+          "bbDrop": 69
+        },
+        {
+          "size": "51",
+          "stack": 530,
+          "reach": 377,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 133,
+          "seatTubeLength": 464,
+          "chainstay": 410,
+          "wheelbase": 986,
+          "bbDrop": 69
+        },
+        {
+          "size": "54",
+          "stack": 550,
+          "reach": 386,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 149,
+          "seatTubeLength": 491,
+          "chainstay": 410,
+          "wheelbase": 989,
+          "bbDrop": 69
+        },
+        {
+          "size": "56",
+          "stack": 565,
+          "reach": 392,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 165,
+          "seatTubeLength": 509,
+          "chainstay": 410,
+          "wheelbase": 1000,
+          "bbDrop": 69
+        },
+        {
+          "size": "58",
+          "stack": 584,
+          "reach": 401,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 184,
+          "seatTubeLength": 530,
+          "chainstay": 410,
+          "wheelbase": 1015,
+          "bbDrop": 69
+        },
+        {
+          "size": "61",
+          "stack": 608,
+          "reach": 409,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 211,
+          "seatTubeLength": 555,
+          "chainstay": 410,
+          "wheelbase": 1030,
+          "bbDrop": 69
+        }
+      ]
+    },
+    {
+      "model": "Teammachine R",
+      "year": 2024,
+      "category": "race",
+      "source": "https://bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-27a-000050",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "TMR",
+        "Teammachine R 01"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 504,
+          "reach": 368,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 108,
+          "seatTubeLength": 418,
+          "chainstay": 410,
+          "wheelbase": 968,
+          "bbDrop": 69
+        },
+        {
+          "size": "51",
+          "stack": 528,
+          "reach": 378,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71.5,
+          "headTubeLength": 133,
+          "seatTubeLength": 463,
+          "chainstay": 410,
+          "wheelbase": 986,
+          "bbDrop": 69
+        },
+        {
+          "size": "54",
+          "stack": 548,
+          "reach": 387,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 149,
+          "seatTubeLength": 499,
+          "chainstay": 410,
+          "wheelbase": 989,
+          "bbDrop": 69
+        },
+        {
+          "size": "56",
+          "stack": 563,
+          "reach": 393,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 165,
+          "seatTubeLength": 519,
+          "chainstay": 410,
+          "wheelbase": 999,
+          "bbDrop": 69
+        },
+        {
+          "size": "58",
+          "stack": 582,
+          "reach": 402,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 184,
+          "seatTubeLength": 541,
+          "chainstay": 410,
+          "wheelbase": 1015,
+          "bbDrop": 69
+        },
+        {
+          "size": "61",
+          "stack": 608,
+          "reach": 409,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 72.3,
+          "headTubeLength": 211,
+          "seatTubeLength": 570,
+          "chainstay": 410,
+          "wheelbase": 1030,
+          "bbDrop": 69
+        }
+      ]
+    },
+    {
+      "model": "Roadmachine",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://bmc-switzerland.com/products/roadmachine-01-one-bikes-bmc-27a-000016",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Roadmachine 01",
+        "Roadmachine Gen 3"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 525,
+          "reach": 370,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 71.4,
+          "headTubeLength": 112,
+          "seatTubeLength": 414,
+          "chainstay": 415,
+          "wheelbase": 982,
+          "bbDrop": 75
+        },
+        {
+          "size": "51",
+          "stack": 550,
+          "reach": 379,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 71.4,
+          "headTubeLength": 138,
+          "seatTubeLength": 461,
+          "chainstay": 415,
+          "wheelbase": 1000,
+          "bbDrop": 75
+        },
+        {
+          "size": "54",
+          "stack": 570,
+          "reach": 383,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 154,
+          "seatTubeLength": 488,
+          "chainstay": 415,
+          "wheelbase": 997,
+          "bbDrop": 75
+        },
+        {
+          "size": "56",
+          "stack": 595,
+          "reach": 388,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 181,
+          "seatTubeLength": 508,
+          "chainstay": 415,
+          "wheelbase": 1010,
+          "bbDrop": 75
+        },
+        {
+          "size": "58",
+          "stack": 620,
+          "reach": 393,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 207,
+          "seatTubeLength": 529,
+          "chainstay": 415,
+          "wheelbase": 1023,
+          "bbDrop": 75
+        },
+        {
+          "size": "61",
+          "stack": 645,
+          "reach": 398,
+          "seatTubeAngle": 74.2,
+          "headTubeAngle": 72.2,
+          "headTubeLength": 233,
+          "seatTubeLength": 550,
+          "chainstay": 415,
+          "wheelbase": 1036,
+          "bbDrop": 75
+        }
+      ]
+    },
+    {
+      "model": "Kaius",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/kaius-01-one-bikes-bmc-27a-000072",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Kaius 01",
+        "Kaius Gen 2"
+      ],
+      "sizes": [
+        {
+          "size": "47",
+          "stack": 521,
+          "reach": 385,
+          "seatTubeAngle": 74.3,
+          "headTubeAngle": 70.8,
+          "headTubeLength": 88,
+          "seatTubeLength": 429,
+          "chainstay": 425,
+          "wheelbase": 1010,
+          "bbDrop": 79
+        },
+        {
+          "size": "51",
+          "stack": 541,
+          "reach": 392,
+          "seatTubeAngle": 74.3,
+          "headTubeAngle": 70.8,
+          "headTubeLength": 109,
+          "seatTubeLength": 449,
+          "chainstay": 425,
+          "wheelbase": 1024,
+          "bbDrop": 79
+        },
+        {
+          "size": "54",
+          "stack": 561,
+          "reach": 396,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 70.8,
+          "headTubeLength": 126,
+          "seatTubeLength": 471,
+          "chainstay": 425,
+          "wheelbase": 1027,
+          "bbDrop": 79
+        },
+        {
+          "size": "56",
+          "stack": 581,
+          "reach": 400,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 147,
+          "seatTubeLength": 485,
+          "chainstay": 425,
+          "wheelbase": 1032,
+          "bbDrop": 79
+        },
+        {
+          "size": "58",
+          "stack": 606,
+          "reach": 405,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 173,
+          "seatTubeLength": 509,
+          "chainstay": 425,
+          "wheelbase": 1045,
+          "bbDrop": 79
+        },
+        {
+          "size": "61",
+          "stack": 631,
+          "reach": 409,
+          "seatTubeAngle": 73.8,
+          "headTubeAngle": 71.6,
+          "headTubeLength": 199,
+          "seatTubeLength": 533,
+          "chainstay": 425,
+          "wheelbase": 1058,
+          "bbDrop": 79
+        }
+      ]
+    },
+    {
+      "model": "URS",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/urs-one-bikes-bmc-27a-000056",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "URS 01",
+        "URS LT",
+        "URS 01 LT",
+        "URS Gen 2"
+      ],
+      "sizes": [
+        {
+          "size": "XS",
+          "stack": 560,
+          "reach": 390,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69,
+          "headTubeLength": 133,
+          "seatTubeLength": 430,
+          "chainstay": 430,
+          "wheelbase": 1052,
+          "bbDrop": 76
+        },
+        {
+          "size": "S",
+          "stack": 560,
+          "reach": 400,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69,
+          "headTubeLength": 133,
+          "seatTubeLength": 445,
+          "chainstay": 430,
+          "wheelbase": 1062,
+          "bbDrop": 76
+        },
+        {
+          "size": "M",
+          "stack": 580,
+          "reach": 410,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 140,
+          "seatTubeLength": 475,
+          "chainstay": 430,
+          "wheelbase": 1070,
+          "bbDrop": 76
+        },
+        {
+          "size": "L",
+          "stack": 610,
+          "reach": 420,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 172,
+          "seatTubeLength": 505,
+          "chainstay": 430,
+          "wheelbase": 1091,
+          "bbDrop": 76
+        },
+        {
+          "size": "XL",
+          "stack": 640,
+          "reach": 430,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 204,
+          "seatTubeLength": 540,
+          "chainstay": 430,
+          "wheelbase": 1112,
+          "bbDrop": 76
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "brand": "Liv",
+  "models": [
+    {
+      "model": "Avail Advanced",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.liv-cycling.com/us/avail-advanced-pro-0",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Avail",
+        "Avail Advanced Pro"
+      ],
+      "sizes": [
+        {
+          "size": "XXS",
+          "stack": 510,
+          "reach": 363,
+          "seatTubeAngle": 75,
+          "headTubeAngle": 69.8,
+          "headTubeLength": 110,
+          "seatTubeLength": 385,
+          "chainstay": 420,
+          "wheelbase": 989,
+          "bbDrop": 75
+        },
+        {
+          "size": "XS",
+          "stack": 528,
+          "reach": 373,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 125,
+          "seatTubeLength": 405,
+          "chainstay": 420,
+          "wheelbase": 995,
+          "bbDrop": 75
+        },
+        {
+          "size": "S",
+          "stack": 547,
+          "reach": 373,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 71,
+          "headTubeLength": 145,
+          "seatTubeLength": 435,
+          "chainstay": 420,
+          "wheelbase": 1002,
+          "bbDrop": 75
+        },
+        {
+          "size": "M",
+          "stack": 566,
+          "reach": 373,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 165,
+          "seatTubeLength": 465,
+          "chainstay": 420,
+          "wheelbase": 1007,
+          "bbDrop": 75
+        },
+        {
+          "size": "L",
+          "stack": 589,
+          "reach": 381,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 185,
+          "seatTubeLength": 495,
+          "chainstay": 420,
+          "wheelbase": 1013,
+          "bbDrop": 75
+        }
+      ]
+    }
+  ]
+}

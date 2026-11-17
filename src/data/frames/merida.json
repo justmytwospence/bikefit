@@ -1,0 +1,363 @@
+{
+  "brand": "Merida",
+  "models": [
+    {
+      "model": "Scultura",
+      "year": 2023,
+      "category": "race",
+      "source": "https://www.merida-bikes.com/en/bike/6559/scultura-10k",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Scultura CF5",
+        "Scultura V"
+      ],
+      "sizes": [
+        {
+          "size": "3XS",
+          "stack": 512,
+          "reach": 373,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 100,
+          "seatTubeLength": 400,
+          "chainstay": 408,
+          "wheelbase": 979,
+          "bbDrop": 70
+        },
+        {
+          "size": "XXS",
+          "stack": 517,
+          "reach": 377,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 105,
+          "seatTubeLength": 435,
+          "chainstay": 408,
+          "wheelbase": 985,
+          "bbDrop": 70
+        },
+        {
+          "size": "XS",
+          "stack": 529,
+          "reach": 383,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 112,
+          "seatTubeLength": 458,
+          "chainstay": 408,
+          "wheelbase": 982,
+          "bbDrop": 70
+        },
+        {
+          "size": "S",
+          "stack": 542,
+          "reach": 390,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 128,
+          "seatTubeLength": 481,
+          "chainstay": 408,
+          "wheelbase": 989,
+          "bbDrop": 66
+        },
+        {
+          "size": "M",
+          "stack": 557,
+          "reach": 395,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 140,
+          "seatTubeLength": 501,
+          "chainstay": 408,
+          "wheelbase": 990,
+          "bbDrop": 66
+        },
+        {
+          "size": "L",
+          "stack": 571,
+          "reach": 400,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 155,
+          "seatTubeLength": 521,
+          "chainstay": 408,
+          "wheelbase": 1000,
+          "bbDrop": 66
+        },
+        {
+          "size": "XL",
+          "stack": 593,
+          "reach": 409,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 74,
+          "headTubeLength": 176,
+          "seatTubeLength": 550,
+          "chainstay": 408,
+          "wheelbase": 1010,
+          "bbDrop": 66
+        }
+      ]
+    },
+    {
+      "model": "Reacto",
+      "year": 2022,
+      "category": "aero",
+      "source": "https://www.merida-bikes.com/en/bike/5925/reacto-10k",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        {
+          "size": "3XS",
+          "stack": 512,
+          "reach": 373,
+          "seatTubeAngle": 75.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 100,
+          "seatTubeLength": 440,
+          "chainstay": 410,
+          "wheelbase": 981,
+          "bbDrop": 70
+        },
+        {
+          "size": "XXS",
+          "stack": 517,
+          "reach": 377,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 105,
+          "seatTubeLength": 470,
+          "chainstay": 410,
+          "wheelbase": 987,
+          "bbDrop": 70
+        },
+        {
+          "size": "XS",
+          "stack": 529,
+          "reach": 384,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 112,
+          "seatTubeLength": 500,
+          "chainstay": 410,
+          "wheelbase": 984,
+          "bbDrop": 70
+        },
+        {
+          "size": "S",
+          "stack": 542,
+          "reach": 390,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72.5,
+          "headTubeLength": 128,
+          "seatTubeLength": 520,
+          "chainstay": 410,
+          "wheelbase": 992,
+          "bbDrop": 66
+        },
+        {
+          "size": "M",
+          "stack": 557,
+          "reach": 395,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 140,
+          "seatTubeLength": 540,
+          "chainstay": 410,
+          "wheelbase": 992,
+          "bbDrop": 66
+        },
+        {
+          "size": "L",
+          "stack": 571,
+          "reach": 400,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 155,
+          "seatTubeLength": 560,
+          "chainstay": 410,
+          "wheelbase": 1002,
+          "bbDrop": 66
+        },
+        {
+          "size": "XL",
+          "stack": 593,
+          "reach": 409,
+          "seatTubeAngle": 73,
+          "headTubeAngle": 74,
+          "headTubeLength": 175,
+          "seatTubeLength": 590,
+          "chainstay": 410,
+          "wheelbase": 1011,
+          "bbDrop": 66
+        }
+      ]
+    },
+    {
+      "model": "Scultura Endurance",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.merida-bikes.com/en/bike/6568/scultura-endurance-9000",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Endurance"
+      ],
+      "sizes": [
+        {
+          "size": "XXS",
+          "stack": 539,
+          "reach": 360,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 70.5,
+          "headTubeLength": 140,
+          "seatTubeLength": 440,
+          "chainstay": 418,
+          "wheelbase": 992,
+          "bbDrop": 66
+        },
+        {
+          "size": "XS",
+          "stack": 552,
+          "reach": 366,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 71,
+          "headTubeLength": 152,
+          "seatTubeLength": 470,
+          "chainstay": 418,
+          "wheelbase": 997,
+          "bbDrop": 66
+        },
+        {
+          "size": "S",
+          "stack": 565,
+          "reach": 376,
+          "seatTubeAngle": 74,
+          "headTubeAngle": 72,
+          "headTubeLength": 161,
+          "seatTubeLength": 490,
+          "chainstay": 418,
+          "wheelbase": 1001,
+          "bbDrop": 66
+        },
+        {
+          "size": "M",
+          "stack": 584,
+          "reach": 380,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 177,
+          "seatTubeLength": 510,
+          "chainstay": 418,
+          "wheelbase": 1001,
+          "bbDrop": 66
+        },
+        {
+          "size": "L",
+          "stack": 603,
+          "reach": 389,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73,
+          "headTubeLength": 197,
+          "seatTubeLength": 530,
+          "chainstay": 418,
+          "wheelbase": 1017,
+          "bbDrop": 66
+        },
+        {
+          "size": "XL",
+          "stack": 629,
+          "reach": 397,
+          "seatTubeAngle": 73.5,
+          "headTubeAngle": 73.5,
+          "headTubeLength": 222,
+          "seatTubeLength": 560,
+          "chainstay": 418,
+          "wheelbase": 1026,
+          "bbDrop": 66
+        }
+      ]
+    },
+    {
+      "model": "Silex",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.merida-bikes.com/en/bike/6583/silex-rs-9000",
+      "retrieved": "2026-11-16",
+      "aliases": [
+        "Silex CF"
+      ],
+      "sizes": [
+        {
+          "size": "XXS",
+          "stack": 549,
+          "reach": 378,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 110,
+          "seatTubeLength": 410,
+          "chainstay": 430,
+          "wheelbase": 1031,
+          "bbDrop": 75
+        },
+        {
+          "size": "XS",
+          "stack": 570,
+          "reach": 392,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 130,
+          "seatTubeLength": 440,
+          "chainstay": 430,
+          "wheelbase": 1048,
+          "bbDrop": 75
+        },
+        {
+          "size": "S",
+          "stack": 588,
+          "reach": 402,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 150,
+          "seatTubeLength": 470,
+          "chainstay": 430,
+          "wheelbase": 1065,
+          "bbDrop": 75
+        },
+        {
+          "size": "M",
+          "stack": 607,
+          "reach": 412,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 170,
+          "seatTubeLength": 500,
+          "chainstay": 430,
+          "wheelbase": 1082,
+          "bbDrop": 75
+        },
+        {
+          "size": "L",
+          "stack": 626,
+          "reach": 426,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 190,
+          "seatTubeLength": 530,
+          "chainstay": 430,
+          "wheelbase": 1104,
+          "bbDrop": 75
+        },
+        {
+          "size": "XL",
+          "stack": 645,
+          "reach": 441,
+          "seatTubeAngle": 74.5,
+          "headTubeAngle": 69.5,
+          "headTubeLength": 210,
+          "seatTubeLength": 560,
+          "chainstay": 430,
+          "wheelbase": 1126,
+          "bbDrop": 75
+        }
+      ]
+    }
+  ]
+}
