@@ -8,7 +8,8 @@
    "sha256": "e06531ed0cd57924ac04c0558e0ef1241568c166e0b987bb9245beba5d647c69",
    "family": "angliru",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151022"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/angliru/angliru-tiagra",
@@ -16,7 +17,8 @@
    "sha256": "0925ce15832bfe7745ffe9b4f62c22b93678f2ed3a5aca770877d09de4d77376",
    "family": "angliru",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20210918142839"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2020/road/angliru-disk",
@@ -24,7 +26,8 @@
    "sha256": "81e75ccc390829f43cd5e689524006904006d74281816423691d4483eba6761a",
    "family": "angliru-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190603050519"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/crossista/crossista-ultegra-rx",
@@ -32,7 +35,8 @@
    "sha256": "f23d71e3f9ac095e03f56be475647f8d79514bc3c56a176deba0afa0fa8e177f",
    "family": "crossista",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20210918064947"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/crossista/crossista-ultegra-rx-1",
@@ -40,7 +44,8 @@
    "sha256": "31d7ada63e92e2bb0ae993cff2208dd0e909134b5fa50c62c018a8b31bde31cd",
    "family": "crossista",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20221206171621"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/crossista/crossista-ultegra-rx-1-1",
@@ -48,7 +53,8 @@
    "sha256": "518e3d54fcb6c94eed65d2463377aab605549544f76bf1af9d8c2d656d65761c",
    "family": "crossista",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230603083508"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/dogma-f/dogma-f-dura-ace-di2",
@@ -56,7 +62,8 @@
    "sha256": "a70047c781e67b6d5ababffa6f5d79ce78e4231ca4acb459a41e208f0733036b",
    "family": "dogma-f",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210901091745"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/dogma-f/dogma-f-dura-ace-di2",
@@ -64,7 +71,8 @@
    "sha256": "7be2d78660017ff81ab64c5f9ec8152f0c7cdeb18f0bca5743897772cb6327cc",
    "family": "dogma-f",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20210901091745"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/dogma-f/dogma-f-dura-ace-di2",
@@ -72,7 +80,8 @@
    "sha256": "cf2c0c55c90fe31b696f6b1b5357f45b1edaf01dd5d6c5185b2fde4a32492759",
    "family": "dogma-f",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20210901091745"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/dogma-f-edizione-speciale/tissot",
@@ -80,7 +89,8 @@
    "sha256": "5a41b1be98a834116b6897df1eb7c4c10f750f17b8bdae8adbb7b52f95d09e10",
    "family": "dogma-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260410194148"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10",
@@ -88,7 +98,8 @@
    "sha256": "6e18afb5c4f594df5f86a718adaddeb11bd22f0cfb1ab2fa97ac3f4f7c3bdafd",
    "family": "dogma-f10",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723033101"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10-disk",
@@ -96,7 +107,8 @@
    "sha256": "9e1ce147f71553c0b8fc3c6c810bd436fa4169c8a81993e05c21f73cd45a960a",
    "family": "dogma-f10-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072751"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/dogma-f10-disk",
@@ -104,7 +116,8 @@
    "sha256": "1ea7afaa82e36b5f9511e201f65ab93fa1d8b7b5f7f59556dbeaa47a57bfcc65",
    "family": "dogma-f10-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151454"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2020/road/dogma-f10-disks",
@@ -112,7 +125,8 @@
    "sha256": "598851f27399b3485fce86791f4f534d084c920bc38b6582e9d6bbebe2f5850a",
    "family": "dogma-f10-disks",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190603050540"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10-king-of-spain-2017",
@@ -120,7 +134,8 @@
    "sha256": "651d8ba1bc9e57785ba06afbecb47c26dff3224383605fc63c01fef9f55f8bbc",
    "family": "dogma-f10-king-of-spain",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170925095118"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10-king-of-spain-2017",
@@ -128,7 +143,8 @@
    "sha256": "df2cc79b40816a513d90d6e57470120d552adf0a3985846ebdfc895802ad8d51",
    "family": "dogma-f10-king-of-spain",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170925095118"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10-sky-2018",
@@ -136,7 +152,8 @@
    "sha256": "e294ede7a24831b8724a994e73ee06c1340360d27aab66f41da033d7532cc7ab",
    "family": "dogma-f10-sky",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180209104016"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10-sky-2018",
@@ -144,7 +161,8 @@
    "sha256": "df1e6373716077c556151de5798fb8070363ff8965624c4df5a065012426c922",
    "family": "dogma-f10-sky",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180209104016"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10-tdf-2017",
@@ -152,7 +170,8 @@
    "sha256": "f64b0ba419664cb9d748ae85492c63b4997f09678a6f9061b7b2007c80e32b35",
    "family": "dogma-f10-tdf",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170803141135"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10-tdf-2017",
@@ -160,7 +179,8 @@
    "sha256": "97b89c30a14219e7325c45a7fd1507f15ef62ccc33c2dcc41e28baab0c354dbc",
    "family": "dogma-f10-tdf",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170803141135"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/dogma-f10-team-sky-2018",
@@ -168,7 +188,8 @@
    "sha256": "487227412d212773b8b324e0452664c22fd28b98aab7e300c08615c3da51f7ba",
    "family": "dogma-f10-team-sky",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151213"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/dogma-f10-team-sky-2018",
@@ -176,7 +197,8 @@
    "sha256": "fd70824f91d71b7a0b14f4b0854fb399734f77d1371ca7e985b9055d4071e087",
    "family": "dogma-f10-team-sky",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151213"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/dogma-f10-x-light",
@@ -184,7 +206,8 @@
    "sha256": "146669170b79c914bced845f0565651280d57730902cdb2c26deece0b2d42c87",
    "family": "dogma-f10-x-light",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704150807"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/dogma-f10-x-light",
@@ -192,7 +215,8 @@
    "sha256": "844c19c810ef47ef60d154df3aef30948b4032ecb21dc495b6b8ed0dd8883826",
    "family": "dogma-f10-x-light",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704150807"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f100-giro-ditalia-2017",
@@ -200,7 +224,8 @@
    "sha256": "0cd93f1a20036648dc51cc8e4e82ec25a270566e6b06b1fbacfc452daf6e6bbb",
    "family": "dogma-f100-giro-ditalia",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723061244"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f100-giro-ditalia-2017",
@@ -208,7 +233,8 @@
    "sha256": "7380dec39a6af0bac217ea588193ce3149d9ed1e85ebd7045b07377cab8d3b96",
    "family": "dogma-f100-giro-ditalia",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723061244"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10x",
@@ -216,7 +242,8 @@
    "sha256": "7cfdf5ad1fcae81d1ec786aca0d2b9872da3b9694d673b485711c2774324ca79",
    "family": "dogma-f10x",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723030328"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f10x",
@@ -224,7 +251,8 @@
    "sha256": "b946d5fc6bdb986db482b9989d05778dfd5375da91c2e269b69be20cdef0edd8",
    "family": "dogma-f10x",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723030328"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/dogma-f12/dogma-f12-super-record-eps",
@@ -232,7 +260,8 @@
    "sha256": "a205167d0484f791eb85a51531be3f5f36650e881d6a9bc1b6a36e4ea4c7b382",
    "family": "dogma-f12",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20210920211557"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f8",
@@ -240,7 +269,8 @@
    "sha256": "4c483ee6843d06fd1899ecb6bc46fda64bfd1103d8d28c2b3502357d639651db",
    "family": "dogma-f8",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072801"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-f8",
@@ -248,7 +278,8 @@
    "sha256": "feb8c4cc33bb6dc7829433310174fe208ccff9921949c86763df2b16af21f9c5",
    "family": "dogma-f8",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072801"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/competition/dogma-gr/dogma-gr-sram-red-xplr-axs-1x13",
@@ -256,7 +287,8 @@
    "sha256": "206366398fb12f5d172a70992960d656b8c1076281d55591c66d664e90038708",
    "family": "dogma-gr",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20251206145133"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-k10",
@@ -264,7 +296,8 @@
    "sha256": "c38cb8152b85e31ab715368c17a3ea031605be8e73c8849efe16960c8d8c419b",
    "family": "dogma-k10",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072427"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/dogma-k10s-disk",
@@ -272,7 +305,8 @@
    "sha256": "bda7967bad15de62d2f08d6f8e1e42614d404680cdd0a4b8a5051b00bb2636ba",
    "family": "dogma-k10s-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723062508"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/dogma-x/dogma-x-dura-ace-di2",
@@ -280,7 +314,8 @@
    "sha256": "2d8450a92b88868467cddc86516360d7249e7424e916d56c0334a18405bbfeaa",
    "family": "dogma-x",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20231002215949"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/dogma-x/dogma-x-dura-ace-di2",
@@ -288,7 +323,8 @@
    "sha256": "a5a7f353909d15f5d24dc00b2244857a203a6abbdb6f9cca5efec7c060e288b5",
    "family": "dogma-x",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20231002215949"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/dogma-x/dogma-x-dura-ace-di2",
@@ -296,7 +332,8 @@
    "sha256": "b0366fa77d49efd697444fc28379f64c4d35bb3c24bb0166a3042f5576b57391",
    "family": "dogma-x",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20231002215949"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2020/road/dogma-xlight",
@@ -304,7 +341,8 @@
    "sha256": "c789b20334bf7fc6ce69124a61de71d385ed346b7214537c6c17c9f393ae56fa",
    "family": "dogma-xlight",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190619090800"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2020/road/dogma-xlight-disk",
@@ -312,7 +350,8 @@
    "sha256": "d1a88965bfdc342f07bc2fd375bd95a9562a050d4f8791ba1b560c955488f625",
    "family": "dogma-xlight-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190619090729"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/cross/fcx",
@@ -320,7 +359,8 @@
    "sha256": "f0ac9f861dc96ce9d8912a85f9abd5c90d5ed98c5d57c2d4c3330bc3cc722d5a",
    "family": "fcx",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072706"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/cross/fcx",
@@ -328,7 +368,8 @@
    "sha256": "1c8033fc83efdf1e612a428b4f2e311c39986e322e56cac00c0a660aa4467e06",
    "family": "fcx",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072706"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/gan/gan-105",
@@ -336,7 +377,8 @@
    "sha256": "54a35c87c0ba8b2375999b79649d870267f46739788ee327605da19d8b8abee4",
    "family": "gan",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20210918143829"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/gan-disk",
@@ -344,7 +386,8 @@
    "sha256": "5fc15376814d0fcca476992330e5fffa5df48161ad20211542c930b107553251",
    "family": "gan-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151238"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-gr-disk",
@@ -352,7 +395,8 @@
    "sha256": "2a94728f0f50c428f1503a0f58c2cb7d41fca6f677a00722d2e0a7aef16a3a1c",
    "family": "gan-gr-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072443"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-gr-disk",
@@ -360,7 +404,8 @@
    "sha256": "fb86a4d1948208179e9c5ef4a348434e18b022a88e1eca449b73945c961325d2",
    "family": "gan-gr-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072443"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-grs-disk",
@@ -368,7 +413,8 @@
    "sha256": "8e7aeb73f06356e33fad87ab386e6fcdc0695cea1b54a3a68bbe556126e2dd8e",
    "family": "gan-grs-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072453"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-grs-disk",
@@ -376,7 +422,8 @@
    "sha256": "966f097f057706226ee65a11f8ef1da2b229da3559ba50f196c99f57339d453b",
    "family": "gan-grs-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072453"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/gan-k-disk",
@@ -384,7 +431,8 @@
    "sha256": "9176b16b3e4a161572d7bdeedc4a9f0d9eab3b897f293e425c27822cc505fe4c",
    "family": "gan-k-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151057"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-rs",
@@ -392,7 +440,8 @@
    "sha256": "355c1b461ff13c6c9fb0e2c2cf58cce8cd45cad928b5d996e4f9c70ae136e1b2",
    "family": "gan-rs",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072513"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-rs",
@@ -400,7 +449,8 @@
    "sha256": "232af40e89278ffd2e6ee38f92134e517c070f1e8cdc76a1fec5d743afa83daf",
    "family": "gan-rs",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072513"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-s",
@@ -408,7 +458,8 @@
    "sha256": "1e70867b2b30ecd945aa712b6b2ed20df5bdb948481efa55e79306970b5e59f3",
    "family": "gan-s",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072822"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/gan-s",
@@ -416,7 +467,8 @@
    "sha256": "3e142812e27fa0fedfeab430dd6f2e1ae22a857dc3d14ea2ccc3bfadd905d7b1",
    "family": "gan-s",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072822"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/endurance/granger-x/grevil-grx-1",
@@ -424,7 +476,8 @@
    "sha256": "189b7ab7dc36388716c2b97bab4e3b130a2b276716a7cf7c7e0f5c34597bf822",
    "family": "granger-x",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20221118204655"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/endurance/granger-x/grevil-grx-1",
@@ -432,7 +485,8 @@
    "sha256": "e76fb387578a0f728f83f8037ee43d29d0578eaf1b973821381f3d78578aec6d",
    "family": "granger-x",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20221118204655"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/endurance/granger-x/grevil-grx-1-1",
@@ -440,7 +494,8 @@
    "sha256": "6ef5a3ac175a24534d127d61aa7928a140f77d0baf3733e3fed4f3bb3a60e931",
    "family": "granger-x",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230102204509"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/gravel/grevil",
@@ -448,7 +503,8 @@
    "sha256": "9ae052fbf7cc143af2fec589838322f5d0da95b719dd6543edb67dbc556eaf80",
    "family": "grevil",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20181028044213"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/competition/grevil/grevil-ekar",
@@ -456,7 +512,8 @@
    "sha256": "a29dcfbab5aafca4abfc8716c43ce49c2279e823f61efc69354a3284778ffdda",
    "family": "grevil",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210920223949"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/competition/grevil-f/grevil-f-ekar",
@@ -464,7 +521,8 @@
    "sha256": "2293c1021b95ef9c893b085173c7c6a354a92aaa11a1d354788ddcd1b0befc57",
    "family": "grevil-f",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20220601155506"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/competition/grevil-f/grevil-f-ekar-3",
@@ -472,7 +530,8 @@
    "sha256": "2fd83b0cc536b83484ffa9e0d843690dfa9740eef6527ee7d7bf499902f93060",
    "family": "grevil-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240808014909"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/grevil-f/grevil-f-ekar",
@@ -480,7 +539,8 @@
    "sha256": "1b3d7c42f94750a9b783efe94bcc1d7d76e73ae330b35ce99dd5c26ac3ddb34a",
    "family": "grevil-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220602141212"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/mercurio-disk",
@@ -488,7 +548,8 @@
    "sha256": "7669c9f1cd62b085af561115cbf48816e672225152d34f2c81c5aade345fc734",
    "family": "mercurio-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072528"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/mercurio-disk",
@@ -496,7 +557,8 @@
    "sha256": "1afb81eef20bc6ae5a2498d1c52a5e258ce00d865ce33efbd12dff9afbeeabe3",
    "family": "mercurio-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704150827"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/neor",
@@ -504,7 +566,8 @@
    "sha256": "0194a041c38c7ba8a06156c214f86d289208a15bd2b0b0fb34b86c34b0bfbb81",
    "family": "neor",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151253"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/neor",
@@ -512,7 +575,8 @@
    "sha256": "8091a332f46d733730f60ebdfd94698058fa182687715efd7517e7c7cdf8ef37",
    "family": "neor",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151253"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/new-dogma-f/new-dogma-f-dura-ace-di2",
@@ -520,7 +584,8 @@
    "sha256": "30c363b5050ea0f99ac307d04136db3b8f6f9dacd1c7cf2348e783bf1d5a1685",
    "family": "new-dogma-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240808021554"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/dogma-f-1k/new-dogma-f-dura-ace-di2-2",
@@ -528,7 +593,8 @@
    "sha256": "c6aca2dd2385d94dfefee0d316877cb143e3972ae558e45262cd32fc7cf1ec68",
    "family": "new-dogma-f",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250717100310"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/competition/new-grevil-f/new-grevil-f1-shimano-grx-610",
@@ -536,7 +602,8 @@
    "sha256": "7b273a0c89b9bbc3835ec1ebe2a07ce1bd0b27ee3a391c13a368af2b73bc2d51",
    "family": "new-grevil-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20251210205557"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/gravel/competition/new-grevil-f/new-grevil-f3-shimano-grx-820",
@@ -544,7 +611,8 @@
    "sha256": "5199bbb453bc0edab45db638d4ba7a8699bf0ab57a6b82a32c6dcb73aeae7d8a",
    "family": "new-grevil-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20251208143751"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/new-pinarello-f/new-pinarello-f1-105",
@@ -552,7 +620,8 @@
    "sha256": "a8bff088c277c00b7705495efc742e34e3b33252dbc31b581db99bad875f9d61",
    "family": "new-pinarello-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20251206121434"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/new-pinarello-f/new-pinarello-f1-105",
@@ -560,7 +629,8 @@
    "sha256": "0dbd36ef6cf50fe45ca6748406f1645fb77a5abf560e61c54bb29af4daf35498",
    "family": "new-pinarello-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20251206121434"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/paris/paris-105",
@@ -568,7 +638,8 @@
    "sha256": "26adb29a35115d26a3c5c9a2e5b0303a5367b39d2f4f7f1a8485ddc8e8c67b3f",
    "family": "paris",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210918135150"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/paris/paris-ultegra",
@@ -576,7 +647,8 @@
    "sha256": "c8c8a010b0aedbd8c064f82bb8101899d95d2c4404029149ca9f99ae391faff6",
    "family": "paris",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20211209114826"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/pinarello-f/pinarello-f9-dura-ace-di2",
@@ -584,7 +656,8 @@
    "sha256": "4f567ada636990c90881f111c98e8b9bb3dfaab3c04bc044344e60698afe521e",
    "family": "pinarello-f",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230225121150"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/pinarello-f/pinarello-f7-ultegra-di2",
@@ -592,7 +665,8 @@
    "sha256": "06de69601baefa9783bfdc3c49835e89b518cdf6e75fc0141219d853cd6e2be9",
    "family": "pinarello-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230322001937"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/pinarello-f/pinarello-f9-dura-ace-di2",
@@ -600,7 +674,8 @@
    "sha256": "70dad8d2ca1611f7ba6f108887563fab8fd5bc21e63252c72de9f9bb7dc58428",
    "family": "pinarello-f",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230225121150"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/pinarello-x/pinarello-x1-105",
@@ -608,7 +683,8 @@
    "sha256": "fdd9194f36eb9136d02ba4674149ff338b28d6051c6d3b93952fe013e254f6ed",
    "family": "pinarello-x",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230321232644"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/pinarello-x/pinarello-x1-105",
@@ -616,7 +692,8 @@
    "sha256": "65ff85357f643d9c1d6afb6697e4d9f7229762d305776dca2e6fb384a33ec392",
    "family": "pinarello-x",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230321232644"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/pinarello-x/pinarello-x5-dura-ace-di2",
@@ -624,7 +701,8 @@
    "sha256": "5cbbb56397c7423b605cf186166daf8ac5d6510f3969977a7e507f58456ef73d",
    "family": "pinarello-x",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240413041544"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/prima",
@@ -632,7 +710,8 @@
    "sha256": "4044a27da299933b2e06891b6b5a09cfbe9c1a5b80eb7f325f0754544990c124",
    "family": "prima",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072826"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/prima",
@@ -640,7 +719,8 @@
    "sha256": "7a096cef6fc6376c2e14b833f818c7126fccbd30ad9435eaad098087b8d6e08a",
    "family": "prima",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151258"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/prince",
@@ -648,7 +728,8 @@
    "sha256": "6075fb7ac09e2ccddee0b691862d6b8b692436a2e9749421d975acf394c82b05",
    "family": "prince",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151519"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/prince/prince-ultegra",
@@ -656,7 +737,8 @@
    "sha256": "e3093f2bea291f2edf85aca3ec9e57bc9a731833142fdf30dd6fbaa22b61dca0",
    "family": "prince",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20210718040317"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/prince-disk",
@@ -664,7 +746,8 @@
    "sha256": "f8dc99662507b9c427293c609a6de00e4f46d8f677a60c7b7bc5dcf4124dbcc5",
    "family": "prince-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704151524"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2019/road/prince-fx",
@@ -672,7 +755,8 @@
    "sha256": "a0a1098a9da907ef7d5b97e951f5b6b2415815051a3eab5e579390134a9297d2",
    "family": "prince-fx",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20180704150838"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/competition/prince-fx/prince-fx-ultegra-di2",
@@ -680,7 +764,8 @@
    "sha256": "2ea3723f73a5603dcda33e30baa70d266915706198571f67b99c46a441beba79",
    "family": "prince-fx",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20210921000749"
   },
   {
    "url": "https://www.pinarello.com/en/bike-2018/road/razha",
@@ -688,7 +773,8 @@
    "sha256": "042e4ee195869a1cb9a68f33165bee5963bd6f41a09d15da1142a7b53f27bc17",
    "family": "razha",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20170723072831"
   },
   {
    "url": "https://pinarello.com/global/en/bikes/road/endurance/razha/razha-tiagra",
@@ -696,7 +782,8 @@
    "sha256": "262633b73f567cfb44cc004c96a44ca7323c7dfac86fbb1fd84e5d7a05c9a0f4",
    "family": "razha",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20210918141630"
   },
   {
    "url": "https://www.pinarello.com/en/bikes-2020/road/razha-disk",
@@ -704,7 +791,8 @@
    "sha256": "9a679f0cee854d1c20b25a072902acef493fb4d19e991af0ecc7e7057bf93dee",
    "family": "razha-disk",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190603050812"
   }
  ]
 }

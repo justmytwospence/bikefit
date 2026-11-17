@@ -3,7 +3,8 @@
   "models": [
     {
       "model": "Contend",
-      "year": 2026,
+      "year": 2020,
+      "lastYear": 2026,
       "category": "endurance",
       "source": "https://www.giant-bicycles.com/us/contend-1-2020",
       "retrieved": "2026-01-13",
@@ -18,12 +19,12 @@
     },
     {
       "model": "Contend AR",
-      "year": 2026,
-      "lastYear": 2027,
+      "year": 2021,
+      "lastYear": 2022,
       "category": "endurance",
-      "source": "https://www.giant-bicycles.com/us/contend-ar-3",
-      "retrieved": "2026-11-04",
-      "archive": "https://web.archive.org/web/20261104065556/https://www.giant-bicycles.com/us/contend-ar-3",
+      "source": "https://www.giant-bicycles.com/us/contend-ar-3-2022",
+      "retrieved": "2025-10-13",
+      "archive": "https://web.archive.org/web/20251013035424/https://www.giant-bicycles.com/us/contend-ar-3-2022",
       "sizes": [
         ["S",559,375,74,71.8,135,465,422,1003,80],
         ["M",574,380,73.5,72,150,500,422,1011,80],
@@ -34,7 +35,7 @@
     },
     {
       "model": "Defy",
-      "year": 2024,
+      "year": 2022,
       "lastYear": 2026,
       "category": "endurance",
       "source": "https://www.giant-bicycles.com/us/defy-3-2015",
@@ -42,33 +43,17 @@
       "archive": "https://web.archive.org/web/20250817111625/https://www.giant-bicycles.com/us/defy-3-2015",
       "estimated": ["headTubeLength","seatTubeLength","chainstay","wheelbase","bbDrop"],
       "sizes": [
-        ["XS/43.0",523,365,74,71,125,457,420,983,72],
-        ["S/46.5",545,373,74,72,145,479,420,990,72],
+        ["XS/43.0",523,365,74,71,125,456,420,983,72],
+        ["S/46.5",545,373,74,72,145,478,420,990,72],
         ["M/50.0",566,377,73.5,72.5,165,500,420,995,73],
         ["M/L/53.5",585,381,73,72.5,185,519,420,1007,73],
-        ["L/55.5",604,390,73,72.5,205,538,420,1022,73],
-        ["XL/58.5",623,398,72.5,72.5,204,557,419,1028,73]
+        ["L/55.5",604,390,73,72.5,205,539,420,1022,73],
+        ["XL/58.5",623,398,72.5,72.5,204,558,419,1028,73]
       ]
     },
     {
       "model": "Defy Advanced",
-      "year": 2024,
-      "category": "endurance",
-      "source": "https://www.giant-bicycles.com/us/defy-advanced-pro-1-2024",
-      "retrieved": "2026-11-16",
-      "aliases": ["Defy","Defy Advanced Pro"],
-      "sizes": [
-        ["XS",527,369,74.5,70.5,125,410,420,995,75],
-        ["S",541,375,74,71.8,135,445,420,994,75],
-        ["M",558,380,73.5,72.5,150,480,420,998,75],
-        ["ML",577,384,73,72.5,175,515,420,1010,70],
-        ["L",596,393,73,72.5,195,535,420,1025,70],
-        ["XL",615,402,73,72.5,215,565,420,1040,70]
-      ]
-    },
-    {
-      "model": "Defy Advanced",
-      "year": 2026,
+      "year": 2020,
       "lastYear": 2027,
       "category": "endurance",
       "source": "https://www.giant-bicycles.com/us/defy-advanced-2",
@@ -87,22 +72,6 @@
       "model": "Propel Advanced",
       "year": 2023,
       "category": "aero",
-      "source": "https://www.giant-bicycles.com/us/propel-advanced-1",
-      "retrieved": "2026-11-16",
-      "aliases": ["Propel"],
-      "sizes": [
-        ["XS",517,376,74.5,71,120,465,405,976,72],
-        ["S",528,383,74,72.3,130,500,405,977,70],
-        ["M",545,388,73.5,73,145,520,405,980,70],
-        ["ML",562,393,73,73,165,545,405,991,67],
-        ["L",581,402,73,73,185,575,405,1006,67],
-        ["XL",596,412,72.5,73,200,595,405,1020,67]
-      ]
-    },
-    {
-      "model": "Propel Advanced",
-      "year": 2026,
-      "category": "aero",
       "source": "https://www.giant-bicycles.com/us/propel-advanced-1-2023",
       "retrieved": "2025-12-16",
       "archive": "https://web.archive.org/web/20251216123125/https://www.giant-bicycles.com/us/propel-advanced-1-2023",
@@ -117,24 +86,24 @@
     },
     {
       "model": "Propel Advanced SL",
-      "year": 2027,
+      "year": 2026,
       "category": "aero",
       "source": "https://www.giant-bicycles.com/us/propel-advanced-sl-0--red-",
       "retrieved": "2026-09-28",
       "archive": "https://web.archive.org/web/20260928225352/https://www.giant-bicycles.com/us/propel-advanced-sl-0--red-",
       "estimated": ["seatTubeLength"],
       "sizes": [
-        ["XS",517,376,74.5,71,120,484,405,976,72],
-        ["S",528,383,74,72.3,130,495,405,977,70],
-        ["M",545,388,73.5,73,145,513,405,980,70],
-        ["ML",562,393,73,73,165,531,405,991,67],
-        ["L",581,402,73,73,185,552,405,1006,67],
-        ["XL",596,412,72.5,73,200,567,405,1020,67]
+        ["XS",517,376,74.5,71,120,479,405,976,72],
+        ["S",528,383,74,72.3,130,491,405,977,70],
+        ["M",545,388,73.5,73,145,511,405,980,70],
+        ["ML",562,393,73,73,165,530,405,991,67],
+        ["L",581,402,73,73,185,551,405,1006,67],
+        ["XL",596,412,72.5,73,200,568,405,1020,67]
       ]
     },
     {
       "model": "Revolt",
-      "year": 2027,
+      "year": 2020,
       "category": "gravel",
       "source": "https://www.giant-bicycles.com/us/revolt-2",
       "retrieved": "2026-11-14",
@@ -150,7 +119,8 @@
     },
     {
       "model": "Revolt Advanced",
-      "year": 2026,
+      "year": 2020,
+      "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.giant-bicycles.com/us/revolt-advanced-1",
       "retrieved": "2026-11-16",
@@ -165,24 +135,8 @@
       ]
     },
     {
-      "model": "Revolt Advanced",
-      "year": 2027,
-      "category": "gravel",
-      "source": "https://www.giant-bicycles.com/us/revolt-advanced-2",
-      "retrieved": "2026-11-16",
-      "archive": "https://web.archive.org/web/20261116032744/https://www.giant-bicycles.com/us/revolt-advanced-2",
-      "sizes": [
-        ["XS",556,381,74,70,125,430,425,1024,80],
-        ["S",570,381,73.5,71,135,450,425,1020,80],
-        ["M",586,387,73.5,71.5,150,470,425,1026,80],
-        ["ML",602,391,73,72,165,490,425,1031,80],
-        ["L",616,397,73,72,180,510,425,1041,80],
-        ["XL",630,407,73,72,195,530,425,1056,80]
-      ]
-    },
-    {
       "model": "Revolt X Advanced",
-      "year": 2026,
+      "year": 2025,
       "category": "gravel",
       "source": "https://www.giant-bicycles.com/us/revolt-x-advanced-pro-1-2023",
       "retrieved": "2026-02-18",
@@ -214,23 +168,23 @@
     },
     {
       "model": "TCR Advanced SL",
-      "year": 2026,
+      "year": 2024,
       "category": "race",
       "source": "https://www.giant-bicycles.com/us/tcr-advanced-sl-frameset-2025",
       "retrieved": "2026-06-18",
       "archive": "https://web.archive.org/web/20260618052954/https://www.giant-bicycles.com/us/tcr-advanced-sl-frameset-2025",
       "estimated": ["seatTubeLength"],
       "sizes": [
-        ["S",528,383,74,72.3,130,479,405,977,70],
-        ["M",545,388,73.5,73,145,500,405,980,70],
-        ["ML",562,393,73,73,165,521,405,991,67],
-        ["L",581,402,73,73,185,544,405,1006,67],
-        ["XL",596,412,72.5,73,200,563,405,1020,67]
+        ["S",528,383,74,72.3,130,477,405,977,70],
+        ["M",545,388,73.5,73,145,498,405,980,70],
+        ["ML",562,393,73,73,165,519,405,991,67],
+        ["L",581,402,73,73,185,542,405,1006,67],
+        ["XL",596,412,72.5,73,200,560,405,1020,67]
       ]
     },
     {
       "model": "TCX Advanced",
-      "year": 2026,
+      "year": 2025,
       "category": "cyclocross",
       "source": "https://www.giant-bicycles.com/us/tcx-advanced-2019",
       "retrieved": "2025-10-10",
@@ -244,18 +198,33 @@
       ]
     },
     {
-      "model": "TCX SLR",
+      "model": "TCX Advanced",
       "year": 2026,
+      "category": "cyclocross",
+      "source": "https://www.giant-bicycles.com/us/tcx-advanced-pro-1-2024",
+      "retrieved": "2026-06-07",
+      "archive": "https://web.archive.org/web/20260607172653/https://www.giant-bicycles.com/us/tcx-advanced-pro-1-2024",
+      "sizes": [
+        ["S",540,370,73.5,71,133,505,430,1014,60],
+        ["M",556,375,73,71.5,148,525,430,1020,60],
+        ["ML",572,385,73,72,163,545,430,1030,60],
+        ["L",589,395,73,72.5,178,555,430,1040,60],
+        ["XL",603,406,73,72.5,193,565,430,1055,60]
+      ]
+    },
+    {
+      "model": "TCX SLR",
+      "year": 2022,
       "category": "cyclocross",
       "source": "https://www.giant-bicycles.com/us/tcx-slr-2-2016",
       "retrieved": "2025-08-16",
       "archive": "https://web.archive.org/web/20250816093555/https://www.giant-bicycles.com/us/tcx-slr-2-2016",
       "estimated": ["seatTubeLength","bbDrop"],
       "sizes": [
-        ["S/50",540,370,73.5,71,130,497,430,1014,66],
-        ["M/52.5",556,375,73,71.5,145,516,430,1019,66],
-        ["ML/54.5",572,385,73,72,160,535,430,1030,66],
-        ["L/55.5",589,395,73,72.5,175,555,430,1040,65],
+        ["S/50",540,370,73.5,71,130,497,430,1014,65],
+        ["M/52.5",556,375,73,71.5,145,516,430,1019,65],
+        ["ML/54.5",572,385,73,72,160,534,430,1030,65],
+        ["L/55.5",589,395,73,72.5,175,554,430,1040,65],
         ["XL/56.5",603,406,73,72.5,190,571,430,1055,65]
       ]
     }

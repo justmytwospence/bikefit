@@ -3,43 +3,43 @@
   "models": [
     {
       "model": "Aeroad CF SLX",
-      "year": 2027,
+      "year": 2026,
       "category": "aero",
       "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
       "retrieved": "2026-11-14",
       "archive": "https://web.archive.org/web/20261114024054/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
       "estimated": ["bbDrop"],
       "sizes": [
-        ["2XS",498,372,73.5,70,88,441,410,975,68],
-        ["XS",520,378,73.5,71.2,107,471,410,979,68],
-        ["S",539,390,73.5,72.8,121,501,410,982,69],
-        ["M",560,393,73.5,73.3,142,531,410,988,69],
+        ["2XS",498,372,73.5,70,88,441,410,975,70],
+        ["XS",520,378,73.5,71.2,107,471,410,979,70],
+        ["S",539,390,73.5,72.8,121,501,410,982,70],
+        ["M",560,393,73.5,73.3,142,531,410,988,70],
         ["L",580,401,73.5,73.3,162,561,413,1003,70],
         ["XL",606,419,73.5,73.5,188,591,415,1029,70],
-        ["2XL",624,429,73.5,73.8,206,621,415,1042,71]
+        ["2XL",624,429,73.5,73.8,206,621,415,1042,70]
       ]
     },
     {
       "model": "Aeroad CFR",
-      "year": 2027,
+      "year": 2026,
       "category": "aero",
       "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
       "retrieved": "2026-09-14",
       "archive": "https://web.archive.org/web/20260914195047/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
       "estimated": ["bbDrop"],
       "sizes": [
-        ["2XS",498,372,73.5,70,88,441,410,975,68],
-        ["XS",520,378,73.5,71.2,107,471,410,979,68],
-        ["S",539,390,73.5,72.8,121,501,410,982,69],
-        ["M",560,393,73.5,73.3,142,531,410,988,69],
+        ["2XS",498,372,73.5,70,88,441,410,975,70],
+        ["XS",520,378,73.5,71.2,107,471,410,979,70],
+        ["S",539,390,73.5,72.8,121,501,410,982,70],
+        ["M",560,393,73.5,73.3,142,531,410,988,70],
         ["L",580,401,73.5,73.3,162,561,413,1003,70],
         ["XL",606,419,73.5,73.5,188,591,415,1029,70],
-        ["2XL",624,429,73.5,73.8,206,621,415,1042,71]
+        ["2XL",624,429,73.5,73.8,206,621,415,1042,70]
       ]
     },
     {
       "model": "Endurace AllRoad",
-      "year": 2027,
+      "year": 2025,
       "category": "endurance",
       "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
       "retrieved": "2026-11-04",
@@ -51,7 +51,7 @@
         ["S",570,391,73.5,71,145,492,425,1036,73],
         ["M",594,397,73.5,72,166,522,425,1040,73],
         ["L",616,407,73.5,72,189,552,425,1057,73],
-        ["XL",640,425,73.5,72,215,582,425,1083,74],
+        ["XL",640,425,73.5,72,215,582,425,1083,73],
         ["2XL",660,438,73.5,72,235,612,425,1103,74]
       ]
     },
@@ -139,30 +139,14 @@
       ]
     },
     {
-      "model": "Grizl",
-      "year": 2027,
-      "category": "gravel",
-      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-6/4444.html",
-      "retrieved": "2026-11-14",
-      "archive": "https://web.archive.org/web/20261114024138/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-6/4444.html",
-      "estimated": ["bbDrop"],
-      "sizes": [
-        ["2XS",550,369,73.5,68.8,120,432,440,1047,73],
-        ["XS",559,380,73.5,69.5,126,462,440,1054,73],
-        ["S",578,388,73.5,70.5,141,492,440,1059,73],
-        ["M",596,404,73.5,71,158,522,440,1076,73],
-        ["L",619,420,73.5,71,183,552,440,1100,74],
-        ["XL",638,429,73.5,71,203,582,440,1115,74],
-        ["2XL",660,448,73.5,71,226,612,440,1142,74]
-      ]
-    },
-    {
       "model": "Grizl CF",
-      "year": 2027,
+      "year": 2026,
+      "lastYear": 2027,
       "category": "gravel",
       "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
       "retrieved": "2026-11-14",
       "archive": "https://web.archive.org/web/20261114024135/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
+      "aliases": ["Grizl"],
       "estimated": ["bbDrop"],
       "sizes": [
         ["2XS",550,369,73.5,68.8,120,432,440,1047,73],

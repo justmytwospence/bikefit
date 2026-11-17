@@ -8,7 +8,8 @@
    "sha256": "5f0a32b31620c2545bb953fb3611e456680702dda75b6f477bf463b25b2501e0",
    "family": "gb-addict-gravel-10-disc-bike",
    "year": 2019,
-   "related": []
+   "related": [],
+   "firstSeen": "20180804011558"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-prism-grey-green-bike",
@@ -16,7 +17,8 @@
    "sha256": "9782c736e7c2d73541ca29aa873699e953baa15af794e3ad9aa38b212f263900",
    "family": "gb-addict-rc-10-prism-grey-green-bike",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920003659"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-15-disc-bike",
@@ -24,7 +26,8 @@
    "sha256": "688a0e7d46916595f2745ab1181ca1928169a693ca7ca88f97ed404d55bf864f",
    "family": "gb-addict-rc-15-disc-bike",
    "year": 2019,
-   "related": []
+   "related": [],
+   "firstSeen": "20181104003251"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-30-blue-bike",
@@ -32,7 +35,8 @@
    "sha256": "ed9d7cfb73ed739e5c16c22c722735849c740f000219c0cdb51c77c0967f8e81",
    "family": "gb-addict-rc-30-blue-bike",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20200609165321"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-30-yellow-bike",
@@ -40,7 +44,8 @@
    "sha256": "8901242ede7a4917c3a86ccacb1f28c54485b1436936ce77efe515a7282e837b",
    "family": "gb-addict-rc-30-yellow-bike",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20200403202213"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-contessa-speedster-gravel-15-bike",
@@ -48,7 +53,8 @@
    "sha256": "e38c3b5518c746366f7af9d70308eb19798e2ded6dfb7bd2ad390b5c2fd9fec5",
    "family": "gb-contessa-speedster-gravel-15-bike",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20200919171819"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-contessa-speedster-gravel-25-bike",
@@ -56,7 +62,8 @@
    "sha256": "bff9573e2afcce5462a89a00516f7e9bf741c102246c8efdccb037f938a7d596",
    "family": "gb-contessa-speedster-gravel-25-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920061400"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-contessa-speedster-gravel-25-bike",
@@ -64,7 +71,8 @@
    "sha256": "bff9573e2afcce5462a89a00516f7e9bf741c102246c8efdccb037f938a7d596",
    "family": "gb-contessa-speedster-gravel-25-bike",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920061400"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-speedster-gravel-10-bike",
@@ -78,7 +86,8 @@
      "timestamp": "20250218100415",
      "sha256": "1c56ce6802220ca7d53d62057ddfc5aafe118ec4390065db5b9675005dfd0cd5"
     }
-   ]
+   ],
+   "firstSeen": "20200919124933"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-speedster-gravel-10-bike",
@@ -92,7 +101,8 @@
      "timestamp": "20250218100415",
      "sha256": "1c56ce6802220ca7d53d62057ddfc5aafe118ec4390065db5b9675005dfd0cd5"
     }
-   ]
+   ],
+   "firstSeen": "20200919124933"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-20-disc-dark-blue-bike",
@@ -100,7 +110,8 @@
    "sha256": "6dbd310541a954c9e326550b1aefcb0338360c56581c471d7c2ce79418e386ba",
    "family": "global-addict-20-disc-dark-blue-bike",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20200424161522"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-cx-rc-bike",
@@ -108,7 +119,8 @@
    "sha256": "2d14140b9414b258fa41bf6730cc9075cb13153ac819a15c98ab4f1fc516281f",
    "family": "global-addict-cx-rc-bike",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20200916210929"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-gravel-10-bike",
@@ -116,7 +128,8 @@
    "sha256": "f94356a7c0cf7558b1b133472881b9b389331db40e2904f824995ba72aefb87b",
    "family": "global-addict-gravel-10-bike",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20200919054400"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-10-prism-grey-green-bike",
@@ -124,7 +137,8 @@
    "sha256": "522b374c64e505861786d87dec92f164ad678ce36115efe6644451d0005fdfea",
    "family": "global-addict-rc-10-prism-grey-green-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920014842"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-15-carbon-onyx-black-bike",
@@ -132,7 +146,8 @@
    "sha256": "afabb610d8c575fbca199d675ada420a91013ef6218b1a07b7c54613d77f2003",
    "family": "global-addict-rc-15-carbon-onyx-black-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920064257"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-15-carbon-onyx-black-bike",
@@ -140,7 +155,8 @@
    "sha256": "afabb610d8c575fbca199d675ada420a91013ef6218b1a07b7c54613d77f2003",
    "family": "global-addict-rc-15-carbon-onyx-black-bike",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920064257"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-15-disc-bike",
@@ -148,7 +164,8 @@
    "sha256": "a8506eb82c2fae81c856172029d292c622c2b533f43a28da89857b325b0993b7",
    "family": "global-addict-rc-15-disc-bike",
    "year": 2019,
-   "related": []
+   "related": [],
+   "firstSeen": "20181104003224"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-30-blue-bike",
@@ -156,7 +173,8 @@
    "sha256": "ce96b280259e4407c676bb4c62934b5c05e689dcd1358155177b96992612db78",
    "family": "global-addict-rc-30-blue-bike",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20200609094147"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-30-prism-green-purple-bike",
@@ -164,7 +182,8 @@
    "sha256": "606c1a34664983562042d805cdb1ed29b4b3a039c811bcbee982c265c6c287c6",
    "family": "global-addict-rc-30-prism-green-purple-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200918221901"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-30-yellow-bike",
@@ -172,7 +191,8 @@
    "sha256": "d27491997ec59697d58a56d959390166bdce5c8c5434413e0c655ebe75b0d504",
    "family": "global-addict-rc-30-yellow-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200406034031"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-pro-bike",
@@ -180,7 +200,8 @@
    "sha256": "57b26b1d2621651f59d620f582b5d185af7fb9e2de5beeded44380a97eb602a9",
    "family": "global-addict-rc-pro-bike",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920021635"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-contessa-speedster-gravel-25-bike",
@@ -188,7 +209,8 @@
    "sha256": "1977c2f122a57222ca7343e1fb38e68833775979796b27136e6322a5e4e3b477",
    "family": "global-contessa-speedster-gravel-25-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190918045312"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-10-bike",
@@ -196,7 +218,8 @@
    "sha256": "3fe40d21e3435b463b28a59ac36938079a27fe063a2cb265705d496d68ce2b23",
    "family": "global-speedster-gravel-10-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200919160210"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-30-bike",
@@ -204,7 +227,8 @@
    "sha256": "6da950b3bf09e5a8737898da70d9b0f10612a1ec24072fda552cfa71948de867",
    "family": "global-speedster-gravel-30-bike",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20191021031458"
   },
   {
    "url": "https://www.scott-sports.com/us/en/product/scott-addict-20-bike",
@@ -218,7 +242,8 @@
      "timestamp": "20250414174309",
      "sha256": "c6c6f3dfcf7ee0d9dc07a5a4a1b7f4bfeac2c38c57bff16cc9211106bcc765ee"
     }
-   ]
+   ],
+   "firstSeen": "20250927235728"
   },
   {
    "url": "https://www.scott-sports.com/us/en/product/scott-addict-20-disc-dark-blue-bike",
@@ -226,7 +251,8 @@
    "sha256": "97810c3064ccf46d1a8be43f7409eccde9f443b67f7d41e9a0f08187d35dff04",
    "family": "us-addict-20-disc-dark-blue-bike",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20200423024216"
   },
   {
    "url": "https://www.scott-sports.com/us/en/product/scott-addict-rc-20-bike-2021",
@@ -240,7 +266,8 @@
      "timestamp": "20250525001712",
      "sha256": "21efa0f13b290939bc45f276e1fcadf7c4c45c5914fa4f7d924c3a2951a1c3c4"
     }
-   ]
+   ],
+   "firstSeen": "20251231062935"
   },
   {
    "url": "https://www.scott-sports.com/us/en/product/scott-addict-rc-20-bike-2021",
@@ -254,7 +281,8 @@
      "timestamp": "20250525001712",
      "sha256": "21efa0f13b290939bc45f276e1fcadf7c4c45c5914fa4f7d924c3a2951a1c3c4"
     }
-   ]
+   ],
+   "firstSeen": "20251231062935"
   },
   {
    "url": "https://www.scott-sports.com/us/en/product/scott-addict-rc-pro-bike",
@@ -268,7 +296,8 @@
      "timestamp": "20250731035038",
      "sha256": "290bb28531a9c12bee9820f3dfd6dbfb2a57971f4e79e906967d106d8267e58e"
     }
-   ]
+   ],
+   "firstSeen": "20220729173536"
   },
   {
    "url": "https://www.scott-sports.com/us/en/product/scott-contessa-speedster-gravel-15-bike",
@@ -276,7 +305,8 @@
    "sha256": "c536ddd5a41d1e5670bff9723f5b4ea658c013734f402196550d2ef9ff65cdf0",
    "family": "us-contessa-speedster-gravel-15-bike",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20200920082332"
   },
   {
    "url": "https://www.scott-sports.com/us/en/product/scott-contessa-speedster-gravel-25-bike",
@@ -284,7 +314,8 @@
    "sha256": "cef01561679ef5c7f478fc3920d4f7a7bdfbc9e977e0394cceb594c84ba811de",
    "family": "us-contessa-speedster-gravel-25-bike",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20200919211216"
   }
  ]
 }

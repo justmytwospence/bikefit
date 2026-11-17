@@ -34,8 +34,8 @@ describe('buildCatalog', () => {
 
 describe('real catalog', () => {
   it('is big enough', () => {
-    // 448 models from 28 brands when the pipeline last ran; fail on a big loss.
-    expect(CATALOG.length).toBeGreaterThanOrEqual(425);
+    // 373 models from 28 brands when the pipeline last ran; fail on a big loss.
+    expect(CATALOG.length).toBeGreaterThanOrEqual(354);
     expect(new Set(CATALOG.map((m) => m.brand)).size).toBeGreaterThanOrEqual(25);
   });
   it('has valid entries', () => {

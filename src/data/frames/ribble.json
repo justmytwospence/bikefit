@@ -8,41 +8,27 @@
       "source": "https://www.ribblecycles.co.uk/ribble-aero-883-shimano-ultegra-di2/",
       "retrieved": "2019-12-11",
       "archive": "https://web.archive.org/web/20191211230012/https://www.ribblecycles.co.uk/ribble-aero-883-shimano-ultegra-di2/",
+      "aliases": ["Aero 883 Disc"],
       "estimated": ["bbDrop"],
       "sizes": [
-        ["S",521,380,74.3,72.1,118,478,404,968,68],
-        ["M",543,388,73.7,72.4,140,502,405,981,69],
-        ["L",565,396,73.3,72.6,156,522,406,997,69],
+        ["S",521,380,74.3,72.1,118,478,404,968,70],
+        ["M",543,388,73.7,72.4,140,502,405,981,70],
+        ["L",565,396,73.3,72.6,156,522,406,997,70],
         ["XL",587,404,72.9,72.8,188,542,408,1012,70]
       ]
     },
     {
       "model": "Aero 883 Disc",
-      "year": 2020,
-      "category": "aero",
-      "source": "https://www.ribblecycles.co.uk/ribble-aero-883-disc-shimano-105/",
-      "retrieved": "2019-12-13",
-      "archive": "https://web.archive.org/web/20191213162041/https://www.ribblecycles.co.uk/ribble-aero-883-disc-shimano-105/",
-      "estimated": ["bbDrop"],
-      "sizes": [
-        ["S",521,380,74.3,72.1,118,478,404,968,68],
-        ["M",543,388,73.7,72.4,140,502,405,981,69],
-        ["L",565,396,73.3,72.6,156,522,406,997,69],
-        ["XL",587,404,72.9,72.8,188,542,408,1012,70]
-      ]
-    },
-    {
-      "model": "Aero 883 Disc",
-      "year": 2022,
+      "year": 2017,
       "category": "aero",
       "source": "https://www.ribblecycles.co.uk/ribble-aero-883-disc/",
       "retrieved": "2021-09-18",
       "archive": "https://web.archive.org/web/20210918053627/https://www.ribblecycles.co.uk/ribble-aero-883-disc/",
       "estimated": ["bbDrop"],
       "sizes": [
-        ["S",521,380,74.3,72.1,118,478,412,976,68],
-        ["M",543,388,73.7,72.4,140,502,413,989,69],
-        ["L",565,396,73.3,72.6,165,522,414,1005,69],
+        ["S",521,380,74.3,72.1,118,478,412,976,70],
+        ["M",543,388,73.7,72.4,140,502,413,989,70],
+        ["L",565,396,73.3,72.6,165,522,414,1005,70],
         ["XL",587,404,72.9,72.8,188,542,416,1020,70]
       ]
     },
@@ -78,7 +64,7 @@
     },
     {
       "model": "Allgrit Ti X",
-      "year": 2026,
+      "year": 2025,
       "lastYear": 2027,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-allgrit-ti-x/",
@@ -125,7 +111,7 @@
     },
     {
       "model": "Allroad SL",
-      "year": 2026,
+      "year": 2025,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-allroad-sl/",
       "retrieved": "2025-12-09",
@@ -140,7 +126,7 @@
     },
     {
       "model": "Allroad SL R",
-      "year": 2026,
+      "year": 2025,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-allroad-sl-r-sport/",
       "retrieved": "2026-02-06",
@@ -155,7 +141,7 @@
     },
     {
       "model": "Allroad Ti",
-      "year": 2026,
+      "year": 2025,
       "lastYear": 2027,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-allroad-ti/",
@@ -171,23 +157,7 @@
     },
     {
       "model": "CGR 725",
-      "year": 2020,
-      "lastYear": 2024,
-      "category": "gravel",
-      "source": "https://www.ribblecycles.co.uk/ribble-cgr-725/",
-      "retrieved": "2023-12-09",
-      "archive": "https://web.archive.org/web/20231209043846/https://www.ribblecycles.co.uk/ribble-cgr-725/",
-      "sizes": [
-        ["XS",536,366,73.5,72,120,470,435,995,69],
-        ["S",555,380,73.5,72,140,510,435,1001,69],
-        ["M",574,385,73.5,72,160,530,435,1027,69],
-        ["L",593,394,73.5,72,180,555,435,1042,69],
-        ["XL",612,409,73.5,72,200,580,435,1062,69]
-      ]
-    },
-    {
-      "model": "CGR 725",
-      "year": 2026,
+      "year": 2019,
       "lastYear": 2027,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-cgr-725/",
@@ -236,11 +206,10 @@
     {
       "model": "CGR AL",
       "year": 2026,
-      "lastYear": 2027,
       "category": "gravel",
-      "source": "https://www.ribblecycles.co.uk/ribble-cgr-al-105-v3/",
-      "retrieved": "2026-11-14",
-      "archive": "https://web.archive.org/web/20261114153556/https://www.ribblecycles.co.uk/ribble-cgr-al-105-v3/",
+      "source": "https://www.ribblecycles.co.uk/ribble-cgr-al/",
+      "retrieved": "2025-12-05",
+      "archive": "https://web.archive.org/web/20251205085115/https://www.ribblecycles.co.uk/ribble-cgr-al/",
       "sizes": [
         ["XS",526,386,75.5,70.5,105,470,435,1030,70],
         ["S",545,394,74,71.5,125,490,435,1036,67],
@@ -252,11 +221,11 @@
     {
       "model": "CGR Carbon",
       "year": 2020,
-      "lastYear": 2022,
+      "lastYear": 2021,
       "category": "gravel",
-      "source": "https://www.ribblecycles.co.uk/ribble-cgr-carbon-shimano-105/",
-      "retrieved": "2022-01-28",
-      "archive": "https://web.archive.org/web/20220128051550/https://www.ribblecycles.co.uk/ribble-cgr-carbon-shimano-105/",
+      "source": "https://www.ribblecycles.co.uk/ribble-cgr-carbon-shimano-ultegra-di2/",
+      "retrieved": "2021-04-11",
+      "archive": "https://web.archive.org/web/20210411092412/https://www.ribblecycles.co.uk/ribble-cgr-carbon-shimano-ultegra-di2/",
       "sizes": [
         ["XS",537,371,74.5,70.5,130,460,435,1019,69],
         ["S",549,375,74,71,140,480,435,1025,69],
@@ -268,7 +237,6 @@
     {
       "model": "CGR SL",
       "year": 2020,
-      "lastYear": 2022,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-cgr-sl/",
       "retrieved": "2021-12-19",
@@ -284,11 +252,10 @@
     {
       "model": "CGR SL",
       "year": 2024,
-      "lastYear": 2026,
       "category": "gravel",
-      "source": "https://www.ribblecycles.co.uk/ribble-cgr-sl-sport/",
-      "retrieved": "2025-12-05",
-      "archive": "https://web.archive.org/web/20251205082944/https://www.ribblecycles.co.uk/ribble-cgr-sl-sport/",
+      "source": "https://www.ribblecycles.co.uk/ribble-cgr-sl/",
+      "retrieved": "2023-11-28",
+      "archive": "https://web.archive.org/web/20231128164918/https://www.ribblecycles.co.uk/ribble-cgr-sl/",
       "sizes": [
         ["XS",537,371,74.5,70.5,130,460,435,1019,69],
         ["S",549,375,74,71,140,480,435,1025,69],
@@ -299,24 +266,7 @@
     },
     {
       "model": "CGR Ti",
-      "year": 2020,
-      "lastYear": 2024,
-      "category": "gravel",
-      "source": "https://www.ribblecycles.co.uk/ribble-cgr-ti/",
-      "retrieved": "2023-12-04",
-      "archive": "https://web.archive.org/web/20231204190540/https://www.ribblecycles.co.uk/ribble-cgr-ti/",
-      "estimated": ["seatTubeLength","bbDrop"],
-      "sizes": [
-        ["XS",556,375,74,71,140,480,435,1027,73],
-        ["S",568,377,73.5,71.5,150,493,435,1027,73],
-        ["M",589,380,73,72,170,515,435,1032,73],
-        ["L",606,384,72.5,72,190,533,435,1043,73],
-        ["XL",625,395,72.5,72,210,553,435,1053,74]
-      ]
-    },
-    {
-      "model": "CGR Ti",
-      "year": 2022,
+      "year": 2019,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-cgr-ti/",
       "retrieved": "2021-12-19",
@@ -332,7 +282,8 @@
     },
     {
       "model": "CGR Ti",
-      "year": 2026,
+      "year": 2020,
+      "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-cgr-ti/",
       "retrieved": "2025-11-22",
@@ -340,10 +291,10 @@
       "estimated": ["seatTubeLength","bbDrop"],
       "sizes": [
         ["XS",556,375,74,71,140,480,435,1026,73],
-        ["S",568,377,73.5,71.5,150,493,435,1027,73],
-        ["M",589,380,73,72,170,515,435,1032,73],
-        ["L",606,384,72.5,72,190,533,435,1042,73],
-        ["XL",625,395,72.5,72,210,553,435,1053,74]
+        ["S",568,377,73.5,71.5,150,492,435,1027,73],
+        ["M",589,380,73,72,170,514,435,1032,73],
+        ["L",606,384,72.5,72,190,532,435,1042,73],
+        ["XL",625,395,72.5,72,210,552,435,1053,74]
       ]
     },
     {
@@ -357,9 +308,9 @@
       "sizes": [
         ["XS",556,375,74,71,125,480,435,1025,69],
         ["S",567,377,73.5,71.5,135,491,435,1026,69],
-        ["M",588,380,73,72,155,514,435,1031,69],
-        ["L",609,384,72.5,72,175,536,435,1036,69],
-        ["XL",616,395,72.5,72,185,544,435,1055,69]
+        ["M",588,380,73,72,155,513,435,1031,69],
+        ["L",609,384,72.5,72,175,535,435,1036,69],
+        ["XL",616,395,72.5,72,185,543,435,1055,69]
       ]
     },
     {
@@ -412,21 +363,6 @@
     },
     {
       "model": "Endurance 725",
-      "year": 2020,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-725/",
-      "retrieved": "2019-11-12",
-      "archive": "https://web.archive.org/web/20191112205044/https://www.ribblecycles.co.uk/ribble-endurance-725/",
-      "sizes": [
-        ["XS",510,379,74.5,71,110,470,410,991,68],
-        ["S",531,383,74,72,130,510,410,990,68],
-        ["M",551,388,73.6,72.5,150,530,410,995,68],
-        ["L",572,393,73.3,73,170,555,410,999,68],
-        ["XL",592,399,73,73.3,190,580,410,1007,68]
-      ]
-    },
-    {
-      "model": "Endurance 725",
       "year": 2022,
       "lastYear": 2023,
       "category": "endurance",
@@ -449,22 +385,7 @@
       "source": "https://www.ribblecycles.co.uk/ribble-endurance-725-disc/",
       "retrieved": "2026-11-14",
       "archive": "https://web.archive.org/web/20261114153555/https://www.ribblecycles.co.uk/ribble-endurance-725-disc/",
-      "sizes": [
-        ["XS",510,379,74.5,71,110,470,410,991,68],
-        ["S",531,383,74,72,130,510,410,990,68],
-        ["M",551,388,73.6,72.5,150,530,410,995,68],
-        ["L",572,393,73.3,73,170,555,410,999,68],
-        ["XL",592,399,73,73.3,190,580,410,1007,68]
-      ]
-    },
-    {
-      "model": "Endurance AL",
-      "year": 2020,
-      "lastYear": 2024,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-al-shimano-105-disc/",
-      "retrieved": "2023-12-09",
-      "archive": "https://web.archive.org/web/20231209042122/https://www.ribblecycles.co.uk/ribble-endurance-al-shimano-105-disc/",
+      "aliases": ["Endurance 725"],
       "sizes": [
         ["XS",510,379,74.5,71,110,470,410,991,68],
         ["S",531,383,74,72,130,510,410,990,68],
@@ -476,27 +397,12 @@
     {
       "model": "Endurance AL Disc",
       "year": 2020,
-      "lastYear": 2022,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
-      "retrieved": "2021-12-19",
-      "archive": "https://web.archive.org/web/20211219142851/https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
-      "sizes": [
-        ["XS",505,379,74.5,71,110,470,410,996,68],
-        ["S",527,385,74,72,130,510,410,990,68],
-        ["M",548,388,73.6,72.5,150,530,410,991,68],
-        ["L",568,394,73.3,73,170,555,410,998,68],
-        ["XL",589,400,73,73.3,190,580,410,1007,68]
-      ]
-    },
-    {
-      "model": "Endurance AL Disc",
-      "year": 2024,
       "lastYear": 2026,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
       "retrieved": "2026-02-10",
       "archive": "https://web.archive.org/web/20260210215546/https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
+      "aliases": ["Endurance AL"],
       "sizes": [
         ["XS",510,379,74.5,71,110,470,410,991,68],
         ["S",531,383,74,72,130,510,410,990,68],
@@ -508,26 +414,12 @@
     {
       "model": "Endurance SL",
       "year": 2020,
-      "lastYear": 2022,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl/",
-      "retrieved": "2021-12-29",
-      "archive": "https://web.archive.org/web/20211229034338/https://www.ribblecycles.co.uk/ribble-endurance-sl/",
-      "sizes": [
-        ["XS",498,382,74.5,71,110,470,415,982,68],
-        ["S",521,385,74,72,130,490,410,984,68],
-        ["M",541,390,73.6,72.5,150,510,410,991,68],
-        ["L",562,396,73.3,73,170,530,410,999,68],
-        ["XL",582,402,73,73.3,190,550,415,1007,68]
-      ]
-    },
-    {
-      "model": "Endurance SL",
-      "year": 2024,
+      "lastYear": 2024,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl/",
       "retrieved": "2023-12-21",
       "archive": "https://web.archive.org/web/20231221175101/https://www.ribblecycles.co.uk/ribble-endurance-sl/",
+      "aliases": ["Endurance SL Disc"],
       "sizes": [
         ["XS",498,382,74.5,71,110,470,415,996,68],
         ["S",521,385,74,72,130,490,415,996,68],
@@ -539,21 +431,6 @@
     {
       "model": "Endurance SL Disc",
       "year": 2020,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl-disc-red-campagnolo-potenza-disc/",
-      "retrieved": "2019-12-14",
-      "archive": "https://web.archive.org/web/20191214070728/https://www.ribblecycles.co.uk/ribble-endurance-sl-disc-red-campagnolo-potenza-disc/",
-      "sizes": [
-        ["XS",498,382,74.5,71,110,470,415,996,68],
-        ["S",521,385,74,72,130,490,415,996,68],
-        ["M",541,390,73.6,72.5,150,510,415,997,68],
-        ["L",562,396,73.3,73,170,530,415,1004,68],
-        ["XL",582,400,73,73.3,190,550,415,1012,68]
-      ]
-    },
-    {
-      "model": "Endurance SL Disc",
-      "year": 2022,
       "lastYear": 2026,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl-disc/",
@@ -571,26 +448,11 @@
     {
       "model": "Endurance SL R",
       "year": 2020,
+      "lastYear": 2024,
       "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-sram-red-etap-axs/",
-      "retrieved": "2019-12-16",
-      "archive": "https://web.archive.org/web/20191216002147/https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-sram-red-etap-axs/",
-      "sizes": [
-        ["XS",498,382,74.5,71,110,470,415,982,68],
-        ["S",521,385,74,72,130,490,410,984,68],
-        ["M",541,390,73.6,72.5,150,510,410,991,68],
-        ["L",562,396,73.3,73,170,530,410,999,68],
-        ["XL",582,402,73,73.3,190,550,415,1007,68]
-      ]
-    },
-    {
-      "model": "Endurance SL R",
-      "year": 2022,
-      "lastYear": 2026,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-enthusiast/",
-      "retrieved": "2025-08-12",
-      "archive": "https://web.archive.org/web/20250812090226/https://www.ribblecycles.co.uk/ribble-endurance-sl-r-enthusiast/",
+      "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series/",
+      "retrieved": "2023-11-28",
+      "archive": "https://web.archive.org/web/20231128152851/https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series/",
       "sizes": [
         ["XS",498,382,74.5,71,110,470,415,982,68],
         ["S",521,385,74,72,130,490,415,984,68],
@@ -602,21 +464,6 @@
     {
       "model": "Endurance SL R Disc",
       "year": 2020,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-disc-sram-etap-hrd-team-bike/",
-      "retrieved": "2019-12-09",
-      "archive": "https://web.archive.org/web/20191209230506/https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-disc-sram-etap-hrd-team-bike/",
-      "sizes": [
-        ["XS",498,382,74.5,71,110,470,415,982,68],
-        ["S",521,385,74,72,130,490,410,984,68],
-        ["M",541,390,73.6,72.5,150,510,410,991,68],
-        ["L",562,396,73.3,73,170,530,410,999,68],
-        ["XL",582,402,73,73.3,190,550,415,1007,68]
-      ]
-    },
-    {
-      "model": "Endurance SL R Disc",
-      "year": 2022,
       "lastYear": 2026,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-disc/",
@@ -639,6 +486,7 @@
       "source": "https://www.ribblecycles.co.uk/ribble-endurance-ti-frameset/",
       "retrieved": "2023-11-30",
       "archive": "https://web.archive.org/web/20231130131922/https://www.ribblecycles.co.uk/ribble-endurance-ti-frameset/",
+      "aliases": ["Endurance Ti Disc"],
       "sizes": [
         ["XS",498,382,74.5,71,110,470,415,996,68],
         ["S",521,385,74,72,130,490,415,996,68],
@@ -649,7 +497,7 @@
     },
     {
       "model": "Endurance Ti Disc",
-      "year": 2022,
+      "year": 2020,
       "lastYear": 2024,
       "category": "endurance",
       "source": "https://www.ribblecycles.co.uk/ribble-endurance-ti-disc/",
@@ -664,39 +512,8 @@
       ]
     },
     {
-      "model": "Endurance Ti Disc",
-      "year": 2025,
-      "category": "endurance",
-      "source": "https://www.ribblecycles.co.uk/ribble-endurance-ti-disc-hero/",
-      "retrieved": "2025-04-19",
-      "archive": "https://web.archive.org/web/20250419150312/https://www.ribblecycles.co.uk/ribble-endurance-ti-disc-hero/",
-      "sizes": [
-        ["XS",498,382,74.5,71,110,470,415,996,68],
-        ["S",521,385,74,72,130,490,415,996,68],
-        ["M",541,390,73.6,72.5,150,510,415,997,68],
-        ["L",562,396,73.3,73,170,530,415,1004,68],
-        ["XL",582,400,73,73.3,190,550,415,1012,68]
-      ]
-    },
-    {
       "model": "Gravel 725",
-      "year": 2024,
-      "category": "gravel",
-      "source": "https://www.ribblecycles.co.uk/ribble-gravel-725/",
-      "retrieved": "2023-12-09",
-      "archive": "https://web.archive.org/web/20231209020220/https://www.ribblecycles.co.uk/ribble-gravel-725/",
-      "sizes": [
-        ["XXS",525,372,75.5,70,90,440,435,1020,70],
-        ["XS",546,381,75.5,70.5,110,460,435,1032,70],
-        ["S",566,388,74,71.5,130,480,435,1038,67],
-        ["M",584,397,73.5,71.5,150,500,435,1053,67],
-        ["L",604,409,73.3,72,170,520,435,1066,65],
-        ["XL",625,413,73,72,190,540,435,1077,65]
-      ]
-    },
-    {
-      "model": "Gravel 725",
-      "year": 2026,
+      "year": 2023,
       "lastYear": 2027,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-gravel-725/",
@@ -713,7 +530,7 @@
     },
     {
       "model": "Gravel AL",
-      "year": 2022,
+      "year": 2021,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-gravel-al/",
       "retrieved": "2021-12-19",
@@ -746,7 +563,7 @@
     },
     {
       "model": "Gravel SL",
-      "year": 2022,
+      "year": 2021,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
       "retrieved": "2021-12-19",
@@ -762,21 +579,7 @@
     {
       "model": "Gravel SL",
       "year": 2024,
-      "category": "gravel",
-      "source": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
-      "retrieved": "2023-11-30",
-      "archive": "https://web.archive.org/web/20231130135520/https://www.ribblecycles.co.uk/ribble-gravel-sl/",
-      "sizes": [
-        ["XS",537,371,74.5,70.5,130,460,435,1019,69],
-        ["S",549,375,74,71,140,480,435,1025,69],
-        ["M",561,379,73.5,71.5,150,500,435,1025,69],
-        ["L",592,389,73,72,180,520,435,1041,69],
-        ["XL",611,396,72.5,72,200,540,435,1054,69]
-      ]
-    },
-    {
-      "model": "Gravel SL",
-      "year": 2026,
+      "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
       "retrieved": "2025-10-12",
@@ -791,7 +594,7 @@
     },
     {
       "model": "Gravel Ti",
-      "year": 2022,
+      "year": 2021,
       "lastYear": 2027,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-gravel-ti/",
@@ -807,44 +610,14 @@
       ]
     },
     {
-      "model": "R872",
-      "year": 2020,
-      "category": "race",
-      "source": "https://www.ribblecycles.co.uk/ribble-r872/",
-      "retrieved": "2019-12-14",
-      "archive": "https://web.archive.org/web/20191214081709/https://www.ribblecycles.co.uk/ribble-r872/",
-      "estimated": ["chainstay"],
-      "sizes": [
-        ["XS",504,360,75,71,120,450,408,961,69],
-        ["S",521,371,74.5,72,140,490,409,969,69],
-        ["M",554,381,73.5,73,160,530,409,980,69],
-        ["L",577,394,73.5,73,180,550,410,1001,69],
-        ["XL",601,407,73.5,73,200,580,410,1021,69]
-      ]
-    },
-    {
-      "model": "R872",
-      "year": 2022,
-      "lastYear": 2023,
-      "category": "race",
-      "source": "https://www.ribblecycles.co.uk/ribble-r872/",
-      "retrieved": "2022-07-15",
-      "archive": "https://web.archive.org/web/20220715135032/https://www.ribblecycles.co.uk/ribble-r872/",
-      "sizes": [
-        ["XS",504,360,75,71,115,450,410,961,69],
-        ["S",521,371,74.5,72,130,490,410,969,69],
-        ["M",554,381,73.5,73,155,530,410,980,69],
-        ["L",577,394,73.5,73,175,550,410,1001,69],
-        ["XL",601,407,73.5,73,200,580,410,1021,69]
-      ]
-    },
-    {
       "model": "R872 Disc",
-      "year": 2020,
+      "year": 2016,
+      "lastYear": 2020,
       "category": "race",
       "source": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
       "retrieved": "2019-12-21",
       "archive": "https://web.archive.org/web/20191221185251/https://www.ribblecycles.co.uk/ribble-r872-disc/",
+      "aliases": ["R872"],
       "sizes": [
         ["XS",504,360,75,71,120,450,410,961,69],
         ["S",521,371,74.5,72,140,490,410,969,69],
@@ -861,6 +634,7 @@
       "source": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
       "retrieved": "2026-01-14",
       "archive": "https://web.archive.org/web/20260114153850/https://www.ribblecycles.co.uk/ribble-r872-disc/",
+      "aliases": ["R872"],
       "sizes": [
         ["XS",504,360,75,71,115,450,410,961,69],
         ["S",521,371,74.5,72,130,490,410,969,69],
@@ -887,7 +661,7 @@
     },
     {
       "model": "Ultra Race",
-      "year": 2026,
+      "year": 2025,
       "category": "race",
       "source": "https://www.ribblecycles.co.uk/ribble-ultra-race/",
       "retrieved": "2025-12-26",
@@ -925,22 +699,7 @@
       "source": "https://www.ribblecycles.co.uk/ribble-ultra-sl/",
       "retrieved": "2026-11-14",
       "archive": "https://web.archive.org/web/20261114153551/https://www.ribblecycles.co.uk/ribble-ultra-sl/",
-      "sizes": [
-        ["XS",506,379,75,72,105,470,410,981,69],
-        ["S",523,385,74,73,120,500,410,975,69],
-        ["M",545,392,73.5,73,140,520,410,985,69],
-        ["L",564,401,73.3,73.5,160,540,410,999,69],
-        ["XL",583,410,73.3,73.5,180,560,410,1014,69]
-      ]
-    },
-    {
-      "model": "Ultra SL R",
-      "year": 2022,
-      "lastYear": 2027,
-      "category": "aero",
-      "source": "https://www.ribblecycles.co.uk/ribble-ultra-sl-r/",
-      "retrieved": "2026-11-14",
-      "archive": "https://web.archive.org/web/20261114153550/https://www.ribblecycles.co.uk/ribble-ultra-sl-r/",
+      "aliases": ["Ultra SL R"],
       "sizes": [
         ["XS",506,379,75,72,105,470,410,981,69],
         ["S",523,385,74,73,120,500,410,975,69],
@@ -951,7 +710,7 @@
     },
     {
       "model": "Ultra-Grit",
-      "year": 2026,
+      "year": 2025,
       "lastYear": 2027,
       "category": "gravel",
       "source": "https://www.ribblecycles.co.uk/ribble-ultra-grit/",

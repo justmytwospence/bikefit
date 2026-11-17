@@ -8,7 +8,8 @@
    "sha256": "cb41f22b05711b84ca7f351c00de7d8f59eba541033c95b91226cfe7f2628ee0",
    "family": "arcadex-al",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612044011"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yvbl3-arcadex-al-grx-610-12sp-1.html",
@@ -16,7 +17,8 @@
    "sha256": "31f97b46eeb3117e3bfc237b9ef14efc7093eba50b78ef4a74b21da476645c82",
    "family": "arcadex-al-grx-610-12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20251211190904"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/gravel/adventure/arcadex/arcadex-comp/arcadex-comp-2/",
@@ -24,7 +26,8 @@
    "sha256": "dd48e8f63583a61d25c4038b833e941418678fa8b1d98b568b0a520a410e549f",
    "family": "arcadex-comp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260602143512"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbx1-arcadex-ekar-1x13sp-1.html",
@@ -32,7 +35,8 @@
    "sha256": "8bd0eaf93b534e0273cd1fd63190242c0bbdf6a1e1d412cf5d33144612f5b4ef",
    "family": "arcadex-ekar-1x13sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20240524092231"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytbx2-arcadex-grx-3.html",
@@ -40,7 +44,8 @@
    "sha256": "86a72da026487ef6aa5880aed500d7746b80bec46a06e20b16d9d35466968f72",
    "family": "arcadex-grx",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20231208182632"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytbx3-arcadex-grx-8.html",
@@ -48,7 +53,8 @@
    "sha256": "b41248f590649585f003d9159a7ae60bae547b22bea2c7e04105f1e2aac7e806",
    "family": "arcadex-grx",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20231210095617"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytbx3-arcadex-grx-8.html",
@@ -56,7 +62,8 @@
    "sha256": "b1816a93614bdfebce1eddfa59d8f6592445ff42c82dc6383a68a66af3539c29",
    "family": "arcadex-grx",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20231210095617"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbx3-arcadex-grx6001x11sp-9.html",
@@ -64,7 +71,8 @@
    "sha256": "aa6e2934016e1601e9a7f7f423ee22c6932e80965a99529bfce0b1eec9962077",
    "family": "arcadex-grx6001x11sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320154838"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbx3-arcadex-grx6001x11sp-9.html",
@@ -72,7 +80,8 @@
    "sha256": "b099c2bbd2d9f8f758ab6185032412f70c2afe4ae1f051b7fe9d609c1d670fc9",
    "family": "arcadex-grx6001x11sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320154838"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbx2-arcadex-grx8101x11sp-4.html",
@@ -80,7 +89,8 @@
    "sha256": "8dc99cc0675915ea7d6aa8b34f898c9caa4b231c1f54cafe7f432101f680360b",
    "family": "arcadex-grx8101x11sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20231210102456"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbx2-arcadex-grx8101x11sp-4.html",
@@ -88,7 +98,8 @@
    "sha256": "a56e5484509b2ed6803d1c42d125b46f4da2a48bbe3d057096549e5c513a6609",
    "family": "arcadex-grx8101x11sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20231210102456"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbx6-arcadex-grx810di21x11sp-0.html",
@@ -96,7 +107,8 @@
    "sha256": "2602cfac6d08eca6cdf634d659290ee0b330976e0c7b76e98d8c8bde915bd8a8",
    "family": "arcadex-grx810di21x11sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20231208153038"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbx6-arcadex-grx810di21x11sp-0.html",
@@ -104,7 +116,8 @@
    "sha256": "64476807997783902509e2e59a24f344aa7d49747516c1442dfe386835c204f2",
    "family": "arcadex-grx810di21x11sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20231208153038"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/gravel/adventure/arcadex/arcadex-pro/arcadex-pro-2/",
@@ -112,7 +125,8 @@
    "sha256": "2f117abad233f877f27c4d1be760526eb363797510b4cac5e08a07422e1277de",
    "family": "arcadex-pro",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612061039"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb88-arcadexcomp-apexdisc1x12sp-1.html",
@@ -120,7 +134,8 @@
    "sha256": "7ecfc44cebcd0d84afb6ef747edfa3a1d6f08d968ce8ddc6e6cd05f92ba5529f",
    "family": "arcadexcomp-apexdisc1x12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250711033736"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb8d-aria-105-11sp-1.html",
@@ -128,7 +143,8 @@
    "sha256": "5946d8a1e280b982cc7e7c95bac79e31a881e6b4c9604c54a5bce41bebf6dd60",
    "family": "aria-105-11sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522044757"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb8d-aria-105-11sp-1.html",
@@ -136,7 +152,8 @@
    "sha256": "42877bfcd1e191138243d1a2e620f59e5bcda16bfad7738c87d906c027573520",
    "family": "aria-105-11sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522044757"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb8d-aria-10511sp-9.html",
@@ -144,7 +161,8 @@
    "sha256": "ef6b95554d75964be6f1691bfc0c7704c186918c1fefcb9ae8f4a0c9376f1418",
    "family": "aria-10511sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230203193047"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb8d-aria-10511sp-9.html",
@@ -152,7 +170,8 @@
    "sha256": "fee567e07e2f1ffb1d81f6604bbc24b0d44e83e79f78444a106803ce88a2246f",
    "family": "aria-10511sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20230203193047"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb8d-aria-10511sp-9.html",
@@ -160,7 +179,8 @@
    "sha256": "b954362e9d23c3f6315a220b84a0ad59b8465403b911ca3b120224949c0cd87b",
    "family": "aria-10511sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230203193047"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb37-aria-105di2-4.html",
@@ -168,7 +188,8 @@
    "sha256": "2a3b331279fff45598932f72d785473fc12da6bb50ddd9bcfa89d34438328972",
    "family": "aria-105di2",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20221002183153"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb37-aria-105di2-4.html",
@@ -176,7 +197,8 @@
    "sha256": "cb6dcbd7cba7ec75e15e94403fcb89f3f83134f70456552754621ace3bd6a34b",
    "family": "aria-105di2",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20221002183153"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb39-aria-rival-etap-axs-12sp-10.html",
@@ -184,7 +206,8 @@
    "sha256": "1322573149dcba2abce223e2fdf25af36f0be404f9e2a0abe146a119904d0727",
    "family": "aria-rival-etap-axs-12sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522043914"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb39-aria-rival-etap-axs-12sp-10.html",
@@ -192,7 +215,8 @@
    "sha256": "8699fd811176cea0e6718751abb6f98c88112eafbe9035f4e52f4f564626c51a",
    "family": "aria-rival-etap-axs-12sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522043914"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb39-aria-rivaletapaxs12sp-10.html",
@@ -200,7 +224,8 @@
    "sha256": "4bee3dd79735b8bd65e6721a56e3eebb9c4e7ff300e0d89cbeeac37ea840ae83",
    "family": "aria-rivaletapaxs12sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20240615212245"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb9d-aria-ultegra-11sp-7.html",
@@ -208,7 +233,8 @@
    "sha256": "f365b26ad292b6a033a7fd287d6de3f07b438d79d5ee626bc9eae04c29f694dc",
    "family": "aria-ultegra-11sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522042616"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb9d-aria-ultegra-11sp-7.html",
@@ -216,7 +242,8 @@
    "sha256": "9ae56677293a4a1a418937c4f709a136c8b7619c608e32855f01ca8299958c3f",
    "family": "aria-ultegra-11sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522042616"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb38-aria-ultegradi212sp-10.html",
@@ -224,7 +251,8 @@
    "sha256": "b20165383c2dbe90589f1f7c6200ad4f2192eb061b8574d872e92d54def73ee2",
    "family": "aria-ultegradi212sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230329034341"
   },
   {
    "url": "https://www.bianchi.com/en/shop/bikes/gravel/adventure/arcadex/gravel-adventure-arcadex-arcadex-comp-arcadex-comp-2/",
@@ -248,7 +276,8 @@
    "sha256": "b53b046fb7e7c996f9bbdf4dd132d124f412319377c4e39ba665e0e90147c646",
    "family": "impulso-comp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612053301"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/gravel/racing/impulso/impulso-pro/impulso-pro/",
@@ -256,7 +285,8 @@
    "sha256": "23f4a834c0c6a96a62da2eb2e49d6665a1837c1dfb80c1f9953aa6f94372ea5b",
    "family": "impulso-pro",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612042631"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/gravel/racing/impulso/impulso-rc/impulso-rc/",
@@ -264,7 +294,8 @@
    "sha256": "7fc980b5eea0bf21401efe1b735e2b43ef99716f9fd51533dcfb1fa19080261e",
    "family": "impulso-rc",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260606022537"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb86-impulsocomp-grx610disc2x12sp-8.html",
@@ -272,7 +303,8 @@
    "sha256": "3df0d2daf2500e6107e4851b3d5647a3fba96d1e3e0075f0e8257314fd33fc55",
    "family": "impulsocomp-grx610disc2x12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240414213352"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb3c-impulsopro-ekar1x13ps-10.html",
@@ -280,7 +312,8 @@
    "sha256": "1f7319b12a0169a01de0a72cace17e008c26d5cec33ff612bffba6d77ec6a1de",
    "family": "impulsopro-ekar1x13ps",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20241210233931"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb83-impulsopro-grx820disc2x12sp-5.html",
@@ -288,7 +321,8 @@
    "sha256": "2c11c4d3cabf023c87913436fea0cec9c48ac218a88f0ce51c8e1f17a644adb3",
    "family": "impulsopro-grx820disc2x12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240618122518"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb84-impulsorc-forceaxsdisc2x12sp-9.html",
@@ -296,7 +330,8 @@
    "sha256": "735df53a9ecbed0f4d2561ce86f4abf9a2cb267071bd9f70618f8c30000710b9",
    "family": "impulsorc-forceaxsdisc2x12sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20250419015106"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub81-impulsorc-grx825di22x12sp-8.html",
@@ -304,7 +339,8 @@
    "sha256": "3aade729ce22396ce68f542379372bd218f762c83749a3bfd2a8512646605e82",
    "family": "impulsorc-grx825di22x12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250325044918"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub80-impulsorc-redxplrdisc1x13sp-7.html",
@@ -312,7 +348,8 @@
    "sha256": "8e147db3403648bcfb06c4c4d9d0864a0e921bb74b5cf97ad1e2ab0feb0817aa",
    "family": "impulsorc-redxplrdisc1x13sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250419023936"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito/infinito/",
@@ -320,7 +357,8 @@
    "sha256": "eaee7a75ab26259b638d5cb02ad1b5105ffe292c42d0b3b51f08785d144295fd",
    "family": "infinito",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260606022341"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yvb2k-infinito-105-12sp-9.html",
@@ -328,7 +366,8 @@
    "sha256": "ba09989ab890db5b0bb0432d970ea8677fa8d004db3b7e4348f3b0b814335e53",
    "family": "infinito-105-12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260319055245"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb7d-infinito-10512sp-2.html",
@@ -336,7 +375,8 @@
    "sha256": "417dea15821198d79b4304ebf9298656940c57bad392109e7a73603763fdf423",
    "family": "infinito-10512sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20251209204205"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb24-infinito-frame-kit-7.html",
@@ -344,7 +384,8 @@
    "sha256": "4894c3dd1dd0c52850fb09ca67ceab019ee875c57472983296722a4aa8f779f4",
    "family": "infinito-frame-kit",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522050230"
   },
   {
    "url": "https://www.bianchi.com/en/shop/bikes/road/all-rounder/infinito/infinito/infinito-infinito-infinito-2/",
@@ -352,7 +393,8 @@
    "sha256": "1ac476b33847df6618a8a830715fd856211a5f33b0f3c8f6e6130f1b87dc93ce",
    "family": "infinito-infinito-infinito",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260722130943"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-launch-edition/infinito-launch-edition/",
@@ -360,7 +402,8 @@
    "sha256": "f26235016cf24d675efb2bf0a1584eaa877b45bb9df8880b31987f47be04a7ef",
    "family": "infinito-launch-edition",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612051942"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-paris-roubaix/",
@@ -368,7 +411,8 @@
    "sha256": "28fbf0a1dca11afad88640eef9d6e1196b9eb71582b6c3f58ce926d70b632393",
    "family": "infinito-paris-roubaix",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612052941"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-pro-2/",
@@ -376,7 +420,8 @@
    "sha256": "4ecf9d2415643be64b7dc0bfccf903c01d4d3eadc62267a2b4ac1a07654f8b3c",
    "family": "infinito-pro",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260602143512"
   },
   {
    "url": "https://www.bianchi.com/en/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-pro-infinito-paris-roubaix/",
@@ -384,7 +429,8 @@
    "sha256": "991ee5ee6d421255b4c207173fbad8afd7e415eda1ec3db8bfe8bd4944e01c1c",
    "family": "infinito-pro-infinito-paris-roubaix",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612043728"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb50i-infinito-rival-etap-axs-12sp-6.html",
@@ -392,7 +438,8 @@
    "sha256": "0cb5bcc90a30017bf7b01bc9be52f1dbd403adaa5ce784f3e3f9697d6700f15c",
    "family": "infinito-rival-etap-axs-12sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522171613"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb54-infinito-ultegra-11sp-6.html",
@@ -400,7 +447,8 @@
    "sha256": "0655178f5e33ecfe0737db057e164c2ea9e9a16f80e16232b679fbbb332df87d",
    "family": "infinito-ultegra-11sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20211020074424"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbz5-infinito-ultegra-di2-2.html",
@@ -408,7 +456,8 @@
    "sha256": "e7703f92b7b9191c36e1da9697157d7cdadd373e33d0dcb6768b003b35d5e1fe",
    "family": "infinito-ultegra-di2",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522035853"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb4d-infinito-ultegradi2-4.html",
@@ -416,7 +465,8 @@
    "sha256": "191511566b27bd92bcbddffb61ad888b5d4d1e73a90056f46f6f4c5fb9cd066a",
    "family": "infinito-ultegradi2",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20241109173117"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysbz5-infinito-ultegradi212sp-1.html",
@@ -424,7 +474,8 @@
    "sha256": "d93d13c2248886e759d713a2bcf142462acbfe3d4f89da2bbc2beabde1dd244a",
    "family": "infinito-ultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230129122701"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb5d-infinito-xe-rival-etap-axs-12sp-3.html",
@@ -432,7 +483,8 @@
    "sha256": "8f08c23ec33f46b3f7f8f367e62a27b248c62a14b5759549166554784a8a34aa",
    "family": "infinito-xe-rival-etap-axs-12sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522032752"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb6d-infinito-xe-ultegra-11sp-6.html",
@@ -440,7 +492,8 @@
    "sha256": "158197219abcbefb47fb10a2c8012fd90b88655a6915d5caec6d5e6c6c31daab",
    "family": "infinito-xe-ultegra-11sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20220519061407"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb7d-infinitoxe-10511sp-10.html",
@@ -448,7 +501,8 @@
    "sha256": "169037f87387acef2f5e767ec8e627c3f83ce290793bba75707b5eddea86841e",
    "family": "infinitoxe-10511sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250802203708"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb4d-infinitoxe-105di2-4.html",
@@ -456,7 +510,8 @@
    "sha256": "d0a92fb05357838e93381de1c8ef2d1f4d359a0ac0518a3fc62781735b8b2654",
    "family": "infinitoxe-105di2",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230202221029"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb26-oltre-105di212spcompactdiscbrake-9.html",
@@ -464,7 +519,8 @@
    "sha256": "7e8e0af0e2ad7632b36ee570c78cc4a338329e2d924580f945c178608ac12716",
    "family": "oltre-105di212spcompactdiscbrake",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20221018150513"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-comp-2/",
@@ -472,7 +528,8 @@
    "sha256": "603f53c388a3ae9e60f6ca08e97c313c222ac1ba83a7eec2535d5485a46e1a7f",
    "family": "oltre-comp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260606021838"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-pro/",
@@ -480,7 +537,8 @@
    "sha256": "c70dddd217c4cd300315258cf0f170fc15ee72a5d17182a10853a0d9b00e34be",
    "family": "oltre-pro",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260721033854"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yvb27-oltre-pro-force-etap-axs-e1-pwm-8.html",
@@ -488,7 +546,8 @@
    "sha256": "15bbef4ec74459dbdfe8b61c68f02683a424082377adb7c5bd4836583bff892a",
    "family": "oltre-pro-force-etap-axs-e1-pwm",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260311055758"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-race-2/",
@@ -496,7 +555,8 @@
    "sha256": "20cfb33331de9e61867dd4f14dde40570e620d413111c31707ea0763765d4ca1",
    "family": "oltre-race",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260606022837"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-3/",
@@ -504,7 +564,8 @@
    "sha256": "782a7e3e152d591993e310be4ccf1bbc1c00e80fb8549e055de6bbb2a9652834",
    "family": "oltre-rc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612045732"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-founder-edition/",
@@ -512,7 +573,8 @@
    "sha256": "6426223b1fd0f1d23a7b3451778c762dabffee7a5106710cacdfd1fa52356afd",
    "family": "oltre-rc-founder-edition",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260602143512"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yvbfo-oltre-rc-founder-edition-7.html",
@@ -520,7 +582,8 @@
    "sha256": "ee4371574c63695465d94735c50f85c18453aae4a3d105f4653d004ff0b06f11",
    "family": "oltre-rc-founder-edition",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20251208183439"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-frameset/",
@@ -528,7 +591,8 @@
    "sha256": "1042eb0d0dd16bd2ebce6083e5b9873849fbafd3caeabbd161c420c2f2f9a3b9",
    "family": "oltre-rc-frameset",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260722130824"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-team-replica-2026/",
@@ -536,7 +600,8 @@
    "sha256": "ae854758e8fdff82dbcb616ba000207b0da56f1d6200c7f2fafde2f27e7803fd",
    "family": "oltre-rc-team-replica",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612043325"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yvb03-oltre-rc-team-replica-2026-team-bahrain-victorious-4.html",
@@ -544,7 +609,8 @@
    "sha256": "0dd74747a3cea28f224f12c03b6e316c2411af8a2b6c0646b1650a75368e0b97",
    "family": "oltre-rc-team-replica-2026-team-bahrain-victorious",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260311080922"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb15-oltre-xr4-dura-ace-di2-4.html",
@@ -552,7 +618,8 @@
    "sha256": "c49b351c36493ba3338b1219f56a8e75261393a19c99a3714b6092d35d3814d5",
    "family": "oltre-xr4-dura-ace-di2",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522051114"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb15-oltre-xr4-dura-ace-di2-4.html",
@@ -560,7 +627,8 @@
    "sha256": "4fca88f49e2fb943cf2846eab824cf9af675d9b38de7cc50f9f9f001565cd2a4",
    "family": "oltre-xr4-dura-ace-di2",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522051114"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb03-oltre-xr4-frame-kit-4.html",
@@ -568,7 +636,8 @@
    "sha256": "078a7b5383d7c72e837834a96cfe6350f6790d6ed29fb6058bdcecbf5cb59b04",
    "family": "oltre-xr4-frame-kit",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522051336"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb02x-oltre-xr4-frame-kit-1.html",
@@ -576,7 +645,8 @@
    "sha256": "2bd084b7ae9dfd69210e63d3981e60fe80963fc5f064a9062e7007fc40959a12",
    "family": "oltre-xr4-frame-kit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522053143"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb03-oltre-xr4-frame-kit-4.html",
@@ -584,7 +654,8 @@
    "sha256": "31e2d5195b6379ff1bf47507aca1a3490421bea8acabd2517f107bcc95c1d762",
    "family": "oltre-xr4-frame-kit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522051336"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb09-oltre-xr4-red-etap-axs-12sp-3.html",
@@ -592,7 +663,8 @@
    "sha256": "2aeada90c22544f8cc635712959e434e13ec2f0b50301d4da3e3a6731a3e15c5",
    "family": "oltre-xr4-red-etap-axs-12sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20220525090740"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb09-oltre-xr4-red-etap-axs-12sp-3.html",
@@ -600,7 +672,8 @@
    "sha256": "258c42e9d2dd61a52116da4ae4585b6f7e39e437a992ba836fe65de0fb39037d",
    "family": "oltre-xr4-red-etap-axs-12sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20220525090740"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb09-oltre-xr4-red-etap-axs-12sp-3.html",
@@ -608,7 +681,8 @@
    "sha256": "1c52af1fa587cda282ffbb723e64f70851b99a67f7d06f9912282a12a9461346",
    "family": "oltre-xr4-red-etap-axs-12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220525090740"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb12-oltre-xr4-rival-etap-axs-12sp-8.html",
@@ -616,7 +690,8 @@
    "sha256": "aa6ffe69c01f7f381085b9640b9983d1f6674e8a36514b9f07e3fa757d59579b",
    "family": "oltre-xr4-rival-etap-axs-12sp",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20211204080312"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb12-oltre-xr4-rival-etap-axs-12sp-8.html",
@@ -624,7 +699,8 @@
    "sha256": "8b63dc0c5817ef31c3ac83190b69a2567fff687c14bde01e09a8d5fdb8cb645a",
    "family": "oltre-xr4-rival-etap-axs-12sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20211204080312"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb12-oltre-xr4-rival-etap-axs-12sp-8.html",
@@ -632,7 +708,8 @@
    "sha256": "d6435a5b110f2c953463c1cda3d5b3414fd1c4bd7e92d7cf5ad805e5f7ed3456",
    "family": "oltre-xr4-rival-etap-axs-12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20211204080312"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbl2-oltre-xr4-ultegra-11sp-10.html",
@@ -640,7 +717,8 @@
    "sha256": "ae75d2bf1869bf8c3f45c86c508a265586e1563940306dd52f55d7e175d0e608",
    "family": "oltre-xr4-ultegra-11sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522033408"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbl2-oltre-xr4-ultegra-11sp-10.html",
@@ -648,7 +726,8 @@
    "sha256": "36df27c80973c6c23b416ef4cb3c0e0cd153c4c48dff6572c9ca714d0dcadb69",
    "family": "oltre-xr4-ultegra-11sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20220522033408"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb17-oltre-xr4-ultegra-di2-4.html",
@@ -656,7 +735,8 @@
    "sha256": "80e1c0b902d33e101f8afadb0f566b014fbef76b147b19988c1654d368e7c42c",
    "family": "oltre-xr4-ultegra-di2",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20220525102545"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrb17-oltre-xr4-ultegra-di2-4.html",
@@ -664,7 +744,8 @@
    "sha256": "c25c053bf82c86451b9629409db4bccc00b1234e8072982ccd480027b00e2abc",
    "family": "oltre-xr4-ultegra-di2",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220525102545"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yvb98-oltre140thrc-dura-acedi212sp-0.html",
@@ -672,7 +753,8 @@
    "sha256": "82bc68c42af9d0cb8d17df1441b34709488821add7ea7980f65f100bc7950db3",
    "family": "oltre140thrc-dura-acedi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250418033212"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb26-oltrecomp-105di212sp-0.html",
@@ -680,7 +762,8 @@
    "sha256": "f71267441afeb68ace1a06820e3d72bf2fbf318ae861f278a72e5c4cc3980880",
    "family": "oltrecomp-105di212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250103171647"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb24-oltrecomp-rivaletapaxs12sp-1.html",
@@ -688,7 +771,8 @@
    "sha256": "97c0b0928d98c4c0ac1958517e405e2a1fc6b807f3e300c496eadadd057cc711",
    "family": "oltrecomp-rivaletapaxs12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250716024052"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb23-oltrecomp-ultegradi212sp-7.html",
@@ -696,7 +780,8 @@
    "sha256": "b562bf81da9e8aa9e52bc0bc68734928031375f9d371cc13d6bf568644c10d54",
    "family": "oltrecomp-ultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20241006163430"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb07-oltrepro-duracedi212sp-4.html",
@@ -704,7 +789,8 @@
    "sha256": "9971d0db73ac6607ecf51106180e4540510985a92a3097ee735605dbbabfedfd",
    "family": "oltrepro-duracedi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240721192916"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb07-oltrepro-duracedi212spcompactdiscbrake-8.html",
@@ -712,7 +798,8 @@
    "sha256": "2a898c0de6667360df952ff2b0a36e81022d17eb0c02beda9a90dee805aeb28e",
    "family": "oltrepro-duracedi212spcompactdiscbrake",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230327131419"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb07-oltrepro-duracedi212spcompactdiscbrake-8.html",
@@ -720,7 +807,8 @@
    "sha256": "538e26888e418cb5316a2b633b72e6f2926b6311af542de692cd0959e8e70824",
    "family": "oltrepro-duracedi212spcompactdiscbrake",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230327131419"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xsb06-oltrepro-framekit-5.html",
@@ -728,7 +816,8 @@
    "sha256": "bdd6a4b97f9870f0be4c9c4cf105c479263dec9295d40d7a14817503b8b079db",
    "family": "oltrepro-framekit",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230331011202"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xtb06i-oltrepro-framekit-4.html",
@@ -736,7 +825,8 @@
    "sha256": "3db70735606d17c18d955b0c534c1c26271249af8063d72e7814d5d7ec93074e",
    "family": "oltrepro-framekit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240725031139"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub28-oltrepro-shimanoultegradi212sp-4.html",
@@ -744,7 +834,8 @@
    "sha256": "eb1e36189c5d9bf71f94d54ff6538c27e73725ee5d7cc0196e6f97712c22cc17",
    "family": "oltrepro-shimanoultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250710201240"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb10-oltrepro-sramforceetapaxs-10.html",
@@ -752,7 +843,8 @@
    "sha256": "54a6b8b990e5d0cd148fae82a20a7acf836b6d654a719ca41a0b651a8c023c2f",
    "family": "oltrepro-sramforceetapaxs",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20240725042338"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub27-oltrepro-sramforceetapaxs12sp-0.html",
@@ -760,7 +852,8 @@
    "sha256": "1a4bdd801a3b90629c5b1d77e69ca3e49a09dc75ddd8cae8497f22671a148847",
    "family": "oltrepro-sramforceetapaxs12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250617204110"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb10-oltrepro-sramforceetapaxsdisc-4.html",
@@ -768,7 +861,8 @@
    "sha256": "c1fa6fb2310081f0db19472439644665672d3f9bd4042415bd686926e1509673",
    "family": "oltrepro-sramforceetapaxsdisc",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230330235722"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb10-oltrepro-sramforceetapaxsdisc-4.html",
@@ -776,7 +870,8 @@
    "sha256": "58747649e229aae2ee1e91310e6d641795f985e7c0b6d2698e3c48bb82477a49",
    "family": "oltrepro-sramforceetapaxsdisc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230330235722"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb05-oltrepro-sramredetapaxsdisc12sp-4.html",
@@ -784,7 +879,8 @@
    "sha256": "1fdc31dd78a3e1bd97339a3536272ffe44afbdaade0276101f6dd587361963e7",
    "family": "oltrepro-sramredetapaxsdisc12sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230330231057"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb08-oltrepro-ultegradi212sp-9.html",
@@ -792,7 +888,8 @@
    "sha256": "42156b932f02326200356afc2491bacbca7305bacaa01e2377e74b469c2e3bf7",
    "family": "oltrepro-ultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240724115113"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb08-oltrepro-ultegradi212spcompactdiscbrake-8.html",
@@ -800,7 +897,8 @@
    "sha256": "8080a7c4090fb9653a9fc39720a7c4b2c6df4000339a48f5020660b55123632f",
    "family": "oltrepro-ultegradi212spcompactdiscbrake",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230327143716"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb8d-oltrerace-10512sp-5.html",
@@ -808,7 +906,8 @@
    "sha256": "9a79c0d02c5ff35ac12b7e95a40b9ae64680299bc93c24237aaa77c39cb3860b",
    "family": "oltrerace-10512sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230821210130"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb8d-oltrerace-10512sp-5.html",
@@ -816,7 +915,8 @@
    "sha256": "e8117583bb5b1d8dbcdca9768610f7b9c3a2ebf38a4d9b19c8b6f351c4f62320",
    "family": "oltrerace-10512sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230821210130"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb37-oltrerace-105di212sp-3.html",
@@ -824,7 +924,8 @@
    "sha256": "3a9495dd3e1f112a39a0da01658965c0dabe502472e08649972da56ae4e4da23",
    "family": "oltrerace-105di212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240414211132"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub21-oltrerc-dura-acedi212sp-0.html",
@@ -832,7 +933,8 @@
    "sha256": "b809b13f7775154fed12010bd29042f9abd19a51da7aa29fb8d9ce7080d2f852",
    "family": "oltrerc-dura-acedi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250515221014"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub21-oltrerc-dura-acedi212sp-0.html",
@@ -840,7 +942,8 @@
    "sha256": "4e2aceced8be6535b7861e56ee34ffac5b673a2e9303ae222876bdcda230e756",
    "family": "oltrerc-dura-acedi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250515221014"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb21-oltrerc-duracedi212sp-7.html",
@@ -848,7 +951,8 @@
    "sha256": "93f3748351978ceaf65e6ecf7b5663a3cc65d5c452ee354fe063c0b2081132e6",
    "family": "oltrerc-duracedi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240618184427"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb21-oltrerc-duracedi212spcompactdiscbrake-10.html",
@@ -856,7 +960,8 @@
    "sha256": "44884af2065aef8a8eaf9cae1193e142e3ab6234314e522033fd3bbabd3a4b90",
    "family": "oltrerc-duracedi212spcompactdiscbrake",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20221224012505"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb21-oltrerc-duracedi212spcompactdiscbrake-10.html",
@@ -864,7 +969,8 @@
    "sha256": "4ee06811cf83e39441796556f6e83910740d1e375b319297fe953205c084b0e1",
    "family": "oltrerc-duracedi212spcompactdiscbrake",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20221224012505"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb21-oltrerc-duracedi212spcompactdiscbrake-10.html",
@@ -872,7 +978,8 @@
    "sha256": "7444f6d3a488bf64162625c8580bd66c0a5bc6a939573b0fb62e225efa3f253a",
    "family": "oltrerc-duracedi212spcompactdiscbrake",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20221224012505"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xsb05-oltrerc-framekit-3.html",
@@ -880,7 +987,8 @@
    "sha256": "38da2e0be3e4ebbd5442aa21190c752788aa2c15a0e50f85b680c132f9cb68cc",
    "family": "oltrerc-framekit",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230701131634"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xtb05i-oltrerc-framekit-6.html",
@@ -888,7 +996,8 @@
    "sha256": "16a829941167bd056425240da0a973c198c0417a2d694b1eed4a3f59de988817",
    "family": "oltrerc-framekit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240618182752"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb20-oltrerc-sramredetapaxs12sp-9.html",
@@ -896,7 +1005,8 @@
    "sha256": "5a2cbb1ed0cb294695ec672333491dc746c4efa4f75ba29c430d7fafd1960603",
    "family": "oltrerc-sramredetapaxs12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240618051255"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb20-oltrerc-sramredetapaxsdisc12sp-3.html",
@@ -904,7 +1014,8 @@
    "sha256": "9bb1b202d9f833808f91fb9e1dc520fd27c1c12596c282f2e7fb45755f209c12",
    "family": "oltrerc-sramredetapaxsdisc12sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20221018124329"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb22-oltrerc-superrecordeps12spcompactdiscbrake-3.html",
@@ -912,7 +1023,8 @@
    "sha256": "e38d78c01ea1fe8ff5b7675e4ad5a5db034c0a23e978d86964e957bc838f0794",
    "family": "oltrerc-superrecordeps12spcompactdiscbrake",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230701131634"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb22-oltrerc-superrecordeps12spcompactdiscbrake-3.html",
@@ -920,7 +1032,8 @@
    "sha256": "8fe3954f1525444000d1035e94234596c0fc6f9eff2000fd0d67564f89542d09",
    "family": "oltrerc-superrecordeps12spcompactdiscbrake",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20230701131634"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-comp-new/specialissima-2027/",
@@ -928,7 +1041,8 @@
    "sha256": "73932310f2a2e75cf98b5643b1e615f3958f444ec5bc114436e57b34bfc97fc3",
    "family": "specialissima",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260721041222"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima/specialissima-comp/specialissima-comp/",
@@ -936,7 +1050,8 @@
    "sha256": "b60ba30d049b6c9d100e527d82fb220c4a1a91ba4fa9d7152cbb2662aff5b02f",
    "family": "specialissima-comp",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612050113"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby5-specialissima-dura-ace-di2-8.html",
@@ -944,7 +1059,8 @@
    "sha256": "d30fff78413891d2df94342f7729d13243f364f28d740333a44e1c10c10fc905",
    "family": "specialissima-dura-ace-di2",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20211202163833"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby5-specialissima-dura-ace-di2-8.html",
@@ -952,7 +1068,8 @@
    "sha256": "9dfd04e82b547ef517d38ac5885707319deb4d225c09851b5a24b1f72987ecaf",
    "family": "specialissima-dura-ace-di2",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20211202163833"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby5-specialissima-dura-ace-di2-8.html",
@@ -960,7 +1077,8 @@
    "sha256": "6a2f423bbe8df7d5ee6830c379ca9d61f945155a59eb09372d032e15abcdb7a2",
    "family": "specialissima-dura-ace-di2",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20211202163833"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby5-specialissima-duraacedi212sp-3.html",
@@ -968,7 +1086,8 @@
    "sha256": "61b1678b03be5f30d4238f9c6981ce379b704a614ce90ade04f02fc12cea3cbd",
    "family": "specialissima-duraacedi212sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320162259"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby5-specialissima-duraacedi212sp-3.html",
@@ -976,7 +1095,8 @@
    "sha256": "0f1990f75df691d82b035dd24b9b1b7f5f5f53da43bb02b0a288988bad9d028f",
    "family": "specialissima-duraacedi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320162259"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb04-specialissima-frame-kit-4.html",
@@ -984,7 +1104,8 @@
    "sha256": "512157b0d1f069ac80bdc99154d79faa8cd0e49f2b0ff0e83ceb7b05109ce4c4",
    "family": "specialissima-frame-kit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220118111113"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb04-specialissima-frame-kit-4.html",
@@ -992,7 +1113,8 @@
    "sha256": "81cc0198aeecd424fda0f29ab04f721e0b05bce071869e44b20a8f5a759518c7",
    "family": "specialissima-frame-kit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220118111113"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb09izg-specialissima-giro105.html",
@@ -1000,7 +1122,8 @@
    "sha256": "ddea993eb847f483fd38eecfaef1fb1ba2636f5141e1dc28b283ae59de99bfe0",
    "family": "specialissima-giro105",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20211201005236"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima/specialissima-pro/specialissima-pro/",
@@ -1008,7 +1131,8 @@
    "sha256": "18a4269156d0cce3eb1a4d42e38ae0376a9b866b4505f6c82dcf35281ae3d8aa",
    "family": "specialissima-pro",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612054330"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima/specialissima-pro/specialissima-pro-copia/",
@@ -1016,7 +1140,8 @@
    "sha256": "2e9a0f38329edcaffd8dad9e923ab649ba79aeb9f01bd81bf9787390ca7f471a",
    "family": "specialissima-pro-copia",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612054532"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-pro-new/specialissima-pro-frameset/",
@@ -1024,7 +1149,8 @@
    "sha256": "1950fc5da13f94b5e678da093bd3d04d70329e5d1968be4f4d8214e1f170ea2b",
    "family": "specialissima-pro-frameset",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260721034324"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xsb10-specialissima-pro-racing-team.html",
@@ -1032,7 +1158,8 @@
    "sha256": "2805fc079b729e69652769390b8079d11b1eac1a8f73a6de36617ffa2430bd63",
    "family": "specialissima-pro-racing-team",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230308091853"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/specialissima-rc/",
@@ -1040,7 +1167,8 @@
    "sha256": "3cdadaa69a2fd1511d1e15dce2c3f7e39f5a43f5790a13631e43b99d5e614c00",
    "family": "specialissima-rc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260606011409"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima/specialissima-rc/specialissima-rc-founder-edition/",
@@ -1048,7 +1176,8 @@
    "sha256": "a7684c76c5461945be3bfb8fe3fe8be0f4d034e83921f72a68a8be510a8e3bc3",
    "family": "specialissima-rc-founder-edition",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260606021833"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-rc-frameset/",
@@ -1056,7 +1185,8 @@
    "sha256": "99b8dd7490d73be6fb1ee53963c61c3aa04429f98ff3a30bafe63fdcfb67d218",
    "family": "specialissima-rc-frameset",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260721033248"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/specialissima-rc-pantani/",
@@ -1064,7 +1194,8 @@
    "sha256": "9b30ec178091c710b5524bf0d926299e6c3c38b24b4f060cef316805af36de20",
    "family": "specialissima-rc-pantani",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260606022847"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby8-specialissima-redetapaxs12sp-3.html",
@@ -1072,7 +1203,8 @@
    "sha256": "9994ba8647bc4813a6e62b87bd2c846d145ad1cef8ac0b2da42f48167cb8ee79",
    "family": "specialissima-redetapaxs12sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320161909"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby4-specialissima-super-record-eps-12sp-3.html",
@@ -1080,7 +1212,8 @@
    "sha256": "f1a2135b2df06f8e3da4aec28b9626bec47c79d188b072d71aa358ab542a29fc",
    "family": "specialissima-super-record-eps-12sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20220118110159"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby4-specialissima-super-record-eps-12sp-3.html",
@@ -1088,7 +1221,8 @@
    "sha256": "30ad9d73622c2b3fbfb1c6356882191b643392cef3b5c07b304992fa1deddbcb",
    "family": "specialissima-super-record-eps-12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220118110159"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby4-specialissima-superrecordeps12sp-1.html",
@@ -1096,7 +1230,8 @@
    "sha256": "2c6f68889b7bae6a35df8a635baabb8ce709710588e6d4cb149d7ba0bc81a165",
    "family": "specialissima-superrecordeps12sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320145759"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby4-specialissima-superrecordeps12sp-1.html",
@@ -1104,7 +1239,8 @@
    "sha256": "c3646463cee4bcce8d58d27bcfe5d2c5750960a84540732ba2c3f8ae86640790",
    "family": "specialissima-superrecordeps12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320145759"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby7-specialissima-ultegra-11sp-8.html",
@@ -1112,7 +1248,8 @@
    "sha256": "132a43d3860bf45de5accbaf0a89cb46c0250b2a6bb3e07b960c5f47f2c5d0f9",
    "family": "specialissima-ultegra-11sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20220118094401"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby7-specialissima-ultegra-11sp-8.html",
@@ -1120,7 +1257,8 @@
    "sha256": "581b3623fd7f4eb279339a1d549e15a1128c1dc386330636897d7e1f0a608717",
    "family": "specialissima-ultegra-11sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220118094401"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby7-specialissima-ultegra-11sp-8.html",
@@ -1128,7 +1266,8 @@
    "sha256": "be12d57f0833edc742a5eb7a35c7f7cc58ca60c8f4833cb742d5d095427a42a2",
    "family": "specialissima-ultegra-11sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20220118094401"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby6-specialissima-ultegra-di2-5.html",
@@ -1136,7 +1275,8 @@
    "sha256": "4b4e05e42ffc17ab8a88b5f868e0f29e95f1b3b08bebc7ca4d9d65fa397385f4",
    "family": "specialissima-ultegra-di2",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20220124173911"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrby6-specialissima-ultegra-di2-5.html",
@@ -1144,7 +1284,8 @@
    "sha256": "c5ef18d1840558b6aba0a6d6b04326388756e3c603817cca229f854f3ac4afd1",
    "family": "specialissima-ultegra-di2",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20220124173911"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby6-specialissima-ultegradi212sp-1.html",
@@ -1152,7 +1293,8 @@
    "sha256": "36bd34c0c06fa2d87b84e711aa30fef7e125d7f4d53d8a68da271edd6c4c9c0e",
    "family": "specialissima-ultegradi212sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320161939"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby6-specialissima-ultegradi212sp-1.html",
@@ -1160,7 +1302,8 @@
    "sha256": "3e6db235167fdfe8c4b0621e6986029a00d1fe4490b591a65248e1f14f10e35d",
    "family": "specialissima-ultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230320161939"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb47-specialissimacomp-105di212sp-0.html",
@@ -1168,7 +1311,8 @@
    "sha256": "8bb01ae8ad50841e3aa17d964b6fb254029cff72d5c96c4c939a9fd024bb4c4c",
    "family": "specialissimacomp-105di212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240519181934"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb48-specialissimacomp-rivaletapaxs12sp-4.html",
@@ -1176,7 +1320,8 @@
    "sha256": "43a959b4eee3a51b5a814107c3d69e47ed4170db0fb50b89c820bf81b162f24b",
    "family": "specialissimacomp-rivaletapaxs12sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240615233228"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb46-specialissimacomp-ultegradi212sp-6.html",
@@ -1184,7 +1329,8 @@
    "sha256": "27a579e1dd15ba2516e34722d5527a0ae79ed99fb9a9cececa7b8a8521f8eff6",
    "family": "specialissimacomp-ultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240227192547"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xtb08-specialissimapro-framekit-0.html",
@@ -1192,7 +1338,8 @@
    "sha256": "1616ac56feeb8e8e815fcb3ed96068cbe5fb90c9fe0de93349f3f5206398e6af",
    "family": "specialissimapro-framekit",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20240919010059"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb43-specialissimapro-sramforceetapaxs-10.html",
@@ -1200,7 +1347,8 @@
    "sha256": "1db0f973183660899d21e728ef268b9e13ea2adfccda1b4d451729ab62410ce5",
    "family": "specialissimapro-sramforceetapaxs",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240813180746"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb45-specialissimapro-ultegradi212sp-4.html",
@@ -1208,7 +1356,8 @@
    "sha256": "1fb4fab2ad67525c84446d420c08ebd04ebfdec2ceeac98352ea228ecd0cd0e6",
    "family": "specialissimapro-ultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240910141559"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub45-specialissimapro-ultegradi212sp-1.html",
@@ -1216,7 +1365,8 @@
    "sha256": "33690fa3313fc19cc9c374151d78a78b82725878053e5b05842ca8763c5bc7ab",
    "family": "specialissimapro-ultegradi212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250714025458"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb42-specialissimarc-duracedi212spw-powermeter-10.html",
@@ -1224,7 +1374,8 @@
    "sha256": "dd89cdcfef4b663b5475cb7738d11b372cd3c869d80bc43965407a6a2b0865c2",
    "family": "specialissimarc-duracedi212spw-powermeter",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240712154136"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yub42-specialissimarc-duracedi212spw-powermeter-8.html",
@@ -1232,7 +1383,8 @@
    "sha256": "8e28f50c1d5c945a8a39d5a61925479926be616a57d7056b0f4938673f6d6c7d",
    "family": "specialissimarc-duracedi212spw-powermeter",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250806014800"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xtb07-specialissimarc-framekit-2.html",
@@ -1240,7 +1392,8 @@
    "sha256": "76a10a57b657cdfb50a6a666f008d338e8f3d55f60d8949631515df695efda04",
    "family": "specialissimarc-framekit",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20231208191521"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xtb07-specialissimarc-framekit-2.html",
@@ -1248,7 +1401,8 @@
    "sha256": "b8746f5a7d4a5b34d4a877c7c9f10efe39c5601537c173f6142353e648ed8a9c",
    "family": "specialissimarc-framekit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20231208191521"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb40-specialissimarc-sramredetapaxs12spw-powermeter-1.html",
@@ -1256,7 +1410,8 @@
    "sha256": "c412a8c5ae85b4a9340ffe41a55fe04e58083fa1f490c4ea38f99ee37d2c687e",
    "family": "specialissimarc-sramredetapaxs12spw-powermeter",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240914064914"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yvbpn-specialissimarcpantani-superrecordwrl13sp-9.html",
@@ -1264,7 +1419,8 @@
    "sha256": "afbea97f1fde5c3819931f271205347d4a7d37ad097c057ff2f615e7260ca131",
    "family": "specialissimarcpantani-superrecordwrl13sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250806023432"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbr5-sprint-105-11sp-10.html",
@@ -1272,7 +1428,8 @@
    "sha256": "fc49fa917944544a0483265398c54a3a9e9cf296d0750695a9e40d21d24becb8",
    "family": "sprint-105-11sp",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20211013194322"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbr3-sprint-105-11sp-6.html",
@@ -1280,7 +1437,8 @@
    "sha256": "e6792c55759935379aab7485d8be3fe8fa940d5d8b72a42b0ef6fe9c577ec4d9",
    "family": "sprint-105-11sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20211020065723"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbr3-sprint-105-11sp-6.html",
@@ -1288,7 +1446,8 @@
    "sha256": "6d422926e09f5ba62dc036703db3e90f8c8494186f17bc054ce45fde79f43ddb",
    "family": "sprint-105-11sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20211020065723"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytbr6-sprint-105di212sp-2.html",
@@ -1296,7 +1455,8 @@
    "sha256": "6bd64b0893c148f1c8e1b12af798094239a6bef04f7d2f3dc70ab6a7acf0c77f",
    "family": "sprint-105di212sp",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230809124442"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytbr6-sprint-105di212sp-2.html",
@@ -1304,7 +1464,8 @@
    "sha256": "92202acc8d5cdda3091865b9280facb26ca1b249109d687a43ee5b5a8687d679",
    "family": "sprint-105di212sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20230809124442"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/all-rounder/sprint/sprint/sprint-icr/",
@@ -1312,7 +1473,8 @@
    "sha256": "4d4e30415c1091e7e9f0e3400e23ed8fceb2c43cd0589325963b99b94b9fc112",
    "family": "sprint-icr",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612042936"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbr4-sprint-ultegra-11sp-10.html",
@@ -1320,7 +1482,8 @@
    "sha256": "f003722e5d2e5fdfc80de2f54cf12bbf55a7aa1297b59049cad9b788cf06d8bf",
    "family": "sprint-ultegra-11sp",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20211020063135"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbr4-sprint-ultegra-11sp-10.html",
@@ -1328,7 +1491,8 @@
    "sha256": "431a81cdfdbb4299c9fabbb7ec473d1d43e15d04a7245f2b3a47206f019327cc",
    "family": "sprint-ultegra-11sp",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20211020063135"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/yrbr4-sprint-ultegra-11sp-10.html",
@@ -1336,7 +1500,8 @@
    "sha256": "f84f33c134570b2709e4ea4b1cdd84bcf1e2306df116f7faac5548da3f5df33e",
    "family": "sprint-ultegra-11sp",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20211020063135"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/tour-de-france-limited-edition-oltre-rc.html",
@@ -1344,7 +1509,8 @@
    "sha256": "db4b3fe423777eb7cebd6511bcf8c900b8d17d7157b576023b6f3b13c5b22817",
    "family": "tour-de-france-limited-edition-oltre-rc",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20230614010819"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/tour-de-france-limited-edition-oltre-rc.html",
@@ -1352,7 +1518,8 @@
    "sha256": "89ebe360529aa69eba5f1b80c2b723b6661758c6c18a32e910e4e8175cb15d9c",
    "family": "tour-de-france-limited-edition-oltre-rc",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20230614010819"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysb62-vianirone7-grx40010sp-10.html",
@@ -1360,7 +1527,8 @@
    "sha256": "f151019b6936bbd92f1a5ab775fc580634c5e0fddd68aae942cf5aa8a4ac2d82",
    "family": "vianirone7-grx40010sp",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250802203815"
   },
   {
    "url": "https://www.bianchi.com/shop/bikes/road/cyclocross/zolder/zolder-pro/zolder-pro/",
@@ -1368,7 +1536,8 @@
    "sha256": "0c61ffe6c0ff76c52ec457a54037c58f1ecf3253c7de97d9b54c1c2d49509467",
    "family": "zolder-pro",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20260612045212"
   }
  ]
 }

@@ -21,24 +21,7 @@
     },
     {
       "model": "Orca",
-      "year": 2019,
-      "category": "race",
-      "source": "https://www.orbea.com/us-en/bicycles/orca-m20-19/geometry",
-      "retrieved": "2019-07-22",
-      "archive": "https://web.archive.org/web/20190722202054/https://www.orbea.com/us-en/bicycles/orca-m20-19/geometry",
-      "sizes": [
-        ["47",515,367,74.5,71,110,440,408,972,72],
-        ["49",530,370,74,71.5,125,460,408,977,72],
-        ["51",547,375,73.7,72,140,480,408,983,72],
-        ["53",564,382,73.5,72.8,155,500,408,983,70],
-        ["55",584,387,73.5,73,175,520,408,991,70],
-        ["57",603,393,73.2,73.2,195,540,408,1001,70],
-        ["60",627,402,73.2,73.2,220,570,408,1015,70]
-      ]
-    },
-    {
-      "model": "Orca",
-      "year": 2022,
+      "year": 2015,
       "lastYear": 2023,
       "category": "race",
       "source": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m30",
@@ -56,12 +39,29 @@
     },
     {
       "model": "Orca",
+      "year": 2019,
+      "category": "race",
+      "source": "https://www.orbea.com/us-en/bicycles/orca-m20-19/geometry",
+      "retrieved": "2019-07-22",
+      "archive": "https://web.archive.org/web/20190722202054/https://www.orbea.com/us-en/bicycles/orca-m20-19/geometry",
+      "sizes": [
+        ["47",515,367,74.5,71,110,440,408,972,72],
+        ["49",530,370,74,71.5,125,460,408,977,72],
+        ["51",547,375,73.7,72,140,480,408,983,72],
+        ["53",564,382,73.5,72.8,155,500,408,983,70],
+        ["55",584,387,73.5,73,175,520,408,991,70],
+        ["57",603,393,73.2,73.2,195,540,408,1001,70],
+        ["60",627,402,73.2,73.2,220,570,408,1015,70]
+      ]
+    },
+    {
+      "model": "Orca",
       "year": 2024,
       "lastYear": 2026,
       "category": "race",
-      "source": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m10i-replica",
-      "retrieved": "2025-09-02",
-      "archive": "https://web.archive.org/web/20250902071824/https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m10i-replica",
+      "source": "https://www.orbea.com/en-gb/orca-m21eltd-pwr",
+      "retrieved": "2026-06-21",
+      "archive": "https://web.archive.org/web/20260621044350/https://www.orbea.com/en-gb/orca-m21eltd-pwr",
       "sizes": [
         ["47",506,370,74.5,71,111,440,408,972,72],
         ["49",515,375,74,71.5,118,460,408,975,72],
@@ -77,9 +77,9 @@
       "year": 2020,
       "lastYear": 2021,
       "category": "aero",
-      "source": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m20team",
-      "retrieved": "2021-02-26",
-      "archive": "https://web.archive.org/web/20210226032026/https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m20team",
+      "source": "https://www.orbea.com/us-en/bicycles/orca-aero-m20team/geometry",
+      "retrieved": "2021-01-27",
+      "archive": "https://web.archive.org/web/20210127171851/https://www.orbea.com/us-en/bicycles/orca-aero-m20team/geometry",
       "sizes": [
         ["47",501,370,74.5,71,100,450,408,970,72],
         ["49",510,375,74,71.5,108,465,408,974,72],
@@ -92,12 +92,12 @@
     },
     {
       "model": "Orca Aero",
-      "year": 2023,
-      "lastYear": 2026,
+      "year": 2022,
+      "lastYear": 2024,
       "category": "aero",
-      "source": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m10i-replica",
-      "retrieved": "2025-08-29",
-      "archive": "https://web.archive.org/web/20250829121444/https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m10i-replica",
+      "source": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-omx-2024",
+      "retrieved": "2023-11-30",
+      "archive": "https://web.archive.org/web/20231130073115/https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-omx-2024",
       "sizes": [
         ["47",496,370,74.5,71,93,459,408,966,76],
         ["49",505,376,74,71.5,101,474,408,971,76],
@@ -106,6 +106,23 @@
         ["55",562,391,73.5,73,155,544,408,986,74],
         ["57",580,398,73.2,73.2,173,564,408,997,74],
         ["60",606,404,73.2,73.2,200,589,408,1011,74]
+      ]
+    },
+    {
+      "model": "Orca Aero",
+      "year": 2026,
+      "category": "aero",
+      "source": "https://www.orbea.com/en-us/orca-aero-m20i-ltd",
+      "retrieved": "2026-11-16",
+      "aliases": ["Orca Aero 2026"],
+      "sizes": [
+        ["47",495,370,74.5,70.8,84,459,408,966,78],
+        ["49",504,375,74,71.3,92,474,408,971,78],
+        ["51",520,380,73.7,72.2,107,499,408,973,78],
+        ["53",540,385,73.5,72.8,122,524,408,974,78],
+        ["55",560,390,73.5,73,145,545,408,985,76],
+        ["57",578,397,73.2,73.2,163,565,408,995,76],
+        ["60",604,404,73.2,73.2,190,592,408,1009,76]
       ]
     },
     {
@@ -125,24 +142,7 @@
     },
     {
       "model": "Terra",
-      "year": 2023,
-      "lastYear": 2024,
-      "category": "gravel",
-      "source": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-m20team-2024",
-      "retrieved": "2023-12-19",
-      "archive": "https://web.archive.org/web/20231219214802/https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-m20team-2024",
-      "sizes": [
-        ["XS",526,375,74,70,110,405,420,1009,78],
-        ["S",548,382,74,70.5,131,438,420,1019,78],
-        ["M",570,389,73.5,71,152,471,420,1029,78],
-        ["L",592,395,73.5,71,178,504,420,1044,76],
-        ["XL",614,402,73,71.5,199,537,420,1053,76],
-        ["XXL",636,409,73,72,220,570,420,1062,76]
-      ]
-    },
-    {
-      "model": "Terra",
-      "year": 2026,
+      "year": 2022,
       "lastYear": 2027,
       "category": "gravel",
       "source": "https://www.orbea.com/en-us/terra-m30team",
@@ -160,23 +160,6 @@
     {
       "model": "Terra H",
       "year": 2021,
-      "lastYear": 2022,
-      "category": "gravel",
-      "source": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h40",
-      "retrieved": "2021-10-28",
-      "archive": "https://web.archive.org/web/20211028054107/https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h40",
-      "sizes": [
-        ["XXS",525,366,74.5,70.5,100,455,430,1005,70],
-        ["XS",545,373,74,71,120,485,430,1015,70],
-        ["S",565,380,74,72,139,515,430,1020,68],
-        ["M",585,387,73.5,72,162,545,430,1034,66],
-        ["L",610,394,73.5,72.3,187,575,430,1046,66],
-        ["XL",630,401,73.5,73,205,605,430,1052,66]
-      ]
-    },
-    {
-      "model": "Terra H",
-      "year": 2023,
       "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h30",

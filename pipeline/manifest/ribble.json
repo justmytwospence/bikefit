@@ -8,7 +8,8 @@
    "sha256": "4acec8560a614840ac6c7227355df94017ab3728e78ee9c21ebd794b207d0395",
    "family": "aero-883",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022043056"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-aero-883-disc-shimano-105/",
@@ -16,7 +17,8 @@
    "sha256": "570fe94fa2590d5e87b9ff1dca6e968dfdb55e494048710881597a424e0dd5f4",
    "family": "aero-883-disc",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022034543"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-aero-883-disc/",
@@ -24,7 +26,8 @@
    "sha256": "81755078d711f1b063a84416682f6753d23e5f4b89b5d2d448e49527ab3df3b7",
    "family": "aero-883-disc",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20170221145239"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allgrit-al/",
@@ -32,7 +35,8 @@
    "sha256": "ef73387d4e1f5ed01793d75fcf7e98ace4229c5cfaf30834a061f490d2baaf7a",
    "family": "allgrit-al",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250729163921"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allgrit-al/",
@@ -40,7 +44,8 @@
    "sha256": "de9168ff11b5bc0ba916cfea84c464e05faa4742e81fbe13b367ed2d6980d6b8",
    "family": "allgrit-al",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250729163921"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allgrit-ti-x/",
@@ -48,7 +53,8 @@
    "sha256": "580d2721054b0f7bbbe9d95cd8930eb3918540f388ef6bd0a6c9fd6366311076",
    "family": "allgrit-ti-x",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250629184422"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allgrit-ti-x/",
@@ -56,7 +62,8 @@
    "sha256": "524a323610e2c939404507bc7ac2610bbc72c78ea9481ef5774ce02d87725471",
    "family": "allgrit-ti-x",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250629184422"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-al/",
@@ -64,7 +71,8 @@
    "sha256": "f7a98c0431c13f0dbc7021eec1c62b458760e4e635dbea014557becfae11581c",
    "family": "allroad-al",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250708074037"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-al/",
@@ -72,7 +80,8 @@
    "sha256": "845ba6b781e4b9c7311df5cdc0d55a59bc9d0a511c06e9a51a0b904b2f93b81b",
    "family": "allroad-al",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250708074037"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-carbon/",
@@ -80,7 +89,8 @@
    "sha256": "b77c3c17084e609c281cb9f0602416bec2c346584f427821177f76676724862c",
    "family": "allroad-carbon",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20261114153544"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-sl-pro/",
@@ -88,7 +98,8 @@
    "sha256": "878af346d604417dc25af1bf3a44e861a6d44224e0a353570317bf4e16446c58",
    "family": "allroad-sl",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250120030403"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-sl/",
@@ -96,7 +107,8 @@
    "sha256": "7ef5a81002a48a7439294580409f317cbca256e0243a3058486684a74e6cb9be",
    "family": "allroad-sl",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240815151831"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-sl-r-sport/",
@@ -104,7 +116,8 @@
    "sha256": "42ae91f34118816a50b12bf8c7aa99b8c0a8e279d2b2980fa9e48b1faae05128",
    "family": "allroad-sl-r",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240925164336"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-sl-r/",
@@ -112,7 +125,8 @@
    "sha256": "7039590cf7216e0d8f8d9f0c2316ef82e8d44512f3cacaa4e28df5167782e2a9",
    "family": "allroad-sl-r",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240815160432"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-ti/",
@@ -120,7 +134,8 @@
    "sha256": "8e7847f36d802ceed0e8c009b2f2b98a107e0c5bdd1f331fd01b561c799514e4",
    "family": "allroad-ti",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240919113023"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-allroad-ti/",
@@ -128,7 +143,8 @@
    "sha256": "374c8d4e6f6ff220281c4cde08805ae41ea3d963feda770a3ce2a90820547854",
    "family": "allroad-ti",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20240919113023"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-725-shimano-grx/",
@@ -136,7 +152,8 @@
    "sha256": "b95dabf2eba91342a65b584f63fc9b3d8a1a8a1a928bc287cf7ba5d6c5274fef",
    "family": "cgr-725",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022031043"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-725/",
@@ -144,7 +161,8 @@
    "sha256": "168246c686d60b63275ba4cfbaa462fe9fbe38f04a9667a151801dc167775d5c",
    "family": "cgr-725",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190415180204"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-725/",
@@ -152,7 +170,8 @@
    "sha256": "44058f3064eb7bc29665c7062c6b661fe9e7021a7696fe6a979885ad8cf948b0",
    "family": "cgr-725",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190415180204"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-725/",
@@ -160,7 +179,8 @@
    "sha256": "1410a56512454a74a95d8c6fd3f4d57d81dc14f921937b3aae0a88e19bdfe8ab",
    "family": "cgr-725",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190415180204"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-725/",
@@ -168,7 +188,8 @@
    "sha256": "5645fe06aa2c0446596395c73614e9c6bae3474cc146c38a358c1e97f3462fe2",
    "family": "cgr-725",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20190415180204"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-al/",
@@ -176,7 +197,8 @@
    "sha256": "5c9849b1c8c7cb2170114a2e27a823c47190b17e387913a149c1612f8eebfe8f",
    "family": "cgr-al",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718070351"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-al/",
@@ -184,7 +206,8 @@
    "sha256": "844f9faaa3c1b4f092f2b7495c59f193681e21a4f14fa9ce1d31aea68d13e102",
    "family": "cgr-al",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718070351"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-al/",
@@ -192,7 +215,8 @@
    "sha256": "341c98bf605dd7b04b7567cf5873a370a17c94255cc77b5a9f78a0df0d739b5a",
    "family": "cgr-al",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718070351"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-al/",
@@ -200,7 +224,8 @@
    "sha256": "a9e09815b99c4d82b65b4e7e52f343d9cbd8ae0eadeb48e2399882e5def10016",
    "family": "cgr-al",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718070351"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-al-105-v3/",
@@ -208,7 +233,8 @@
    "sha256": "c1466fbbaffff88ec726f2a33b0885e74cab5f6f4d6ab81d2fb9321e888177df",
    "family": "cgr-al",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250729163937"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-carbon-shimano-ultegra-di2/",
@@ -216,7 +242,8 @@
    "sha256": "6190939d7d57a765bde3a4533d48a211218ecafd9fa2f1833075563299351b4d",
    "family": "cgr-carbon",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022031248"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-carbon-shimano-ultegra-di2/",
@@ -224,7 +251,8 @@
    "sha256": "a5d44f1b8b0aad9d51b7a7d380a5522b1f4e0c6ebad828679a77d8c33e378e31",
    "family": "cgr-carbon",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022031248"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-carbon-shimano-105/",
@@ -232,7 +260,8 @@
    "sha256": "a5278a44296d91dbfc013d8b6aa2723747c55c90d50f838be6ece52541c080b8",
    "family": "cgr-carbon",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20191015160100"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-sl-shimano-tiagra-1/",
@@ -240,7 +269,8 @@
    "sha256": "470bd32e21a266f24307bdcb3be6397c7a9f68869c1268998e7b39e17691e929",
    "family": "cgr-sl",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022043706"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-sl/",
@@ -248,7 +278,8 @@
    "sha256": "e0b6e2d2c08f7f86ceaa2900c1467e7e56dc1c3fcd257246ef3f74eafad7453e",
    "family": "cgr-sl",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190716062850"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-sl/",
@@ -256,7 +287,8 @@
    "sha256": "09fcc96871034ee5af56a9505e1f0c934de6630f58072a4de27c5c6d99ad7299",
    "family": "cgr-sl",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190716062850"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-sl-hero-1/",
@@ -264,7 +296,8 @@
    "sha256": "57cfb9e17c6b15c06dd371b25d2d700df41878fa342492dd0544c552c8be525c",
    "family": "cgr-sl",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240415184107"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-sl-sport/",
@@ -272,7 +305,8 @@
    "sha256": "5197cd4f301ab83d23470479e0c4e0631772340e28838ed937ac850404463e4d",
    "family": "cgr-sl",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240415184359"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-ti-sram-apex/",
@@ -280,7 +314,8 @@
    "sha256": "c3cd33d529910d39fbce20963b2d6208c27c3fb55f7eafcab516797b90ccac0d",
    "family": "cgr-ti",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190923044905"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-ti/",
@@ -288,7 +323,8 @@
    "sha256": "1fe6f9ff345d11875edfd07f846f8d4404976afdc6c05803cf3aee646bfbb8ee",
    "family": "cgr-ti",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20181119102724"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-ti/",
@@ -296,7 +332,8 @@
    "sha256": "094ff3b374b49834a3d30bb8221946912651359d9da40c28beeb1dbd5e023f00",
    "family": "cgr-ti",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20181119102724"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-ti/",
@@ -304,7 +341,8 @@
    "sha256": "4666011aedb09a8dd53089e5d5276829d27be1b8ee5a8ba9b084d130ec0d70f4",
    "family": "cgr-ti",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20181119102724"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-ti/",
@@ -312,7 +350,8 @@
    "sha256": "2c17954930999d2348e52f8cf1832e960a7954f5c70274cd0ba481e71b3123e5",
    "family": "cgr-ti",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20181119102724"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-ti-x-v3/",
@@ -320,7 +359,8 @@
    "sha256": "83111e5f14f260d8291574d08ec6c163a9a45fd4395db44b087595c1765af1b7",
    "family": "cgr-ti-x",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250729163923"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cgr-ti-x-v3/",
@@ -328,7 +368,8 @@
    "sha256": "3ee589012f6f87b431e6f05620f8518563800c3c210eb5f638d05bc71bb84790",
    "family": "cgr-ti-x",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250729163923"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cx/",
@@ -336,7 +377,8 @@
    "sha256": "4a435039bedff8732dd99d8180a4b54e692650aaa3f99ed150e3525022f1d0ce",
    "family": "cx",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190716055425"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cx/",
@@ -344,7 +386,8 @@
    "sha256": "e95d3f65e5423b1a9ac3aac6e761d59688064a4f0d99ca5adf23eed5da8cb2f6",
    "family": "cx",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190716055425"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cx/",
@@ -352,7 +395,8 @@
    "sha256": "7ea2a9d1ea371014061490e191632fd05a5c7d73cd964885c15f81156fa1e722",
    "family": "cx",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20190716055425"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cx-sl-ultegra-di2/",
@@ -360,7 +404,8 @@
    "sha256": "1e54426c7d1271bcf461f6d5ca51119d8ab3a83b6311cef99e2e2e58a938b84d",
    "family": "cx-sl",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022035237"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cx-sl/",
@@ -368,7 +413,8 @@
    "sha256": "3664c55daaf0103dad4c3788aa54e20f456597b536d6971ed52af4f8ce2c8260",
    "family": "cx-sl",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190923044826"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-cx-sl/",
@@ -376,7 +422,8 @@
    "sha256": "fc2bbf1c4010fe4dddd8886008c1c4ab86305e67ce438ab6c2d8e90d67c738ba",
    "family": "cx-sl",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190923044826"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725/",
@@ -384,7 +431,8 @@
    "sha256": "8d06e53caa8cd31e755cd5670169ee27d46ea6563c60d83cada609e3c030c934",
    "family": "endurance-725",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718064652"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725/",
@@ -392,7 +440,8 @@
    "sha256": "d9b302a232928e9c498cf106619cd090298c56daf14b94e1bd3ce9078141bff0",
    "family": "endurance-725",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718064652"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725/",
@@ -400,7 +449,8 @@
    "sha256": "5c6167da1a0b2a600eb9f7312897c6e87a17a084f078a56396fc4fca634a97d2",
    "family": "endurance-725",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718064652"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725-disc-frameset-green/",
@@ -408,7 +458,8 @@
    "sha256": "7d7f3cb80a5d10669c7ade958f976dfd564011b8b4639b7b8f35e0d38a36433e",
    "family": "endurance-725-disc",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022043305"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725-disc/",
@@ -416,7 +467,8 @@
    "sha256": "5b36e603a0517c20effc8ee1d0409bacf1e1ac32c16e8160bb0ec991c7cd491c",
    "family": "endurance-725-disc",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072617"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725-disc/",
@@ -424,7 +476,8 @@
    "sha256": "351105fd0c8f508ee4151eacdc75b14f5a817bc294636e28bd08019e1acdce99",
    "family": "endurance-725-disc",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072617"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725-disc/",
@@ -432,7 +485,8 @@
    "sha256": "559c786c2a7534ea0371e06573a70ef206dbb267e7d34f3e129121bc4c008c3a",
    "family": "endurance-725-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072617"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725-disc/",
@@ -440,7 +494,8 @@
    "sha256": "7fb073a8d5ff9973c4cb391a78a946a83cbb8cb63522653af87312cf52ec66f6",
    "family": "endurance-725-disc",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072617"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-frameset-1/",
@@ -448,7 +503,8 @@
    "sha256": "6f2d7f2548accf5a7378c5a88937f1bbf4b5b80eec193001f9071efd3e8014fe",
    "family": "endurance-al",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190721102952"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-shimano-tiagra-disc/",
@@ -456,7 +512,8 @@
    "sha256": "849f0128828a66702b7bf95fff9daa47443af51318e3d10f85a0cdafa9d6edb1",
    "family": "endurance-al",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200907191113"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-shimano-105-disc/",
@@ -464,7 +521,8 @@
    "sha256": "c44c1cf736221560a9cb665b61928525675b983768d1d11439805ee4d73db948",
    "family": "endurance-al",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20191121075948"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
@@ -472,7 +530,8 @@
    "sha256": "bfaa27d7a9338fced6bd5502c6db96675ac41a494a13deb93a25d4ac20a21bb1",
    "family": "endurance-al-disc",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073214"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
@@ -480,7 +539,8 @@
    "sha256": "f1af3037999ec9a46919d8cd6fe44a76652d89a8aa5d663ac37787a1bb3d01c9",
    "family": "endurance-al-disc",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073214"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
@@ -488,7 +548,8 @@
    "sha256": "c42f43875f4f8ff096ee3080b029e7b496c4d8f2fc6953b6344676c7a23a8135",
    "family": "endurance-al-disc",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073214"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
@@ -496,7 +557,8 @@
    "sha256": "ccfc19f7a884ddf81b0096eedd6e00bb983e11a8c708f9fda6e9098a660ac23d",
    "family": "endurance-al-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073214"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
@@ -504,7 +566,8 @@
    "sha256": "6f7207f612434731787370007a893234e86e43f6129777c379378125bc48c15a",
    "family": "endurance-al-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073214"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-team-bike/",
@@ -512,7 +575,8 @@
    "sha256": "0639628ec05d2e5c3b9d3e62a5b14ed7c0b9b0d5fac8f69205f76133e1a18a1a",
    "family": "endurance-sl",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190923045808"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl/",
@@ -520,7 +584,8 @@
    "sha256": "550d2079a2f9f0f659810010db718927dea70c2f67c90e9f3d640f1c5afe0101",
    "family": "endurance-sl",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190721131156"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl/",
@@ -528,7 +593,8 @@
    "sha256": "3cc124a23327c8c3ba97f610cb3a887d61d729657c519f30374642001e06c5aa",
    "family": "endurance-sl",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190721131156"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-disc-red-campagnolo-potenza-disc/",
@@ -536,7 +602,8 @@
    "sha256": "24d4207ac9194da1585006c4b8e08bd22e97be535e13084d014100bb00c16586",
    "family": "endurance-sl-disc",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20191022032651"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-disc/",
@@ -544,7 +611,8 @@
    "sha256": "b63ac7cf9e409e26109c5048ace8f640ef701b8527b8846bce59eab4bb654991",
    "family": "endurance-sl-disc",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072851"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-disc/",
@@ -552,7 +620,8 @@
    "sha256": "456e70754755249056e016c30b6a0d81142049d7b3de1b30121612cac146ce42",
    "family": "endurance-sl-disc",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072851"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-disc/",
@@ -560,7 +629,8 @@
    "sha256": "e0da3ebb8907c078e14d01f65ed159481068b0b6a0a10684c77c96e35cbf362c",
    "family": "endurance-sl-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072851"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-disc/",
@@ -568,7 +638,8 @@
    "sha256": "6ed9080f6affdc9aecb451d2209a69c93cd48696dbca930ec82391d1bcff6bb9",
    "family": "endurance-sl-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718072851"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-sram-red-etap-axs/",
@@ -576,7 +647,8 @@
    "sha256": "0f52ca1cf9ab9eccb9e9a57355957b28dd04b56fd6d7ddaeda7d0ddc42ea710d",
    "family": "endurance-sl-r",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190923045026"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series/",
@@ -584,7 +656,8 @@
    "sha256": "d96f590f86e065b375777105f2a08dd51740d0d5b3c36d7072a85967029c1295",
    "family": "endurance-sl-r",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718063542"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series/",
@@ -592,7 +665,8 @@
    "sha256": "50bea2b8a3da4ae21e4fd645487213f047ad40a10aa9e2eea87bab4a7b708c3f",
    "family": "endurance-sl-r",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718063542"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-enthusiast/",
@@ -600,7 +674,8 @@
    "sha256": "7a61d114deeef4c452e144742a6f1e9205b22f4c7f50b0340ebed86a30e01762",
    "family": "endurance-sl-r",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240419122110"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-disc-sram-etap-hrd-team-bike/",
@@ -608,7 +683,8 @@
    "sha256": "3d04590649e65e21143d27c17e2f8fff287ff26c653a4c33d89cf71a3096ddeb",
    "family": "endurance-sl-r-disc",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190923044238"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-disc/",
@@ -616,7 +692,8 @@
    "sha256": "d722200c83ffa607e024e9eae57341a179c88927129b211459d0b1a0b8bd584e",
    "family": "endurance-sl-r-disc",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073809"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-disc/",
@@ -624,7 +701,8 @@
    "sha256": "a3f19538ecec3735cc4bb2475e1508ff0035848187846f80298ff3f3ce45fbcd",
    "family": "endurance-sl-r-disc",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073809"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl-r-series-disc/",
@@ -632,7 +710,8 @@
    "sha256": "ba48105f506301d7f21f36b0c5079b4506d59053d4894cb730b8bd549d564e48",
    "family": "endurance-sl-r-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718073809"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-ti-frameset/",
@@ -640,7 +719,8 @@
    "sha256": "88e390b1efb1370f6ef9f74ebe4d38847e106324fd5b758df32932fb82dc8991",
    "family": "endurance-ti",
    "year": 2021,
-   "related": []
+   "related": [],
+   "firstSeen": "20201031003418"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-ti-frameset/",
@@ -648,7 +728,8 @@
    "sha256": "257815bcc33a312b364c03206a54f5eeae0d468a2f0dd211299991656009270b",
    "family": "endurance-ti",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20201031003418"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-ti-disc/",
@@ -656,7 +737,8 @@
    "sha256": "c56f81ea35dead6a042c8c526e95279c3f7e8825c6aed473e7d11c4e640630f5",
    "family": "endurance-ti-disc",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20200406233934"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-ti-disc/",
@@ -664,7 +746,8 @@
    "sha256": "f4ea5900d7d1a1228c831d069fde7dbf07a1923fd191c5326da65f6bcc70c4ee",
    "family": "endurance-ti-disc",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20200406233934"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-ti-disc-hero/",
@@ -672,7 +755,8 @@
    "sha256": "44473561c62a7d54dc823ecf5f90088e3b659b17a978b91436c48432d791a61d",
    "family": "endurance-ti-disc",
    "year": 2025,
-   "related": []
+   "related": [],
+   "firstSeen": "20240420230659"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-725/",
@@ -680,7 +764,8 @@
    "sha256": "c240102c991ee40f7e406a65024c216157ed38277d0e1b1e7075be8e2d82dc2a",
    "family": "gravel-725",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20221207171324"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-725/",
@@ -688,7 +773,8 @@
    "sha256": "0ccf6b8b4a2453b04d0103799c138245d63556b499512d90bbb7fe94dc856e5a",
    "family": "gravel-725",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20221207171324"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-725/",
@@ -696,7 +782,8 @@
    "sha256": "5273a2219c98a98f1afa935d113b6e1a4c4027b87424ce3f47db9983a22a65f9",
    "family": "gravel-725",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20221207171324"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-al/",
@@ -704,7 +791,8 @@
    "sha256": "9cdac9fe3eae34b2b7234f6b02e94a94121fe0630f06c9837c864df092d7b0c4",
    "family": "gravel-al",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210331155203"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-al/",
@@ -712,7 +800,8 @@
    "sha256": "23538864089ba74b0fa78bd12bddf18bfceab7407828bcc4eb816431fc503a26",
    "family": "gravel-al",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20210331155203"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-al/",
@@ -720,7 +809,8 @@
    "sha256": "58f5d6df21e25b784ac6eafd92ea1b132c8be062a6e8912bda9247349e3426a9",
    "family": "gravel-al",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20210331155203"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
@@ -728,7 +818,8 @@
    "sha256": "568fc75666bf3045d46587c598b179d724eaf33933682d281d149d91a7e4a8db",
    "family": "gravel-sl",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210331200354"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
@@ -736,7 +827,8 @@
    "sha256": "15d52f0e6ca15e69bce1161bfc79d2dc8d14a32e1f9fe4cc07615d50f4381e86",
    "family": "gravel-sl",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20210331200354"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
@@ -744,7 +836,8 @@
    "sha256": "fc74e6b78c3cf8f3df88e0dcaaf6a9bffeb3476b8b44edf370e4b4c0a68cd87f",
    "family": "gravel-sl",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20210331200354"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-ti/",
@@ -752,7 +845,8 @@
    "sha256": "0b411c90efdc6c373b11b47c48779b31a6ef2fffe6437feaa5bfb3a6db954fbd",
    "family": "gravel-ti",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210403075142"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-ti/",
@@ -760,7 +854,8 @@
    "sha256": "da4b4f27aeecffa416c89e23b54ee7b31b4412b8da86cad39e6a4d1b91b640c8",
    "family": "gravel-ti",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20210403075142"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-ti-sport-sram/",
@@ -768,7 +863,8 @@
    "sha256": "d64a7c5209a1518fcae970e06ca6046cedb6f9c271f6c9dbd8c543aeb62897bb",
    "family": "gravel-ti",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20240903211135"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-ti/",
@@ -776,7 +872,8 @@
    "sha256": "14402875df3585d9a629ab623e0730bad31663c07256ff949ac1b80799de5d7e",
    "family": "gravel-ti",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20210403075142"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872/",
@@ -784,7 +881,8 @@
    "sha256": "15bca1680e48f8f362d29612a5e618036a3bbb1a51372654afd1473d855d775d",
    "family": "r872",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20160306004615"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872/",
@@ -792,7 +890,8 @@
    "sha256": "b217f836fbc531f0327cdd689a906d77a1915bdfb5085e587cf4486f859787fd",
    "family": "r872",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20160306004615"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872/",
@@ -800,7 +899,8 @@
    "sha256": "c2f16fa5c4ab3723770f3a6fa04dd1a0a4cf4ca34f5c741200ff206556185008",
    "family": "r872",
    "year": 2023,
-   "related": []
+   "related": [],
+   "firstSeen": "20160306004615"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
@@ -808,7 +908,8 @@
    "sha256": "3bc54e458dba42c173d726d639a05608f54a0217033784dda4faeec91bd27225",
    "family": "r872-disc",
    "year": 2020,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718063529"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
@@ -816,7 +917,8 @@
    "sha256": "bb6f152c0bb6a573d117a220083ebeb1a0b68c73bc4026b65f7b3284949b6d4b",
    "family": "r872-disc",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718063529"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
@@ -824,7 +926,8 @@
    "sha256": "f8d3a5023685d44ef4b4f2cd52b0ce206df84ff53c932ef0bab19760914fd3a0",
    "family": "r872-disc",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718063529"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
@@ -832,7 +935,8 @@
    "sha256": "871adf3297f7dc15455b7ad21763fd89547368baf823dd02e4ed631242e83669",
    "family": "r872-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718063529"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
@@ -840,7 +944,8 @@
    "sha256": "184f8b0ac8220531e0683c25d7ffe866c8631dbd32c26833cdf72538a14a41b0",
    "family": "r872-disc",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20190718063529"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-aero-sl-frameset/",
@@ -848,7 +953,8 @@
    "sha256": "e9a8e48a41d2c10557cd95bd3019667603029ba537b5c6a6fc8f3ac584cb8ecb",
    "family": "ultra-aero-sl",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250729163937"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-aero-sl-frameset/",
@@ -856,7 +962,8 @@
    "sha256": "bfc07c9fc3c90db162e5fc6dcc4c10b9baa2651f841cf4e2f758a3e1a99ae106",
    "family": "ultra-aero-sl",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250729163937"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-grit/",
@@ -864,7 +971,8 @@
    "sha256": "84594572673fde4937fb23a78744344e4b33ca6068d6297d7f4456493b4d1b9a",
    "family": "ultra-grit",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250629184236"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-grit/",
@@ -872,7 +980,8 @@
    "sha256": "e61a370978667f83b481295fb1b2453bf359d852a44ca96c1e68bd8a8f88e0d0",
    "family": "ultra-grit",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250629184236"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-race/",
@@ -880,7 +989,8 @@
    "sha256": "cd962a3bb22c52b783efc2e0ed6f97e6aa71204bf55a583eea7534ad8c505f54",
    "family": "ultra-race",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20250514064120"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-race/",
@@ -888,7 +998,8 @@
    "sha256": "f2bd1aaa45609d47930341a819a002c0887f324796a8e5aa793d14c80be7ef11",
    "family": "ultra-race",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250514064120"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-road/",
@@ -896,7 +1007,8 @@
    "sha256": "40648d4806ff78e94f0b56396e806b3f9d78c07a33b5ddc78fedbeb2ac496067",
    "family": "ultra-road",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20261114153552"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl/",
@@ -904,7 +1016,8 @@
    "sha256": "bd033aa2b86b6e5d6a3e0312ad4f5c85c84f15ee41d7cc3a68910fd15ffedac2",
    "family": "ultra-sl",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210820025334"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl/",
@@ -912,7 +1025,8 @@
    "sha256": "05b9d566053940fae7ed2b235004fd75586d5a1b8c4c93ea8d9c065836e59725",
    "family": "ultra-sl",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20210820025334"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl/",
@@ -920,7 +1034,8 @@
    "sha256": "e0fb6a5b947769153f2fc4ed153efe839c6944c76773d476fac7668f32fa061e",
    "family": "ultra-sl",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20210820025334"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl/",
@@ -928,7 +1043,8 @@
    "sha256": "1a90325a296414c5086c91147db3fe7a8c566c15c4af9c8468e96f55e6065d50",
    "family": "ultra-sl",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20210820025334"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl-r/",
@@ -936,7 +1052,8 @@
    "sha256": "03eedc7ce9bded4a58936235f027306d9ac747af4f7b8c64c8861ac9c5fd2273",
    "family": "ultra-sl-r",
    "year": 2022,
-   "related": []
+   "related": [],
+   "firstSeen": "20210920184441"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl-r/",
@@ -944,7 +1061,8 @@
    "sha256": "b34eb056514f8ef534f314f5ee60ee04fb265b9e3b4e6e2d1e8fb08dc2d26a29",
    "family": "ultra-sl-r",
    "year": 2024,
-   "related": []
+   "related": [],
+   "firstSeen": "20210920184441"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl-r/",
@@ -952,7 +1070,8 @@
    "sha256": "353a24a585157c257185e41f4b1b7066e606df5b7ff3bc9b7d1e4746e9a954c3",
    "family": "ultra-sl-r",
    "year": 2026,
-   "related": []
+   "related": [],
+   "firstSeen": "20210920184441"
   },
   {
    "url": "https://www.ribblecycles.co.uk/ribble-ultra-sl-r/",
@@ -960,7 +1079,8 @@
    "sha256": "d19b9b37c372041906da77b71c04c926c8a459e909a3b36e2d6ba8444612b70f",
    "family": "ultra-sl-r",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20210920184441"
   }
  ]
 }

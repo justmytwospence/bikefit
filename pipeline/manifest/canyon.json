@@ -8,7 +8,8 @@
    "sha256": "46a54353b1d28274c2128047f37f596e6d1daa9df0b80ab18d9673cba519198c",
    "family": "gravel-bikes/adventure/grizl/al",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260629031651"
   },
   {
    "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
@@ -16,7 +17,8 @@
    "sha256": "9000c66be46931292690819047ce99f7f16e5bceee69d6538c7bae451fa89542",
    "family": "gravel-bikes/adventure/grizl/cf",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20261009204045"
   },
   {
    "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
@@ -24,7 +26,8 @@
    "sha256": "3d8661298553b330effdfc90a8071c3edb8e35095b99dd5aa72ccec6a40e85dd",
    "family": "gravel-bikes/race/grail/cfr",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260918043729"
   },
   {
    "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
@@ -32,7 +35,8 @@
    "sha256": "a9bf16db9ddec5161d54ac4b8730481b1ee641f847136d1c0845cf1abafbb331",
    "family": "road-bikes/aero-bikes/aeroad/cf-slx",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20260629031651"
   },
   {
    "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
@@ -40,7 +44,8 @@
    "sha256": "ea3610562afc417920cc1839c98c831d750b427caf38bbe6b979990b240527f2",
    "family": "road-bikes/aero-bikes/aeroad/cfr",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250721162651"
   },
   {
    "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
@@ -48,7 +53,8 @@
    "sha256": "3d47d8d846ed1c3f98bf45cbc1095394ee564abcefa574fbfbb69cc943b5f230",
    "family": "road-bikes/endurance-bikes/endurace/allroad",
    "year": 2027,
-   "related": []
+   "related": [],
+   "firstSeen": "20250627184421"
   }
  ]
 }
