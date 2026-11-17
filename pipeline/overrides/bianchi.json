@@ -420,5 +420,33 @@
   }
  ],
  "exclude": [],
- "models": {}
+ "models": {
+  "Oltre Comp": {
+   "model": "Oltre"
+  },
+  "Oltre Pro": {
+   "model": "Oltre"
+  },
+  "Oltre RC": {
+   "model": "Oltre"
+  },
+  "Impulso Comp": {
+   "model": "Impulso"
+  },
+  "Impulso Pro": {
+   "model": "Impulso"
+  },
+  "Impulso RC": {
+   "model": "Impulso"
+  },
+  "Specialissima Comp": {
+   "model": "Specialissima"
+  },
+  "Specialissima Pro": {
+   "model": "Specialissima"
+  },
+  "Specialissima RC": {
+   "model": "Specialissima"
+  }
+ }
 }

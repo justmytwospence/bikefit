@@ -60,11 +60,52 @@ function clean(e: Extracted, fill: Fill, log: (s: string) => void): { rows: Size
   return { rows, estimated: OPTIONAL.filter((k) => est.has(k)) };
 }
 
+const norm = (s: string) => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const related = (a: string, b: string) => {
+  const x = norm(a);
+  const y = norm(b);
+  return x === y || x.startsWith(y + ' ') || y.startsWith(x + ' ');
+};
+/** Same size labels in the same order, lengths within 2 mm and angles within 0.3 degrees. */
+const closeSizes = (a: SizeRow[], b: SizeRow[]) =>
+  a.length === b.length && a.every((r, i) => r[0] === b[i][0]
+    && r.slice(1).every((v, k) => Math.abs((v as number) - (b[i][k + 1] as number)) <= (k === 2 || k === 3 ? 0.3 : 2)));
+
+/** Models with related names and near-identical geometry become one: the latest leads, the others become aliases. */
+function mergeFamilies(models: Model[]): Model[] {
+  const sorted = [...models].sort((a, b) =>
+    (b.lastYear ?? b.year) - (a.lastYear ?? a.year) || (a.estimated?.length ?? 0) - (b.estimated?.length ?? 0)
+    || a.model.length - b.model.length || cmp(a.model, b.model));
+  const groups: Model[][] = [];
+  for (const m of sorted) {
+    const g = groups.find((x) => related(x[0].model, m.model) && closeSizes(x[0].sizes, m.sizes));
+    if (g) g.push(m);
+    else groups.push([m]);
+  }
+  return groups.map((g) => {
+    const [rep, ...rest] = g;
+    if (!rest.length) return rep;
+    const last = Math.max(...g.map((m) => m.lastYear ?? m.year));
+    const year = Math.min(...g.map((m) => m.year));
+    const aliases = [...new Set([...(rep.aliases ?? []), ...rest.flatMap((m) => [m.model, ...(m.aliases ?? [])])])]
+      .filter((n) => n !== rep.model).sort(cmp);
+    return { ...rep, year, lastYear: last > year ? last : undefined, aliases: aliases.length ? aliases : undefined };
+  });
+}
+
+export const modelYear = (ts: string) => Number(ts.slice(0, 4)) + (Number(ts.slice(4, 6)) >= 7 ? 1 : 0);
+
 export function buildBrand(
   adapter: Adapter, manifest: Manifest, pages: Map<string, Page>, overrides: Overrides, fill: Fill,
   log: (s: string) => void = () => {},
 ): BrandFile {
   const cands: Cand[] = [];
+  const earliest = new Map<string, string>();
+  for (const entry of manifest.pages) {
+    if (overrides.exclude.includes(entry.url)) continue;
+    const t = earliest.get(entry.url);
+    if (!t || entry.timestamp < t) earliest.set(entry.url, entry.timestamp);
+  }
   for (const entry of manifest.pages) {
     if (overrides.exclude.includes(entry.url)) continue;
     const page = pages.get(pageKey(entry.url, entry.timestamp));
@@ -77,7 +118,7 @@ export function buildBrand(
       const c = clean({ ...e, model, category }, fill, log);
       if (!c) continue;
       cands.push({
-        model, category, year: e.year ?? entry.year, tyreWidth: fix.tyreWidth ?? e.tyreWidth, maxSpacers: fix.maxSpacers,
+        model, category, year: e.year ?? (entry.firstSeen && entry.timestamp === earliest.get(entry.url) ? modelYear(entry.firstSeen) : entry.year), tyreWidth: fix.tyreWidth ?? e.tyreWidth, maxSpacers: fix.maxSpacers,
         aliases: fix.aliases ?? e.aliases, rows: c.rows, estimated: c.estimated, source: entry.url, timestamp: entry.timestamp,
       });
     }
@@ -101,22 +142,22 @@ export function buildBrand(
       have.archive = `https://web.archive.org/web/${c.timestamp}/${c.source}`;
     }
   }
+  // Hand-entered models join unless a page covers their source or the same name over their years.
+  const list = [...merged.values()].sort((x, y) => cmp(x.source, y.source));
+  const sources = new Set(list.map((m) => stripUrl(m.source)));
+  const extracted = [...list];
+  for (const m of overrides.manual) {
+    if (sources.has(stripUrl(m.source))) continue;
+    const last = m.lastYear ?? m.year;
+    if (extracted.some((x) => slug(x.model) === slug(m.model) && x.year <= last && (x.lastYear ?? x.year) >= m.year)) continue;
+    list.push(m);
+  }
   // One entry per model and first year.
   const byId = new Map<string, Model>();
-  for (const m of [...merged.values()].sort((a, b) => cmp(a.source, b.source))) {
+  for (const m of mergeFamilies(list)) {
     const id = `${slug(m.model)}-${m.year}`;
     if (byId.has(id)) log(`duplicate: ${manifest.brand} ${m.model} ${m.year} ${m.source}`);
     else byId.set(id, m);
-  }
-  const sources = new Set([...byId.values()].map((m) => stripUrl(m.source)));
-  const extracted = [...byId.values()];
-  for (const m of overrides.manual) {
-    const id = `${slug(m.model)}-${m.year}`;
-    if (sources.has(stripUrl(m.source)) || byId.has(id)) continue;
-    // A hand-entered model is redundant when a page-derived one of the same name covers its years.
-    const last = m.lastYear ?? m.year;
-    if (extracted.some((x) => slug(x.model) === slug(m.model) && x.year <= last && (x.lastYear ?? x.year) >= m.year)) continue;
-    byId.set(id, m);
   }
   const models = [...byId.values()].sort((a, b) => cmp(a.model, b.model) || a.year - b.year);
   return { brand: manifest.brand, models };

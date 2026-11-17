@@ -93,3 +93,13 @@ export async function savePageNow(url: string): Promise<void> {
     console.error(`save failed: ${url}: ${e instanceof Error ? e.message : e}`);
   }
 }
+
+/** The timestamp of a URL's oldest 200 capture, or null. */
+export async function firstCapture(url: string): Promise<string | null> {
+  const res = await getWithRetry(
+    `https://web.archive.org/cdx/search/cdx?url=${encodeURIComponent(url)}&filter=statuscode:200&fl=timestamp&output=json&limit=1`,
+  );
+  if (!res.ok) return null;
+  const rows = (await res.json()) as string[][];
+  return rows.length > 1 ? rows[1][0] : null;
+}

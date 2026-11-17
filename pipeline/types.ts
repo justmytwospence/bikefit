@@ -1,7 +1,7 @@
 import type { BrandFile, FrameCategory, GeometryKey } from '../src/data/schema';
 
 export interface Capture { url: string; timestamp: string; sha256: string }
-export interface PageEntry extends Capture { family: string; year: number; related: Capture[] }
+export interface PageEntry extends Capture { family: string; year: number; related: Capture[]; firstSeen?: string }
 /** pipeline/manifest/<file>.json */
 export interface Manifest { brand: string; file: string; pages: PageEntry[] }
 export interface Page { url: string; timestamp: string; html: string; related: Record<string, string> }

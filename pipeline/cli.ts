@@ -3,8 +3,8 @@ import { join } from 'node:path';
 import type { BrandFile } from '../src/data/schema';
 import { adapterFor } from './brands/index';
 import { pin, read, readCached } from './lib/cache';
-import { buildBrand, fitEstimates, formatBrand, midFill, pageKey, type Fill } from './lib/build';
-import { cdx, latestCapture, savePageNow } from './lib/wayback';
+import { buildBrand, fitEstimates, formatBrand, midFill, modelYear, pageKey, type Fill } from './lib/build';
+import { cdx, firstCapture, latestCapture, savePageNow } from './lib/wayback';
 import type { Adapter, Capture, Manifest, Overrides, Page, PageEntry } from './types';
 
 const ROOT = process.cwd();
@@ -29,7 +29,11 @@ const bucketOf = (ts: string) => {
   const y = Number(ts.slice(0, 4));
   return y <= 2019 ? 0 : y <= 2021 ? 1 : y <= 2023 ? 2 : y <= 2025 ? 3 : 4;
 };
-const modelYear = (ts: string) => Number(ts.slice(0, 4)) + (Number(ts.slice(4, 6)) >= 7 ? 1 : 0);
+const firstSeenCache = new Map<string, string | null>();
+async function firstSeenOf(url: string): Promise<string | null> {
+  if (!firstSeenCache.has(url)) firstSeenCache.set(url, await firstCapture(url));
+  return firstSeenCache.get(url)!;
+}
 
 async function doPin(b: BrandEntry, a: Adapter) {
   for (const seed of a.seeds) {
@@ -99,7 +103,8 @@ async function discover(b: BrandEntry, a: Adapter) {
       }
       const page: Page = { url: p.url, timestamp: p.ts, html, related: relHtml };
       if (!a.extract(page).length) continue;
-      pages.push({ ...capture, family: p.family, year: modelYear(p.ts), related });
+      const firstSeen = (await firstSeenOf(p.url)) ?? undefined;
+      pages.push({ ...capture, family: p.family, year: modelYear(p.ts), related, firstSeen });
     } catch (e) {
       console.error(`${b.file}: skip ${p.url} @ ${p.ts}: ${e instanceof Error ? e.message : e}`);
     }
@@ -169,8 +174,8 @@ async function buildAll(only: string[], strict: boolean): Promise<Map<string, { 
 async function main() {
   const [cmd, ...args] = process.argv.slice(2);
   const sel = args.length ? brands.filter((b) => args.includes(b.file)) : brands;
-  if (!cmd || !['pin', 'discover', 'fetch', 'build', 'check'].includes(cmd) || !sel.length) {
-    console.error('usage: npm run catalog -- pin|discover|fetch|build|check [brand-file...]');
+  if (!cmd || !['pin', 'discover', 'fetch', 'build', 'check', 'firstseen'].includes(cmd) || !sel.length) {
+    console.error('usage: npm run catalog -- pin|discover|fetch|build|check|firstseen [brand-file...]');
     process.exit(2);
   }
   if (cmd === 'pin' || cmd === 'discover') {
@@ -178,6 +183,14 @@ async function main() {
       const a = await adapterFor(b.file, b.brand);
       if (cmd === 'pin') await doPin(b, a);
       else await discover(b, a);
+    }
+  } else if (cmd === 'firstseen') {
+    for (const b of sel) {
+      const m = manifestOf(b);
+      const urls = new Set(m.pages.map((p) => p.url));
+      for (const u of urls) await firstSeenOf(u);
+      writeManifest({ ...m, pages: m.pages.map((p) => ({ ...p, firstSeen: (firstSeenCache.get(p.url) ?? p.firstSeen) || undefined })) });
+      console.log(`${b.file}: ${urls.size} urls`);
     }
   } else if (cmd === 'fetch') {
     for (const b of sel) await fetchAll(b);

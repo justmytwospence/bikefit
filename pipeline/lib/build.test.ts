@@ -79,6 +79,62 @@ describe('buildBrand', () => {
     const { manifest, pages, adapter } = setup([{ year: 2024, ts: '20240301000000', url: 'https://a/1', out: [ex('A', s)] }]);
     expect(buildBrand(adapter, manifest, pages, none, midFill).models[0].sizes).toHaveLength(3);
   });
+  it('merges a prefix-related name with the same geometry, latest name leading', () => {
+    const { manifest, pages, adapter } = setup([
+      { year: 2022, ts: '20220301000000', url: 'https://a/1', out: [ex('Domane')] },
+      { year: 2024, ts: '20240301000000', url: 'https://a/2', out: [ex('Domane Gen 4')] },
+    ]);
+    const f = buildBrand(adapter, manifest, pages, none, midFill);
+    expect(f.models).toHaveLength(1);
+    expect(f.models[0]).toMatchObject({ model: 'Domane Gen 4', year: 2022, lastYear: 2024, aliases: ['Domane'] });
+  });
+  it('keeps unrelated names apart even with the same geometry', () => {
+    const { manifest, pages, adapter } = setup([
+      { year: 2022, ts: '20220301000000', url: 'https://a/1', out: [ex('Madone'), ex('Émonda')] },
+    ]);
+    expect(buildBrand(adapter, manifest, pages, none, midFill).models.map((m) => m.model)).toEqual(['Émonda', 'Madone']);
+  });
+  it('does not chain generations through a shared prefix', () => {
+    const { manifest, pages, adapter } = setup([
+      { year: 2021, ts: '20210301000000', url: 'https://a/1', out: [ex('Madone')] },
+      { year: 2023, ts: '20230301000000', url: 'https://a/2', out: [ex('Madone Gen 6')] },
+      { year: 2024, ts: '20240301000000', url: 'https://a/3', out: [ex('Madone Gen 7')] },
+    ]);
+    const f = buildBrand(adapter, manifest, pages, none, midFill);
+    expect(f.models.map((m) => m.model)).toEqual(['Madone Gen 6', 'Madone Gen 7']);
+    expect(f.models.find((m) => m.model === 'Madone Gen 7')!.aliases).toEqual(['Madone']);
+  });
+  it('keeps two entries when a stack differs by 3 mm', () => {
+    const { manifest, pages, adapter } = setup([
+      { year: 2022, ts: '20220301000000', url: 'https://a/1', out: [ex('Bike')] },
+      { year: 2024, ts: '20240301000000', url: 'https://a/2', out: [ex('Bike', [sz('S', 523, 370), sz('M', 540, 380), sz('L', 560, 390)])] },
+    ]);
+    expect(buildBrand(adapter, manifest, pages, none, midFill).models).toHaveLength(2);
+  });
+  it('folds a manual entry with the same geometry into the page-derived years', () => {
+    const rows = sizes().map((s) => [s.size, s.stack, s.reach, 73.5, 72.5, 120, 500, 410, 980, 72] as SizeRow);
+    const manual = { model: 'Bike', year: 2018, category: 'race' as const, source: 'https://other/x', retrieved: '2026-01-01', sizes: rows };
+    const { manifest, pages, adapter } = setup([
+      { year: 2020, ts: '20200301000000', url: 'https://a/1', out: [ex('Bike')] },
+      { year: 2024, ts: '20240301000000', url: 'https://a/2', out: [ex('Bike')] },
+    ]);
+    const f = buildBrand(adapter, manifest, pages, { ...none, manual: [manual] }, midFill);
+    expect(f.models).toHaveLength(1);
+    expect(f.models[0]).toMatchObject({ year: 2018, lastYear: 2024 });
+  });
+  it('dates a URL by its first capture', () => {
+    const data = (out2: Extracted[]) => setup([
+      { year: 2025, ts: '20250301000000', url: 'https://a/1', out: [ex('Bike')] },
+      { year: 2026, ts: '20260301000000', url: 'https://a/1', out: out2 },
+    ]);
+    for (const [out2, years] of [[[ex('Bike', sizes(10))], [2020, 2026]], [[ex('Bike')], [2020, 2026]]] as [Extracted[], number[]][]) {
+      const d = data(out2);
+      d.manifest.pages.forEach((p) => { p.firstSeen = '20190801000000'; });
+      const f = buildBrand(d.adapter, d.manifest, d.pages, none, midFill);
+      expect(f.models[0].year).toBe(years[0]);
+      expect(f.models[f.models.length - 1].lastYear ?? f.models[f.models.length - 1].year).toBe(years[1]);
+    }
+  });
   it('is byte-identical across runs and page order', () => {
     const data = [
       { year: 2020, ts: '20200301000000', url: 'https://a/1', out: [ex('Bike'), ex('Other', sizes(10))] },
