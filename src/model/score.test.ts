@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { fitScore, metricCost, status } from './score';
+import { STYLES } from './styles';
 import type { Band } from './types';
 
 const band: Band = { min: 40, max: 50, weight: 1, scale: 5, center: 0.05, unit: '°' };
@@ -29,4 +30,7 @@ describe('score', () => {
     expect(metricCost(49, flat)).toBe(0);
   });
   it('fitScore(0) is 100', () => expect(fitScore(0)).toBe(100));
+  it('elbow is informational in every style', () => {
+    for (const s of Object.values(STYLES)) for (const p of s.poses) expect(p.bands.elbow!.weight).toBe(0);
+  });
 });

@@ -1,7 +1,7 @@
 import type { Band, Flexibility, MetricId, PoseTarget, Style, StyleId } from './types';
 
 const W: Record<MetricId, number> = {
-  knee: 1, kneeTop: 0.5, hip: 0.6, torso: 1, shoulder: 0.6, elbow: 0.4, seatAngle: 0.4, handLoad: 0.5, kops: 0,
+  knee: 1, kneeTop: 0.5, hip: 0.6, torso: 1, shoulder: 0.6, elbow: 0, seatAngle: 0.4, handLoad: 0.5, kops: 0,
 };
 
 function band(k: MetricId, r: [number, number]): Band {
@@ -88,9 +88,9 @@ export const METRIC_LABELS: Record<MetricId, { short: string; long: string }> = 
   hip: { short: 'Hip', long: 'Hip angle (most closed point)' },
   torso: { short: 'Torso', long: 'Torso angle from horizontal' },
   shoulder: { short: 'Shoulder', long: 'Shoulder angle' },
-  elbow: { short: 'Elbow', long: 'Elbow angle' },
+  elbow: { short: 'Elbow', long: 'Elbow angle (the model assumes this bend; shown for reference)' },
   seatAngle: { short: 'Seat angle', long: 'Effective seat angle: bottom bracket to saddle, from horizontal' },
-  handLoad: { short: 'Hand load', long: 'Share of body weight on the hands at your effort level' },
+  handLoad: { short: 'Hand load', long: 'Estimated share of body weight on the hands at your effort level. It follows saddle setback and effort; stem changes barely move it.' },
   kops: { short: 'Knee/pedal', long: "Knee ahead of the pedal axle at 3 o'clock (for information)" },
 };
 
