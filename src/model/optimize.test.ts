@@ -80,8 +80,8 @@ describe('optimizeFit', () => {
 });
 
 describe('idealLayout', () => {
-  it('puts every race metric of both poses in band', () => {
-    const st = STYLES.race;
+  it.each(['endurance', 'sport', 'race', 'gravel'] as StyleId[])('puts every %s metric of both poses in band', (id) => {
+    const st = STYLES[id];
     const targets = bandsFor(st, 'medium');
     const ctx = makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort);
     const ideal = idealLayout(segments, targets, poseWeights(st.defaultHands), ctx, DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths);

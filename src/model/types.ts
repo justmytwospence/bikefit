@@ -123,7 +123,7 @@ export interface PoseTarget {
   elbowPref: number;
   bands: Partial<Record<MetricId, Band>>;
 }
-export type StyleId = 'endurance' | 'race' | 'gravel';
+export type StyleId = 'endurance' | 'sport' | 'race' | 'gravel';
 export interface Style {
   id: StyleId;
   name: string;

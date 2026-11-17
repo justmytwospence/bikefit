@@ -7,7 +7,7 @@ Four concepts are kept separate:
 - **Body**: height, inseam, flexibility and optional segment lengths.
 - **Bike**: frame geometry plus cockpit and contact dimensions.
 - **Fit parameters**: the knobs (saddle height and fore/aft, seatpost setback, spacers, stem, cranks). Changing one moves the contact points relative to all the others.
-- **Style**: target joint-angle bands (endurance, race, gravel). The ideal saddle and hand positions are derived from your body and shown as targets.
+- **Style**: target joint-angle bands (endurance, sport, race, gravel). The ideal saddle and hand positions are derived from your body and shown as targets.
 
 The Compare tab ranks all saved frames for your body and style, with the build each needs.
 

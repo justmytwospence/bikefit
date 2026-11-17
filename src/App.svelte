@@ -96,6 +96,9 @@
   <header>
     <div class="brand"><i></i>bikefit</div>
     <div class="styles"><Segmented options={styleOptions} bind:value={app.styleId} ariaLabel="Riding style" compact /></div>
+    <select class="stylesel" aria-label="Riding style" bind:value={app.styleId}>
+      {#each styleOptions as o (o.value)}<option value={o.value}>{o.label}</option>{/each}
+    </select>
     <div class="right"><SettingsMenu /><ScoreRing {score} /></div>
   </header>
 
@@ -138,6 +141,11 @@
   .right { display: flex; align-items: center; gap: 4px; }
   .styles { flex: 1; min-width: 0; display: flex; justify-content: center; max-width: 360px; margin: 0 auto; }
   .styles :global(.seg) { width: 100%; }
+  .stylesel { display: none; flex: 1; min-width: 0; max-width: 200px; margin: 0 auto; }
+  @media (max-width: 479px) {
+    .styles { display: none; }
+    .stylesel { display: block; }
+  }
   .view { grid-area: view; height: 52dvh; display: flex; flex-direction: column; min-height: 0; }
   .canvas { flex: 1; min-height: 0; }
   .panel { grid-area: panel; display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); background: var(--bg); }

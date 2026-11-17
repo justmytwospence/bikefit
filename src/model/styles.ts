@@ -46,6 +46,15 @@ export const STYLES: Record<StyleId, Style> = {
     },
     { hip: [45, 65], torso: [32, 45], shoulder: [78, 95], elbow: [125, 155], handLoad: [22, 36] },
   ),
+  sport: style(
+    'sport', 'Sport', 'A moderate drop for fast group rides.',
+    { defaultEffort: 'tempo', defaultHands: 'hoods' }, 156,
+    {
+      knee: [140, 150], kneeTop: [62, 120], hip: [50, 68], torso: [38, 48], shoulder: [82, 96],
+      elbow: [150, 165], seatAngle: [71.5, 75.5], handLoad: [19, 31], kops: [-10, 40],
+    },
+    { hip: [42, 60], torso: [27, 40], shoulder: [79, 97], elbow: [125, 155], handLoad: [23, 37] },
+  ),
   race: style(
     'race', 'Race', 'Low and long for speed.',
     { defaultEffort: 'hard', defaultHands: 'mixed' }, 155,
