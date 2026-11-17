@@ -145,6 +145,8 @@ export interface PoseEval {
   contact: HandContact;
   metrics: Record<MetricId, number>;
   overextended: boolean;
+  /** How far short of the pedal the leg is at worst, mm; 0 when it always reaches. */
+  legShortfall: number;
   overreach: boolean;
   pelvicTilt: number;
   comX: number;

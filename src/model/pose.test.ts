@@ -32,6 +32,7 @@ describe('evaluateFit', () => {
     expect(h.metrics.handLoad).toBeCloseTo(23.73, 1);
     expect(h.metrics.kops).toBeCloseTo(8.33, 1);
     expect(h.overextended).toBe(false);
+    expect(h.legShortfall).toBe(0);
     expect(h.overreach).toBe(false);
   });
   it('matches the spike golden values (drops)', () => {
@@ -70,7 +71,9 @@ describe('evaluateFit', () => {
   it('flags an overextended leg with a high saddle on a short rider', () => {
     const s = resolveSegments({ ...SPIKE_BODY, height: 1650, inseam: 770 });
     const L = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, saddleHeight: 900 });
-    expect(evaluateFit(s, L, ctx(), targets()).poses[0].overextended).toBe(true);
+    const pe = evaluateFit(s, L, ctx(), targets()).poses[0];
+    expect(pe.overextended).toBe(true);
+    expect(pe.legShortfall).toBeGreaterThan(0);
   });
 });
 

@@ -39,6 +39,9 @@
         {/if}
         <div class="dot" style="left:{pos(v, b)}%; background:var(--{st})"></div>
       </div>
+      {#if k === 'knee' && poseEval.overextended}
+        <div class="warn">Can't reach the pedal: {Math.max(1, Math.round(poseEval.legShortfall))} mm short</div>
+      {/if}
       {#if level === 3}<div class="cost">cost {metricCost(v, b).toFixed(2)}</div>{/if}
     </div>
   {/each}
@@ -58,6 +61,7 @@
   .bar { position: relative; height: 10px; margin-top: 4px; background: var(--surface-2); border-radius: 5px; }
   .band { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--ok) 28%, transparent); border-radius: 5px; }
   .dot { position: absolute; top: 0; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; transition: left 0.2s; }
+  .warn { font-size: 11px; font-weight: 600; color: var(--off); margin-top: 4px; }
   .cost { font-size: 11px; color: var(--muted); margin-top: 3px; }
   @media (min-width: 900px) {
     .strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(78px, 1fr)); overflow: visible; padding: 10px 16px; }

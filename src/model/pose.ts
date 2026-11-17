@@ -138,6 +138,7 @@ function evaluatePose(
   let hipMin = Infinity;
   let kops = 0;
   let over = false;
+  let short = 0;
   let legMx = 0;
   for (let i = 0; i < steps; i++) {
     const phi = (360 / steps) * i;
@@ -160,6 +161,7 @@ function evaluatePose(
     let beta: number;
     if (d >= reach) {
       over = true;
+      if (d - reach > short) short = d - reach;
       kneeAngle = 180;
       beta = 0;
     } else {
@@ -209,6 +211,7 @@ function evaluatePose(
         elbow: up.elbowAngle, seatAngle, handLoad, kops,
       },
       overextended: over,
+      legShortfall: short,
       overreach: up.overreach,
       pelvicTilt: tilt,
       comX,

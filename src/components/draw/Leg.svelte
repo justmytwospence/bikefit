@@ -18,10 +18,16 @@
   const stroke = $derived(variant === 'far' ? 'var(--rider-far)' : 'var(--rider)');
 </script>
 
-<polyline
-  points={pts(pose.hip, pose.knee, pose.ankle)} {stroke} stroke-width="12" fill="none"
-  opacity={variant === 'ghost' ? 0.25 : 1} stroke-dasharray={variant === 'ghost' ? '18 14' : undefined}
-/>
+{#if pose.overextended && variant === 'near'}
+  <!-- The leg cannot reach the pedal: the shin is drawn stretched, so mark it. -->
+  <polyline points={pts(pose.hip, pose.knee)} {stroke} stroke-width="12" fill="none" />
+  <polyline points={pts(pose.knee, pose.ankle)} stroke="var(--off)" stroke-width="12" fill="none" stroke-dasharray="22 14" />
+{:else}
+  <polyline
+    points={pts(pose.hip, pose.knee, pose.ankle)} {stroke} stroke-width="12" fill="none"
+    opacity={variant === 'ghost' ? 0.25 : 1} stroke-dasharray={variant === 'ghost' ? '18 14' : undefined}
+  />
+{/if}
 <Shoe
   ball={pose.ball} soleDeg={pose.soleDeg} {seg} {footStack} {cleatOffset} {variant}
   {showBallMark} highlight={highlightCleat}
