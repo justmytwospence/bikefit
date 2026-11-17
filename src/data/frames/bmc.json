@@ -2,28 +2,95 @@
   "brand": "BMC",
   "models": [
     {
-      "model": "Kaius",
-      "year": 2027,
-      "category": "gravel",
-      "source": "https://bmc-switzerland.com/products/kaius-01-one-bikes-bmc-27a-000072",
-      "retrieved": "2026-11-16",
-      "aliases": ["Kaius 01","Kaius Gen 2"],
+      "model": "Crossmachine CX01",
+      "year": 2020,
+      "category": "cyclocross",
+      "source": "https://www.bmc-switzerland.com/crossmachine-cx01-two-301609.html",
+      "retrieved": "2019-07-17",
+      "archive": "https://web.archive.org/web/20190717021753/https://www.bmc-switzerland.com/crossmachine-cx01-two-301609.html",
       "sizes": [
-        ["47",521,385,74.3,70.8,88,429,425,1010,79],
-        ["51",541,392,74.3,70.8,109,449,425,1024,79],
-        ["54",561,396,73.8,70.8,126,471,425,1027,79],
-        ["56",581,400,73.8,71.6,147,485,425,1032,79],
-        ["58",606,405,73.8,71.6,173,509,425,1045,79],
-        ["61",631,409,73.8,71.6,199,533,425,1058,79]
+        ["48",506,368,73.5,70.5,108,475,425,994,62],
+        ["51",530,377,73.5,72,128,505,425,997,62],
+        ["54",550,386,73.5,72.5,148,535,425,1008,62],
+        ["57",572,394,73.5,72.5,171,565,425,1022,62],
+        ["60",601,405,73.5,72.5,201,600,425,1043,62]
+      ]
+    },
+    {
+      "model": "Kaius",
+      "year": 2024,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/kaius-01-one-bikes-bmc-26a-000036",
+      "retrieved": "2026-09-22",
+      "archive": "https://web.archive.org/web/20260922113516/https://bmc-switzerland.com/products/kaius-01-one-bikes-bmc-26a-000036",
+      "sizes": [
+        ["47",510,390,73,71,85,428,420,1003,80],
+        ["51",530,397,73,71,106,452,420,1017,80],
+        ["54",550,401,73,72,123,468,420,1015,80],
+        ["56",570,405,73,72,144,493,420,1026,80],
+        ["58",595,410,73,72,170,513,420,1039,80],
+        ["61",620,414,73,72,196,533,420,1051,80]
+      ]
+    },
+    {
+      "model": "Roadmachine",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.bmc-switzerland.com/roadmachine-02-two.html",
+      "retrieved": "2019-12-14",
+      "archive": "https://web.archive.org/web/20191214132732/https://www.bmc-switzerland.com/roadmachine-02-two.html",
+      "estimated": ["headTubeLength","chainstay"],
+      "sizes": [
+        ["47",516,374,74.2,71.2,112,420,414,982,71],
+        ["51",541,382,74.2,71.2,139,457,415,999,71],
+        ["54",562,386,74.2,72,152,500,416,997,71],
+        ["56",586,390,74.2,72,181,522,417,1008,71],
+        ["58",610,394,74.2,72,206,539,418,1020,71],
+        ["61",644,398,74.2,72,242,573,420,1035,71]
+      ]
+    },
+    {
+      "model": "Roadmachine",
+      "year": 2021,
+      "lastYear": 2024,
+      "category": "endurance",
+      "source": "https://www.bmc-switzerland.com/eu_en/bmc-roadmachine-five-23.html",
+      "retrieved": "2023-12-02",
+      "archive": "https://web.archive.org/web/20231202175643/https://www.bmc-switzerland.com/eu_en/bmc-roadmachine-five-23.html",
+      "sizes": [
+        ["47",516,374,74.2,71.2,112,420,410,982,71],
+        ["51",541,382,74.2,71.2,139,457,410,999,71],
+        ["54",562,386,74.2,72,156,500,410,997,71],
+        ["56",586,390,74.2,72,181,522,410,1008,71],
+        ["58",610,394,74.2,72,206,539,410,1020,71],
+        ["61",644,398,74.2,72,242,573,410,1035,71]
       ]
     },
     {
       "model": "Roadmachine",
       "year": 2024,
       "category": "endurance",
-      "source": "https://bmc-switzerland.com/products/roadmachine-01-one-bikes-bmc-27a-000016",
-      "retrieved": "2026-11-16",
-      "aliases": ["Roadmachine 01","Roadmachine Gen 3"],
+      "source": "https://www.bmc-switzerland.com/intl_en/bmc-roadmachine-01-mod-carbon-metallic-grey-23.html",
+      "retrieved": "2023-11-28",
+      "archive": "https://web.archive.org/web/20231128153655/https://www.bmc-switzerland.com/intl_en/bmc-roadmachine-01-mod-carbon-metallic-grey-23.html",
+      "sizes": [
+        ["47",516,374,74.2,72,112,420,410,982,71],
+        ["51",541,382,74.2,71.2,139,457,410,999,71],
+        ["54",562,386,74.2,72,156,500,410,997,71],
+        ["56",586,390,74.2,72,181,522,410,1008,71],
+        ["58",610,394,74.2,72,206,539,410,1020,71],
+        ["61",644,398,74.2,72,242,573,410,1035,71]
+      ]
+    },
+    {
+      "model": "Roadmachine",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "endurance",
+      "source": "https://bmc-switzerland.com/products/roadmachine-four-bikes-bmc-24-10605-006",
+      "retrieved": "2026-07-14",
+      "archive": "https://web.archive.org/web/20260714115203/https://bmc-switzerland.com/products/roadmachine-four-bikes-bmc-24-10605-006",
       "sizes": [
         ["47",525,370,74.2,71.4,112,414,415,982,75],
         ["51",550,379,74.2,71.4,138,461,415,1000,75],
@@ -31,6 +98,88 @@
         ["56",595,388,74.2,72.2,181,508,415,1010,75],
         ["58",620,393,74.2,72.2,207,529,415,1023,75],
         ["61",645,398,74.2,72.2,233,550,415,1036,75]
+      ]
+    },
+    {
+      "model": "Roadmachine AL X",
+      "year": 2023,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/roadmachine-al-x-one-bikes-bmc-23-10607-003",
+      "retrieved": "2025-06-18",
+      "archive": "https://web.archive.org/web/20250618233732/https://bmc-switzerland.com/products/roadmachine-al-x-one-bikes-bmc-23-10607-003",
+      "sizes": [
+        ["XS",525,390,74,70,92,430,430,1028,69],
+        ["S",550,400,74,70,118,445,430,1047,69],
+        ["M",580,410,74,70,150,475,430,1068,69],
+        ["L",610,420,74,70,182,505,430,1089,69],
+        ["XL",640,430,74,70,214,540,430,1110,69]
+      ]
+    },
+    {
+      "model": "Roadmachine X",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.bmc-switzerland.com/roadmachine-x-302030.html",
+      "retrieved": "2020-08-07",
+      "archive": "https://web.archive.org/web/20200807125258/https://www.bmc-switzerland.com/roadmachine-x-302030.html",
+      "sizes": [
+        ["47",525,376,73.5,70.5,128,465,420,998,71],
+        ["51",550,376,73.5,70.5,154,490,420,1007,71],
+        ["54",571,385,73.5,71.5,172,533,420,1016,71],
+        ["56",585,391,73.5,71.5,187,548,420,1024,71],
+        ["58",604,400,73.5,72,205,564,420,1034,71],
+        ["61",628,408,73.5,72.5,228,600,420,1044,71]
+      ]
+    },
+    {
+      "model": "Roadmachine X",
+      "year": 2023,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/roadmachine-x-one-bikes-bmc-23-10607-005",
+      "retrieved": "2025-10-14",
+      "archive": "https://web.archive.org/web/20251014174402/https://bmc-switzerland.com/products/roadmachine-x-one-bikes-bmc-23-10607-005",
+      "sizes": [
+        ["47",516,374,74.2,71.2,112,420,410,982,71],
+        ["51",541,382,74.2,71.2,139,457,410,999,71],
+        ["54",562,386,74.2,72,156,500,410,997,71],
+        ["56",586,390,74.2,72,181,522,410,1008,71],
+        ["58",610,394,74.2,72,206,539,410,1020,71],
+        ["61",644,398,74.2,72,242,573,410,1035,71]
+      ]
+    },
+    {
+      "model": "Roadmachine X",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/roadmachine-01-x-one-bikes-bmc-24-10626-001",
+      "retrieved": "2025-10-22",
+      "archive": "https://web.archive.org/web/20251022185852/https://bmc-switzerland.com/products/roadmachine-01-x-one-bikes-bmc-24-10626-001",
+      "sizes": [
+        ["47",525,370,74.2,71.4,112,414,415,982,75],
+        ["51",550,379,74.2,71.4,138,461,415,1000,75],
+        ["54",570,383,74.2,72.2,154,488,415,997,75],
+        ["56",595,388,74.2,72.2,181,508,415,1010,75],
+        ["58",620,393,74.2,72.2,207,529,415,1023,75],
+        ["61",645,398,74.2,72.2,233,550,415,1036,75]
+      ]
+    },
+    {
+      "model": "Teammachine ALR",
+      "year": 2020,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://bmc-switzerland.com/products/teammachine-alr-two-bikes-bmc-23-10602-004",
+      "retrieved": "2025-12-21",
+      "archive": "https://web.archive.org/web/20251221160209/https://bmc-switzerland.com/products/teammachine-alr-two-bikes-bmc-23-10602-004",
+      "sizes": [
+        ["47",515,365,73.5,70.5,118,442,410,971,69],
+        ["51",539,374,73.5,72,138,505,410,975,69],
+        ["54",559,383,73.5,72.5,157,535,410,985,69],
+        ["57",583,391,73.5,72.5,182,565,410,1001,69],
+        ["60",610,402,73.5,72.5,210,600,410,1020,69]
       ]
     },
     {
@@ -50,12 +199,78 @@
       ]
     },
     {
-      "model": "Teammachine SLR",
+      "model": "Teammachine R",
       "year": 2026,
       "category": "race",
+      "source": "https://bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-26a-000006",
+      "retrieved": "2026-03-08",
+      "archive": "https://web.archive.org/web/20260308163250/https://bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-26a-000006",
+      "sizes": [
+        ["47",504,368,74,71.5,108,418,410,968,69],
+        ["51",528,378,74,71.5,133,463,410,986,69],
+        ["54",548,387,73.5,72.3,149,499,410,989,69],
+        ["56",563,393,73.5,72.3,165,519,410,999,69],
+        ["58",582,402,73,72.3,184,541,410,1015,69],
+        ["61",608,409,73,72.3,211,570,410,1030,69]
+      ]
+    },
+    {
+      "model": "Teammachine SLR",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "race",
+      "source": "https://www.bmc-switzerland.com/teammachine-slr01-disc-mod-301807.html",
+      "retrieved": "2020-08-11",
+      "archive": "https://web.archive.org/web/20200811182018/https://www.bmc-switzerland.com/teammachine-slr01-disc-mod-301807.html",
+      "sizes": [
+        ["47",506,367,73.5,70.5,113,423,410,970,69],
+        ["51",530,377,73.5,72,133,468,410,975,69],
+        ["54",550,386,73.5,72.5,153,513,410,986,69],
+        ["56",565,392,73.5,72.5,168,534,410,996,69],
+        ["58",584,401,73.5,72.5,188,554,410,1012,69],
+        ["61",608,409,73.5,72.5,213,584,410,1027,69]
+      ]
+    },
+    {
+      "model": "Teammachine SLR",
+      "year": 2021,
+      "lastYear": 2027,
+      "category": "race",
+      "source": "https://bmc-switzerland.com/products/teammachine-slr-one-bikes-bmc-26a-000019",
+      "retrieved": "2026-10-12",
+      "archive": "https://web.archive.org/web/20261012070049/https://bmc-switzerland.com/products/teammachine-slr-one-bikes-bmc-26a-000019",
+      "sizes": [
+        ["47",506,367,73.5,71.5,110,423,410,968,69],
+        ["51",530,377,73.5,71.5,130,468,410,986,69],
+        ["54",550,386,73.5,72.3,145,504,410,989,69],
+        ["56",565,392,73.5,72.3,165,524,410,1000,69],
+        ["58",584,401,73.5,72.3,184,545,410,1015,69],
+        ["61",608,409,73.5,72.3,210,574,410,1030,69]
+      ]
+    },
+    {
+      "model": "Teammachine SLR",
+      "year": 2022,
+      "category": "race",
+      "source": "https://www.bmc-switzerland.com/us_en/teammachine-slr01-ics-carbon-module-22.html",
+      "retrieved": "2021-07-29",
+      "archive": "https://web.archive.org/web/20210729150546/https://www.bmc-switzerland.com/us_en/teammachine-slr01-ics-carbon-module-22.html",
+      "sizes": [
+        ["47",506,367,73.5,71.5,110,423,410,968,69],
+        ["51",530,377,73.5,71.5,130,468,410,986,69],
+        ["54",550,386,73.5,72.5,145,504,410,989,69],
+        ["56",565,392,73.5,72.3,165,524,410,1000,69],
+        ["58",584,401,73.5,72.3,184,545,410,1015,69],
+        ["61",608,409,73.5,72.3,210,574,410,1030,69]
+      ]
+    },
+    {
+      "model": "Teammachine SLR",
+      "year": 2027,
+      "category": "race",
       "source": "https://bmc-switzerland.com/products/teammachine-slr-01-one-bikes-bmc-27a-000030",
-      "retrieved": "2026-11-16",
-      "aliases": ["SLR","Teammachine SLR 01","Teammachine SLR Gen 5"],
+      "retrieved": "2026-09-22",
+      "archive": "https://web.archive.org/web/20260922113718/https://bmc-switzerland.com/products/teammachine-slr-01-one-bikes-bmc-27a-000030",
       "sizes": [
         ["47",506,367,74,71.5,108,422,410,968,69],
         ["51",530,377,74,71.5,133,464,410,986,69],
@@ -66,18 +281,98 @@
       ]
     },
     {
+      "model": "Teammachine SLR 03",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "race",
+      "source": "https://www.bmc-switzerland.com/teammachine-slr03-one-301821.html",
+      "retrieved": "2020-08-08",
+      "archive": "https://web.archive.org/web/20200808113517/https://www.bmc-switzerland.com/teammachine-slr03-one-301821.html",
+      "sizes": [
+        ["47",506,370,73.5,70.5,108,442,402,963,69],
+        ["51",530,378,73.5,72.5,128,505,402,967,69],
+        ["54",550,387,73.5,72.5,148,535,402,978,69],
+        ["57",571,394,73.5,72.5,170,565,402,992,69],
+        ["60",601,405,73.5,72.5,201,600,402,1012,69]
+      ]
+    },
+    {
+      "model": "Timemachine Road",
+      "year": 2020,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://bmc-switzerland.com/products/timemachine-road-01-two-bikes-bmc-23-10616-008",
+      "retrieved": "2025-11-04",
+      "archive": "https://web.archive.org/web/20251104160849/https://bmc-switzerland.com/products/timemachine-road-01-two-bikes-bmc-23-10616-008",
+      "sizes": [
+        ["47",496,373,73.5,71.2,88,480,410,975,70],
+        ["51",520,381,73.5,71.2,113,518,410,991,70],
+        ["54",540,390,73.5,72,135,548,410,994,70],
+        ["56",555,395,73.5,72,150,568,410,1004,70],
+        ["58",574,405,73.5,72,170,588,410,1020,70],
+        ["61",598,413,73.5,72,196,611,410,1036,70]
+      ]
+    },
+    {
       "model": "URS",
-      "year": 2024,
+      "year": 2020,
+      "lastYear": 2021,
       "category": "gravel",
-      "source": "https://bmc-switzerland.com/products/urs-one-bikes-bmc-27a-000056",
-      "retrieved": "2026-11-16",
-      "aliases": ["URS 01","URS LT","URS 01 LT","URS Gen 2"],
+      "source": "https://www.bmc-switzerland.com/urs-one-301837.html",
+      "retrieved": "2021-01-28",
+      "archive": "https://web.archive.org/web/20210128054031/https://www.bmc-switzerland.com/urs-one-301837.html",
+      "estimated": ["chainstay"],
+      "sizes": [
+        ["S",538,403,74,70,113,431,429,1041,69],
+        ["M",569,415,74,70,146,459,429,1064,69],
+        ["L",603,419,74,70,172,492,430,1081,69],
+        ["XL",641,429,74,70,207,527,431,1105,69]
+      ]
+    },
+    {
+      "model": "URS",
+      "year": 2022,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/urs-lt-one-bikes-bmc-23-10619-011",
+      "retrieved": "2025-10-14",
+      "archive": "https://web.archive.org/web/20251014063849/https://bmc-switzerland.com/products/urs-lt-one-bikes-bmc-23-10619-011",
+      "sizes": [
+        ["S",538,403,74,70,113,431,425,1041,69],
+        ["M",569,415,74,70,146,459,425,1064,69],
+        ["L",603,419,74,70,172,492,425,1081,69],
+        ["XL",641,429,74,70,207,527,425,1105,69]
+      ]
+    },
+    {
+      "model": "URS",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/urs-two-bikes-bmc-26a-000043",
+      "retrieved": "2026-03-20",
+      "archive": "https://web.archive.org/web/20260320100528/https://bmc-switzerland.com/products/urs-two-bikes-bmc-26a-000043",
       "sizes": [
         ["XS",560,390,74.5,69,133,430,430,1052,76],
         ["S",560,400,74.5,69,133,445,430,1062,76],
         ["M",580,410,74.5,69.5,140,475,430,1070,76],
         ["L",610,420,74.5,69.5,172,505,430,1091,76],
         ["XL",640,430,74.5,69.5,204,540,430,1112,76]
+      ]
+    },
+    {
+      "model": "URS AL",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/urs-al-two-bikes-bmc-23-10623-006",
+      "retrieved": "2025-10-14",
+      "archive": "https://web.archive.org/web/20251014142019/https://bmc-switzerland.com/products/urs-al-two-bikes-bmc-23-10623-006",
+      "sizes": [
+        ["XS",525,390,74,70,92,430,430,1028,69],
+        ["S",550,400,74,70,118,445,430,1047,69],
+        ["M",580,410,74,70,150,475,430,1068,69],
+        ["L",610,420,74,70,182,505,430,1089,69],
+        ["XL",640,430,74,70,214,540,430,1110,69]
       ]
     }
   ]

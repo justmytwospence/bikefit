@@ -1,0 +1,238 @@
+{
+ "brand": "Colnago",
+ "file": "colnago",
+ "pages": [
+  {
+   "url": "https://www.colnago.com/bike-product/detail/c68-allroad",
+   "timestamp": "20231111125842",
+   "sha256": "c332f0d0aeb0d03e32d0a8df0f1806b3320b274dbaa5ca39dc6f1a3c112f04b2",
+   "family": "c68-allroad",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/c68-allroad-bike/technical-specifications",
+   "timestamp": "20250912034253",
+   "sha256": "db6912238a2fe222a3d8670cbad26aced32389a6a064d212b79ca5f23733ba16",
+   "family": "c68-allroad",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/c68-allroad-bike/technical-specifications",
+   "timestamp": "20260413173244",
+   "sha256": "903f24587be3f7100dd3f0c939594dd2b8feecb106d2be688961c6f1bbc0da9e",
+   "family": "c68-allroad",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/premium-bikes/c68-gravel-bike/technical-specifications",
+   "timestamp": "20260210175734",
+   "sha256": "70d907fc6211bb799fa57253584c1f34bebe67bdc26d216ead4c019ff9df8645",
+   "family": "c68-gravel",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/bike-product/detail/c68-bike",
+   "timestamp": "20230925004336",
+   "sha256": "e3b3059ea0ba4de3ff69928129264c42ad042eda0815e4915ab394113595da65",
+   "family": "c68-road",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/c68-road-bike/technical-specifications",
+   "timestamp": "20251109012308",
+   "sha256": "8a53b9be4193597fc92cdd0a4eeae6e04bfd035ea16a8e7af5bdba56f7e2fa05",
+   "family": "c68-road",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/c68-road-bike/technical-specifications",
+   "timestamp": "20260423001648",
+   "sha256": "651f31281160bfd9ccaacd91f2455d58b86c8169b924e3b870878e56da25a6e5",
+   "family": "c68-road",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/products/c68-rim-brake-bike",
+   "timestamp": "20250626172138",
+   "sha256": "dfd8af32c588193ecd5d2e1615387ab695c188b56fa775b7c05bc4b1e758e0ce",
+   "family": "c68-road-rim",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/products/c68-rim-brake-bike",
+   "timestamp": "20260717081253",
+   "sha256": "5ed239dea22e9c8968b49a7faf88a536013e84f907e3ae351c0336d283c9b4eb",
+   "family": "c68-road-rim",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/bike-product/detail/c68-road-titanium",
+   "timestamp": "20231207203051",
+   "sha256": "684d7ef2215b5f7a5dbd593b09aed616f650fe52b96eaa82cd4949086100be5c",
+   "family": "c68-road-ti",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/c68-road-ti-bike/technical-specifications",
+   "timestamp": "20251107120555",
+   "sha256": "14b0cb70a8ed310a4457f8ecbb83f691c6921d13ae2c5d83ca2983b7dc680f51",
+   "family": "c68-road-ti",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/c68-road-ti-bike/technical-specifications",
+   "timestamp": "20260413170722",
+   "sha256": "c85534b89b09b097e90cd82646e5a95b8d0351cfd22d43b0aa91b45a96408a9c",
+   "family": "c68-road-ti",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/bike-product/detail/g3-x-b",
+   "timestamp": "20230925004529",
+   "sha256": "307c511d0468f6b62873a5cc198210802195aae510dd3fb87410aab4d157612b",
+   "family": "g3-x",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/products/g3-x-bike",
+   "timestamp": "20250905183819",
+   "sha256": "1489a83a0c05550e8b7af9b7bba0164c6345cc4acd6d050996b30ae9f99dcf61",
+   "family": "g3-x",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/products/g3-x-bike",
+   "timestamp": "20260521195554",
+   "sha256": "e097d98abdca7ab1cd6ed960ae0fcb6b83d258a0e4b50473d47953067eb9597f",
+   "family": "g3-x",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/products/g4-x-pigr",
+   "timestamp": "20251221133828",
+   "sha256": "8fd6a418c18e5c966424b117e64dda3627997ae2298e4a706bc0f558b2324d28",
+   "family": "g4-x",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/products/steelnovo-bike",
+   "timestamp": "20251231182601",
+   "sha256": "1bae1c3b32c773c5a10777aa8a2720fc813527952c5d08650066d2ed53af610c",
+   "family": "steelnovo",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/products/steelnovo-bike",
+   "timestamp": "20260607230610",
+   "sha256": "6beeaaee81048509679d102b8ba9bb47f9cc5d3c85f0c4807055e9f0dfb14ebd",
+   "family": "steelnovo",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/bike-product/detail/V3-Bike",
+   "timestamp": "20230924233328",
+   "sha256": "e0c1900779034119e716fbc8a68bce2331190e251809e2fa77f71c7f487682a9",
+   "family": "v3",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/products/v3-bike",
+   "timestamp": "20250218064055",
+   "sha256": "6673f5819294f4bed50fa4ff87f8ed560debba24fc2ed5c071ae00187e66509c",
+   "family": "v3",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/bike-product/detail/V3Rs",
+   "timestamp": "20231111133510",
+   "sha256": "df4458a15136b5555a27a0f490126a53380579b88fbef543156c3630c0457751",
+   "family": "v3rs",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/products/v4-bike",
+   "timestamp": "20251006034934",
+   "sha256": "fc2a3ecf1beb03bbb1ea063c3892261bbe3083932680101b9e754c7c08f1fa3c",
+   "family": "v4",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/bike-product/detail/v4rs",
+   "timestamp": "20230924235335",
+   "sha256": "d8c84c743bce3ba72e1eedcf3e11e6c91976ffcabb80246e74ca03bb62b878d7",
+   "family": "v4rs",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/v4rs-bike/technical-specifications",
+   "timestamp": "20260313115854",
+   "sha256": "1bf144ca6908b67cdbb50f560de4e0ec1ffb437bb0d32fba18adc9585c28ba3a",
+   "family": "v4rs",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/products/v4rs-tadej",
+   "timestamp": "20250911141159",
+   "sha256": "dc07e96e9681a99ea5fbddfea95ffbd441f0078b400d460f9b47de32689987fa",
+   "family": "v4rs",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/v5rs-bike/technical-specifications",
+   "timestamp": "20260105115107",
+   "sha256": "8d5040cb14890961c70573a95e1733eab88891f4700851bad473d2c5b2ae7f3e",
+   "family": "v5rs",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/premium-bikes/v5rs-bike/technical-specifications",
+   "timestamp": "20251110081010",
+   "sha256": "ac81e15adb88da52e86593efb2e44b8ccc2248ddb0f680efd5038bad5f0ed08b",
+   "family": "v5rs",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en-us/premium-bikes/y1rs-road-bike/technical-specifications",
+   "timestamp": "20250424095533",
+   "sha256": "1889d15b401ff7924445cec1e54aec01bd6abc982acfec88400f93b3a7eed4d8",
+   "family": "y1rs",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.colnago.com/en/premium-bikes/y1rs-road-bike/technical-specifications",
+   "timestamp": "20260209001321",
+   "sha256": "7952e7639c891267e6fad3a512c93e3e3ec2dc85de08d757edc1f1c2636a1307",
+   "family": "y1rs",
+   "year": 2026,
+   "related": []
+  }
+ ]
+}

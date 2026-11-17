@@ -1,0 +1,398 @@
+{
+ "brand": "Cervélo",
+ "file": "cervelo",
+ "pages": [
+  {
+   "url": "https://www.cervelo.com/en/aspero",
+   "timestamp": "20191209003826",
+   "sha256": "bd426624d2e76d67a0fa9bc0e6c23585dd7640617ebd2d046a9ea24226413c34",
+   "family": "aspero",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/aspero",
+   "timestamp": "20211203202656",
+   "sha256": "63c924b99736a6eb351bb1b4024bc0317ab6f97a3d58813bc0d978f76108219b",
+   "family": "aspero",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero",
+   "timestamp": "20231209083949",
+   "sha256": "f972f1ad67a4e61ccabc35b5b3a2f48b9f9eef68a5d72ecb43d735706a7b037f",
+   "family": "aspero",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero",
+   "timestamp": "20251215091543",
+   "sha256": "967903d86741c303648fb530ea9670c47a51ef51a0ae3243c2db0fd4860f7401",
+   "family": "aspero",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero",
+   "timestamp": "20261014190352",
+   "sha256": "730fab5aa90c023b2f26ad12ccd536e8f0751f1df0090de18b9e6cc6ce80ab22",
+   "family": "aspero",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero-2023",
+   "timestamp": "20251224061350",
+   "sha256": "a5f7f2c7a332a1317ec307d5647c40bb6944a5aec46015e3eabc9fc957881344",
+   "family": "aspero-2023",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero-2023",
+   "timestamp": "20260810233902",
+   "sha256": "04cb80655d8bb81074bd5da2cc46f7c9835d831bb7a5c8e2660ee3437205fd28",
+   "family": "aspero-2023",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en_US/aspero-5",
+   "timestamp": "20211024094117",
+   "sha256": "e0764992d773d1f12fb9c3b725018f92a645134a224c3afb3ef056447a454836",
+   "family": "aspero-5",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero-5",
+   "timestamp": "20231001230659",
+   "sha256": "a27ca5b4df0d9c7ad92aa4c65a4dbf6c1ecfa4295a81133d5ca68deb390bbfd9",
+   "family": "aspero-5",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero-5",
+   "timestamp": "20251211065437",
+   "sha256": "1aac3c94a604d855f1fe2a6aceceb6e0ee68392263c895ec82dbe2ce5aea44f8",
+   "family": "aspero-5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/aspero-5",
+   "timestamp": "20261014190352",
+   "sha256": "6f50d8ea62563cb01acbf9d982e509760d2a4fa4f9c8ef25d9c49cce98f377ec",
+   "family": "aspero-5",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/c2",
+   "timestamp": "20191116211609",
+   "sha256": "be272ab1bf4a2f208d272264f65c011cdc6cd384512129552504c7d81dafe067",
+   "family": "c2",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/c2",
+   "timestamp": "20200612060537",
+   "sha256": "4a167dfef84a83f21e42fe27db0f6f8b2bff8734c18b3bde47fa8c6038c6ef99",
+   "family": "c2",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en_US/c3",
+   "timestamp": "20191216051802",
+   "sha256": "618ff9d75e7e2ebd7ab364958c46f6c6d8d4a3af42002a295bdef58b411708a7",
+   "family": "c3",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/c3",
+   "timestamp": "20200612053934",
+   "sha256": "c3776904cfb5dc6f1e98a1e177583b025ad4a506aedf5988ea3e7d04e5820828",
+   "family": "c3",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/bikes/c-series/c5",
+   "timestamp": "20190716221854",
+   "sha256": "659ed80fd3989dd3bfcc7a115e48532f74973d05027045a4b20bedc58fc5dacc",
+   "family": "c5",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en_US/c5",
+   "timestamp": "20211023071527",
+   "sha256": "b4087a6955879bf1fb524183963ba450adc45249c109d6c34a12c73ce3d6e8a7",
+   "family": "c5",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en_US/caledonia",
+   "timestamp": "20211023083351",
+   "sha256": "81c20168aba8bd456b53ab66d7cceef991abd1572ba34b01d1d8bc1c8a4b9008",
+   "family": "caledonia",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia",
+   "timestamp": "20231215144739",
+   "sha256": "611157930eeb1cd8c4f1a3b1399f7d4d8ac384e565a7791099b3418cdfb5a5cc",
+   "family": "caledonia",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia",
+   "timestamp": "20251112025739",
+   "sha256": "866ddbd0b4251de34341122fc5d470e230a62e5df9a8c5c0f548d8b5af9e69cd",
+   "family": "caledonia",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia",
+   "timestamp": "20261014190347",
+   "sha256": "72214f4022149805925af377932257fc83d83ed937065d7720ef573cda4fc7fd",
+   "family": "caledonia",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en_US/caledonia-5",
+   "timestamp": "20210923183500",
+   "sha256": "7afdc86765577d0b0b17fe159c106c1404ae9ba1b9f0fc99ae23f1840ff88f59",
+   "family": "caledonia-5",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia-5",
+   "timestamp": "20231206053114",
+   "sha256": "4f93b0ae98b55868de29a197c5f7d45198df7e758b356229c09ce131c0aa3cf3",
+   "family": "caledonia-5",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia-5",
+   "timestamp": "20251112025739",
+   "sha256": "03afb7db40c5014824920c72c7353e7d01156ee1837ef658ae4bd2be2c681737",
+   "family": "caledonia-5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia-5",
+   "timestamp": "20261014190347",
+   "sha256": "dd3bd0078f9c803b55e43edf511e53e7dd33238cd472e4330ea05df017b66d67",
+   "family": "caledonia-5",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia-5-2023",
+   "timestamp": "20250915000835",
+   "sha256": "6bee4d21da95e2bc3b7ce6dcf3f338dd7859ee93883ab0920236d7e4b3bf7dbe",
+   "family": "caledonia-5-2023",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/caledonia-5-2023",
+   "timestamp": "20260614193342",
+   "sha256": "051fc2651ec27d7367c38f74629adb4a661ff725dcf2695e70fcc6a27f034bc0",
+   "family": "caledonia-5-2023",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/r2",
+   "timestamp": "20191116212946",
+   "sha256": "d3c45b1fd675b964b40c4c2a5890e2877cb3bc0b686190b072ef9e983e281e92",
+   "family": "r2",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/r2",
+   "timestamp": "20200612054000",
+   "sha256": "2f6bf6ae8be5455161bbdb42813d807e32a3733cfc5bc56f41963b319bf219c1",
+   "family": "r2",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en_US/r5",
+   "timestamp": "20191216052042",
+   "sha256": "c2b9567767279471237f2f127415ad60bc808ed8d445889dbad13a77f071188f",
+   "family": "r5",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/r5",
+   "timestamp": "20211203202627",
+   "sha256": "631b57ce8e0d4ac99c12fe032b3b8f966d759775bbb4a840b90fc1a3e76c349f",
+   "family": "r5",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/r5",
+   "timestamp": "20231209072505",
+   "sha256": "3feed095b6a76d90473cf4c50835293786f4ee893d4c923a01b0cbe1732275f6",
+   "family": "r5",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/r5",
+   "timestamp": "20251224061350",
+   "sha256": "a1d73eb07f6bea84ac7753d0da1d8ad3710927481ebb341c40fa4e3e4a7db58c",
+   "family": "r5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/r5",
+   "timestamp": "20261014190347",
+   "sha256": "7b6af1e36f892cfa0d50c4cbe1810ab375b278668f7a340c431f8b2552143c21",
+   "family": "r5",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/r5-cx",
+   "timestamp": "20231206054547",
+   "sha256": "d0322a07983e14ca655ea5222b80989f7241845f526ac31465de33d328afc94e",
+   "family": "r5-cx",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/r5-cx",
+   "timestamp": "20251112025812",
+   "sha256": "534cb4cef9b3174ecba7b5dfcd23f77d5583b48a2cc6c7779872f24100cfa6b9",
+   "family": "r5-cx",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/r5-cx",
+   "timestamp": "20261014190352",
+   "sha256": "e3f891cc1ead70ba687ca4f791747cb100f8789c0920f2d63f0c44891c59eedf",
+   "family": "r5-cx",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/s2",
+   "timestamp": "20190716223440",
+   "sha256": "9ed101f207771976a2b7a23ba96878b96aad71acf86d0877ff20763c427b6e8f",
+   "family": "s2",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en_US/s3",
+   "timestamp": "20200615131142",
+   "sha256": "296387783907f7137aa3fb632a451d67d52bf77cc3ba1b7e344dad5aa1b49c40",
+   "family": "s3",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/s3",
+   "timestamp": "20191207042315",
+   "sha256": "53a5e178cfe0e3e51e9996c092dfdd1268dd54fddea902e1b07b4a206d655f18",
+   "family": "s3",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/s5",
+   "timestamp": "20191216054915",
+   "sha256": "85dad829ea3fed534560cfc6bf73575285fd5d6d10a946f301e2317eeb243064",
+   "family": "s5",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en/s5",
+   "timestamp": "20211203201950",
+   "sha256": "8496570496f72ec4bd5b672f7d09fd5522fe11adc3747945631d1169cd81508a",
+   "family": "s5",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/s5",
+   "timestamp": "20230928181133",
+   "sha256": "c2c2caaee527d98eab391d918699b78dd000b8bcbb4427ef8ecad4458749864e",
+   "family": "s5",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/s5",
+   "timestamp": "20251113232324",
+   "sha256": "218f908f18f1942f357aa007a52ad1648111c306287bd95897d32c807376d6e4",
+   "family": "s5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/s5",
+   "timestamp": "20261014190347",
+   "sha256": "d70ff1f6f2f94d76947bbd0d144e936ac779debdad65886b3b430eaf437e80d1",
+   "family": "s5",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/s5-2021",
+   "timestamp": "20221203213445",
+   "sha256": "5bd83bc08808152a6f075b13313c01b1ae5c41b4b191698610ac50d209f8e6c2",
+   "family": "s5-2021",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/soloist",
+   "timestamp": "20231209084440",
+   "sha256": "080102b2cd06a282e6d80b6d100e55502a2ec77e58bd0414eb5c74726c492401",
+   "family": "soloist",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/soloist",
+   "timestamp": "20251112025739",
+   "sha256": "d630d0b49f18a0ab2d44d96b990ece83e9aa34daeb06ca95cedc963ab7bd0a68",
+   "family": "soloist",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.cervelo.com/en-US/bikes/soloist",
+   "timestamp": "20261014190347",
+   "sha256": "105d35922807124d5839309732c1093213bc1918f03e5737740c11dcf00da4f9",
+   "family": "soloist",
+   "year": 2027,
+   "related": []
+  }
+ ]
+}

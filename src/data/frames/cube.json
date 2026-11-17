@@ -3,19 +3,135 @@
   "models": [
     {
       "model": "Agree C:62",
-      "year": 2023,
+      "year": 2020,
       "category": "endurance",
-      "source": "https://www.cube.eu/cube-agree-c-62-pro-carbon-n-black/1132200",
-      "retrieved": "2026-11-16",
-      "aliases": ["Agree"],
+      "source": "https://www.cube.eu/2019/bikes/road/road-cyclocross/agree/cube-agree-c62-pro-carbonnred-2019/",
+      "retrieved": "2019-12-12",
+      "archive": "https://web.archive.org/web/20191212224900/https://www.cube.eu/2019/bikes/road/road-cyclocross/agree/cube-agree-c62-pro-carbonnred-2019/",
       "sizes": [
-        ["47",513,376,74.6,71,112,410,412,986,73],
-        ["50",523,378,74.6,71.5,120,440,412,987,73],
-        ["53",544,383,74,72,140,470,412,994,73],
-        ["56",572,391,73.5,72.5,170,500,412,1007,71],
-        ["58",591,394,73,72.5,190,520,412,1017,71],
-        ["60",606,399,72.5,72.5,208,540,412,1027,69],
-        ["62",628,402,72.5,72.5,231,560,412,1037,69]
+        ["50",523,378,74.6,71.5,120,440,405,978,73],
+        ["53",544,383,74,72,140,470,405,984,73],
+        ["56",573,390,73.5,72.5,170,500,405,998,71],
+        ["58",592,394,73,72.5,190,520,405,1007,71],
+        ["60",607,399,72.5,72.5,208,540,405,1017,69],
+        ["62",629,402,72.5,72.5,231,560,405,1028,69]
+      ]
+    },
+    {
+      "model": "Agree C:62",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2021/bikes/road/road-race/agree/cube-agree-c62-race-carbonnpetrol/",
+      "retrieved": "2021-06-08",
+      "archive": "https://web.archive.org/web/20210608152824/https://www.cube.eu/2021/bikes/road/road-race/agree/cube-agree-c62-race-carbonnpetrol/",
+      "sizes": [
+        ["50",523,378,74.6,71.5,120,440,412,984,73],
+        ["53",544,383,74,72,140,470,412,992,73],
+        ["56",573,390,73.5,72.5,170,500,412,1006,71],
+        ["58",592,394,73,72.5,190,520,412,1014,71],
+        ["60",607,399,72.5,72.5,208,540,412,1025,69],
+        ["62",629,402,72.5,72.5,231,560,412,1036,69]
+      ]
+    },
+    {
+      "model": "Agree C:62",
+      "year": 2023,
+      "lastYear": 2027,
+      "category": "endurance",
+      "source": "https://www.cube.eu/cube-agree-c-62-slt-black-n-black/126500",
+      "retrieved": "2026-07-12",
+      "archive": "https://web.archive.org/web/20260712212144/https://www.cube.eu/cube-agree-c-62-slt-black-n-black/126500",
+      "sizes": [
+        ["50",523,378,74.6,71.5,107,440,412,987,73],
+        ["53",543,383,74,72,127,470,412,994,73],
+        ["56",572,391,73.5,72.5,157,500,412,1007,71],
+        ["58",591,394,73,72.5,177,520,412,1017,71],
+        ["60",606,399,72.5,72.5,195,540,412,1027,69],
+        ["62",628,402,72.5,72.5,218,560,412,1037,69]
+      ]
+    },
+    {
+      "model": "Attain",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2019/bikes/road/road-cyclocross/attain/cube-attain-blacknred-2019/",
+      "retrieved": "2019-11-18",
+      "archive": "https://web.archive.org/web/20191118100227/https://www.cube.eu/2019/bikes/road/road-cyclocross/attain/cube-attain-blacknred-2019/",
+      "sizes": [
+        ["47",525,365,74.6,70.6,120,430,410,980,74],
+        ["50",538,369,74.6,71.5,130,460,410,980,74],
+        ["53",561,376,74,72,152,490,410,990,74],
+        ["56",591,385,73.5,72.5,182,520,410,1004,74],
+        ["58",610,388,73,72.5,202,540,410,1013,74],
+        ["60",629,392,72.5,72.5,222,560,412,1022,74],
+        ["62",649,391,72.5,72.5,242,580,412,1027,74]
+      ]
+    },
+    {
+      "model": "Attain",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2021/bikes/road/road-race/attain/cube-attain-sl-greynblack/",
+      "retrieved": "2021-05-08",
+      "archive": "https://web.archive.org/web/20210508174311/https://www.cube.eu/2021/bikes/road/road-race/attain/cube-attain-sl-greynblack/",
+      "sizes": [
+        ["50",538,369,74.6,71.5,130,460,410,980,74],
+        ["53",561,376,74,72,152,490,410,990,74],
+        ["56",591,385,73.5,72.5,182,520,410,1004,74],
+        ["58",610,388,73,72.5,202,540,410,1013,74],
+        ["60",629,392,72.5,72.5,222,560,412,1022,74],
+        ["62",649,391,72.5,72.5,242,580,412,1027,74]
+      ]
+    },
+    {
+      "model": "Attain",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2022/bikes/road/road-race/attain/cube-attain-sl-rednwhite/",
+      "retrieved": "2022-03-23",
+      "archive": "https://web.archive.org/web/20220323151753/https://www.cube.eu/2022/bikes/road/road-race/attain/cube-attain-sl-rednwhite/",
+      "sizes": [
+        ["50",538,369,74.6,71.5,130,460,415,985,74],
+        ["53",561,376,74,72,152,490,415,995,74],
+        ["56",591,385,73.5,72.5,182,520,415,1009,74],
+        ["58",610,388,73,72.5,202,540,415,1018,74],
+        ["60",629,392,72.5,72.5,222,560,417,1030,74],
+        ["62",649,391,72.5,72.5,242,580,417,1034,74]
+      ]
+    },
+    {
+      "model": "Attain",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.cube.eu/uk-en/cube-attain-deepblue-n-white/676100",
+      "retrieved": "2023-07-28",
+      "archive": "https://web.archive.org/web/20230728102142/https://www.cube.eu/uk-en/cube-attain-deepblue-n-white/676100",
+      "sizes": [
+        ["47",525,365,74.6,70.6,120,430,415,986,74],
+        ["50",538,369,74.6,71.5,130,460,415,985,74],
+        ["53",562,376,74,72,152,490,415,995,74],
+        ["56",591,385,73.5,72.5,182,520,415,1009,74],
+        ["58",610,389,73,72.5,202,540,415,1018,74],
+        ["60",629,390,72.5,72.5,222,560,417,1030,74],
+        ["62",648,391,72.5,72.5,242,580,417,1034,74]
+      ]
+    },
+    {
+      "model": "Attain",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "endurance",
+      "source": "https://www.cube.eu/cube-attain-slx-coal-n-prism/125300",
+      "retrieved": "2026-07-11",
+      "archive": "https://web.archive.org/web/20260711081812/https://www.cube.eu/cube-attain-slx-coal-n-prism/125300",
+      "sizes": [
+        ["47",525,375,74.6,70.6,120,410,420,1000,74],
+        ["50",538,378,74.6,71.5,130,440,420,1000,74],
+        ["53",561,384,74,72,152,470,420,1008,74],
+        ["56",591,391,73.5,72.5,182,500,420,1020,74],
+        ["58",610,394,73,72.5,202,520,420,1020,74],
+        ["60",630,396,72.5,72.5,222,540,420,1028,74],
+        ["62",648,393,72.5,72.5,242,560,420,1036,74]
       ]
     },
     {
@@ -33,6 +149,265 @@
         ["58",610,388,73,72.5,202,520,420,1023,74],
         ["60",629,392,72.5,72.5,222,540,420,1033,74],
         ["62",648,391,72.5,72.5,242,560,420,1038,74]
+      ]
+    },
+    {
+      "model": "Attain C:62",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "endurance",
+      "source": "https://www.cube.eu/cube-attain-c-62-race-blackline/125500",
+      "retrieved": "2026-07-21",
+      "archive": "https://web.archive.org/web/20260721102821/https://www.cube.eu/cube-attain-c-62-race-blackline/125500",
+      "sizes": [
+        ["47",525,365,74.6,70.6,120,410,420,991,74],
+        ["50",538,369,74.6,71.1,130,440,420,994,74],
+        ["53",561,376,74,72,152,470,420,1000,74],
+        ["56",591,385,73.5,72.5,182,500,420,1014,74],
+        ["58",610,388,73,72.5,202,520,420,1023,74],
+        ["60",629,392,72.5,72.5,222,540,420,1033,74],
+        ["62",648,391,72.5,72.5,242,560,420,1038,74]
+      ]
+    },
+    {
+      "model": "Attain GTC",
+      "year": 2020,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://www.cube.eu/uk-en/cube-attain-gtc-sl-grey-n-carbon/577300",
+      "retrieved": "2023-01-25",
+      "archive": "https://web.archive.org/web/20230125091634/https://www.cube.eu/uk-en/cube-attain-gtc-sl-grey-n-carbon/577300",
+      "sizes": [
+        ["50",538,369,74.6,71.5,130,460,415,985,74],
+        ["53",561,376,74,72,152,490,415,995,74],
+        ["56",591,385,73.5,72.5,182,520,415,1009,74],
+        ["58",610,388,73,72.5,202,540,415,1018,74],
+        ["60",629,392,72.5,72.5,222,560,417,1030,74],
+        ["62",649,391,72.5,72.5,242,580,417,1034,74]
+      ]
+    },
+    {
+      "model": "Axial WS",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2019/bikes/women/road-cyclocross/axial-ws/cube-axial-ws-race-disc-blackndarkmint-2019/",
+      "retrieved": "2019-11-14",
+      "archive": "https://web.archive.org/web/20191114151735/https://www.cube.eu/2019/bikes/women/road-cyclocross/axial-ws/cube-axial-ws-race-disc-blackndarkmint-2019/",
+      "sizes": [
+        ["47",525,365,74.6,70.6,120,430,415,985,74],
+        ["50",538,369,74.6,71.5,130,460,415,985,74],
+        ["53",561,376,74,72,152,490,415,995,74],
+        ["56",591,385,73.5,72.5,182,520,415,1009,74]
+      ]
+    },
+    {
+      "model": "Axial WS",
+      "year": 2022,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2022/bikes/women/road-race/axial-ws/cube-axial-ws-pro-oldmintngalactic/",
+      "retrieved": "2022-08-05",
+      "archive": "https://web.archive.org/web/20220805035259/https://www.cube.eu/2022/bikes/women/road-race/axial-ws/cube-axial-ws-pro-oldmintngalactic/",
+      "sizes": [
+        ["47",525,365,74.6,70.6,120,430,415,980,74],
+        ["50",538,369,74.6,71.5,130,460,415,985,74],
+        ["53",561,376,74,72,152,490,415,995,74],
+        ["56",591,385,73.5,72.5,182,520,415,1009,74]
+      ]
+    },
+    {
+      "model": "Axial WS C:62",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2019/bikes/women/road-cyclocross/axial-ws/cube-axial-ws-c62-sl-disc-team-ws-2019/",
+      "retrieved": "2019-09-18",
+      "archive": "https://web.archive.org/web/20190918205902/https://www.cube.eu/2019/bikes/women/road-cyclocross/axial-ws/cube-axial-ws-c62-sl-disc-team-ws-2019/",
+      "sizes": [
+        ["47",514,374,74.6,71,112,410,412,984,73],
+        ["50",523,378,74.6,71.5,120,440,412,984,73],
+        ["53",544,383,74,72,140,470,412,992,73],
+        ["56",573,390,73.5,72.5,170,500,412,1006,71]
+      ]
+    },
+    {
+      "model": "Axial WS C:62",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2022/bikes/women/road-race/axial-ws/cube-axial-ws-c62-sl-team-ws/",
+      "retrieved": "2021-10-20",
+      "archive": "https://web.archive.org/web/20211020174851/https://www.cube.eu/2022/bikes/women/road-race/axial-ws/cube-axial-ws-c62-sl-team-ws/",
+      "sizes": [
+        ["47",513,376,74.6,71,99,410,412,986,73],
+        ["50",523,378,74.6,71.5,107,440,412,987,73],
+        ["53",544,383,74,72,127,470,412,994,73],
+        ["56",572,391,73.5,72.5,157,500,412,1007,71]
+      ]
+    },
+    {
+      "model": "Axial WS GTC",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2019/bikes/women/road-cyclocross/axial-ws/cube-axial-ws-gtc-pro-iridiumnaubergine-2019/",
+      "retrieved": "2021-04-18",
+      "archive": "https://web.archive.org/web/20210418060418/https://www.cube.eu/2019/bikes/women/road-cyclocross/axial-ws/cube-axial-ws-gtc-pro-iridiumnaubergine-2019/",
+      "sizes": [
+        ["47",525,365,74.6,70.6,120,430,410,980,74],
+        ["50",538,369,74.6,71.5,130,460,410,980,74],
+        ["53",561,376,74,72,152,490,410,990,74],
+        ["56",591,385,73.5,72.5,182,520,410,1004,74]
+      ]
+    },
+    {
+      "model": "Axial WS GTC",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.cube.eu/2022/bikes/women/road-race/axial-ws/cube-axial-ws-gtc-pro-carbonncoral/",
+      "retrieved": "2022-08-10",
+      "archive": "https://web.archive.org/web/20220810214531/https://www.cube.eu/2022/bikes/women/road-race/axial-ws/cube-axial-ws-gtc-pro-carbonncoral/",
+      "sizes": [
+        ["47",525,365,74.6,70.6,120,430,415,980,74],
+        ["50",538,369,74.6,71.5,130,460,415,985,74],
+        ["53",561,376,74,72,152,490,415,995,74],
+        ["56",591,385,73.5,72.5,182,520,415,1009,74]
+      ]
+    },
+    {
+      "model": "Cross Race",
+      "year": 2020,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/2019/bikes/road/road-cyclocross/cross-race/cube-cross-race-blacknred-2019/",
+      "retrieved": "2019-12-11",
+      "archive": "https://web.archive.org/web/20191211014542/https://www.cube.eu/2019/bikes/road/road-cyclocross/cross-race/cube-cross-race-blacknred-2019/",
+      "sizes": [
+        ["50",530,376,75,70.5,115,500,430,1013,68],
+        ["53",555,377,74,70.8,140,530,430,1009,68],
+        ["56",578,383,73.5,72,160,560,430,1021,68],
+        ["58",599,387,73,72.5,180,580,430,1027,68],
+        ["61",625,397,73,73,205,610,430,1040,68]
+      ]
+    },
+    {
+      "model": "Cross Race",
+      "year": 2021,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/2021/bikes/road/offroad/cross-race/cube-cross-race-blacknred/",
+      "retrieved": "2021-06-25",
+      "archive": "https://web.archive.org/web/20210625014948/https://www.cube.eu/2021/bikes/road/offroad/cross-race/cube-cross-race-blacknred/",
+      "sizes": [
+        ["50",530,377,74.8,70.3,115,500,430,1015,68],
+        ["53",555,373,73.6,70.8,140,530,430,1016,68],
+        ["56",579,379,73.2,72,160,560,430,1018,68],
+        ["58",599,387,73,72.5,180,580,430,1027,68],
+        ["61",625,397,73,73,205,610,430,1040,68]
+      ]
+    },
+    {
+      "model": "Cross Race",
+      "year": 2023,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/uk-en/cube-cross-race-pro-grey-n-red/688200",
+      "retrieved": "2023-06-28",
+      "archive": "https://web.archive.org/web/20230628041739/https://www.cube.eu/uk-en/cube-cross-race-pro-grey-n-red/688200",
+      "sizes": [
+        ["50",530,377,74.8,70.3,115,500,430,1015,68],
+        ["53",555,373,73.6,70.8,140,530,430,1016,68],
+        ["56",579,379,73.2,72,160,560,430,1018,68],
+        ["58",600,386,73,72.5,180,580,430,1027,68],
+        ["61",626,397,73,73,205,610,430,1040,68]
+      ]
+    },
+    {
+      "model": "Cross Race C:62",
+      "year": 2020,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/2019/bikes/road/road-cyclocross/cross-race/cube-cross-race-c62-pro-greynred-2019/",
+      "retrieved": "2019-11-17",
+      "archive": "https://web.archive.org/web/20191117191031/https://www.cube.eu/2019/bikes/road/road-cyclocross/cross-race/cube-cross-race-c62-pro-greynred-2019/",
+      "sizes": [
+        ["50",520,387,75,71,107,466,422,1009,64],
+        ["53",544,390,74.5,71.5,130,496,422,1016,64],
+        ["56",566,393,73.5,72,152,522,422,1020,64],
+        ["58",585,398,73,72,172,545,422,1033,64],
+        ["61",609,406,73,72.5,195,575,422,1043,64]
+      ]
+    },
+    {
+      "model": "Cross Race C:62",
+      "year": 2021,
+      "lastYear": 2022,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/2022/bikes/road/cyclocross/cross-race/cube-cross-race-c62-sl-teamline/",
+      "retrieved": "2022-06-26",
+      "archive": "https://web.archive.org/web/20220626050352/https://www.cube.eu/2022/bikes/road/cyclocross/cross-race/cube-cross-race-c62-sl-teamline/",
+      "sizes": [
+        ["50",520,387,75,71,107,470,422,1009,64],
+        ["53",544,390,74.5,71.5,130,500,422,1016,64],
+        ["56",566,393,73.5,72,152,530,422,1020,64],
+        ["58",585,398,73,72,172,550,422,1033,64],
+        ["61",609,406,73,72.5,195,580,422,1043,64]
+      ]
+    },
+    {
+      "model": "Cross Race C:62",
+      "year": 2023,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/uk-en/cube-cross-race-c-62-slx-teamline/688500",
+      "retrieved": "2023-03-30",
+      "archive": "https://web.archive.org/web/20230330024916/https://www.cube.eu/uk-en/cube-cross-race-c-62-slx-teamline/688500",
+      "sizes": [
+        ["50",520,381,74.5,71.5,93,468,423,1001,63],
+        ["53",544,383,73.8,71.7,117,598,423,1009,63],
+        ["56",570,390,73.4,72,144,528,425,1024,63],
+        ["58",589,396,73.2,72,164,548,425,1036,63],
+        ["61",613,406,73,72.5,187,578,425,1048,63]
+      ]
+    },
+    {
+      "model": "Cross Race C:62",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/cube-cross-race-c-62-pro-carbon-n-orange/832100",
+      "retrieved": "2026-07-16",
+      "archive": "https://web.archive.org/web/20260716165054/https://www.cube.eu/cube-cross-race-c-62-pro-carbon-n-orange/832100",
+      "sizes": [
+        ["50",520,381,74.5,71.5,93,468,423,1001,63],
+        ["53",544,383,73.8,71.7,117,498,423,1009,63],
+        ["56",570,390,73.4,72,144,528,425,1024,63],
+        ["58",589,396,73.2,72,164,548,425,1036,63],
+        ["61",613,406,73,72.5,187,578,425,1048,63]
+      ]
+    },
+    {
+      "model": "Cross Race C:68X",
+      "year": 2023,
+      "category": "cyclocross",
+      "source": "https://www.cube.eu/2022/bikes/road/cyclocross/cross-race/cube-cross-race-c68x-slt-frostwhitenorange/",
+      "retrieved": "2022-09-03",
+      "archive": "https://web.archive.org/web/20220903105326/https://www.cube.eu/2022/bikes/road/cyclocross/cross-race/cube-cross-race-c68x-slt-frostwhitenorange/",
+      "sizes": [
+        ["50",520,381,74.5,71.5,106,468,423,1001,63],
+        ["53",544,383,73.8,71.7,130,498,423,1009,63],
+        ["56",570,390,73.4,72,157,528,425,1024,63],
+        ["58",589,396,73.2,72,177,548,425,1036,63],
+        ["61",613,406,73,72.5,200,578,425,1048,63]
+      ]
+    },
+    {
+      "model": "Litening Aero C:68X",
+      "year": 2023,
+      "category": "aero",
+      "source": "https://www.cube.eu/2022/bikes/road/road-race/litening/cube-litening-aero-c68x-slt-prizmsilverngrey/",
+      "retrieved": "2022-09-06",
+      "archive": "https://web.archive.org/web/20220906220856/https://www.cube.eu/2022/bikes/road/road-race/litening/cube-litening-aero-c68x-slt-prizmsilverngrey/",
+      "sizes": [
+        ["50",514,389,75,72.3,95,460,410,981,72],
+        ["52",524,388,74.2,72.5,105,480,410,981,72],
+        ["54",542,389,73.5,73,125,500,410,980,69],
+        ["56",563,398,73.5,73.5,145,520,410,990,69],
+        ["58",580,403,73,73.5,165,540,410,1001,67],
+        ["60",595,405,72,73.5,180,560,410,1010,67]
       ]
     },
     {
@@ -55,10 +430,11 @@
     {
       "model": "Litening Air C:68X",
       "year": 2023,
+      "lastYear": 2026,
       "category": "race",
-      "source": "https://www.cube.eu/cube-litening-air-c-68x-race-blackpearl-n-black/1134300",
-      "retrieved": "2026-11-16",
-      "aliases": ["Litening","Litening Air","Cube Litening"],
+      "source": "https://www.cube.eu/cube-litening-air-c-68x-race-blackline/828200",
+      "retrieved": "2025-07-22",
+      "archive": "https://web.archive.org/web/20250722080040/https://www.cube.eu/cube-litening-air-c-68x-race-blackline/828200",
       "sizes": [
         ["50",514,389,75,72.2,107,440,410,981,72],
         ["52",524,389,74.2,72.5,117,460,410,981,72],
@@ -66,6 +442,149 @@
         ["56",563,398,73.5,73.5,157,500,410,995,69],
         ["58",580,403,73,73.5,177,520,410,1005,67],
         ["60",594,405,72.5,73.5,192,540,410,1011,67]
+      ]
+    },
+    {
+      "model": "Litening C:62",
+      "year": 2020,
+      "category": "race",
+      "source": "https://www.cube.eu/2019/bikes/road/road-cyclocross/litening/cube-litening-c62-pro-blackline-2019/",
+      "retrieved": "2019-10-19",
+      "archive": "https://web.archive.org/web/20191019231834/https://www.cube.eu/2019/bikes/road/road-cyclocross/litening/cube-litening-c62-pro-blackline-2019/",
+      "sizes": [
+        ["50",514,384,74.5,72.3,110,460,406,971,72],
+        ["52",524,387,74,72.5,120,480,406,975,72],
+        ["54",542,389,73.5,73,140,500,406,980,69],
+        ["56",563,398,73.5,73.5,160,520,406,991,69],
+        ["58",580,403,73,73.5,180,540,406,1001,67],
+        ["60",592,405,72.5,73.5,195,560,406,1010,67],
+        ["62",609,412,72.5,73.5,210,580,406,1022,67]
+      ]
+    },
+    {
+      "model": "Litening C:68",
+      "year": 2020,
+      "category": "race",
+      "source": "https://www.cube.eu/2019/bikes/road/road-cyclocross/litening/cube-litening-c68-sl-carbonnflashyellow-2019/",
+      "retrieved": "2019-11-20",
+      "archive": "https://web.archive.org/web/20191120103618/https://www.cube.eu/2019/bikes/road/road-cyclocross/litening/cube-litening-c68-sl-carbonnflashyellow-2019/",
+      "sizes": [
+        ["50",514,384,74.5,72.3,110,460,406,971,72],
+        ["52",524,387,74,72.5,120,480,406,975,72],
+        ["54",542,389,73.5,73,140,500,406,980,69],
+        ["56",563,398,73.5,73.5,160,520,406,991,69],
+        ["58",580,403,73,73.5,180,540,406,1001,67],
+        ["60",592,405,72.5,73.5,195,560,406,1010,67],
+        ["62",609,412,72.5,73.5,210,580,406,1022,67]
+      ]
+    },
+    {
+      "model": "Litening C:68X",
+      "year": 2020,
+      "lastYear": 2022,
+      "category": "race",
+      "source": "https://www.cube.eu/2021/bikes/road/road-race/litening/cube-litening-c68x-race-teamline/",
+      "retrieved": "2021-07-28",
+      "archive": "https://web.archive.org/web/20210728073151/https://www.cube.eu/2021/bikes/road/road-race/litening/cube-litening-c68x-race-teamline/",
+      "sizes": [
+        ["50",514,389,75,72.3,95,460,410,981,72],
+        ["52",524,388,74.2,72.5,105,480,410,981,72],
+        ["54",542,389,73.5,73,125,500,410,980,69],
+        ["56",563,398,73.5,73.5,145,520,410,990,69],
+        ["58",580,403,73,73.5,165,540,410,1001,67],
+        ["60",595,405,72.5,73.5,180,560,410,1010,67]
+      ]
+    },
+    {
+      "model": "Litening C:68X",
+      "year": 2023,
+      "category": "race",
+      "source": "https://www.cube.eu/2022/bikes/road/road-race/litening/cube-litening-c68x-race-teamline/",
+      "retrieved": "2022-08-15",
+      "archive": "https://web.archive.org/web/20220815222826/https://www.cube.eu/2022/bikes/road/road-race/litening/cube-litening-c68x-race-teamline/",
+      "sizes": [
+        ["50",514,389,75,72.3,95,460,410,981,72],
+        ["52",524,388,74.2,72.5,105,480,410,981,72],
+        ["54",542,389,73.5,73,125,500,410,980,69],
+        ["56",563,398,73.5,73.5,145,520,410,990,69],
+        ["58",580,403,73,73.5,165,540,410,1001,67],
+        ["60",595,405,72,73.5,180,560,410,1010,67]
+      ]
+    },
+    {
+      "model": "Nuroad",
+      "year": 2020,
+      "category": "gravel",
+      "source": "https://www.cube.eu/2019/bikes/road/road-cyclocross/nuroad/cube-nuroad-pro-fe-greynblack-2019/",
+      "retrieved": "2019-11-11",
+      "archive": "https://web.archive.org/web/20191111210220/https://www.cube.eu/2019/bikes/road/road-cyclocross/nuroad/cube-nuroad-pro-fe-greynblack-2019/",
+      "sizes": [
+        ["50",533,376,75.2,70,118,470,430,1018,70],
+        ["53",557,382,74.5,71,140,500,430,1023,70],
+        ["56",588,386,73.5,71.5,170,530,430,1032,70],
+        ["58",609,389,73,72,190,550,430,1037,70],
+        ["61",632,398,73,72.5,213,580,430,1048,70]
+      ]
+    },
+    {
+      "model": "Nuroad",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://www.cube.eu/2021/bikes/road/offroad/nuroad/cube-nuroad-race-fe-greynblack/",
+      "retrieved": "2021-06-17",
+      "archive": "https://web.archive.org/web/20210617210145/https://www.cube.eu/2021/bikes/road/offroad/nuroad/cube-nuroad-race-fe-greynblack/",
+      "sizes": [
+        ["XS",530,384,75.8,69,113,447,439,1044,70],
+        ["S",554,385,74.7,70,135,477,440,1044,70],
+        ["M",588,389,73.8,71.4,165,507,440,1046,70],
+        ["L",609,389,73,72,185,527,440,1046,70],
+        ["XL",633,398,73,72.5,208,557,440,1058,70]
+      ]
+    },
+    {
+      "model": "Nuroad",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.cube.eu/uk-en/cube-nuroad-race-fe-grey-n-black/680210",
+      "retrieved": "2023-03-22",
+      "archive": "https://web.archive.org/web/20230322200516/https://www.cube.eu/uk-en/cube-nuroad-race-fe-grey-n-black/680210",
+      "sizes": [
+        ["XS",530,384,75.8,69,113,447,440,1044,70],
+        ["S",554,386,74.7,70,135,477,440,1045,70],
+        ["M",588,389,73.8,71.4,165,507,440,1044,70],
+        ["L",610,389,73,72,185,527,440,1046,70],
+        ["XL",633,398,73,72.5,208,557,440,1058,70]
+      ]
+    },
+    {
+      "model": "Nuroad",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.cube.eu/cube-nuroad-one-grovegreen-n-black/129200",
+      "retrieved": "2026-07-13",
+      "archive": "https://web.archive.org/web/20260713153750/https://www.cube.eu/cube-nuroad-one-grovegreen-n-black/129200",
+      "sizes": [
+        ["XS",530,384,75.8,69,113,470,440,1044,70],
+        ["S",554,386,74.7,70,135,500,440,1045,70],
+        ["M",589,389,73.8,71.4,165,530,440,1044,70],
+        ["L",610,389,73,72,185,550,440,1046,70],
+        ["XL",633,398,73,72.5,208,580,440,1058,70]
+      ]
+    },
+    {
+      "model": "Nuroad C:62",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.cube.eu/2021/bikes/road/offroad/nuroad/cube-nuroad-c62-sl-carbonnprizmblack/",
+      "retrieved": "2021-08-02",
+      "archive": "https://web.archive.org/web/20210802153245/https://www.cube.eu/2021/bikes/road/offroad/nuroad/cube-nuroad-c62-sl-carbonnprizmblack/",
+      "sizes": [
+        ["XS",520,381,75.2,69,102,470,440,1041,70],
+        ["S",544,386,74.5,70,124,500,440,1041,70],
+        ["M",578,389,73.5,71.5,154,530,440,1041,70],
+        ["L",599,392,73,72,174,550,440,1046,70],
+        ["XL",623,402,73,72.5,197,580,440,1058,70]
       ]
     },
     {
@@ -81,6 +600,65 @@
         ["M",579,393,73.9,71.5,155,490,440,1046,70],
         ["L",599,392,73,72,174,510,442,1048,70],
         ["XL",623,402,73,72.5,197,540,442,1060,70]
+      ]
+    },
+    {
+      "model": "Nuroad C:62",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.cube.eu/cube-nuroad-c-62-one-blackline/130100",
+      "retrieved": "2026-07-11",
+      "archive": "https://web.archive.org/web/20260711171139/https://www.cube.eu/cube-nuroad-c-62-one-blackline/130100",
+      "sizes": [
+        ["XS",520,388,75.5,69,102,430,440,1043,70],
+        ["S",544,388,74.7,70,124,460,440,1044,70],
+        ["M",579,393,73.9,71.5,155,490,440,1046,70],
+        ["L",599,392,73,72,174,510,442,1048,70],
+        ["XL",623,402,73,72.5,197,540,442,1060,70]
+      ]
+    },
+    {
+      "model": "Nuroad WS",
+      "year": 2020,
+      "category": "gravel",
+      "source": "https://www.cube.eu/2020/bikes/women/road-gravel/nuroad-ws/cube-nuroad-ws-greybluenlime-2020/",
+      "retrieved": "2019-11-17",
+      "archive": "https://web.archive.org/web/20191117060006/https://www.cube.eu/2020/bikes/women/road-gravel/nuroad-ws/cube-nuroad-ws-greybluenlime-2020/",
+      "sizes": [
+        ["50",533,376,75.2,70,118,470,430,1018,70],
+        ["53",557,382,74.5,71,140,500,430,1023,70],
+        ["56",588,386,73.5,71.5,170,530,430,1032,70],
+        ["58",609,389,73,72,190,550,430,1037,70]
+      ]
+    },
+    {
+      "model": "Nuroad WS",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.cube.eu/2021/bikes/women/road-gravel/nuroad-ws/cube-nuroad-ws-smokylilacnblack/",
+      "retrieved": "2021-07-28",
+      "archive": "https://web.archive.org/web/20210728004128/https://www.cube.eu/2021/bikes/women/road-gravel/nuroad-ws/cube-nuroad-ws-smokylilacnblack/",
+      "sizes": [
+        ["XS",530,384,75.8,69,113,447,440,1044,70],
+        ["S",554,385,74.7,70,135,477,440,1044,70],
+        ["M",588,389,73.8,71.4,165,507,440,1046,70],
+        ["L",609,389,73,72,185,527,440,1046,70]
+      ]
+    },
+    {
+      "model": "Nuroad WS C:62",
+      "year": 2022,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.cube.eu/uk-en/cube-nuroad-ws-c-62-pro-smokeyblush-n-grey/629800",
+      "retrieved": "2023-03-30",
+      "archive": "https://web.archive.org/web/20230330013503/https://www.cube.eu/uk-en/cube-nuroad-ws-c-62-pro-smokeyblush-n-grey/629800",
+      "sizes": [
+        ["XS",519,386,75.3,69,102,434,440,1041,70],
+        ["S",544,386,74.5,70,124,464,440,1042,70],
+        ["M",578,389,73.5,71.5,154,494,440,1041,70],
+        ["L",599,392,73,72,174,514,440,1046,70]
       ]
     }
   ]

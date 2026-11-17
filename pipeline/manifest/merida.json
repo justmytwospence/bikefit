@@ -1,0 +1,286 @@
+{
+ "brand": "Merida",
+ "file": "merida",
+ "pages": [
+  {
+   "url": "https://www.merida-bikes.com/en/bike/128/cyclo-cross-300",
+   "timestamp": "20191209080258",
+   "sha256": "2fbd0c71417b36c42da75c9ce8c5db6cc269c3a3c7fed247ca35677978d3940b",
+   "family": "cyclo-cross",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/126/mission-cx-600",
+   "timestamp": "20191023184424",
+   "sha256": "5e8344e079a42c0b9a808a4a8ce15d46f5f26e25a40f0df3bf02bd60cea414f5",
+   "family": "mission-cx",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/636/mission-cx-400",
+   "timestamp": "20210919012753",
+   "sha256": "575691541c48136eb944d4bdf195a3d6fe7506309ad4449302abe72393cc5313",
+   "family": "mission-cx",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/636/mission-cx-400",
+   "timestamp": "20220102000429",
+   "sha256": "4efe1171e60acd53e51c7657e1627d48d651a58948f507ac3bd4ce541c53c28c",
+   "family": "mission-cx",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5657/mission-10k",
+   "timestamp": "20251210085835",
+   "sha256": "ee5475d98fe95a6e63c526c056ba5c1662e89329f4e200757c0f7f72aa23d245",
+   "family": "mission-cx",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5657/mission-10k",
+   "timestamp": "20260813032707",
+   "sha256": "2f5f12685acedc3b0dfc160a8faa596a12b37b63a03e42dee0cbc9f177b13b80",
+   "family": "mission-cx",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/641/mission-road-400",
+   "timestamp": "20191114060959",
+   "sha256": "44f7e962ce302d57400a8b9980b56a1e9da5b79f8c0a4df67b57b84131601082",
+   "family": "mission-road",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/639/mission-road-7000-e",
+   "timestamp": "20210920050341",
+   "sha256": "a89b555376ef27b4f189be20838d398ba11a7a7efce5d5783d6340374de02e85",
+   "family": "mission-road",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/641/mission-road-400",
+   "timestamp": "20220127044559",
+   "sha256": "d0a741f640284a58fc94fd4241bf26dd46d6a19c1e1641d2ae42d1ccdf225d36",
+   "family": "mission-road",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/81/reacto-team-e",
+   "timestamp": "20191014235856",
+   "sha256": "b6213852fcd88a7e71bf322feafcf6ff40065bec52c9eed5da7c1893d94e5000",
+   "family": "reacto",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/2022/reacto-4000",
+   "timestamp": "20210728190739",
+   "sha256": "93aec5209631bb582de280fbac585848b99dc4a3c97f14221ac04051cd0d5065",
+   "family": "reacto",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/3080/reacto-team",
+   "timestamp": "20231003231535",
+   "sha256": "6acd7815f15dbcaa8293f552b3a2b7b83ded07e04e089e655ae8b138e30dee8c",
+   "family": "reacto",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/4130/reacto-7000",
+   "timestamp": "20251209140959",
+   "sha256": "eec996b453923251696298d6d43413fa86caacf8ad0ddbd849c89d39f9bc6ee9",
+   "family": "reacto",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5927/reacto-one",
+   "timestamp": "20260410183551",
+   "sha256": "06dbe3140058a3d1e511b1762200e13192c4e6e55854df94fbcda71ff35e017a",
+   "family": "reacto",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/101/scultura-5000",
+   "timestamp": "20191213020930",
+   "sha256": "752281767f353673de7397c5f5f8638eec52dd237be322a311af637e51e26da8",
+   "family": "scultura",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/108/scultura-200",
+   "timestamp": "20210620134731",
+   "sha256": "6574d04c20742ff7200daa481654cc7123d2a73e5fbd4b08d841483b2443f365",
+   "family": "scultura",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/3094/scultura-team",
+   "timestamp": "20231210053150",
+   "sha256": "64b2f8eb482f038f170fe0a30167d9d5479d89ee7d66870212c898574921fff2",
+   "family": "scultura",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/4864/scultura-4000",
+   "timestamp": "20250808082052",
+   "sha256": "860e1d33f258a48497f68a89f70427c888a2e39f0f35ac91fdda59e646b11906",
+   "family": "scultura",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5637/scultura-10k",
+   "timestamp": "20260611092508",
+   "sha256": "cb8965d33d0005d94f7b42b5e839dbdcb4a8fdc1610a40cff30914172a69dd63",
+   "family": "scultura",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/2039/scultura-endurance-6000",
+   "timestamp": "20210419025418",
+   "sha256": "2a3b478bb1e35e15fbe1b48034d25d70f8f5e4dee843f999bcf5978d2d0f1d24",
+   "family": "scultura-endurance",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/3107/scultura-endurance-8000",
+   "timestamp": "20230331001242",
+   "sha256": "6fa9cd94e696b741badc8d57b913d4d625e7b025bafe0610e44049d662281ae2",
+   "family": "scultura-endurance",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/4870/scultura-endurance-400",
+   "timestamp": "20250803092552",
+   "sha256": "99cb04f97dacde7779d438e6b81a11d737998584ebaaf31c4db917a905aec5cf",
+   "family": "scultura-endurance",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5652/scultura-endurance-400",
+   "timestamp": "20260722043141",
+   "sha256": "8d7f8c2e4a060bc6fc7a019d3d54808a426c41b2ca5c0f7fb99f58ed4b53ca34",
+   "family": "scultura-endurance",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/4157/scultura-endurance-gr-8000",
+   "timestamp": "20230816102211",
+   "sha256": "bf695145d7e18c455bd00e2d07626645dc9313cbbf1ecf0a928d53c1f0536a75",
+   "family": "scultura-endurance-gr",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5655/scultura-endurance-gr-700",
+   "timestamp": "20251012022144",
+   "sha256": "84a214d949c2dd1110deb6039df1dca37f17fb2ca4d94da877de61cb408071d9",
+   "family": "scultura-endurance-gr",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5655/scultura-endurance-gr-700",
+   "timestamp": "20260514170734",
+   "sha256": "c2a181bebcdec0a7a8a0821f4b65e1aa8eebb9ba80471d3ae8f1df4150e45061",
+   "family": "scultura-endurance-gr",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/2026/scultura-rim-100",
+   "timestamp": "20210916184941",
+   "sha256": "19b269aaaf3964e81025e236f300466aa94cac85ac33f035f3edbb0116a8dc94",
+   "family": "scultura-rim",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/3092/scultura-rim-100",
+   "timestamp": "20230802035611",
+   "sha256": "89c8aaf4ff846e4d9a273a269d12211c84e7ed8fa9ce3247aded38a0367a8c0d",
+   "family": "scultura-rim",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5646/scultura-rim-100",
+   "timestamp": "20251014141909",
+   "sha256": "7667c4a076da78e757b2b120c935a254d3f2bf47a2267516c5ace177bf0af392",
+   "family": "scultura-rim",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5646/scultura-rim-100",
+   "timestamp": "20260415233947",
+   "sha256": "4d869128aab06f60d5e4bd1a4c45063b1ae8c371f545a90044ac0ee272b41ae0",
+   "family": "scultura-rim",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/135/silex-6000",
+   "timestamp": "20191023174340",
+   "sha256": "c369852c6c0f47fc7d943ae2fa82c3e1dc61743b090bec94e6fa585bb93536f4",
+   "family": "silex",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/2056/silex-6000",
+   "timestamp": "20211206022759",
+   "sha256": "d4e864267c7c9b1d49c8f5b76cb835de10ba84c8d41a60499384176018889714",
+   "family": "silex",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/3118/silex-600",
+   "timestamp": "20230908173551",
+   "sha256": "b0f0f51ae9afe071ec02baecdd2854a1cf693becf06bfd35a088a38d7b91fdcd",
+   "family": "silex",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/4875/silex-8000",
+   "timestamp": "20250614233635",
+   "sha256": "1744647a20c89059f91203bf587b2a05337ad2bfc9764e8f801ccf288b69f618",
+   "family": "silex",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.merida-bikes.com/en/bike/5667/silex-700",
+   "timestamp": "20260618073646",
+   "sha256": "15b66f8db56e1dcebf58c97c42a9b7cd90caac734230ac0bbdaa1ab9d15c723e",
+   "family": "silex",
+   "year": 2026,
+   "related": []
+  }
+ ]
+}

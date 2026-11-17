@@ -1,0 +1,312 @@
+{
+ "brand": "Orbea",
+ "file": "orbea",
+ "pages": [
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/avant/cat/avant-h30-d",
+   "timestamp": "20230216170345",
+   "sha256": "099e26cc8f6303249f8acd16c6b0b5c75c683cbf6f606079271038bf1bd4c729",
+   "family": "avant-h",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/avant-h40-d/geometry",
+   "timestamp": "20210422173748",
+   "sha256": "39753d0fdbb92a65add315e0764b0fd506f72753ee68ddaa9d59eb8918a5b03e",
+   "family": "avant-h:geometry",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/avant/cat/avant-h40-2023",
+   "timestamp": "20231206012257",
+   "sha256": "f6e63b36fe4bdfac07624cb3e19863078c6b56fdf651e7a23b198c173352013e",
+   "family": "avant-h@2023",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/avant/cat/avant-h30-2024",
+   "timestamp": "20231202064142",
+   "sha256": "62454162a9440bbb495f9a9ee7fb66ca2fec3ce33db600cd455d01de8a25c149",
+   "family": "avant-h@2024",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m30",
+   "timestamp": "20210802143547",
+   "sha256": "23dbe627d917b280aee4a84b370d4b5153eeb68f46f129bbcf90cf305ea9b898",
+   "family": "orca",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.orbea.com/us-en/bicycles/orca-m30/geometry/",
+     "timestamp": "20201204182023",
+     "sha256": "783c387e2fb8bea78544d85f81707c5c1a9ec29ac94443be8904d7c29644dc71"
+    }
+   ]
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m30",
+   "timestamp": "20230508130824",
+   "sha256": "053332af434db4abef17d1770040a39613cae5fa88c988de9a97bbeab35222a0",
+   "family": "orca",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m20iteam-2023",
+   "timestamp": "20230819212138",
+   "sha256": "8cae0f91130acd0af9086a1447a0277ea066aa1a3f8772362110c89ce9d72e2d",
+   "family": "orca",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/en-gb/orca-m21eltd-pwr",
+   "timestamp": "20260621044350",
+   "sha256": "545bd39e0d3f6e75378320325170777b688284d4c3e11e4b15394bde8c58e3ae",
+   "family": "orca",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m10i-replica",
+   "timestamp": "20250902071824",
+   "sha256": "b24af9341b8182db7ae4ec610d262e282f1071bba8ed785b5e8a873142174c9a",
+   "family": "orca",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m20team",
+   "timestamp": "20210226032026",
+   "sha256": "117246fc0a2f65cf509ebafc3948e1bea5d3b8eab415cb162e3e0e7c63486efa",
+   "family": "orca-aero",
+   "year": 2021,
+   "related": [
+    {
+     "url": "https://www.orbea.com/us-en/bicycles/orca-aero-m20team/geometry/",
+     "timestamp": "20210127171851",
+     "sha256": "d02a01fb67f396d6a86f4c572297ca67eaea9042fbf8adb019e5dae628160a86"
+    }
+   ]
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m20iltd",
+   "timestamp": "20230216170154",
+   "sha256": "84bc6cc3a4dc1113eb7c4e8d9ea95494caa8be57d7acdee858258b3fe87ea756",
+   "family": "orca-aero",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m10i-replica",
+   "timestamp": "20250829121444",
+   "sha256": "80d12f3c0122d8d92880d6dda29157529ab404297cf5cd283e3dc68e1c21ade0",
+   "family": "orca-aero",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/orca-aero-m20team/geometry",
+   "timestamp": "20191018121424",
+   "sha256": "d490b03f9cb77278a459dd129adf88cb0f78a11b1455eb8103e75f39c5e61e83",
+   "family": "orca-aero:geometry",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/orca-aero-m20team/geometry",
+   "timestamp": "20210127171851",
+   "sha256": "d02a01fb67f396d6a86f4c572297ca67eaea9042fbf8adb019e5dae628160a86",
+   "family": "orca-aero:geometry",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m10iltd-2023",
+   "timestamp": "20231204022753",
+   "sha256": "8456a1e57b57fd5086bb6561d55c6845cdf3c406922d1c970a8759ad504aa2f1",
+   "family": "orca-aero@2023",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-m20iltd-2023",
+   "timestamp": "20240228091913",
+   "sha256": "8643ba7baf4e30c6ba6367d5d1468a9213aa9ca70b98fd3523421fc2efc0c9ee",
+   "family": "orca-aero@2023",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca-aero/cat/orca-aero-omx-2024",
+   "timestamp": "20231130073115",
+   "sha256": "4ece88b69cb2394b58340a95d44bdd3891c0b11b4455477d0a633ff229e5e9ee",
+   "family": "orca-aero@2024",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/orca-m20-19/geometry",
+   "timestamp": "20190722202054",
+   "sha256": "949f8fb058b0e58829de6102f90dcee27fb3a5d81d7333076e220abdcfb0db8b",
+   "family": "orca:geometry",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/orca-m20-/geometry",
+   "timestamp": "20210804025936",
+   "sha256": "eecaa729717542d02b17ac29c5e15da3d58c58d64aeb6729d44f2c6a3bbd5114",
+   "family": "orca:geometry",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/orca-m20/geometry",
+   "timestamp": "20221129102439",
+   "sha256": "84013d76daf5f0ea4ef8361ab5c4bd4ede1b97c3ef980e25d277c37666721711",
+   "family": "orca:geometry",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m20iltd-2024",
+   "timestamp": "20240228093040",
+   "sha256": "5d48272ca2a4606ea88baaf4bcbecb0a834c8be90dbe89ca29eb981bdd229157",
+   "family": "orca@2024",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/orca/cat/orca-m30-2024",
+   "timestamp": "20231202064449",
+   "sha256": "1fa2a03ea78d6d9e12eea8a9bc796c324eb82441233cf5def178c23705fad527",
+   "family": "orca@2024",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-m20iteam",
+   "timestamp": "20230216170147",
+   "sha256": "98bb4908f897ad54727f3b19194ea3a119072c24383d8e681c369d8f698bab35",
+   "family": "terra",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-m20team-2024",
+   "timestamp": "20240222201625",
+   "sha256": "d7be18e4e133cbd53272e7db8fb54be49651545151d9ae6aa2b38b588728c78b",
+   "family": "terra",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-m20team",
+   "timestamp": "20250812023155",
+   "sha256": "32e9b394f2bca53d19467169123b4f248508c327c34aba49bfac79bd4e6615a8",
+   "family": "terra",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/en-us/terra-m30team",
+   "timestamp": "20261022085059",
+   "sha256": "508a2276a5f97b1e4ec165d91384d5c07e0d47acafefc5b0958e739ff0d59583",
+   "family": "terra",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h40",
+   "timestamp": "20211028054107",
+   "sha256": "967210404193f08a3c0e5ed0c770b635f80a6de49f82c636fa3f4c55fe058c8c",
+   "family": "terra-h",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.orbea.com/us-en/bicycles/terra-h40/geometry/",
+     "timestamp": "20210307205548",
+     "sha256": "8517b31a9870e7072f9424919dba510e99b4ca2b078202297fd6512dc6df0919"
+    }
+   ]
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h30",
+   "timestamp": "20230216170113",
+   "sha256": "9530cdc63e53fc84ea65406706d57bce8ca6545361432ec99fbc1cbd7485125c",
+   "family": "terra-h",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h30",
+   "timestamp": "20250812024630",
+   "sha256": "9a27429ae29e82c3960d0c7aba3673422d6d355e62ee3655ab897e9e10ca1e16",
+   "family": "terra-h",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/terra-h40/geometry",
+   "timestamp": "20210307205548",
+   "sha256": "8517b31a9870e7072f9424919dba510e99b4ca2b078202297fd6512dc6df0919",
+   "family": "terra-h:geometry",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h40-2023",
+   "timestamp": "20231205154948",
+   "sha256": "b000a81108cce32731ad31e3f28acdf6d238404d011dd4bb7276879493709266",
+   "family": "terra-h@2023",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-h30-2024",
+   "timestamp": "20240227155314",
+   "sha256": "0c7888a215efc985b3cc38b1a73bd1df9fed4e2b8b40f9da9ad7464aa55ff807",
+   "family": "terra-h@2024",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/terra-m21e-1x/geometry",
+   "timestamp": "20210619114825",
+   "sha256": "0418a576b25a033dcb4867151b83e28a5a61640ce8766f72ac7cc445c0702ed6",
+   "family": "terra:geometry",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/terra-m20team/geometry",
+   "timestamp": "20221206205258",
+   "sha256": "fd404df5665f4e405302d61a953018065a0927f19279a175ba09a91629c5d398",
+   "family": "terra:geometry",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-m20-team-2023",
+   "timestamp": "20230929205759",
+   "sha256": "b3c24fa7328fa686c3b117715497c36ee298b88d16393d070338ccbbc42920ad",
+   "family": "terra@2023",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.orbea.com/us-en/bicycles/road/terra/cat/terra-m20team-2024",
+   "timestamp": "20231219214802",
+   "sha256": "80fec00712d3b182b99a003b5eea3216b547193cc253801e68ffc6b05b706f48",
+   "family": "terra@2024",
+   "year": 2024,
+   "related": []
+  }
+ ]
+}

@@ -3,19 +3,68 @@
   "models": [
     {
       "model": "Addict",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://www.scott-sports.com/global/en/product/scott-addict-20-disc-dark-blue-bike",
+      "retrieved": "2021-01-19",
+      "archive": "https://web.archive.org/web/20210119124457/https://www.scott-sports.com/global/en/product/scott-addict-20-disc-dark-blue-bike",
+      "sizes": [
+        ["XXS 47",517,367,75,70.5,115,470,415,973,67],
+        ["XS 49",528,374,75,71,125,490,415,979,67],
+        ["S 52",551,377,74.5,72,145,520,415,981,67],
+        ["M 54",571,381,74,72.5,165,540,415,987,67],
+        ["L 56",592,385,73.5,73,185,560,415,992,67],
+        ["XL 58",613,389,73.1,73.3,205,580,415,999,67],
+        ["XXL 61",614,397,73,73.3,225,610,415,1012,67]
+      ]
+    },
+    {
+      "model": "Addict",
       "year": 2026,
       "category": "endurance",
-      "source": "https://www.scott-sports.com/us/en/product/scott-addict-10-bike",
-      "retrieved": "2026-11-16",
-      "aliases": ["Addict 10","Addict 20"],
+      "source": "https://www.scott-sports.com/us/en/product/scott-addict-20-bike",
+      "retrieved": "2025-09-27",
+      "archive": "https://web.archive.org/web/20250927235729/https://www.scott-sports.com/us/en/product/scott-addict-20-bike",
       "sizes": [
-        ["XXS 47",522,372,75,71.3,104,435,418,984,74],
-        ["XS 49",534,378,75,71.8,115,455,418,991,74],
-        ["S 52",557,382,74.5,72,139,475,418,1000,73],
-        ["M 54",578,386,74,72.2,161,495,418,1009,72],
-        ["L 56",599,389,73.5,72.5,182,515,418,1016,72],
-        ["XL 58",619,394,73.1,73,201,535,418,1022,72],
-        ["XXL 61",638,402,73,73,221,565,418,1036,72]
+        ["XXS 47",518,376,75,70.5,95,455,420,997,70],
+        ["XS 49",529,383,75,71,105,475,420,1003,70],
+        ["S 52",552,387,74.5,72,125,505,420,1005,70],
+        ["M 54",572,391,74,72.5,145,525,420,1010,70],
+        ["L 56",593,394,73.5,73,165,545,420,1015,70],
+        ["XL 58",614,399,73.1,73.3,185,565,420,1022,70],
+        ["XXL 61",633,407,73,73.3,205,580,420,1036,70]
+      ]
+    },
+    {
+      "model": "Addict CX",
+      "year": 2020,
+      "category": "cyclocross",
+      "source": "https://www.scott-sports.com/global/en/product/scott-addict-cx-rc-bike",
+      "retrieved": "2019-11-15",
+      "archive": "https://web.archive.org/web/20191115051159/https://www.scott-sports.com/global/en/product/scott-addict-cx-rc-bike",
+      "sizes": [
+        ["XS 49",522,360,74.5,70,95,490,422,984,68],
+        ["S 52",546,369,74,70,120,520,422,1002,68],
+        ["M 54",564,378,73.5,71,140,540,422,1017,68],
+        ["L 56",583,390,73,71,160,560,422,1043,68],
+        ["XL 58",602,405,73,71,180,580,422,1056,68]
+      ]
+    },
+    {
+      "model": "Addict Gravel",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "gravel",
+      "source": "https://www.scott-sports.com/global/en/product/scott-addict-gravel-10-bike",
+      "retrieved": "2019-08-26",
+      "archive": "https://web.archive.org/web/20190826051942/https://www.scott-sports.com/global/en/product/scott-addict-gravel-10-bike",
+      "sizes": [
+        ["XS 49",522,360,74.5,70,95,490,422,984,68],
+        ["S 52",546,369,74,70,120,520,422,1002,68],
+        ["M 54",564,378,73.5,71,140,540,422,1017,68],
+        ["L 56",583,390,73,71,160,560,422,1043,68],
+        ["XL 58",602,405,73,71,180,580,422,1056,68]
       ]
     },
     {
@@ -52,6 +101,41 @@
     },
     {
       "model": "Addict RC",
+      "year": 2019,
+      "category": "race",
+      "source": "https://www.scott-sports.com/global/en/product/scott-addict-rc-15-disc-bike",
+      "retrieved": "2018-11-04",
+      "archive": "https://web.archive.org/web/20181104003224/https://www.scott-sports.com/global/en/product/scott-addict-rc-15-disc-bike",
+      "sizes": [
+        ["XXS 47",503,371,74.5,70.5,100,455,410,977,67],
+        ["XS 49",509,379,74.5,71,105,475,410,983,67],
+        ["S 52",527,384,74,72,120,505,410,985,67],
+        ["M 54",548,389,73.6,72.5,140,525,410,992,67],
+        ["L 56",568,395,73.3,73,160,545,410,999,67],
+        ["XL 58",589,400,73,73.3,180,565,410,1008,67],
+        ["XXL 61",608,403,72.5,73.3,200,596,410,1017,67]
+      ]
+    },
+    {
+      "model": "Addict RC",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "race",
+      "source": "https://www.scott-sports.com/us/en/product/scott-addict-rc-20-bike-2021",
+      "retrieved": "2026-01-09",
+      "archive": "https://web.archive.org/web/20260109011803/https://www.scott-sports.com/us/en/product/scott-addict-rc-20-bike-2021",
+      "sizes": [
+        ["XXS 47",504,380,74.5,70.5,97,470,410,988,70],
+        ["XS 49",511,388,74.5,71,102,490,410,994,70],
+        ["S 52",527,389,74,72,115,520,410,991,70],
+        ["M 54",548,390,73.6,72.5,135,540,410,992,70],
+        ["L 56",569,395,73.3,73,155,560,410,1000,70],
+        ["XL 58",588,400,73,73.3,175,580,410,1008,70],
+        ["XXL 61",606,410,72.5,73.3,193,610,410,1023,70]
+      ]
+    },
+    {
+      "model": "Addict RC",
       "year": 2025,
       "category": "race",
       "source": "https://www.scott-sports.com/us/en/product/scott-addict-rc-ultimate-bike",
@@ -65,6 +149,39 @@
         ["L 56",564.5,402.6,73.3,73.4,150,502.2,410,999,72],
         ["XL 58",584.3,406.1,72.8,73.6,170,522.3,410,1006.4,72],
         ["XXL 61",604.2,411.3,72.5,73.8,190,542.4,410,1015.4,72]
+      ]
+    },
+    {
+      "model": "Addict RC",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.scott-sports.com/us/en/product/scott-addict-rc-pro-bike",
+      "retrieved": "2025-09-04",
+      "archive": "https://web.archive.org/web/20250904062237/https://www.scott-sports.com/us/en/product/scott-addict-rc-pro-bike",
+      "sizes": [
+        ["XXS 47",501,379,74.5,71.3,90,423,410,977,74],
+        ["XS 49",513,386,74.5,71.8,100,443,410,983,74],
+        ["S 52",526,392,74,72.3,113,462,410,989,73],
+        ["M 54",543,395,73.6,72.8,130,482,410,991,72],
+        ["L 56",565,403,73.3,73.4,150,502,410,999,72],
+        ["XL 58",584,406,72.8,73.6,170,522,410,1006,72],
+        ["XXL 61",604,411,72.5,73.8,190,542,410,1015,72]
+      ]
+    },
+    {
+      "model": "Contessa Speedster Gravel",
+      "year": 2021,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://www.scott-sports.com/gb/en/product/scott-contessa-speedster-gravel-25-bike",
+      "retrieved": "2024-09-14",
+      "archive": "https://web.archive.org/web/20240914081809/https://www.scott-sports.com/gb/en/product/scott-contessa-speedster-gravel-25-bike",
+      "sizes": [
+        ["XXS 47",517,367,75,70.5,111,470,422,973,67],
+        ["XS 49",528,374,75,71,121,490,422,979,67],
+        ["S 52",551,377,74.5,72,141,520,422,981,67],
+        ["M 54",571,381,74,72.5,161,540,422,987,67],
+        ["L 56",592,385,73.5,73,181,560,422,992,67]
       ]
     },
     {
@@ -82,6 +199,41 @@
         ["L 56",568,394.5,73.3,73,161,542.4,412,999.9,70],
         ["XL 58",589,400,73,73.3,181,559.8,412,1008.6,70],
         ["XXL 61",606,409,72.5,73.3,199,572.4,412,1022.7,70]
+      ]
+    },
+    {
+      "model": "Speedster Gravel",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.scott-sports.com/global/en/product/scott-speedster-gravel-30-bike",
+      "retrieved": "2021-10-20",
+      "archive": "https://web.archive.org/web/20211020104623/https://www.scott-sports.com/global/en/product/scott-speedster-gravel-30-bike",
+      "sizes": [
+        ["XXS 47",517,367,75,70.5,111,470,422,973,67],
+        ["XS 49",528,374,75,71,121,490,422,979,67],
+        ["S 52",551,377,74.5,72,141,520,422,981,67],
+        ["M 54",571,381,74,72.5,161,540,422,987,67],
+        ["L 56",592,385,73.5,73,181,560,422,992,67],
+        ["XL 58",613,389,73.1,73.3,201,580,422,999,67],
+        ["XXL 61",614,397,73,73.3,221,610,422,1012,67]
+      ]
+    },
+    {
+      "model": "Speedster Gravel",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.scott-sports.com/gb/en/product/scott-speedster-gravel-10-bike",
+      "retrieved": "2026-03-28",
+      "archive": "https://web.archive.org/web/20260328131442/https://www.scott-sports.com/gb/en/product/scott-speedster-gravel-10-bike",
+      "sizes": [
+        ["XXS 47",519,374,75,70,93,470,435,1019,71],
+        ["XS 49",528,378,74.5,70,103,490,435,1026,71],
+        ["S 52",547,382,74,70,123,520,435,1037,71],
+        ["M 54",570,387,73,71,143,540,439,1044,71],
+        ["L 56",589,392,72.5,71,163,560,439,1056,71],
+        ["XL 58",608,396,72.5,71,183,580,439,1067,71],
+        ["XXL 61",627,403,72.5,71,203,610,439,1071,71]
       ]
     }
   ]

@@ -1,0 +1,686 @@
+{
+ "brand": "BMC",
+ "file": "bmc",
+ "pages": [
+  {
+   "url": "https://www.bmc-switzerland.com/crossmachine-cx01-two-301609.html",
+   "timestamp": "20190717021753",
+   "sha256": "be2a3ae6c5d4b9124d4c08af63dbc37bb528889f8a8cd1f3a18751b94a75e46f",
+   "family": "crossmachine-cx-01@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/kaius-01-three-bikes-bmc-24-10624-002",
+   "timestamp": "20251103074017",
+   "sha256": "90bc3a4406d18b41707c068fd884913df5520a6d5e944b0ec064727508327337",
+   "family": "kaius-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/kaius-01-one-bikes-bmc-26a-000036",
+   "timestamp": "20260922113516",
+   "sha256": "642cfb6f9fb726c280218d2c9cca1b1c753a3e4060662fd11016803215ea1fc2",
+   "family": "kaius-01@shop",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-kaius-01-one-23.html",
+   "timestamp": "20231202061411",
+   "sha256": "fb6b6e61836f2ecf6e60508ceca661bf856a5e836edd16e95e39e95c2b27a763",
+   "family": "kaius-01@store",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-01-x-one-bikes-bmc-24-10626-001",
+   "timestamp": "20251022185852",
+   "sha256": "334c3ef70f3b26e40b47a9fe14136b56d5095b0f34f5ee0221a99d21244cfd88",
+   "family": "roadmachine-01-x@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/roadmachine-01-one-2021.html",
+   "timestamp": "20210923220118",
+   "sha256": "8578b1efb94941859ee0d227151c19fd2677f8c086af9c7c3845c895ac03fada",
+   "family": "roadmachine-01@old",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-01-one-bikes-bmc-24-10604-007",
+   "timestamp": "20251121174125",
+   "sha256": "e14033fb04aee1826dd2b880d71fd4c7cbf2a45ab59bcfcf4647e6c540d80507",
+   "family": "roadmachine-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-01-two-bikes-bmc-26a-000024",
+   "timestamp": "20260922114011",
+   "sha256": "fc7230b488d86b4b06c5c1b13ea76bdc204969cdddf1317438452231804f9eaa",
+   "family": "roadmachine-01@shop",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/roadmachine-01-three.html",
+   "timestamp": "20210614100126",
+   "sha256": "945fec73a939017ab072ba33c1443b7f6969a62a8663bbfbfbafc770e5033377",
+   "family": "roadmachine-01@store",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/bmc-roadmachine-01-mod-carbon-metallic-grey-23.html",
+   "timestamp": "20231128153655",
+   "sha256": "15540be9253866109fbd16044065f12940d3924e2348b635809d1b7b029a4584",
+   "family": "roadmachine-01@store",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/roadmachine-02-two.html",
+   "timestamp": "20191214132732",
+   "sha256": "dad8f6019fa1d562851de9b2199956fd4b5a67c61d66151d1070c9d88da41784",
+   "family": "roadmachine-02@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-al-x-one-bikes-bmc-23-10607-003",
+   "timestamp": "20250618233732",
+   "sha256": "974032bf2240d0431d62a7d22237089203b812bef8d388a6e71b2b7a70c68e01",
+   "family": "roadmachine-al-x@shop",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-roadmachine-x-al-one-22.html",
+   "timestamp": "20230401160505",
+   "sha256": "8e1a3034e19c851d9132b436d4ae2ee49beef46a571ba386e0e0d19c5374fac2",
+   "family": "roadmachine-x-al@store",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/roadmachine-x-302030.html",
+   "timestamp": "20191120115831",
+   "sha256": "b8f490e4e5f589bd97c495a271d5abef251b9c8d7b529d7da6b40aa7c362f4b5",
+   "family": "roadmachine-x@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/roadmachine-x-302030.html",
+   "timestamp": "20200807125258",
+   "sha256": "b8f490e4e5f589bd97c495a271d5abef251b9c8d7b529d7da6b40aa7c362f4b5",
+   "family": "roadmachine-x@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-x-one-bikes-bmc-23-10607-005",
+   "timestamp": "20251014174402",
+   "sha256": "b3373f19db5fd493768bc26ab31a5a3273396489721cb52115437a3c772f4b96",
+   "family": "roadmachine-x@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-roadmachine-x-one-23.html",
+   "timestamp": "20230605173110",
+   "sha256": "5787804035fb621656c51b10ee21fa3abec72c6a2113ab2f53dc3b5cb1948657",
+   "family": "roadmachine-x@store",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/roadmachine-three.html",
+   "timestamp": "20210413081401",
+   "sha256": "4efd2eabd53af065febf831e3e0dc50a4bc14653f0873623b4fb4c274b36d06c",
+   "family": "roadmachine@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-four-metallic-brown-black-road-endurance-bikes-bmc-23-10605-009",
+   "timestamp": "20231209174510",
+   "sha256": "ac7c962442cf8ced3eb064cacceaf3996a7eaee35ab5679e322740909cca68d5",
+   "family": "roadmachine@shop",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-two-bikes-bmc-24-10605-002",
+   "timestamp": "20251222061916",
+   "sha256": "005a96f8a26436e84d24c9383f2fb47a83a4c2696d31ea41f5304c1fd74cb112",
+   "family": "roadmachine@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/roadmachine-four-bikes-bmc-24-10605-006",
+   "timestamp": "20260714115203",
+   "sha256": "17c055581d289a766b93b57ac7afeaac69118c6625447467c421ddf1a77eedd5",
+   "family": "roadmachine@shop",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/roadmachine-one.html",
+   "timestamp": "20210801163133",
+   "sha256": "7c7a9fc55194b1e27bd2f30291df8a748e436c704e92d87d736b2ca7d0aaf6e5",
+   "family": "roadmachine@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-roadmachine-five-23.html",
+   "timestamp": "20231202175643",
+   "sha256": "160930db821ed9d9ffc90a0b5274401b27926c4267be7e3b767d4a91150453d0",
+   "family": "roadmachine@store",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-alr-disc-two-302029.html",
+   "timestamp": "20191215025448",
+   "sha256": "b9d9b04bc94165dab81bb7c33f298eebc58724994bc08e3094fc5263663afa56",
+   "family": "teammachine-alr-disc@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-alr-disc-two.html",
+   "timestamp": "20210926002729",
+   "sha256": "f6d12585d29e2a780f04e9e15c912dda444a8bc4af1db28356fe80fd87a12826",
+   "family": "teammachine-alr-disc@old",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/teammachine-alr-disc-two.html",
+   "timestamp": "20210905232217",
+   "sha256": "e0b685c68e7300fb913a039f45813985d9bbcdb777e3970082877e2950220a93",
+   "family": "teammachine-alr-disc@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/teammachine-alr-disc-two.html",
+   "timestamp": "20220116225313",
+   "sha256": "6584e3d4a380373e3f4b753898cfa55442819d6566b9f776153b625b3a3fadb1",
+   "family": "teammachine-alr-disc@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-alr-two-301823.html",
+   "timestamp": "20191117094948",
+   "sha256": "dc94b3a1df2b4176125a490bef511d1e2cb81f6d056a6157a5fae761dd4ce859",
+   "family": "teammachine-alr@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-alr-one.html",
+   "timestamp": "20210128053739",
+   "sha256": "efc06c634766b21367dbbc7bfdc854fe37c7ee0bf113acaa528857542670fa0a",
+   "family": "teammachine-alr@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-alr-two-bikes-bmc-23-10602-004",
+   "timestamp": "20251221160209",
+   "sha256": "c00990667675ee8d0985628681b0b42629352a2f99683fc726ca90cc0f5278c1",
+   "family": "teammachine-alr@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/teammachine-alr-two-2022.html",
+   "timestamp": "20210905232121",
+   "sha256": "aa59444c479767a678245fe001c40d957905650a1706bd8268c55528a9b955a4",
+   "family": "teammachine-alr@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-teammachine-alr-one-22.html",
+   "timestamp": "20230204095025",
+   "sha256": "b8c8a9d8d904fed605659ca1624375fb19664820846a7cd81f53c2dad9a17fb5",
+   "family": "teammachine-alr@store",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-r-01-frs-bikes-bmc-26a-000010",
+   "timestamp": "20251009015127",
+   "sha256": "416bfdb24a4c97ac97c9ce0aefea9327824d7e0e6291dfce2f25df1317299231",
+   "family": "teammachine-r-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-r-01-one-bikes-bmc-26a-000006",
+   "timestamp": "20260308163250",
+   "sha256": "7835dff3bf62efe2192ffe50c8d887691de07f12734288376401f9f3369f0954",
+   "family": "teammachine-r-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-r-mpc-mod-bike-frames-bmc-00a-000003",
+   "timestamp": "20251030160020",
+   "sha256": "dcfbe6076144a870c422e34f41ccf53f77fdba69689834191ab716601dfc9253",
+   "family": "teammachine-r-mpc@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-r-mpc-mod-bike-frames-bmc-00a-000003",
+   "timestamp": "20260922113709",
+   "sha256": "2eb69e5d2f22f680135abe00e53d6f860689627e036eb10840fdbde9c1b9955c",
+   "family": "teammachine-r-mpc@shop",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr01-disc-three-302024.html",
+   "timestamp": "20191208010540",
+   "sha256": "76eec5bb5b9388105d61f8cef9c0e0993db8218ae3b93301f4ebb073638a3efd",
+   "family": "teammachine-slr-01-disc@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr01-disc-mod-301807.html",
+   "timestamp": "20200811182018",
+   "sha256": "2abc687bdfede8e8b5216de86bd7f2566d422227905b6522c3d71c5c1a02e2f1",
+   "family": "teammachine-slr-01-disc@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/us_en/teammachine-slr01-ics-carbon-module-22.html",
+   "timestamp": "20210729150546",
+   "sha256": "77b5023dd0643617e1f8fe76cc597d7871aeda382acb48f5c23324eddf621389",
+   "family": "teammachine-slr-01-ics@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr01-two-302027.html",
+   "timestamp": "20191216075530",
+   "sha256": "6fc2adbbc9d355e494b01364e19ea0865563dadc8b6aba7dd6daa7ab4af80639",
+   "family": "teammachine-slr-01@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr-01-one.html",
+   "timestamp": "20210413070654",
+   "sha256": "7c172a30ee435845c4441849f10a88cff3823aaaae950d6f99d2c2344e9b3f29",
+   "family": "teammachine-slr-01@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/23-teammachine-slr-01-ltd-lightweight-road-bikes.html",
+   "timestamp": "20230303042719",
+   "sha256": "ec65af41fc20b60fb4034eca52f62b121f7de52f297aa14e85a4523c1158d987",
+   "family": "teammachine-slr-01@old",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-slr-01-ltd-bikes-bmc-23-10608-017",
+   "timestamp": "20250430102643",
+   "sha256": "818ae85235e1a7bf00f78f5a7051cf9d82e02464f8ae5487e5910760e6d6421f",
+   "family": "teammachine-slr-01@shop",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-slr-01-one-bikes-bmc-27a-000030",
+   "timestamp": "20260922113718",
+   "sha256": "313baab6cedb4cb51a9cbfd49cdb9557dfac2e1c7e9d5ffb7de594e54c946718",
+   "family": "teammachine-slr-01@shop",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/teammachine-slr-01-one.html",
+   "timestamp": "20210801231134",
+   "sha256": "812c48b9c0acb4cde1a8a486661ede3ceb2138c4beaac0a4665695529dc6d123",
+   "family": "teammachine-slr-01@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr02-disc-one-301773.html",
+   "timestamp": "20191215183448",
+   "sha256": "4c4f8cd81561bb2c7ea1fcc24f5a3489a23820aa46bb10c9043ed60e2e462f4e",
+   "family": "teammachine-slr-02-disc@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr02-disc-one-301773.html",
+   "timestamp": "20200814175841",
+   "sha256": "4c4f8cd81561bb2c7ea1fcc24f5a3489a23820aa46bb10c9043ed60e2e462f4e",
+   "family": "teammachine-slr-02-disc@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr02-one-301818.html",
+   "timestamp": "20191208110011",
+   "sha256": "bf90f8f90d73b5be5bd2f8f428191181ae18e2b34f181ea487ef820dcfd9218a",
+   "family": "teammachine-slr-02@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr02-one-301818.html",
+   "timestamp": "20200808004147",
+   "sha256": "7c11715da6ffd1665b56e187c18dda21c7e5558a8651cfceeabe199b85de68d2",
+   "family": "teammachine-slr-02@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr03-one-301821.html",
+   "timestamp": "20191212033850",
+   "sha256": "c60f1447f6630952356b118a8e51ac7d3380ac252be0a2666ff091da2133820a",
+   "family": "teammachine-slr-03@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr03-one-301821.html",
+   "timestamp": "20200808113517",
+   "sha256": "bbd34bd7d7a5147ab43478ff115cba77f76a21612c3e4ef482aa5ae9be361813",
+   "family": "teammachine-slr-03@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr-disc-02-one-301447.html",
+   "timestamp": "20190720075128",
+   "sha256": "2272ff26cf8c3f515b287f753810d76dbda980e4762d27c0c04a7f374a4d95a6",
+   "family": "teammachine-slr-disc-02@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-slr-mpc-frameset-frames-bmc-00a-000004",
+   "timestamp": "20251015013940",
+   "sha256": "47c031af453188284c9bebec85e35cd7f7af6fed6e5f4d5bef8deee219ab8b9c",
+   "family": "teammachine-slr-mpc@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/teammachine-slr-one.html",
+   "timestamp": "20210515173217",
+   "sha256": "507e771ade61f050f46de622f29b3bcd0b42b0e58d0868124795dd09cae2e423",
+   "family": "teammachine-slr@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-slr-six-bikes-bmc-23-10611-014",
+   "timestamp": "20251014134503",
+   "sha256": "ad7a94a1b9d1d5277a0643bb4ac1096f0f124d1d7004569a03eda038338423e8",
+   "family": "teammachine-slr@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/teammachine-slr-one-bikes-bmc-26a-000019",
+   "timestamp": "20261012070049",
+   "sha256": "62446bffc25d7828dd0cac6c4e49e5cd695e41e3a90a155fd92029bfbe84bce4",
+   "family": "teammachine-slr@shop",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/teammachine-slr-one.html",
+   "timestamp": "20210728061051",
+   "sha256": "8d5cd60e40449bc80cfebd543f9f4e8f8d39b8ffa1a9b1345ae4fe997e3c972d",
+   "family": "teammachine-slr@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-teammachine-slr-frs-carbon-prisma-23.html",
+   "timestamp": "20231128141330",
+   "sha256": "0f6037649fff936401025c9245a7a4c299eee63b1b5f043ded6bbb97593ced2b",
+   "family": "teammachine-slr@store",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/timemachine-01-road-two-302034.html",
+   "timestamp": "20191215190538",
+   "sha256": "13d5c82ff45db79b1006b87c112621b018874995ca0380df3f85ab9196d33763",
+   "family": "timemachine-01-road@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/timemachine-01-road-two.html",
+   "timestamp": "20210413021212",
+   "sha256": "9277e4ce1b2997718b03b71573e86461cdc5b04b37dfed4e6ddc67b88bcc1944",
+   "family": "timemachine-01-road@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/timemachine-01-road-two.html",
+   "timestamp": "20211015020010",
+   "sha256": "f6a2a2d63df19b081236e8a7c8314e3917bc86bad90b0857caa546315721d3a4",
+   "family": "timemachine-01-road@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/timemachine-01-road-three-23.html",
+   "timestamp": "20220815165500",
+   "sha256": "4e832d545cc939937dbde317fa9d02ed61422a99be7a1ed213f86b0039aca1cb",
+   "family": "timemachine-01-road@store",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/timemachine-road-01-three-301467.html",
+   "timestamp": "20190716181333",
+   "sha256": "f46a5144493d983899c45ac5e2907e80d386b8f9ed68f927a629852a23a095f6",
+   "family": "timemachine-road-01@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/timemachine-road-01-mod-bike-frames-bmc-19a-000091",
+   "timestamp": "20260211105504",
+   "sha256": "dd9a8135cc752726b05cf60c07062b32db8f17ead594ccd159003899c79a17b1",
+   "family": "timemachine-road-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/timemachine-road-01-two-bikes-bmc-23-10616-008",
+   "timestamp": "20251104160849",
+   "sha256": "784bebfef3db8109c7232eb1d4abdaddda8becd6945f39e7d82d536b74fdd630",
+   "family": "timemachine-road-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/timemachine-road-01-mod-2022.html",
+   "timestamp": "20210730032723",
+   "sha256": "97b6431584c4d8f492d22966c65b0eb8273274f3b9178ab0b46028f2e6bca482",
+   "family": "timemachine-road-01@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-timemachine-road-01-three-23.html",
+   "timestamp": "20231129074401",
+   "sha256": "d88384857ca61456aef74c901dc79f97109c4c0eed61aa8b4568c167bf5c6079",
+   "family": "timemachine-road-01@store",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-01-lt-one-bikes-bmc-24-10619-003",
+   "timestamp": "20250912120744",
+   "sha256": "49b698e50082b12f97d688db3b28bd6bc354b400e8c346bff69e770aed1d2e62",
+   "family": "urs-01-lt@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-01-lt-one-bikes-bmc-27a-000058",
+   "timestamp": "20260320100914",
+   "sha256": "f609c1b6ecdb8eda3249c8aba0147aa3049510efcb754bdb0333d9655272ffc5",
+   "family": "urs-01-lt@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/urs-01-one.html",
+   "timestamp": "20220128014246",
+   "sha256": "4f94878ba8aca814761e9acdf6e121f2844cb7837a5c309f5fb6364e04515708",
+   "family": "urs-01@old",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/urs-01-three.html",
+   "timestamp": "20210923213248",
+   "sha256": "c86504587c541d3877eb78531b5f4485de7f1bfe90cad0ca695c4d44568ae61e",
+   "family": "urs-01@old",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-01-three-bikes-bmc-22-10619-008",
+   "timestamp": "20251105112031",
+   "sha256": "cca3e9ba4650c9cbe5156882cd804cbc2cc74b78270dbedab0b35cb8b60e3f0b",
+   "family": "urs-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-01-two-bikes-bmc-26a-000040",
+   "timestamp": "20260320100633",
+   "sha256": "a571d57ae97fd99c8a803e0ebd41d99b4e4c1a764eee7af5ea6e90afc7113269",
+   "family": "urs-01@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/urs-01-two.html",
+   "timestamp": "20211023171817",
+   "sha256": "71d24276871bbe1e7d42444676d3a72446e369d05e6aec1602b1a6f596694f89",
+   "family": "urs-01@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-urs-01-one-23.html",
+   "timestamp": "20231203212430",
+   "sha256": "8bd4f301140cc989eee3f108cdc4daf63691e380064ecdbcdb5de20a71830579",
+   "family": "urs-01@store",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-al-two-bikes-bmc-23-10623-006",
+   "timestamp": "20251014142019",
+   "sha256": "2dc483452e9e5f3a30ebb8b65272bb84d714f9c9528b167710f21d81721cb610",
+   "family": "urs-al@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/bmc-urs-al-two-22.html",
+   "timestamp": "20231130203357",
+   "sha256": "e3d374be08e34daa1a1232e1d539619d56055ff2f10231f8833c14a2663f3469",
+   "family": "urs-al@store",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-lt-one-bikes-bmc-23-10619-011",
+   "timestamp": "20251014063849",
+   "sha256": "40ea501929a48418ae2238abd880134923785e83a47dea191c133eecd454050b",
+   "family": "urs-lt@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/urs-lt-one.html",
+   "timestamp": "20220626051413",
+   "sha256": "640c2b83a40e52f9c82e45a20e2feaa444b6057610d6fd0531736189710dec9f",
+   "family": "urs-lt@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/urs-three-301839.html",
+   "timestamp": "20191215190129",
+   "sha256": "223b6fe599b0890c4a850b6a3f32c82ed0d52e690454040ea3316ca4a89d180d",
+   "family": "urs@old",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/urs-one-301837.html",
+   "timestamp": "20210128054031",
+   "sha256": "574f63d3ea6a548f55e5b953f47a0c57dc7f3a431fe25cb1bbe107c687f5c29b",
+   "family": "urs@old",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-two-bikes-bmc-26a-000043",
+   "timestamp": "20251020121221",
+   "sha256": "39db12fb2b94958d3266e89c8433a8cd9ebaea0c467453f19645e188a3ab3871",
+   "family": "urs@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://bmc-switzerland.com/products/urs-two-bikes-bmc-26a-000043",
+   "timestamp": "20260320100528",
+   "sha256": "9204af356e3beeb17a48b96ada86bfb513e70433efd8578a0a03a063a24ae34a",
+   "family": "urs@shop",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/intl_en/urs-one.html",
+   "timestamp": "20210924213235",
+   "sha256": "5a6831a20171cf984c1d7b5680c3abf2f49b453e9c4bae5df367078e0a3dc24c",
+   "family": "urs@store",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-urs-one-22.html",
+   "timestamp": "20230324033652",
+   "sha256": "78528ea18ab47ee1c6ac6da01d13be11db198ffda0248019144c2d309c552588",
+   "family": "urs@store",
+   "year": 2023,
+   "related": []
+  }
+ ]
+}
