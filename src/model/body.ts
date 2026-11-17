@@ -31,7 +31,10 @@ export function resolveSegments(body: Body): Segments {
     tibia: 0.246 * H * k * (f.tibia ?? 1),
     ankleHeight: 0.039 * H * k * (f.ankleHeight ?? 1),
     footLength: (effectiveShoeSize(body) * 20) / 3 - 17,
-    pelvis: 0.05 * H,
+    // Sit bones to hip joint centre in the pelvis frame (Peng et al. 2013, CT of 48 pelves: 67.9 mm up,
+    // 31.2 mm forward), as fractions of the ANSUR II mean male stature (1756 mm).
+    pelvisUp: 0.0387 * H,
+    pelvisFwd: 0.0178 * H,
     pelvicShare: { low: 0.35, medium: 0.5, high: 0.6 }[body.flexibility],
     kneeFront: 0.022 * H,
     torso: 0.288 * H * (f.torso ?? 1),

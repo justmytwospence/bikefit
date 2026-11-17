@@ -13,7 +13,8 @@ export interface Segments {
   footLength: number;
   footBack: number;
   toeAhead: number;
-  pelvis: number;
+  pelvisUp: number;
+  pelvisFwd: number;
   pelvicShare: number;
   kneeFront: number;
   torso: number;

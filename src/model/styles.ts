@@ -41,7 +41,7 @@ export const STYLES: Record<StyleId, Style> = {
     'endurance', 'Endurance', 'Upright and comfortable for long days.',
     { defaultEffort: 'easy', defaultHands: 'hoods' }, 158,
     {
-      knee: [140, 148], kneeTop: [62, 120], hip: [55, 75], torso: [45, 55], shoulder: [80, 92],
+      knee: [140, 150], kneeTop: [62, 120], hip: [55, 75], torso: [45, 55], shoulder: [80, 92],
       elbow: [150, 165], seatAngle: [71, 75], handLoad: [18, 30], kops: [-10, 40],
     },
     { hip: [45, 65], torso: [32, 45], shoulder: [78, 95], elbow: [125, 155], handLoad: [22, 36] },
@@ -50,7 +50,7 @@ export const STYLES: Record<StyleId, Style> = {
     'race', 'Race', 'Low and long for speed.',
     { defaultEffort: 'hard', defaultHands: 'mixed' }, 155,
     {
-      knee: [140, 148], kneeTop: [62, 120], hip: [45, 62], torso: [32, 42], shoulder: [85, 100],
+      knee: [140, 150], kneeTop: [62, 120], hip: [45, 62], torso: [32, 42], shoulder: [85, 100],
       elbow: [150, 165], seatAngle: [72, 76], handLoad: [20, 32], kops: [-10, 40],
     },
     { hip: [40, 55], torso: [22, 35], shoulder: [80, 100], elbow: [125, 155], handLoad: [24, 38] },
@@ -59,7 +59,7 @@ export const STYLES: Record<StyleId, Style> = {
     'gravel', 'Gravel', 'Stable and a little more upright for rough ground.',
     { defaultEffort: 'tempo', defaultHands: 'hoods' }, 155,
     {
-      knee: [138, 146], kneeTop: [62, 120], hip: [50, 70], torso: [40, 50], shoulder: [80, 95],
+      knee: [138, 148], kneeTop: [62, 120], hip: [50, 70], torso: [40, 50], shoulder: [80, 95],
       elbow: [148, 162], seatAngle: [71.5, 75.5], handLoad: [18, 30], kops: [-15, 40],
     },
     { hip: [42, 60], torso: [28, 40], shoulder: [78, 95], elbow: [125, 155], handLoad: [22, 36] },

@@ -6,6 +6,12 @@ import { add, angleBetween, clamp, deg, lawOfCosAngle, len, rotate, scale, sub, 
 
 export const CYCLE_STEPS = 36;
 export const PELVIS_TORSO_REF = 55;
+/** Anterior pelvic tilt, degrees, at the reference torso angle (Sauer 2007: 21 to 24 on the drops). */
+export const PELVIS_BASE_TILT = 12;
+/** Soft tissue and saddle padding between the sit bones and the saddle-top reference, mm. */
+export const SEAT_TISSUE = 20;
+/** How far the sit bones rest behind the saddle reference point (120 mm from the tail), mm. */
+export const SIT_BACK = 40;
 const RAD = Math.PI / 180;
 
 export function solveFoot(seg: Segments, spindle: Vec2, soleDeg: number, footStack: number, cleatOffset: number) {
@@ -64,14 +70,21 @@ export function solveUpperBody(seg: Segments, hip: Vec2, hand: Vec2, elbowPref: 
 
 /** The hip joint sits above the sit bones, tipped forward as the torso gets lower. */
 export function solvePelvis(seg: Segments, saddle: Vec2, hand: Vec2, elbowPref: number) {
-  let tilt = 0;
-  let hip: Vec2 = saddle;
-  let up = solveUpperBody(seg, saddle, hand, elbowPref);
+  const hipAt = (tiltDeg: number): Vec2 => {
+    const t = tiltDeg * RAD;
+    return {
+      x: saddle.x - SIT_BACK + seg.pelvisFwd * Math.cos(t) + seg.pelvisUp * Math.sin(t),
+      y: saddle.y + SEAT_TISSUE + seg.pelvisUp * Math.cos(t) - seg.pelvisFwd * Math.sin(t),
+    };
+  };
+  let tilt = PELVIS_BASE_TILT;
+  let hip = hipAt(tilt);
+  let up = solveUpperBody(seg, hip, hand, elbowPref);
   for (let i = 0; i < 4; i++) {
-    hip = { x: saddle.x + seg.pelvis * Math.sin(tilt * RAD), y: saddle.y + seg.pelvis * Math.cos(tilt * RAD) };
+    hip = hipAt(tilt);
     up = solveUpperBody(seg, hip, hand, elbowPref);
     if (i === 3) break; // hip and up now match the tilt we report
-    tilt = clamp(seg.pelvicShare * (PELVIS_TORSO_REF - up.torsoAngle), -15, 40);
+    tilt = clamp(PELVIS_BASE_TILT + seg.pelvicShare * (PELVIS_TORSO_REF - up.torsoAngle), 0, 40);
   }
   return { hip, up, tilt };
 }

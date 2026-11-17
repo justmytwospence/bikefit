@@ -22,37 +22,37 @@ const targets = (hoodsEp = 160): PoseTarget[] => [
 describe('evaluateFit', () => {
   it('matches the spike golden values (hoods)', () => {
     const h = evaluateFit(seg, layout, ctx(), targets()).poses[0];
-    expect(h.metrics.knee).toBeCloseTo(152.34, 1);
-    expect(h.metrics.kneeTop).toBeCloseTo(68.44, 1);
-    expect(h.metrics.hip).toBeCloseTo(63.99, 1);
-    expect(h.metrics.torso).toBeCloseTo(45.46, 1);
-    expect(h.metrics.shoulder).toBeCloseTo(85.43, 1);
+    expect(h.metrics.knee).toBeCloseTo(146.59, 1);
+    expect(h.metrics.kneeTop).toBeCloseTo(66.62, 1);
+    expect(h.metrics.hip).toBeCloseTo(64.01, 1);
+    expect(h.metrics.torso).toBeCloseTo(46.59, 1);
+    expect(h.metrics.shoulder).toBeCloseTo(84.88, 1);
     expect(h.metrics.elbow).toBeCloseTo(160, 1);
     expect(h.metrics.seatAngle).toBeCloseTo(72.39, 1);
-    expect(h.metrics.handLoad).toBeCloseTo(23.73, 1);
-    expect(h.metrics.kops).toBeCloseTo(8.33, 1);
+    expect(h.metrics.handLoad).toBeCloseTo(23.74, 1);
+    expect(h.metrics.kops).toBeCloseTo(16.99, 1);
     expect(h.overextended).toBe(false);
     expect(h.legShortfall).toBe(0);
     expect(h.overreach).toBe(false);
   });
   it('matches the spike golden values (drops)', () => {
     const d = evaluateFit(seg, layout, ctx(), targets()).poses[1];
-    expect(d.metrics.knee).toBeCloseTo(151.02, 1);
-    expect(d.metrics.hip).toBeCloseTo(52.94, 1);
-    expect(d.metrics.torso).toBeCloseTo(33.87, 1);
-    expect(d.metrics.shoulder).toBeCloseTo(83.7, 1);
-    expect(d.metrics.handLoad).toBeCloseTo(29.83, 1);
+    expect(d.metrics.knee).toBeCloseTo(144.01, 1);
+    expect(d.metrics.hip).toBeCloseTo(52.55, 1);
+    expect(d.metrics.torso).toBeCloseTo(35.32, 1);
+    expect(d.metrics.shoulder).toBeCloseTo(83.14, 1);
+    expect(d.metrics.handLoad).toBeCloseTo(29.48, 1);
   });
   it('ankling and cleat position change the knee angle', () => {
     const knee = (a: Ankling, l = layout) => evaluateFit(seg, l, ctx(a), targets()).poses[0].metrics.knee;
-    expect(knee('heelDrop')).toBeCloseTo(157.31, 1);
-    expect(knee('toePoint')).toBeCloseTo(148.23, 1);
-    expect(knee('neutral', forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, cleatOffset: 15 }))).toBeCloseTo(154.5, 1);
+    expect(knee('heelDrop')).toBeCloseTo(150.59, 1);
+    expect(knee('toePoint')).toBeCloseTo(143.1, 1);
+    expect(knee('neutral', forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, cleatOffset: 15 }))).toBeCloseTo(148.36, 1);
   });
   it('more effort means less weight on the hands', () => {
     const hl = (w: number) => evaluateFit(seg, layout, ctx('neutral', w), targets()).poses[0].metrics.handLoad;
-    expect(hl(0)).toBeCloseTo(30.29, 1);
-    expect(hl(3.5)).toBeCloseTo(21.1, 1);
+    expect(hl(0)).toBeCloseTo(30.31, 1);
+    expect(hl(3.5)).toBeCloseTo(21.11, 1);
   });
   it('keeps limb lengths constant', () => {
     const c = ctx();
