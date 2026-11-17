@@ -1,10 +1,11 @@
-import { runCompare, runOptimize, runSizes } from './lib/optimizeClient';
+import { screenCatalog } from './lib/catalogFit';
+import { runCatalog, runCompare, runOptimize, runSizes } from './lib/optimizeClient';
 import { sizeFamily, type SizeOption } from './lib/sizes';
 import { defaults, migrate, type AppData } from './lib/appData';
 import { resolveSegments } from './model/body';
-import type { CompareRow, FitProblem, FitResult, Verdict } from './model/optimize';
+import { idealLayout, type CompareRow, type FitProblem, type FitResult, type Verdict } from './model/optimize';
 import { EXAMPLE_FRAMES } from './model/presets';
-import { poseWeights } from './model/riding';
+import { makeContext, poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
 import type { MeasureId } from './lib/measure';
 import { decodeShare, encodeShare } from './lib/share';
@@ -56,6 +57,11 @@ export const ui = $state({
   viewPose: 'hoods' as 'hoods' | 'drops',
   measure: null as MeasureId | null,
   sizes: null as { rows: CompareRow[]; options: SizeOption[] } | null,
+  compareSource: 'saved' as 'saved' | 'all',
+  catalog: null as null | {
+    rows: CompareRow[]; frames: Frame[]; modelOf: Record<string, string>;
+    done: number; total: number; key: string; running: boolean;
+  },
 });
 
 export function save() {
@@ -205,6 +211,64 @@ export async function runCompareAll() {
   } finally {
     ui.busy = false;
   }
+}
+
+export function catalogKey(): string {
+  return JSON.stringify(snap({
+    body: app.body, styleId: app.styleId, components: app.components,
+    options: app.options, effort: app.effort, hands: app.hands, locks: app.locks,
+  }));
+}
+
+let catalogRun = 0;
+
+/** Checks the likeliest sizes of every catalog model for this rider and style, streaming rows into ui.catalog. */
+export async function runCatalogFit() {
+  const run = ++catalogRun;
+  ui.error = '';
+  const cat = await import('./data/catalog');
+  const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = problem('shop');
+  const ideal = idealLayout(
+    rest.segments, rest.targets, rest.poseWeights,
+    makeContext(null, rest.components, rest.ankling, rest.effort), rest.components, rest.options.crankLengths,
+  );
+  const cands = screenCatalog(cat.CATALOG, cat.toFrame, rest.components, ideal.hoods);
+  ui.catalog = {
+    rows: [], frames: cands.map((c) => c.frame),
+    modelOf: Object.fromEntries(cands.map((c) => [c.frame.id, c.modelId])),
+    done: 0, total: cands.length, key: catalogKey(), running: true,
+  };
+  try {
+    const rows = await runCatalog(rest, cands.map((c) => c.frame), (r, done) => {
+      if (run === catalogRun && ui.catalog) {
+        ui.catalog.rows = r;
+        ui.catalog.done = done;
+      }
+    }, snap(app.locks));
+    if (run === catalogRun && ui.catalog) {
+      ui.catalog.rows = rows;
+      ui.catalog.done = ui.catalog.total;
+    }
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    if (msg !== 'Superseded' && run === catalogRun) ui.error = msg;
+  } finally {
+    if (run === catalogRun && ui.catalog) ui.catalog.running = false;
+  }
+}
+
+/** Opens Compare on the catalog, checking it unless fresh results are there. */
+export function browseCatalog() {
+  app.tab = 'compare';
+  ui.compareSource = 'all';
+  if (!ui.catalog || (!ui.catalog.running && ui.catalog.key !== catalogKey())) void runCatalogFit();
+}
+
+/** Saves a catalog size if needed, then uses it like a saved Compare row. */
+export function useCatalogRow(row: CompareRow) {
+  const f = ui.catalog?.frames.find((x) => x.id === row.frameId);
+  if (f && !app.frames.some((x) => x.id === f.id)) app.frames.push(snap(f));
+  useCompareRow(row);
 }
 
 export function useCompareRow(row: CompareRow) {

@@ -66,4 +66,11 @@ describe('groupRows', () => {
     expect(groups[1].key).toBe('f:mine');
     expect(groups[1].sizes.map((s) => s.size)).toEqual(['']);
   });
+  it('leads a model with its best verdict even when another size has a lower cost', () => {
+    const named = (id: string, name: string, v: 'fits' | 'compromise' | 'no', cost: number) =>
+      ({ ...row(id, v, cost), frameName: name }) as CompareRow;
+    const rows = [named('cat:t-61', 'Aethos · 61', 'compromise', 0.1), named('cat:t-58', 'Aethos · 58', 'fits', 0.2)];
+    const [g] = groupRows(rows, [{ id: 'cat:t-58' }, { id: 'cat:t-61' }] as Frame[]);
+    expect(g.best.frameId).toBe('cat:t-58');
+  });
 });

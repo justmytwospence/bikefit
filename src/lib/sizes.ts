@@ -1,5 +1,5 @@
 import type { CatalogModel, CatalogSize } from '../data/catalog';
-import { VERDICT_RANK, type CompareRow } from '../model/optimize';
+import { byVerdictThenCost, VERDICT_RANK, type CompareRow } from '../model/optimize';
 import type { Frame } from '../model/types';
 
 export interface SizeOption {
@@ -55,6 +55,7 @@ export function groupRows(rows: CompareRow[], frames: Frame[]): ModelGroup[] {
     let g = groups.find((x) => x.key === key);
     if (!g) groups.push((g = { key, name: model ? row.frameName.slice(0, cut) : row.frameName, sizes: [], best: row }));
     g.sizes.push({ size: model ? row.frameName.slice(cut + 3) : '', row });
+    if (byVerdictThenCost(row, g.best) < 0) g.best = row;
   }
   for (const g of groups) g.sizes.sort((a, b) => (order.get(a.row.frameId) ?? 0) - (order.get(b.row.frameId) ?? 0));
   return groups;

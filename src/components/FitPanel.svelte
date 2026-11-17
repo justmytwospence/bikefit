@@ -7,7 +7,7 @@
   import { clamp } from '../model/vec';
   import { CUSTOM_HINT, fixedSummary, KNOB_ORDER, PRESETS, presetLocks, presetOf, type Preset } from '../lib/knobs';
   import {
-    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo, useSize,
+    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo, useSize, browseCatalog,
   } from '../state.svelte';
   import { sizeVerdictLine } from '../lib/sizes';
   import { STYLES } from '../model/styles';
@@ -65,6 +65,9 @@
       ? 'Changes are counted from your setup. Optimize prefers adjustments over new parts.'
       : `No bike set up yet: Optimize picks the best build for this frame${frame.id.startsWith('cat:') ? ' and checks its other sizes' : ''}.`}
   </p>
+  {#if !app.hasSetup}
+    <button type="button" class="link" onclick={browseCatalog}>Browse all bikes that fit</button>
+  {/if}
   <h2>What can you change?</h2>
   <Segmented
     options={PRESETS} ariaLabel="What you can change"
@@ -247,6 +250,7 @@
   .sz.compromise { color: var(--near); }
   .sz.no { color: var(--off); }
   .sz.on { border-color: currentColor; background: var(--surface); }
+  .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
   .fixed { margin-top: 18px; }
   .fixed summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
   .fixed summary b::after { content: ' ▾'; color: var(--muted); }

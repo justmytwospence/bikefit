@@ -378,12 +378,13 @@ export function wrenchList(base: FitParams, next: FitParams): string[] {
 export function compareFrames(
   problemFor: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>,
   frames: Frame[],
+  locks: Partial<Record<ParamKey, boolean>> = {},
 ): CompareRow[] {
   return frames
     .map((frame) => ({
       frameId: frame.id,
       frameName: frame.name,
-      result: optimizeFit({ ...problemFor, frame, current: problemFor.baseline, mode: 'shop', locks: {} }),
+      result: optimizeFit({ ...problemFor, frame, current: problemFor.baseline, mode: 'shop', locks }),
     }))
     .sort(byVerdictThenCost);
 }

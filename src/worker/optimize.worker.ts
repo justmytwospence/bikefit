@@ -7,7 +7,7 @@ self.onmessage = (e: MessageEvent) => {
       ? optimizeFit(payload)
       : kind === 'sizes'
         ? optimizeSizes(payload.problem, payload.frames)
-        : compareFrames(payload.problem, payload.frames);
+        : compareFrames(payload.problem, payload.frames, payload.locks);
     self.postMessage({ id, result });
   } catch (err) {
     self.postMessage({ id, error: String(err) });

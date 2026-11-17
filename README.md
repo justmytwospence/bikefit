@@ -11,7 +11,7 @@ Four concepts are kept separate:
 
 The Fit tab starts as a new build: Optimize suggests the whole setup for the frame. Switch to My current setup (or press Mark as my setup) and changes are counted from your setup, with Optimize preferring adjustments over new parts. When the frame came from the catalog, Optimize also tries the model's other sizes and says if one fits better; tap a size to switch to it.
 
-The Compare tab sorts all saved frames into three groups for your body and style: fits, fits with compromises (a raised stem, maxed spacers, tight standover, little or a lot of seatpost, heavy toe overlap) and does not fit. Each frame shows the build it needs, the saddle-to-bar drop and the estimated standover. Saved sizes of one model share a card led by the best size.
+The Compare tab sorts all saved frames into three groups for your body and style: fits, fits with compromises (a raised stem, maxed spacers, tight standover, little or a lot of seatpost, heavy toe overlap) and does not fit. Each frame shows the build it needs, the saddle-to-bar drop and the estimated standover. Saved sizes of one model share a card led by the best size. All bikes checks the whole catalog (the two likeliest sizes of each model) and lists what fits, ranked by fit score, with search and brand, category and verdict filters; New build in Fit links to it.
 
 Find a bike (Bike tab) searches a bundled catalog of manufacturer geometry (`src/data/frames/`, one JSON file per brand, each model with its source URL) and copies a size, or every size, into your saved frames.
 
