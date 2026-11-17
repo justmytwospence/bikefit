@@ -1,5 +1,9 @@
 <script lang="ts">
-  import { activeFrame, app, deleteFrame, duplicateFrame, newFrame, selectFrame } from '../state.svelte';
+  import { onMount } from 'svelte';
+  import { catalogModelFor } from '../lib/sizes';
+  import {
+    activeFrame, addCatalogFrame, app, deleteFrame, duplicateFrame, newFrame, selectFrame,
+  } from '../state.svelte';
   import FramePicker from './FramePicker.svelte';
   import NumberField from './NumberField.svelte';
   import type { Frame } from '../model/types';
@@ -8,36 +12,69 @@
   const full = $derived(app.detail.bikeFull);
   const frame = $derived(activeFrame());
   const o = $derived(app.options);
-  /** Catalog sizes of one model share an optgroup; other frames are listed first. */
-  const grouped = $derived.by(() => {
-    const plain: Frame[] = [];
-    const groups: { label: string; frames: { id: string; size: string }[] }[] = [];
+  /** One entry per bike: a catalog model with its saved sizes, or a frame of your own. */
+  const bikes = $derived.by(() => {
+    const out: { key: string; label: string; frames: { id: string; size: string }[] }[] = [];
     for (const f of app.frames) {
       const cut = f.name.lastIndexOf(' · ');
       if (!f.id.startsWith('cat:') || cut < 0) {
-        plain.push(f);
+        out.push({ key: 'f:' + f.id, label: f.name, frames: [{ id: f.id, size: '' }] });
         continue;
       }
       const label = f.name.slice(0, cut);
-      let g = groups.find((x) => x.label === label);
-      if (!g) groups.push((g = { label, frames: [] }));
+      let g = out.find((x) => x.key === 'm:' + label);
+      if (!g) out.push((g = { key: 'm:' + label, label, frames: [] }));
       g.frames.push({ id: f.id, size: f.name.slice(cut + 3) });
     }
-    return { plain, groups };
+    return out;
   });
+  const bike = $derived(bikes.find((b) => b.frames.some((f) => f.id === app.activeFrameId)) ?? bikes[0]);
+  const isCatalog = $derived(frame.id.startsWith('cat:'));
+
+  // The catalog loads lazily so unsaved sizes of the current model can be offered too.
+  type Cat = typeof import('../data/catalog');
+  let cat = $state.raw<Cat | null>(null);
+  onMount(async () => {
+    cat = await import('../data/catalog');
+  });
+  const model = $derived(cat && isCatalog ? catalogModelFor(frame.id, cat.CATALOG) : null);
+  /** Sizes for the size picker: every catalog size when known, else the saved ones. */
+  const sizes = $derived(
+    model && cat
+      ? model.sizes.map((s) => ({ id: cat!.frameId(model, s.size), size: s.size }))
+      : isCatalog ? bike.frames : [],
+  );
+
+  function pickBike(key: string) {
+    const b = bikes.find((x) => x.key === key);
+    if (b && !b.frames.some((f) => f.id === app.activeFrameId)) selectFrame(b.frames[0].id);
+  }
+  function pickSize(id: string) {
+    if (app.frames.some((f) => f.id === id)) return selectFrame(id);
+    const s = model?.sizes.find((x) => cat!.frameId(model, x.size) === id);
+    if (model && s) addCatalogFrame(cat!.toFrame(model, s));
+  }
   const list = (a: number[], u: string) => a.map((x) => x + u).join(', ');
 </script>
 
 <div class="scroll">
-  <h2>Frame</h2>
-  <select aria-label="Frame" value={app.activeFrameId} onchange={(e) => selectFrame(e.currentTarget.value)}>
-    {#each grouped.plain as f (f.id)}<option value={f.id}>{f.name}</option>{/each}
-    {#each grouped.groups as g (g.label)}
-      <optgroup label={g.label}>
-        {#each g.frames as f (f.id)}<option value={f.id}>{f.size}</option>{/each}
-      </optgroup>
-    {/each}
-  </select>
+  <h2>Bike</h2>
+  <div class="pick" class:solo={!sizes.length}>
+    <label>
+      <span>Model</span>
+      <select value={bike.key} onchange={(e) => pickBike(e.currentTarget.value)}>
+        {#each bikes as b (b.key)}<option value={b.key}>{b.label}</option>{/each}
+      </select>
+    </label>
+    {#if sizes.length}
+      <label>
+        <span>Size</span>
+        <select value={app.activeFrameId} onchange={(e) => pickSize(e.currentTarget.value)}>
+          {#each sizes as s (s.id)}<option value={s.id}>{s.size}</option>{/each}
+        </select>
+      </label>
+    {/if}
+  </div>
   <div class="btns">
     <button type="button" class="btn small" onclick={() => (picking = !picking)}>Find a bike</button>
     <button type="button" class="btn small" onclick={duplicateFrame}>Duplicate</button>
@@ -48,10 +85,12 @@
 
   <h2>Frame geometry</h2>
   {#key frame.id}
-    <label class="name">
-      <span>Name</span>
-      <input type="text" bind:value={frame.name} />
-    </label>
+    {#if !isCatalog}
+      <label class="name">
+        <span>Name</span>
+        <input type="text" bind:value={frame.name} />
+      </label>
+    {/if}
     <div class="grid">
       <NumberField label="Stack" unit="mm" min={400} max={800} step={1} bind:value={frame.stack} />
       <NumberField label="Reach" unit="mm" min={300} max={500} step={1} bind:value={frame.reach} />
@@ -104,6 +143,11 @@
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
   .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
+  .pick { display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: 10px; }
+  .pick.solo { grid-template-columns: minmax(0, 1fr); }
+  .pick label { display: block; font-weight: 600; font-size: 13px; min-width: 0; }
+  .pick span { display: block; margin-bottom: 4px; }
+  .pick select { width: 100%; }
   .picker { margin-top: 12px; }
   .btns { display: flex; gap: 8px; margin-top: 10px; }
   .grid { display: grid; grid-template-columns: 1fr; gap: 0 10px; }

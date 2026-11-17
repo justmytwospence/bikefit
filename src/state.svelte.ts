@@ -241,8 +241,14 @@ export function deleteFrame(id: string) {
   if (app.frames.length <= 1) return;
   const i = app.frames.findIndex((f) => f.id === id);
   if (i < 0) return;
-  app.frames.splice(i, 1);
-  if (app.activeFrameId === id) app.activeFrameId = app.frames[0].id;
+  const [gone] = app.frames.splice(i, 1);
+  if (app.activeFrameId !== id) return;
+  // Deleting one size of a catalog model stays on that model when another size is saved.
+  const cut = gone.name.lastIndexOf(' · ');
+  const model = gone.id.startsWith('cat:') && cut >= 0 ? gone.name.slice(0, cut + 3) : null;
+  const sibling = model ? app.frames.find((f) => f.id.startsWith('cat:') && f.name.startsWith(model)) : undefined;
+  app.activeFrameId = (sibling ?? app.frames[Math.min(i, app.frames.length - 1)]).id;
+  clearFeedback();
 }
 
 export function addCatalogFrame(f: Frame) {
