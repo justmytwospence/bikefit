@@ -79,7 +79,7 @@
 <style>
   .menu { position: relative; }
   .gear { width: 44px; height: 44px; border: 0; background: transparent; border-radius: 12px; display: grid; place-items: center; color: var(--muted); }
-  .pop { position: absolute; right: 0; top: 48px; width: 280px; z-index: 20; margin: 0; }
+  .pop { position: absolute; right: 0; top: 46px; width: 280px; z-index: 20; margin: 0; }
   .pop p { margin: 10px 0 0; }
   .data { display: flex; gap: 6px; flex-wrap: wrap; }
 </style>

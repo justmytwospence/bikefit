@@ -50,9 +50,8 @@
 
 <style>
   .strip {
-    display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 8px 12px;
-    scrollbar-width: none; background: color-mix(in srgb, var(--surface) 80%, transparent);
-    backdrop-filter: blur(12px); border-top: 1px solid var(--line);
+    flex: 1; min-width: 0; display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 8px 12px;
+    scrollbar-width: none;
   }
   .strip::-webkit-scrollbar { display: none; }
   .card { flex: 1 0 92px; scroll-snap-align: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; }

@@ -8,7 +8,7 @@
   import FitPanel from './components/FitPanel.svelte';
   import MetricStrip from './components/MetricStrip.svelte';
   import RiderPanel from './components/RiderPanel.svelte';
-  import ScoreRing from './components/ScoreRing.svelte';
+  import ScoreCard from './components/ScoreCard.svelte';
   import SettingsMenu from './components/SettingsMenu.svelte';
   import { resolveSegments } from './model/body';
   import { forwardLayout } from './model/geometry';
@@ -97,11 +97,6 @@
 </script>
 
 <div class="app">
-  <header>
-    <div class="brand"><i></i>bikefit</div>
-    <div class="right"><SettingsMenu /><ScoreRing {score} /></div>
-  </header>
-
   <section class="view">
     <div class="canvas">
       <BikeView
@@ -111,7 +106,10 @@
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
     </div>
-    <MetricStrip poseEval={evaluation.poses[pi]} target={shownTarget} level={resultsLevel} />
+    <div class="results">
+      <ScoreCard {score} />
+      <MetricStrip poseEval={evaluation.poses[pi]} target={shownTarget} level={resultsLevel} />
+    </div>
   </section>
 
   <aside class="panel">
@@ -119,6 +117,7 @@
       {#each tabs as t (t.id)}
         <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => (app.tab = t.id)}>{t.label}</button>
       {/each}
+      <SettingsMenu />
     </div>
     <div class="body">
       {#if app.tab === 'rider'}<RiderPanel />
@@ -131,24 +130,23 @@
 
 <style>
   .app {
-    height: 100dvh; display: grid; overflow: hidden;
-    grid-template: "head" 52px "view" auto "panel" minmax(0, 1fr) / minmax(0, 1fr);
+    height: 100dvh; display: grid; overflow: hidden; padding-top: env(safe-area-inset-top);
+    grid-template: "view" auto "panel" minmax(0, 1fr) / minmax(0, 1fr);
   }
-  header { grid-area: head; min-width: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 12px; border-bottom: 1px solid var(--line); }
-  .brand { font-weight: 600; font-size: 17px; display: flex; align-items: center; gap: 7px; letter-spacing: -0.01em; }
-  .brand i { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
-  .right { display: flex; align-items: center; gap: 4px; }
-  .view { grid-area: view; height: 46dvh; display: flex; flex-direction: column; min-height: 0; }
+  .view { grid-area: view; height: 50dvh; display: flex; flex-direction: column; min-height: 0; }
+  .results { display: flex; align-items: stretch; border-top: 1px solid var(--line); background: color-mix(in srgb, var(--surface) 80%, transparent); backdrop-filter: blur(12px); }
+  .results > :global(.score) { margin: 8px 0 8px 12px; }
   .canvas { flex: 1; min-height: 0; }
   .panel { grid-area: panel; display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); background: var(--bg); }
   .tabs { display: flex; border-bottom: 1px solid var(--line); background: var(--surface); }
   .tabs button { flex: 1; min-height: 46px; border: 0; border-bottom: 3px solid transparent; background: transparent; font-weight: 600; color: var(--muted); }
+  .tabs :global(.menu) { flex: 0 0 auto; display: flex; align-items: center; }
   .tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
   .body { flex: 1; min-height: 0; display: flex; flex-direction: column; }
 
   @media (min-width: 900px) {
-    .app { grid-template: "head head" 56px "view panel" minmax(0, 1fr) / minmax(0, 1fr) 400px; }
-    header { padding: 0 20px; }
+    .app { grid-template: "view panel" minmax(0, 1fr) / minmax(0, 1fr) 400px; }
+    .results > :global(.score) { margin: 10px 0 10px 16px; }
     .view { height: auto; min-height: 0; }
     .panel { border-top: 0; border-left: 1px solid var(--line); }
   }
