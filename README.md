@@ -9,7 +9,7 @@ Four concepts are kept separate:
 - **Fit parameters**: the knobs (saddle height and fore/aft, seatpost setback, spacers, stem, cranks). Changing one moves the contact points relative to all the others.
 - **Style**: target joint-angle bands (endurance, sport, race, gravel). The ideal saddle and hand positions are derived from your body and shown as targets.
 
-The Compare tab ranks all saved frames for your body and style, with the build each needs.
+The Compare tab sorts all saved frames into three groups for your body and style: fits, fits with compromises (a raised stem, maxed spacers, tight standover, little or a lot of seatpost, heavy toe overlap) and does not fit. Each frame shows the build it needs, the saddle-to-bar drop and the estimated standover.
 
 Find a bike (Bike tab) searches a bundled catalog of manufacturer geometry (`src/data/frames/`, one JSON file per brand, each model with its source URL) and copies a size, or every size, into your saved frames.
 

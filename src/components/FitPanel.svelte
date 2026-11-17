@@ -131,6 +131,12 @@
     </div>
   {/if}
 
+  {#snippet verdictLine()}
+    {#if ui.verdict === 'fits'}<p class="verdict ok">Fits</p>
+    {:else if ui.verdict === 'compromise'}<p class="verdict near">Fits with compromises{ui.flags.length ? ': ' + ui.flags.join('; ') : ''}</p>
+    {:else if ui.verdict === 'no'}<p class="verdict off">Does not fit this style</p>{/if}
+  {/snippet}
+
   {#if hasChanges}
     <div class="card changes">
       <h2>Changes from your setup</h2>
@@ -139,6 +145,7 @@
         <h3>Why it stops here</h3>
         <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
       {/if}
+      {@render verdictLine()}
       <div class="row">
         {#if ui.undo}<button type="button" class="btn small" onclick={undo}>Undo</button>{/if}
         <button type="button" class="btn small" onclick={markAsMine}>Mark as my setup</button>
@@ -148,6 +155,7 @@
     <div class="card changes">
       <h3>Result</h3>
       <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
+      {@render verdictLine()}
     </div>
   {/if}
   {#if ui.error}<p class="err">{ui.error}</p>{/if}
@@ -182,4 +190,8 @@
   }
   .grow { flex: 1; }
   .err { color: var(--off); }
+  .verdict { margin: 12px 0 0; font-weight: 600; }
+  .verdict.ok { color: var(--ok); }
+  .verdict.near { color: var(--near); }
+  .verdict.off { color: var(--off); }
 </style>

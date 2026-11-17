@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
-import { costOf, idealLayout, optimizeFit, wrenchList, type FitProblem } from './optimize';
+import { compareFrames, costOf, idealLayout, optimizeFit, standoverHeight, wrenchList, type FitProblem } from './optimize';
 import { evaluateFit } from './pose';
 import { TEST_BODY } from './testFrames';
 import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
@@ -73,9 +73,38 @@ describe('optimizeFit', () => {
     expect(r.evaluation.poses[0].overextended).toBe(false);
     expect(r.score).toBeGreaterThan(90);
   });
+  it('avoids an upturned stem and maxed spacers when a neutral build fits', () => {
+    const r = optimizeFit(problem('endurance', frame('endurance-56')));
+    expect(r.params.stemAngle).toBeLessThan(10);
+    expect(r.params.spacers).toBeLessThan(40);
+    expect(r.flags).toEqual([]);
+    expect(r.verdict).toBe('fits');
+  });
   it('tune mode never ends worse than the baseline', () => {
     const p = problem('endurance', frame('endurance-56'), 'tune');
     expect(optimizeFit(p).cost).toBeLessThanOrEqual(costOf(p, DEFAULT_PARAMS).cost);
+  });
+});
+
+describe('verdicts', () => {
+  const sized = (id: string, stack: number, reach: number, seatTubeLength: number): Frame => ({
+    ...frame('endurance-56'), id, name: id, stack, reach, seatTubeLength,
+  });
+  it('estimates standover from stack and seat tube', () => {
+    expect(standoverHeight(frame('endurance-56'))).toBeCloseTo(820.4, 0);
+  });
+  it('flags a frame too tall to stand over and ranks it below one that fits', () => {
+    const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = problem('endurance', frame('endurance-56'));
+    const rows = compareFrames(rest, [sized('tall', 640, 400, 600), sized('right', 585, 380, 520)]);
+    expect(rows.map((r) => r.frameId)).toEqual(['right', 'tall']);
+    expect(rows[0].result.verdict).toBe('fits');
+    expect(rows[1].result.verdict).toBe('compromise');
+    expect(rows[1].result.flags.join(' ')).toContain('standover');
+  });
+  it('says no when the bars cannot be reached', () => {
+    const far: Frame = { ...frame('race-56'), id: 'far', stack: 480, reach: 520 };
+    const r = optimizeFit(problem('endurance', far));
+    expect(r.verdict).toBe('no');
   });
 });
 

@@ -47,6 +47,17 @@ export function partPenalty(p: FitParams): number {
   return c;
 }
 
+export const STEM_RISE_FLAG = 10;
+
+/** Soft cost of builds a shop would call a compromise, so the optimizer avoids them when it can. */
+export function buildPenalty(p: FitParams, maxSpacers: number): number {
+  let c = 0;
+  if (p.stemAngle >= STEM_RISE_FLAG) c += 0.08;
+  if (maxSpacers > 0 && p.spacers >= maxSpacers) c += 0.08;
+  c += 0.0002 * p.railOffset ** 2;
+  return c;
+}
+
 export function changePenalty(p: FitParams, base: FitParams): number {
   let c = 0;
   if (p.stemLength !== base.stemLength || p.stemAngle !== base.stemAngle) c += 0.25;

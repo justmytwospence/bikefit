@@ -3,7 +3,7 @@ import {
   defaults, effectiveLocks, level, migrate, type AppData, type Level, type SectionId,
 } from './lib/appData';
 import { resolveSegments } from './model/body';
-import type { CompareRow, FitProblem } from './model/optimize';
+import type { CompareRow, FitProblem, Verdict } from './model/optimize';
 import { EXAMPLE_FRAMES } from './model/presets';
 import { poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
@@ -36,6 +36,8 @@ export const ui = $state({
   ghost: null as FitParams | null,
   undo: null as FitParams | null,
   notes: null as string[] | null,
+  verdict: null as Verdict | null,
+  flags: [] as string[],
   compareRows: null as CompareRow[] | null,
   compareKey: '',
   crank: 0,
@@ -95,6 +97,8 @@ function clearFeedback() {
   ui.ghost = null;
   ui.undo = null;
   ui.notes = null;
+  ui.verdict = null;
+  ui.flags = [];
 }
 
 export async function optimize() {
@@ -108,6 +112,8 @@ export async function optimize() {
     ui.animate = true;
     Object.assign(app.current, result.params);
     ui.notes = result.notes;
+    ui.verdict = result.verdict;
+    ui.flags = result.flags;
   } catch (e) {
     ui.error = e instanceof Error ? e.message : String(e);
   } finally {
