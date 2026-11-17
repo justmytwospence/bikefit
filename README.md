@@ -15,6 +15,8 @@ The Compare tab sorts all saved frames into three groups for your body and style
 
 Find a bike (Bike tab) searches a bundled catalog of manufacturer geometry (`src/data/frames/`, one JSON file per brand, each model with its source URL) and copies a size, or every size, into your saved frames.
 
+The settings menu exports and imports everything as `bikefit.json`, and copies a link carrying your body, setup and current frame. Opening a link asks before replacing what this browser has saved; nothing leaves the browser otherwise.
+
 ## Detail levels
 
 One Simple, Detailed or Expert switch, above the tabs, sets how much every section shows. Inputs are things you can measure or already know; hidden inputs keep their estimated or entered values. At Simple, Optimize only changes the visible setup knobs (saddle height and setback, spacers, stem).

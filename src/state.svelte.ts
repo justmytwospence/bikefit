@@ -8,6 +8,7 @@ import { EXAMPLE_FRAMES } from './model/presets';
 import { poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
 import type { MeasureId } from './lib/measure';
+import { decodeShare, encodeShare } from './lib/share';
 import type { FitParams, Frame } from './model/types';
 
 export type { Tab } from './lib/appData';
@@ -15,7 +16,17 @@ export type { Tab } from './lib/appData';
 const KEY = 'bikefit:v2';
 const OLD_KEY = 'bikefit:v1';
 
+function fromLink(): AppData | null {
+  if (typeof location === 'undefined' || !location.hash.startsWith('#d=')) return null;
+  const d = decodeShare(location.hash.slice(3));
+  history.replaceState(null, '', location.pathname + location.search);
+  if (!d) return null;
+  return confirm('Open the shared setup? It replaces the setup saved in this browser.') ? d : null;
+}
+
 function load(): AppData {
+  const shared = fromLink();
+  if (shared) return shared;
   try {
     const raw = localStorage.getItem(KEY) ?? localStorage.getItem(OLD_KEY);
     if (raw) {
@@ -217,4 +228,30 @@ export function addCatalogModel(frames: Frame[]): number {
     n++;
   }
   return n;
+}
+
+export function replaceApp(d: AppData) {
+  Object.assign(app, d);
+  clearFeedback();
+  ui.compareRows = null;
+}
+
+export function exportJson(): string {
+  return JSON.stringify($state.snapshot(app), null, 2);
+}
+
+/** Replaces the app data with an export; false when the text is not one. */
+export function importJson(text: string): boolean {
+  try {
+    const d = migrate(JSON.parse(text));
+    if (!d) return false;
+    replaceApp(d);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+export function shareUrl(): string {
+  return `${location.origin}${location.pathname}#d=${encodeShare($state.snapshot(app) as AppData)}`;
 }
