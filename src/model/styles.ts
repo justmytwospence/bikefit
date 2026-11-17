@@ -38,7 +38,7 @@ function style(
 
 export const STYLES: Record<StyleId, Style> = {
   endurance: style(
-    'endurance', 'Endurance', 'Upright and comfortable for long days.',
+    'endurance', 'Relaxed', 'Upright and comfortable for long days, like an endurance bike.',
     { defaultEffort: 'easy', defaultHands: 'hoods' }, 158,
     {
       knee: [140, 150], kneeTop: [62, 120], hip: [55, 75], torso: [45, 55], shoulder: [80, 92],
@@ -47,7 +47,7 @@ export const STYLES: Record<StyleId, Style> = {
     { hip: [45, 65], torso: [32, 45], shoulder: [78, 95], elbow: [125, 155], handLoad: [22, 36] },
   ),
   sport: style(
-    'sport', 'Sport', 'A moderate drop for fast group rides.',
+    'sport', 'Sporty', 'A moderate drop for fast group rides.',
     { defaultEffort: 'tempo', defaultHands: 'hoods' }, 156,
     {
       knee: [140, 150], kneeTop: [62, 120], hip: [50, 68], torso: [38, 48], shoulder: [82, 96],
@@ -56,7 +56,7 @@ export const STYLES: Record<StyleId, Style> = {
     { hip: [42, 60], torso: [27, 40], shoulder: [79, 97], elbow: [125, 155], handLoad: [23, 37] },
   ),
   race: style(
-    'race', 'Race', 'Low and long for speed.',
+    'race', 'Aggressive', 'Low and long for racing.',
     { defaultEffort: 'hard', defaultHands: 'mixed' }, 155,
     {
       knee: [140, 150], kneeTop: [62, 120], hip: [45, 62], torso: [32, 42], shoulder: [85, 100],

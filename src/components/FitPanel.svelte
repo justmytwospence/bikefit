@@ -9,6 +9,7 @@
   import {
     activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo,
   } from '../state.svelte';
+  import { STYLES } from '../model/styles';
   import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
   import Segmented from './Segmented.svelte';
@@ -167,7 +168,7 @@
   {#snippet verdictLine()}
     {#if ui.verdict === 'fits'}<p class="verdict ok">Fits</p>
     {:else if ui.verdict === 'compromise'}<p class="verdict near">Fits with compromises{ui.flags.length ? ': ' + ui.flags.join('; ') : ''}</p>
-    {:else if ui.verdict === 'no'}<p class="verdict off">Does not fit this style</p>{/if}
+    {:else if ui.verdict === 'no'}<p class="verdict off">Does not fit the {STYLES[app.styleId].name} style</p>{/if}
   {/snippet}
 
   {#if !app.hasSetup && ui.verdict}

@@ -15,6 +15,7 @@
   const keys = Object.keys(SEGMENT_LABELS) as (keyof typeof SEGMENT_LABELS)[];
   const style = $derived(STYLES[app.styleId]);
   const hidden = $derived(hiddenRiderValues(app));
+  const styleOptions = Object.values(STYLES).map((s) => ({ value: s.id, label: s.name }));
   const shoes = Array.from({ length: 29 }, (_, i) => 36 + i * 0.5);
 
   const sexes: { value: Sex; label: string }[] = [
@@ -46,7 +47,7 @@
     <div class="card intro">
       <b>Start here</b>
       <ol>
-        <li>Enter your height and inseam below.</li>
+        <li>Enter your height and inseam below, and pick how you ride.</li>
         <li>Pick your frame in the Bike tab.</li>
         <li>Press Optimize in the Fit tab.</li>
       </ol>
@@ -97,7 +98,19 @@
   <Segmented options={flex} bind:value={app.body.flexibility} ariaLabel="Flexibility" />
   <p class="muted small hint">Can you touch your toes with straight legs? Easily = High.</p>
 
+  <h2>How you ride</h2>
+  <Segmented options={styleOptions} compact bind:value={app.styleId} ariaLabel="Riding style" />
+  <p class="muted small hint">{style.blurb}</p>
   {#if lv >= 2}
+    <div class="label">Effort</div>
+    <Segmented options={efforts} ariaLabel="Effort" bind:value={() => effort, (v) => (app.effort = v)} />
+    <p class="muted small hint">{EFFORT_LABELS[effort].hint}</p>
+    <div class="label">Where your hands are</div>
+    <Segmented options={hands} ariaLabel="Hand position" bind:value={() => handsPref, (v) => (app.hands = v)} />
+    {#if app.effort != null || app.hands != null}
+      <button type="button" class="link" onclick={() => { app.effort = null; app.hands = null; }}>Use style default</button>
+    {/if}
+
     <h2>Arms and feet</h2>
     <NumberField
       label="Arm length" unit={armF.unit} min={armF.min} max={armF.max} step={armF.step}
@@ -111,16 +124,6 @@
     <div class="label">Ankling</div>
     <Segmented options={ankles} bind:value={app.body.ankling} ariaLabel="Ankling" />
     <p class="muted small hint">{ANKLING[app.body.ankling].hint}</p>
-
-    <h2>Riding</h2>
-    <div class="label">Effort</div>
-    <Segmented options={efforts} ariaLabel="Effort" bind:value={() => effort, (v) => (app.effort = v)} />
-    <p class="muted small hint">{EFFORT_LABELS[effort].hint}</p>
-    <div class="label">Where your hands are</div>
-    <Segmented options={hands} ariaLabel="Hand position" bind:value={() => handsPref, (v) => (app.hands = v)} />
-    {#if app.effort != null || app.hands != null}
-      <button type="button" class="link" onclick={() => { app.effort = null; app.hands = null; }}>Use style default</button>
-    {/if}
   {/if}
 
   {#if lv >= 3}

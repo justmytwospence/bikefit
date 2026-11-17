@@ -31,8 +31,14 @@
 </script>
 
 <div class="scroll">
+  <label class="fitfor">
+    <span>Fitting for</span>
+    <select aria-label="Riding style" bind:value={app.styleId}>
+      {#each Object.values(STYLES) as s (s.id)}<option value={s.id}>{s.name}</option>{/each}
+    </select>
+  </label>
   <p class="muted">
-    Sorts your saved frames by whether they can be set up for your body and the {STYLES[app.styleId].name} style.
+    Sorts your saved frames by whether they can be set up for your body and this style.
     Within a group, the build closest to a standard one comes first. Standover is estimated from stack and seat tube length.
   </p>
   <button type="button" class="btn primary full" disabled={ui.busy} onclick={runCompareAll}>
@@ -69,6 +75,8 @@
 
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
+  .fitfor { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 600; margin-bottom: 12px; }
+  .fitfor select { flex: 0 1 200px; }
   .full { width: 100%; }
   .list { margin-top: 16px; }
   .dim { opacity: 0.5; }

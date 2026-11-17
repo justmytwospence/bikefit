@@ -7,7 +7,7 @@ Four concepts are kept separate:
 - **Body**: height, inseam, flexibility and optional segment lengths.
 - **Bike**: frame geometry plus cockpit and contact dimensions.
 - **Fit parameters**: the knobs (saddle height and fore/aft, seatpost setback, spacers, stem, cranks). Changing one moves the contact points relative to all the others.
-- **Style**: target joint-angle bands (endurance, sport, race, gravel). The ideal saddle and hand positions are derived from your body and shown as targets.
+- **Style**: target joint-angle bands (relaxed, sporty, aggressive, gravel), picked under How you ride on the Rider tab, on Compare, or from the score. The ideal saddle and hand positions are derived from your body and shown as targets.
 
 The Fit tab starts as a new build: Optimize suggests the whole setup for the frame. Switch to My current setup (or press Mark as my setup) and changes are counted from your setup, with Optimize preferring adjustments over new parts.
 

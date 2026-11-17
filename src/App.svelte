@@ -9,7 +9,6 @@
   import MetricStrip from './components/MetricStrip.svelte';
   import RiderPanel from './components/RiderPanel.svelte';
   import ScoreRing from './components/ScoreRing.svelte';
-  import Segmented from './components/Segmented.svelte';
   import SettingsMenu from './components/SettingsMenu.svelte';
   import { resolveSegments } from './model/body';
   import { forwardLayout } from './model/geometry';
@@ -18,7 +17,6 @@
   import { makeContext, poseWeights } from './model/riding';
   import { fitCost, fitScore, partPenalty } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
-  import type { StyleId } from './model/types';
   import { activeFrame, app, save, ui, type Tab } from './state.svelte';
 
   const segments = $derived(resolveSegments(app.body));
@@ -90,7 +88,6 @@
     if (app.current.spacers > frame.maxSpacers) app.current.spacers = frame.maxSpacers;
   });
 
-  const styleOptions = Object.values(STYLES).map((s) => ({ value: s.id as StyleId, label: s.name, title: s.blurb }));
   const tabs: { id: Tab; label: string }[] = [
     { id: 'rider', label: 'Rider' },
     { id: 'bike', label: 'Bike' },
@@ -102,10 +99,6 @@
 <div class="app">
   <header>
     <div class="brand"><i></i>bikefit</div>
-    <div class="styles"><Segmented options={styleOptions} bind:value={app.styleId} ariaLabel="Riding style" compact /></div>
-    <select class="stylesel" aria-label="Riding style" bind:value={app.styleId}>
-      {#each styleOptions as o (o.value)}<option value={o.value}>{o.label}</option>{/each}
-    </select>
     <div class="right"><SettingsMenu /><ScoreRing {score} /></div>
   </header>
 
@@ -145,13 +138,6 @@
   .brand { font-weight: 600; font-size: 17px; display: flex; align-items: center; gap: 7px; letter-spacing: -0.01em; }
   .brand i { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
   .right { display: flex; align-items: center; gap: 4px; }
-  .styles { flex: 1; min-width: 0; display: flex; justify-content: center; max-width: 360px; margin: 0 auto; }
-  .styles :global(.seg) { width: 100%; }
-  .stylesel { display: none; flex: 1; min-width: 0; max-width: 200px; margin: 0 auto; }
-  @media (max-width: 479px) {
-    .styles { display: none; }
-    .stylesel { display: block; }
-  }
   .view { grid-area: view; height: 46dvh; display: flex; flex-direction: column; min-height: 0; }
   .canvas { flex: 1; min-height: 0; }
   .panel { grid-area: panel; display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); background: var(--bg); }
