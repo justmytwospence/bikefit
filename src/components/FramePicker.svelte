@@ -85,7 +85,7 @@
   {#if hits.length > limit}
     <button type="button" class="btn small" onclick={() => (limit += 40)}>Show more</button>
   {/if}
-  <p class="muted small foot">Geometry from manufacturer tables, retrieved {range[0]} to {range[1]}. Check the brand's site before you buy.</p>
+  <p class="muted small foot">Geometry from manufacturer tables, retrieved {range[0]} to {range[1]}. Check the brand's site before you buy. Max spacers and tyre width are typical for the category, not the manufacturer's figures.</p>
   <button type="button" class="btn small" onclick={onclose}>Done</button>
 {/if}
 

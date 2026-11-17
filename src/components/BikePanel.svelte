@@ -64,8 +64,8 @@
         <NumberField label="Chainstay" unit="mm" min={380} max={470} step={1} bind:value={frame.chainstay} />
         <NumberField label="Wheelbase" unit="mm" min={900} max={1200} step={1} bind:value={frame.wheelbase} />
         <NumberField label="BB drop" unit="mm" min={40} max={90} step={1} bind:value={frame.bbDrop} />
-        <NumberField label="Max spacers" unit="mm" min={0} max={80} step={5} hint="Steerer room above the headset" bind:value={frame.maxSpacers} />
-        <NumberField label="Tyre width" unit="mm" min={23} max={60} step={1} bind:value={frame.tyreWidth} />
+        <NumberField label="Max spacers" unit="mm" min={0} max={80} step={5} hint="Steerer room above the headset. Catalog frames use a typical value for their category; check yours." bind:value={frame.maxSpacers} />
+        <NumberField label="Tyre width" unit="mm" min={23} max={60} step={1} hint="Catalog frames use a typical width for their category." bind:value={frame.tyreWidth} />
       {/if}
     </div>
   {/key}
