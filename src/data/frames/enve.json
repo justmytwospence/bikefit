@@ -7,94 +7,15 @@
       "category": "race",
       "source": "https://enve.com/products/melee-v2-frameset",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Melee V2"
-      ],
+      "aliases": ["Melee V2"],
       "sizes": [
-        {
-          "size": "47",
-          "stack": 501.7,
-          "reach": 367.6,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 70.8,
-          "headTubeLength": 97.5,
-          "seatTubeLength": 421.4,
-          "chainstay": 410,
-          "wheelbase": 977.6,
-          "bbDrop": 75
-        },
-        {
-          "size": "50",
-          "stack": 517.4,
-          "reach": 374.6,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 110.1,
-          "seatTubeLength": 442.1,
-          "chainstay": 410,
-          "wheelbase": 979.6,
-          "bbDrop": 75
-        },
-        {
-          "size": "52",
-          "stack": 532.9,
-          "reach": 380.7,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.3,
-          "headTubeLength": 122.2,
-          "seatTubeLength": 464.5,
-          "chainstay": 410,
-          "wheelbase": 979.3,
-          "bbDrop": 75
-        },
-        {
-          "size": "54",
-          "stack": 547.4,
-          "reach": 386.7,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 138.8,
-          "seatTubeLength": 479.7,
-          "chainstay": 410,
-          "wheelbase": 989.2,
-          "bbDrop": 73
-        },
-        {
-          "size": "56",
-          "stack": 564.7,
-          "reach": 393.3,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 153.3,
-          "seatTubeLength": 502.9,
-          "chainstay": 410,
-          "wheelbase": 990.6,
-          "bbDrop": 73
-        },
-        {
-          "size": "58",
-          "stack": 584.9,
-          "reach": 400.1,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 176.5,
-          "seatTubeLength": 522.4,
-          "chainstay": 412,
-          "wheelbase": 1006.5,
-          "bbDrop": 71
-        },
-        {
-          "size": "60",
-          "stack": 610.4,
-          "reach": 407.5,
-          "seatTubeAngle": 72.8,
-          "headTubeAngle": 73.8,
-          "headTubeLength": 197.5,
-          "seatTubeLength": 554.2,
-          "chainstay": 412,
-          "wheelbase": 1010.7,
-          "bbDrop": 71
-        }
+        ["47",501.7,367.6,75,70.8,97.5,421.4,410,977.6,75],
+        ["50",517.4,374.6,74.5,71.5,110.1,442.1,410,979.6,75],
+        ["52",532.9,380.7,74,72.3,122.2,464.5,410,979.3,75],
+        ["54",547.4,386.7,73.8,72.5,138.8,479.7,410,989.2,73],
+        ["56",564.7,393.3,73.5,73.2,153.3,502.9,410,990.6,73],
+        ["58",584.9,400.1,73.2,73.2,176.5,522.4,412,1006.5,71],
+        ["60",610.4,407.5,72.8,73.8,197.5,554.2,412,1010.7,71]
       ]
     },
     {
@@ -103,82 +24,14 @@
       "category": "gravel",
       "source": "https://enve.com/products/mog",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "MOG Gravel"
-      ],
+      "aliases": ["MOG Gravel"],
       "sizes": [
-        {
-          "size": "49",
-          "stack": 520,
-          "reach": 367,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 92,
-          "seatTubeLength": 439,
-          "chainstay": 420,
-          "wheelbase": 993,
-          "bbDrop": 77
-        },
-        {
-          "size": "52",
-          "stack": 543,
-          "reach": 378,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 117,
-          "seatTubeLength": 459,
-          "chainstay": 420,
-          "wheelbase": 1012,
-          "bbDrop": 77
-        },
-        {
-          "size": "54",
-          "stack": 565,
-          "reach": 389,
-          "seatTubeAngle": 73.75,
-          "headTubeAngle": 71.25,
-          "headTubeLength": 140,
-          "seatTubeLength": 480,
-          "chainstay": 420,
-          "wheelbase": 1027,
-          "bbDrop": 75
-        },
-        {
-          "size": "56",
-          "stack": 587,
-          "reach": 397,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.25,
-          "headTubeLength": 163,
-          "seatTubeLength": 500,
-          "chainstay": 420,
-          "wheelbase": 1042,
-          "bbDrop": 75
-        },
-        {
-          "size": "58",
-          "stack": 605,
-          "reach": 405,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 183,
-          "seatTubeLength": 518,
-          "chainstay": 420,
-          "wheelbase": 1053,
-          "bbDrop": 73
-        },
-        {
-          "size": "60",
-          "stack": 630,
-          "reach": 415,
-          "seatTubeAngle": 72.75,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 209,
-          "seatTubeLength": 540,
-          "chainstay": 420,
-          "wheelbase": 1071,
-          "bbDrop": 73
-        }
+        ["49",520,367,74.5,71,92,439,420,993,77],
+        ["52",543,378,74,71,117,459,420,1012,77],
+        ["54",565,389,73.75,71.25,140,480,420,1027,75],
+        ["56",587,397,73.5,71.25,163,500,420,1042,75],
+        ["58",605,405,73.2,71.5,183,518,420,1053,73],
+        ["60",630,415,72.75,71.5,209,540,420,1071,73]
       ]
     }
   ]

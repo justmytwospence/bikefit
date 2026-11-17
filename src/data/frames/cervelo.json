@@ -2,153 +2,18 @@
   "brand": "Cervélo",
   "models": [
     {
-      "model": "S5",
+      "model": "Áspero-5",
       "year": 2023,
-      "category": "aero",
-      "source": "https://www.cervelo.com/en-US/bikes/s5",
+      "category": "gravel",
+      "source": "https://www.cervelo.com/en-US/bikes/aspero-5",
       "retrieved": "2026-11-16",
+      "aliases": ["Aspero","Aspero 5","Áspero"],
       "sizes": [
-        {
-          "size": "51",
-          "stack": 519,
-          "reach": 376,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 72,
-          "headTubeLength": 82,
-          "seatTubeLength": 459,
-          "chainstay": 405,
-          "wheelbase": 974,
-          "bbDrop": 74.5
-        },
-        {
-          "size": "54",
-          "stack": 542,
-          "reach": 384,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73,
-          "headTubeLength": 104,
-          "seatTubeLength": 480,
-          "chainstay": 405,
-          "wheelbase": 975,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 565,
-          "reach": 392,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 125,
-          "seatTubeLength": 502,
-          "chainstay": 405,
-          "wheelbase": 982,
-          "bbDrop": 72
-        },
-        {
-          "size": "58",
-          "stack": 588,
-          "reach": 401,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 152,
-          "seatTubeLength": 523,
-          "chainstay": 405,
-          "wheelbase": 999,
-          "bbDrop": 69.5
-        },
-        {
-          "size": "61",
-          "stack": 608,
-          "reach": 409,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 173,
-          "seatTubeLength": 542,
-          "chainstay": 405,
-          "wheelbase": 1013,
-          "bbDrop": 69.5
-        }
-      ]
-    },
-    {
-      "model": "Soloist",
-      "year": 2023,
-      "category": "race",
-      "source": "https://www.cervelo.com/en-US/bikes/soloist",
-      "retrieved": "2026-11-16",
-      "sizes": [
-        {
-          "size": "48",
-          "stack": 496,
-          "reach": 369,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 71,
-          "headTubeLength": 89.6,
-          "seatTubeLength": 432.2,
-          "chainstay": 410,
-          "wheelbase": 976.8,
-          "bbDrop": 76.5
-        },
-        {
-          "size": "51",
-          "stack": 520,
-          "reach": 377,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72,
-          "headTubeLength": 109.3,
-          "seatTubeLength": 481.7,
-          "chainstay": 410,
-          "wheelbase": 977.6,
-          "bbDrop": 76.5
-        },
-        {
-          "size": "54",
-          "stack": 545,
-          "reach": 383,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 132,
-          "seatTubeLength": 507,
-          "chainstay": 410,
-          "wheelbase": 978,
-          "bbDrop": 74
-        },
-        {
-          "size": "56",
-          "stack": 568,
-          "reach": 391,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73,
-          "headTubeLength": 156,
-          "seatTubeLength": 530.4,
-          "chainstay": 410,
-          "wheelbase": 992.8,
-          "bbDrop": 74
-        },
-        {
-          "size": "58",
-          "stack": 591,
-          "reach": 400,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73,
-          "headTubeLength": 182.8,
-          "seatTubeLength": 553,
-          "chainstay": 410,
-          "wheelbase": 1010.3,
-          "bbDrop": 71.5
-        },
-        {
-          "size": "61",
-          "stack": 611,
-          "reach": 408,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73,
-          "headTubeLength": 203.7,
-          "seatTubeLength": 571.6,
-          "chainstay": 410,
-          "wheelbase": 1024.5,
-          "bbDrop": 71.5
-        }
+        ["51",525,377,74,71.1,99,471,422.5,1002,80],
+        ["54",550,386,73,71.6,122,499,422.5,1012,80],
+        ["56",575,395,73,71.6,148,519,422.5,1029,80],
+        ["58",600,404,73,71.6,177,542,422.5,1047,78],
+        ["61",625,413,73,71.6,203,568,422.5,1064,78]
       ]
     },
     {
@@ -158,152 +23,41 @@
       "source": "https://www.cervelo.com/en-US/bikes/caledonia",
       "retrieved": "2026-11-16",
       "sizes": [
-        {
-          "size": "48",
-          "stack": 505,
-          "reach": 360,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 90,
-          "seatTubeLength": 447,
-          "chainstay": 415,
-          "wheelbase": 983,
-          "bbDrop": 76.5
-        },
-        {
-          "size": "51",
-          "stack": 530,
-          "reach": 369,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 110,
-          "seatTubeLength": 496,
-          "chainstay": 415,
-          "wheelbase": 986,
-          "bbDrop": 76.5
-        },
-        {
-          "size": "54",
-          "stack": 555,
-          "reach": 378,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72,
-          "headTubeLength": 136,
-          "seatTubeLength": 530,
-          "chainstay": 415,
-          "wheelbase": 996,
-          "bbDrop": 74
-        },
-        {
-          "size": "56",
-          "stack": 580,
-          "reach": 387,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 72,
-          "headTubeLength": 163,
-          "seatTubeLength": 554,
-          "chainstay": 415,
-          "wheelbase": 1013,
-          "bbDrop": 74
-        },
-        {
-          "size": "58",
-          "stack": 605,
-          "reach": 396,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 72,
-          "headTubeLength": 192,
-          "seatTubeLength": 577,
-          "chainstay": 415,
-          "wheelbase": 1032,
-          "bbDrop": 71.5
-        },
-        {
-          "size": "61",
-          "stack": 630,
-          "reach": 405,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 72,
-          "headTubeLength": 218,
-          "seatTubeLength": 601,
-          "chainstay": 415,
-          "wheelbase": 1049,
-          "bbDrop": 71.5
-        }
+        ["48",505,360,75,70.5,90,447,415,983,76.5],
+        ["51",530,369,74,71.5,110,496,415,986,76.5],
+        ["54",555,378,74,72,136,530,415,996,74],
+        ["56",580,387,73,72,163,554,415,1013,74],
+        ["58",605,396,73,72,192,577,415,1032,71.5],
+        ["61",630,405,73,72,218,601,415,1049,71.5]
       ]
     },
     {
-      "model": "Áspero-5",
+      "model": "S5",
       "year": 2023,
-      "category": "gravel",
-      "source": "https://www.cervelo.com/en-US/bikes/aspero-5",
+      "category": "aero",
+      "source": "https://www.cervelo.com/en-US/bikes/s5",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Aspero",
-        "Aspero 5",
-        "Áspero"
-      ],
       "sizes": [
-        {
-          "size": "51",
-          "stack": 525,
-          "reach": 377,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.1,
-          "headTubeLength": 99,
-          "seatTubeLength": 471,
-          "chainstay": 422.5,
-          "wheelbase": 1002,
-          "bbDrop": 80
-        },
-        {
-          "size": "54",
-          "stack": 550,
-          "reach": 386,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.6,
-          "headTubeLength": 122,
-          "seatTubeLength": 499,
-          "chainstay": 422.5,
-          "wheelbase": 1012,
-          "bbDrop": 80
-        },
-        {
-          "size": "56",
-          "stack": 575,
-          "reach": 395,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.6,
-          "headTubeLength": 148,
-          "seatTubeLength": 519,
-          "chainstay": 422.5,
-          "wheelbase": 1029,
-          "bbDrop": 80
-        },
-        {
-          "size": "58",
-          "stack": 600,
-          "reach": 404,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.6,
-          "headTubeLength": 177,
-          "seatTubeLength": 542,
-          "chainstay": 422.5,
-          "wheelbase": 1047,
-          "bbDrop": 78
-        },
-        {
-          "size": "61",
-          "stack": 625,
-          "reach": 413,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.6,
-          "headTubeLength": 203,
-          "seatTubeLength": 568,
-          "chainstay": 422.5,
-          "wheelbase": 1064,
-          "bbDrop": 78
-        }
+        ["51",519,376,73,72,82,459,405,974,74.5],
+        ["54",542,384,73,73,104,480,405,975,72],
+        ["56",565,392,73,73.5,125,502,405,982,72],
+        ["58",588,401,73,73.5,152,523,405,999,69.5],
+        ["61",608,409,73,73.5,173,542,405,1013,69.5]
+      ]
+    },
+    {
+      "model": "Soloist",
+      "year": 2023,
+      "category": "race",
+      "source": "https://www.cervelo.com/en-US/bikes/soloist",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        ["48",496,369,75,71,89.6,432.2,410,976.8,76.5],
+        ["51",520,377,74,72,109.3,481.7,410,977.6,76.5],
+        ["54",545,383,74,73,132,507,410,978,74],
+        ["56",568,391,73,73,156,530.4,410,992.8,74],
+        ["58",591,400,73,73,182.8,553,410,1010.3,71.5],
+        ["61",611,408,73,73,203.7,571.6,410,1024.5,71.5]
       ]
     }
   ]

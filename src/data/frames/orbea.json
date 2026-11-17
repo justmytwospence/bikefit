@@ -2,378 +2,71 @@
   "brand": "Orbea",
   "models": [
     {
+      "model": "Avant",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.orbea.com/en-us/avant-h30",
+      "retrieved": "2026-11-16",
+      "aliases": ["Avant H30","Avant H"],
+      "sizes": [
+        ["47",525,370,74.5,70.5,111,420,420,996,78],
+        ["49",545,375,74,71,130,445,420,1003,78],
+        ["51",565,380,73.8,71.5,149,470,420,1010,78],
+        ["53",585,385,73.8,71.8,169,495,420,1019,78],
+        ["55",605,391,73.8,72,191,520,420,1030,76],
+        ["57",625,398,73.2,72.2,211,545,420,1042,76],
+        ["60",645,404,73.2,72.5,231,575,420,1051,76]
+      ]
+    },
+    {
       "model": "Orca",
       "year": 2024,
       "category": "race",
       "source": "https://www.orbea.com/en-us/orca-m20iteam",
-      "aliases": [
-        "Orca M-Team",
-        "Orca OMX"
-      ],
+      "retrieved": "2026-11-16",
+      "aliases": ["Orca M-Team","Orca OMX"],
       "sizes": [
-        {
-          "size": "47",
-          "stack": 506,
-          "reach": 370,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 110.5,
-          "seatTubeLength": 440,
-          "chainstay": 408,
-          "wheelbase": 971.8,
-          "bbDrop": 72
-        },
-        {
-          "size": "49",
-          "stack": 515,
-          "reach": 375,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 118.2,
-          "seatTubeLength": 460,
-          "chainstay": 408,
-          "wheelbase": 975.4,
-          "bbDrop": 72
-        },
-        {
-          "size": "51",
-          "stack": 533,
-          "reach": 380,
-          "seatTubeAngle": 73.7,
-          "headTubeAngle": 72.2,
-          "headTubeLength": 134.6,
-          "seatTubeLength": 480,
-          "chainstay": 408,
-          "wheelbase": 980,
-          "bbDrop": 72
-        },
-        {
-          "size": "53",
-          "stack": 552,
-          "reach": 385,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 152.9,
-          "seatTubeLength": 500,
-          "chainstay": 408,
-          "wheelbase": 981.2,
-          "bbDrop": 70
-        },
-        {
-          "size": "55",
-          "stack": 572,
-          "reach": 391,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73,
-          "headTubeLength": 173.1,
-          "seatTubeLength": 520,
-          "chainstay": 408,
-          "wheelbase": 991.4,
-          "bbDrop": 70
-        },
-        {
-          "size": "57",
-          "stack": 590,
-          "reach": 398,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 191.2,
-          "seatTubeLength": 540,
-          "chainstay": 408,
-          "wheelbase": 1001.9,
-          "bbDrop": 70
-        },
-        {
-          "size": "60",
-          "stack": 616,
-          "reach": 404,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 218.3,
-          "seatTubeLength": 570,
-          "chainstay": 408,
-          "wheelbase": 1015.6,
-          "bbDrop": 70
-        }
-      ],
-      "retrieved": "2026-11-16"
+        ["47",506,370,74.5,71,110.5,440,408,971.8,72],
+        ["49",515,375,74,71.5,118.2,460,408,975.4,72],
+        ["51",533,380,73.7,72.2,134.6,480,408,980,72],
+        ["53",552,385,73.5,72.8,152.9,500,408,981.2,70],
+        ["55",572,391,73.5,73,173.1,520,408,991.4,70],
+        ["57",590,398,73.2,73.2,191.2,540,408,1001.9,70],
+        ["60",616,404,73.2,73.2,218.3,570,408,1015.6,70]
+      ]
     },
     {
       "model": "Orca Aero",
       "year": 2026,
       "category": "aero",
       "source": "https://www.orbea.com/en-us/orca-aero-m20i-ltd",
-      "aliases": [
-        "Orca Aero 2026"
-      ],
+      "retrieved": "2026-11-16",
+      "aliases": ["Orca Aero 2026"],
       "sizes": [
-        {
-          "size": "47",
-          "stack": 495,
-          "reach": 370,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70.8,
-          "headTubeLength": 84,
-          "seatTubeLength": 459,
-          "chainstay": 408,
-          "wheelbase": 966,
-          "bbDrop": 78
-        },
-        {
-          "size": "49",
-          "stack": 504,
-          "reach": 375,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 92,
-          "seatTubeLength": 474,
-          "chainstay": 408,
-          "wheelbase": 971,
-          "bbDrop": 78
-        },
-        {
-          "size": "51",
-          "stack": 520,
-          "reach": 380,
-          "seatTubeAngle": 73.7,
-          "headTubeAngle": 72.2,
-          "headTubeLength": 107,
-          "seatTubeLength": 499,
-          "chainstay": 408,
-          "wheelbase": 973,
-          "bbDrop": 78
-        },
-        {
-          "size": "53",
-          "stack": 540,
-          "reach": 385,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 122,
-          "seatTubeLength": 524,
-          "chainstay": 408,
-          "wheelbase": 974,
-          "bbDrop": 78
-        },
-        {
-          "size": "55",
-          "stack": 560,
-          "reach": 390,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73,
-          "headTubeLength": 145,
-          "seatTubeLength": 545,
-          "chainstay": 408,
-          "wheelbase": 985,
-          "bbDrop": 76
-        },
-        {
-          "size": "57",
-          "stack": 578,
-          "reach": 397,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 163,
-          "seatTubeLength": 565,
-          "chainstay": 408,
-          "wheelbase": 995,
-          "bbDrop": 76
-        },
-        {
-          "size": "60",
-          "stack": 604,
-          "reach": 404,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 190,
-          "seatTubeLength": 592,
-          "chainstay": 408,
-          "wheelbase": 1009,
-          "bbDrop": 76
-        }
-      ],
-      "retrieved": "2026-11-16"
-    },
-    {
-      "model": "Avant",
-      "year": 2022,
-      "category": "endurance",
-      "source": "https://www.orbea.com/en-us/avant-h30",
-      "aliases": [
-        "Avant H30",
-        "Avant H"
-      ],
-      "sizes": [
-        {
-          "size": "47",
-          "stack": 525,
-          "reach": 370,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 111,
-          "seatTubeLength": 420,
-          "chainstay": 420,
-          "wheelbase": 996,
-          "bbDrop": 78
-        },
-        {
-          "size": "49",
-          "stack": 545,
-          "reach": 375,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 130,
-          "seatTubeLength": 445,
-          "chainstay": 420,
-          "wheelbase": 1003,
-          "bbDrop": 78
-        },
-        {
-          "size": "51",
-          "stack": 565,
-          "reach": 380,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 149,
-          "seatTubeLength": 470,
-          "chainstay": 420,
-          "wheelbase": 1010,
-          "bbDrop": 78
-        },
-        {
-          "size": "53",
-          "stack": 585,
-          "reach": 385,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 71.8,
-          "headTubeLength": 169,
-          "seatTubeLength": 495,
-          "chainstay": 420,
-          "wheelbase": 1019,
-          "bbDrop": 78
-        },
-        {
-          "size": "55",
-          "stack": 605,
-          "reach": 391,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 72,
-          "headTubeLength": 191,
-          "seatTubeLength": 520,
-          "chainstay": 420,
-          "wheelbase": 1030,
-          "bbDrop": 76
-        },
-        {
-          "size": "57",
-          "stack": 625,
-          "reach": 398,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 72.2,
-          "headTubeLength": 211,
-          "seatTubeLength": 545,
-          "chainstay": 420,
-          "wheelbase": 1042,
-          "bbDrop": 76
-        },
-        {
-          "size": "60",
-          "stack": 645,
-          "reach": 404,
-          "seatTubeAngle": 73.2,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 231,
-          "seatTubeLength": 575,
-          "chainstay": 420,
-          "wheelbase": 1051,
-          "bbDrop": 76
-        }
-      ],
-      "retrieved": "2026-11-16"
+        ["47",495,370,74.5,70.8,84,459,408,966,78],
+        ["49",504,375,74,71.3,92,474,408,971,78],
+        ["51",520,380,73.7,72.2,107,499,408,973,78],
+        ["53",540,385,73.5,72.8,122,524,408,974,78],
+        ["55",560,390,73.5,73,145,545,408,985,76],
+        ["57",578,397,73.2,73.2,163,565,408,995,76],
+        ["60",604,404,73.2,73.2,190,592,408,1009,76]
+      ]
     },
     {
       "model": "Terra",
       "year": 2023,
       "category": "gravel",
       "source": "https://www.orbea.com/en-us/terra-m20iteam",
-      "aliases": [
-        "Terra M-Team"
-      ],
+      "retrieved": "2026-11-16",
+      "aliases": ["Terra M-Team"],
       "sizes": [
-        {
-          "size": "XS",
-          "stack": 535,
-          "reach": 386,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 69,
-          "headTubeLength": 110,
-          "seatTubeLength": 410,
-          "chainstay": 430,
-          "wheelbase": 1031,
-          "bbDrop": 80
-        },
-        {
-          "size": "S",
-          "stack": 558,
-          "reach": 392,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 69.5,
-          "headTubeLength": 132.5,
-          "seatTubeLength": 440,
-          "chainstay": 430,
-          "wheelbase": 1041,
-          "bbDrop": 80
-        },
-        {
-          "size": "M",
-          "stack": 580,
-          "reach": 400,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70,
-          "headTubeLength": 153.5,
-          "seatTubeLength": 470,
-          "chainstay": 430,
-          "wheelbase": 1052,
-          "bbDrop": 80
-        },
-        {
-          "size": "L",
-          "stack": 602,
-          "reach": 406,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 175,
-          "seatTubeLength": 505,
-          "chainstay": 430,
-          "wheelbase": 1061,
-          "bbDrop": 80
-        },
-        {
-          "size": "XL",
-          "stack": 625,
-          "reach": 412,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.8,
-          "headTubeLength": 198,
-          "seatTubeLength": 540,
-          "chainstay": 430,
-          "wheelbase": 1072,
-          "bbDrop": 80
-        },
-        {
-          "size": "XXL",
-          "stack": 645,
-          "reach": 417,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 218,
-          "seatTubeLength": 575,
-          "chainstay": 430,
-          "wheelbase": 1081,
-          "bbDrop": 80
-        }
-      ],
-      "retrieved": "2026-11-16"
+        ["XS",535,386,74,69,110,410,430,1031,80],
+        ["S",558,392,74,69.5,132.5,440,430,1041,80],
+        ["M",580,400,74,70,153.5,470,430,1052,80],
+        ["L",602,406,74,70.5,175,505,430,1061,80],
+        ["XL",625,412,74,70.8,198,540,430,1072,80],
+        ["XXL",645,417,74,71,218,575,430,1081,80]
+      ]
     }
   ]
 }

@@ -2,390 +2,20 @@
   "brand": "Scott",
   "models": [
     {
-      "model": "Addict RC",
-      "year": 2025,
-      "category": "race",
-      "source": "https://www.scott-sports.com/us/en/product/scott-addict-rc-ultimate-bike",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Addict RC Ultimate"
-      ],
-      "sizes": [
-        {
-          "size": "XXS 47",
-          "stack": 501.3,
-          "reach": 379.4,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 90,
-          "seatTubeLength": 422.5,
-          "chainstay": 410,
-          "wheelbase": 977,
-          "bbDrop": 74
-        },
-        {
-          "size": "XS 49",
-          "stack": 512.5,
-          "reach": 386.3,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71.8,
-          "headTubeLength": 100,
-          "seatTubeLength": 442.5,
-          "chainstay": 410,
-          "wheelbase": 983.2,
-          "bbDrop": 74
-        },
-        {
-          "size": "S 52",
-          "stack": 525.5,
-          "reach": 391.6,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.3,
-          "headTubeLength": 113,
-          "seatTubeLength": 462.1,
-          "chainstay": 410,
-          "wheelbase": 988.8,
-          "bbDrop": 73
-        },
-        {
-          "size": "M 54",
-          "stack": 543.3,
-          "reach": 395.2,
-          "seatTubeAngle": 73.6,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 130,
-          "seatTubeLength": 482,
-          "chainstay": 410,
-          "wheelbase": 990.8,
-          "bbDrop": 72
-        },
-        {
-          "size": "L 56",
-          "stack": 564.5,
-          "reach": 402.6,
-          "seatTubeAngle": 73.3,
-          "headTubeAngle": 73.4,
-          "headTubeLength": 150,
-          "seatTubeLength": 502.2,
-          "chainstay": 410,
-          "wheelbase": 999,
-          "bbDrop": 72
-        },
-        {
-          "size": "XL 58",
-          "stack": 584.3,
-          "reach": 406.1,
-          "seatTubeAngle": 72.8,
-          "headTubeAngle": 73.6,
-          "headTubeLength": 170,
-          "seatTubeLength": 522.3,
-          "chainstay": 410,
-          "wheelbase": 1006.4,
-          "bbDrop": 72
-        },
-        {
-          "size": "XXL 61",
-          "stack": 604.2,
-          "reach": 411.3,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 73.8,
-          "headTubeLength": 190,
-          "seatTubeLength": 542.4,
-          "chainstay": 410,
-          "wheelbase": 1015.4,
-          "bbDrop": 72
-        }
-      ]
-    },
-    {
-      "model": "Foil RC",
-      "year": 2023,
-      "category": "aero",
-      "source": "https://www.scott-sports.com/us/en/product/scott-foil-rc-ultimate-bike",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Foil",
-        "Foil RC Ultimate"
-      ],
-      "sizes": [
-        {
-          "size": "XXS 47",
-          "stack": 505,
-          "reach": 380,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 103,
-          "seatTubeLength": 451.8,
-          "chainstay": 412,
-          "wheelbase": 987.7,
-          "bbDrop": 70
-        },
-        {
-          "size": "XS 49",
-          "stack": 511,
-          "reach": 388,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 108,
-          "seatTubeLength": 481.9,
-          "chainstay": 412,
-          "wheelbase": 993.7,
-          "bbDrop": 70
-        },
-        {
-          "size": "S 52",
-          "stack": 527,
-          "reach": 389,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72,
-          "headTubeLength": 121,
-          "seatTubeLength": 502.4,
-          "chainstay": 412,
-          "wheelbase": 990.7,
-          "bbDrop": 70
-        },
-        {
-          "size": "M 54",
-          "stack": 548,
-          "reach": 389,
-          "seatTubeAngle": 73.6,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 141,
-          "seatTubeLength": 522.6,
-          "chainstay": 412,
-          "wheelbase": 992.6,
-          "bbDrop": 70
-        },
-        {
-          "size": "L 56",
-          "stack": 568,
-          "reach": 394.5,
-          "seatTubeAngle": 73.3,
-          "headTubeAngle": 73,
-          "headTubeLength": 161,
-          "seatTubeLength": 542.4,
-          "chainstay": 412,
-          "wheelbase": 999.9,
-          "bbDrop": 70
-        },
-        {
-          "size": "XL 58",
-          "stack": 589,
-          "reach": 400,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73.3,
-          "headTubeLength": 181,
-          "seatTubeLength": 559.8,
-          "chainstay": 412,
-          "wheelbase": 1008.6,
-          "bbDrop": 70
-        },
-        {
-          "size": "XXL 61",
-          "stack": 606,
-          "reach": 409,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 73.3,
-          "headTubeLength": 199,
-          "seatTubeLength": 572.4,
-          "chainstay": 412,
-          "wheelbase": 1022.7,
-          "bbDrop": 70
-        }
-      ]
-    },
-    {
       "model": "Addict",
       "year": 2026,
       "category": "endurance",
       "source": "https://www.scott-sports.com/us/en/product/scott-addict-10-bike",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Addict 10",
-        "Addict 20"
-      ],
+      "aliases": ["Addict 10","Addict 20"],
       "sizes": [
-        {
-          "size": "XXS 47",
-          "stack": 522,
-          "reach": 372,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 104,
-          "seatTubeLength": 435,
-          "chainstay": 418,
-          "wheelbase": 984,
-          "bbDrop": 74
-        },
-        {
-          "size": "XS 49",
-          "stack": 534,
-          "reach": 378,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 71.8,
-          "headTubeLength": 115,
-          "seatTubeLength": 455,
-          "chainstay": 418,
-          "wheelbase": 991,
-          "bbDrop": 74
-        },
-        {
-          "size": "S 52",
-          "stack": 557,
-          "reach": 382,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 72,
-          "headTubeLength": 139,
-          "seatTubeLength": 475,
-          "chainstay": 418,
-          "wheelbase": 1000,
-          "bbDrop": 73
-        },
-        {
-          "size": "M 54",
-          "stack": 578,
-          "reach": 386,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.2,
-          "headTubeLength": 161,
-          "seatTubeLength": 495,
-          "chainstay": 418,
-          "wheelbase": 1009,
-          "bbDrop": 72
-        },
-        {
-          "size": "L 56",
-          "stack": 599,
-          "reach": 389,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 182,
-          "seatTubeLength": 515,
-          "chainstay": 418,
-          "wheelbase": 1016,
-          "bbDrop": 72
-        },
-        {
-          "size": "XL 58",
-          "stack": 619,
-          "reach": 394,
-          "seatTubeAngle": 73.1,
-          "headTubeAngle": 73,
-          "headTubeLength": 201,
-          "seatTubeLength": 535,
-          "chainstay": 418,
-          "wheelbase": 1022,
-          "bbDrop": 72
-        },
-        {
-          "size": "XXL 61",
-          "stack": 638,
-          "reach": 402,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73,
-          "headTubeLength": 221,
-          "seatTubeLength": 565,
-          "chainstay": 418,
-          "wheelbase": 1036,
-          "bbDrop": 72
-        }
-      ]
-    },
-    {
-      "model": "Addict Gravel",
-      "year": 2027,
-      "category": "gravel",
-      "source": "https://www.scott-sports.com/us/en/product/scott-addict-gravel-10-bike-427613",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Addict Gravel 10",
-        "Addict Gravel MY27"
-      ],
-      "sizes": [
-        {
-          "size": "XXS 47",
-          "stack": 520,
-          "reach": 383,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 70,
-          "headTubeLength": 87,
-          "seatTubeLength": 415,
-          "chainstay": 425,
-          "wheelbase": 1024,
-          "bbDrop": 80
-        },
-        {
-          "size": "XS 49",
-          "stack": 532,
-          "reach": 390,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 70,
-          "headTubeLength": 99,
-          "seatTubeLength": 440,
-          "chainstay": 425,
-          "wheelbase": 1036,
-          "bbDrop": 80
-        },
-        {
-          "size": "S 52",
-          "stack": 555,
-          "reach": 394,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70,
-          "headTubeLength": 124,
-          "seatTubeLength": 460,
-          "chainstay": 425,
-          "wheelbase": 1048,
-          "bbDrop": 79
-        },
-        {
-          "size": "M 54",
-          "stack": 575,
-          "reach": 398,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70,
-          "headTubeLength": 147,
-          "seatTubeLength": 495,
-          "chainstay": 425,
-          "wheelbase": 1060,
-          "bbDrop": 78
-        },
-        {
-          "size": "L 56",
-          "stack": 596,
-          "reach": 401,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70,
-          "headTubeLength": 169,
-          "seatTubeLength": 515,
-          "chainstay": 425,
-          "wheelbase": 1071,
-          "bbDrop": 78
-        },
-        {
-          "size": "XL 58",
-          "stack": 614,
-          "reach": 407,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70,
-          "headTubeLength": 189,
-          "seatTubeLength": 535,
-          "chainstay": 425,
-          "wheelbase": 1084,
-          "bbDrop": 78
-        },
-        {
-          "size": "XXL 61",
-          "stack": 633,
-          "reach": 415,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70,
-          "headTubeLength": 209,
-          "seatTubeLength": 565,
-          "chainstay": 425,
-          "wheelbase": 1098,
-          "bbDrop": 78
-        }
+        ["XXS 47",522,372,75,71.3,104,435,418,984,74],
+        ["XS 49",534,378,75,71.8,115,455,418,991,74],
+        ["S 52",557,382,74.5,72,139,475,418,1000,73],
+        ["M 54",578,386,74,72.2,161,495,418,1009,72],
+        ["L 56",599,389,73.5,72.5,182,515,418,1016,72],
+        ["XL 58",619,394,73.1,73,201,535,418,1022,72],
+        ["XXL 61",638,402,73,73,221,565,418,1036,72]
       ]
     },
     {
@@ -394,71 +24,64 @@
       "category": "gravel",
       "source": "https://www.scott-sports.com/us/en/product/scott-addict-gravel-10-bike",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Addict Gravel 10",
-        "Addict Gravel MY22"
-      ],
+      "aliases": ["Addict Gravel 10","Addict Gravel MY22"],
       "sizes": [
-        {
-          "size": "XS 49",
-          "stack": 519,
-          "reach": 374.1,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70,
-          "headTubeLength": 95,
-          "seatTubeLength": 477,
-          "chainstay": 425,
-          "wheelbase": 1009.4,
-          "bbDrop": 71
-        },
-        {
-          "size": "S 52",
-          "stack": 544.4,
-          "reach": 378.4,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70,
-          "headTubeLength": 122,
-          "seatTubeLength": 507,
-          "chainstay": 425,
-          "wheelbase": 1022.9,
-          "bbDrop": 71
-        },
-        {
-          "size": "M 54",
-          "stack": 565.3,
-          "reach": 387.1,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 140,
-          "seatTubeLength": 528,
-          "chainstay": 425,
-          "wheelbase": 1029.2,
-          "bbDrop": 71
-        },
-        {
-          "size": "L 56",
-          "stack": 589.9,
-          "reach": 398.2,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71,
-          "headTubeLength": 166,
-          "seatTubeLength": 546,
-          "chainstay": 425,
-          "wheelbase": 1048.7,
-          "bbDrop": 71
-        },
-        {
-          "size": "XL 58",
-          "stack": 609.7,
-          "reach": 406.1,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71,
-          "headTubeLength": 187,
-          "seatTubeLength": 566,
-          "chainstay": 425,
-          "wheelbase": 1063.5,
-          "bbDrop": 71
-        }
+        ["XS 49",519,374.1,74.5,70,95,477,425,1009.4,71],
+        ["S 52",544.4,378.4,74,70,122,507,425,1022.9,71],
+        ["M 54",565.3,387.1,73.5,71,140,528,425,1029.2,71],
+        ["L 56",589.9,398.2,73,71,166,546,425,1048.7,71],
+        ["XL 58",609.7,406.1,73,71,187,566,425,1063.5,71]
+      ]
+    },
+    {
+      "model": "Addict Gravel",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://www.scott-sports.com/us/en/product/scott-addict-gravel-10-bike-427613",
+      "retrieved": "2026-11-16",
+      "aliases": ["Addict Gravel 10","Addict Gravel MY27"],
+      "sizes": [
+        ["XXS 47",520,383,75,70,87,415,425,1024,80],
+        ["XS 49",532,390,75,70,99,440,425,1036,80],
+        ["S 52",555,394,74.5,70,124,460,425,1048,79],
+        ["M 54",575,398,74,70,147,495,425,1060,78],
+        ["L 56",596,401,74,70,169,515,425,1071,78],
+        ["XL 58",614,407,74,70,189,535,425,1084,78],
+        ["XXL 61",633,415,74,70,209,565,425,1098,78]
+      ]
+    },
+    {
+      "model": "Addict RC",
+      "year": 2025,
+      "category": "race",
+      "source": "https://www.scott-sports.com/us/en/product/scott-addict-rc-ultimate-bike",
+      "retrieved": "2026-11-16",
+      "aliases": ["Addict RC Ultimate"],
+      "sizes": [
+        ["XXS 47",501.3,379.4,74.5,71.3,90,422.5,410,977,74],
+        ["XS 49",512.5,386.3,74.5,71.8,100,442.5,410,983.2,74],
+        ["S 52",525.5,391.6,74,72.3,113,462.1,410,988.8,73],
+        ["M 54",543.3,395.2,73.6,72.8,130,482,410,990.8,72],
+        ["L 56",564.5,402.6,73.3,73.4,150,502.2,410,999,72],
+        ["XL 58",584.3,406.1,72.8,73.6,170,522.3,410,1006.4,72],
+        ["XXL 61",604.2,411.3,72.5,73.8,190,542.4,410,1015.4,72]
+      ]
+    },
+    {
+      "model": "Foil RC",
+      "year": 2023,
+      "category": "aero",
+      "source": "https://www.scott-sports.com/us/en/product/scott-foil-rc-ultimate-bike",
+      "retrieved": "2026-11-16",
+      "aliases": ["Foil","Foil RC Ultimate"],
+      "sizes": [
+        ["XXS 47",505,380,74.5,70.5,103,451.8,412,987.7,70],
+        ["XS 49",511,388,74.5,71,108,481.9,412,993.7,70],
+        ["S 52",527,389,74,72,121,502.4,412,990.7,70],
+        ["M 54",548,389,73.6,72.5,141,522.6,412,992.6,70],
+        ["L 56",568,394.5,73.3,73,161,542.4,412,999.9,70],
+        ["XL 58",589,400,73,73.3,181,559.8,412,1008.6,70],
+        ["XXL 61",606,409,72.5,73.3,199,572.4,412,1022.7,70]
       ]
     }
   ]

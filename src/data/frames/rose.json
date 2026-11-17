@@ -2,271 +2,53 @@
   "brand": "Rose",
   "models": [
     {
-      "model": "Shave",
-      "year": 2026,
-      "category": "aero",
-      "source": "https://www.rosebikes.com/en/p/rose-shave-105-di2-2726127",
-      "aliases": [
-        "X-Lite",
-        "X-Lite Six",
-        "Shave 105 Di2"
-      ],
+      "model": "Backroad",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.rosebikes.com/en/p/rose-backroad-grx-820-2725742",
+      "retrieved": "2026-11-16",
+      "aliases": ["Backroad GRX"],
       "sizes": [
-        {
-          "size": "XS",
-          "stack": 544,
-          "reach": 360,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 71,
-          "headTubeLength": 123,
-          "seatTubeLength": 435,
-          "chainstay": 412,
-          "wheelbase": 975,
-          "bbDrop": 73
-        },
-        {
-          "size": "S",
-          "stack": 562,
-          "reach": 370,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 72,
-          "headTubeLength": 138,
-          "seatTubeLength": 470,
-          "chainstay": 412,
-          "wheelbase": 982,
-          "bbDrop": 73
-        },
-        {
-          "size": "M",
-          "stack": 584,
-          "reach": 378,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 157,
-          "seatTubeLength": 492,
-          "chainstay": 414,
-          "wheelbase": 989,
-          "bbDrop": 73
-        },
-        {
-          "size": "M/L",
-          "stack": 602,
-          "reach": 388,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 175,
-          "seatTubeLength": 512,
-          "chainstay": 414,
-          "wheelbase": 1002,
-          "bbDrop": 73
-        },
-        {
-          "size": "L",
-          "stack": 622,
-          "reach": 398,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 196,
-          "seatTubeLength": 537,
-          "chainstay": 416,
-          "wheelbase": 1020,
-          "bbDrop": 73
-        },
-        {
-          "size": "XL",
-          "stack": 648,
-          "reach": 410,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.2,
-          "headTubeLength": 223,
-          "seatTubeLength": 575,
-          "chainstay": 416,
-          "wheelbase": 1039,
-          "bbDrop": 73
-        }
-      ],
-      "retrieved": "2026-11-16"
+        ["XS",544.7,384.4,75.5,70.5,102,462,425,1018.4,78],
+        ["S",565.5,388.4,74.5,71,122,481,425,1024.8,78],
+        ["M",580.6,396.4,74.2,71.2,137,501,425,1035.5,78],
+        ["M/L",599.6,403.2,74,71.2,157,511,425,1048.7,78],
+        ["L",610.5,412.3,73.8,71.5,167,531,430,1063.8,78],
+        ["XL",624.3,430.2,73.5,71.5,182,556,430,1086.5,78]
+      ]
     },
     {
       "model": "Blend",
       "year": 2025,
       "category": "endurance",
       "source": "https://www.rosebikes.com/en/p/rose-blend-105-di2-160525",
-      "aliases": [
-        "Reveal",
-        "Blend Road"
-      ],
+      "retrieved": "2026-11-16",
+      "aliases": ["Reveal","Blend Road"],
       "sizes": [
-        {
-          "size": "XXS",
-          "stack": 531.6,
-          "reach": 359.6,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 69.5,
-          "headTubeLength": 105,
-          "seatTubeLength": 425,
-          "chainstay": 435,
-          "wheelbase": 1008.9,
-          "bbDrop": 75
-        },
-        {
-          "size": "XS",
-          "stack": 552.3,
-          "reach": 364.8,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70,
-          "headTubeLength": 125,
-          "seatTubeLength": 460,
-          "chainstay": 435,
-          "wheelbase": 1017,
-          "bbDrop": 75
-        },
-        {
-          "size": "S",
-          "stack": 576.8,
-          "reach": 372.6,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 150,
-          "seatTubeLength": 490,
-          "chainstay": 435,
-          "wheelbase": 1025.1,
-          "bbDrop": 72
-        },
-        {
-          "size": "M",
-          "stack": 597.7,
-          "reach": 381,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 170,
-          "seatTubeLength": 520,
-          "chainstay": 435,
-          "wheelbase": 1035.4,
-          "bbDrop": 72
-        },
-        {
-          "size": "L",
-          "stack": 612.9,
-          "reach": 393.5,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 186,
-          "seatTubeLength": 550,
-          "chainstay": 435,
-          "wheelbase": 1053,
-          "bbDrop": 72
-        },
-        {
-          "size": "XL",
-          "stack": 628.9,
-          "reach": 402.7,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 205,
-          "seatTubeLength": 580,
-          "chainstay": 435,
-          "wheelbase": 1068.6,
-          "bbDrop": 70
-        },
-        {
-          "size": "XXL",
-          "stack": 640.4,
-          "reach": 411.2,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 72,
-          "headTubeLength": 215,
-          "seatTubeLength": 600,
-          "chainstay": 435,
-          "wheelbase": 1075.3,
-          "bbDrop": 70
-        }
-      ],
-      "retrieved": "2026-11-16"
+        ["XXS",531.6,359.6,75,69.5,105,425,435,1008.9,75],
+        ["XS",552.3,364.8,74.5,70,125,460,435,1017,75],
+        ["S",576.8,372.6,74,71,150,490,435,1025.1,72],
+        ["M",597.7,381,73.5,71.5,170,520,435,1035.4,72],
+        ["L",612.9,393.5,73.5,71.5,186,550,435,1053,72],
+        ["XL",628.9,402.7,73,71.5,205,580,435,1068.6,70],
+        ["XXL",640.4,411.2,73,72,215,600,435,1075.3,70]
+      ]
     },
     {
-      "model": "Backroad",
-      "year": 2023,
-      "category": "gravel",
-      "source": "https://www.rosebikes.com/en/p/rose-backroad-grx-820-2725742",
-      "aliases": [
-        "Backroad GRX"
-      ],
+      "model": "Shave",
+      "year": 2026,
+      "category": "aero",
+      "source": "https://www.rosebikes.com/en/p/rose-shave-105-di2-2726127",
+      "retrieved": "2026-11-16",
+      "aliases": ["X-Lite","X-Lite Six","Shave 105 Di2"],
       "sizes": [
-        {
-          "size": "XS",
-          "stack": 544.7,
-          "reach": 384.4,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 102,
-          "seatTubeLength": 462,
-          "chainstay": 425,
-          "wheelbase": 1018.4,
-          "bbDrop": 78
-        },
-        {
-          "size": "S",
-          "stack": 565.5,
-          "reach": 388.4,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 122,
-          "seatTubeLength": 481,
-          "chainstay": 425,
-          "wheelbase": 1024.8,
-          "bbDrop": 78
-        },
-        {
-          "size": "M",
-          "stack": 580.6,
-          "reach": 396.4,
-          "seatTubeAngle": 74.2,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 137,
-          "seatTubeLength": 501,
-          "chainstay": 425,
-          "wheelbase": 1035.5,
-          "bbDrop": 78
-        },
-        {
-          "size": "M/L",
-          "stack": 599.6,
-          "reach": 403.2,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 157,
-          "seatTubeLength": 511,
-          "chainstay": 425,
-          "wheelbase": 1048.7,
-          "bbDrop": 78
-        },
-        {
-          "size": "L",
-          "stack": 610.5,
-          "reach": 412.3,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 167,
-          "seatTubeLength": 531,
-          "chainstay": 430,
-          "wheelbase": 1063.8,
-          "bbDrop": 78
-        },
-        {
-          "size": "XL",
-          "stack": 624.3,
-          "reach": 430.2,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 182,
-          "seatTubeLength": 556,
-          "chainstay": 430,
-          "wheelbase": 1086.5,
-          "bbDrop": 78
-        }
-      ],
-      "retrieved": "2026-11-16"
+        ["XS",544,360,75,71,123,435,412,975,73],
+        ["S",562,370,74.5,72,138,470,412,982,73],
+        ["M",584,378,74,73,157,492,414,989,73],
+        ["M/L",602,388,73.5,73.2,175,512,414,1002,73],
+        ["L",622,398,73.5,73.2,196,537,416,1020,73],
+        ["XL",648,410,73.5,73.2,223,575,416,1039,73]
+      ]
     }
   ]
 }

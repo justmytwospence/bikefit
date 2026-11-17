@@ -8,78 +8,12 @@
       "source": "https://www.pivotcycles.com/en-us/bikes/vault",
       "retrieved": "2026-11-16",
       "sizes": [
-        {
-          "size": "XXS",
-          "stack": 529,
-          "reach": 360,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 69,
-          "headTubeLength": 85,
-          "seatTubeLength": 390,
-          "chainstay": 420,
-          "wheelbase": 1000,
-          "bbDrop": 80
-        },
-        {
-          "size": "XS",
-          "stack": 554,
-          "reach": 380,
-          "seatTubeAngle": 74.3,
-          "headTubeAngle": 70,
-          "headTubeLength": 110,
-          "seatTubeLength": 430,
-          "chainstay": 420,
-          "wheelbase": 1021,
-          "bbDrop": 78
-        },
-        {
-          "size": "S",
-          "stack": 568,
-          "reach": 390,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 70.4,
-          "headTubeLength": 125,
-          "seatTubeLength": 480,
-          "chainstay": 420,
-          "wheelbase": 1034,
-          "bbDrop": 76
-        },
-        {
-          "size": "M",
-          "stack": 592,
-          "reach": 405,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 70.7,
-          "headTubeLength": 150,
-          "seatTubeLength": 500,
-          "chainstay": 420,
-          "wheelbase": 1054,
-          "bbDrop": 75
-        },
-        {
-          "size": "L",
-          "stack": 605,
-          "reach": 415,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 70.8,
-          "headTubeLength": 165,
-          "seatTubeLength": 520,
-          "chainstay": 420,
-          "wheelbase": 1069,
-          "bbDrop": 73
-        },
-        {
-          "size": "XL",
-          "stack": 639,
-          "reach": 425,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71,
-          "headTubeLength": 200,
-          "seatTubeLength": 540,
-          "chainstay": 420,
-          "wheelbase": 1088,
-          "bbDrop": 73
-        }
+        ["XXS",529,360,75,69,85,390,420,1000,80],
+        ["XS",554,380,74.3,70,110,430,420,1021,78],
+        ["S",568,390,73.8,70.4,125,480,420,1034,76],
+        ["M",592,405,73,70.7,150,500,420,1054,75],
+        ["L",605,415,73,70.8,165,520,420,1069,73],
+        ["XL",639,425,73,71,200,540,420,1088,73]
       ]
     }
   ]

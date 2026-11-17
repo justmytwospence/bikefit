@@ -2,113 +2,37 @@
   "brand": "Cannondale",
   "models": [
     {
+      "model": "CAAD14",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.cannondale.com/en-us/bikes/road/race/caad14/caad14-frameset",
+      "retrieved": "2026-11-16",
+      "aliases": ["CAAD"],
+      "sizes": [
+        ["48",505,377,74.1,71.2,98,490,415,990,74],
+        ["51",520,381,73.7,71.2,117,525,415,1001,72],
+        ["54",540,386,73.3,71.2,138,555,415,1012,72],
+        ["56",560,392,72.9,73,151,580,415,998,69],
+        ["58",580,398,72.5,73,172,600,415,1011,69],
+        ["61",610,407,72.1,73,203,620,415,1029,69]
+      ]
+    },
+    {
       "model": "SuperSix EVO",
       "year": 2026,
       "category": "race",
       "source": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-hi-mod-frameset",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "SuperSix EVO Gen 5",
-        "EVO Gen 5",
-        "Supersix"
-      ],
+      "aliases": ["SuperSix EVO Gen 5","EVO Gen 5","Supersix"],
       "sizes": [
-        {
-          "size": "44",
-          "stack": 495,
-          "reach": 373,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70.9,
-          "headTubeLength": 89,
-          "seatTubeLength": 400,
-          "chainstay": 410,
-          "wheelbase": 980,
-          "bbDrop": 74
-        },
-        {
-          "size": "48",
-          "stack": 508,
-          "reach": 376,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 101,
-          "seatTubeLength": 429,
-          "chainstay": 410,
-          "wheelbase": 985,
-          "bbDrop": 74
-        },
-        {
-          "size": "50",
-          "stack": 520,
-          "reach": 379,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 114,
-          "seatTubeLength": 448,
-          "chainstay": 410,
-          "wheelbase": 993,
-          "bbDrop": 74
-        },
-        {
-          "size": "52",
-          "stack": 532,
-          "reach": 383,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 130,
-          "seatTubeLength": 467,
-          "chainstay": 410,
-          "wheelbase": 1002,
-          "bbDrop": 72
-        },
-        {
-          "size": "54",
-          "stack": 545,
-          "reach": 387,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 143,
-          "seatTubeLength": 490,
-          "chainstay": 410,
-          "wheelbase": 1010,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 565,
-          "reach": 393,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73,
-          "headTubeLength": 154,
-          "seatTubeLength": 510,
-          "chainstay": 410,
-          "wheelbase": 995,
-          "bbDrop": 72
-        },
-        {
-          "size": "58",
-          "stack": 585,
-          "reach": 398,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73,
-          "headTubeLength": 178,
-          "seatTubeLength": 532,
-          "chainstay": 410,
-          "wheelbase": 1007,
-          "bbDrop": 69
-        },
-        {
-          "size": "61",
-          "stack": 615,
-          "reach": 406,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 73,
-          "headTubeLength": 209,
-          "seatTubeLength": 570,
-          "chainstay": 410,
-          "wheelbase": 1024,
-          "bbDrop": 69
-        }
+        ["44",495,373,74.5,70.9,89,400,410,980,74],
+        ["48",508,376,74,71.2,101,429,410,985,74],
+        ["50",520,379,74,71.2,114,448,410,993,74],
+        ["52",532,383,74,71.2,130,467,410,1002,72],
+        ["54",545,387,74,71.2,143,490,410,1010,72],
+        ["56",565,393,73.5,73,154,510,410,995,72],
+        ["58",585,398,73,73,178,532,410,1007,69],
+        ["61",615,406,72.5,73,209,570,410,1024,69]
       ]
     },
     {
@@ -117,360 +41,15 @@
       "category": "race",
       "source": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-hi-mod-frameset/2023",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "SuperSix EVO 2023",
-        "EVO Gen 4",
-        "Supersix"
-      ],
+      "aliases": ["SuperSix EVO 2023","EVO Gen 4","Supersix"],
       "sizes": [
-        {
-          "size": "44",
-          "stack": 505,
-          "reach": 370,
-          "seatTubeAngle": 74.3,
-          "headTubeAngle": 70.9,
-          "headTubeLength": 100,
-          "seatTubeLength": 400,
-          "chainstay": 410,
-          "wheelbase": 981,
-          "bbDrop": 74
-        },
-        {
-          "size": "48",
-          "stack": 520,
-          "reach": 374,
-          "seatTubeAngle": 74.3,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 114,
-          "seatTubeLength": 438,
-          "chainstay": 410,
-          "wheelbase": 987,
-          "bbDrop": 74
-        },
-        {
-          "size": "51",
-          "stack": 535,
-          "reach": 378,
-          "seatTubeAngle": 74.3,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 130,
-          "seatTubeLength": 477,
-          "chainstay": 410,
-          "wheelbase": 996,
-          "bbDrop": 74
-        },
-        {
-          "size": "54",
-          "stack": 555,
-          "reach": 384,
-          "seatTubeAngle": 73.7,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 154,
-          "seatTubeLength": 515,
-          "chainstay": 410,
-          "wheelbase": 1010,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 575,
-          "reach": 389,
-          "seatTubeAngle": 73.3,
-          "headTubeAngle": 73,
-          "headTubeLength": 165,
-          "seatTubeLength": 534,
-          "chainstay": 410,
-          "wheelbase": 994,
-          "bbDrop": 72
-        },
-        {
-          "size": "58",
-          "stack": 595,
-          "reach": 395,
-          "seatTubeAngle": 72.9,
-          "headTubeAngle": 73,
-          "headTubeLength": 188,
-          "seatTubeLength": 567,
-          "chainstay": 410,
-          "wheelbase": 1007,
-          "bbDrop": 69
-        },
-        {
-          "size": "61",
-          "stack": 625,
-          "reach": 403,
-          "seatTubeAngle": 72.3,
-          "headTubeAngle": 73,
-          "headTubeLength": 220,
-          "seatTubeLength": 600,
-          "chainstay": 410,
-          "wheelbase": 1024,
-          "bbDrop": 69
-        }
-      ]
-    },
-    {
-      "model": "CAAD14",
-      "year": 2026,
-      "category": "race",
-      "source": "https://www.cannondale.com/en-us/bikes/road/race/caad14/caad14-frameset",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "CAAD"
-      ],
-      "sizes": [
-        {
-          "size": "48",
-          "stack": 505,
-          "reach": 377,
-          "seatTubeAngle": 74.1,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 98,
-          "seatTubeLength": 490,
-          "chainstay": 415,
-          "wheelbase": 990,
-          "bbDrop": 74
-        },
-        {
-          "size": "51",
-          "stack": 520,
-          "reach": 381,
-          "seatTubeAngle": 73.7,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 117,
-          "seatTubeLength": 525,
-          "chainstay": 415,
-          "wheelbase": 1001,
-          "bbDrop": 72
-        },
-        {
-          "size": "54",
-          "stack": 540,
-          "reach": 386,
-          "seatTubeAngle": 73.3,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 138,
-          "seatTubeLength": 555,
-          "chainstay": 415,
-          "wheelbase": 1012,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 560,
-          "reach": 392,
-          "seatTubeAngle": 72.9,
-          "headTubeAngle": 73,
-          "headTubeLength": 151,
-          "seatTubeLength": 580,
-          "chainstay": 415,
-          "wheelbase": 998,
-          "bbDrop": 69
-        },
-        {
-          "size": "58",
-          "stack": 580,
-          "reach": 398,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 73,
-          "headTubeLength": 172,
-          "seatTubeLength": 600,
-          "chainstay": 415,
-          "wheelbase": 1011,
-          "bbDrop": 69
-        },
-        {
-          "size": "61",
-          "stack": 610,
-          "reach": 407,
-          "seatTubeAngle": 72.1,
-          "headTubeAngle": 73,
-          "headTubeLength": 203,
-          "seatTubeLength": 620,
-          "chainstay": 415,
-          "wheelbase": 1029,
-          "bbDrop": 69
-        }
-      ]
-    },
-    {
-      "model": "Synapse Carbon",
-      "year": 2025,
-      "category": "endurance",
-      "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-lab71-frameset",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Synapse"
-      ],
-      "sizes": [
-        {
-          "size": "44",
-          "stack": 510,
-          "reach": 366,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 69.8,
-          "headTubeLength": 91,
-          "seatTubeLength": 407,
-          "chainstay": 425,
-          "wheelbase": 1003,
-          "bbDrop": 75
-        },
-        {
-          "size": "48",
-          "stack": 530,
-          "reach": 371,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 70.9,
-          "headTubeLength": 108,
-          "seatTubeLength": 407,
-          "chainstay": 425,
-          "wheelbase": 1005,
-          "bbDrop": 75
-        },
-        {
-          "size": "51",
-          "stack": 550,
-          "reach": 376,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 127,
-          "seatTubeLength": 443,
-          "chainstay": 425,
-          "wheelbase": 1013,
-          "bbDrop": 75
-        },
-        {
-          "size": "54",
-          "stack": 570,
-          "reach": 381,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 150,
-          "seatTubeLength": 480,
-          "chainstay": 425,
-          "wheelbase": 1026,
-          "bbDrop": 73
-        },
-        {
-          "size": "56",
-          "stack": 590,
-          "reach": 387,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 171,
-          "seatTubeLength": 520,
-          "chainstay": 430,
-          "wheelbase": 1044,
-          "bbDrop": 73
-        },
-        {
-          "size": "58",
-          "stack": 610,
-          "reach": 393,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 196,
-          "seatTubeLength": 550,
-          "chainstay": 430,
-          "wheelbase": 1058,
-          "bbDrop": 70
-        },
-        {
-          "size": "61",
-          "stack": 640,
-          "reach": 402,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.3,
-          "headTubeLength": 227,
-          "seatTubeLength": 590,
-          "chainstay": 430,
-          "wheelbase": 1077,
-          "bbDrop": 70
-        }
-      ]
-    },
-    {
-      "model": "Topstone Carbon",
-      "year": 2025,
-      "category": "gravel",
-      "source": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-ltd-lefty-axs",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Topstone"
-      ],
-      "sizes": [
-        {
-          "size": "47",
-          "stack": 554,
-          "reach": 364,
-          "seatTubeAngle": 73.1,
-          "headTubeAngle": 69.9,
-          "headTubeLength": 97,
-          "seatTubeLength": 410,
-          "chainstay": 420,
-          "wheelbase": 1009,
-          "bbDrop": 79
-        },
-        {
-          "size": "51",
-          "stack": 561,
-          "reach": 373,
-          "seatTubeAngle": 73.1,
-          "headTubeAngle": 70.7,
-          "headTubeLength": 101,
-          "seatTubeLength": 446,
-          "chainstay": 420,
-          "wheelbase": 1012,
-          "bbDrop": 79
-        },
-        {
-          "size": "54",
-          "stack": 579,
-          "reach": 378,
-          "seatTubeAngle": 73.1,
-          "headTubeAngle": 70.7,
-          "headTubeLength": 123,
-          "seatTubeLength": 482,
-          "chainstay": 420,
-          "wheelbase": 1026,
-          "bbDrop": 76
-        },
-        {
-          "size": "56",
-          "stack": 597,
-          "reach": 383,
-          "seatTubeAngle": 73.1,
-          "headTubeAngle": 70.7,
-          "headTubeLength": 142,
-          "seatTubeLength": 518,
-          "chainstay": 420,
-          "wheelbase": 1036,
-          "bbDrop": 76
-        },
-        {
-          "size": "58",
-          "stack": 615,
-          "reach": 389,
-          "seatTubeAngle": 73.1,
-          "headTubeAngle": 70.7,
-          "headTubeLength": 164,
-          "seatTubeLength": 554,
-          "chainstay": 420,
-          "wheelbase": 1050,
-          "bbDrop": 74
-        },
-        {
-          "size": "61",
-          "stack": 646,
-          "reach": 397,
-          "seatTubeAngle": 73.1,
-          "headTubeAngle": 70.7,
-          "headTubeLength": 196,
-          "seatTubeLength": 590,
-          "chainstay": 420,
-          "wheelbase": 1069,
-          "bbDrop": 74
-        }
+        ["44",505,370,74.3,70.9,100,400,410,981,74],
+        ["48",520,374,74.3,71.2,114,438,410,987,74],
+        ["51",535,378,74.3,71.2,130,477,410,996,74],
+        ["54",555,384,73.7,71.2,154,515,410,1010,72],
+        ["56",575,389,73.3,73,165,534,410,994,72],
+        ["58",595,395,72.9,73,188,567,410,1007,69],
+        ["61",625,403,72.3,73,220,600,410,1024,69]
       ]
     },
     {
@@ -479,82 +58,47 @@
       "category": "cyclocross",
       "source": "https://www.cannondale.com/en-us/bikes/road/gravel/superx/superx-lab71-frameset",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Super X"
-      ],
+      "aliases": ["Super X"],
       "sizes": [
-        {
-          "size": "46",
-          "stack": 515,
-          "reach": 365,
-          "seatTubeAngle": 74.3,
-          "headTubeAngle": 70,
-          "headTubeLength": 86,
-          "seatTubeLength": 449,
-          "chainstay": 422,
-          "wheelbase": 998,
-          "bbDrop": 77
-        },
-        {
-          "size": "51",
-          "stack": 535,
-          "reach": 371,
-          "seatTubeAngle": 74.3,
-          "headTubeAngle": 71,
-          "headTubeLength": 108,
-          "seatTubeLength": 488,
-          "chainstay": 422,
-          "wheelbase": 1005,
-          "bbDrop": 72
-        },
-        {
-          "size": "54",
-          "stack": 555,
-          "reach": 378,
-          "seatTubeAngle": 73.7,
-          "headTubeAngle": 71,
-          "headTubeLength": 132,
-          "seatTubeLength": 524,
-          "chainstay": 422,
-          "wheelbase": 1020,
-          "bbDrop": 69
-        },
-        {
-          "size": "56",
-          "stack": 575,
-          "reach": 385,
-          "seatTubeAngle": 73.3,
-          "headTubeAngle": 71,
-          "headTubeLength": 153,
-          "seatTubeLength": 546,
-          "chainstay": 422,
-          "wheelbase": 1034,
-          "bbDrop": 69
-        },
-        {
-          "size": "58",
-          "stack": 595,
-          "reach": 392,
-          "seatTubeAngle": 72.9,
-          "headTubeAngle": 71,
-          "headTubeLength": 177,
-          "seatTubeLength": 566,
-          "chainstay": 422,
-          "wheelbase": 1049,
-          "bbDrop": 67
-        },
-        {
-          "size": "61",
-          "stack": 615,
-          "reach": 398,
-          "seatTubeAngle": 72.3,
-          "headTubeAngle": 71,
-          "headTubeLength": 198,
-          "seatTubeLength": 589,
-          "chainstay": 422,
-          "wheelbase": 1062,
-          "bbDrop": 67
-        }
+        ["46",515,365,74.3,70,86,449,422,998,77],
+        ["51",535,371,74.3,71,108,488,422,1005,72],
+        ["54",555,378,73.7,71,132,524,422,1020,69],
+        ["56",575,385,73.3,71,153,546,422,1034,69],
+        ["58",595,392,72.9,71,177,566,422,1049,67],
+        ["61",615,398,72.3,71,198,589,422,1062,67]
+      ]
+    },
+    {
+      "model": "Synapse Carbon",
+      "year": 2025,
+      "category": "endurance",
+      "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-lab71-frameset",
+      "retrieved": "2026-11-16",
+      "aliases": ["Synapse"],
+      "sizes": [
+        ["44",510,366,73,69.8,91,407,425,1003,75],
+        ["48",530,371,73,70.9,108,407,425,1005,75],
+        ["51",550,376,73,71.3,127,443,425,1013,75],
+        ["54",570,381,73,71.3,150,480,425,1026,73],
+        ["56",590,387,73,71.3,171,520,430,1044,73],
+        ["58",610,393,73,71.3,196,550,430,1058,70],
+        ["61",640,402,73,71.3,227,590,430,1077,70]
+      ]
+    },
+    {
+      "model": "Topstone Carbon",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-ltd-lefty-axs",
+      "retrieved": "2026-11-16",
+      "aliases": ["Topstone"],
+      "sizes": [
+        ["47",554,364,73.1,69.9,97,410,420,1009,79],
+        ["51",561,373,73.1,70.7,101,446,420,1012,79],
+        ["54",579,378,73.1,70.7,123,482,420,1026,76],
+        ["56",597,383,73.1,70.7,142,518,420,1036,76],
+        ["58",615,389,73.1,70.7,164,554,420,1050,74],
+        ["61",646,397,73.1,70.7,196,590,420,1069,74]
       ]
     }
   ]

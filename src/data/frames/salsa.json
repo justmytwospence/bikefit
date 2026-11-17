@@ -2,99 +2,6 @@
   "brand": "Salsa",
   "models": [
     {
-      "model": "Warbird",
-      "year": 2022,
-      "category": "gravel",
-      "source": "https://www.salsacycles.com/products/2025-warbird-c-force-axs-wide",
-      "retrieved": "2026-11-16",
-      "sizes": [
-        {
-          "size": "49",
-          "stack": 517.9,
-          "reach": 360.2,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 71,
-          "headTubeLength": 90,
-          "seatTubeLength": 390,
-          "chainstay": 430,
-          "wheelbase": 996.1,
-          "bbDrop": 70
-        },
-        {
-          "size": "52.5",
-          "stack": 547.1,
-          "reach": 368.1,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.75,
-          "headTubeLength": 120,
-          "seatTubeLength": 440,
-          "chainstay": 430,
-          "wheelbase": 1012,
-          "bbDrop": 70
-        },
-        {
-          "size": "54.5",
-          "stack": 566,
-          "reach": 372,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 70.75,
-          "headTubeLength": 140,
-          "seatTubeLength": 475,
-          "chainstay": 430,
-          "wheelbase": 1022.4,
-          "bbDrop": 70
-        },
-        {
-          "size": "56",
-          "stack": 584.9,
-          "reach": 381.2,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 70.75,
-          "headTubeLength": 160,
-          "seatTubeLength": 510,
-          "chainstay": 430,
-          "wheelbase": 1038.2,
-          "bbDrop": 70
-        },
-        {
-          "size": "57.5",
-          "stack": 603.7,
-          "reach": 390.4,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 70.75,
-          "headTubeLength": 180,
-          "seatTubeLength": 520,
-          "chainstay": 430,
-          "wheelbase": 1054,
-          "bbDrop": 70
-        },
-        {
-          "size": "59",
-          "stack": 622.6,
-          "reach": 399.6,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 70.75,
-          "headTubeLength": 200,
-          "seatTubeLength": 545,
-          "chainstay": 430,
-          "wheelbase": 1069.8,
-          "bbDrop": 70
-        },
-        {
-          "size": "61",
-          "stack": 641.5,
-          "reach": 407.7,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 70.75,
-          "headTubeLength": 220,
-          "seatTubeLength": 570,
-          "chainstay": 430,
-          "wheelbase": 1084.5,
-          "bbDrop": 70
-        }
-      ]
-    },
-    {
       "model": "Cutthroat",
       "year": 2024,
       "category": "gravel",
@@ -102,66 +9,27 @@
       "retrieved": "2026-11-16",
       "tyreWidth": 56,
       "sizes": [
-        {
-          "size": "52",
-          "stack": 585,
-          "reach": 357,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 69,
-          "headTubeLength": 90,
-          "seatTubeLength": 356,
-          "chainstay": 445,
-          "wheelbase": 1050,
-          "bbDrop": 70
-        },
-        {
-          "size": "54",
-          "stack": 592,
-          "reach": 372,
-          "seatTubeAngle": 74.25,
-          "headTubeAngle": 69,
-          "headTubeLength": 98,
-          "seatTubeLength": 419,
-          "chainstay": 445,
-          "wheelbase": 1066,
-          "bbDrop": 70
-        },
-        {
-          "size": "56",
-          "stack": 620,
-          "reach": 385,
-          "seatTubeAngle": 74.25,
-          "headTubeAngle": 69,
-          "headTubeLength": 127,
-          "seatTubeLength": 508,
-          "chainstay": 445,
-          "wheelbase": 1091,
-          "bbDrop": 70
-        },
-        {
-          "size": "58",
-          "stack": 645,
-          "reach": 394,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 69,
-          "headTubeLength": 154,
-          "seatTubeLength": 559,
-          "chainstay": 445,
-          "wheelbase": 1110,
-          "bbDrop": 70
-        },
-        {
-          "size": "60",
-          "stack": 664,
-          "reach": 406,
-          "seatTubeAngle": 73.75,
-          "headTubeAngle": 69,
-          "headTubeLength": 175,
-          "seatTubeLength": 584,
-          "chainstay": 445,
-          "wheelbase": 1129,
-          "bbDrop": 70
-        }
+        ["52",585,357,74.5,69,90,356,445,1050,70],
+        ["54",592,372,74.25,69,98,419,445,1066,70],
+        ["56",620,385,74.25,69,127,508,445,1091,70],
+        ["58",645,394,74,69,154,559,445,1110,70],
+        ["60",664,406,73.75,69,175,584,445,1129,70]
+      ]
+    },
+    {
+      "model": "Warbird",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2025-warbird-c-force-axs-wide",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        ["49",517.9,360.2,75,71,90,390,430,996.1,70],
+        ["52.5",547.1,368.1,74,70.75,120,440,430,1012,70],
+        ["54.5",566,372,73,70.75,140,475,430,1022.4,70],
+        ["56",584.9,381.2,73,70.75,160,510,430,1038.2,70],
+        ["57.5",603.7,390.4,73,70.75,180,520,430,1054,70],
+        ["59",622.6,399.6,73,70.75,200,545,430,1069.8,70],
+        ["61",641.5,407.7,72.5,70.75,220,570,430,1084.5,70]
       ]
     }
   ]

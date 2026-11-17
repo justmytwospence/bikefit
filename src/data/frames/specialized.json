@@ -2,279 +2,20 @@
   "brand": "Specialized",
   "models": [
     {
-      "model": "Tarmac SL9",
-      "year": 2026,
+      "model": "Aethos",
+      "year": 2021,
+      "lastYear": 2026,
       "category": "race",
-      "source": "https://www.specialized.com/us/en/tarmac-sl9-expert-shimano-ultegra-di2/p/4293531",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "SL9"
-      ],
+      "source": "https://www.specialized.com/us/en/s-works-aethos-sram-red-axs/p/4221535",
+      "retrieved": "2026-04-23",
+      "archive": "https://web.archive.org/web/20260423042015/https://www.specialized.com/us/en/s-works-aethos-sram-red-axs/p/4221535",
       "sizes": [
-        {
-          "size": "44",
-          "stack": 501,
-          "reach": 366,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 99,
-          "seatTubeLength": 433,
-          "chainstay": 410,
-          "wheelbase": 970,
-          "bbDrop": 74
-        },
-        {
-          "size": "49",
-          "stack": 514,
-          "reach": 375,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 71.75,
-          "headTubeLength": 109,
-          "seatTubeLength": 445,
-          "chainstay": 410,
-          "wheelbase": 973,
-          "bbDrop": 74
-        },
-        {
-          "size": "52",
-          "stack": 527,
-          "reach": 380,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 120,
-          "seatTubeLength": 456,
-          "chainstay": 410,
-          "wheelbase": 975,
-          "bbDrop": 74
-        },
-        {
-          "size": "54",
-          "stack": 544,
-          "reach": 384,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 140,
-          "seatTubeLength": 473,
-          "chainstay": 410,
-          "wheelbase": 986,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 565,
-          "reach": 395,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 157,
-          "seatTubeLength": 494,
-          "chainstay": 410,
-          "wheelbase": 991,
-          "bbDrop": 72
-        },
-        {
-          "size": "58",
-          "stack": 591,
-          "reach": 402,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 184,
-          "seatTubeLength": 515,
-          "chainstay": 410,
-          "wheelbase": 1006,
-          "bbDrop": 72
-        },
-        {
-          "size": "61",
-          "stack": 612,
-          "reach": 408,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 74,
-          "headTubeLength": 204,
-          "seatTubeLength": 545,
-          "chainstay": 410,
-          "wheelbase": 1013,
-          "bbDrop": 72
-        }
-      ]
-    },
-    {
-      "model": "Tarmac SL8",
-      "year": 2024,
-      "category": "race",
-      "source": "https://www.specialized.com/us/en/s-works-tarmac-sl8-frameset-fact-12r-carbon/p/4221540",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "SL8"
-      ],
-      "sizes": [
-        {
-          "size": "44",
-          "stack": 501,
-          "reach": 366,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 99,
-          "seatTubeLength": 433,
-          "chainstay": 410,
-          "wheelbase": 970,
-          "bbDrop": 74
-        },
-        {
-          "size": "49",
-          "stack": 514,
-          "reach": 375,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 71.75,
-          "headTubeLength": 109,
-          "seatTubeLength": 445,
-          "chainstay": 410,
-          "wheelbase": 973,
-          "bbDrop": 74
-        },
-        {
-          "size": "52",
-          "stack": 527,
-          "reach": 380,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 120,
-          "seatTubeLength": 456,
-          "chainstay": 410,
-          "wheelbase": 975,
-          "bbDrop": 74
-        },
-        {
-          "size": "54",
-          "stack": 544,
-          "reach": 384,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 137,
-          "seatTubeLength": 473,
-          "chainstay": 410,
-          "wheelbase": 978,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 565,
-          "reach": 395,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 157,
-          "seatTubeLength": 494,
-          "chainstay": 410,
-          "wheelbase": 991,
-          "bbDrop": 72
-        },
-        {
-          "size": "58",
-          "stack": 591,
-          "reach": 402,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 184,
-          "seatTubeLength": 515,
-          "chainstay": 410,
-          "wheelbase": 1006,
-          "bbDrop": 72
-        },
-        {
-          "size": "61",
-          "stack": 612,
-          "reach": 408,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 74,
-          "headTubeLength": 204,
-          "seatTubeLength": 545,
-          "chainstay": 410,
-          "wheelbase": 1013,
-          "bbDrop": 72
-        }
-      ]
-    },
-    {
-      "model": "Aethos 2",
-      "year": 2026,
-      "category": "race",
-      "source": "https://www.specialized.com/us/en/aethos-2-pro-sram-force-axs/p/4221564",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Aethos"
-      ],
-      "sizes": [
-        {
-          "size": "49",
-          "stack": 522,
-          "reach": 373,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 71.4,
-          "headTubeLength": 114,
-          "seatTubeLength": 450,
-          "chainstay": 410,
-          "wheelbase": 978,
-          "bbDrop": 76.5
-        },
-        {
-          "size": "52",
-          "stack": 538,
-          "reach": 377,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 72.1,
-          "headTubeLength": 128,
-          "seatTubeLength": 470,
-          "chainstay": 410,
-          "wheelbase": 981,
-          "bbDrop": 76.5
-        },
-        {
-          "size": "54",
-          "stack": 559,
-          "reach": 384,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 150,
-          "seatTubeLength": 490,
-          "chainstay": 410,
-          "wheelbase": 992,
-          "bbDrop": 75
-        },
-        {
-          "size": "56",
-          "stack": 580,
-          "reach": 391,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 169,
-          "seatTubeLength": 510,
-          "chainstay": 410,
-          "wheelbase": 998,
-          "bbDrop": 75
-        },
-        {
-          "size": "58",
-          "stack": 606,
-          "reach": 398,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 198,
-          "seatTubeLength": 535,
-          "chainstay": 410,
-          "wheelbase": 1013,
-          "bbDrop": 73.5
-        },
-        {
-          "size": "61",
-          "stack": 627,
-          "reach": 404,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 218,
-          "seatTubeLength": 570,
-          "chainstay": 410,
-          "wheelbase": 1020,
-          "bbDrop": 73.5
-        }
+        ["49",514,375,75.5,71.8,109,431,410,973,74],
+        ["52",527,380,74,72.5,120,462,410,975,74],
+        ["54",544,384,74,73,137,481,410,978,72],
+        ["56",565,395,73.5,73.5,157,504,410,991,72],
+        ["58",591,402,73.5,73.5,184,532,410,1005,72],
+        ["61",612,408,73,74,204,567,410,1012,72]
       ]
     },
     {
@@ -283,348 +24,135 @@
       "category": "race",
       "source": "https://www.specialized.com/us/en/aethos-pro-shimano-ultegra-di2/p/4221544",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Aethos 1"
-      ],
+      "aliases": ["Aethos 1"],
       "sizes": [
-        {
-          "size": "49",
-          "stack": 514,
-          "reach": 375,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 71.75,
-          "headTubeLength": 109,
-          "seatTubeLength": 431,
-          "chainstay": 410,
-          "wheelbase": 973,
-          "bbDrop": 74
-        },
-        {
-          "size": "52",
-          "stack": 527,
-          "reach": 380,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 120,
-          "seatTubeLength": 462,
-          "chainstay": 410,
-          "wheelbase": 975,
-          "bbDrop": 74
-        },
-        {
-          "size": "54",
-          "stack": 544,
-          "reach": 384,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 137,
-          "seatTubeLength": 481,
-          "chainstay": 410,
-          "wheelbase": 978,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 565,
-          "reach": 395,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 157,
-          "seatTubeLength": 504,
-          "chainstay": 410,
-          "wheelbase": 991,
-          "bbDrop": 72
-        },
-        {
-          "size": "58",
-          "stack": 591,
-          "reach": 402,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 184,
-          "seatTubeLength": 532,
-          "chainstay": 410,
-          "wheelbase": 1005,
-          "bbDrop": 72
-        },
-        {
-          "size": "61",
-          "stack": 612,
-          "reach": 408,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 74,
-          "headTubeLength": 204,
-          "seatTubeLength": 567,
-          "chainstay": 410,
-          "wheelbase": 1012,
-          "bbDrop": 72
-        }
+        ["49",514,375,75.5,71.75,109,431,410,973,74],
+        ["52",527,380,74,72.5,120,462,410,975,74],
+        ["54",544,384,74,73,137,481,410,978,72],
+        ["56",565,395,73.5,73.5,157,504,410,991,72],
+        ["58",591,402,73.5,73.5,184,532,410,1005,72],
+        ["61",612,408,73,74,204,567,410,1012,72]
       ]
     },
     {
-      "model": "Roubaix SL8",
-      "year": 2023,
-      "category": "endurance",
-      "source": "https://www.specialized.com/us/en/s-works-roubaix-sl8-frameset-fact-12r-carbon/p/4263272",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Roubaix"
-      ],
-      "sizes": [
-        {
-          "size": "44",
-          "stack": 543,
-          "reach": 353,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 69.3,
-          "headTubeLength": 90,
-          "seatTubeLength": 365,
-          "chainstay": 418,
-          "wheelbase": 994,
-          "bbDrop": 80
-        },
-        {
-          "size": "49",
-          "stack": 549,
-          "reach": 363,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.8,
-          "headTubeLength": 90,
-          "seatTubeLength": 410,
-          "chainstay": 418,
-          "wheelbase": 992,
-          "bbDrop": 80
-        },
-        {
-          "size": "52",
-          "stack": 566,
-          "reach": 370,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 105,
-          "seatTubeLength": 445,
-          "chainstay": 418,
-          "wheelbase": 988,
-          "bbDrop": 80
-        },
-        {
-          "size": "54",
-          "stack": 585,
-          "reach": 381,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.3,
-          "headTubeLength": 122,
-          "seatTubeLength": 465,
-          "chainstay": 420,
-          "wheelbase": 1005,
-          "bbDrop": 78
-        },
-        {
-          "size": "56",
-          "stack": 605,
-          "reach": 389,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73,
-          "headTubeLength": 140,
-          "seatTubeLength": 485,
-          "chainstay": 420,
-          "wheelbase": 1012,
-          "bbDrop": 78
-        },
-        {
-          "size": "58",
-          "stack": 630,
-          "reach": 397,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73,
-          "headTubeLength": 168,
-          "seatTubeLength": 505,
-          "chainstay": 423,
-          "wheelbase": 1031,
-          "bbDrop": 78
-        },
-        {
-          "size": "61",
-          "stack": 665,
-          "reach": 403,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 202,
-          "seatTubeLength": 545,
-          "chainstay": 423,
-          "wheelbase": 1042,
-          "bbDrop": 78
-        }
-      ]
-    },
-    {
-      "model": "Diverge 4",
+      "model": "Aethos",
       "year": 2026,
-      "category": "gravel",
-      "source": "https://www.specialized.com/us/en/diverge-4-pro-sram-force-xplr/p/4293747",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Diverge"
-      ],
-      "tyreWidth": 45,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/aethos-2-pro-sram-force-axs/p/4221564",
+      "retrieved": "2025-11-19",
+      "archive": "https://web.archive.org/web/20251119130802/https://www.specialized.com/us/en/aethos-2-pro-sram-force-axs/p/4221564",
       "sizes": [
-        {
-          "size": "49",
-          "stack": 563,
-          "reach": 365,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70,
-          "headTubeLength": 90,
-          "seatTubeLength": 400,
-          "chainstay": 430,
-          "wheelbase": 1019,
-          "bbDrop": 85
-        },
-        {
-          "size": "52",
-          "stack": 578,
-          "reach": 374,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 104,
-          "seatTubeLength": 430,
-          "chainstay": 430,
-          "wheelbase": 1031,
-          "bbDrop": 85
-        },
-        {
-          "size": "54",
-          "stack": 592,
-          "reach": 387,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 116,
-          "seatTubeLength": 470,
-          "chainstay": 430,
-          "wheelbase": 1041,
-          "bbDrop": 85
-        },
-        {
-          "size": "56",
-          "stack": 610,
-          "reach": 400,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 135,
-          "seatTubeLength": 500,
-          "chainstay": 430,
-          "wheelbase": 1060,
-          "bbDrop": 85
-        },
-        {
-          "size": "58",
-          "stack": 634,
-          "reach": 412,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 161,
-          "seatTubeLength": 530,
-          "chainstay": 430,
-          "wheelbase": 1081,
-          "bbDrop": 85
-        },
-        {
-          "size": "61",
-          "stack": 659,
-          "reach": 425,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 187,
-          "seatTubeLength": 560,
-          "chainstay": 430,
-          "wheelbase": 1102,
-          "bbDrop": 85
-        }
+        ["49",522,373,75.5,71.4,114,450,410,978,77],
+        ["52",538,377,74.5,72.1,128,470,410,981,77],
+        ["54",559,384,74,72.5,150,490,410,992,75],
+        ["56",580,391,74,73,169,510,410,998,75],
+        ["58",606,398,74,73,198,535,410,1013,74],
+        ["61",627,404,74,73.5,218,570,410,1020,74]
       ]
     },
     {
-      "model": "Crux 5",
-      "year": 2026,
-      "category": "gravel",
-      "source": "https://www.specialized.com/us/en/s-works-crux-5-frameset-fact-12r-carbon/p/4294842",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Crux"
-      ],
-      "tyreWidth": 45,
+      "model": "Allez",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-e5-elite/p/115475",
+      "retrieved": "2021-01-22",
+      "archive": "https://web.archive.org/web/20210122171812/https://www.specialized.com/us/en/allez-e5-elite/p/115475",
+      "estimated": ["bbDrop"],
       "sizes": [
-        {
-          "size": "49",
-          "stack": 530,
-          "reach": 375,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 95,
-          "seatTubeLength": 445,
-          "chainstay": 425,
-          "wheelbase": 1008,
-          "bbDrop": 80
-        },
-        {
-          "size": "52",
-          "stack": 547,
-          "reach": 382,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 70.75,
-          "headTubeLength": 110,
-          "seatTubeLength": 456,
-          "chainstay": 425,
-          "wheelbase": 1016,
-          "bbDrop": 80
-        },
-        {
-          "size": "54",
-          "stack": 560,
-          "reach": 388,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 125,
-          "seatTubeLength": 473,
-          "chainstay": 425,
-          "wheelbase": 1026,
-          "bbDrop": 78
-        },
-        {
-          "size": "56",
-          "stack": 578,
-          "reach": 400,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 142,
-          "seatTubeLength": 497,
-          "chainstay": 425,
-          "wheelbase": 1039,
-          "bbDrop": 78
-        },
-        {
-          "size": "58",
-          "stack": 598,
-          "reach": 412,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 163,
-          "seatTubeLength": 515,
-          "chainstay": 425,
-          "wheelbase": 1057,
-          "bbDrop": 78
-        },
-        {
-          "size": "61",
-          "stack": 621,
-          "reach": 425,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 188,
-          "seatTubeLength": 545,
-          "chainstay": 425,
-          "wheelbase": 1078,
-          "bbDrop": 78
-        }
+        ["49",505,387,75.5,72.3,100,460,405,972,72],
+        ["52",527,387,74,73,120,490,407,974,72],
+        ["54",548,387,73.5,73,145,510,407,982,72],
+        ["56",574,392,73.3,73.5,170,530,407,990,71],
+        ["58",606,397,73,73.5,205,550,410,1008,71],
+        ["61",632,401,72.5,74,230,580,410,1014,70]
+      ]
+    },
+    {
+      "model": "Allez",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-compact/p/34886",
+      "retrieved": "2025-08-24",
+      "archive": "https://web.archive.org/web/20250824002025/https://www.specialized.com/us/en/allez-compact/p/34886",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["49",505,385,75.5,72.3,100,460,405,970,72],
+        ["52",527,385,74,73,120,490,405,970,72],
+        ["54",548,385,73.5,73,145,510,405,978,72],
+        ["56",575,392,73.3,73.5,170,530,405,986,71],
+        ["58",607,397,73,73.5,205,550,407,1003,71],
+        ["61",632,402,72.5,74,230,580,410,1013,70]
+      ]
+    },
+    {
+      "model": "Allez",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-elite/p/199474",
+      "retrieved": "2025-08-10",
+      "archive": "https://web.archive.org/web/20250810131927/https://www.specialized.com/us/en/allez-elite/p/199474",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["44",516,365,75.3,71.5,110,430,420,974,72],
+        ["49",535,374,75.3,72.3,125,460,420,982,72],
+        ["52",552,376,73.3,73,140,490,420,983,71],
+        ["54",570,380,73.3,73,155,510,420,991,71],
+        ["56",596,385,73.3,73.5,180,530,420,999,71],
+        ["58",627,390,73.3,73.5,215,550,420,1014,70],
+        ["61",649,396,73.3,74,235,580,420,1021,70]
+      ]
+    },
+    {
+      "model": "Allez",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-shimano-cues/p/4221808",
+      "retrieved": "2026-11-15",
+      "archive": "https://web.archive.org/web/20261115053725/https://www.specialized.com/us/en/allez-shimano-cues/p/4221808",
+      "sizes": [
+        ["44",519,356,75.3,69.5,110,430,420,984,77],
+        ["49",536,359,75.3,70.5,125,460,420,984,77],
+        ["52",552,364,73.3,71,140,490,425,995,77],
+        ["54",569,370,73.3,72,155,510,425,998,76],
+        ["56",590,378,73.3,72.5,175,530,425,1008,76],
+        ["58",610,386,73.3,73,195,550,425,1017,75],
+        ["61",643,392,73.3,73,230,580,425,1033,75]
+      ]
+    },
+    {
+      "model": "Allez Sprint",
+      "year": 2020,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-sprint-disc-frameset/p/154239",
+      "retrieved": "2019-12-13",
+      "archive": "https://web.archive.org/web/20191213100119/https://www.specialized.com/us/en/allez-sprint-disc-frameset/p/154239",
+      "sizes": [
+        ["49",507,375,74,72.3,110,460,410,966,69],
+        ["52",519,380,74,73,120,480,410,968,69],
+        ["54",538,385,74,73,140,500,410,979,69],
+        ["56",559,395,74,73.5,160,520,410,990,69],
+        ["58",588,400,74,73.5,190,540,410,1004,69],
+        ["61",609,405,74,74,210,570,410,1010,69]
+      ]
+    },
+    {
+      "model": "Allez Sprint",
+      "year": 2024,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-sprint-comp/p/129269",
+      "retrieved": "2023-12-09",
+      "archive": "https://web.archive.org/web/20231209112818/https://www.specialized.com/us/en/allez-sprint-comp/p/129269",
+      "sizes": [
+        ["49",502,375,74,72.3,100,460,405,959,69],
+        ["52",514,380,74,73,110,480,405,961,69],
+        ["54",533,385,74,73,130,500,405,972,69],
+        ["56",554,395,74,73.5,150,520,405,984,69],
+        ["58",583,400,74,73.5,180,540,405,997,69],
+        ["61",604,405,74,74,200,570,407,1005,69]
       ]
     },
     {
@@ -634,78 +162,680 @@
       "source": "https://www.specialized.com/us/en/allez-sprint-frameset-daluisio-smartweld-alloy/p/4221551",
       "retrieved": "2026-11-16",
       "sizes": [
-        {
-          "size": "49",
-          "stack": 508,
-          "reach": 378,
-          "seatTubeAngle": 75.5,
-          "headTubeAngle": 71.75,
-          "headTubeLength": 105,
-          "seatTubeLength": 470,
-          "chainstay": 410,
-          "wheelbase": 974,
-          "bbDrop": 74
-        },
-        {
-          "size": "52",
-          "stack": 520,
-          "reach": 383,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 115,
-          "seatTubeLength": 495,
-          "chainstay": 410,
-          "wheelbase": 976,
-          "bbDrop": 74
-        },
-        {
-          "size": "54",
-          "stack": 537,
-          "reach": 387,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 133,
-          "seatTubeLength": 510,
-          "chainstay": 410,
-          "wheelbase": 979,
-          "bbDrop": 72
-        },
-        {
-          "size": "56",
-          "stack": 558,
-          "reach": 398,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 153,
-          "seatTubeLength": 530,
-          "chainstay": 410,
-          "wheelbase": 992,
-          "bbDrop": 72
-        },
-        {
-          "size": "58",
-          "stack": 584,
-          "reach": 405,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 74,
-          "headTubeLength": 180,
-          "seatTubeLength": 550,
-          "chainstay": 410,
-          "wheelbase": 1006,
-          "bbDrop": 72
-        },
-        {
-          "size": "61",
-          "stack": 605,
-          "reach": 411,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 200,
-          "seatTubeLength": 570,
-          "chainstay": 410,
-          "wheelbase": 1013,
-          "bbDrop": 72
-        }
+        ["49",508,378,75.5,71.75,105,470,410,974,74],
+        ["52",520,383,74,72.5,115,495,410,976,74],
+        ["54",537,387,74,73,133,510,410,979,72],
+        ["56",558,398,73.5,73.5,153,530,410,992,72],
+        ["58",584,405,73.5,74,180,550,410,1006,72],
+        ["61",605,411,73,73.5,200,570,410,1013,72]
+      ]
+    },
+    {
+      "model": "Allez Sprint",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-sprint-frameset/p/221508",
+      "retrieved": "2025-10-09",
+      "archive": "https://web.archive.org/web/20251009053522/https://www.specialized.com/us/en/allez-sprint-frameset/p/221508",
+      "sizes": [
+        ["49",508,378,75.5,71.8,105,470,410,974,74],
+        ["52",520,383,74,72.5,115,495,410,976,74],
+        ["54",537,387,74,73,133,510,410,979,72],
+        ["56",558,398,73.5,73.5,153,530,410,992,72],
+        ["58",584,405,73.5,74,180,550,410,1006,72],
+        ["61",605,411,73,73.5,200,570,410,1013,72]
+      ]
+    },
+    {
+      "model": "Allez Sprint",
+      "year": 2027,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/allez-sprint-comp-shimano-105/p/216918",
+      "retrieved": "2026-07-03",
+      "archive": "https://web.archive.org/web/20260703134759/https://www.specialized.com/us/en/allez-sprint-comp-shimano-105/p/216918",
+      "sizes": [
+        ["49",508,378,75.5,71.8,105,470,410,974,74],
+        ["52",520,383,74,72.5,115,495,410,976,74],
+        ["54",537,387,74,73,133,510,410,979,72],
+        ["56",558,398,73.5,73.5,153,530,410,992,72],
+        ["58",584,405,73.5,73.5,180,550,410,1006,72],
+        ["61",605,411,73,74,200,570,410,1013,72]
+      ]
+    },
+    {
+      "model": "Crux",
+      "year": 2020,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/crux-e5-sport/p/154295",
+      "retrieved": "2019-12-15",
+      "archive": "https://web.archive.org/web/20191215192133/https://www.specialized.com/us/en/crux-e5-sport/p/154295",
+      "sizes": [
+        ["46",522,366,75.5,69.5,100,460,425,1008,71],
+        ["49",540,370,75.5,70.5,115,490,425,1009,71],
+        ["52",554,375,74,71.5,125,520,425,1009,71],
+        ["54",566,379,73.5,71.5,140,540,425,1016,69],
+        ["56",583,384,73.3,72,155,560,425,1022,69],
+        ["58",597,387,73,72.5,170,580,425,1025,67],
+        ["61",618,392,72.5,73,190,610,425,1031,67]
+      ]
+    },
+    {
+      "model": "Crux",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/crux-pro/p/187059",
+      "retrieved": "2020-11-25",
+      "archive": "https://web.archive.org/web/20201125202353/https://www.specialized.com/us/en/crux-pro/p/187059",
+      "sizes": [
+        ["46",523,366,75.5,69.5,100,470,425,1007,71],
+        ["49",540,369,75.5,70.5,115,490,425,1007,71],
+        ["52",554,375,74,71.5,125,510,425,1008,71],
+        ["54",566,382,73.5,71.5,140,530,425,1020,69],
+        ["56.0",582,388,73.3,72,155,550,425,1026,69],
+        ["58.0",597,395,73,72.5,170,570,425,1034,67],
+        ["61.0",618,402,72.5,73,190,600,425,1043,67]
+      ]
+    },
+    {
+      "model": "Crux",
+      "year": 2024,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/crux-pro-sram-force-xplr-axs-/p/4223488",
+      "retrieved": "2026-07-24",
+      "archive": "https://web.archive.org/web/20260724162336/https://www.specialized.com/us/en/crux-pro-sram-force-xplr-axs-/p/4223488",
+      "sizes": [
+        ["49",530,375,75.5,70.5,100,466,425,1008,74],
+        ["52",547,382,74,71.3,115,496,425,1014,74],
+        ["54",560,388,74,71.5,130,521,425,1023,72],
+        ["56",578,397,73.5,72,147,546,425,1033,72],
+        ["58",598,405,73.5,72.3,167,576,425,1045,72],
+        ["61",621,415,73.5,72.5,190,606,425,1059,72]
+      ]
+    },
+    {
+      "model": "Crux",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/crux-e5/p/65364",
+      "retrieved": "2026-01-22",
+      "archive": "https://web.archive.org/web/20260122233849/https://www.specialized.com/us/en/crux-e5/p/65364",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["46",522,366,75.5,69.5,100,460,425,1008,75],
+        ["49",540,370,75.5,70.5,115,490,425,1009,76],
+        ["52",554,375,74,71.5,125,520,425,1009,76],
+        ["54",566,379,73.5,71.5,140,540,425,1016,76],
+        ["56",583,384,73.3,72,155,560,425,1022,76],
+        ["58",597,387,73,72.5,170,580,425,1025,76],
+        ["61",618,392,72.5,73,190,610,425,1031,76]
+      ]
+    },
+    {
+      "model": "Crux",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/crux-5-comp-sram-rival-xplr/p/4294832",
+      "retrieved": "2026-10-11",
+      "archive": "https://web.archive.org/web/20261011115730/https://www.specialized.com/us/en/crux-5-comp-sram-rival-xplr/p/4294832",
+      "sizes": [
+        ["49",530,375,75.5,70.5,95,445,425,1008,80],
+        ["52",547,382,74.5,70.8,110,456,425,1016,80],
+        ["54",560,388,74.5,71,125,473,425,1026,78],
+        ["56",578,400,74,71.5,142,497,425,1039,78],
+        ["58",598,412,74,71.5,163,515,425,1057,78],
+        ["61",621,425,74,71.5,188,545,425,1078,78]
+      ]
+    },
+    {
+      "model": "Crux 5",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/s-works-crux-5-frameset-fact-12r-carbon/p/4294842",
+      "retrieved": "2026-11-16",
+      "aliases": ["Crux"],
+      "tyreWidth": 45,
+      "sizes": [
+        ["49",530,375,75.5,70.5,95,445,425,1008,80],
+        ["52",547,382,74.5,70.75,110,456,425,1016,80],
+        ["54",560,388,74.5,71,125,473,425,1026,78],
+        ["56",578,400,74,71.5,142,497,425,1039,78],
+        ["58",598,412,74,71.5,163,515,425,1057,78],
+        ["61",621,425,74,71.5,188,545,425,1078,78]
+      ]
+    },
+    {
+      "model": "Diverge",
+      "year": 2020,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-carbon-di2/p/93092",
+      "retrieved": "2025-10-12",
+      "archive": "https://web.archive.org/web/20251012073808/https://www.specialized.com/us/en/diverge-carbon-di2/p/93092",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["49",525,378,75.5,71.3,100,418,412,989,76],
+        ["52",544,378,74,71.3,120,447,412,995,76],
+        ["54",564,380,73.5,72,140,466,415,1000,76],
+        ["56",589,387,73.3,72.5,165,485,415,1011,76],
+        ["58",621,391,73,72.5,200,530,418,1028,76],
+        ["61",642,398,72.5,73,220,555,420,1039,77]
+      ]
+    },
+    {
+      "model": "Diverge",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/s-works-diverge/p/175282",
+      "retrieved": "2025-11-09",
+      "archive": "https://web.archive.org/web/20251109134329/https://www.specialized.com/us/en/s-works-diverge/p/175282",
+      "sizes": [
+        ["49",571,365,74,70,99,390,425,1019,80],
+        ["52",577,374,73.8,70.5,104,430,425,1026,80],
+        ["54",592,383,73.5,71.3,116,470,425,1032,80],
+        ["56",610,392,73.5,71.8,133,500,425,1042,80],
+        ["58",634,401,73.5,71.8,159,530,425,1059,80],
+        ["61",659,410,73.5,71.8,185,560,425,1076,80]
+      ]
+    },
+    {
+      "model": "Diverge",
+      "year": 2022,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-expert-carbon-sram-rival-etap-axs--gx-eagle-axs/p/205815",
+      "retrieved": "2026-04-23",
+      "archive": "https://web.archive.org/web/20260423041740/https://www.specialized.com/us/en/diverge-expert-carbon-sram-rival-etap-axs--gx-eagle-axs/p/205815",
+      "sizes": [
+        ["49",571,365,74,70,99,390,425,1019,80],
+        ["52",577,374,73.8,70.5,104,430,425,1026,80],
+        ["54",592,383,73.5,71.3,116,470,425,1032,80],
+        ["56",610,392,73.5,71.8,133,500,425,1042,80],
+        ["58",634,401,73.5,71.8,159,530,425,1059,80],
+        ["61",659,410,73.5,71.8,185,560,425,1076,80],
+        ["64",684,419,73,72.3,209,590,425,1088,80]
+      ]
+    },
+    {
+      "model": "Diverge",
+      "year": 2024,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-base-e5/p/175291",
+      "retrieved": "2026-07-25",
+      "archive": "https://web.archive.org/web/20260725205601/https://www.specialized.com/us/en/diverge-base-e5/p/175291",
+      "sizes": [
+        ["44",529,357,74.5,69.5,110,363,432,1008,80],
+        ["49",545,365,74,70,125,390,432,1017,80],
+        ["52",561,374,73.8,70.5,140,430,432,1027,80],
+        ["54",578,383,73.5,71.3,155,470,432,1035,80],
+        ["56",599,392,73.5,71.8,175,500,432,1046,80],
+        ["58",618,401,73.5,71.8,195,530,432,1061,80],
+        ["61",635,410,73.5,71.8,213,560,432,1076,80]
+      ]
+    },
+    {
+      "model": "Diverge",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-elite-e5-shimano-grx/p/217059",
+      "retrieved": "2026-04-23",
+      "archive": "https://web.archive.org/web/20260423042039/https://www.specialized.com/us/en/diverge-elite-e5-shimano-grx/p/217059",
+      "sizes": [
+        ["44",529,357,74.5,69.5,110,430,432,1008,80],
+        ["49",545,365,74,70,125,470,432,1017,80],
+        ["52",561,374,73.8,70.5,140,500,432,1027,80],
+        ["54",578,383,73.5,71.3,155,530,432,1035,80],
+        ["56",599,392,73.5,71.8,175,560,432,1046,80],
+        ["58",618,401,73.5,71.8,195,363,432,1061,80],
+        ["61",635,410,73.5,71.8,213,390,432,1076,80]
+      ]
+    },
+    {
+      "model": "Diverge",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-4-sport-carbon-shimano-grx-600/p/4223514",
+      "retrieved": "2025-12-30",
+      "archive": "https://web.archive.org/web/20251230003722/https://www.specialized.com/us/en/diverge-4-sport-carbon-shimano-grx-600/p/4223514",
+      "sizes": [
+        ["49",563,365,74.5,70,90,400,430,1019,85],
+        ["52",578,374,74,70.5,104,430,430,1031,85],
+        ["54",592,387,74,71,116,470,430,1041,85],
+        ["56",610,400,74,71,135,500,430,1060,85],
+        ["58",634,412,74,71,161,530,430,1081,85],
+        ["61",659,425,74,71,187,560,430,1102,85]
+      ]
+    },
+    {
+      "model": "Diverge 4",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-4-pro-sram-force-xplr/p/4293747",
+      "retrieved": "2026-11-16",
+      "aliases": ["Diverge"],
+      "tyreWidth": 45,
+      "sizes": [
+        ["49",563,365,74.5,70,90,400,430,1019,85],
+        ["52",578,374,74,70.5,104,430,430,1031,85],
+        ["54",592,387,74,71,116,470,430,1041,85],
+        ["56",610,400,74,71,135,500,430,1060,85],
+        ["58",634,412,74,71,161,530,430,1081,85],
+        ["61",659,425,74,71,187,560,430,1102,85]
+      ]
+    },
+    {
+      "model": "Diverge STR",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.specialized.com/us/en/diverge-str-comp-shimano-grx/p/200579",
+      "retrieved": "2026-10-23",
+      "archive": "https://web.archive.org/web/20261023234621/https://www.specialized.com/us/en/diverge-str-comp-shimano-grx/p/200579",
+      "sizes": [
+        ["49",569,365,74.5,70,100,390,429,1023,80],
+        ["52",576,374,74.3,70.5,100,430,429,1027,85],
+        ["54",593,383,74,71.3,115,470,429,1034,85],
+        ["56",609,392,74,71.8,130,500,429,1044,85],
+        ["58",633,401,74,71.8,155,530,429,1060,85],
+        ["61",659,410,74,71.8,182,560,429,1078,85]
+      ]
+    },
+    {
+      "model": "Roubaix",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/roubaix-expert/p/170242",
+      "retrieved": "2019-12-06",
+      "archive": "https://web.archive.org/web/20191206231940/https://www.specialized.com/us/en/roubaix-expert/p/170242",
+      "sizes": [
+        ["44",540,353,74,70,90,410,413,981,78],
+        ["49",555,363,74,71.5,100,410,413,982,78],
+        ["52",570,368,74,72,112,446,413,986,78],
+        ["54",585,376,74,72.8,125,465,415,988,76],
+        ["56",605,384,73.5,73.5,143,485,415,995,76],
+        ["58",630,392,73.5,73.5,170,505,418,1014,75],
+        ["61",665,398,73.5,74,205,547,418,1024,75],
+        ["64",675,404,73,74,215,568,418,1033,75]
+      ]
+    },
+    {
+      "model": "Roubaix",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/s-works-roubaix-sram-red-etap-axs/p/171042",
+      "retrieved": "2025-11-09",
+      "archive": "https://web.archive.org/web/20251109043736/https://www.specialized.com/us/en/s-works-roubaix-sram-red-etap-axs/p/171042",
+      "sizes": [
+        ["44",540,353,74,70,90,365,413,981,78],
+        ["49",555,363,74,71.5,100,410,413,982,78],
+        ["52",570,368,74,72,112,446,413,986,78],
+        ["54",585,376,74,72.8,125,465,415,988,76],
+        ["56",605,384,73.5,73.5,143,485,415,995,76],
+        ["58",630,392,73.5,73.5,170,505,418,1014,75],
+        ["61",665,398,73.5,74,205,547,418,1024,75]
+      ]
+    },
+    {
+      "model": "Roubaix",
+      "year": 2024,
+      "lastYear": 2025,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/s-works-roubaix-team/p/171043",
+      "retrieved": "2025-04-19",
+      "archive": "https://web.archive.org/web/20250419025350/https://www.specialized.com/us/en/s-works-roubaix-team/p/171043",
+      "sizes": [
+        ["53.0",552,381,74,72.8,90,465,415,983,76],
+        ["57.0",574,392,73.5,73.5,110,485,415,994,76],
+        ["59.0",588,407,73.5,74,125,533,418,1012,75]
+      ]
+    },
+    {
+      "model": "Roubaix",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/roubaix-comp/p/129154",
+      "retrieved": "2026-02-09",
+      "archive": "https://web.archive.org/web/20260209024405/https://www.specialized.com/us/en/roubaix-comp/p/129154",
+      "sizes": [
+        ["49",549,369,74,72,90,425,413,981,78],
+        ["52",569,371,74,72.3,110,462,413,987,78],
+        ["54",585,375,74,72.8,125,481,415,987,76],
+        ["56",611,381,73.5,73.5,150,501,415,993,76],
+        ["58",644,386,73.5,73.5,185,522,418,1011,75],
+        ["61",665,392,73.5,74,205,563,418,1018,75],
+        ["64",679,403,73,74,220,584,418,1033,75]
+      ]
+    },
+    {
+      "model": "Roubaix SL3",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/s-works-roubaix-sl3-compact/p/35100",
+      "retrieved": "2021-05-12",
+      "archive": "https://web.archive.org/web/20210512183259/https://www.specialized.com/us/en/s-works-roubaix-sl3-compact/p/35100",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["490.0",527,378,75.5,72,125,445,412,983,76],
+        ["520.0",546,379,74,72,145,475,412,989,75],
+        ["540.0",563,380,73.5,72,165,495,415,1000,75],
+        ["560.0",589,387,73.3,72.5,190,515,415,1010,75],
+        ["580.0",621,392,73,72.5,225,540,418,1029,75],
+        ["610.0",642,398,72.5,73,245,565,420,1038,74],
+        ["640.0",656,409,72.5,73,260,600,420,1054,74]
+      ]
+    },
+    {
+      "model": "Roubaix SL4",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/roubaix-sl4-comp/p/104436",
+      "retrieved": "2026-03-10",
+      "archive": "https://web.archive.org/web/20260310060701/https://www.specialized.com/us/en/roubaix-sl4-comp/p/104436",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["49",527,378,75.5,72,125,445,412,983,76],
+        ["52",546,379,74,72,145,475,412,989,75],
+        ["54",563,380,73.5,72,165,495,415,1000,75],
+        ["56",589,387,73.3,72.5,190,515,415,1010,75],
+        ["58",621,392,73,72.5,225,540,418,1029,75],
+        ["61",642,398,72.5,73,245,565,420,1038,74]
+      ]
+    },
+    {
+      "model": "Roubaix SL8",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/s-works-roubaix-sl8-frameset-fact-12r-carbon/p/4263272",
+      "retrieved": "2026-11-16",
+      "aliases": ["Roubaix"],
+      "sizes": [
+        ["44",543,353,75,69.3,90,365,418,994,80],
+        ["49",549,363,74,70.8,90,410,418,992,80],
+        ["52",566,370,74,71.5,105,445,418,988,80],
+        ["54",585,381,74,72.3,122,465,420,1005,78],
+        ["56",605,389,73.5,73,140,485,420,1012,78],
+        ["58",630,397,73.5,73,168,505,423,1031,78],
+        ["61",665,403,73.5,73.5,202,545,423,1042,78]
+      ]
+    },
+    {
+      "model": "Roubaix SL8",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/roubaix-sl8-comp/p/218669",
+      "retrieved": "2023-12-08",
+      "archive": "https://web.archive.org/web/20231208111444/https://www.specialized.com/us/en/roubaix-sl8-comp/p/218669",
+      "sizes": [
+        ["44",543,353,75,69.3,90,365,418,994,80],
+        ["49",549,363,74,70.8,90,410,418,992,80],
+        ["52",566,370,74,71.5,105,446,418,998,80],
+        ["54",585,381,74,72.3,122,465,420,1005,78],
+        ["56",605,389,73.5,73,140,485,420,1012,78],
+        ["58",630,397,73.5,73,168,505,423,1031,78],
+        ["61",665,403,73.5,73.5,202,545,423,1042,78],
+        ["64",685,409,73,73.5,222,581,423,1054,78]
+      ]
+    },
+    {
+      "model": "Roubaix SL8",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/roubaix-sl8/p/216946",
+      "retrieved": "2025-08-01",
+      "archive": "https://web.archive.org/web/20250801193227/https://www.specialized.com/us/en/roubaix-sl8/p/216946",
+      "sizes": [
+        ["44",543,353,75,69.3,90,365,418,994,80],
+        ["49",549,363,74,70.8,90,410,418,992,80],
+        ["52",566,370,74,71.5,105,446,418,998,80],
+        ["54",585,381,74,72.3,122,465,420,1005,78],
+        ["56",605,389,73.5,73,140,485,420,1012,78],
+        ["58",630,397,73.5,73,168,505,423,1031,78],
+        ["61",665,403,73.5,73.5,202,545,423,1042,78]
+      ]
+    },
+    {
+      "model": "Roubaix SL8",
+      "year": 2027,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/roubaix-sl8-shimano-tiagra/p/4221830",
+      "retrieved": "2026-11-13",
+      "archive": "https://web.archive.org/web/20261113120503/https://www.specialized.com/us/en/roubaix-sl8-shimano-tiagra/p/4221830",
+      "sizes": [
+        ["44",543,353,75,69.3,90,365,418,994,80],
+        ["49",549,363,74,70.8,90,410,418,992,80],
+        ["52",566,370,74,71.5,105,445,418,988,80],
+        ["54",585,381,74,72.3,122,465,420,1005,78],
+        ["56",605,389,73.5,73,140,485,420,1012,78],
+        ["58",630,397,73.5,73,168,505,423,1031,78],
+        ["61",665,403,73.5,73.5,202,545,423,1042,78]
+      ]
+    },
+    {
+      "model": "Tarmac",
+      "year": 2020,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/s-works-tarmac-sagan-superstar-frameset/p/134251",
+      "retrieved": "2025-08-12",
+      "archive": "https://web.archive.org/web/20250812000238/https://www.specialized.com/us/en/s-works-tarmac-sagan-superstar-frameset/p/134251",
+      "sizes": [
+        ["49",514,375,75.5,71.8,115,431,405,968,74],
+        ["52",527,380,74,72.5,126,462,405,970,74],
+        ["54",544,384,74,73,143,481,405,973,72],
+        ["56",565,395,73.5,73.5,163,501,405,985,72],
+        ["58",591,402,73.5,73.5,190,522,407,1002,72],
+        ["61",612,408,73,74,210,553,410,1012,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL4",
+      "year": 2020,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl4-elite-105/p/49734",
+      "retrieved": "2026-01-23",
+      "archive": "https://web.archive.org/web/20260123210233/https://www.specialized.com/us/en/tarmac-sl4-elite-105/p/49734",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["490.0",504,386,75.5,72.3,100,460,405,970,72],
+        ["520.0",526,386,74,73,120,490,405,970,72],
+        ["540.0",543,387,73.5,73,140,510,405,978,72],
+        ["560.0",564,395,73.3,73.5,160,530,405,986,71],
+        ["580.0",591,402,73,73.5,190,550,407,1003,71],
+        ["610.0",612,408,72.5,74,210,580,410,1013,71]
+      ]
+    },
+    {
+      "model": "Tarmac SL6",
+      "year": 2025,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl6/p/199468",
+      "retrieved": "2025-04-27",
+      "archive": "https://web.archive.org/web/20250427164157/https://www.specialized.com/us/en/tarmac-sl6/p/199468",
+      "sizes": [
+        ["44",500,365,76,70.5,105,435,410,969,74],
+        ["49",514,375,75.5,71.8,115,451,410,973,74],
+        ["52",527,380,74,72.5,126,481,410,975,74],
+        ["54",544,384,74,73,143,499,410,978,72],
+        ["56",565,395,73.5,73.5,163,519,410,990,72],
+        ["58",591,402,73.5,73.5,190,540,410,1005,72],
+        ["61",612,408,73,74,210,570,410,1012,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL6",
+      "year": 2027,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/s-works-tarmac-sl6-sram-red-etap-axs/p/171346",
+      "retrieved": "2026-11-11",
+      "archive": "https://web.archive.org/web/20261111074516/https://www.specialized.com/us/en/s-works-tarmac-sl6-sram-red-etap-axs/p/171346",
+      "sizes": [
+        ["44",500,365,76,70.5,105,400,410,969,74],
+        ["49",514,375,75.5,71.8,115,431,410,973,74],
+        ["52",527,380,74,72.5,126,462,410,975,74],
+        ["54",544,384,74,73,143,481,410,978,72],
+        ["56",565,395,73.5,73.5,163,501,410,990,72],
+        ["58",591,402,73.5,73.5,190,522,410,1005,72],
+        ["61",612,408,73,74,210,553,410,1012,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL7",
+      "year": 2024,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl7-comp---rival-etap-axs/p/199523",
+      "retrieved": "2023-12-03",
+      "archive": "https://web.archive.org/web/20231203134443/https://www.specialized.com/us/en/tarmac-sl7-comp---rival-etap-axs/p/199523",
+      "sizes": [
+        ["44",491,369,75.5,70.5,93,435,410,970,74],
+        ["49",504,378,75.5,71.8,102,447,410,973,74],
+        ["52",517,383,74,72.5,113,458,410,975,74],
+        ["54",534,387,74,73,131,475,410,978,72],
+        ["56",555,398,73.5,73.5,151,496,410,991,72],
+        ["58",581,405,73.5,73.5,178,517,410,1006,72],
+        ["61",602,411,73,74,198,547,410,1013,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL7",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl7-sport-shimano-105/p/4221542",
+      "retrieved": "2025-11-21",
+      "archive": "https://web.archive.org/web/20251121114245/https://www.specialized.com/us/en/tarmac-sl7-sport-shimano-105/p/4221542",
+      "sizes": [
+        ["44",491,369,75.5,70.5,93,435,410,1006,72],
+        ["49",504,378,75.5,71.8,102,447,410,1013,72],
+        ["52",517,383,74,72.5,113,458,410,970,72],
+        ["54",534,387,74,73,131,475,410,973,74],
+        ["56",555,398,73.5,73.5,151,496,410,975,74],
+        ["58",581,405,73.5,73.5,178,517,410,978,74],
+        ["61",602,411,73,74,198,547,410,991,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL7",
+      "year": 2027,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl7-sport-shimano-105/p/216958",
+      "retrieved": "2026-11-05",
+      "archive": "https://web.archive.org/web/20261105164042/https://www.specialized.com/us/en/tarmac-sl7-sport-shimano-105/p/216958",
+      "sizes": [
+        ["44",509,363,75.5,70.5,93,435,410,970,74],
+        ["49",522,372,75.5,71.8,102,447,410,973,74],
+        ["52",535,377,74,72.5,113,458,410,975,74],
+        ["54",552,381,74,73,131,475,410,978,72],
+        ["56",573,393,73.5,73.5,151,496,410,991,72],
+        ["58",599,400,73.5,73.5,178,517,410,1006,72],
+        ["61",620,406,73,74,198,547,410,1013,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL8",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl8-pro-sram-force-axs-/p/4279927",
+      "retrieved": "2026-06-30",
+      "archive": "https://web.archive.org/web/20260630151602/https://www.specialized.com/us/en/tarmac-sl8-pro-sram-force-axs-/p/4279927",
+      "sizes": [
+        ["44",501,366,75.5,70.5,99,433,410,970,74],
+        ["49",514,375,75.5,71.8,109,445,410,973,74],
+        ["52",527,380,74,72.5,120,456,410,975,74],
+        ["54",544,384,74,73,137,473,410,978,72],
+        ["56",565,395,73.5,73.5,157,494,410,991,72],
+        ["58",591,402,73.5,73.5,184,515,410,1006,72],
+        ["61",612,408,73,74,204,545,410,1013,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL9",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl9-expert-shimano-ultegra-di2/p/4293531",
+      "retrieved": "2026-11-16",
+      "aliases": ["SL9"],
+      "sizes": [
+        ["44",501,366,75.5,70.5,99,433,410,970,74],
+        ["49",514,375,75.5,71.75,109,445,410,973,74],
+        ["52",527,380,74,72.5,120,456,410,975,74],
+        ["54",544,384,74,72.5,140,473,410,986,72],
+        ["56",565,395,73.5,73.5,157,494,410,991,72],
+        ["58",591,402,73.5,73.5,184,515,410,1006,72],
+        ["61",612,408,73,74,204,545,410,1013,72]
+      ]
+    },
+    {
+      "model": "Tarmac SL9",
+      "year": 2027,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-sl9-comp-sram-rival-axs/p/4293529",
+      "retrieved": "2026-11-13",
+      "archive": "https://web.archive.org/web/20261113115954/https://www.specialized.com/us/en/tarmac-sl9-comp-sram-rival-axs/p/4293529",
+      "sizes": [
+        ["44",501,366,75.5,70.5,99,433,410,970,74],
+        ["49",514,375,75.5,71.8,109,445,410,973,74],
+        ["52",527,380,74,72.5,120,456,410,975,74],
+        ["54",544,384,74,72.5,140,473,410,986,72],
+        ["56",565,395,73.5,73.5,157,494,410,991,72],
+        ["58",591,402,73.5,73.5,184,515,410,1006,72],
+        ["61",612,408,73,74,204,545,410,1013,72]
+      ]
+    },
+    {
+      "model": "Venge",
+      "year": 2020,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://www.specialized.com/us/en/venge-comp-ultegra/p/49929",
+      "retrieved": "2025-11-09",
+      "archive": "https://web.archive.org/web/20251109065103/https://www.specialized.com/us/en/venge-comp-ultegra/p/49929",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["49.0",506,385,75.5,72.3,100,467,405,970,71],
+        ["52.0",528,385,74,73,120,487,405,970,70],
+        ["54.0",544,386,73.5,73,140,507,405,978,70],
+        ["56.0",566,395,73.3,73.5,160,527,405,986,70],
+        ["58.0",593,401,73,73.5,190,547,407,1003,70],
+        ["61.0",614,407,72.5,74,210,577,410,1013,70]
+      ]
+    },
+    {
+      "model": "Venge",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://www.specialized.com/us/en/s-works-venge-sagan-frameset/p/107431",
+      "retrieved": "2025-09-05",
+      "archive": "https://web.archive.org/web/20250905153316/https://www.specialized.com/us/en/s-works-venge-sagan-frameset/p/107431",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["49",506,385,75.5,72.3,100,467,405,970,71],
+        ["52",528,385,74,73,120,487,405,970,70],
+        ["54",544,386,73.5,73,140,507,405,978,70],
+        ["56",566,395,73.3,73.5,160,527,405,986,70],
+        ["58",593,401,73,73.5,190,547,407,1003,70],
+        ["61",614,407,72.5,74,210,577,410,1013,70]
+      ]
+    },
+    {
+      "model": "Venge",
+      "year": 2026,
+      "category": "aero",
+      "source": "https://www.specialized.com/us/en/venge-elite/p/129243",
+      "retrieved": "2025-10-15",
+      "archive": "https://web.archive.org/web/20251015204202/https://www.specialized.com/us/en/venge-elite/p/129243",
+      "sizes": [
+        ["49",504,385,75.5,72.3,100,467,405,969,72],
+        ["52",526,385,74,73,120,487,405,970,72],
+        ["54",543,386,73.5,73,140,507,405,977,69],
+        ["56",564,395,73.3,73.5,160,527,405,986,69],
+        ["58",591,401,73,73.5,190,547,407,1002,68],
+        ["61",612,407,72.5,74,210,577,410,1012,68]
       ]
     }
   ]

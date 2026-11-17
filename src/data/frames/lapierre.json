@@ -2,222 +2,16 @@
   "brand": "Lapierre",
   "models": [
     {
-      "model": "Xelius DRS",
-      "year": 2024,
-      "category": "race",
-      "source": "https://lapierrebikes.com/en-int/products/xelius-drs-80-lxdtb",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Xelius",
-        "Xelius SL"
-      ],
-      "sizes": [
-        {
-          "size": "XS",
-          "stack": 501,
-          "reach": 376,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72,
-          "headTubeLength": 105,
-          "seatTubeLength": 440,
-          "chainstay": 405,
-          "wheelbase": 969,
-          "bbDrop": 67
-        },
-        {
-          "size": "S",
-          "stack": 516,
-          "reach": 383,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72,
-          "headTubeLength": 120,
-          "seatTubeLength": 460,
-          "chainstay": 405,
-          "wheelbase": 981,
-          "bbDrop": 67
-        },
-        {
-          "size": "M",
-          "stack": 538,
-          "reach": 393,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 140,
-          "seatTubeLength": 490,
-          "chainstay": 405,
-          "wheelbase": 989,
-          "bbDrop": 67
-        },
-        {
-          "size": "L",
-          "stack": 557,
-          "reach": 403,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 73,
-          "headTubeLength": 160,
-          "seatTubeLength": 520,
-          "chainstay": 405,
-          "wheelbase": 1005,
-          "bbDrop": 67
-        },
-        {
-          "size": "XL",
-          "stack": 580,
-          "reach": 415,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 74,
-          "headTubeLength": 180,
-          "seatTubeLength": 550,
-          "chainstay": 405,
-          "wheelbase": 1014,
-          "bbDrop": 67
-        },
-        {
-          "size": "XXL",
-          "stack": 599,
-          "reach": 428,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 74,
-          "headTubeLength": 200,
-          "seatTubeLength": 580,
-          "chainstay": 405,
-          "wheelbase": 1032,
-          "bbDrop": 67
-        }
-      ]
-    },
-    {
       "model": "Aerostorm DRS",
       "year": 2025,
       "category": "aero",
       "source": "https://lapierrebikes.com/en-int/products/aerostorm-drs-lfata",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Aerostorm",
-        "Aircode",
-        "Aircode DRS"
-      ],
+      "aliases": ["Aerostorm","Aircode","Aircode DRS"],
       "sizes": [
-        {
-          "size": "M",
-          "stack": 500,
-          "reach": 395,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 72,
-          "headTubeLength": 102,
-          "seatTubeLength": 510,
-          "chainstay": 405,
-          "wheelbase": 977.6,
-          "bbDrop": 68
-        },
-        {
-          "size": "L",
-          "stack": 530,
-          "reach": 410,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 72,
-          "headTubeLength": 133,
-          "seatTubeLength": 550,
-          "chainstay": 405,
-          "wheelbase": 1002.1,
-          "bbDrop": 68
-        },
-        {
-          "size": "XL",
-          "stack": 560,
-          "reach": 425,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 72,
-          "headTubeLength": 165,
-          "seatTubeLength": 580,
-          "chainstay": 405,
-          "wheelbase": 1026.6,
-          "bbDrop": 68
-        }
-      ]
-    },
-    {
-      "model": "Pulsium",
-      "year": 2021,
-      "category": "endurance",
-      "source": "https://lapierrebikes.com/en-int/products/pulsium-80-lprta",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Pulsium 8.0"
-      ],
-      "sizes": [
-        {
-          "size": "XS",
-          "stack": 527,
-          "reach": 375,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 120,
-          "seatTubeLength": 440,
-          "chainstay": 415,
-          "wheelbase": 993,
-          "bbDrop": 72
-        },
-        {
-          "size": "S",
-          "stack": 541,
-          "reach": 379,
-          "seatTubeAngle": 74.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 135,
-          "seatTubeLength": 460,
-          "chainstay": 415,
-          "wheelbase": 1002,
-          "bbDrop": 72
-        },
-        {
-          "size": "M",
-          "stack": 562,
-          "reach": 384,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 155,
-          "seatTubeLength": 490,
-          "chainstay": 415,
-          "wheelbase": 1009,
-          "bbDrop": 72
-        },
-        {
-          "size": "L",
-          "stack": 579,
-          "reach": 389,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72,
-          "headTubeLength": 175,
-          "seatTubeLength": 520,
-          "chainstay": 415,
-          "wheelbase": 1017,
-          "bbDrop": 69
-        },
-        {
-          "size": "XL",
-          "stack": 599,
-          "reach": 394,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 72,
-          "headTubeLength": 195,
-          "seatTubeLength": 550,
-          "chainstay": 415,
-          "wheelbase": 1028,
-          "bbDrop": 69
-        },
-        {
-          "size": "XXL",
-          "stack": 618,
-          "reach": 400,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 215,
-          "seatTubeLength": 580,
-          "chainstay": 415,
-          "wheelbase": 1036,
-          "bbDrop": 67
-        }
+        ["M",500,395,75,72,102,510,405,977.6,68],
+        ["L",530,410,75,72,133,550,405,1002.1,68],
+        ["XL",560,425,75,72,165,580,405,1026.6,68]
       ]
     },
     {
@@ -226,83 +20,47 @@
       "category": "gravel",
       "source": "https://lapierrebikes.com/en-int/products/crosshill-cf-80-lchua",
       "retrieved": "2026-11-16",
-      "aliases": [
-        "Crosshill"
-      ],
+      "aliases": ["Crosshill"],
       "tyreWidth": 44,
       "sizes": [
-        {
-          "size": "XS",
-          "stack": 546,
-          "reach": 367,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 95,
-          "seatTubeLength": 440,
-          "chainstay": 430,
-          "wheelbase": 1007,
-          "bbDrop": 71
-        },
-        {
-          "size": "S",
-          "stack": 567,
-          "reach": 373,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 115,
-          "seatTubeLength": 460,
-          "chainstay": 430,
-          "wheelbase": 1016,
-          "bbDrop": 71
-        },
-        {
-          "size": "M",
-          "stack": 581,
-          "reach": 380,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 130,
-          "seatTubeLength": 490,
-          "chainstay": 430,
-          "wheelbase": 1027,
-          "bbDrop": 71
-        },
-        {
-          "size": "L",
-          "stack": 601,
-          "reach": 386,
-          "seatTubeAngle": 73,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 150,
-          "seatTubeLength": 520,
-          "chainstay": 430,
-          "wheelbase": 1036,
-          "bbDrop": 70
-        },
-        {
-          "size": "XL",
-          "stack": 620,
-          "reach": 390,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 170,
-          "seatTubeLength": 550,
-          "chainstay": 430,
-          "wheelbase": 1045,
-          "bbDrop": 70
-        },
-        {
-          "size": "XXL",
-          "stack": 644,
-          "reach": 398,
-          "seatTubeAngle": 72.5,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 195,
-          "seatTubeLength": 580,
-          "chainstay": 430,
-          "wheelbase": 1062,
-          "bbDrop": 70
-        }
+        ["XS",546,367,73.5,70.5,95,440,430,1007,71],
+        ["S",567,373,73.5,71,115,460,430,1016,71],
+        ["M",581,380,73.5,71,130,490,430,1027,71],
+        ["L",601,386,73,71.5,150,520,430,1036,70],
+        ["XL",620,390,72.5,71.5,170,550,430,1045,70],
+        ["XXL",644,398,72.5,71.5,195,580,430,1062,70]
+      ]
+    },
+    {
+      "model": "Pulsium",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://lapierrebikes.com/en-int/products/pulsium-80-lprta",
+      "retrieved": "2026-11-16",
+      "aliases": ["Pulsium 8.0"],
+      "sizes": [
+        ["XS",527,375,74.5,71,120,440,415,993,72],
+        ["S",541,379,74.5,71,135,460,415,1002,72],
+        ["M",562,384,74,71.5,155,490,415,1009,72],
+        ["L",579,389,73.5,72,175,520,415,1017,69],
+        ["XL",599,394,73,72,195,550,415,1028,69],
+        ["XXL",618,400,72.5,72.5,215,580,415,1036,67]
+      ]
+    },
+    {
+      "model": "Xelius DRS",
+      "year": 2024,
+      "category": "race",
+      "source": "https://lapierrebikes.com/en-int/products/xelius-drs-80-lxdtb",
+      "retrieved": "2026-11-16",
+      "aliases": ["Xelius","Xelius SL"],
+      "sizes": [
+        ["XS",501,376,74,72,105,440,405,969,67],
+        ["S",516,383,74,72,120,460,405,981,67],
+        ["M",538,393,74,73,140,490,405,989,67],
+        ["L",557,403,74,73,160,520,405,1005,67],
+        ["XL",580,415,74,74,180,550,405,1014,67],
+        ["XXL",599,428,74,74,200,580,405,1032,67]
       ]
     }
   ]

@@ -2,285 +2,57 @@
   "brand": "Canyon",
   "models": [
     {
-      "model": "Ultimate",
-      "year": 2023,
-      "category": "race",
-      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html",
-      "retrieved": "2026-11-16",
-      "sizes": [
-        {
-          "size": "2XS",
-          "stack": 498,
-          "reach": 372,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 70,
-          "headTubeLength": 88,
-          "seatTubeLength": 420,
-          "chainstay": 410,
-          "wheelbase": 975,
-          "bbDrop": 73
-        },
-        {
-          "size": "XS",
-          "stack": 520,
-          "reach": 378,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 107,
-          "seatTubeLength": 450,
-          "chainstay": 410,
-          "wheelbase": 979,
-          "bbDrop": 73
-        },
-        {
-          "size": "S",
-          "stack": 539,
-          "reach": 390,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 121,
-          "seatTubeLength": 480,
-          "chainstay": 410,
-          "wheelbase": 982,
-          "bbDrop": 73
-        },
-        {
-          "size": "M",
-          "stack": 560,
-          "reach": 393,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.25,
-          "headTubeLength": 142,
-          "seatTubeLength": 510,
-          "chainstay": 410,
-          "wheelbase": 988,
-          "bbDrop": 73
-        },
-        {
-          "size": "L",
-          "stack": 580,
-          "reach": 401,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.3,
-          "headTubeLength": 162,
-          "seatTubeLength": 540,
-          "chainstay": 413,
-          "wheelbase": 1003,
-          "bbDrop": 73
-        },
-        {
-          "size": "XL",
-          "stack": 606,
-          "reach": 419,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 188,
-          "seatTubeLength": 570,
-          "chainstay": 415,
-          "wheelbase": 1029,
-          "bbDrop": 73
-        },
-        {
-          "size": "2XL",
-          "stack": 624,
-          "reach": 429,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.8,
-          "headTubeLength": 206,
-          "seatTubeLength": 600,
-          "chainstay": 415,
-          "wheelbase": 1042,
-          "bbDrop": 73
-        }
-      ]
-    },
-    {
-      "model": "Aeroad",
-      "year": 2024,
+      "model": "Aeroad CF SLX",
+      "year": 2027,
       "category": "aero",
       "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
-      "retrieved": "2026-11-16",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024054/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
+      "estimated": ["bbDrop"],
       "sizes": [
-        {
-          "size": "2XS",
-          "stack": 498,
-          "reach": 372,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 70,
-          "headTubeLength": 88,
-          "seatTubeLength": 441,
-          "chainstay": 410,
-          "wheelbase": 975,
-          "bbDrop": 70
-        },
-        {
-          "size": "XS",
-          "stack": 520,
-          "reach": 378,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.2,
-          "headTubeLength": 107,
-          "seatTubeLength": 471,
-          "chainstay": 410,
-          "wheelbase": 979,
-          "bbDrop": 70
-        },
-        {
-          "size": "S",
-          "stack": 539,
-          "reach": 390,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 121,
-          "seatTubeLength": 501,
-          "chainstay": 410,
-          "wheelbase": 982,
-          "bbDrop": 70
-        },
-        {
-          "size": "M",
-          "stack": 560,
-          "reach": 393,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.25,
-          "headTubeLength": 142,
-          "seatTubeLength": 531,
-          "chainstay": 410,
-          "wheelbase": 988,
-          "bbDrop": 70
-        },
-        {
-          "size": "L",
-          "stack": 580,
-          "reach": 401,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.3,
-          "headTubeLength": 162,
-          "seatTubeLength": 561,
-          "chainstay": 413,
-          "wheelbase": 1003,
-          "bbDrop": 70
-        },
-        {
-          "size": "XL",
-          "stack": 606,
-          "reach": 419,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.5,
-          "headTubeLength": 188,
-          "seatTubeLength": 591,
-          "chainstay": 415,
-          "wheelbase": 1029,
-          "bbDrop": 70
-        },
-        {
-          "size": "2XL",
-          "stack": 624,
-          "reach": 429,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 73.8,
-          "headTubeLength": 206,
-          "seatTubeLength": 621,
-          "chainstay": 415,
-          "wheelbase": 1042,
-          "bbDrop": 70
-        }
+        ["2XS",498,372,73.5,70,88,441,410,975,71],
+        ["XS",520,378,73.5,71.2,107,471,410,979,70],
+        ["S",539,390,73.5,72.8,121,501,410,982,70],
+        ["M",560,393,73.5,73.3,142,531,410,988,70],
+        ["L",580,401,73.5,73.3,162,561,413,1003,70],
+        ["XL",606,419,73.5,73.5,188,591,415,1029,70],
+        ["2XL",624,429,73.5,73.8,206,621,415,1042,70]
       ]
     },
     {
-      "model": "Endurace CF SLX",
-      "year": 2023,
-      "category": "endurance",
-      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html",
-      "retrieved": "2026-11-16",
-      "aliases": [
-        "Endurace"
-      ],
+      "model": "Aeroad CFR",
+      "year": 2027,
+      "category": "aero",
+      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
+      "retrieved": "2026-09-14",
+      "archive": "https://web.archive.org/web/20260914195047/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
+      "estimated": ["bbDrop"],
       "sizes": [
-        {
-          "size": "2XS",
-          "stack": 524,
-          "reach": 378,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 70.3,
-          "headTubeLength": 103,
-          "seatTubeLength": 432,
-          "chainstay": 418,
-          "wheelbase": 999,
-          "bbDrop": 74
-        },
-        {
-          "size": "XS",
-          "stack": 545,
-          "reach": 383,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 123,
-          "seatTubeLength": 462,
-          "chainstay": 418,
-          "wheelbase": 1005,
-          "bbDrop": 74
-        },
-        {
-          "size": "S",
-          "stack": 565,
-          "reach": 386,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.8,
-          "headTubeLength": 141,
-          "seatTubeLength": 492,
-          "chainstay": 418,
-          "wheelbase": 1008,
-          "bbDrop": 74
-        },
-        {
-          "size": "M",
-          "stack": 586,
-          "reach": 388,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 161,
-          "seatTubeLength": 522,
-          "chainstay": 418,
-          "wheelbase": 1009,
-          "bbDrop": 74
-        },
-        {
-          "size": "L",
-          "stack": 608,
-          "reach": 397,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 183,
-          "seatTubeLength": 552,
-          "chainstay": 418,
-          "wheelbase": 1025,
-          "bbDrop": 74
-        },
-        {
-          "size": "XL",
-          "stack": 633,
-          "reach": 405,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 208,
-          "seatTubeLength": 582,
-          "chainstay": 418,
-          "wheelbase": 1039,
-          "bbDrop": 74
-        },
-        {
-          "size": "2XL",
-          "stack": 652,
-          "reach": 415,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 229,
-          "seatTubeLength": 612,
-          "chainstay": 418,
-          "wheelbase": 1054,
-          "bbDrop": 74
-        }
+        ["2XS",498,372,73.5,70,88,441,410,975,71],
+        ["XS",520,378,73.5,71.2,107,471,410,979,70],
+        ["S",539,390,73.5,72.8,121,501,410,982,70],
+        ["M",560,393,73.5,73.3,142,531,410,988,70],
+        ["L",580,401,73.5,73.3,162,561,413,1003,70],
+        ["XL",606,419,73.5,73.5,188,591,415,1029,70],
+        ["2XL",624,429,73.5,73.8,206,621,415,1042,70]
+      ]
+    },
+    {
+      "model": "Endurace AllRoad",
+      "year": 2027,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
+      "retrieved": "2026-11-04",
+      "archive": "https://web.archive.org/web/20261104065553/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["2XS",552,371,73.5,70,130,432,425,1019,75],
+        ["XS",554,377,73.5,70,133,462,425,1026,75],
+        ["S",570,391,73.5,71,145,492,425,1036,75],
+        ["M",594,397,73.5,72,166,522,425,1040,75],
+        ["L",616,407,73.5,72,189,552,425,1057,75],
+        ["XL",640,425,73.5,72,215,582,425,1083,74],
+        ["2XL",660,438,73.5,72,235,612,425,1103,74]
       ]
     },
     {
@@ -290,90 +62,30 @@
       "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf/endurace-cf-7/4627.html",
       "retrieved": "2026-11-16",
       "sizes": [
-        {
-          "size": "2XS",
-          "stack": 525,
-          "reach": 382,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 70.3,
-          "headTubeLength": 104,
-          "seatTubeLength": 432,
-          "chainstay": 420,
-          "wheelbase": 1006,
-          "bbDrop": 74
-        },
-        {
-          "size": "XS",
-          "stack": 545,
-          "reach": 386,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 123,
-          "seatTubeLength": 462,
-          "chainstay": 420,
-          "wheelbase": 1010,
-          "bbDrop": 74
-        },
-        {
-          "size": "S",
-          "stack": 563,
-          "reach": 390,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71.8,
-          "headTubeLength": 139,
-          "seatTubeLength": 492,
-          "chainstay": 420,
-          "wheelbase": 1013,
-          "bbDrop": 74
-        },
-        {
-          "size": "M",
-          "stack": 584,
-          "reach": 392,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 158,
-          "seatTubeLength": 522,
-          "chainstay": 420,
-          "wheelbase": 1014,
-          "bbDrop": 74
-        },
-        {
-          "size": "L",
-          "stack": 605,
-          "reach": 401,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.5,
-          "headTubeLength": 180,
-          "seatTubeLength": 552,
-          "chainstay": 420,
-          "wheelbase": 1030,
-          "bbDrop": 74
-        },
-        {
-          "size": "XL",
-          "stack": 629,
-          "reach": 409,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 204,
-          "seatTubeLength": 582,
-          "chainstay": 420,
-          "wheelbase": 1043,
-          "bbDrop": 74
-        },
-        {
-          "size": "2XL",
-          "stack": 649,
-          "reach": 427,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72.8,
-          "headTubeLength": 226,
-          "seatTubeLength": 612,
-          "chainstay": 420,
-          "wheelbase": 1067,
-          "bbDrop": 74
-        }
+        ["2XS",525,382,73.5,70.3,104,432,420,1006,74],
+        ["XS",545,386,73.5,71,123,462,420,1010,74],
+        ["S",563,390,73.5,71.8,139,492,420,1013,74],
+        ["M",584,392,73.5,72.5,158,522,420,1014,74],
+        ["L",605,401,73.5,72.5,180,552,420,1030,74],
+        ["XL",629,409,73.5,72.8,204,582,420,1043,74],
+        ["2XL",649,427,73.5,72.8,226,612,420,1067,74]
+      ]
+    },
+    {
+      "model": "Endurace CF SLX",
+      "year": 2023,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html",
+      "retrieved": "2026-11-16",
+      "aliases": ["Endurace"],
+      "sizes": [
+        ["2XS",524,378,73.5,70.3,103,432,418,999,74],
+        ["XS",545,383,73.5,71,123,462,418,1005,74],
+        ["S",565,386,73.5,71.8,141,492,418,1008,74],
+        ["M",586,388,73.5,72.5,161,522,418,1009,74],
+        ["L",608,397,73.5,72.5,183,552,418,1025,74],
+        ["XL",633,405,73.5,72.8,208,582,418,1039,74],
+        ["2XL",652,415,73.5,72.8,229,612,418,1054,74]
       ]
     },
     {
@@ -383,90 +95,31 @@
       "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf-slx/grail-cf-slx-7-di2/4503.html",
       "retrieved": "2026-11-16",
       "sizes": [
-        {
-          "size": "2XS",
-          "stack": 525,
-          "reach": 372,
-          "seatTubeAngle": 74.1,
-          "headTubeAngle": 68.5,
-          "headTubeLength": 98,
-          "seatTubeLength": 432,
-          "chainstay": 435,
-          "wheelbase": 1034,
-          "bbDrop": 75
-        },
-        {
-          "size": "XS",
-          "stack": 537,
-          "reach": 385,
-          "seatTubeAngle": 73.6,
-          "headTubeAngle": 70,
-          "headTubeLength": 103,
-          "seatTubeLength": 462,
-          "chainstay": 435,
-          "wheelbase": 1037,
-          "bbDrop": 75
-        },
-        {
-          "size": "S",
-          "stack": 558,
-          "reach": 394,
-          "seatTubeAngle": 73.9,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 120,
-          "seatTubeLength": 492,
-          "chainstay": 435,
-          "wheelbase": 1039,
-          "bbDrop": 75
-        },
-        {
-          "size": "M",
-          "stack": 575,
-          "reach": 411,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 138,
-          "seatTubeLength": 522,
-          "chainstay": 435,
-          "wheelbase": 1062,
-          "bbDrop": 75
-        },
-        {
-          "size": "L",
-          "stack": 598,
-          "reach": 427,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 71.5,
-          "headTubeLength": 162,
-          "seatTubeLength": 552,
-          "chainstay": 435,
-          "wheelbase": 1085,
-          "bbDrop": 75
-        },
-        {
-          "size": "XL",
-          "stack": 618,
-          "reach": 435,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 71.8,
-          "headTubeLength": 182,
-          "seatTubeLength": 582,
-          "chainstay": 435,
-          "wheelbase": 1097,
-          "bbDrop": 75
-        },
-        {
-          "size": "2XL",
-          "stack": 640,
-          "reach": 454,
-          "seatTubeAngle": 73.8,
-          "headTubeAngle": 71.8,
-          "headTubeLength": 205,
-          "seatTubeLength": 612,
-          "chainstay": 435,
-          "wheelbase": 1123,
-          "bbDrop": 75
-        }
+        ["2XS",525,372,74.1,68.5,98,432,435,1034,75],
+        ["XS",537,385,73.6,70,103,462,435,1037,75],
+        ["S",558,394,73.9,71.5,120,492,435,1039,75],
+        ["M",575,411,73.8,71.5,138,522,435,1062,75],
+        ["L",598,427,73.8,71.5,162,552,435,1085,75],
+        ["XL",618,435,73.8,71.8,182,582,435,1097,75],
+        ["2XL",640,454,73.8,71.8,205,612,435,1123,75]
+      ]
+    },
+    {
+      "model": "Grail CFR",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024132/https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["2XS",525,372,74.1,68.5,98,432,435,1034,76],
+        ["XS",537,385,73.6,70,103,462,435,1037,76],
+        ["S",558,394,73.9,71.5,120,492,435,1039,76],
+        ["M",575,411,73.8,71.5,138,522,435,1062,76],
+        ["L",598,427,73.8,71.5,162,552,435,1085,76],
+        ["XL",618,435,73.8,71.8,182,582,435,1097,76],
+        ["2XL",640,454,73.8,71.8,205,612,435,1123,77]
       ]
     },
     {
@@ -476,90 +129,65 @@
       "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-6/4552.html",
       "retrieved": "2026-11-16",
       "sizes": [
-        {
-          "size": "2XS",
-          "stack": 550,
-          "reach": 369,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 68.8,
-          "headTubeLength": 120,
-          "seatTubeLength": 432,
-          "chainstay": 440,
-          "wheelbase": 1047,
-          "bbDrop": 66
-        },
-        {
-          "size": "XS",
-          "stack": 559,
-          "reach": 380,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 69.5,
-          "headTubeLength": 126,
-          "seatTubeLength": 462,
-          "chainstay": 440,
-          "wheelbase": 1054,
-          "bbDrop": 75
-        },
-        {
-          "size": "S",
-          "stack": 578,
-          "reach": 388,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 141,
-          "seatTubeLength": 492,
-          "chainstay": 440,
-          "wheelbase": 1059,
-          "bbDrop": 75
-        },
-        {
-          "size": "M",
-          "stack": 596,
-          "reach": 404,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 158,
-          "seatTubeLength": 522,
-          "chainstay": 440,
-          "wheelbase": 1076,
-          "bbDrop": 75
-        },
-        {
-          "size": "L",
-          "stack": 619,
-          "reach": 420,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 183,
-          "seatTubeLength": 552,
-          "chainstay": 440,
-          "wheelbase": 1100,
-          "bbDrop": 75
-        },
-        {
-          "size": "XL",
-          "stack": 638,
-          "reach": 429,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 203,
-          "seatTubeLength": 582,
-          "chainstay": 440,
-          "wheelbase": 1115,
-          "bbDrop": 75
-        },
-        {
-          "size": "2XL",
-          "stack": 660,
-          "reach": 448,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 71,
-          "headTubeLength": 226,
-          "seatTubeLength": 612,
-          "chainstay": 440,
-          "wheelbase": 1142,
-          "bbDrop": 75
-        }
+        ["2XS",550,369,73.5,68.8,120,432,440,1047,66],
+        ["XS",559,380,73.5,69.5,126,462,440,1054,75],
+        ["S",578,388,73.5,70.5,141,492,440,1059,75],
+        ["M",596,404,73.5,71,158,522,440,1076,75],
+        ["L",619,420,73.5,71,183,552,440,1100,75],
+        ["XL",638,429,73.5,71,203,582,440,1115,75],
+        ["2XL",660,448,73.5,71,226,612,440,1142,75]
+      ]
+    },
+    {
+      "model": "Grizl",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-6/4444.html",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024138/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-6/4444.html",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["2XS",550,369,73.5,68.8,120,432,440,1047,76],
+        ["XS",559,380,73.5,69.5,126,462,440,1054,76],
+        ["S",578,388,73.5,70.5,141,492,440,1059,76],
+        ["M",596,404,73.5,71,158,522,440,1076,76],
+        ["L",619,420,73.5,71,183,552,440,1100,76],
+        ["XL",638,429,73.5,71,203,582,440,1115,76],
+        ["2XL",660,448,73.5,71,226,612,440,1142,77]
+      ]
+    },
+    {
+      "model": "Grizl CF",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024135/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["2XS",550,369,73.5,68.8,120,432,440,1047,76],
+        ["XS",559,380,73.5,69.5,126,462,440,1054,76],
+        ["S",578,388,73.5,70.5,141,492,440,1059,76],
+        ["M",596,404,73.5,71,158,522,440,1076,76],
+        ["L",619,420,73.5,71,183,552,440,1100,76],
+        ["XL",638,429,73.5,71,203,582,440,1115,76],
+        ["2XL",660,448,73.5,71,226,612,440,1142,77]
+      ]
+    },
+    {
+      "model": "Ultimate",
+      "year": 2023,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        ["2XS",498,372,73.5,70,88,420,410,975,73],
+        ["XS",520,378,73.5,71.2,107,450,410,979,73],
+        ["S",539,390,73.5,72.8,121,480,410,982,73],
+        ["M",560,393,73.5,73.25,142,510,410,988,73],
+        ["L",580,401,73.5,73.3,162,540,413,1003,73],
+        ["XL",606,419,73.5,73.5,188,570,415,1029,73],
+        ["2XL",624,429,73.5,73.8,206,600,415,1042,73]
       ]
     }
   ]

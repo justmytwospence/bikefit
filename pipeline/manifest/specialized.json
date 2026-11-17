@@ -1,0 +1,2446 @@
+{
+ "brand": "Specialized",
+ "file": "specialized",
+ "pages": [
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos--sram-red-axs/p/4221535",
+   "timestamp": "20250812201937",
+   "sha256": "c1f128a03fd4d7c7b9d9feeb645e047693af806126cec0789161a31d511fc3a5",
+   "family": "aethos-",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-2-expert-sram-force-axs/p/4293660",
+   "timestamp": "20260620060912",
+   "sha256": "5a7b1ae2380a1bcc4a3458ce3070391ffcd232542a2cc5bc5d28c24c260042db",
+   "family": "aethos-2",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-2-pro-sram-force-axs/p/4221564",
+   "timestamp": "20251119130802",
+   "sha256": "3b1a6ce0bdfa4c14f1c37c31fdd2da38d3ee46a8a93497933bc01e8a6604068a",
+   "family": "aethos-2",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-comp---rival-etap-axs/p/199444",
+   "timestamp": "20211020213914",
+   "sha256": "ad7db8c64987a9f50bd863c7a67b9bc7cded33136c8221b35eea850503bbee3c",
+   "family": "aethos-comp",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-comp---rival-etap-axs/p/199444",
+   "timestamp": "20231209205911",
+   "sha256": "1b8051e7d413c35c34cea96f39a7ffa515648529c19bd5be821bc5a49e1b8d7a",
+   "family": "aethos-comp",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-comp-shimano-105-di2/p/221468",
+   "timestamp": "20251116133326",
+   "sha256": "dc68ea905482c5072772921eb1786a3f9c0704fa99904b43f6addd4f94edb588",
+   "family": "aethos-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-comp-sram-rival-etap-axs/p/199444",
+   "timestamp": "20260423042303",
+   "sha256": "fa360883ac71812bed0aa3eea415c8e5de6f92e7fe2e7e94eacfd5c344563ce6",
+   "family": "aethos-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-dura-ace-di2/p/216930",
+   "timestamp": "20250911150055",
+   "sha256": "67c8efd416eb3cfe9c08f042066f9daa3abe96186702bcec572dfe6ed21d5292",
+   "family": "aethos-dura",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-expert/p/187065",
+   "timestamp": "20210325220220",
+   "sha256": "358dd44bbd50b788c00baa863e0200b1d4060d9182acbdde910c62f7e67785fb",
+   "family": "aethos-expert",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-expert/p/199442",
+   "timestamp": "20231209220328",
+   "sha256": "bcbd44036309b53f2fc1f901debf77d0ade00db328fe672d41a7c34a8ce04a91",
+   "family": "aethos-expert",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-expert-sram-rival-etap-axs/p/216934",
+   "timestamp": "20260423042004",
+   "sha256": "b7fd5ba484321c7bf0651b7ba3c9142b61c10c55581dfae89ae74729e4d2ff81",
+   "family": "aethos-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-expert/p/199442",
+   "timestamp": "20250713165514",
+   "sha256": "f31780238c9826f19923a7f7d7e32b5610587b0a9a18bcc1c8a4338f015844ff",
+   "family": "aethos-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-founders-edition/p/187373",
+   "timestamp": "20251201101228",
+   "sha256": "a8fc69f2769feea97edf3e627bfa9d3078692c6fea8cc5b9638437c9afcecd99",
+   "family": "aethos-founders",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-founders-edition/p/187373",
+   "timestamp": "20260214212509",
+   "sha256": "abc04f5285d057b3627bacddb2d7cc032fff926b6dc68bb3ef2e79d9046b8e50",
+   "family": "aethos-founders",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-frameset/p/187061",
+   "timestamp": "20210316141206",
+   "sha256": "1fd169ebf4282b17e0df0fd27d2786bda859891ae77660feee1f7b7f9a65e746",
+   "family": "aethos-frameset",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-frameset/p/216929",
+   "timestamp": "20231130150617",
+   "sha256": "f2e2fb4940140de791eaa19224aa1fc2b244d75341b43e2ec81611c5fda8fb18",
+   "family": "aethos-frameset",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-frameset/p/216929",
+   "timestamp": "20250916234357",
+   "sha256": "38a0df23d4c6ae413ee5020a9a3c387b17b85c26644e524240f781a665a5933e",
+   "family": "aethos-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-ltd--sram-red-axs/p/275617",
+   "timestamp": "20250714091907",
+   "sha256": "cb6e175cfd41df0d6d98f8aa4c8256cb7479393bd1d4f92f88c94dcd40d2775a",
+   "family": "aethos-ltd",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-ltd-sram-red-axs/p/275617",
+   "timestamp": "20260219054815",
+   "sha256": "4001342494702ff5ce7c1c4454f582e446c5745ce1382da7faff9908b9cbfe8d",
+   "family": "aethos-ltd",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-pro---ultegra-di2/p/187433",
+   "timestamp": "20231003145951",
+   "sha256": "182bdff8eb3a4a3611df42e61d721ff8382419ab150fe7b18ebabd277fb7fbe3",
+   "family": "aethos-pro",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-pro-shimano-ultegra-di2/p/216933",
+   "timestamp": "20251031154211",
+   "sha256": "acb0ad3da8f1e186821ccbb03162e45d4e28cf862e8be94f6bb3b023ce21a7d1",
+   "family": "aethos-pro",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/aethos-pro-shimano-ultegra-di2/p/4221544",
+   "timestamp": "20260525213630",
+   "sha256": "a8d7c8e8e18aa74b2509a02c1d2b07b6a4f4c1a1dbf76b27f876119b34458bf6",
+   "family": "aethos-pro",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-ready-to-paint-frameset/p/249166",
+   "timestamp": "20231130135946",
+   "sha256": "ad7091519c3b07c08cd65611163d0e6b084ee4a63d66cbe41ada36f09f920406",
+   "family": "aethos-ready",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-ready-to-paint-frameset/p/249166",
+   "timestamp": "20250831195532",
+   "sha256": "a71b1ff573dc02734848e6186d96cb0ce82fa07e6aff2460f6307b9b7226b690",
+   "family": "aethos-ready",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-shimano-dura-ace-di2/p/216930",
+   "timestamp": "20251109103116",
+   "sha256": "a4db013ebadffc124aeb825631019f677b71d436d27163820d118505cf438be4",
+   "family": "aethos-shimano",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-shimano-dura-ace-di2/p/4221534",
+   "timestamp": "20260423041506",
+   "sha256": "e74f7e43150291dfde86324025602c36566b7d0ef6da59e1781c8d652fb11767",
+   "family": "aethos-shimano",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-aethos-sram-red-axs/p/4221535",
+   "timestamp": "20260423042015",
+   "sha256": "9561ce3f8635e3d04cf15aced669863fe132fdf805aaa81546b06ec66956b78a",
+   "family": "aethos-sram",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez/p/154231",
+   "timestamp": "20191227064329",
+   "sha256": "1f7c335654aedcf747395ab026e4fc17baae740d540068a5466f98a2769bd935",
+   "family": "allez",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez/p/184447",
+   "timestamp": "20231211163916",
+   "sha256": "d76f6760d77cf935cc3028ec6f5d5f63c90fe2fb6f640a123d63f4d050f39e66",
+   "family": "allez",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez/p/199980",
+   "timestamp": "20251012025017",
+   "sha256": "3a265d95ad456de05cec03093a2a5e22b7a095d02a76617179764d4e61f50b5e",
+   "family": "allez",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez/p/65227",
+   "timestamp": "20260123120422",
+   "sha256": "6927ea965229f8d7c4e8f398086b45e1c43c04e519d3feebfc66266cd3b5d25e",
+   "family": "allez",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-comp/p/65610",
+   "timestamp": "20210509172613",
+   "sha256": "feb71afa64d78b3ac42cbc3237547b3c9e6c7546a8dae11b5978b4d8c306b409",
+   "family": "allez-comp",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-comp/p/65610",
+   "timestamp": "20231206135935",
+   "sha256": "dec2c418e898532f86a309f5b5d5b86e38d20173be37b33a0bd391aa1cd6662e",
+   "family": "allez-comp",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-comp/p/65610",
+   "timestamp": "20251010195747",
+   "sha256": "eab6fd2a6d47590422788504829f37cf968ad49529c0678731027e449b4c9950",
+   "family": "allez-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-comp-shimano-105/p/4221810",
+   "timestamp": "20260816173444",
+   "sha256": "59c54bf6afb848ffc2cbcf963931a1fa7cefe9e8aa64a99162febeb93338ff89",
+   "family": "allez-comp",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-compact/p/34886",
+   "timestamp": "20201112030314",
+   "sha256": "55313a10076c93edf6f8179273c8a5f03e9d62a99af38d6d9cae2982c3de18cb",
+   "family": "allez-compact",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-compact/p/34886",
+   "timestamp": "20250824002025",
+   "sha256": "c69771439161fdad8814d101722efc9281a9b424378139541d464673e8857528",
+   "family": "allez-compact",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-di2/p/65619",
+   "timestamp": "20191205220945",
+   "sha256": "c2361e496b7ba8ddf0532955a3e1b2c1927f978db580b56ef8af355ec77d8fa4",
+   "family": "allez-di2",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-di2/p/65619",
+   "timestamp": "20200806075157",
+   "sha256": "c2361e496b7ba8ddf0532955a3e1b2c1927f978db580b56ef8af355ec77d8fa4",
+   "family": "allez-di2",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-di2/p/65619",
+   "timestamp": "20260123202232",
+   "sha256": "6eff6a5d7d5f70af62f555de90272025de1d9a711e5dd07493be64b07f2516c0",
+   "family": "allez-di2",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-e5-sport/p/115476",
+   "timestamp": "20191215100927",
+   "sha256": "5385469262cad3ed8948dbbf5c2a1ffb79ea3d45792e656ed94bad627ae67025",
+   "family": "allez-e5",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-e5-elite/p/115475",
+   "timestamp": "20210122171812",
+   "sha256": "aa14e5650bdd11a54be77141daa7e8983a1c0cc6acca908312d6c71c069f537d",
+   "family": "allez-e5",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-elite/p/133817",
+   "timestamp": "20191209082623",
+   "sha256": "8a0acd7b5bb2a279e007a75950c381ce371aaddebac14de97e7033a5806d2657",
+   "family": "allez-elite",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-elite-sram-rival/p/199474",
+   "timestamp": "20260423041747",
+   "sha256": "5c8354192c8659af6cb3495883de66c12a290e6d491ec9279d3dc202ac00e296",
+   "family": "allez-elite",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-elite/p/199474",
+   "timestamp": "20250810131927",
+   "sha256": "28297836324fb8c7f9d33b89c438806e82fa684ce85bb0936721d72cb39d4ef1",
+   "family": "allez-elite",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-evo-rival-mid-compact/p/37431",
+   "timestamp": "20201127175046",
+   "sha256": "07b5b4796da7b025c7a29a6d8976dd10086047c9a0bbdd52bd05e1e13254552d",
+   "family": "allez-evo",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-expert/p/50453",
+   "timestamp": "20210422172841",
+   "sha256": "5a2f19f48aed545ff48bc27ee9a1cc6289c1334d4d08bae5d89fa962673d6348",
+   "family": "allez-expert",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-expert/p/50453",
+   "timestamp": "20260118143944",
+   "sha256": "d5f1522889cba234539a65e4480ff8449091ae58d78ffb679c2df08bb519195e",
+   "family": "allez-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-expert/p/65552",
+   "timestamp": "20251111045207",
+   "sha256": "e9b673797f8dd1d0d8ba26fd6c08bd645555c7bededc67fdd2681337491ae345",
+   "family": "allez-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-frameset/p/65522",
+   "timestamp": "20191020125218",
+   "sha256": "5b365ef94586d3ffdb48dc0964725ab9bfb8b2ebf717db52bde81f52bdc5cb18",
+   "family": "allez-frameset",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-frameset/p/65522",
+   "timestamp": "20210212221703",
+   "sha256": "5b365ef94586d3ffdb48dc0964725ab9bfb8b2ebf717db52bde81f52bdc5cb18",
+   "family": "allez-frameset",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-frameset/p/65522",
+   "timestamp": "20251108093706",
+   "sha256": "90fed03e154635bb2a291ac7f3809430cd7e569972a4fb331d5cb59b9a6cf4fa",
+   "family": "allez-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-limited/p/51792",
+   "timestamp": "20210819050301",
+   "sha256": "5199e973f1328d35e6f230c8c79fc91305d7b673e8ff9d6b814c867886131efc",
+   "family": "allez-limited",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-allez-limited/p/51792",
+   "timestamp": "20251017041238",
+   "sha256": "47969888d2ef201c5f2672a628eabfbed9d45f755697f3bbacf0b1bae88cba20",
+   "family": "allez-limited",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-pro/p/93342",
+   "timestamp": "20251213215835",
+   "sha256": "aa73be990faeda9616cb045fd9766eb490a9e9defdb270878f4e57be71d7770f",
+   "family": "allez-pro",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-race/p/50452",
+   "timestamp": "20190919235209",
+   "sha256": "aa807d40be1366969868b4ba4f53fdebda78d3cfd61805d20e3f4c08fca14e82",
+   "family": "allez-race",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-race/p/50452",
+   "timestamp": "20250823193658",
+   "sha256": "092b11e593c482626a45d20491b4e5edd7324329796adae5a831e72809243321",
+   "family": "allez-race",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-shimano-claris/p/199980",
+   "timestamp": "20251231133239",
+   "sha256": "51e36f7e60bbf608e9e0542d73f21699032ef8260f245747d9f9c136cf0b0b43",
+   "family": "allez-shimano",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-shimano-cues/p/4221808",
+   "timestamp": "20261115053725",
+   "sha256": "a1538c5dcbf8af9183ac21d6c5bd3d7c6a36312357c61711982ff6f331ea08a3",
+   "family": "allez-shimano",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-sport/p/154238",
+   "timestamp": "20191215193616",
+   "sha256": "204df89e39a8b20f65b984d6da97eaae64ddf745ab684f470c4edfd52677fa5d",
+   "family": "allez-sport",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-sport-shimano-tiagra/p/199981",
+   "timestamp": "20260423042504",
+   "sha256": "0991945f61da4ee69b00c1c2fd7958b6cdafc102a39119f3890d71964a808fef",
+   "family": "allez-sport",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-sport/p/199981",
+   "timestamp": "20250821094736",
+   "sha256": "1869591bd643f146079d00ebe930c4c4f1fbbe78210527769fae9cf9be98decb",
+   "family": "allez-sport",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-sprint-disc-frameset/p/154239",
+   "timestamp": "20191213100119",
+   "sha256": "d1174dd3d049b007f50159be138b82865f9eca2eb2afa3305ff5f07b0b5ab5c7",
+   "family": "allez-sprint",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-sprint-comp/p/129269",
+   "timestamp": "20231209112818",
+   "sha256": "c3c88443039440c9d5f67d32bb538f4d3cb9e01b12c3f76343d974156cfb89a3",
+   "family": "allez-sprint",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-sprint-frameset/p/221508",
+   "timestamp": "20251009053522",
+   "sha256": "3304385ff86c839df0b481b7ec9f607bde816bd69d5285a5d157afb137b7f253",
+   "family": "allez-sprint",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/allez-sprint-comp-shimano-105/p/216918",
+   "timestamp": "20260703134759",
+   "sha256": "020d7e42f4b79a839168891ea617d8fb6591e63f1d1fb54e9d9309d67f975521",
+   "family": "allez-sprint",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux/p/154297",
+   "timestamp": "20191210171742",
+   "sha256": "e803330c1578b5d8408e06690165663bec97a61a833c8b945e571a1a00795343",
+   "family": "crux",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux/p/171342",
+   "timestamp": "20210928034347",
+   "sha256": "d3e236d43e6144c17831ef4bb45bd22951639eec0bf61e231c5d6dab637930fc",
+   "family": "crux",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux/p/199959",
+   "timestamp": "20260219063501",
+   "sha256": "7e2b1f7510b0280c010d92b2418ff0724501f5bdb5e5448a31b15e8a53455160",
+   "family": "crux",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux/p/205810",
+   "timestamp": "20251002092335",
+   "sha256": "b6f30224bd1c531345b2cc57af3debc731130d8b5510e5f4c501205a1bff5a7d",
+   "family": "crux",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux---sram-red-xplr/p/4223480",
+   "timestamp": "20240912211916",
+   "sha256": "c8f07c5de8df6a9a751eb687f385cd0bc4513cdef5c0097a3e30ac4ecc9b0f5d",
+   "family": "crux-",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-10r-frameset/p/4223484",
+   "timestamp": "20250917133331",
+   "sha256": "1a4ae73b4d7e2c57208aa0931dd7d36d790a553473567f6d2327e23683f44899",
+   "family": "crux-10r",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-5-comp-sram-rival-xplr/p/4294832",
+   "timestamp": "20261011115730",
+   "sha256": "fe7ac4b4ff485f68f2ed676ce5fadd4f3acc7ebd7c80d7d480dd0a20a42f5465",
+   "family": "crux-5",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-comp/p/187060",
+   "timestamp": "20210511032422",
+   "sha256": "d8073ceeb774b88aed3542ffdf93e065a73aa2bede5f972024994f32e99949b8",
+   "family": "crux-comp",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-comp/p/199962",
+   "timestamp": "20231203203512",
+   "sha256": "1d8d2a059eaa752874300186df90908070cacf40a63ac72ad7deb6ddcfbd6def",
+   "family": "crux-comp",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-comp/p/221364",
+   "timestamp": "20250719055236",
+   "sha256": "6a241613256abba38360fecf73d95ccd9b0f5829faef376bf31d14d93474196c",
+   "family": "crux-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-comp-shimano-grx/p/221364",
+   "timestamp": "20261114153154",
+   "sha256": "e1e7456a9393085bfe23edc6d4c50fb7e412f1d64f62ba9fac9ffa56ae5f603a",
+   "family": "crux-comp",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-di2/p/65309",
+   "timestamp": "20201208193948",
+   "sha256": "97e260abbdaac12127bc061acbb27bdcc8ce93356224284c5396a1bdcf367993",
+   "family": "crux-di2",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-di2/p/65309",
+   "timestamp": "20251115151711",
+   "sha256": "97e260abbdaac12127bc061acbb27bdcc8ce93356224284c5396a1bdcf367993",
+   "family": "crux-di2",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-disc-frameset/p/50162",
+   "timestamp": "20250812210211",
+   "sha256": "c3aea64718854dfaa4c6c69a780ba35d02e4ec8698f378cdca78fd7e4dd17516",
+   "family": "crux-disc",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-dsw-frameset/p/4221800",
+   "timestamp": "20250903180005",
+   "sha256": "a1b26b14cb61c27ce0a2b752e215800487452124cded90d64c186ed09fead948",
+   "family": "crux-dsw",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-dsw-comp-sram-apex-xplr/p/4221804",
+   "timestamp": "20260816173450",
+   "sha256": "38ed7ed017d1e0c9b6e876703d7b98a17f58075d4ae4c5056dba9c0707f61b23",
+   "family": "crux-dsw",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-e5-sport/p/154295",
+   "timestamp": "20191215192133",
+   "sha256": "25b9eb37f745a9991a660b3171652c2eb7d753c5a19baa5dffbe2da7b8e8bdf2",
+   "family": "crux-e5",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-e5/p/128988",
+   "timestamp": "20250914220948",
+   "sha256": "97a0ad6357f304ad01973906bd8dfead1c10719bbc6d46c8221b5dc0659ec1d0",
+   "family": "crux-e5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-e5/p/65364",
+   "timestamp": "20260122233849",
+   "sha256": "c0ddb861727215d960d1678870dbf0503c675f20cb91c7261405345147cca642",
+   "family": "crux-e5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-elite-x1/p/129027",
+   "timestamp": "20191210170256",
+   "sha256": "0383466dc43d6d6e116462df0e0793b4e817734a9b2d39e60892c04d99581dea",
+   "family": "crux-elite",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-elite/p/154294",
+   "timestamp": "20231210170957",
+   "sha256": "39cc62ba73385f3af84fa1233aa25daed0d11526cf284f01ab64903fb1d6fbe8",
+   "family": "crux-elite",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-elite/p/154294",
+   "timestamp": "20250826092957",
+   "sha256": "c77489c1e54c800fd8292774c4f81238ce1f136452cb2faf025ffa7e7f0b31cf",
+   "family": "crux-elite",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-evo/p/50966",
+   "timestamp": "20250917122943",
+   "sha256": "64ab732096519b98209ed23cdb08bf83bd68823bf46359293c4d807354e4ff6c",
+   "family": "crux-evo",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-expert-x1/p/129207",
+   "timestamp": "20191214232551",
+   "sha256": "ddb25a6eb8deb3dccac44f9d85d8d317ed7c233d94af337f7c146ca5043e6e62",
+   "family": "crux-expert",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-expert/p/154298",
+   "timestamp": "20210924093118",
+   "sha256": "352a6b455c48a73c2f3f754eb3f514be4df11230c8b6366c30f5eb28ff8938cb",
+   "family": "crux-expert",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-expert/p/199961",
+   "timestamp": "20231210231337",
+   "sha256": "8a0aaba79865f84a6cbfd40aee7c7663bbb7a38fe74ea69c6d8d74647aa9fe71",
+   "family": "crux-expert",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-expert/p/205812",
+   "timestamp": "20250708113334",
+   "sha256": "d3e39a2f44d3d0b4084c67e304394626028e9dabf667e719f5994cb99b38b005",
+   "family": "crux-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-expert-sram-rival-xplr-axs-/p/4223489",
+   "timestamp": "20260725205620",
+   "sha256": "8c2eb5b209941f5e3afa9c2f09a54853ec0c751f1fa7db3664ab9480337669e7",
+   "family": "crux-expert",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-frameset/p/129101",
+   "timestamp": "20191212212918",
+   "sha256": "5cca9c85d2d8b8777acc3ce8e04d4f7b562f233de6d026cffb557eb135b31cf1",
+   "family": "crux-frameset",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-frameset/p/199963",
+   "timestamp": "20231203213941",
+   "sha256": "d5afb815678f496b73e8c3e43806c5f808e337d2441e6ee18880cef037b23425",
+   "family": "crux-frameset",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-frameset/p/199963",
+   "timestamp": "20260423042407",
+   "sha256": "7ff9914cda2e06dc845466b8507520eaf7ee3cd68cc6630209f14a1b388a9b02",
+   "family": "crux-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-frameset/p/4223479",
+   "timestamp": "20251007173859",
+   "sha256": "ea8ecf3a2794c4ed7c899bbc7e61fe23bceab7f3ea25037910f51fd4a8ba95d2",
+   "family": "crux-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-ltd-sram-red-xplr/p/4277914",
+   "timestamp": "20250121183648",
+   "sha256": "3494bbaab7a1d768fb91bf51fd0b344e8768cbded4eed7cf5da121ce8b846efc",
+   "family": "crux-ltd",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-pro/p/187059",
+   "timestamp": "20201125202353",
+   "sha256": "a9b77e1bda69adacf82245b55ccfa9329fccf8cdb001b69c67c0788b3c8adedd",
+   "family": "crux-pro",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-pro-sram-force-xplr-axs-/p/4223488",
+   "timestamp": "20260724162336",
+   "sha256": "1012326849446f83e91c48b4e4a6e8448a8be669f11c8edc0026250f97c503a2",
+   "family": "crux-pro",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-red-disc/p/49780",
+   "timestamp": "20250914203045",
+   "sha256": "47ffa92bb494a01e2117a023ab1efd49cf0f368c1df6b945d0c6f41718a238fb",
+   "family": "crux-red",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-sport/p/134246",
+   "timestamp": "20191112195503",
+   "sha256": "07551fc14e8e3a08f6a7e8042286b1308e1aad71a41fe19890b0e9bc46cdb8de",
+   "family": "crux-sport",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-sport-e5/p/129217",
+   "timestamp": "20251114115918",
+   "sha256": "cea2f9ad9f9e960667fd6b242b93eb7d5825128acb849c47eac93743fa39a49b",
+   "family": "crux-sport",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/crux-sport/p/134246",
+   "timestamp": "20260208120905",
+   "sha256": "a991018d327e7a14fd6e2c3951d9f93b65314dd81bbf5e622b6242540ddd2fa5",
+   "family": "crux-sport",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-sram-red-xplr/p/4223480",
+   "timestamp": "20251008072433",
+   "sha256": "312781fc1e4142eb0c4f9818093fb2c86234b19e52f49b942cfebb723b880c1e",
+   "family": "crux-sram",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-crux-sram-red-xplr/p/4223487",
+   "timestamp": "20260423042012",
+   "sha256": "6f5efa270aedd6a82f0b0f312c795e40fb991686384585b46bd2e7326a66ff38",
+   "family": "crux-sram",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge/p/171315",
+   "timestamp": "20190916113413",
+   "sha256": "a484365f0d5bfbf65c0ca5baddd4392f4bdc63ebde6fd31778d1e59ceb358fb4",
+   "family": "diverge",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge/p/175282",
+   "timestamp": "20231003214731",
+   "sha256": "21b0c4a318cdbb04b921f80f0c8a02d95433cb0a083323c1f4e9d6cd45245a01",
+   "family": "diverge",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge/p/175282",
+   "timestamp": "20251109134329",
+   "sha256": "21b0c4a318cdbb04b921f80f0c8a02d95433cb0a083323c1f4e9d6cd45245a01",
+   "family": "diverge",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge---sram-etap-axs/p/171315",
+   "timestamp": "20191206151855",
+   "sha256": "a510f378a803f52620d4f64b719cb34ed31b5449cbcb6b04bb0028661e2b5e76",
+   "family": "diverge-",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge---sram-etap-axs/p/171315",
+   "timestamp": "20210919142521",
+   "sha256": "2297fceaaf28c6de6cce1c755b19e912d5f79cdae5e7c9a5ecaa2b667d016455",
+   "family": "diverge-",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-3-alloy-shimano-cues/p/4223510",
+   "timestamp": "20251213224336",
+   "sha256": "a88fb5f0132d2033a5e6109750a284da53c03e9e68b5e4105b1fe596ab0ab2cc",
+   "family": "diverge-3",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-3-alloy-shimano-cues/p/4223510",
+   "timestamp": "20260423041342",
+   "sha256": "de38a57d7958eb7d0005ce68c226eeea4e6a3ff6c3a0bbf0e3098cf694dbbb6e",
+   "family": "diverge-3",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-4-expert-sram-rival-xplr/p/4293758",
+   "timestamp": "20260423042141",
+   "sha256": "220a60b21e6a1bb9859d51b232788d0d4c3376827059ef9eab2bdfcd5af575d7",
+   "family": "diverge-4",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-4-sport-carbon-shimano-grx-600/p/4223514",
+   "timestamp": "20251230003722",
+   "sha256": "f9174593898b9db9307237105c1931f884f75f483b31db6c06ee1593576d73f6",
+   "family": "diverge-4",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-9r-frameset/p/199970",
+   "timestamp": "20250517094019",
+   "sha256": "d090080f963fd634372cb803d9a8f9bfbb51773c2d61f5ca507ed31defcee7e0",
+   "family": "diverge-9r",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-9r-frameset/p/199970",
+   "timestamp": "20260423041747",
+   "sha256": "2eaa3a2b11d7913742f68f97803fc68b2253f22e7121efd593800047dff2e8b1",
+   "family": "diverge-9r",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-base-e5/p/199684",
+   "timestamp": "20231211213633",
+   "sha256": "b22cacfa9554e22c61a89a6d1441c4b79540bb326dfbc450e84b44d8f7b35db3",
+   "family": "diverge-base",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-base-e5/p/199684",
+   "timestamp": "20251113015845",
+   "sha256": "18144020ce3fcb68f7dabb2c29f266461fc6503df44365005115052fd25f4b38",
+   "family": "diverge-base",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-base-e5/p/175291",
+   "timestamp": "20260725205601",
+   "sha256": "03d91c103614fbb2a911e33f8a4147b30518a10e295a7f05cb96064e1828e33d",
+   "family": "diverge-base",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-carbon-di2/p/93092",
+   "timestamp": "20191022074622",
+   "sha256": "0fa1f3c931d2882f47c6a32e8b8a10f9452952f1ad0aca0e3a44a25f3ce9a9bf",
+   "family": "diverge-carbon",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-carbon-di2/p/93092",
+   "timestamp": "20251012073808",
+   "sha256": "b40ccdddbd8686df587f147d193c68e133dbbedf0cb26ff1a249226d4c3f9119",
+   "family": "diverge-carbon",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-comp-e5/p/171308",
+   "timestamp": "20191212155152",
+   "sha256": "30fe25f81bf5aed5fa58b5f4a5f0ace3e807fda5396a7c3a1fbdbc4b7aa26778",
+   "family": "diverge-comp",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-comp-e5/p/171308",
+   "timestamp": "20210927230214",
+   "sha256": "eca653e6dac01264c4b7b8f1ca949c690754d159d0829f496232f986f8d8ed10",
+   "family": "diverge-comp",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-comp-carbon/p/175285",
+   "timestamp": "20231003133358",
+   "sha256": "a91f84116f778ecd00498919ea869843da50c4139c8bd28673e1f11335e70644",
+   "family": "diverge-comp",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-comp-carbon-sram-apex-etap-axs/p/221371",
+   "timestamp": "20260423041949",
+   "sha256": "6dfc5bf63ff16bc62703c12f36eabeaaf0f2716d76f0230578559d05e2bec83e",
+   "family": "diverge-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-comp-e5/p/217058",
+   "timestamp": "20250731194707",
+   "sha256": "d0f055a8a37dc5232c25721ab4be2505bf598dec73aaa90705835cd10cbac4e1",
+   "family": "diverge-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-e5/p/171310",
+   "timestamp": "20191214102039",
+   "sha256": "46b6d33f1ffd17cc7b32e91467a778f5fcbedd6009cf5082e72a825bd159c9f2",
+   "family": "diverge-e5",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-e5/p/199973",
+   "timestamp": "20231227210222",
+   "sha256": "832f273bef3868b35b2a8fa0e1685f5670295927c56f16c2cf25cea5044d50e6",
+   "family": "diverge-e5",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-e5-shimano-claris/p/217060",
+   "timestamp": "20260423041657",
+   "sha256": "37744d9d0f42b43f8b883527bf7f40396bdefbe6b7a3dc4299e5a3dc7490bfd9",
+   "family": "diverge-e5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-e5/p/199973",
+   "timestamp": "20250902154057",
+   "sha256": "3981c6fe7efc69aeed2fc261391c6604f368184552bd02f4a0ed3d7b37afbba2",
+   "family": "diverge-e5",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-elite-e5/p/171309",
+   "timestamp": "20191214100514",
+   "sha256": "131b9ace998802df5765112f0f588a99e5a6fc6adad9d7464ad058bb607b285c",
+   "family": "diverge-elite",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-elite-e5/p/199974",
+   "timestamp": "20231206212025",
+   "sha256": "b1ea7a110720fc3a770162660e06dcd1fd1cfc525f348ae32d9b9129182767ab",
+   "family": "diverge-elite",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-elite-e5/p/217059",
+   "timestamp": "20250521015458",
+   "sha256": "3361d9c49326912a9e579ca2b4dcef4571b185eea0e59cd5aa2a65aa66c780b6",
+   "family": "diverge-elite",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-elite-e5-shimano-grx/p/217059",
+   "timestamp": "20260423042039",
+   "sha256": "4815c5d665d95c062d9fa12abcde67b13cd915ec06689c3c3f93bd86675d2b0c",
+   "family": "diverge-elite",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-expert/p/171326",
+   "timestamp": "20191215110400",
+   "sha256": "a70bc33b292e7802f4fd895698421fb3fa8ee012ffbcdd5ced9e7bd7fb7f1ba8",
+   "family": "diverge-expert",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-expert-carbon/p/175284",
+   "timestamp": "20210924090216",
+   "sha256": "75ec9a31d6a549d4c773aeabc003d6b5468b45b240db25eb763bcae3d40c7767",
+   "family": "diverge-expert",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-expert-carbon/p/175284",
+   "timestamp": "20231003130819",
+   "sha256": "6186073617e911960dea20af2b448c85f08d98ebb23774f6086d37b7b4642647",
+   "family": "diverge-expert",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-expert-carbon-sram-rival-etap-axs--gx-eagle-axs/p/205815",
+   "timestamp": "20260423041740",
+   "sha256": "bb8a1dbe180e607cb4fe59e382a3105ca44ed765c2276fc8aebec7c2b448e3ec",
+   "family": "diverge-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-expert-carbon/p/199966",
+   "timestamp": "20250815215200",
+   "sha256": "30bd38a8bd7c26653bde7daa4336dbd9f7440e9cf607598f99f12e0ac39eeb94",
+   "family": "diverge-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge-frameset/p/154310",
+   "timestamp": "20191206125035",
+   "sha256": "539cc4664dafac6920cc7f8acd4104765d790a3ee39bed1f3bea70ca9957d8f7",
+   "family": "diverge-frameset",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge-frameset/p/154310",
+   "timestamp": "20200920171408",
+   "sha256": "539cc4664dafac6920cc7f8acd4104765d790a3ee39bed1f3bea70ca9957d8f7",
+   "family": "diverge-frameset",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge-frameset/p/199969",
+   "timestamp": "20231209211823",
+   "sha256": "2f5988b07857ac84beb934f2dace6755cc4e7b3bbafdeaf7bd174d1991040f9a",
+   "family": "diverge-frameset",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge-frameset/p/199969",
+   "timestamp": "20250212213801",
+   "sha256": "d0e0d01ebe696518031dfbd5cb13932792c574ed1a6c91e007d2c61ca24b4e7c",
+   "family": "diverge-frameset",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-pro/p/171059",
+   "timestamp": "20191113031355",
+   "sha256": "e93b68af4ba37e8c0c314a55b8da44e2397dbf1c2e99a40a7cc80731ecc54b01",
+   "family": "diverge-pro",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-pro-carbon/p/175283",
+   "timestamp": "20210613021620",
+   "sha256": "8a27d4b3baee6631ea023970ae5a806e43626ac35def2ac58845a547bae4e98e",
+   "family": "diverge-pro",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-pro-carbon/p/199967",
+   "timestamp": "20250515223421",
+   "sha256": "5bd644544a4a0cb7a9f7216ad86cc708d4f0e27eb36921f5ef0fc7669bce11bb",
+   "family": "diverge-pro",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-sport/p/171325",
+   "timestamp": "20191215030346",
+   "sha256": "5a27045cb3ff3343d5e1c9fbc1d89e2c6106105d81390871ead6506558205fa9",
+   "family": "diverge-sport",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-sport-carbon/p/175286",
+   "timestamp": "20231003151124",
+   "sha256": "e39c83feedcc31c90a31554a5ad8f6f9ea05b7251cc71542f092bee005745bf4",
+   "family": "diverge-sport",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-sport-carbon-shimano-grx/p/221372",
+   "timestamp": "20260423133344",
+   "sha256": "7585c2eb194cc5a6d6f9dc75c07ff519406e7dab1d1bcafa779b3240e9c79e84",
+   "family": "diverge-sport",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-sport-carbon/p/221372",
+   "timestamp": "20250809145141",
+   "sha256": "81552782c2c496667273ebfce31c03fe1abd541fc9acf983974514d04761990f",
+   "family": "diverge-sport",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge-sram-red-etap-axs--xx1-eagle-axs/p/199968",
+   "timestamp": "20251109223222",
+   "sha256": "6bf8af5094f0d97e953925966df34c92336b780f2c18609ff8d713c6015371a1",
+   "family": "diverge-sram",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-diverge-sram-etap-axs/p/171315",
+   "timestamp": "20261111074514",
+   "sha256": "4e2a27d9076cffb28bf0fb0dc4852d4bdfc38ed32ff2a53671f3d7ae95789017",
+   "family": "diverge-sram",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-str-comp/p/200579",
+   "timestamp": "20251006105145",
+   "sha256": "b1249b54234af619daa8a3912718e2d36da6363594beee32ad180d79ad70c56e",
+   "family": "diverge-str",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-str-comp-shimano-grx/p/200579",
+   "timestamp": "20261023234621",
+   "sha256": "3c1be1a216c58702f6e27b8becfb8350342d04a92d1462542c15b54a36562904",
+   "family": "diverge-str",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-x1/p/171316",
+   "timestamp": "20191209071133",
+   "sha256": "c081259684a988d1e6b9c99773329095f436819499b130a3967196636f16b6fb",
+   "family": "diverge-x1",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/diverge-x1/p/171316",
+   "timestamp": "20250827050016",
+   "sha256": "939a689ff4441fc08f1f54744d55433947674f1c5e4ed753a13f3697e509d355",
+   "family": "diverge-x1",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix/p/154478",
+   "timestamp": "20191210172513",
+   "sha256": "b730a4911dbcdc47f93267ff008a28e619c31c4472aabf3c5bcba218948cc063",
+   "family": "roubaix",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix/p/170558",
+   "timestamp": "20210927230503",
+   "sha256": "119b77689b6e915b912ae4c36d308f90196f02b2d5aba7db5cb3fbdf85809a34",
+   "family": "roubaix",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix/p/154478",
+   "timestamp": "20251109040302",
+   "sha256": "764a080ce04285fe70afe471804e50dd7a3407ac9732a0d5ee682c89abddfe4f",
+   "family": "roubaix",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix/p/154478",
+   "timestamp": "20260116072901",
+   "sha256": "764a080ce04285fe70afe471804e50dd7a3407ac9732a0d5ee682c89abddfe4f",
+   "family": "roubaix",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix---sram-red-etap-axs/p/171042",
+   "timestamp": "20191112200043",
+   "sha256": "3e1d1fc763b06281f1542a5f9c31d3622d6e4d4b5fce8b64155356c9aa844b53",
+   "family": "roubaix-",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix---sram-red-etap-axs/p/171042",
+   "timestamp": "20210513154202",
+   "sha256": "330269883c826b7aace88f8e61515cbcbc9de2e71514ddd6c0f59c7a5bea1ad3",
+   "family": "roubaix-",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix--team/p/171043",
+   "timestamp": "20240317014117",
+   "sha256": "78089ebcd62c82b734c40f577cde6067ee9b88dc5a5a2442dc81161080e523c0",
+   "family": "roubaix-",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-boonen-frameset/p/134012",
+   "timestamp": "20250804034259",
+   "sha256": "8ee77785d38aeda5c2d0f8d99fda91318480b955afe173809227fa34e45b595c",
+   "family": "roubaix-boonen",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-comp/p/170244",
+   "timestamp": "20191215033914",
+   "sha256": "ef8884877459632844e8fddc2553263434a636696d5b053d05663376f3164c97",
+   "family": "roubaix-comp",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-comp--shimano-ultegra-di2/p/170243",
+   "timestamp": "20231013184220",
+   "sha256": "1430240603dbccaebe4fb9d490cd82380733973b85a077786974e688da3fd4a2",
+   "family": "roubaix-comp",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-comp/p/129154",
+   "timestamp": "20250827012833",
+   "sha256": "19e2c2278c9518ee879dc59503f607a73e357191f8112a90109db2d62e82a81b",
+   "family": "roubaix-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-comp/p/129154",
+   "timestamp": "20260209024405",
+   "sha256": "19e2c2278c9518ee879dc59503f607a73e357191f8112a90109db2d62e82a81b",
+   "family": "roubaix-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-compultegra-di2/p/154472",
+   "timestamp": "20191208001516",
+   "sha256": "10f06056b2b8beec64344094ba3da66f0ba462aa1631afe96fdfe4348726cd28",
+   "family": "roubaix-compultegra",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-compultegra-di2/p/154472",
+   "timestamp": "20210802203047",
+   "sha256": "8fd300793950dfbe8651cbe3e533453d4fe1ce6580c3ba7e165618f88af9f9fa",
+   "family": "roubaix-compultegra",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-compultegra-di2/p/154472",
+   "timestamp": "20251016061854",
+   "sha256": "d17cea502bbb6856f0955aded1b651f9334f2f8028a22a093421a59f83c1ef41",
+   "family": "roubaix-compultegra",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-compultegra-di2/p/154472",
+   "timestamp": "20260220021954",
+   "sha256": "dbf47cd45e99f5bb58e46349be7e023d7e2dfd5ea35b3547b0a09d31adeded0b",
+   "family": "roubaix-compultegra",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-dura-ace-di2/p/128885",
+   "timestamp": "20191216104724",
+   "sha256": "bc4480d05d705f27f4e8052ea2f578cfab62997e243e63900c52a6376e598376",
+   "family": "roubaix-dura",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-dura-ace-di2/p/128885",
+   "timestamp": "20210801190946",
+   "sha256": "d18a07ce2763ff279a1c3eb358b52bfa6d2c46998b4a94078edf718123c1399a",
+   "family": "roubaix-dura",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-dura-ace-di2/p/128885",
+   "timestamp": "20251030033047",
+   "sha256": "4870e5b5150d285859e7e04d94951f3f4d3ccdc5f84d70deb3ae7bbd3fdd160f",
+   "family": "roubaix-dura",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-dura-ace-di2/p/128885",
+   "timestamp": "20260214012632",
+   "sha256": "4870e5b5150d285859e7e04d94951f3f4d3ccdc5f84d70deb3ae7bbd3fdd160f",
+   "family": "roubaix-dura",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-elite/p/128886",
+   "timestamp": "20191212104327",
+   "sha256": "f772ce68cd6ce841ef90bc7d0abf9ce76ae980477c584df916c9fc3aad1672cf",
+   "family": "roubaix-elite",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-elite/p/128886",
+   "timestamp": "20210121015652",
+   "sha256": "e741ef1f40f1e1ed25db5017f4a56daca695f693ca1a72210eadde0b2a2e59e2",
+   "family": "roubaix-elite",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-elite/p/128886",
+   "timestamp": "20251006074006",
+   "sha256": "6cdc9ddee6b04bf95fc226dde00f77e45a09d312d589ad7e3451ca9960b71a9f",
+   "family": "roubaix-elite",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-expert/p/170242",
+   "timestamp": "20191206231940",
+   "sha256": "3f95acb06517f30265c8eb418fb2480ac04448a5ab469e7a87db5e4ca095990a",
+   "family": "roubaix-expert",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-expert-ultegra-di2/p/128894",
+   "timestamp": "20260402165446",
+   "sha256": "031ae1c99f17a9e6ffaeca87acbc77fef7861addb5deb9898f7371bd1c9f988a",
+   "family": "roubaix-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-expert/p/199908",
+   "timestamp": "20250915023343",
+   "sha256": "d549f98b4c29783106981690b06b409c20e65e737185d4431a7b7d5d8af16adb",
+   "family": "roubaix-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-frameset/p/154475",
+   "timestamp": "20191206230155",
+   "sha256": "e348d541a0122a836b3a331dc68cbc16662899cf531f1b0f728ea2394b0757e6",
+   "family": "roubaix-frameset",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-frameset/p/154475",
+   "timestamp": "20200813152657",
+   "sha256": "e348d541a0122a836b3a331dc68cbc16662899cf531f1b0f728ea2394b0757e6",
+   "family": "roubaix-frameset",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-frameset/p/129238",
+   "timestamp": "20231201174245",
+   "sha256": "b95caea03b6b78b484b924a76558fd4e157ca38edf24dc582f89395c00f1c307",
+   "family": "roubaix-frameset",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-frameset/p/129238",
+   "timestamp": "20251111210111",
+   "sha256": "eeac124e8eb243a775c73cb70681f3473f4e719d46972c55840fb517f36298a9",
+   "family": "roubaix-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-frameset/p/129238",
+   "timestamp": "20260423041644",
+   "sha256": "3489259483d4740c4c70f2cba540b6851eece0ca7979c29646b150bec22533fb",
+   "family": "roubaix-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-mclaren-dura-ace-di2/p/134255",
+   "timestamp": "20191113132111",
+   "sha256": "99e5db8f7772ab1988124b3813867446eea93d1561b6f7fac30edefbc202514b",
+   "family": "roubaix-mclaren",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-mclaren-dura-ace-di2/p/134255",
+   "timestamp": "20201031074036",
+   "sha256": "7e82bba1ab1c19db1435c956b4225ceee2b16e4ad2cbe1e387c4d0850e3992c4",
+   "family": "roubaix-mclaren",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-mclaren-dura-ace-di2/p/134255",
+   "timestamp": "20251107180828",
+   "sha256": "a551fd54977120810cd6745835198e4844fc4041e4314e3b76d8740dca40d361",
+   "family": "roubaix-mclaren",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-pro/p/129103",
+   "timestamp": "20191113183532",
+   "sha256": "9982652a556677e9e55d1193621ea6c0507b430305a5550f7d5de1c621f6eba0",
+   "family": "roubaix-pro",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sagan-superstar-frameset/p/134248",
+   "timestamp": "20191113032715",
+   "sha256": "2a22d4ce494ec0510cf98fffbd3b9f964a92a82094fe0c522c432c3ec154b3c7",
+   "family": "roubaix-sagan",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sagan-collection/p/171046",
+   "timestamp": "20260212043719",
+   "sha256": "747b71a260243ef229c391ec369fd3e20e66c2993cc726c34df7897b2ee8e944",
+   "family": "roubaix-sagan",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sagan-superstar-frameset/p/134248",
+   "timestamp": "20251006120417",
+   "sha256": "7787a8ba047b556fe236627e09836b5a7340b33c4af10d6d5902eb3bb059f964",
+   "family": "roubaix-sagan",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-shimano-dura-ace-di2/p/170241",
+   "timestamp": "20251109125528",
+   "sha256": "df2c8e5ef765611a7898f9d884f5657b0bd9dd4dbf5c560f56f97499d22a8e8f",
+   "family": "roubaix-shimano",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sl-sram/p/22212",
+   "timestamp": "20210606174846",
+   "sha256": "d246bf36ec911ad8377bb502244481cc729484baccba8927baebccf35d1ed510",
+   "family": "roubaix-sl",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sl3-compact/p/35100",
+   "timestamp": "20210512183259",
+   "sha256": "fed27846074652281299fb8bd4d45ac3006eab6b30f454ac0dac3a2d5ebb1468",
+   "family": "roubaix-sl3",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sl4-comp/p/104436",
+   "timestamp": "20260310060701",
+   "sha256": "3424e7dc5af45c032c88d3d96929a2f0ecb380b2dea85f920d24d33df4727d77",
+   "family": "roubaix-sl4",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sl4-sport-sram-disc/p/49944",
+   "timestamp": "20251108065722",
+   "sha256": "40238b650e10c21d47e8aa88d3047bef34b6db01fe47b8334b00518b81f17c81",
+   "family": "roubaix-sl4",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sl8-comp/p/218669",
+   "timestamp": "20231208111444",
+   "sha256": "aaf4454128f128ee061ab09486685cc8717125c497f6e42fa1de4eb394420da6",
+   "family": "roubaix-sl8",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sl8/p/216946",
+   "timestamp": "20250801193227",
+   "sha256": "0d91357859113560a12b0e157e6df67120b9d43df9347e379db23bc6867b3605",
+   "family": "roubaix-sl8",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sl8-shimano-tiagra/p/4221830",
+   "timestamp": "20261113120503",
+   "sha256": "3802828b4a7ddb6362297e4d47e3a41e465ed12569b8e9b38347b9322cee8c08",
+   "family": "roubaix-sl8",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sport/p/170245",
+   "timestamp": "20191216022348",
+   "sha256": "9e68ca62b5e60831f68b6f4ae649d13f5c6429b8f78bacc194529a39759f258a",
+   "family": "roubaix-sport",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sport/p/170245",
+   "timestamp": "20210920045358",
+   "sha256": "2c2db5d71d9a8e7152de0470fd6bcebf2c9be48bc9c8a42964f2ccf2308836bc",
+   "family": "roubaix-sport",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-sport/p/199910",
+   "timestamp": "20250912074656",
+   "sha256": "6710588bb8c2a0ebc1fb6a7dc03ca502f2b849a8914fd84e77fd63b804b54349",
+   "family": "roubaix-sport",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sram-etap/p/134017",
+   "timestamp": "20191215030024",
+   "sha256": "ec78230de95cb0b693d5a28248289dbf962b1595d6efe26e62e75a37d40c5c5b",
+   "family": "roubaix-sram",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sram-etap/p/134017",
+   "timestamp": "20210302053741",
+   "sha256": "3b629e9ca7a04996961daec059577c326ef1adc00a5d3ca01bfd64e3caeeefc6",
+   "family": "roubaix-sram",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sram-etap/p/134017",
+   "timestamp": "20260207081133",
+   "sha256": "f16a7a2b2e3f0f144c38b646f88ce1cfc8bfe2a468d388a31e4b455fd4367d2b",
+   "family": "roubaix-sram",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-sram-red-etap-axs/p/171042",
+   "timestamp": "20251109043736",
+   "sha256": "b1339d9b4843bee0e6478cd40a34929c2d6fe74c8ad20f970ca7895fd2729afa",
+   "family": "roubaix-sram",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-roubaix-team/p/171043",
+   "timestamp": "20250419025350",
+   "sha256": "b3f024d011b89bd5b7195225172431d778b7bd8d9baf3448a87d9cafc819d7cd",
+   "family": "roubaix-team",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/roubaix-triple/p/22522",
+   "timestamp": "20241111165653",
+   "sha256": "f7192dedfe6308be4945dce80f6deb72c363dfd063d346522fb68364bf30db72",
+   "family": "roubaix-triple",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac---sram-red-etap-axs/p/171346",
+   "timestamp": "20191115164823",
+   "sha256": "9f958843c64284de664caffd565df92d71e9b0da91af4ac2fc7802bbad9c3fb2",
+   "family": "tarmac-",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ac15-frameset/p/106944",
+   "timestamp": "20191016010330",
+   "sha256": "0f220506a0c4452f3482eef7709576d6c84e2b2a3f45b0ab7d2ffedcc6351c84",
+   "family": "tarmac-ac15",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ac15-frameset/p/106944",
+   "timestamp": "20201127173021",
+   "sha256": "0f220506a0c4452f3482eef7709576d6c84e2b2a3f45b0ab7d2ffedcc6351c84",
+   "family": "tarmac-ac15",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ac15-frameset/p/106944",
+   "timestamp": "20260120190603",
+   "sha256": "0f220506a0c4452f3482eef7709576d6c84e2b2a3f45b0ab7d2ffedcc6351c84",
+   "family": "tarmac-ac15",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-comp-disc/p/118207",
+   "timestamp": "20201112014949",
+   "sha256": "41a03cd1d236f427e8b20c9ac3e41e368b1055bed16a510bde51ba7e23ad97ff",
+   "family": "tarmac-comp",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-comp-disc/p/118207",
+   "timestamp": "20251210052809",
+   "sha256": "dbb0a8c9bde8f0f4b51dfda9e5dc4b882e927b069bb85c762d72cfd1f969d7f4",
+   "family": "tarmac-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-disc-frameset/p/154626",
+   "timestamp": "20191209074353",
+   "sha256": "36e57834e1ed5937500163053c40ae16e2aa2c27aabe4422ab4a9105721a0fb0",
+   "family": "tarmac-disc",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-disc-expert/p/171350",
+   "timestamp": "20200612001015",
+   "sha256": "3376bcc70d9d1a11984f47e4ab9f8a3257496a7f0e042022773df351631c7311",
+   "family": "tarmac-disc",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-discsagan-collection-overexposed-ltd/p/171353",
+   "timestamp": "20191113004911",
+   "sha256": "1a68c820ec09c82e6e1bde38750bd802b203e39d056a501464266479744ead11",
+   "family": "tarmac-discsagan",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-dura-ace/p/93247",
+   "timestamp": "20190922084422",
+   "sha256": "a45ea14692db7d3dc4b6630548867e3392ba03284f3ee3426376d6382cac2e97",
+   "family": "tarmac-dura",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-dura-ace/p/93247",
+   "timestamp": "20201022205250",
+   "sha256": "a45ea14692db7d3dc4b6630548867e3392ba03284f3ee3426376d6382cac2e97",
+   "family": "tarmac-dura",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-dura-ace/p/93247",
+   "timestamp": "20251014145641",
+   "sha256": "a45ea14692db7d3dc4b6630548867e3392ba03284f3ee3426376d6382cac2e97",
+   "family": "tarmac-dura",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-etap/p/115701",
+   "timestamp": "20191119192345",
+   "sha256": "2420cc8d958387f20e5e6fd17a875bccddcbb3cf3368671245090b98d4522c0b",
+   "family": "tarmac-etap",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-etap/p/115701",
+   "timestamp": "20250515164455",
+   "sha256": "b3e6c9458854374ba51801a7e07e57847ee0b6eaf40e743799386f949a1558ef",
+   "family": "tarmac-etap",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-etap/p/115701",
+   "timestamp": "20260208174538",
+   "sha256": "4dd709179c966aa27ada04dc93834e5c7930f599e507a0916abb6366f810598b",
+   "family": "tarmac-etap",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-expert/p/93251",
+   "timestamp": "20190924101513",
+   "sha256": "fc290de5ed6e9bc37ee0ef14d5ec8a186ce1237a3fa048139dadf5c623fefa90",
+   "family": "tarmac-expert",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-expert/p/93251",
+   "timestamp": "20231113201533",
+   "sha256": "fc290de5ed6e9bc37ee0ef14d5ec8a186ce1237a3fa048139dadf5c623fefa90",
+   "family": "tarmac-expert",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-expert/p/93251",
+   "timestamp": "20251110013140",
+   "sha256": "5f467322dffcff1726c03027e18aa3f7cb3d4ecad78f423482c38ba3db4f3bf6",
+   "family": "tarmac-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-frameset/p/93252",
+   "timestamp": "20191211171707",
+   "sha256": "e19e43dd614f3bd5a6eaff79f5fc72f8bc3abaf30151f235e1ad7b370c91aa9a",
+   "family": "tarmac-frameset",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-frameset/p/153988",
+   "timestamp": "20210516053220",
+   "sha256": "537399b3b8e55ae61e6d9431145cc26e0bb5773ba05b630f3263f852327628fb",
+   "family": "tarmac-frameset",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-frameset/p/153988",
+   "timestamp": "20251014094638",
+   "sha256": "67d30ead51de018c1710661728d8ccf9028f29bb829860b84df61eba9dd8b0cd",
+   "family": "tarmac-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-kwiato-frameset/p/106939",
+   "timestamp": "20251116214147",
+   "sha256": "bfbfb21e1ae38b2802015afd87aba808f29bcf15b6888bde6fb710cb90571283",
+   "family": "tarmac-kwiato",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-pro-race/p/93250",
+   "timestamp": "20191213110916",
+   "sha256": "be5130b03df0f02762430f843ec9fb1d533a70fa8f6a0ee559a97cfe4984422a",
+   "family": "tarmac-pro",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-pro-disc-race/p/93249",
+   "timestamp": "20210726082014",
+   "sha256": "380771233d3cb2c95c8825744ad9d475cd5121862c731957efa55c11cc556435",
+   "family": "tarmac-pro",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-pro-disc-sram-etap/p/171349",
+   "timestamp": "20250208140355",
+   "sha256": "04b2c1efa017a51e9c9747d70bcd21bd058fcd3147ec79cf0b5b798f45f055d3",
+   "family": "tarmac-pro",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-pro-frameset/p/93253",
+   "timestamp": "20260214021615",
+   "sha256": "8eae64accf835fd1536395f2404850f50ffab1b9f3c1547ba1412f5eb9287486",
+   "family": "tarmac-pro",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-red/p/93248",
+   "timestamp": "20250906131931",
+   "sha256": "ba61963b7590ff6c840319e6f40696b8c7c49051914ca6b32afc1501aade415a",
+   "family": "tarmac-red",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sagan-superstar-frameset/p/134251",
+   "timestamp": "20191212183432",
+   "sha256": "8c99acb01ded23d74bee782d4e4a7e182ff6d73d7d6ff0042c84bb174dec1534",
+   "family": "tarmac-sagan",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sagan-superstar-frameset/p/134251",
+   "timestamp": "20200808102531",
+   "sha256": "9dd577ae6d984b324592d0d72381f735608f9ed97b8957803b1d5f52bfbf24aa",
+   "family": "tarmac-sagan",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sagan-superstar-frameset/p/134251",
+   "timestamp": "20250812000238",
+   "sha256": "e247737186f331409e4eb3a5bace316a2edd6e1ce715df2461af44c2946b4e95",
+   "family": "tarmac-sagan",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl2-frameset/p/22719",
+   "timestamp": "20250817114121",
+   "sha256": "b01431903a2a36713e40f73fa0f783c103968fc777f86b037b60d292136b1a6b",
+   "family": "tarmac-sl2",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl2/p/22007",
+   "timestamp": "20260909041423",
+   "sha256": "b5d097f69e98b23c564e39e9fde7a39a355fa943a81795e85033f7ec52486831",
+   "family": "tarmac-sl2",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl4-frameset/p/49612",
+   "timestamp": "20191211012811",
+   "sha256": "850b2d51049b8fb16639dd1e4d0771bafbec405cbf3907626ed1fe196574ada6",
+   "family": "tarmac-sl4",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl4-osbb-frameset/p/35191",
+   "timestamp": "20210122170256",
+   "sha256": "6c2880aa24b47c1894e74f1edd74f77a03b5391d23fed571530c79d6a68bc175",
+   "family": "tarmac-sl4",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl4-frameset/p/49612",
+   "timestamp": "20251109103354",
+   "sha256": "e73334cc506643c3178568ae15e30053da4204c6f0de791d372791738ecf075a",
+   "family": "tarmac-sl4",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-sl4-elite-105/p/49734",
+   "timestamp": "20260123210233",
+   "sha256": "d53d349768b5e54fc99b1c9720dc60091a42135029d9ab4373b27c034aa77a83",
+   "family": "tarmac-sl4",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-sl6/p/199468",
+   "timestamp": "20250427164157",
+   "sha256": "31e1209927511d0c27835a920d67d9e0f22263af1f1048e9fa42f9f90a462542",
+   "family": "tarmac-sl6",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl6-sram-red-etap-axs/p/171346",
+   "timestamp": "20261111074516",
+   "sha256": "7c25ec6bb94b6193d1f41033c5b78edfe5b05789bf947f49803c478104f9ff31",
+   "family": "tarmac-sl6",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-sl7-comp---rival-etap-axs/p/199523",
+   "timestamp": "20231203134443",
+   "sha256": "30fbdd94fa662aa2e246ecd4084e038f9953ddec8111a91f55f634406a1747ae",
+   "family": "tarmac-sl7",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-sl7-sport-shimano-105/p/4221542",
+   "timestamp": "20251121114245",
+   "sha256": "c368a22c33af243181bbebc9efe095595139e1b15b0ceb1e2bb7d3fa4df8e329",
+   "family": "tarmac-sl7",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-sl7-sport-shimano-105/p/216958",
+   "timestamp": "20261105164042",
+   "sha256": "525bdb9b3ed13b6842897985147a557e855ed4f32ba99709dcc3d0038ad79298",
+   "family": "tarmac-sl7",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl8---sram-red-etap-axs/p/216959",
+   "timestamp": "20231211163041",
+   "sha256": "b1bbeecb25758c7f41b41d3e9ac2ac3d28d51546e6f3b576a732ee6a4fa593c1",
+   "family": "tarmac-sl8",
+   "year": 2024,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-sl8-ltd-red-bull-2025-tdf/p/4293988",
+   "timestamp": "20251007065112",
+   "sha256": "47575283811be1542a883f6085cd16358e5a027defea0d52cc294b784ca25e38",
+   "family": "tarmac-sl8",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-sl8-pro-sram-force-axs-/p/4279927",
+   "timestamp": "20260630151602",
+   "sha256": "3b853919ec4fc1bbb02073965f1c4df58ccdefb78861058772376c8c04f0005c",
+   "family": "tarmac-sl8",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/tarmac-sl9-comp-sram-rival-axs/p/4293529",
+   "timestamp": "20261113115954",
+   "sha256": "b0b68e36d89938f79c6d0d206d11e4c492ab9a333e10cf9b575e5094e06df440",
+   "family": "tarmac-sl9",
+   "year": 2027,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-torch-edition-frameset/p/126261",
+   "timestamp": "20250803213731",
+   "sha256": "c23c4e3ba757ed188f7cedd97c79aae91affb051992f819e8ca835610128e0fc",
+   "family": "tarmac-torch",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-torch-edition-frameset/p/126261",
+   "timestamp": "20260209113919",
+   "sha256": "c23c4e3ba757ed188f7cedd97c79aae91affb051992f819e8ca835610128e0fc",
+   "family": "tarmac-torch",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ultralight-frameset/p/153989",
+   "timestamp": "20191019184752",
+   "sha256": "857fd3b44aa94c22ff8d55d52935046e3137f2afcda72d002c930d05914dec53",
+   "family": "tarmac-ultralight",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ultralight-frameset/p/153989",
+   "timestamp": "20200803173903",
+   "sha256": "857fd3b44aa94c22ff8d55d52935046e3137f2afcda72d002c930d05914dec53",
+   "family": "tarmac-ultralight",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ultralight-frameset/p/153989",
+   "timestamp": "20230331182217",
+   "sha256": "857fd3b44aa94c22ff8d55d52935046e3137f2afcda72d002c930d05914dec53",
+   "family": "tarmac-ultralight",
+   "year": 2023,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ultralight-frameset/p/153989",
+   "timestamp": "20250906141530",
+   "sha256": "857fd3b44aa94c22ff8d55d52935046e3137f2afcda72d002c930d05914dec53",
+   "family": "tarmac-ultralight",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-tarmac-ultralight-frameset/p/153989",
+   "timestamp": "20260122234832",
+   "sha256": "857fd3b44aa94c22ff8d55d52935046e3137f2afcda72d002c930d05914dec53",
+   "family": "tarmac-ultralight",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge/p/154588",
+   "timestamp": "20191210194017",
+   "sha256": "378d8deb83ceb02676dea6bb4dc6d2c27fa2b950011bb9e8e0c715cba80a24eb",
+   "family": "venge",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge/p/154588",
+   "timestamp": "20250522102847",
+   "sha256": "941fe8f375201316f55ed55fabb1e6009662c0e7a089af8bb4f4305b4f516c59",
+   "family": "venge",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge/p/171336",
+   "timestamp": "20260321195458",
+   "sha256": "496fcbedb03fbc68aef327d8b660004873b495cd9732ba4f9fddcee0fbab8ffb",
+   "family": "venge",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge--sagan-collection/p/157778",
+   "timestamp": "20251103203616",
+   "sha256": "aedbde2f40895b054d11a92686b15f294661523194b94bb5f9cdf95d90e70840",
+   "family": "venge-",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge--sagan-collection/p/157778",
+   "timestamp": "20260215043231",
+   "sha256": "aedbde2f40895b054d11a92686b15f294661523194b94bb5f9cdf95d90e70840",
+   "family": "venge-",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-cavendish-frameset/p/51677",
+   "timestamp": "20191020151816",
+   "sha256": "568d22d8eb046512cf264dd1f78a592f1cac91a335774dc538731011fa86d5bf",
+   "family": "venge-cavendish",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-cavendish-frameset/p/51677",
+   "timestamp": "20251113205844",
+   "sha256": "568d22d8eb046512cf264dd1f78a592f1cac91a335774dc538731011fa86d5bf",
+   "family": "venge-cavendish",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-comp-ultegra/p/49929",
+   "timestamp": "20251109065103",
+   "sha256": "bc60993d397f33aa093b44a4232db75ab08bf63f6b0b8b818c576cf329ee9d1f",
+   "family": "venge-comp",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-da/p/35207",
+   "timestamp": "20250815031553",
+   "sha256": "be7c97a7b0c1b32b589e293f43324a0a56afb2070536f726d715411d16bda940",
+   "family": "venge-da",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-di2-sagan-collection-ltd/p/171338",
+   "timestamp": "20191115165320",
+   "sha256": "3079cb5bb2d3e1552a3449efc202776843ff8758207efc56e3042ef3e311b82f",
+   "family": "venge-di2",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-di2-sagan-collection-ltd/p/171338",
+   "timestamp": "20210210174848",
+   "sha256": "b79e7a062b655cacd938e2c316f0261e77ea6c697d558ec2b204cc727cf4a9db",
+   "family": "venge-di2",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-di2-sagan-collection-ltd/p/171338",
+   "timestamp": "20250125102757",
+   "sha256": "c038018e195b714970b89aa366ff64224fe3003f04f22e0d91e4028a4ff33001",
+   "family": "venge-di2",
+   "year": 2025,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-di2--sagan-collection-ltd/p/171338",
+   "timestamp": "20260212164111",
+   "sha256": "4c5878397801dbcfbc1ad39e198fc34d8b0d825b021783f3d39519f4d0d5142d",
+   "family": "venge-di2",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-disc---sram-red-etap-axs/p/171337",
+   "timestamp": "20191117010024",
+   "sha256": "55d977f5b000bcdddb8877d77c23dcfe9000452fdde538ef676080145e41c720",
+   "family": "venge-disc",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-disc-sram-red-etap-axs/p/171337",
+   "timestamp": "20251109152032",
+   "sha256": "a6e1c45f4acc963e859048112b6eaf644f86178907eec28c02810b8c5cebc5ad",
+   "family": "venge-disc",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-disc-sram-red-etap-axs/p/171337",
+   "timestamp": "20260212042108",
+   "sha256": "a6e1c45f4acc963e859048112b6eaf644f86178907eec28c02810b8c5cebc5ad",
+   "family": "venge-disc",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-dura-ace-di2/p/49762",
+   "timestamp": "20191015203756",
+   "sha256": "882eced02fa3d8769e437a2dcde3b4d712b5c6e6ddce13b05d83d6770d82e420",
+   "family": "venge-dura",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-dura-ace/p/65529",
+   "timestamp": "20201021080706",
+   "sha256": "707afa14c76844d6bae7d0d6fb2072f0752768e2bd03874734a61503c2fd8c98",
+   "family": "venge-dura",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-dura-ace/p/50163",
+   "timestamp": "20250714181353",
+   "sha256": "05102fc3ceea47680b3e7e16216effa9a199f783dea5b1da33a9cc2b49c3c66f",
+   "family": "venge-dura",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-elite/p/129243",
+   "timestamp": "20251015204202",
+   "sha256": "1b468477ab2be06fe8c57299482df3b5856d2ff4c74424a14a3bf7090e36b29e",
+   "family": "venge-elite",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-expert-disc/p/128980",
+   "timestamp": "20191212144504",
+   "sha256": "a3e0c734dee4d689474c53ad3aa93c320c714f8ef8ae4ebe353dd0454038a060",
+   "family": "venge-expert",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-expert-mid-compact/p/35203",
+   "timestamp": "20210929201445",
+   "sha256": "1e4d197d24e69834f4c5d70e9839845b352cd2198c30f54d90a2275da2810130",
+   "family": "venge-expert",
+   "year": 2022,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-expert-disc/p/128980",
+   "timestamp": "20260209031133",
+   "sha256": "1df865e1bfd4ccea39d35b0864359aa643e57d0e4e5326b8e43abeefef8add7b",
+   "family": "venge-expert",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-frameset/p/154592",
+   "timestamp": "20191212145024",
+   "sha256": "1ef50f78ab1691c1a93e61d7c8bfdbc1da263507688d7a8887042e15821aca46",
+   "family": "venge-frameset",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-frameset/p/154592",
+   "timestamp": "20210613122921",
+   "sha256": "5b57a60c8dd4afdfcbc56c4d4da3b90b0e3afad416d29d6082888a36484ca800",
+   "family": "venge-frameset",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-frameset/p/49678",
+   "timestamp": "20250906065247",
+   "sha256": "4c523a094c6247ac25893c4577866a7194f7ead0207c8dc4a6de82ee5143bb4d",
+   "family": "venge-frameset",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-osbb-frameset/p/34870",
+   "timestamp": "20191213105928",
+   "sha256": "cf09f216139659916aa551a5cdc90e31acea821aec7262cb3fb1b48b28e6baf7",
+   "family": "venge-osbb",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-osbb-frameset/p/34870",
+   "timestamp": "20210516053826",
+   "sha256": "7ec6e51b59f5574bba724f016acf6fcd590b46da00bebfc4c92df9d63b403fa8",
+   "family": "venge-osbb",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-osbb-frameset/p/34870",
+   "timestamp": "20250815201041",
+   "sha256": "d41c3d02577043253be8445ccbf9af0be51aabf6fec2c8c449b501741ee68560",
+   "family": "venge-osbb",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-pro/p/154594",
+   "timestamp": "20191213055356",
+   "sha256": "a26830d8f91da4e08b7bb6d3a557526bfc813387885cf208128256514d2283fd",
+   "family": "venge-pro",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-pro/p/171339",
+   "timestamp": "20210613102459",
+   "sha256": "31db0d65f390d4f62dd1ba7d1cb8065f1e2fcb0df1b692d814fbf912c1c01f24",
+   "family": "venge-pro",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/venge-pro-sram-etap/p/171340",
+   "timestamp": "20260307120111",
+   "sha256": "d7306212b13bfda06d42fa126fd094829811d66fa53cba2c069c63b0a9961282",
+   "family": "venge-pro",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-red-hrr/p/49908",
+   "timestamp": "20251112090747",
+   "sha256": "9b20d45e0ae39ef57f0dbf11753f2d2013a08f8ecb6a0c6d91f5051775d0eea2",
+   "family": "venge-red",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-sagan-collection/p/157778",
+   "timestamp": "20191215004526",
+   "sha256": "ce2cc7302f86befa79199baf714513a866deb0fc515669dbe680ae9013d87e8f",
+   "family": "venge-sagan",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-sagan-collection/p/157778",
+   "timestamp": "20210411223924",
+   "sha256": "55e927b8603d388e12af8f6c42352158824ae212a02e2b1d1364210e2e410959",
+   "family": "venge-sagan",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-sagan-frameset/p/107431",
+   "timestamp": "20250905153316",
+   "sha256": "8eb711e02e698d763b2e317d5e65b3197f9fc81b30ccab968b1da2f3c0937c97",
+   "family": "venge-sagan",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-sram-red/p/34868",
+   "timestamp": "20201127145229",
+   "sha256": "909502dfbd110d113eacfa2df5a6f73b38a09a8f8f83eb8e40e9eaec902fae1d",
+   "family": "venge-sram",
+   "year": 2021,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-sram-red/p/34868",
+   "timestamp": "20251005190144",
+   "sha256": "577f83d51ae3f0caf7e0f15ff331efaa85ca5a60ff8af88facfe080aebabacc1",
+   "family": "venge-sram",
+   "year": 2026,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-vias-disc-di2/p/129134",
+   "timestamp": "20191209073001",
+   "sha256": "21f50a7dbe7b2a85998bdfc5c770017b1b5afb8c57e535dd2d786719c0f1cc74",
+   "family": "venge-vias",
+   "year": 2020,
+   "related": []
+  },
+  {
+   "url": "https://www.specialized.com/us/en/s-works-venge-vias-disc-di2/p/129134",
+   "timestamp": "20210509013622",
+   "sha256": "25a96910d7e6e297cf75d126c4e262c7f94f7313ba2268c0b89a5b05bfb0c550",
+   "family": "venge-vias",
+   "year": 2021,
+   "related": []
+  }
+ ]
+}

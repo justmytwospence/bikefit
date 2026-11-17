@@ -2,165 +2,33 @@
   "brand": "Allied",
   "models": [
     {
-      "model": "Echo",
-      "year": 2026,
-      "category": "endurance",
-      "source": "https://alliedcycleworks.com/collections/echo",
-      "retrieved": "2026-11-16",
-      "sizes": [
-        {
-          "size": "47",
-          "stack": 520,
-          "reach": 362,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 94,
-          "seatTubeLength": 440,
-          "chainstay": 425,
-          "wheelbase": 989,
-          "bbDrop": 80
-        },
-        {
-          "size": "52",
-          "stack": 535,
-          "reach": 371,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 71,
-          "headTubeLength": 110,
-          "seatTubeLength": 470,
-          "chainstay": 425,
-          "wheelbase": 1003.2,
-          "bbDrop": 80
-        },
-        {
-          "size": "54",
-          "stack": 555,
-          "reach": 377,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 72,
-          "headTubeLength": 127,
-          "seatTubeLength": 500,
-          "chainstay": 425,
-          "wheelbase": 1006.6,
-          "bbDrop": 80
-        },
-        {
-          "size": "56",
-          "stack": 575,
-          "reach": 384,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72,
-          "headTubeLength": 148,
-          "seatTubeLength": 540,
-          "chainstay": 425,
-          "wheelbase": 1020.1,
-          "bbDrop": 80
-        },
-        {
-          "size": "58",
-          "stack": 600,
-          "reach": 392,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72,
-          "headTubeLength": 175,
-          "seatTubeLength": 560,
-          "chainstay": 425,
-          "wheelbase": 1036.2,
-          "bbDrop": 80
-        },
-        {
-          "size": "61",
-          "stack": 625,
-          "reach": 400,
-          "seatTubeAngle": 73.5,
-          "headTubeAngle": 72,
-          "headTubeLength": 201,
-          "seatTubeLength": 580,
-          "chainstay": 425,
-          "wheelbase": 1052.3,
-          "bbDrop": 80
-        }
-      ]
-    },
-    {
       "model": "Able",
       "year": 2022,
       "category": "gravel",
       "source": "https://alliedcycleworks.com/collections/able",
       "retrieved": "2026-11-16",
       "sizes": [
-        {
-          "size": "48",
-          "stack": 535,
-          "reach": 375,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 69,
-          "headTubeLength": 98,
-          "seatTubeLength": 440,
-          "chainstay": 435,
-          "wheelbase": 1036,
-          "bbDrop": 80
-        },
-        {
-          "size": "52",
-          "stack": 540,
-          "reach": 390,
-          "seatTubeAngle": 75,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 97,
-          "seatTubeLength": 460,
-          "chainstay": 435,
-          "wheelbase": 1039,
-          "bbDrop": 80
-        },
-        {
-          "size": "54",
-          "stack": 555,
-          "reach": 395,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 113,
-          "seatTubeLength": 500,
-          "chainstay": 435,
-          "wheelbase": 1049,
-          "bbDrop": 80
-        },
-        {
-          "size": "56",
-          "stack": 575,
-          "reach": 400,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 135,
-          "seatTubeLength": 530,
-          "chainstay": 435,
-          "wheelbase": 1061,
-          "bbDrop": 80
-        },
-        {
-          "size": "58",
-          "stack": 595,
-          "reach": 410,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 156,
-          "seatTubeLength": 550,
-          "chainstay": 435,
-          "wheelbase": 1078,
-          "bbDrop": 80
-        },
-        {
-          "size": "61",
-          "stack": 615,
-          "reach": 415,
-          "seatTubeAngle": 74,
-          "headTubeAngle": 70.5,
-          "headTubeLength": 177,
-          "seatTubeLength": 570,
-          "chainstay": 435,
-          "wheelbase": 1090,
-          "bbDrop": 80
-        }
+        ["48",535,375,75,69,98,440,435,1036,80],
+        ["52",540,390,75,70.5,97,460,435,1039,80],
+        ["54",555,395,74,70.5,113,500,435,1049,80],
+        ["56",575,400,74,70.5,135,530,435,1061,80],
+        ["58",595,410,74,70.5,156,550,435,1078,80],
+        ["61",615,415,74,70.5,177,570,435,1090,80]
+      ]
+    },
+    {
+      "model": "Echo",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://alliedcycleworks.com/collections/echo",
+      "retrieved": "2026-11-16",
+      "sizes": [
+        ["47",520,362,74,71,94,440,425,989,80],
+        ["52",535,371,74,71,110,470,425,1003.2,80],
+        ["54",555,377,74,72,127,500,425,1006.6,80],
+        ["56",575,384,73.5,72,148,540,425,1020.1,80],
+        ["58",600,392,73.5,72,175,560,425,1036.2,80],
+        ["61",625,400,73.5,72,201,580,425,1052.3,80]
       ]
     }
   ]
