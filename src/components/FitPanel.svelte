@@ -7,8 +7,9 @@
   import { clamp } from '../model/vec';
   import { CUSTOM_HINT, fixedSummary, KNOB_ORDER, PRESETS, presetLocks, presetOf, type Preset } from '../lib/knobs';
   import {
-    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo,
+    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo, useSize,
   } from '../state.svelte';
+  import { sizeVerdictLine } from '../lib/sizes';
   import { STYLES } from '../model/styles';
   import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
@@ -40,6 +41,7 @@
   }
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 
+  const VERDICT_TEXT = { fits: 'fits', compromise: 'fits with compromises', no: 'does not fit' } as const;
   const preset = $derived(presetOf(app.locks));
   const presetHint = $derived(preset === 'custom' ? CUSTOM_HINT : PRESETS.find((p) => p.value === preset)!.hint);
   const GROUPS: { title: string; keys: ParamKey[] }[] = [
@@ -61,7 +63,7 @@
   <p class="muted small start">
     {app.hasSetup
       ? 'Changes are counted from your setup. Optimize prefers adjustments over new parts.'
-      : 'No bike set up yet: Optimize picks the best build for this frame.'}
+      : `No bike set up yet: Optimize picks the best build for this frame${frame.id.startsWith('cat:') ? ' and checks its other sizes' : ''}.`}
   </p>
   <h2>What can you change?</h2>
   <Segmented
@@ -177,6 +179,20 @@
       <p>Saddle height {c.saddleHeight} mm</p>
       <p>{buildSummary(c, resultsLv >= 2)}</p>
       {@render verdictLine()}
+      {#if ui.sizes}
+        <h3>Sizes</h3>
+        <div class="sizes" role="group" aria-label="Sizes">
+          {#each ui.sizes.options as o (o.frame.id)}
+            {@const r = ui.sizes.rows.find((x) => x.frameId === o.frame.id)!}
+            <button
+              type="button" class="sz {r.result.verdict}" class:on={o.frame.id === app.activeFrameId}
+              aria-pressed={o.frame.id === app.activeFrameId} aria-label="Size {o.size}: {VERDICT_TEXT[r.result.verdict]}"
+              title={VERDICT_TEXT[r.result.verdict]} onclick={() => useSize(o.frame.id)}
+            >{o.size}</button>
+          {/each}
+        </div>
+        <p class="small">{sizeVerdictLine(ui.sizes.rows, app.activeFrameId, (id) => ui.sizes!.options.find((o) => o.frame.id === id)!.size)}</p>
+      {/if}
       {#if ui.notes && resultsLv >= 2}
         <h3>Why it stops here</h3>
         <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
@@ -225,6 +241,12 @@
   .lk { font-size: 12px; font-weight: 500; color: var(--muted); display: flex; gap: 6px; align-items: center; min-height: 36px; }
   .rails { margin: -4px 0 10px; }
   .start { margin-top: 6px; }
+  .sizes { display: flex; flex-wrap: wrap; gap: 6px; }
+  .sz { min-width: 44px; min-height: 36px; border-radius: 10px; border: 2px solid transparent; font-weight: 700; background: var(--surface-2); }
+  .sz.fits { color: var(--ok); }
+  .sz.compromise { color: var(--near); }
+  .sz.no { color: var(--off); }
+  .sz.on { border-color: currentColor; background: var(--surface); }
   .fixed { margin-top: 18px; }
   .fixed summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
   .fixed summary b::after { content: ' ▾'; color: var(--muted); }

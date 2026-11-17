@@ -341,7 +341,9 @@ export function bindingNotes(problem: FitProblem, result: FitResult): string[] {
   return notes;
 }
 
-const VERDICT_RANK: Record<Verdict, number> = { fits: 0, compromise: 1, no: 2 };
+export const VERDICT_RANK: Record<Verdict, number> = { fits: 0, compromise: 1, no: 2 };
+export const byVerdictThenCost = (a: CompareRow, b: CompareRow) =>
+  VERDICT_RANK[a.result.verdict] - VERDICT_RANK[b.result.verdict] || a.result.cost - b.result.cost;
 
 const signed = (a: number) => (a === 0 ? '0°' : a < 0 ? `−${fmtNum(-a)}°` : `+${fmtNum(a)}°`);
 
@@ -383,5 +385,12 @@ export function compareFrames(
       frameName: frame.name,
       result: optimizeFit({ ...problemFor, frame, current: problemFor.baseline, mode: 'shop', locks: {} }),
     }))
-    .sort((a, b) => VERDICT_RANK[a.result.verdict] - VERDICT_RANK[b.result.verdict] || a.result.cost - b.result.cost);
+    .sort(byVerdictThenCost);
+}
+
+/** Optimize one problem on several frames (the sizes of a model), best first. Keeps the problem's locks. */
+export function optimizeSizes(problem: FitProblem, frames: Frame[]): CompareRow[] {
+  return frames
+    .map((frame) => ({ frameId: frame.id, frameName: frame.name, result: optimizeFit({ ...problem, frame }) }))
+    .sort(byVerdictThenCost);
 }

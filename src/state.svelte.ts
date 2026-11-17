@@ -1,7 +1,8 @@
-import { runCompare, runOptimize } from './lib/optimizeClient';
+import { runCompare, runOptimize, runSizes } from './lib/optimizeClient';
+import { sizeFamily, type SizeOption } from './lib/sizes';
 import { defaults, migrate, type AppData } from './lib/appData';
 import { resolveSegments } from './model/body';
-import type { CompareRow, FitProblem, Verdict } from './model/optimize';
+import type { CompareRow, FitProblem, FitResult, Verdict } from './model/optimize';
 import { EXAMPLE_FRAMES } from './model/presets';
 import { poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
@@ -54,6 +55,7 @@ export const ui = $state({
   animate: false,
   viewPose: 'hoods' as 'hoods' | 'drops',
   measure: null as MeasureId | null,
+  sizes: null as { rows: CompareRow[]; options: SizeOption[] } | null,
 });
 
 export function save() {
@@ -99,6 +101,32 @@ function clearFeedback() {
   ui.notes = null;
   ui.verdict = null;
   ui.flags = [];
+  ui.sizes = null;
+}
+
+/** The sizes of the active frame's catalog model, when a new build may still choose among them. */
+async function sizeOptions(): Promise<SizeOption[] | null> {
+  const f = activeFrame();
+  if (app.hasSetup || !f.id.startsWith('cat:')) return null;
+  const cat = await import('./data/catalog');
+  return sizeFamily(snap(f), cat.CATALOG, cat.toFrame);
+}
+
+/** Switches to another size from the last Optimize, saving it if needed, with that size's build. */
+export function useSize(frameId: string) {
+  const s = ui.sizes;
+  const row = s?.rows.find((r) => r.frameId === frameId);
+  const opt = s?.options.find((o) => o.frame.id === frameId);
+  if (!s || !row || !opt) return;
+  if (!app.frames.some((f) => f.id === frameId)) app.frames.push(snap(opt.frame));
+  app.activeFrameId = frameId;
+  ui.animate = true;
+  Object.assign(app.current, snap(row.result.params));
+  ui.ghost = null;
+  ui.undo = null;
+  ui.notes = row.result.notes;
+  ui.verdict = row.result.verdict;
+  ui.flags = row.result.flags;
 }
 
 export async function optimize() {
@@ -106,7 +134,17 @@ export async function optimize() {
   ui.error = '';
   try {
     const before = snap(app.current);
-    const result = await runOptimize(problem(app.hasSetup ? 'tune' : 'shop'));
+    const p = problem(app.hasSetup ? 'tune' : 'shop');
+    const options = await sizeOptions();
+    let result: FitResult;
+    if (options) {
+      const rows = await runSizes(p, options.map((o) => o.frame));
+      result = rows.find((r) => r.frameId === app.activeFrameId)!.result;
+      ui.sizes = { rows, options };
+    } else {
+      result = await runOptimize(p);
+      ui.sizes = null;
+    }
     ui.undo = before;
     ui.ghost = before;
     ui.animate = true;

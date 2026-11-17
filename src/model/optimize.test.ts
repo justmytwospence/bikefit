@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
-import { compareFrames, costOf, idealLayout, optimizeFit, standoverHeight, wrenchList, type FitProblem } from './optimize';
+import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, standoverHeight, wrenchList, type FitProblem } from './optimize';
 import { evaluateFit } from './pose';
 import { TEST_BODY } from './testFrames';
 import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
@@ -100,6 +100,14 @@ describe('verdicts', () => {
     expect(rows[0].result.verdict).toBe('fits');
     expect(rows[1].result.verdict).toBe('compromise');
     expect(rows[1].result.flags.join(' ')).toContain('standover');
+  });
+  it('optimizes sizes best first and keeps locks', () => {
+    const base = problem('endurance', frame('endurance-56'));
+    const p = { ...base, locks: { crankLength: true }, current: { ...DEFAULT_PARAMS, crankLength: 170 } };
+    const rows = optimizeSizes(p, [sized('tall', 640, 400, 600), sized('right', 585, 380, 520)]);
+    expect(rows.map((r) => r.frameId)).toEqual(['right', 'tall']);
+    expect([...rows].sort(byVerdictThenCost).map((r) => r.frameId)).toEqual(['right', 'tall']);
+    for (const r of rows) expect(r.result.params.crankLength).toBe(170);
   });
   it('says no when the bars cannot be reached', () => {
     const far: Frame = { ...frame('race-56'), id: 'far', stack: 480, reach: 520 };
