@@ -16,6 +16,7 @@
   let brand = $state('all');
   let show = $state<Verdict>('compromise');
   let limit = $state(30);
+  let since = $state(0);
 
   onMount(async () => {
     const [c, s] = await Promise.all([import('../data/catalog'), import('../data/search')]);
@@ -44,7 +45,7 @@
     all.filter((g) => {
       const id = ui.catalog!.modelOf[g.best.frameId];
       const m = byId.get(id);
-      return !!m && hitIds.has(id) && (brand === 'all' || m.brand === brand)
+      return !!m && hitIds.has(id) && (brand === 'all' || m.brand === brand) && m.year >= since
         && VERDICT_RANK[g.best.result.verdict] <= VERDICT_RANK[show];
     }),
   );
@@ -52,19 +53,19 @@
   const withCleats = $derived(app.detail.results >= 2);
 
   $effect(() => {
-    query; category; brand; show;
+    query; category; brand; show; since;
     limit = 30;
   });
 </script>
 
-<p class="muted">Checks every bike in the catalog for your body and this style, two likely sizes per model, and ranks them by fit score. Parts you marked as fixed in Fit stay as they are.</p>
+<p class="muted">Checks every bike in the catalog for your body and this style, and ranks them by fit score. Parts you marked as fixed in Fit stay as they are.</p>
 {#if !ui.catalog || stale}
   <button type="button" class="btn primary full" disabled={ui.catalog?.running} onclick={runCatalogFit}>
     {ui.catalog ? 'Check again' : 'Find bikes that fit'}
   </button>
 {/if}
 {#if ui.catalog?.running}
-  <p class="muted small">Checking {ui.catalog.done} of {ui.catalog.total} sizes…</p>
+  <p class="muted small">Checking {ui.catalog.done} of {ui.catalog.total} models…</p>
   <progress max={ui.catalog.total} value={ui.catalog.done}></progress>
 {/if}
 {#if ui.error}<p class="err">{ui.error}</p>{/if}
@@ -76,6 +77,10 @@
     <select aria-label="Brand" bind:value={brand}>
       <option value="all">All brands</option>
       {#each brands as b (b)}<option value={b}>{b}</option>{/each}
+    </select>
+    <select aria-label="Model year" bind:value={since}>
+      <option value={0}>Any year</option>
+      {#each [2026, 2025, 2024, 2022, 2020] as y (y)}<option value={y}>{y} or newer</option>{/each}
     </select>
     <div class="scrollx">
       <Segmented compact ariaLabel="Category" options={[{ value: 'all', label: 'All' }, ...cat.CATEGORIES]} bind:value={category} />
@@ -94,7 +99,7 @@
     <button type="button" class="btn small" onclick={() => (limit += 30)}>Show more</button>
   {/if}
 {/if}
-<p class="muted small foot">Only the two sizes nearest your ideal bar position are checked per model; pick a bike to see all its sizes in Fit.</p>
+<p class="muted small foot">Each model's sizes are checked outward from the one nearest your ideal bar position, until they stop fitting.</p>
 
 <style>
   .full { width: 100%; }

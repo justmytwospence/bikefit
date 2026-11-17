@@ -4,34 +4,34 @@ import { DEFAULT_PARAMS } from '../model/presets';
 import type { Components, Frame } from '../model/types';
 import type { Vec2 } from '../model/vec';
 
-export interface Candidate {
-  frame: Frame;
+export interface ModelJob {
   modelId: string;
-  size: string;
+  frames: Frame[];
+  start: number;
+  dist: number;
 }
 
 /**
- * The sizes worth optimizing: per model, the `perModel` sizes whose hoods (default stem and angle, up to 20 mm
- * of spacers) land nearest the ideal hoods point. Returned in catalog order.
+ * Every model with all its sizes, the index of the size whose hoods (default stem and angle, up to 20 mm of
+ * spacers) land nearest the ideal hoods point, and that distance. Sorted nearest first, then by model order.
  */
 export function screenCatalog(
   models: CatalogModel[], toFrame: (m: CatalogModel, s: CatalogSize) => Frame,
-  components: Components, idealHoods: Vec2, perModel = 2,
-): Candidate[] {
-  const out: Candidate[] = [];
-  for (const m of models) {
+  components: Components, idealHoods: Vec2,
+): ModelJob[] {
+  const jobs = models.map((m, order) => {
     const frames = m.sizes.map((s) => toFrame(m, s));
-    const dist = frames.map((f) => {
+    let start = 0;
+    let dist = Infinity;
+    frames.forEach((f, i) => {
       const h = forwardLayout(f, components, { ...DEFAULT_PARAMS, spacers: Math.min(DEFAULT_PARAMS.spacers, f.maxSpacers) }).hoods;
-      return Math.hypot(h.x - idealHoods.x, h.y - idealHoods.y);
+      const d = Math.hypot(h.x - idealHoods.x, h.y - idealHoods.y);
+      if (d < dist) {
+        dist = d;
+        start = i;
+      }
     });
-    const keep = dist
-      .map((d, i) => ({ d, i }))
-      .sort((a, b) => a.d - b.d || a.i - b.i)
-      .slice(0, perModel)
-      .map((x) => x.i)
-      .sort((a, b) => a - b);
-    for (const i of keep) out.push({ frame: frames[i], modelId: m.id, size: m.sizes[i].size });
-  }
-  return out;
+    return { job: { modelId: m.id, frames, start, dist }, order };
+  });
+  return jobs.sort((a, b) => a.job.dist - b.job.dist || a.order - b.order).map((x) => x.job);
 }

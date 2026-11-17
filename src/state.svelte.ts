@@ -41,6 +41,17 @@ function load(): AppData {
 
 export const app: AppData = $state(load());
 
+/** Immutable so Svelte does not deep-proxy thousands of rows; replace it with `with` to update. */
+export class CatalogView {
+  constructor(
+    readonly rows: CompareRow[], readonly frames: Frame[], readonly modelOf: Record<string, string>,
+    readonly done: number, readonly total: number, readonly key: string, readonly running: boolean,
+  ) {}
+  with(p: Partial<Pick<CatalogView, 'rows' | 'done' | 'running'>>): CatalogView {
+    return new CatalogView(p.rows ?? this.rows, this.frames, this.modelOf, p.done ?? this.done, this.total, this.key, p.running ?? this.running);
+  }
+}
+
 export const ui = $state({
   busy: false,
   error: '' as string,
@@ -58,10 +69,7 @@ export const ui = $state({
   measure: null as MeasureId | null,
   sizes: null as { rows: CompareRow[]; options: SizeOption[] } | null,
   compareSource: 'saved' as 'saved' | 'all',
-  catalog: null as null | {
-    rows: CompareRow[]; frames: Frame[]; modelOf: Record<string, string>;
-    done: number; total: number; key: string; running: boolean;
-  },
+  catalog: null as CatalogView | null,
 });
 
 export function save() {
@@ -222,7 +230,7 @@ export function catalogKey(): string {
 
 let catalogRun = 0;
 
-/** Checks the likeliest sizes of every catalog model for this rider and style, streaming rows into ui.catalog. */
+/** Checks every catalog model for this rider and style, walking its sizes outward from the best start. */
 export async function runCatalogFit() {
   const run = ++catalogRun;
   ui.error = '';
@@ -232,28 +240,30 @@ export async function runCatalogFit() {
     rest.segments, rest.targets, rest.poseWeights,
     makeContext(null, rest.components, rest.ankling, rest.effort), rest.components, rest.options.crankLengths,
   );
-  const cands = screenCatalog(cat.CATALOG, cat.toFrame, rest.components, ideal.hoods);
-  ui.catalog = {
-    rows: [], frames: cands.map((c) => c.frame),
-    modelOf: Object.fromEntries(cands.map((c) => [c.frame.id, c.modelId])),
-    done: 0, total: cands.length, key: catalogKey(), running: true,
+  const jobs = screenCatalog(cat.CATALOG, cat.toFrame, rest.components, ideal.hoods);
+  const modelOf: Record<string, string> = {};
+  for (const j of jobs) for (const f of j.frames) modelOf[f.id] = j.modelId;
+  ui.catalog = new CatalogView([], jobs.flatMap((j) => j.frames), modelOf, 0, jobs.length, catalogKey(), true);
+  let latest: { rows: CompareRow[]; done: number } | null = null;
+  let timer: ReturnType<typeof setTimeout> | null = null;
+  const flush = () => {
+    timer = null;
+    if (run === catalogRun && ui.catalog && latest) ui.catalog = ui.catalog.with(latest);
   };
   try {
-    const rows = await runCatalog(rest, cands.map((c) => c.frame), (r, done) => {
-      if (run === catalogRun && ui.catalog) {
-        ui.catalog.rows = r;
-        ui.catalog.done = done;
-      }
+    const rows = await runCatalog(rest, jobs, (r, done) => {
+      latest = { rows: r, done };
+      if (!timer) timer = setTimeout(flush, 250);
     }, snap(app.locks));
-    if (run === catalogRun && ui.catalog) {
-      ui.catalog.rows = rows;
-      ui.catalog.done = ui.catalog.total;
-    }
+    if (timer) clearTimeout(timer);
+    latest = { rows, done: jobs.length };
+    flush();
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     if (msg !== 'Superseded' && run === catalogRun) ui.error = msg;
   } finally {
-    if (run === catalogRun && ui.catalog) ui.catalog.running = false;
+    if (timer) clearTimeout(timer);
+    if (run === catalogRun && ui.catalog) ui.catalog = ui.catalog.with({ running: false });
   }
 }
 

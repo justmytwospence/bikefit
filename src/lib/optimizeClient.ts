@@ -49,7 +49,7 @@ let pool: { workers: Worker[]; reject: (e: Error) => void } | null = null;
 
 /** Runs compareFrames over many frames on a pool of workers, reporting rows as chunks finish. Best score first. */
 export function runCatalog(
-  problem: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>, frames: Frame[],
+  problem: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>, jobs: { frames: Frame[]; start: number }[],
   onChunk: (rows: CompareRow[], done: number) => void, locks: Partial<Record<ParamKey, boolean>> = {},
 ): Promise<CompareRow[]> {
   if (pool) {
@@ -57,11 +57,11 @@ export function runCatalog(
     pool.reject(new Error('Superseded'));
     pool = null;
   }
-  if (!frames.length) return Promise.resolve([]);
+  if (!jobs.length) return Promise.resolve([]);
   return new Promise<CompareRow[]>((resolve, reject) => {
     const n = Math.max(2, Math.min(8, (navigator.hardwareConcurrency || 4) - 1));
-    const chunks: Frame[][] = [];
-    for (let i = 0; i < frames.length; i += 6) chunks.push(frames.slice(i, i + 6));
+    const chunks: { frames: Frame[]; start: number }[][] = [];
+    for (let i = 0; i < jobs.length; i += 4) chunks.push(jobs.slice(i, i + 4));
     const workers: Worker[] = [];
     const mine = { workers, reject };
     pool = mine;
@@ -76,7 +76,7 @@ export function runCatalog(
     const post = (w: Worker) => {
       if (next >= chunks.length) return;
       const i = next++;
-      w.postMessage({ id: i, kind: 'compare', payload: { problem, frames: chunks[i], locks } });
+      w.postMessage({ id: i, kind: 'walk', payload: { problem, jobs: chunks[i], locks } });
     };
     for (let k = 0; k < Math.min(n, chunks.length); k++) {
       const w = new Worker(new URL('../worker/optimize.worker.ts', import.meta.url), { type: 'module' });

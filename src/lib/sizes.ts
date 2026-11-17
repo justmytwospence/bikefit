@@ -48,12 +48,17 @@ export interface ModelGroup {
 export function groupRows(rows: CompareRow[], frames: Frame[]): ModelGroup[] {
   const order = new Map(frames.map((f, i) => [f.id, i]));
   const groups: ModelGroup[] = [];
+  const byKey = new Map<string, ModelGroup>();
   for (const row of rows) {
     const cut = row.frameName.lastIndexOf(' · ');
     const model = row.frameId.startsWith('cat:') && cut >= 0;
     const key = model ? 'm:' + row.frameName.slice(0, cut) : 'f:' + row.frameId;
-    let g = groups.find((x) => x.key === key);
-    if (!g) groups.push((g = { key, name: model ? row.frameName.slice(0, cut) : row.frameName, sizes: [], best: row }));
+    let g = byKey.get(key);
+    if (!g) {
+      g = { key, name: model ? row.frameName.slice(0, cut) : row.frameName, sizes: [], best: row };
+      groups.push(g);
+      byKey.set(key, g);
+    }
     g.sizes.push({ size: model ? row.frameName.slice(cut + 3) : '', row });
     if (byVerdictThenCost(row, g.best) < 0) g.best = row;
   }
