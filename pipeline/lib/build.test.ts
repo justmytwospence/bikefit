@@ -62,6 +62,23 @@ describe('buildBrand', () => {
     const f = buildBrand(adapter, manifest, pages, { ...none, manual: [man('https://a/1/', 'Hand'), man('https://a/9', 'Other')] }, midFill);
     expect(f.models.map((m) => m.model)).toEqual(['Bike', 'Other']);
   });
+  it('drops a manual entry whose model and years are already covered', () => {
+    const man = (model: string, year: number) => ({
+      model, year, category: 'race' as const, source: `https://other/${model}${year}`, retrieved: '2026-01-01',
+      sizes: [['S', 520, 370, 73.5, 72.5, 120, 500, 410, 980, 72], ['M', 540, 380, 73.5, 72.5, 120, 500, 410, 980, 72]] as SizeRow[],
+    });
+    const { manifest, pages, adapter } = setup([
+      { year: 2020, ts: '20200301000000', url: 'https://a/1', out: [ex('Bike')] },
+      { year: 2024, ts: '20240301000000', url: 'https://a/2', out: [ex('Bike')] },
+    ]);
+    const f = buildBrand(adapter, manifest, pages, { ...none, manual: [man('Bike', 2022), man('Bike', 2018)] }, midFill);
+    expect(f.models.map((m) => `${m.model} ${m.year}`)).toEqual(['Bike 2018', 'Bike 2020']);
+  });
+  it('keeps a real size whose reach dips by a millimetre', () => {
+    const s = [sz('S', 520, 370), sz('M', 540, 369), sz('L', 560, 395)];
+    const { manifest, pages, adapter } = setup([{ year: 2024, ts: '20240301000000', url: 'https://a/1', out: [ex('A', s)] }]);
+    expect(buildBrand(adapter, manifest, pages, none, midFill).models[0].sizes).toHaveLength(3);
+  });
   it('is byte-identical across runs and page order', () => {
     const data = [
       { year: 2020, ts: '20200301000000', url: 'https://a/1', out: [ex('Bike'), ex('Other', sizes(10))] },

@@ -5,28 +5,28 @@ export const LABELS: Record<GeometryKey, string[]> = {
   reach: ['reach', 'frame reach'],
   seatTubeAngle: [
     'seat tube angle', 'seat angle', 'effective seat tube angle', 'sitzrohrwinkel', 'angle du tube de selle',
-    'angolo tubo sella', 'angulo tubo sillin', 'zitbuishoek',
+    'angolo tubo sella', 'angulo tubo sillin', 'zitbuishoek', 'sitzwinkel',
   ],
   headTubeAngle: [
     'head tube angle', 'head angle', 'lenkwinkel', 'steuerrohrwinkel', 'angle de direction', 'angolo sterzo',
-    'angulo direccion', 'balhoofdhoek',
+    'angulo direccion', 'balhoofdhoek', 'steering angle',
   ],
   headTubeLength: [
     'head tube length', 'head tube', 'steuerrohrlange', 'longueur du tube de direction', 'lunghezza tubo sterzo',
-    'longitud tubo direccion', 'balhoofdlengte',
+    'longitud tubo direccion', 'balhoofdlengte', 'headtube', 'steuerrohr',
   ],
   seatTubeLength: [
     'seat tube length', 'seat tube', 'seat tube c t', 'seat tube c c', 'sitzrohrlange', 'longueur du tube de selle',
-    'lunghezza tubo sella', 'longitud tubo sillin', 'zitbuislengte',
+    'lunghezza tubo sella', 'longitud tubo sillin', 'zitbuislengte', 'bb center to top of seattube', 'sitzrohr',
   ],
   chainstay: [
     'chainstay length', 'chainstay', 'chain stay length', 'chain stay', 'kettenstrebenlange', 'longueur des bases',
-    'lunghezza foderi orizzontali', 'longitud vainas', 'liggende achtervork',
+    'lunghezza foderi orizzontali', 'longitud vainas', 'liggende achtervork', 'rear center', 'rear centre', 'chainstays', 'chain stays', 'kettenstreben',
   ],
   wheelbase: ['wheelbase', 'wheel base', 'radstand', 'empattement', 'interasse', 'distancia entre ejes', 'wielbasis'],
   bbDrop: [
     'bb drop', 'bottom bracket drop', 'tretlagerabsenkung', 'drop du boitier', 'abbassamento movimento centrale',
-    'caida pedalier', 'bb verlaging',
+    'caida pedalier', 'bb verlaging', 'bb offset',
   ],
 };
 

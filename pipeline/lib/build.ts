@@ -42,20 +42,21 @@ function clean(e: Extracted, fill: Fill, log: (s: string) => void): { rows: Size
     rows.push([s.size, ...nums]);
   }
   if (rows.length < 2) return null;
-  rows.sort((a, b) => (a[2] as number) - (b[2] as number) || (a[1] as number) - (b[1] as number) || cmp(a[0], b[0]));
+  rows.sort((a, b) => (a[1] as number) - (b[1] as number) || (a[2] as number) - (b[2] as number) || cmp(a[0], b[0]));
   if (new Set(rows.map((r) => r[0])).size !== rows.length) {
     log(`dropped (duplicate size labels): ${e.model}`);
     return null;
   }
-  for (let i = rows.length - 1; i >= 1; i--) {
-    const prev = rows.slice(0, i).reduce((m, r) => Math.max(m, r[1] as number), 0);
-    if ((rows[i][1] as number) < prev - 3) {
-      log(`dropped size ${rows[i][0]} (stack drops with size): ${e.model}`);
-      rows.splice(i, 1);
-    }
+  // A size whose reach falls well below a smaller size's is a typo in the source; drop it.
+  let maxReach = 0;
+  for (let i = 0; i < rows.length; i++) {
+    const reach = rows[i][2] as number;
+    if (reach < maxReach - 10) {
+      log(`dropped size ${rows[i][0]} (reach drops with size): ${e.model}`);
+      rows.splice(i--, 1);
+    } else maxReach = Math.max(maxReach, reach);
   }
-  if (rows.length < 2) return null;
-  if ((rows[rows.length - 1][2] as number) <= (rows[0][2] as number)) return null;
+  if (rows.length < 2 || (rows[rows.length - 1][2] as number) <= (rows[0][2] as number)) return null;
   return { rows, estimated: OPTIONAL.filter((k) => est.has(k)) };
 }
 
@@ -108,9 +109,13 @@ export function buildBrand(
     else byId.set(id, m);
   }
   const sources = new Set([...byId.values()].map((m) => stripUrl(m.source)));
+  const extracted = [...byId.values()];
   for (const m of overrides.manual) {
     const id = `${slug(m.model)}-${m.year}`;
     if (sources.has(stripUrl(m.source)) || byId.has(id)) continue;
+    // A hand-entered model is redundant when a page-derived one of the same name covers its years.
+    const last = m.lastYear ?? m.year;
+    if (extracted.some((x) => slug(x.model) === slug(m.model) && x.year <= last && (x.lastYear ?? x.year) >= m.year)) continue;
     byId.set(id, m);
   }
   const models = [...byId.values()].sort((a, b) => cmp(a.model, b.model) || a.year - b.year);
