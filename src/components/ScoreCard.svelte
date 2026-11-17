@@ -28,9 +28,16 @@
 </label>
 
 <style>
-  .score { position: relative; flex: 0 0 auto; display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; cursor: pointer; }
+  .score { position: relative; flex: 0 0 auto; display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 8px 10px; cursor: pointer; }
   .score:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
   select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
   .k { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
   .name { display: block; font-weight: 600; white-space: nowrap; }
+  /* Phones: ring over the style name, about as wide as a metric card. */
+  @media (max-width: 479px) {
+    .score { flex-direction: column; justify-content: center; gap: 4px; padding: 6px 8px; min-width: 84px; }
+    svg { width: 36px; height: 36px; }
+    .k { display: none; }
+    .name { font-size: 13px; }
+  }
 </style>

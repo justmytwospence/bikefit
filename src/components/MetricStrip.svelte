@@ -54,7 +54,7 @@
     scrollbar-width: none;
   }
   .strip::-webkit-scrollbar { display: none; }
-  .card { flex: 1 0 92px; scroll-snap-align: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; }
+  .card { flex: 1 0 92px; margin: 0; scroll-snap-align: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; }
   .name { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); white-space: nowrap; }
   .num { font-size: 22px; font-weight: 600; line-height: 1.2; }
   .num span { font-size: 13px; color: var(--muted); margin-left: 1px; }
