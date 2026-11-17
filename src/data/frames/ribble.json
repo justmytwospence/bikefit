@@ -19,7 +19,7 @@
     },
     {
       "model": "Aero 883 Disc",
-      "year": 2017,
+      "year": 2022,
       "category": "aero",
       "source": "https://www.ribblecycles.co.uk/ribble-aero-883-disc/",
       "retrieved": "2021-09-18",
@@ -611,8 +611,7 @@
     },
     {
       "model": "R872 Disc",
-      "year": 2016,
-      "lastYear": 2020,
+      "year": 2020,
       "category": "race",
       "source": "https://www.ribblecycles.co.uk/ribble-r872-disc/",
       "retrieved": "2019-12-21",

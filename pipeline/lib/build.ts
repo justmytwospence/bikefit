@@ -95,6 +95,13 @@ function mergeFamilies(models: Model[]): Model[] {
 
 export const modelYear = (ts: string) => Number(ts.slice(0, 4)) + (Number(ts.slice(4, 6)) >= 7 ? 1 : 0);
 
+/** The earliest page of a URL is dated by the URL's first capture; before 2018 is out of scope, so it keeps its own year. */
+function firstYear(entry: Manifest['pages'][number], earliest: Map<string, string>): number {
+  if (!entry.firstSeen || entry.timestamp !== earliest.get(entry.url)) return entry.year;
+  const y = modelYear(entry.firstSeen);
+  return y >= 2018 ? Math.min(y, entry.year) : entry.year;
+}
+
 export function buildBrand(
   adapter: Adapter, manifest: Manifest, pages: Map<string, Page>, overrides: Overrides, fill: Fill,
   log: (s: string) => void = () => {},
@@ -118,7 +125,7 @@ export function buildBrand(
       const c = clean({ ...e, model, category }, fill, log);
       if (!c) continue;
       cands.push({
-        model, category, year: e.year ?? (entry.firstSeen && entry.timestamp === earliest.get(entry.url) ? modelYear(entry.firstSeen) : entry.year), tyreWidth: fix.tyreWidth ?? e.tyreWidth, maxSpacers: fix.maxSpacers,
+        model, category, year: e.year ?? firstYear(entry, earliest), tyreWidth: fix.tyreWidth ?? e.tyreWidth, maxSpacers: fix.maxSpacers,
         aliases: fix.aliases ?? e.aliases, rows: c.rows, estimated: c.estimated, source: entry.url, timestamp: entry.timestamp,
       });
     }
