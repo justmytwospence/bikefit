@@ -39,6 +39,6 @@ function call<T>(kind: 'optimize' | 'compare', payload: unknown): Promise<T> {
 
 export const runOptimize = (problem: FitProblem): Promise<FitResult> => call('optimize', problem);
 export const runCompare = (
-  problem: Omit<FitProblem, 'frame' | 'mode' | 'locks'>,
+  problem: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>,
   frames: Frame[],
 ): Promise<CompareRow[]> => call('compare', { problem, frames });

@@ -72,6 +72,7 @@ export function problem(mode: 'tune' | 'shop'): FitProblem {
     components: app.components,
     options: app.options,
     baseline: app.baseline,
+    current: app.current,
     locks: effectiveLocks(level(app, 'setup'), app.locks),
     mode,
   });
@@ -146,7 +147,7 @@ export async function runCompareAll() {
   ui.error = '';
   try {
     const p = problem('shop');
-    const { frame: _f, mode: _m, locks: _l, ...rest } = p;
+    const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = p;
     ui.compareRows = await runCompare(rest, snap(app.frames));
     ui.compareKey = compareKey();
   } catch (e) {

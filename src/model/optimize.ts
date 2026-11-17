@@ -20,6 +20,8 @@ export interface FitProblem {
   components: Components;
   options: PartOptions;
   baseline: FitParams;
+  /** Where the sliders are now: a tune starts here and every locked knob keeps this value. */
+  current: FitParams;
   locks: Partial<Record<ParamKey, boolean>>;
   mode: 'tune' | 'shop';
 }
@@ -65,7 +67,7 @@ export function costOf(problem: FitProblem, p: FitParams, steps = 36): { cost: n
 const snap = (x: number, step: number) => Math.round(x / step) * step;
 
 export function optimizeFit(problem: FitProblem): FitResult {
-  const { options: o, baseline: b, locks, frame } = problem;
+  const { options: o, current: b, locks, frame } = problem;
   const ctx = makeContext(frame, problem.components, problem.ankling, problem.effort);
   const pick = <T>(key: ParamKey, list: T[], base: T): T[] => (locks[key] ? [base] : list);
   const stems = pick('stemLength', o.stemLengths, b.stemLength);
@@ -285,14 +287,14 @@ export function wrenchList(base: FitParams, next: FitParams): string[] {
 }
 
 export function compareFrames(
-  problemFor: Omit<FitProblem, 'frame' | 'mode' | 'locks'>,
+  problemFor: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>,
   frames: Frame[],
 ): CompareRow[] {
   return frames
     .map((frame) => ({
       frameId: frame.id,
       frameName: frame.name,
-      result: optimizeFit({ ...problemFor, frame, mode: 'shop', locks: {} }),
+      result: optimizeFit({ ...problemFor, frame, current: problemFor.baseline, mode: 'shop', locks: {} }),
     }))
     .sort((a, b) => a.result.cost - b.result.cost);
 }

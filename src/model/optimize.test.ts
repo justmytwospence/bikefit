@@ -18,7 +18,7 @@ function problem(style: StyleId, f: Frame, mode: 'shop' | 'tune' = 'shop'): FitP
   return {
     segments, inseam: TEST_BODY.inseam, targets: bandsFor(st, 'medium'), poseWeights: poseWeights(st.defaultHands),
     ankling: 'neutral', effort: st.defaultEffort, frame: f, components: DEFAULT_COMPONENTS,
-    options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, locks: {}, mode,
+    options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, current: DEFAULT_PARAMS, locks: {}, mode,
   };
 }
 function allIn(targets: PoseTarget[], ev: Evaluation) {
@@ -59,6 +59,13 @@ describe('optimizeFit', () => {
     expect(r.params.spacers).toBeLessThanOrEqual(30);
     expect(r.params.cleatOffset).toBeGreaterThanOrEqual(0);
     expect(r.params.cleatOffset).toBeLessThanOrEqual(20);
+  });
+  it('keeps a locked knob at its current value, not the baseline', () => {
+    const current = { ...DEFAULT_PARAMS, saddleHeight: 760, crankLength: 170 };
+    const p = { ...problem('endurance', frame('endurance-56'), 'tune'), current, locks: { saddleHeight: true, crankLength: true } };
+    const r = optimizeFit(p);
+    expect(r.params.saddleHeight).toBe(760);
+    expect(r.params.crankLength).toBe(170);
   });
   it('tune mode never ends worse than the baseline', () => {
     const p = problem('endurance', frame('endurance-56'), 'tune');
