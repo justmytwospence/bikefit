@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import {
-  buildCatalog, CATALOG, CATEGORIES, GEOMETRY_KEYS, slug, toFrame, type BrandFile,
+  buildCatalog, CATALOG, CATEGORIES, GEOMETRY_KEYS, RANGES, slug, toFrame, yearLabel, type BrandFile,
 } from './catalog';
 import { FIXTURE, FIXTURE_FILES } from './fixture';
 
@@ -16,6 +16,14 @@ describe('buildCatalog', () => {
     const dup: BrandFile[] = [FIXTURE_FILES[0], FIXTURE_FILES[0]];
     expect(() => buildCatalog(dup)).toThrow('Duplicate catalog id');
   });
+  it('labels a year range', () => {
+    expect(yearLabel({ year: 2020, lastYear: 2024 })).toBe('2020–2024');
+    expect(yearLabel(tarmac)).toBe('2024');
+  });
+  it('rejects a malformed size row', () => {
+    const bad: BrandFile = { brand: 'X', models: [{ ...FIXTURE_FILES[0].models[0], sizes: [['S', 1, 2]] }] };
+    expect(() => buildCatalog([bad])).toThrow('Bad size row');
+  });
   it('converts a size to a frame', () => {
     const f = toFrame(tarmac, tarmac.sizes.find((s) => s.size === '56')!);
     expect(f.id).toBe('cat:specialized-tarmac-sl8-2024-56');
@@ -24,15 +32,10 @@ describe('buildCatalog', () => {
   });
 });
 
-const RANGES: Record<(typeof GEOMETRY_KEYS)[number], [number, number]> = {
-  stack: [400, 800], reach: [300, 500], seatTubeAngle: [65, 80], headTubeAngle: [65, 80],
-  headTubeLength: [80, 260], seatTubeLength: [330, 650], chainstay: [380, 470],
-  wheelbase: [900, 1200], bbDrop: [40, 90],
-};
-
 describe('real catalog', () => {
   it('is big enough', () => {
-    expect(CATALOG.length).toBeGreaterThanOrEqual(90);
+    // 158 models from 28 brands when the pipeline last ran; fail on a big loss.
+    expect(CATALOG.length).toBeGreaterThanOrEqual(150);
     expect(new Set(CATALOG.map((m) => m.brand)).size).toBeGreaterThanOrEqual(25);
   });
   it('has valid entries', () => {
@@ -42,7 +45,8 @@ describe('real catalog', () => {
       const bad = (msg: string) => errs.push(`${m.id}: ${msg}`);
       if (!m.source.startsWith('https://')) bad('source');
       if (!/^\d{4}-\d{2}-\d{2}$/.test(m.retrieved)) bad('retrieved');
-      if (m.year < 2015 || m.year > 2027) bad('year');
+      if (m.year < 2017 || m.year > 2027 || m.lastYear < m.year) bad('year');
+      if (m.archive && !m.archive.startsWith('https://web.archive.org/web/')) bad('archive');
       if (!cats.includes(m.category)) bad('category');
       if (m.sizes.length < 2) bad('needs 2 sizes');
       if (new Set(m.sizes.map((s) => s.size)).size !== m.sizes.length) bad('duplicate size labels');

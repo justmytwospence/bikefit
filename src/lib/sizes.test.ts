@@ -26,7 +26,7 @@ describe('sizeFamily', () => {
     expect(fam[1].frame.stack).not.toBe(999);
   });
   it('is null for one-size models and custom frames', () => {
-    const file: BrandFile = { brand: 'Solo', models: [{ ...tarmac, model: 'One', sizes: [tarmac.sizes[0]] }] };
+    const file: BrandFile = { brand: 'Solo', models: [{ ...tarmac, model: 'One', sizes: [['S', 520, 370, 73.5, 73, 140, 520, 410, 990, 72]] }] };
     const one = buildCatalog([file]);
     expect(sizeFamily(toFrame(one[0], one[0].sizes[0]), one, toFrame)).toBeNull();
     expect(sizeFamily(EXAMPLE_FRAMES[0], FIXTURE, toFrame)).toBeNull();

@@ -45,7 +45,7 @@
     all.filter((g) => {
       const id = ui.catalog!.modelOf[g.best.frameId];
       const m = byId.get(id);
-      return !!m && hitIds.has(id) && (brand === 'all' || m.brand === brand) && m.year >= since
+      return !!m && hitIds.has(id) && (brand === 'all' || m.brand === brand) && m.lastYear >= since
         && VERDICT_RANK[g.best.result.verdict] <= VERDICT_RANK[show];
     }),
   );

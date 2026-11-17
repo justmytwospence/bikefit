@@ -40,7 +40,7 @@ export function searchCatalog(
   for (const model of pool) {
     const brandTokens = normalize(model.brand).split(' ');
     const tokens = [
-      ...brandTokens, ...normalize(model.model).split(' '), String(model.year), model.category,
+      ...brandTokens, ...normalize(model.model).split(' '), ...Array.from({ length: model.lastYear - model.year + 1 }, (_, i) => String(model.year + i)), model.category,
       ...model.aliases.flatMap((a) => normalize(a).split(' ')),
     ].filter(Boolean);
     const compact = tokens.join('');

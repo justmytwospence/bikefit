@@ -1,0 +1,378 @@
+[
+ {
+  "file": "3t",
+  "brand": "3T"
+ },
+ {
+  "file": "allied",
+  "brand": "Allied"
+ },
+ {
+  "file": "bianchi",
+  "brand": "Bianchi"
+ },
+ {
+  "file": "bmc",
+  "brand": "BMC"
+ },
+ {
+  "file": "cannondale",
+  "brand": "Cannondale"
+ },
+ {
+  "file": "canyon",
+  "brand": "Canyon"
+ },
+ {
+  "file": "cervelo",
+  "brand": "Cervélo"
+ },
+ {
+  "file": "colnago",
+  "brand": "Colnago"
+ },
+ {
+  "file": "cube",
+  "brand": "Cube"
+ },
+ {
+  "file": "enve",
+  "brand": "Enve"
+ },
+ {
+  "file": "giant",
+  "brand": "Giant"
+ },
+ {
+  "file": "lapierre",
+  "brand": "Lapierre"
+ },
+ {
+  "file": "lauf",
+  "brand": "Lauf"
+ },
+ {
+  "file": "liv",
+  "brand": "Liv"
+ },
+ {
+  "file": "look",
+  "brand": "Look"
+ },
+ {
+  "file": "merida",
+  "brand": "Merida"
+ },
+ {
+  "file": "open",
+  "brand": "Open"
+ },
+ {
+  "file": "orbea",
+  "brand": "Orbea"
+ },
+ {
+  "file": "pinarello",
+  "brand": "Pinarello"
+ },
+ {
+  "file": "pivot",
+  "brand": "Pivot"
+ },
+ {
+  "file": "ribble",
+  "brand": "Ribble"
+ },
+ {
+  "file": "ridley",
+  "brand": "Ridley"
+ },
+ {
+  "file": "rose",
+  "brand": "Rose"
+ },
+ {
+  "file": "salsa",
+  "brand": "Salsa"
+ },
+ {
+  "file": "santa-cruz",
+  "brand": "Santa Cruz"
+ },
+ {
+  "file": "scott",
+  "brand": "Scott"
+ },
+ {
+  "file": "specialized",
+  "brand": "Specialized"
+ },
+ {
+  "file": "trek",
+  "brand": "Trek"
+ },
+ {
+  "file": "argon-18",
+  "brand": "Argon 18"
+ },
+ {
+  "file": "basso",
+  "brand": "Basso"
+ },
+ {
+  "file": "bh",
+  "brand": "BH"
+ },
+ {
+  "file": "boardman",
+  "brand": "Boardman"
+ },
+ {
+  "file": "bombtrack",
+  "brand": "Bombtrack"
+ },
+ {
+  "file": "breezer",
+  "brand": "Breezer"
+ },
+ {
+  "file": "ceepo",
+  "brand": "Ceepo"
+ },
+ {
+  "file": "cinelli",
+  "brand": "Cinelli"
+ },
+ {
+  "file": "cipollini",
+  "brand": "Cipollini"
+ },
+ {
+  "file": "condor",
+  "brand": "Condor"
+ },
+ {
+  "file": "de-rosa",
+  "brand": "De Rosa"
+ },
+ {
+  "file": "diamondback",
+  "brand": "Diamondback"
+ },
+ {
+  "file": "factor",
+  "brand": "Factor"
+ },
+ {
+  "file": "fairlight",
+  "brand": "Fairlight"
+ },
+ {
+  "file": "felt",
+  "brand": "Felt"
+ },
+ {
+  "file": "focus",
+  "brand": "Focus"
+ },
+ {
+  "file": "fuji",
+  "brand": "Fuji"
+ },
+ {
+  "file": "genesis",
+  "brand": "Genesis"
+ },
+ {
+  "file": "ghost",
+  "brand": "Ghost"
+ },
+ {
+  "file": "guerciotti",
+  "brand": "Guerciotti"
+ },
+ {
+  "file": "jamis",
+  "brand": "Jamis"
+ },
+ {
+  "file": "kinesis",
+  "brand": "Kinesis"
+ },
+ {
+  "file": "kona",
+  "brand": "Kona"
+ },
+ {
+  "file": "ktm",
+  "brand": "KTM"
+ },
+ {
+  "file": "kuota",
+  "brand": "Kuota"
+ },
+ {
+  "file": "litespeed",
+  "brand": "Litespeed"
+ },
+ {
+  "file": "lynskey",
+  "brand": "Lynskey"
+ },
+ {
+  "file": "marin",
+  "brand": "Marin"
+ },
+ {
+  "file": "masi",
+  "brand": "Masi"
+ },
+ {
+  "file": "mason",
+  "brand": "Mason"
+ },
+ {
+  "file": "megamo",
+  "brand": "Megamo"
+ },
+ {
+  "file": "mondraker",
+  "brand": "Mondraker"
+ },
+ {
+  "file": "moots",
+  "brand": "Moots"
+ },
+ {
+  "file": "niner",
+  "brand": "Niner"
+ },
+ {
+  "file": "norco",
+  "brand": "Norco"
+ },
+ {
+  "file": "obed",
+  "brand": "Obed"
+ },
+ {
+  "file": "olmo",
+  "brand": "Olmo"
+ },
+ {
+  "file": "orro",
+  "brand": "Orro"
+ },
+ {
+  "file": "parlee",
+  "brand": "Parlee"
+ },
+ {
+  "file": "polygon",
+  "brand": "Polygon"
+ },
+ {
+  "file": "radon",
+  "brand": "Radon"
+ },
+ {
+  "file": "raleigh",
+  "brand": "Raleigh"
+ },
+ {
+  "file": "revel",
+  "brand": "Revel"
+ },
+ {
+  "file": "ritchey",
+  "brand": "Ritchey"
+ },
+ {
+  "file": "rondo",
+  "brand": "Rondo"
+ },
+ {
+  "file": "seven",
+  "brand": "Seven"
+ },
+ {
+  "file": "simplon",
+  "brand": "Simplon"
+ },
+ {
+  "file": "sonder",
+  "brand": "Sonder"
+ },
+ {
+  "file": "standert",
+  "brand": "Standert"
+ },
+ {
+  "file": "stevens",
+  "brand": "Stevens"
+ },
+ {
+  "file": "storck",
+  "brand": "Storck"
+ },
+ {
+  "file": "superior",
+  "brand": "Superior"
+ },
+ {
+  "file": "surly",
+  "brand": "Surly"
+ },
+ {
+  "file": "time",
+  "brand": "Time"
+ },
+ {
+  "file": "twitter",
+  "brand": "Twitter"
+ },
+ {
+  "file": "van-rysel",
+  "brand": "Van Rysel"
+ },
+ {
+  "file": "ventum",
+  "brand": "Ventum"
+ },
+ {
+  "file": "viner",
+  "brand": "Viner"
+ },
+ {
+  "file": "vitus",
+  "brand": "Vitus"
+ },
+ {
+  "file": "wilier",
+  "brand": "Wilier"
+ },
+ {
+  "file": "winspace",
+  "brand": "Winspace"
+ },
+ {
+  "file": "all-city",
+  "brand": "All-City"
+ },
+ {
+  "file": "chapter2",
+  "brand": "Chapter2"
+ },
+ {
+  "file": "festka",
+  "brand": "Festka"
+ },
+ {
+  "file": "mosaic",
+  "brand": "Mosaic"
+ },
+ {
+  "file": "origine",
+  "brand": "Origine"
+ }
+]

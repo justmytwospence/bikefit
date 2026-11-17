@@ -8,13 +8,17 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "test": "vitest run"
+    "test": "vitest run",
+    "catalog": "tsx pipeline/cli.ts"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@tsconfig/svelte": "^5.0.0",
+    "@types/node": "^26.6.6",
+    "cheerio": "^1.2.0",
     "svelte": "^5.46.4",
     "svelte-check": "^4.3.0",
+    "tsx": "^4.23.15",
     "typescript": "~6.0.0",
     "vite": "^8.0.0",
     "vitest": "^5.0.0"

@@ -58,7 +58,7 @@
       {@const open = openId === m.id || h.size !== null}
       <button type="button" class="row" aria-expanded={open} onclick={() => { openId = openId === m.id ? null : m.id; added = null; }}>
         <b>{m.model}</b>
-        <span class="muted small">{m.year} · {label(m)} · {m.sizes.length} sizes</span>
+        <span class="muted small">{cat!.yearLabel(m)} · {label(m)} · {m.sizes.length} sizes</span>
       </button>
       {#if open}
         <div class="open">

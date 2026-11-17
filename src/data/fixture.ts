@@ -1,9 +1,6 @@
-import { buildCatalog, type BrandFile, type CatalogSize } from './catalog';
+import { buildCatalog, type BrandFile, type SizeRow } from './catalog';
 
-const sz = (size: string, stack: number, reach: number): CatalogSize => ({
-  size, stack, reach, seatTubeAngle: 73.5, headTubeAngle: 73, headTubeLength: 140,
-  seatTubeLength: 520, chainstay: 410, wheelbase: 990, bbDrop: 72,
-});
+const sz = (size: string, stack: number, reach: number): SizeRow => [size, stack, reach, 73.5, 73, 140, 520, 410, 990, 72];
 const row = (labels: string[]) => labels.map((l, i) => sz(l, 520 + i * 20, 370 + i * 8));
 const base = { retrieved: '2026-11-16' };
 
