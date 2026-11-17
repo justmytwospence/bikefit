@@ -1,7 +1,7 @@
 <script lang="ts">
   import { HEAD_R, headCenter } from '../draw/body';
   import { distToSegment, placeLabel, type Obstacle } from '../draw/shapes';
-  import type { Level } from '../lib/appData';
+  import { LEVEL_OPTIONS, type Level } from '../lib/appData';
   import { frameSkeleton } from '../model/geometry';
   import type { RiderPose } from '../model/pose';
   import { outside, status } from '../model/score';
@@ -9,7 +9,7 @@
     Components, FitParams, Frame, Layout, MetricId, PoseEval, PoseTarget, Segments,
   } from '../model/types';
   import { deg, type Vec2 } from '../model/vec';
-  import { ui } from '../state.svelte';
+  import { app, ui } from '../state.svelte';
   import Arm from './draw/Arm.svelte';
   import Bike from './draw/Bike.svelte';
   import Leg from './draw/Leg.svelte';
@@ -225,11 +225,19 @@
       </span>
     {/if}
   </div>
-  {#if level >= 2}
-    <div class="posepick">
-      <Segmented options={poseOptions} bind:value={ui.viewPose} ariaLabel="Hand position shown" compact />
+  <div class="viewctl">
+    <div class="lvl">
+      <Segmented
+        options={LEVEL_OPTIONS} compact ariaLabel="Analysis detail"
+        bind:value={() => String(app.detail.results), (v) => (app.detail.results = Number(v) as Level)}
+      />
     </div>
-  {/if}
+    {#if level >= 2}
+      <div class="posepick">
+        <Segmented options={poseOptions} bind:value={ui.viewPose} ariaLabel="Hand position shown" compact />
+      </div>
+    {/if}
+  </div>
   <button
     type="button" class="play"
     aria-label={ui.playing ? 'Pause pedal stroke' : 'Play pedal stroke'} onclick={togglePlay}
@@ -243,12 +251,23 @@
 <style>
   .wrap { position: relative; width: 100%; height: 100%; min-height: 0; }
   svg { width: 100%; height: 100%; display: block; }
-  .legend { position: absolute; top: 10px; left: 14px; max-width: calc(100% - 180px); flex-wrap: wrap; display: flex; gap: 4px 12px; font-size: 12px; color: var(--muted); }
+  .legend { position: absolute; top: 10px; left: 14px; max-width: calc(100% - 250px); flex-wrap: wrap; display: flex; gap: 4px 12px; font-size: 12px; color: var(--muted); }
   .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
   .legend .t { border: 2px dashed var(--accent); }
   .legend .g { background: var(--rider); opacity: 0.2; }
   .warn { color: var(--near); font-weight: 600; }
   .warn.bad { color: var(--off); }
-  .posepick { position: absolute; top: 8px; right: 10px; width: 150px; }
+  .viewctl { position: absolute; top: 8px; right: 10px; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .lvl { width: 216px; }
+  .posepick { width: 150px; }
+  /* Phones: the switches get their own row above the drawing instead of covering it. */
+  @media (max-width: 479px) {
+    .wrap { padding-top: 46px; }
+    .viewctl { left: 10px; flex-direction: row; justify-content: flex-end; align-items: center; }
+    .lvl { width: 192px; }
+    .posepick { width: 140px; }
+    .lvl :global(button), .posepick :global(button) { font-size: 13px; }
+    .legend { top: 52px; max-width: calc(100% - 28px); }
+  }
   .play { position: absolute; left: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); display: grid; place-items: center; }
 </style>

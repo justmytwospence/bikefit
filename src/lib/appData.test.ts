@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { defaults, effectiveLocks, hiddenRiderValues, level, migrate } from './appData';
+import { defaults, hiddenRiderValues, migrate } from './appData';
+import { presetLocks } from './knobs';
 
 describe('migrate', () => {
   it('upgrades v1 data', () => {
@@ -22,7 +23,8 @@ describe('migrate', () => {
     expect(m.v).toBe(2);
     expect(m.current.cleatOffset).toBe(5);
     expect(m.frames[0].tyreWidth).toBe(30);
-    expect(m.detail.global).toBe(1);
+    expect(m.detail).toEqual({ rider: 1, bikeFull: false, results: 1 });
+    expect(m.locks).toEqual(presetLocks('parts'));
     expect(m.locks.cleatOffset).toBe(false);
     expect(m.body.shoeSize).toBe(43);
     expect(m.body.shoeSizeAuto).toBe(false);
@@ -61,20 +63,33 @@ describe('migrate', () => {
   });
 });
 
-describe('detail levels', () => {
-  it('locks hidden knobs at Simple and passes locks through otherwise', () => {
-    const none = defaults().locks;
-    const l1 = effectiveLocks(1, none);
-    expect(Object.keys(l1).filter((k) => l1[k as keyof typeof l1]).sort()).toEqual(['cleatOffset', 'crankLength', 'seatpostSetback']);
-    const mine = { ...none, spacers: true };
-    expect(effectiveLocks(2, mine)).toEqual(mine);
-  });
-  it('migrate folds section overrides into the global level', () => {
+describe('detail and locks', () => {
+  it('folds old section overrides into the levels and keeps stored locks', () => {
     const d: any = defaults();
     d.detail = { global: 1, overrides: { setup: 3 } };
+    d.locks = { ...presetLocks('all'), spacers: true };
     const m = migrate(d)!;
-    expect(m.detail).toEqual({ global: 3 });
-    expect(level(m)).toBe(3);
+    expect(m.detail).toEqual({ rider: 3, bikeFull: true, results: 3 });
+    expect(m.locks.spacers).toBe(true);
+  });
+  it('maps an old Simple level to the New parts locks', () => {
+    const d: any = defaults();
+    d.detail = { global: 1 };
+    d.locks = presetLocks('all');
+    expect(migrate(d)!.locks).toEqual(presetLocks('parts'));
+  });
+  it('round-trips the new shape', () => {
+    const d: any = defaults();
+    d.detail = { rider: 2, bikeFull: false, results: 3 };
+    d.locks = presetLocks('tools');
+    const m = migrate(d)!;
+    expect(m.detail).toEqual({ rider: 2, bikeFull: false, results: 3 });
+    expect(m.locks).toEqual(presetLocks('tools'));
+  });
+  it('clamps junk levels', () => {
+    const d: any = defaults();
+    d.detail = { rider: 7, bikeFull: 'x', results: 0 };
+    expect(migrate(d)!.detail).toEqual({ rider: 3, bikeFull: false, results: 1 });
   });
   it('counts values hidden by the rider level', () => {
     const d = defaults();
@@ -84,9 +99,9 @@ describe('detail levels', () => {
     d.effort = 'hard';
     d.body.overrides = { femur: 440 };
     expect(hiddenRiderValues(d)).toBe(4);
-    d.detail.global = 2;
+    d.detail.rider = 2;
     expect(hiddenRiderValues(d)).toBe(1);
-    d.detail.global = 3;
+    d.detail.rider = 3;
     expect(hiddenRiderValues(d)).toBe(0);
   });
 });

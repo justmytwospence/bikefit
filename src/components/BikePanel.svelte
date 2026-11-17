@@ -1,12 +1,11 @@
 <script lang="ts">
-  import { level } from '../lib/appData';
   import { activeFrame, app, deleteFrame, duplicateFrame, newFrame, selectFrame } from '../state.svelte';
   import FramePicker from './FramePicker.svelte';
   import NumberField from './NumberField.svelte';
   import type { Frame } from '../model/types';
 
   let picking = $state(false);
-  const lv = $derived(level(app));
+  const full = $derived(app.detail.bikeFull);
   const frame = $derived(activeFrame());
   const o = $derived(app.options);
   /** Catalog sizes of one model share an optgroup; other frames are listed first. */
@@ -56,7 +55,7 @@
     <div class="grid">
       <NumberField label="Stack" unit="mm" min={400} max={800} step={1} bind:value={frame.stack} />
       <NumberField label="Reach" unit="mm" min={300} max={500} step={1} bind:value={frame.reach} />
-      {#if lv >= 2}
+      {#if full}
         <NumberField label="Seat tube angle" unit="°" min={65} max={80} step={0.1} bind:value={frame.seatTubeAngle} />
         <NumberField label="Head tube angle" unit="°" min={65} max={80} step={0.1} bind:value={frame.headTubeAngle} />
         <NumberField label="Head tube length" unit="mm" min={80} max={260} step={1} bind:value={frame.headTubeLength} />
@@ -69,8 +68,11 @@
       {/if}
     </div>
   {/key}
+  <button type="button" class="link" onclick={() => (app.detail.bikeFull = !app.detail.bikeFull)}>
+    {full ? 'Show fewer measurements' : 'Show all measurements'}
+  </button>
 
-  {#if lv >= 2}
+  {#if full}
     <h2>Cockpit and saddle</h2>
     <div class="grid">
       <NumberField label="Bar reach" unit="mm" min={60} max={110} step={1} bind:value={app.components.barReach} />
@@ -79,7 +81,7 @@
     </div>
   {/if}
 
-  {#if lv >= 3}
+  {#if full}
     <h2>Contact details</h2>
     <div class="grid">
       <NumberField label="Shoe + pedal stack" unit="mm" min={5} max={40} step={1} bind:value={app.components.footStack} />
@@ -101,6 +103,7 @@
 
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
+  .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
   .picker { margin-top: 12px; }
   .btns { display: flex; gap: 8px; margin-top: 10px; }
   .grid { display: grid; grid-template-columns: 1fr; gap: 0 10px; }

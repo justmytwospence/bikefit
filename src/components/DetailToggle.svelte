@@ -1,20 +1,15 @@
 <script lang="ts">
-  import { level, type Level } from '../lib/appData';
-  import { app, setGlobalDetail } from '../state.svelte';
+  import { LEVEL_OPTIONS, type Level } from '../lib/appData';
   import Segmented from './Segmented.svelte';
 
-  const options = [
-    { value: '1', label: 'Simple' },
-    { value: '2', label: 'Detailed' },
-    { value: '3', label: 'Expert' },
-  ];
+  let { value = $bindable(), label = 'Detail', ariaLabel }: { value: Level; label?: string; ariaLabel: string } = $props();
 </script>
 
 <div class="row">
-  <span class="muted small">Detail</span>
+  <span class="muted small">{label}</span>
   <Segmented
-    {options} compact ariaLabel="Detail level"
-    bind:value={() => String(level(app)), (v) => setGlobalDetail(Number(v) as Level)}
+    options={LEVEL_OPTIONS} compact {ariaLabel}
+    bind:value={() => String(value), (v) => (value = Number(v) as Level)}
   />
 </div>
 

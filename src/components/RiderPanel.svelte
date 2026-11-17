@@ -1,15 +1,16 @@
 <script lang="ts">
-  import { hiddenRiderValues, level } from '../lib/appData';
+  import { hiddenRiderValues } from '../lib/appData';
   import { effectiveShoeSize, resolveSegments, SEGMENT_LABELS } from '../model/body';
   import { ANKLING, EFFORT_LABELS, HANDS_LABELS, shoeLabel } from '../model/riding';
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
   import { STYLES } from '../model/styles';
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
-  import { app, setGlobalDetail } from '../state.svelte';
+  import { app } from '../state.svelte';
+  import DetailToggle from './DetailToggle.svelte';
   import NumberField from './NumberField.svelte';
   import Segmented from './Segmented.svelte';
 
-  const lv = $derived(level(app));
+  const lv = $derived(app.detail.rider);
   const est = $derived(resolveSegments({ ...app.body, overrides: {} }));
   const keys = Object.keys(SEGMENT_LABELS) as (keyof typeof SEGMENT_LABELS)[];
   const style = $derived(STYLES[app.styleId]);
@@ -39,6 +40,7 @@
   const fi = $derived(feetInches(app.body.height));
 </script>
 
+<DetailToggle bind:value={app.detail.rider} ariaLabel="Rider detail" />
 <div class="scroll">
   {#if !app.seenIntro}
     <div class="card intro">
@@ -139,7 +141,7 @@
   {#if hidden > 0}
     <p class="muted small hid">
       Using {hidden} value{hidden === 1 ? '' : 's'} from a more detailed level.
-      <button type="button" class="link" onclick={() => setGlobalDetail(Object.keys(app.body.overrides).length ? 3 : 2)}>Show</button>
+      <button type="button" class="link" onclick={() => (app.detail.rider = Object.keys(app.body.overrides).length ? 3 : 2)}>Show</button>
     </p>
   {/if}
 </div>

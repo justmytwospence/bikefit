@@ -19,7 +19,7 @@ The settings menu exports and imports everything as `bikefit.json`, and copies a
 
 ## Detail levels
 
-One Simple, Detailed or Expert switch, above the tabs, sets how much every section shows. Inputs are things you can measure or already know; hidden inputs keep their estimated or entered values. At Simple, Optimize only changes the visible setup knobs (saddle height and setback, spacers, stem).
+Each tab asks its own question. Rider has Simple, Detailed and Expert, for how much you have measured; hidden inputs keep their estimated or entered values. Bike shows stack and reach until you ask for all measurements. Fit asks what you can change: Tools only (saddle, spacers, cleats), New parts (also stem and seatpost) or Everything (also cranks). Optimize leaves the rest as it is, and the lock on each part makes your own mix. The Simple, Detailed and Expert switch on the drawing sets how much the drawing, metric strip and results show.
 
 ## What is modelled
 

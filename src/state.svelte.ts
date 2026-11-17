@@ -1,7 +1,5 @@
 import { runCompare, runOptimize } from './lib/optimizeClient';
-import {
-  defaults, effectiveLocks, level, migrate, type AppData, type Level,
-} from './lib/appData';
+import { defaults, migrate, type AppData } from './lib/appData';
 import { resolveSegments } from './model/body';
 import type { CompareRow, FitProblem, Verdict } from './model/optimize';
 import { EXAMPLE_FRAMES } from './model/presets';
@@ -86,13 +84,9 @@ export function problem(mode: 'tune' | 'shop'): FitProblem {
     options: app.options,
     baseline: app.baseline,
     current: app.current,
-    locks: effectiveLocks(level(app), app.locks),
+    locks: app.locks,
     mode,
   });
-}
-
-export function setGlobalDetail(l: Level) {
-  app.detail.global = l;
 }
 
 export function clearGhost() {

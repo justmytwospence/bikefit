@@ -1,4 +1,5 @@
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from '../model/presets';
+import { presetLocks } from './knobs';
 import type { Units } from './units';
 import type {
   Body, Components, Effort, FitParams, Frame, HandsPref, ParamKey, PartOptions, StyleId,
@@ -6,6 +7,14 @@ import type {
 
 export type Tab = 'rider' | 'bike' | 'fit' | 'compare';
 export type Level = 1 | 2 | 3;
+
+export const LEVEL_OPTIONS = [
+  { value: '1', label: 'Simple' },
+  { value: '2', label: 'Detailed' },
+  { value: '3', label: 'Expert' },
+];
+
+const clampLv = (x: unknown) => Math.min(3, Math.max(1, Math.round(Number(x)) || 1)) as Level;
 
 export interface AppData {
   v: 2;
@@ -21,7 +30,7 @@ export interface AppData {
   tab: Tab;
   effort: Effort | null;
   hands: HandsPref | null;
-  detail: { global: Level };
+  detail: { rider: Level; bikeFull: boolean; results: Level };
   units: Units;
   /** False until the user says they have a bike set up; until then Optimize suggests a build from scratch. */
   hasSetup: boolean;
@@ -40,14 +49,11 @@ export function defaults(): AppData {
     options: DEFAULT_OPTIONS,
     current: DEFAULT_PARAMS,
     baseline: DEFAULT_PARAMS,
-    locks: {
-      saddleHeight: false, railOffset: false, seatpostSetback: false, spacers: false,
-      stemLength: false, stemAngle: false, crankLength: false, cleatOffset: false,
-    },
+    locks: presetLocks('parts'),
     tab: 'rider' as Tab,
     effort: null,
     hands: null,
-    detail: { global: 1 as Level },
+    detail: { rider: 1 as Level, bikeFull: false, results: 1 as Level },
     units: 'metric' as Units,
     hasSetup: false,
     seenIntro: false,
@@ -60,6 +66,16 @@ export function migrate(raw: unknown): AppData | null {
   const d = raw as Record<string, any>;
   if ((d.v !== 1 && d.v !== 2) || !Array.isArray(d.frames) || d.frames.length === 0) return null;
   const base = defaults();
+  let detail: AppData['detail'];
+  let locks: Record<ParamKey, boolean>;
+  if (d.detail && typeof d.detail === 'object' && 'rider' in d.detail) {
+    detail = { rider: clampLv(d.detail.rider), bikeFull: d.detail.bikeFull === true, results: clampLv(d.detail.results) };
+    locks = { ...base.locks, ...d.locks };
+  } else {
+    const g = clampLv(Math.max(1, d.detail?.global ?? 1, ...Object.values(d.detail?.overrides ?? {}).map(Number)));
+    detail = { rider: g, bikeFull: g >= 2, results: g };
+    locks = g === 1 ? presetLocks('parts') : { ...base.locks, ...d.locks };
+  }
   return {
     ...base,
     ...d,
@@ -75,12 +91,8 @@ export function migrate(raw: unknown): AppData | null {
     options: { ...base.options, ...d.options },
     current: { ...base.current, ...d.current },
     baseline: { ...base.baseline, ...d.baseline },
-    locks: { ...base.locks, ...d.locks },
-    detail: {
-      global: Math.min(
-        3, Math.max(1, d.detail?.global ?? 1, ...Object.values(d.detail?.overrides ?? {}).map(Number)),
-      ) as Level,
-    },
+    locks,
+    detail,
     frames: d.frames.map((f: Frame) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     effort: d.effort ?? null,
     hands: d.hands ?? null,
@@ -94,23 +106,8 @@ export function migrate(raw: unknown): AppData | null {
   } as AppData;
 }
 
-export function level(d: Pick<AppData, 'detail'>): Level {
-  return d.detail.global;
-}
-
-/** At the Simple setup level only the visible knobs may be changed by the optimizer. */
-export function effectiveLocks(setupLevel: Level, locks: Record<ParamKey, boolean>): Record<ParamKey, boolean> {
-  if (setupLevel === 1) {
-    return {
-      saddleHeight: false, railOffset: false, spacers: false, stemLength: false, stemAngle: false,
-      seatpostSetback: true, crankLength: true, cleatOffset: true,
-    };
-  }
-  return { ...locks };
-}
-
 export function hiddenRiderValues(d: AppData): number {
-  const lv = level(d);
+  const lv = d.detail.rider;
   let n = 0;
   if (lv < 2) {
     if (d.body.armLength != null) n++;

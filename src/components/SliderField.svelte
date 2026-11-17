@@ -25,8 +25,8 @@
       <span class="delta">{delta > 0 ? '+' : '−'}{Math.abs(delta) % 1 ? Math.abs(delta).toFixed(1) : Math.abs(delta)}</span>
     {/if}
     {#if showLock}<button
-      type="button" class="lock" class:on={locked} aria-pressed={locked} aria-label="Lock {label}"
-      title="Lock: optimizer won't change this" onclick={() => (locked = !locked)}
+      type="button" class="lock" class:on={locked} aria-pressed={locked} aria-label="Keep {label} fixed"
+      title="Fixed: Optimize leaves this alone" onclick={() => (locked = !locked)}
     >
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <rect x="5" y="11" width="14" height="9" rx="2" />

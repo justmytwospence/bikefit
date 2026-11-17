@@ -1,12 +1,11 @@
 <script lang="ts">
-  import { level } from '../lib/appData';
   import { buildSummary, type CompareRow, type Verdict } from '../model/optimize';
   import { STYLES } from '../model/styles';
   import { app, compareKey, runCompareAll, ui, useCompareRow } from '../state.svelte';
 
   const stale = $derived(!!ui.compareRows && ui.compareKey !== compareKey());
   const OK = 'Every angle is inside its target range.';
-  const withCleats = $derived(level(app) >= 2);
+  const withCleats = $derived(app.detail.results >= 2);
   const GROUPS: { id: Verdict; title: string; chip: string }[] = [
     { id: 'fits', title: 'Fits', chip: 'Fits' },
     { id: 'compromise', title: 'Fits with compromises', chip: 'Compromise' },

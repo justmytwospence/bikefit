@@ -10,9 +10,7 @@
   import RiderPanel from './components/RiderPanel.svelte';
   import ScoreRing from './components/ScoreRing.svelte';
   import Segmented from './components/Segmented.svelte';
-  import DetailToggle from './components/DetailToggle.svelte';
   import SettingsMenu from './components/SettingsMenu.svelte';
-  import { level } from './lib/appData';
   import { resolveSegments } from './model/body';
   import { forwardLayout } from './model/geometry';
   import { idealLayout } from './model/optimize';
@@ -30,7 +28,7 @@
   const effort = $derived(app.effort ?? style.defaultEffort);
   const frame = $derived(activeFrame());
   const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
-  const resultsLevel = $derived(level(app));
+  const resultsLevel = $derived(app.detail.results);
 
   const shown = new Tween($state.snapshot(app.current), { duration: 450, easing: cubicOut });
   $effect(() => {
@@ -129,7 +127,6 @@
         <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => (app.tab = t.id)}>{t.label}</button>
       {/each}
     </div>
-    <DetailToggle />
     <div class="body">
       {#if app.tab === 'rider'}<RiderPanel />
       {:else if app.tab === 'bike'}<BikePanel />
