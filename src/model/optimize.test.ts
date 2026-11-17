@@ -67,6 +67,12 @@ describe('optimizeFit', () => {
     expect(r.params.saddleHeight).toBe(760);
     expect(r.params.crankLength).toBe(170);
   });
+  it('recovers from a saddle too high to reach the pedals', () => {
+    const p = { ...problem('endurance', frame('endurance-56'), 'tune'), current: { ...DEFAULT_PARAMS, saddleHeight: 880 } };
+    const r = optimizeFit(p);
+    expect(r.evaluation.poses[0].overextended).toBe(false);
+    expect(r.score).toBeGreaterThan(90);
+  });
   it('tune mode never ends worse than the baseline', () => {
     const p = problem('endurance', frame('endurance-56'), 'tune');
     expect(optimizeFit(p).cost).toBeLessThanOrEqual(costOf(p, DEFAULT_PARAMS).cost);

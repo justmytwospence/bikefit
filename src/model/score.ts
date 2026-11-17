@@ -24,15 +24,16 @@ export function status(v: number, band: Band): Status {
 
 export function fitCost(ev: Evaluation, targets: PoseTarget[], weights: number[]): number {
   let c = 0;
-  let over = false;
+  let short = -1;
   let reach = false;
   targets.forEach((t, i) => {
     const pe = ev.poses[i];
     for (const k of Object.keys(t.bands) as MetricId[]) c += weights[i] * metricCost(pe.metrics[k], t.bands[k]!);
-    if (pe.overextended) over = true;
+    if (pe.overextended) short = Math.max(short, pe.legShortfall);
     if (pe.overreach) reach = true;
   });
-  return c + (over ? 50 : 0) + (reach ? 50 : 0);
+  // The shortfall term gives the optimizer a slope back towards a reachable pedal.
+  return c + (short >= 0 ? 50 + 0.5 * short : 0) + (reach ? 50 : 0);
 }
 
 export function partPenalty(p: FitParams): number {
