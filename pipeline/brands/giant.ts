@@ -20,9 +20,14 @@ const adapter: Adapter = {
     // Each cell carries a millimetre and an inch span; keep the millimetres.
     const $ = cheerio.load(page.html);
     $('.value-inch, .unit-label').remove();
+    // Pages before about 2022 lead every row with the drawing's letter (A Seat Tube Length ...): drop that column.
+    $('table').each((_, t) => {
+      if ($(t).find('td.code').length) $(t).find('tr').each((_, tr) => void $(tr).children('td,th').first().remove());
+    });
     const tables = geometryTables($.html());
     if (!tables.length) return [];
-    const title = $('h1').first().text().trim();
+    // The cart dialog's screen-reader heading can come first; else the page title before ' (2019) | ...'.
+    const title = $('h1').not('.sr-only').first().text().trim() || $('title').text().split(/\s[(|]/)[0].trim();
     const model = familyName(title);
     if (!model || /cart|e\+|eplus/i.test(model)) return [];
     const category = categoryFrom(model, [

@@ -46,6 +46,9 @@ describe('adapters', () => {
     expect(named('Grizl 7 RAW')).toBe('Grizl');
   });
   it('giant', () => check(giant, 'giant', 'https://www.giant-bicycles.com/us/tcr-advanced-pro-1-di2-2025', 'TCR Advanced', ['XS', 'S', 'M', 'ML', 'L', 'XL'], ['XS', 517, 376]));
+  it('giant with drawing letters, before 2022', () => {
+    check(giant, 'giant-code', 'https://www.giant-bicycles.com/us/contend-sl-2-disc-2019', 'Contend SL', ['S', 'M', 'ML', 'L', 'XL'], ['S', 546, 373]);
+  });
   it('accepts and rejects urls', () => {
     expect(specialized.accept('https://www.specialized.com/us/en/turbo-creo-sl/p/1')).toBeNull();
     expect(specialized.accept('https://www.specialized.com/us/en/s-works-tarmac-sl9-sram-red/p/22?x=1')?.family).toBe('tarmac-sl9');
