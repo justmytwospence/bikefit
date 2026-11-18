@@ -16,7 +16,7 @@ describe('share links', () => {
     expect(out.current.saddleHeight).toBe(701.5);
     expect(out.frames.map((f) => f.id)).toEqual([d.frames[2].id]);
     expect(out.activeFrameId).toBe(d.frames[2].id);
-    expect(out.tab).toBe('fit');
+    expect(out.tab).toBe('mybike');
   });
   it('keeps accented frame names', () => {
     const d = withFrames();

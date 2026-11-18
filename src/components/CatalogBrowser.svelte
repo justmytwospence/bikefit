@@ -3,7 +3,7 @@
   import type { FrameCategory } from '../data/catalog';
   import { groupRows } from '../lib/sizes';
   import { VERDICT_RANK, type Verdict } from '../model/optimize';
-  import { app, catalogKey, hasCachedCatalog, runCatalogFit, ui, useCatalogRow } from '../state.svelte';
+  import { app, catalogKey, hasCachedCatalog, makePreviewMine, previewRow, runCatalogFit, ui } from '../state.svelte';
   import FrameCard from './FrameCard.svelte';
   import Segmented from './Segmented.svelte';
 
@@ -62,7 +62,7 @@
   });
 </script>
 
-<p class="muted">Checks every bike in the catalog for your body and this style, and ranks them by fit score. Parts you marked as fixed in Fit stay as they are.</p>
+<p class="muted">Checks every bike in the catalog for your body and this style, and ranks them by fit score. Parts you marked as fixed in Fit my bike stay as they are.</p>
 {#if !ui.catalog || stale}
   <button type="button" class="btn primary full" disabled={ui.catalog?.running} onclick={runCatalogFit}>
     {ui.catalog ? 'Check again' : 'Find bikes that fit'}
@@ -94,7 +94,11 @@
   <p class="muted small">{matching.length} bikes</p>
   <div class="list" class:dim={stale}>
     {#each matching.slice(0, limit) as g (g.key)}
-      <FrameCard group={g} {withCleats} showScore onuse={useCatalogRow} />
+      <FrameCard
+        group={g} {withCleats} showScore showing={ui.preview?.row.frameId ?? null}
+        onshow={(r) => previewRow(r, ui.catalog!.frames)}
+        onuse={(r) => { previewRow(r, ui.catalog!.frames); makePreviewMine(); }}
+      />
     {:else}
       <p class="muted">{ui.catalog.running ? 'Still checking…' : 'No bikes match these filters.'}</p>
     {/each}

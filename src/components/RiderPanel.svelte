@@ -48,8 +48,8 @@
       <b>Start here</b>
       <ol>
         <li>Enter your height and inseam below, and pick how you ride.</li>
-        <li>Pick your frame in the Bike tab.</li>
-        <li>Press Optimize in the Fit tab.</li>
+        <li>Have a bike? Pick it in Fit my bike and press Optimize.</li>
+        <li>Shopping? Find a bike ranks the catalog for your body.</li>
       </ol>
       <button type="button" class="btn small" onclick={() => (app.seenIntro = true)}>Got it</button>
     </div>

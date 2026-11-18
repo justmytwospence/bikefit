@@ -5,7 +5,14 @@ import type {
   Body, Components, Effort, FitParams, Frame, HandsPref, ParamKey, PartOptions, StyleId,
 } from '../model/types';
 
-export type Tab = 'rider' | 'bike' | 'fit' | 'compare';
+export type Tab = 'rider' | 'mybike' | 'find';
+
+const OLD_TABS: Record<string, Tab> = { bike: 'mybike', fit: 'mybike', compare: 'find' };
+/** Saved data and links from before the tabs were merged name the old ones. */
+export function migrateTab(t: unknown): Tab {
+  if (t === 'rider' || t === 'mybike' || t === 'find') return t;
+  return (typeof t === 'string' && OLD_TABS[t]) || 'rider';
+}
 export type Level = 1 | 2 | 3;
 
 export const LEVEL_OPTIONS = [
@@ -98,6 +105,7 @@ export function migrate(raw: unknown): AppData | null {
     detail,
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     activeFrameId,
+    tab: migrateTab(d.tab),
     effort: d.effort ?? null,
     hands: d.hands ?? null,
     units: d.units === 'imperial' ? 'imperial' : 'metric',

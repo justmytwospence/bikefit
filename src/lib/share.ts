@@ -16,7 +16,7 @@ function fromBase64Url(s: string): string {
 /** The setup with only the active frame, for a link. */
 export function encodeShare(d: AppData): string {
   const frame = d.frames.find((f) => f.id === d.activeFrameId) ?? d.frames[0];
-  return toBase64Url(JSON.stringify({ ...d, frames: [frame], activeFrameId: frame.id, tab: 'fit' }));
+  return toBase64Url(JSON.stringify({ ...d, frames: [frame], activeFrameId: frame.id, tab: 'mybike' }));
 }
 
 export function decodeShare(s: string): AppData | null {

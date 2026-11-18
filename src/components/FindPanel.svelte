@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Verdict } from '../model/optimize';
+  import { buildSummary, type Verdict } from '../model/optimize';
   import { groupRows } from '../lib/sizes';
   import { STYLES } from '../model/styles';
-  import { app, compareKey, runCompareAll, ui, useCompareRow } from '../state.svelte';
+  import { app, compareKey, makePreviewMine, previewRow, runCompareAll, stopPreview, ui } from '../state.svelte';
   import CatalogBrowser from './CatalogBrowser.svelte';
   import FrameCard from './FrameCard.svelte';
   import Segmented from './Segmented.svelte';
@@ -14,6 +14,7 @@
     { id: 'compromise', title: 'Fits with compromises' },
     { id: 'no', title: 'Does not fit' },
   ];
+  const VERDICT_TEXT = { fits: 'Fits', compromise: 'Fits with compromises', no: 'Does not fit' } as const;
   const sources = [
     { value: 'saved' as const, label: 'Saved' },
     { value: 'all' as const, label: 'All bikes' },
@@ -34,6 +35,20 @@
   </label>
   <div class="source"><Segmented options={sources} bind:value={ui.compareSource} ariaLabel="Frames to compare" /></div>
 
+  {#if ui.preview}
+    <div class="card showing">
+      <b>Showing {ui.preview.row.frameName}</b>
+      <p class="verdict {ui.preview.row.result.verdict}">{VERDICT_TEXT[ui.preview.row.result.verdict]}</p>
+      <p class="small">{buildSummary(ui.preview.row.result.params, withCleats)}</p>
+      <div class="btnrow">
+        <button type="button" class="btn small primary" onclick={makePreviewMine}>Make it my bike</button>
+        <button type="button" class="btn small" onclick={stopPreview}>Stop showing</button>
+      </div>
+    </div>
+  {:else}
+    <p class="muted small">Tap Show on a bike to see it on the drawing with its suggested build. Your own bike and setup stay as they are until you make one yours.</p>
+  {/if}
+
   {#if ui.compareSource === 'all'}
     <CatalogBrowser />
   {:else}
@@ -53,7 +68,11 @@
         {#each groups as g (g.id)}
           <h2>{g.title}</h2>
           {#each g.models as m (m.key)}
-            <FrameCard group={m} {withCleats} onuse={useCompareRow} />
+            <FrameCard
+              group={m} {withCleats} showing={ui.preview?.row.frameId ?? null}
+              onshow={(r) => previewRow(r, app.frames)}
+              onuse={(r) => { previewRow(r, app.frames); makePreviewMine(); }}
+            />
           {/each}
         {/each}
       </div>
@@ -66,6 +85,13 @@
   .fitfor { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 600; margin-bottom: 12px; }
   .fitfor select { flex: 0 1 200px; }
   .source { margin-bottom: 12px; }
+  .showing { margin-bottom: 12px; }
+  .showing p { margin: 6px 0; }
+  .verdict { font-weight: 600; }
+  .verdict.fits { color: var(--ok); }
+  .verdict.compromise { color: var(--near); }
+  .verdict.no { color: var(--off); }
+  .btnrow { display: flex; gap: 8px; flex-wrap: wrap; }
   .full { width: 100%; }
   .list { margin-top: 16px; }
   .dim { opacity: 0.5; }

@@ -45,6 +45,14 @@ describe('migrate', () => {
     expect(migrate({ v: 3 })).toBeNull();
     expect(migrate({ v: 2, frames: [] })).toBeNull();
   });
+  it('maps old tab ids', () => {
+    const tab = (t: string) => migrate({ ...defaults(), tab: t })!.tab;
+    expect(tab('bike')).toBe('mybike');
+    expect(tab('fit')).toBe('mybike');
+    expect(tab('compare')).toBe('find');
+    expect(tab('nonsense')).toBe('rider');
+    expect(tab('find')).toBe('find');
+  });
   it('new data starts without a setup', () => {
     expect(defaults().hasSetup).toBe(false);
   });

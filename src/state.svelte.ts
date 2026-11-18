@@ -67,7 +67,9 @@ export const ui = $state({
   viewPose: 'hoods' as 'hoods' | 'drops',
   measure: null as MeasureId | null,
   sizes: null as { rows: CompareRow[]; options: SizeOption[] } | null,
-  compareSource: 'saved' as 'saved' | 'all',
+  compareSource: 'all' as 'saved' | 'all',
+  /** A bike shown on the drawing from Find a bike, with its suggested build; not saved, not yours until made so. */
+  preview: null as { row: CompareRow; frame: Frame } | null,
   catalog: null as CatalogView | null,
 });
 
@@ -285,18 +287,26 @@ export async function runCatalogFit() {
   }
 }
 
-/** Opens Compare on the catalog, checking it unless fresh results are there. */
-export function browseCatalog() {
-  app.tab = 'compare';
-  ui.compareSource = 'all';
-  if (!ui.catalog || (!ui.catalog.running && ui.catalog.key !== catalogKey())) void runCatalogFit();
+/** Shows a bike from Find a bike on the drawing with its suggested build; your own bike is untouched. */
+export function previewRow(row: CompareRow, frames: Frame[]) {
+  const f = frames.find((x) => x.id === row.frameId);
+  if (!f) return;
+  ui.preview = { row: snap(row), frame: snap(f) };
+  ui.animate = true;
 }
 
-/** Saves a catalog size if needed, then uses it like a saved Compare row. */
-export function useCatalogRow(row: CompareRow) {
-  const f = ui.catalog?.frames.find((x) => x.id === row.frameId);
-  if (f && !app.frames.some((x) => x.id === f.id)) app.frames.push(snap(f));
-  useCompareRow(row);
+export function stopPreview() {
+  ui.preview = null;
+  ui.animate = true;
+}
+
+/** Makes the bike on show your bike, with its suggested build as your setup. */
+export function makePreviewMine() {
+  const p = ui.preview;
+  if (!p) return;
+  if (!app.frames.some((f) => f.id === p.frame.id)) app.frames.push(snap(p.frame));
+  useCompareRow(p.row);
+  ui.preview = null;
 }
 
 export function useCompareRow(row: CompareRow) {
@@ -304,7 +314,7 @@ export function useCompareRow(row: CompareRow) {
   ui.animate = true;
   Object.assign(app.current, snap(row.result.params));
   Object.assign(app.baseline, snap(row.result.params));
-  app.tab = 'fit';
+  app.tab = 'mybike';
   clearFeedback();
 }
 
@@ -365,6 +375,7 @@ export function replaceApp(d: AppData) {
   Object.assign(app, d);
   clearFeedback();
   ui.compareRows = null;
+  ui.preview = null;
 }
 
 export function exportJson(): string {

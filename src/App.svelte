@@ -2,11 +2,10 @@
   import { cubicOut } from 'svelte/easing';
   import { Tween } from 'svelte/motion';
   import { untrack } from 'svelte';
-  import BikePanel from './components/BikePanel.svelte';
   import BikeView from './components/BikeView.svelte';
-  import ComparePanel from './components/ComparePanel.svelte';
-  import FitPanel from './components/FitPanel.svelte';
+  import FindPanel from './components/FindPanel.svelte';
   import MetricStrip from './components/MetricStrip.svelte';
+  import MyBikePanel from './components/MyBikePanel.svelte';
   import RiderPanel from './components/RiderPanel.svelte';
   import ScoreCard from './components/ScoreCard.svelte';
   import SettingsMenu from './components/SettingsMenu.svelte';
@@ -26,13 +25,17 @@
   const targets = $derived(bandsFor(style, app.body.flexibility));
   const weights = $derived(poseWeights(app.hands ?? style.defaultHands));
   const effort = $derived(app.effort ?? style.defaultEffort);
-  const frame = $derived(activeFrame());
+  /** Your own bike; the drawing shows another one only while Find a bike has one on show. */
+  const mine = $derived(activeFrame());
+  const previewing = $derived(app.tab === 'find' && !!ui.preview);
+  const frame = $derived(previewing ? ui.preview!.frame : mine);
+  const viewParams = $derived(previewing ? ui.preview!.row.result.params : app.current);
   const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
   const resultsLevel = $derived(app.detail.results);
 
   const shown = new Tween($state.snapshot(app.current), { duration: 450, easing: cubicOut });
   $effect(() => {
-    const next = $state.snapshot(app.current);
+    const next = $state.snapshot(viewParams);
     const animate = untrack(() => ui.animate);
     shown.set(next, { duration: animate ? 450 : 0 });
     untrack(() => (ui.animate = false));
@@ -47,9 +50,12 @@
       app.components, app.options.crankLengths,
     ),
   );
-  /** Why the rider could not ride these settings at all, for the Fit tab's hard stops. */
+  /** Why the rider could not ride these settings at all, for Fit my bike's hard stops. */
   const whyImpossible = $derived((p: FitParams) =>
-    impossible(evaluateFit(segments, forwardLayout(frame, app.components, p), ctx, targets, 36, false)));
+    impossible(evaluateFit(
+      segments, forwardLayout(mine, app.components, p),
+      makeContext(mine, app.components, app.body.ankling, effort), targets, 36, false,
+    )));
   const contact = $derived(resultsLevel >= 2 ? ui.viewPose : 'hoods');
   const pi = $derived(contact === 'drops' ? 1 : 0);
   // The drops pose has no knee bands of its own; borrow the hoods ones so the knee card stays.
@@ -60,7 +66,7 @@
   const pose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg));
   const farPose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg + 180));
   const ghostPose = $derived(
-    ui.ghost
+    ui.ghost && !previewing
       ? riderPose(segments, forwardLayout(frame, app.components, ui.ghost), ctx, contact, targets[pi].elbowPref, crankDeg)
       : null,
   );
@@ -90,14 +96,13 @@
   });
 
   $effect(() => {
-    if (app.current.spacers > frame.maxSpacers) app.current.spacers = frame.maxSpacers;
+    if (app.current.spacers > mine.maxSpacers) app.current.spacers = mine.maxSpacers;
   });
 
   const tabs: { id: Tab; label: string }[] = [
     { id: 'rider', label: 'Rider' },
-    { id: 'bike', label: 'Bike' },
-    { id: 'fit', label: 'Fit' },
-    { id: 'compare', label: 'Compare' },
+    { id: 'mybike', label: 'Fit my bike' },
+    { id: 'find', label: 'Find a bike' },
   ];
 </script>
 
@@ -124,9 +129,8 @@
     </div>
     <div class="body">
       {#if app.tab === 'rider'}<RiderPanel />
-      {:else if app.tab === 'bike'}<BikePanel />
-      {:else if app.tab === 'fit'}<FitPanel {layout} {evaluation} {whyImpossible} />
-      {:else}<ComparePanel />{/if}
+      {:else if app.tab === 'mybike'}<MyBikePanel {layout} {evaluation} {whyImpossible} />
+      {:else}<FindPanel />{/if}
     </div>
   </aside>
 </div>

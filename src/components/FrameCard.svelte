@@ -2,10 +2,13 @@
   import { buildSummary, type CompareRow, type Verdict } from '../model/optimize';
   import type { ModelGroup } from '../lib/sizes';
 
-  let { group, withCleats, showScore = false, onuse }: {
+  let { group, withCleats, showScore = false, showing = null, onshow, onuse }: {
     group: ModelGroup;
     withCleats: boolean;
     showScore?: boolean;
+    /** Frame id currently shown on the drawing, if any. */
+    showing?: string | null;
+    onshow: (row: CompareRow) => void;
     onuse: (row: CompareRow) => void;
   } = $props();
 
@@ -41,7 +44,7 @@
         <button
           type="button" class="sz {s.row.result.verdict}" class:on={s.row === row}
           aria-pressed={s.row === row} aria-label="Size {s.size}: {VERDICT_TEXT[s.row.result.verdict]}"
-          title={VERDICT_TEXT[s.row.result.verdict]} onclick={() => (shownId = s.row.frameId)}
+          title={VERDICT_TEXT[s.row.result.verdict]} onclick={() => { shownId = s.row.frameId; onshow(s.row); }}
         >{s.size}</button>
       {/each}
     </div>
@@ -53,12 +56,16 @@
   {:else}
     <div class="small okc">Fits within every target</div>
   {/if}
-  <button type="button" class="btn small" onclick={() => onuse(row)}>
-    {size ? `Use size ${size}` : 'Use this frame'}
-  </button>
+  <div class="btnrow">
+    <button type="button" class="btn small" disabled={showing === row.frameId} onclick={() => onshow(row)}>
+      {showing === row.frameId ? 'Showing' : size ? `Show size ${size}` : 'Show'}
+    </button>
+    <button type="button" class="btn small primary" onclick={() => onuse(row)}>Make it my bike</button>
+  </div>
 </div>
 
 <style>
+  .btnrow { display: flex; gap: 8px; flex-wrap: wrap; }
   .sizes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
   .sz { min-width: 44px; min-height: 36px; border-radius: 10px; border: 2px solid transparent; font-weight: 700; background: var(--surface-2); }
   .sz.fits { color: var(--ok); }

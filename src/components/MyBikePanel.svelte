@@ -8,19 +8,16 @@
   import { clamp } from '../model/vec';
   import { CUSTOM_HINT, fixedSummary, KNOB_ORDER, PRESETS, presetLocks, presetOf, type Preset } from '../lib/knobs';
   import {
-    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo, useSize, browseCatalog,
+    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo, useSize,
   } from '../state.svelte';
   import { sizeVerdictLine } from '../lib/sizes';
   import { STYLES } from '../model/styles';
   import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
+  import BikePicker from './BikePicker.svelte';
+  import FrameDetails from './FrameDetails.svelte';
   import Segmented from './Segmented.svelte';
   import SliderField from './SliderField.svelte';
-
-  const starts = [
-    { value: 'new' as const, label: 'New build' },
-    { value: 'mine' as const, label: 'My current setup' },
-  ];
 
   let { layout, evaluation, whyImpossible }: {
     layout: Layout; evaluation: Evaluation; whyImpossible: (p: FitParams) => Impossible | null;
@@ -91,17 +88,15 @@
 </script>
 
 <div class="scroll">
-  <Segmented
-    options={starts} ariaLabel="Starting point"
-    bind:value={() => (app.hasSetup ? 'mine' : 'new'), (v) => setHasSetup(v === 'mine')}
-  />
-  <p class="muted small start">
-    {app.hasSetup
-      ? 'Changes are counted from your setup. Optimize prefers adjustments over new parts.'
-      : `No bike set up yet: Optimize picks the best build for this frame${frame.id.startsWith('cat:') ? ' and checks its other sizes' : ''}.`}
-  </p>
+  <BikePicker />
   {#if !app.hasSetup}
-    <button type="button" class="link" onclick={browseCatalog}>Browse all bikes that fit</button>
+    <p class="muted small start">
+      No setup saved for this bike yet: Optimize suggests a build{frame.id.startsWith('cat:') ? ' and checks its other sizes' : ''}.
+    </p>
+    <button type="button" class="link" onclick={() => setHasSetup(true)}>I already ride it: these settings are my setup</button>
+  {:else}
+    <p class="muted small start">Changes are counted from your setup. Optimize prefers adjustments over new parts.</p>
+    <button type="button" class="link" onclick={() => setHasSetup(false)}>Start a new build instead</button>
   {/if}
   <h2>What can you change?</h2>
   <Segmented
@@ -266,6 +261,11 @@
     </div>
   {/if}
   {#if ui.error}<p class="err">{ui.error}</p>{/if}
+
+  <details class="card frame">
+    <summary><b>Frame geometry and parts</b></summary>
+    <FrameDetails />
+  </details>
 </div>
 
 <div class="actions">
@@ -290,10 +290,10 @@
   .sz.no { color: var(--off); }
   .sz.on { border-color: currentColor; background: var(--surface); }
   .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
-  .fixed { margin-top: 18px; }
-  .fixed summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
-  .fixed summary b::after { content: ' ▾'; color: var(--muted); }
-  .fixed[open] summary b::after { content: ' ▴'; }
+  .fixed, .frame { margin-top: 18px; }
+  .fixed summary, .frame summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
+  .fixed summary b::after, .frame summary b::after { content: ' ▾'; color: var(--muted); }
+  .fixed[open] summary b::after, .frame[open] summary b::after { content: ' ▴'; }
   .changes h2, .readouts h2 { margin-top: 0; }
   dl { margin: 0; }
   dl div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; border-bottom: 1px solid var(--line); }
