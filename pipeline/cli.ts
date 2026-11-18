@@ -25,6 +25,7 @@ function writeManifest(m: Manifest) {
   writeFileSync(join(MANIFEST, `${m.file}.json`), JSON.stringify({ ...m, pages }, null, 1) + '\n');
 }
 
+const BUCKETS = ['to 2019', '2020-21', '2022-23', '2024-25', '2026 on'];
 const bucketOf = (ts: string) => {
   const y = Number(ts.slice(0, 4));
   return y <= 2019 ? 0 : y <= 2021 ? 1 : y <= 2023 ? 2 : y <= 2025 ? 3 : 4;
@@ -51,9 +52,11 @@ async function doPin(b: BrandEntry, a: Adapter) {
   }
 }
 
-async function discover(b: BrandEntry, a: Adapter) {
-  const old = manifestOf(b);
-  const have = new Map(old.pages.map((p) => [pageKey(p.url, p.timestamp), p]));
+/** Captures a family/year bucket may use, best first: most-captured URLs, newest capture of each. */
+interface Group { family: string; bucket: number; tries: { url: string; ts: string }[] }
+const MAX_TRIES = 4;
+
+async function groupsOf(a: Adapter): Promise<Group[]> {
   const seen = new Map<string, { family: string; url: string; ts: string[] }>();
   for (const prefix of a.prefixes) {
     for (const row of await cdx(prefix)) {
@@ -65,53 +68,96 @@ async function discover(b: BrandEntry, a: Adapter) {
       seen.set(k, e);
     }
   }
-  const picks: { family: string; url: string; ts: string }[] = [];
+  const out: Group[] = [];
   const families = new Set([...seen.values()].map((e) => e.family));
   for (const family of families) {
     for (let bucket = 0; bucket < 5; bucket++) {
-      let best: { url: string; n: number; ts: string } | null = null;
-      for (const e of seen.values()) {
-        if (e.family !== family) continue;
-        const inB = e.ts.filter((t) => bucketOf(t) === bucket).sort();
-        if (!inB.length) continue;
-        if (!best || inB.length > best.n || (inB.length === best.n && e.url.length < best.url.length)) {
-          best = { url: e.url, n: inB.length, ts: inB[inB.length - 1] };
-        }
-      }
-      if (best) picks.push({ family, url: best.url, ts: best.ts });
+      const urls = [...seen.values()]
+        .filter((e) => e.family === family)
+        .map((e) => ({ url: e.url, ts: e.ts.filter((t) => bucketOf(t) === bucket).sort() }))
+        .filter((e) => e.ts.length)
+        .sort((x, y) => y.ts.length - x.ts.length || x.url.length - y.url.length);
+      // Some captures lack the geometry (it loaded after the archive took the page): try others.
+      const tries = urls.flatMap((e) => e.ts.slice(-2).reverse().map((ts) => ({ url: e.url, ts }))).slice(0, MAX_TRIES);
+      if (tries.length) out.push({ family, bucket, tries });
     }
   }
-  const pages: PageEntry[] = [];
-  let n = 0;
-  for (const p of picks) {
-    n++;
-    const prior = have.get(pageKey(p.url, p.ts));
-    if (prior) {
-      pages.push(prior);
-      continue;
-    }
+  return out;
+}
+
+/** Pins a capture and its related URLs, and returns the manifest entry when the adapter finds geometry. */
+async function tryCapture(a: Adapter, family: string, url: string, ts: string): Promise<PageEntry | null> {
+  const { capture, html } = await pin(url, ts);
+  const related: Capture[] = [];
+  const relHtml: Record<string, string> = {};
+  for (const ru of a.related?.(html, url) ?? []) {
+    // The capture nearest before the page; else any, since endpoints keyed by product id were often archived later.
+    const rts = (await latestCapture(ru, ts)) ?? (await latestCapture(ru));
+    if (!rts) continue;
+    const r = await pin(ru, rts);
+    related.push(r.capture);
+    relHtml[ru] = r.html;
+  }
+  const page: Page = { url, timestamp: ts, html, related: relHtml };
+  if (!a.extract(page).length) return null;
+  const firstSeen = (await firstSeenOf(url)) ?? undefined;
+  return { ...capture, family, year: modelYear(ts), related, firstSeen };
+}
+
+/** The first capture of a group with geometry; logs every one that has none. */
+async function resolveGroup(b: BrandEntry, a: Adapter, g: Group, have: Map<string, PageEntry>): Promise<PageEntry | null> {
+  for (const t of g.tries) {
+    const prior = have.get(pageKey(t.url, t.ts));
+    if (prior) return prior;
     try {
-      const { capture, html } = await pin(p.url, p.ts);
-      const related: Capture[] = [];
-      const relHtml: Record<string, string> = {};
-      for (const ru of a.related?.(html, p.url) ?? []) {
-        const rts = await latestCapture(ru, p.ts);
-        if (!rts) continue;
-        const r = await pin(ru, rts);
-        related.push(r.capture);
-        relHtml[ru] = r.html;
-      }
-      const page: Page = { url: p.url, timestamp: p.ts, html, related: relHtml };
-      if (!a.extract(page).length) continue;
-      const firstSeen = (await firstSeenOf(p.url)) ?? undefined;
-      pages.push({ ...capture, family: p.family, year: modelYear(p.ts), related, firstSeen });
+      const entry = await tryCapture(a, g.family, t.url, t.ts);
+      if (entry) return entry;
+      console.warn(`${b.file}: no geometry in ${t.url} @ ${t.ts}`);
     } catch (e) {
-      console.error(`${b.file}: skip ${p.url} @ ${p.ts}: ${e instanceof Error ? e.message : e}`);
+      console.error(`${b.file}: skip ${t.url} @ ${t.ts}: ${e instanceof Error ? e.message : e}`);
     }
-    if (n % 25 === 0) console.log(`${b.file}: ${n}/${picks.length}`);
+  }
+  return null;
+}
+
+async function discover(b: BrandEntry, a: Adapter) {
+  const have = new Map(manifestOf(b).pages.map((p) => [pageKey(p.url, p.timestamp), p]));
+  const groups = await groupsOf(a);
+  const pages: PageEntry[] = [];
+  const empty: string[] = [];
+  let n = 0;
+  for (const g of groups) {
+    const entry = await resolveGroup(b, a, g, have);
+    if (entry) pages.push(entry);
+    else empty.push(`${g.family} (${BUCKETS[g.bucket]})`);
+    if (++n % 25 === 0) console.log(`${b.file}: ${n}/${groups.length}`);
   }
   writeManifest({ brand: b.brand, file: b.file, pages });
-  console.log(`${b.file}: ${pages.length} pages from ${picks.length} captures`);
+  console.log(`${b.file}: ${pages.length} pages for ${groups.length} family/year groups`);
+  if (empty.length) console.warn(`${b.file}: no geometry for ${empty.length} groups: ${empty.join(', ')}`);
+}
+
+/**
+ * Read-only check of discovery: which family/year groups the manifest has no page for, and whether
+ * a capture with geometry exists for them now (pinning pages into the cache, never the manifest).
+ */
+async function audit(b: BrandEntry, a: Adapter): Promise<{ groups: number; missing: number; recoverable: string[]; empty: string[] }> {
+  const pages = manifestOf(b).pages;
+  const covered = new Set(pages.map((p) => `${p.family}\u0000${bucketOf(p.timestamp)}`));
+  const groups = await groupsOf(a);
+  const recoverable: string[] = [];
+  const empty: string[] = [];
+  for (const g of groups) {
+    if (covered.has(`${g.family}\u0000${g.bucket}`)) continue;
+    const label = `${g.family} (${BUCKETS[g.bucket]})`;
+    const entry = await resolveGroup(b, a, g, new Map());
+    (entry ? recoverable : empty).push(label);
+  }
+  const missing = recoverable.length + empty.length;
+  console.log(`${b.file}: ${groups.length} groups, ${missing} without a page: ${recoverable.length} recoverable, ${empty.length} with no geometry in ${MAX_TRIES} captures`);
+  for (const r of recoverable) console.log(`  recoverable: ${r}`);
+  for (const e of empty) console.log(`  no geometry: ${e}`);
+  return { groups: groups.length, missing, recoverable, empty };
 }
 
 async function fetchAll(b: BrandEntry) {
@@ -174,11 +220,22 @@ async function buildAll(only: string[], strict: boolean): Promise<Map<string, { 
 async function main() {
   const [cmd, ...args] = process.argv.slice(2);
   const sel = args.length ? brands.filter((b) => args.includes(b.file)) : brands;
-  if (!cmd || !['pin', 'discover', 'fetch', 'build', 'check', 'firstseen'].includes(cmd) || !sel.length) {
-    console.error('usage: npm run catalog -- pin|discover|fetch|build|check|firstseen [brand-file...]');
+  if (!cmd || !['pin', 'discover', 'audit', 'fetch', 'build', 'check', 'firstseen'].includes(cmd) || !sel.length) {
+    console.error('usage: npm run catalog -- pin|discover|audit|fetch|build|check|firstseen [brand-file...]');
     process.exit(2);
   }
-  if (cmd === 'pin' || cmd === 'discover') {
+  if (cmd === 'audit') {
+    let total = 0;
+    const recoverable: string[] = [];
+    for (const b of sel) {
+      const a = await adapterFor(b.file, b.brand);
+      if (!a.prefixes.length) continue;
+      const r = await audit(b, a);
+      total += r.missing;
+      if (r.recoverable.length) recoverable.push(`${b.file} (${r.recoverable.length})`);
+    }
+    console.log(`audit: ${total} groups without a page; recoverable by discover: ${recoverable.join(', ') || 'none'}`);
+  } else if (cmd === 'pin' || cmd === 'discover') {
     for (const b of sel) {
       const a = await adapterFor(b.file, b.brand);
       if (cmd === 'pin') await doPin(b, a);
