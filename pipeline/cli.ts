@@ -236,10 +236,21 @@ async function main() {
     }
     console.log(`audit: ${total} groups without a page; recoverable by discover: ${recoverable.join(', ') || 'none'}`);
   } else if (cmd === 'pin' || cmd === 'discover') {
+    const failed: string[] = [];
     for (const b of sel) {
       const a = await adapterFor(b.file, b.brand);
-      if (cmd === 'pin') await doPin(b, a);
-      else await discover(b, a);
+      // One brand's network failure (the archive drops connections under load) should not cost the others.
+      try {
+        if (cmd === 'pin') await doPin(b, a);
+        else await discover(b, a);
+      } catch (e) {
+        failed.push(b.file);
+        console.error(`${b.file}: ${cmd} failed: ${e instanceof Error ? e.message : e}`);
+      }
+    }
+    if (failed.length) {
+      console.error(`${cmd} failed for ${failed.join(', ')}; rerun them`);
+      process.exitCode = 1;
     }
   } else if (cmd === 'firstseen') {
     for (const b of sel) {
