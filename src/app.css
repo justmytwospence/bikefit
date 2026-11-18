@@ -93,14 +93,15 @@ input:focus-visible, button:focus-visible, select:focus-visible { outline: 2px s
 
 input[type="range"] {
   -webkit-appearance: none; appearance: none; width: 100%; height: 44px; background: transparent; margin: 0;
-  --p: 50%;
+  --p: 50%; --lo: 0%; --hi: 100%;
+  /* Shaded ends are settings the rider's body cannot reach; the slider stops at them. */
+  --blocked: color-mix(in srgb, var(--off) 30%, var(--surface-2));
+  --track: linear-gradient(to right,
+    var(--blocked) var(--lo), var(--accent) var(--lo), var(--accent) var(--p),
+    var(--surface-2) var(--p), var(--surface-2) var(--hi), var(--blocked) var(--hi));
 }
-input[type="range"]::-webkit-slider-runnable-track {
-  height: 6px; border-radius: 3px;
-  background: linear-gradient(to right, var(--accent) var(--p), var(--surface-2) var(--p));
-}
-input[type="range"]::-moz-range-track { height: 6px; border-radius: 3px; background: var(--surface-2); }
-input[type="range"]::-moz-range-progress { height: 6px; border-radius: 3px; background: var(--accent); }
+input[type="range"]::-webkit-slider-runnable-track { height: 6px; border-radius: 3px; background: var(--track); }
+input[type="range"]::-moz-range-track { height: 6px; border-radius: 3px; background: var(--track); }
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; width: 24px; height: 24px; border-radius: 50%; margin-top: -9px;
   background: var(--accent); border: 3px solid #fff; box-shadow: 0 1px 4px rgb(0 0 0 / 0.3);

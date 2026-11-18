@@ -13,7 +13,9 @@
   import { resolveSegments } from './model/body';
   import { forwardLayout } from './model/geometry';
   import { idealLayout } from './model/optimize';
+  import { impossible } from './model/limits';
   import { evaluateFit, riderPose } from './model/pose';
+  import type { FitParams } from './model/types';
   import { makeContext, poseWeights } from './model/riding';
   import { fitCost, fitScore, partPenalty } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
@@ -45,6 +47,9 @@
       app.components, app.options.crankLengths,
     ),
   );
+  /** Why the rider could not ride these settings at all, for the Fit tab's hard stops. */
+  const whyImpossible = $derived((p: FitParams) =>
+    impossible(evaluateFit(segments, forwardLayout(frame, app.components, p), ctx, targets, 36, false)));
   const contact = $derived(resultsLevel >= 2 ? ui.viewPose : 'hoods');
   const pi = $derived(contact === 'drops' ? 1 : 0);
   // The drops pose has no knee bands of its own; borrow the hoods ones so the knee card stays.
@@ -120,7 +125,7 @@
     <div class="body">
       {#if app.tab === 'rider'}<RiderPanel />
       {:else if app.tab === 'bike'}<BikePanel />
-      {:else if app.tab === 'fit'}<FitPanel {layout} {evaluation} />
+      {:else if app.tab === 'fit'}<FitPanel {layout} {evaluation} {whyImpossible} />
       {:else}<ComparePanel />{/if}
     </div>
   </aside>

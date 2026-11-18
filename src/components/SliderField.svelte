@@ -1,6 +1,7 @@
 <script lang="ts">
   let {
     label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, locked = $bindable(false), hint, onedit, showLock = true,
+    limit, stop,
   }: {
     label: string;
     value: number;
@@ -13,8 +14,25 @@
     hint?: string;
     onedit?: () => void;
     showLock?: boolean;
+    /** The part of [min, max] the slider may move in; the rest of the track is shaded and stops the thumb. */
+    limit?: [number, number];
+    /** Says why the thumb stopped, shown while it sits against a limit. */
+    stop?: string;
   } = $props();
-  const pct = $derived(Math.max(0, Math.min(100, ((value - min) / (max - min)) * 100)));
+  const at = (v: number) => Math.max(0, Math.min(100, ((v - min) / (max - min)) * 100));
+  const pct = $derived(at(value));
+  const lo = $derived(limit ? at(limit[0]) : 0);
+  const hi = $derived(limit ? at(limit[1]) : 100);
+
+  function input(e: Event & { currentTarget: HTMLInputElement }) {
+    let v = Number(e.currentTarget.value);
+    if (limit) v = Math.min(limit[1], Math.max(limit[0], v));
+    e.currentTarget.value = String(v);
+    if (v !== value) {
+      value = v;
+      onedit?.();
+    }
+  }
 </script>
 
 <div class="field">
@@ -35,10 +53,11 @@
     </button>{/if}
   </div>
   <input
-    type="range" {min} {max} {step} bind:value style="--p:{pct}%" aria-label={label}
-    oninput={() => onedit?.()}
+    type="range" {min} {max} {step} {value} style="--p:{pct}%;--lo:{lo}%;--hi:{hi}%" aria-label={label}
+    class:limited={!!limit && (lo > 0 || hi < 100)} oninput={input}
   />
-  {#if hint}<div class="hint">{hint}</div>{/if}
+  {#if stop}<div class="stop" role="status">{stop}</div>
+  {:else if hint}<div class="hint">{hint}</div>{/if}
 </div>
 
 <style>
@@ -50,4 +69,5 @@
   .lock { width: 44px; height: 36px; border: 0; background: transparent; color: var(--muted); display: grid; place-items: center; border-radius: 10px; margin-right: -8px; }
   .lock.on { color: var(--accent); }
   .hint { font-size: 12px; color: var(--muted); margin-top: -6px; }
+  .stop { font-size: 12px; color: var(--off); font-weight: 600; margin-top: -6px; }
 </style>
