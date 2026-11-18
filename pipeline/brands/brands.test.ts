@@ -33,6 +33,18 @@ function check(a: Adapter, file: string, url: string, model: string, sizes: stri
 describe('adapters', () => {
   it('specialized', () => check(specialized, 'specialized', 'https://www.specialized.com/us/en/tarmac-sl9-expert/p/1', 'Tarmac SL9', ['44', '49', '52', '54', '56', '58', '61'], ['44', 501, 366]));
   it('canyon', () => check(canyon, 'canyon', 'https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html', 'Ultimate CF SLX', ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL'], ['L', 580, 401]));
+  it('canyon geometry table, before product data', () => {
+    const url = 'https://www.canyon.com/en-us/gravel-bikes/race/grail/cf-slx/grail-cf-slx-9-etap/2738.html';
+    check(canyon, 'canyon-table', url, 'Grail CF SLX', ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL'], ['2XS', 470, 384]);
+    const [e] = canyon.extract(page('canyon-table', url));
+    expect(e.category).toBe('gravel');
+    expect(e.sizes.find((s) => s.size === 'M')!.bbDrop).toBeGreaterThan(40);
+    expect(canyon.extract(page('canyon-table', 'https://www.canyon.com/en-us/gravel-bikes/cyclocross/inflite/x/1.html'))[0].category).toBe('cyclocross');
+    const named = (title: string) => canyon.extract({ ...page('canyon-table', url), html: page('canyon-table', url).html.replace(/<title>[^<]*/, `<title>${title} | CANYON US`) })[0].model;
+    expect(named('Grail CF SLX 8 AXS RS')).toBe('Grail CF SLX');
+    expect(named('GRIZL CF SLX 8 eTap')).toBe('Grizl CF SLX');
+    expect(named('Grizl 7 RAW')).toBe('Grizl');
+  });
   it('giant', () => check(giant, 'giant', 'https://www.giant-bicycles.com/us/tcr-advanced-pro-1-di2-2025', 'TCR Advanced', ['XS', 'S', 'M', 'ML', 'L', 'XL'], ['XS', 517, 376]));
   it('accepts and rejects urls', () => {
     expect(specialized.accept('https://www.specialized.com/us/en/turbo-creo-sl/p/1')).toBeNull();

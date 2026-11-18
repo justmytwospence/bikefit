@@ -26,7 +26,7 @@ export const LABELS: Record<GeometryKey, string[]> = {
   wheelbase: ['wheelbase', 'wheel base', 'radstand', 'empattement', 'interasse', 'distancia entre ejes', 'wielbasis'],
   bbDrop: [
     'bb drop', 'bottom bracket drop', 'tretlagerabsenkung', 'drop du boitier', 'abbassamento movimento centrale',
-    'caida pedalier', 'bb verlaging', 'bb offset',
+    'caida pedalier', 'bb verlaging', 'bb offset', 'bottom bracket offset',
   ],
 };
 
