@@ -6,22 +6,62 @@ import type { Evaluation } from './types';
  */
 export const MIN_KNEE_TOP = 40;
 
-export type Impossible = 'pedal' | 'knee' | 'bars';
+/**
+ * Smallest hip angle (torso to thigh, degrees) a rider can fold to. The tightest time-trial
+ * positions close it to about 40; the model's pelvic tilt keeps ordinary fits above 44.
+ */
+export const MIN_HIP = 35;
+
+/**
+ * Saddle top above the top of the seat tube, mm. Below the minimum the post head and saddle would
+ * have to sit inside the frame; above the maximum even a long post is out past its minimum insertion.
+ */
+export const POST_SHOWING: [number, number] = [30, 400];
+
+export type Impossible = 'pedal' | 'knee' | 'bars' | 'hip' | 'postLow' | 'postHigh';
 
 export const IMPOSSIBLE_TEXT: Record<Impossible, string> = {
   pedal: "your foot can't reach the pedal",
   knee: "your knee can't bend that far at the top of the stroke",
   bars: "your hands can't reach the bars",
+  hip: "your hip can't fold that far at the top of the stroke",
+  postLow: 'the seatpost would have to sink into the frame',
+  postHigh: 'the seatpost would come out past its minimum insertion',
 };
 
-/** Why the body cannot ride this position at all, or null when it can. */
-export function impossible(ev: Evaluation): Impossible | null {
+/**
+ * Why this position cannot be ridden or built at all, or null when it can.
+ * `postShowing` is saddle height minus seat tube length.
+ */
+export function impossible(ev: Evaluation, postShowing: number): Impossible | null {
+  if (postShowing < POST_SHOWING[0]) return 'postLow';
+  if (postShowing > POST_SHOWING[1]) return 'postHigh';
   for (const p of ev.poses) {
     if (p.overextended) return 'pedal';
     if (p.metrics.kneeTop < MIN_KNEE_TOP) return 'knee';
+    if (p.metrics.hip < MIN_HIP) return 'hip';
     if (p.overreach) return 'bars';
   }
   return null;
+}
+
+/**
+ * Optimizer cost for the limits fitCost does not already price (pedal and bars are there):
+ * a step so the optimizer avoids them, plus a slope back towards the possible side.
+ */
+export function limitCost(ev: Evaluation, postShowing: number): number {
+  let c = 0;
+  if (postShowing < POST_SHOWING[0]) c += 50 + 0.5 * (POST_SHOWING[0] - postShowing);
+  if (postShowing > POST_SHOWING[1]) c += 50 + 0.5 * (postShowing - POST_SHOWING[1]);
+  let knee = 0;
+  let hip = 0;
+  for (const p of ev.poses) {
+    knee = Math.max(knee, MIN_KNEE_TOP - p.metrics.kneeTop);
+    hip = Math.max(hip, MIN_HIP - p.metrics.hip);
+  }
+  if (knee > 0) c += 50 + knee;
+  if (hip > 0) c += 50 + hip;
+  return c;
 }
 
 /**

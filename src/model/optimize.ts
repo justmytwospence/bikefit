@@ -1,4 +1,5 @@
 import { dropsFromHoods, forwardLayout } from './geometry';
+import { impossible, limitCost } from './limits';
 import { evaluateFit } from './pose';
 import { makeContext } from './riding';
 import { buildPenalty, changePenalty, fitCost, fitScore, outside, partPenalty, STEM_RISE_FLAG } from './score';
@@ -90,8 +91,8 @@ export function buildFlags(problem: FitProblem, p: FitParams, facts: FitFacts): 
   return out;
 }
 
-export function verdictOf(problem: FitProblem, ev: Evaluation, flags: string[]): Verdict {
-  if (ev.poses.some((p) => p.overextended || p.overreach)) return 'no';
+export function verdictOf(problem: FitProblem, ev: Evaluation, flags: string[], postShowing: number): Verdict {
+  if (impossible(ev, postShowing)) return 'no';
   let near = false;
   for (let i = 0; i < problem.targets.length; i++) {
     const bands = problem.targets[i].bands;
@@ -126,7 +127,8 @@ export const PARAM_LABELS: Record<ParamKey, string> = {
 function costWith(problem: FitProblem, ctx: FitContext, p: FitParams, steps: number, withToe = false) {
   const layout = forwardLayout(problem.frame, problem.components, p);
   const evaluation = evaluateFit(problem.segments, layout, ctx, problem.targets, steps, withToe);
-  let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p) + buildPenalty(p, problem.frame.maxSpacers);
+  let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p) + buildPenalty(p, problem.frame.maxSpacers)
+    + limitCost(evaluation, p.saddleHeight - problem.frame.seatTubeLength);
   if (problem.mode === 'tune') cost += changePenalty(p, problem.baseline);
   return { cost, evaluation };
 }
@@ -223,7 +225,7 @@ export function optimizeFit(problem: FitProblem): FitResult {
   };
   result.notes = bindingNotes(problem, result);
   result.flags = buildFlags(problem, bestParams, result.facts);
-  result.verdict = verdictOf(problem, bestEval, result.flags);
+  result.verdict = verdictOf(problem, bestEval, result.flags, result.facts.seatpost);
   return result;
 }
 

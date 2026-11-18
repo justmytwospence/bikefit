@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
 import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, standoverHeight, wrenchList, type FitProblem } from './optimize';
+import { POST_SHOWING } from './limits';
 import { evaluateFit } from './pose';
 import { TEST_BODY, TEST_FRAMES } from './testFrames';
 import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
@@ -31,6 +32,18 @@ function allIn(targets: PoseTarget[], ev: Evaluation) {
 }
 
 describe('optimizeFit', () => {
+  it('keeps the seatpost inside what a post can do on a far too small frame', () => {
+    const tiny = { ...frame('race-54'), seatTubeLength: 360 };
+    const r = optimizeFit(problem('endurance', tiny));
+    expect(r.params.saddleHeight - tiny.seatTubeLength).toBeLessThanOrEqual(POST_SHOWING[1]);
+    const tall = { ...frame('endurance-56'), seatTubeLength: 740 };
+    const t = optimizeFit(problem('endurance', tall));
+    expect(t.params.saddleHeight - tall.seatTubeLength).toBeGreaterThanOrEqual(POST_SHOWING[0]);
+    expect(t.verdict).toBe('compromise');
+    // 30 mm of post on this seat tube puts the saddle beyond the test rider's legs: nothing works.
+    const huge = { ...frame('endurance-56'), seatTubeLength: 780 };
+    expect(optimizeFit(problem('endurance', huge)).verdict).toBe('no');
+  });
   it('fits endurance on the endurance frame', () => {
     const p = problem('endurance', frame('endurance-56'));
     const t = performance.now();

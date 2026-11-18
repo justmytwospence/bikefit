@@ -1,12 +1,13 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { forwardLayout } from './geometry';
-import { impossible, possibleRange, type Impossible } from './limits';
+import { impossible, limitCost, MIN_HIP, MIN_KNEE_TOP, possibleRange, POST_SHOWING, type Impossible } from './limits';
 import { evaluateFit } from './pose';
 import { DEFAULT_COMPONENTS, DEFAULT_PARAMS } from './presets';
 import { makeContext } from './riding';
 import { bandsFor, STYLES } from './styles';
 import { TEST_BODY, TEST_FRAMES } from './testFrames';
+import type { Evaluation, PoseEval } from './types';
 
 describe('possibleRange', () => {
   const band = (a: number, b: number) => (v: number): Impossible | null => (v < a ? 'knee' : v > b ? 'pedal' : null);
@@ -33,7 +34,7 @@ describe('saddle height limits for the test rider', () => {
   const ctx = makeContext(frame, DEFAULT_COMPONENTS, 'neutral', style.defaultEffort);
   const targets = bandsFor(style, 'medium');
   const why = (h: number) =>
-    impossible(evaluateFit(seg, forwardLayout(frame, DEFAULT_COMPONENTS, { ...DEFAULT_PARAMS, saddleHeight: h }), ctx, targets));
+    impossible(evaluateFit(seg, forwardLayout(frame, DEFAULT_COMPONENTS, { ...DEFAULT_PARAMS, saddleHeight: h }), ctx, targets), h - frame.seatTubeLength);
   it('stops the saddle where the foot leaves the pedal', () => {
     const r = possibleRange(550, 900, 0.5, DEFAULT_PARAMS.saddleHeight, why);
     expect(r.highWhy).toBe('pedal');
@@ -41,6 +42,35 @@ describe('saddle height limits for the test rider', () => {
     expect(r.hi).toBeLessThan(800);
     expect(why(r.hi)).toBeNull();
     expect(why(r.hi + 0.5)).toBe('pedal');
-    expect(r.lo).toBe(550);
+    // The 540 mm seat tube keeps the saddle 30 mm above it.
+    expect(r.lo).toBe(570);
+    expect(r.lowWhy).toBe('postLow');
+  });
+});
+
+describe('impossible', () => {
+  const pose = (m: Partial<PoseEval['metrics']>, extra: Partial<PoseEval> = {}): PoseEval => ({
+    contact: 'hoods', overextended: false, legShortfall: 0, overreach: false, pelvicTilt: 12, comX: 0,
+    metrics: { knee: 145, kneeTop: 70, hip: 60, torso: 45, shoulder: 90, elbow: 155, seatAngle: 73, handLoad: 30, kops: 0, ...m },
+    ...extra,
+  });
+  const ev = (p: PoseEval): Evaluation => ({ poses: [p], peakKneeCrank: 0, toeClearance: Infinity });
+  it('passes an ordinary position', () => {
+    expect(impossible(ev(pose({})), 200)).toBeNull();
+    expect(limitCost(ev(pose({})), 200)).toBe(0);
+  });
+  it('stops the seatpost at both ends', () => {
+    expect(impossible(ev(pose({})), POST_SHOWING[0] - 1)).toBe('postLow');
+    expect(impossible(ev(pose({})), POST_SHOWING[1] + 1)).toBe('postHigh');
+    expect(impossible(ev(pose({})), POST_SHOWING[0])).toBeNull();
+    expect(limitCost(ev(pose({})), POST_SHOWING[1] + 20)).toBe(60);
+  });
+  it('stops a hip or knee folded past what a body can do', () => {
+    expect(impossible(ev(pose({ hip: MIN_HIP - 1 })), 200)).toBe('hip');
+    expect(impossible(ev(pose({ kneeTop: MIN_KNEE_TOP - 1 })), 200)).toBe('knee');
+    expect(limitCost(ev(pose({ hip: MIN_HIP - 5 })), 200)).toBe(55);
+  });
+  it('names the pedal before the bars', () => {
+    expect(impossible(ev(pose({}, { overextended: true, overreach: true })), 200)).toBe('pedal');
   });
 });
