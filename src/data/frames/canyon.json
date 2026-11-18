@@ -2,13 +2,79 @@
   "brand": "Canyon",
   "models": [
     {
+      "model": "Aeroad CF SL",
+      "year": 2021,
+      "category": "aero",
+      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-sl/aeroad-cf-sl-7-wmn-disc/2769.html",
+      "retrieved": "2021-06-23",
+      "archive": "https://web.archive.org/web/20210623121232/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-sl/aeroad-cf-sl-7-wmn-disc/2769.html",
+      "sizes": [
+        ["3XS",483,358,73.5,71,103,413,405,951,57],
+        ["2XS",498,372,73.5,71.5,121,443,405,967,57],
+        ["XS",521,378,73.5,71.5,109,473,410,977,72],
+        ["S",539,390,73.5,72.8,126,503,410,984,70],
+        ["M",560,393,73.5,73.3,147,533,410,989,70]
+      ]
+    },
+    {
+      "model": "Aeroad CF SLX",
+      "year": 2022,
+      "category": "aero",
+      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-disc-di2/2450.html",
+      "retrieved": "2022-09-22",
+      "archive": "https://web.archive.org/web/20220922074658/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-disc-di2/2450.html",
+      "sizes": [
+        ["2XS",498,372,73.5,70.5,89,443,410,972,72],
+        ["XS",521,378,73.5,71.5,109,473,410,977,72],
+        ["S",539,390,73.5,72.8,126,503,410,984,70],
+        ["M",560,393,73.5,73.3,147,533,410,989,70],
+        ["L",580,401,73.5,73.3,167,563,410,1002,70],
+        ["XL",606,419,73.5,73.5,193,593,410,1025,70],
+        ["2XL",624,429,73.5,73.8,211,623,410,1038,70]
+      ]
+    },
+    {
       "model": "Aeroad CF SLX",
       "year": 2026,
       "category": "aero",
-      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
-      "retrieved": "2026-11-14",
-      "archive": "https://web.archive.org/web/20261114024054/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
-      "estimated": ["bbDrop"],
+      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-7-axs-speed/4535.html",
+      "retrieved": "2025-12-11",
+      "archive": "https://web.archive.org/web/20251211030816/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-7-axs-speed/4535.html",
+      "sizes": [
+        ["2XS",498,372,73.9,70,88,441,410,975,73],
+        ["XS",520,378,73.9,71.2,107,471,410,979,73],
+        ["S",539,390,73.9,72.8,121,501,410,982,73],
+        ["M",560,393,73.9,73.3,142,531,410,988,73],
+        ["L",580,401,73.9,73.3,162,561,413,1003,73],
+        ["XL",606,419,73.9,73.5,188,591,415,1029,73],
+        ["2XL",624,429,73.9,73.8,206,621,415,1042,73]
+      ]
+    },
+    {
+      "model": "Aeroad CFR",
+      "year": 2022,
+      "category": "aero",
+      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-disc-di2/2452.html",
+      "retrieved": "2021-09-22",
+      "archive": "https://web.archive.org/web/20210922134122/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-disc-di2/2452.html",
+      "sizes": [
+        ["2XS",498,372,73.5,70.5,89,443,410,972,72],
+        ["XS",521,378,73.5,71.5,109,473,410,977,72],
+        ["S",539,390,73.5,72.8,126,503,410,984,70],
+        ["M",560,393,73.5,73.3,147,533,410,989,70],
+        ["L",580,401,73.5,73.3,167,563,410,1002,70],
+        ["XL",606,419,73.5,73.5,193,593,410,1025,70],
+        ["2XL",624,429,73.5,73.8,211,623,410,1038,70]
+      ]
+    },
+    {
+      "model": "Aeroad CFR",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
+      "retrieved": "2026-09-14",
+      "archive": "https://web.archive.org/web/20260914195047/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
       "sizes": [
         ["2XS",498,372,73.5,70,88,441,410,975,70],
         ["XS",520,378,73.5,71.2,107,471,410,979,70],
@@ -20,38 +86,37 @@
       ]
     },
     {
-      "model": "Aeroad CFR",
-      "year": 2026,
-      "category": "aero",
-      "source": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
-      "retrieved": "2026-09-14",
-      "archive": "https://web.archive.org/web/20260914195047/https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
-      "estimated": ["bbDrop"],
+      "model": "Endurace",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/al/endurace-7-disc/2961.html",
+      "retrieved": "2021-09-26",
+      "archive": "https://web.archive.org/web/20210926170009/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/al/endurace-7-disc/2961.html",
       "sizes": [
-        ["2XS",498,372,73.5,70,88,441,410,975,70],
-        ["XS",520,378,73.5,71.2,107,471,410,979,70],
-        ["S",539,390,73.5,72.8,121,501,410,982,70],
-        ["M",560,393,73.5,73.3,142,531,410,988,70],
-        ["L",580,401,73.5,73.3,162,561,413,1003,70],
-        ["XL",606,419,73.5,73.5,188,591,415,1029,70],
-        ["2XL",624,429,73.5,73.8,206,621,415,1042,70]
+        ["2XS",518,366,73.5,69.2,107,442,415,990,75],
+        ["XS",541,375,73.5,71,124,472,415,990,75],
+        ["S",565,379,73.5,72,148,502,415,993,73],
+        ["M",587,383,73.5,73,167,532,415,994,73],
+        ["L",612,389,73.5,73,193,562,415,1008,73],
+        ["XL",634,407,73.5,73.3,215,592,415,1030,73],
+        ["2XL",652,417,73.5,73.3,234,622,415,1045,73]
       ]
     },
     {
       "model": "Endurace AllRoad",
       "year": 2025,
+      "lastYear": 2027,
       "category": "endurance",
       "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
       "retrieved": "2026-11-04",
       "archive": "https://web.archive.org/web/20261104065553/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
-      "estimated": ["bbDrop"],
       "sizes": [
-        ["2XS",552,371,73.5,70,130,432,425,1019,72],
-        ["XS",554,377,73.5,70,133,462,425,1026,72],
-        ["S",570,391,73.5,71,145,492,425,1036,73],
-        ["M",594,397,73.5,72,166,522,425,1040,73],
-        ["L",616,407,73.5,72,189,552,425,1057,73],
-        ["XL",640,425,73.5,72,215,582,425,1083,73],
+        ["2XS",552,371,73.5,70,130,432,425,1019,74],
+        ["XS",554,377,73.5,70,133,462,425,1026,74],
+        ["S",570,391,73.5,71,145,492,425,1036,74],
+        ["M",594,397,73.5,72,166,522,425,1040,74],
+        ["L",616,407,73.5,72,189,552,425,1057,74],
+        ["XL",640,425,73.5,72,215,582,425,1083,74],
         ["2XL",660,438,73.5,72,235,612,425,1103,74]
       ]
     },
@@ -72,28 +137,219 @@
       ]
     },
     {
+      "model": "Endurace CF",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf/endurace-cf-7/4274.html",
+      "retrieved": "2026-04-06",
+      "archive": "https://web.archive.org/web/20260406032756/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf/endurace-cf-7/4274.html",
+      "sizes": [
+        ["3XS",510,350,73.5,70.5,122,402,405,957,60],
+        ["2XS",529,354,73.5,71.5,139,432,405,958,60],
+        ["XS",548,370,73.5,71,128,462,415,989,73],
+        ["S",568,375,73.5,72,145,492,415,991,73],
+        ["M",590,378,73.5,73,164,522,415,990,73],
+        ["L",611,387,73.5,73,186,552,415,1006,73],
+        ["XL",637,405,73.5,73.3,213,582,415,1029,73],
+        ["2XL",656,414,73.5,73.3,232,612,415,1044,73]
+      ]
+    },
+    {
+      "model": "Endurace CF SL",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-sl/endurace-cf-sl-8-disc/2963.html",
+      "retrieved": "2021-11-01",
+      "archive": "https://web.archive.org/web/20211101200234/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-sl/endurace-cf-sl-8-disc/2963.html",
+      "sizes": [
+        ["2XS",510,360,73.5,69.2,98,432,415,980,75],
+        ["XS",532,370,73.5,71,115,462,415,982,75],
+        ["S",557,376,73.5,72,139,492,415,988,73],
+        ["M",578,382,73.5,73,158,522,415,990,73],
+        ["L",604,389,73.5,73,184,552,415,1006,73],
+        ["XL",625,407,73.5,73.3,206,582,415,1028,73],
+        ["2XL",644,417,73.5,73.3,225,612,415,1043,73]
+      ]
+    },
+    {
+      "model": "Endurace CF SLX",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/endurace-cf-slx-disc-frameset-mechanical/1500.html",
+      "retrieved": "2020-12-22",
+      "archive": "https://web.archive.org/web/20201222043244/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/endurace-cf-slx-disc-frameset-mechanical/1500.html",
+      "sizes": [
+        ["XS",532,370,72.7,71,115,462,415,982,75],
+        ["S",557,376,73.5,72,139,492,415,988,73],
+        ["M",578,382,73.5,73,158,522,415,990,73],
+        ["L",604,389,73.5,73,184,552,415,1006,73],
+        ["XL",625,407,73.5,73.5,206,582,415,1028,73],
+        ["2XL",644,417,73.5,73.5,225,612,415,1043,73]
+      ]
+    },
+    {
+      "model": "Endurace CF SLX",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-disc-etap/2951.html",
+      "retrieved": "2021-09-23",
+      "archive": "https://web.archive.org/web/20210923200226/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-disc-etap/2951.html",
+      "sizes": [
+        ["2XS",510,360,72.6,71,98,432,415,980,75],
+        ["XS",532,370,72.7,71,115,462,415,982,75],
+        ["S",557,376,73.5,72,139,492,415,988,73],
+        ["M",578,382,73.5,73,158,522,415,990,73],
+        ["L",604,389,73.5,73,184,552,415,1006,73],
+        ["XL",625,407,73.5,73.3,206,582,415,1028,73],
+        ["2XL",644,417,73.5,73.3,225,612,415,1043,73]
+      ]
+    },
+    {
       "model": "Endurace CF SLX",
       "year": 2023,
       "category": "endurance",
-      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-di2/4432.html",
-      "retrieved": "2026-11-16",
-      "aliases": ["Endurace"],
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-9-disc-etap/3370.html",
+      "retrieved": "2023-06-06",
+      "archive": "https://web.archive.org/web/20230606222845/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-9-disc-etap/3370.html",
       "sizes": [
-        ["2XS",524,378,73.5,70.3,103,432,418,999,74],
-        ["XS",545,383,73.5,71,123,462,418,1005,74],
-        ["S",565,386,73.5,71.8,141,492,418,1008,74],
-        ["M",586,388,73.5,72.5,161,522,418,1009,74],
-        ["L",608,397,73.5,72.5,183,552,418,1025,74],
-        ["XL",633,405,73.5,72.8,208,582,418,1039,74],
-        ["2XL",652,415,73.5,72.8,229,612,418,1054,74]
+        ["XS",532,370,72.7,71,115,462,415,982,75],
+        ["S",557,376,73.5,72,139,492,415,988,73],
+        ["M",578,382,73.5,73,158,522,415,990,73],
+        ["L",604,389,73.5,73,184,552,415,1006,73],
+        ["XL",625,407,73.5,73.3,206,582,415,1028,73]
+      ]
+    },
+    {
+      "model": "Endurace CF SLX",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-7-di2/4276.html",
+      "retrieved": "2025-12-27",
+      "archive": "https://web.archive.org/web/20251227013857/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-7-di2/4276.html",
+      "sizes": [
+        ["3XS",510,350,73.5,70.5,123,402,405,959,60],
+        ["2XS",529,354,73.5,71.5,138,432,405,958,60],
+        ["XS",548,370,73.5,70.8,129,462,415,991,73],
+        ["S",568,375,73.5,72,146,492,415,993,73],
+        ["M",590,378,73.5,73,165,522,415,993,73],
+        ["L",611,387,73.5,73,186,552,415,1006,73],
+        ["XL",637,405,73.5,73.3,212,582,415,1029,73],
+        ["2XL",656,415,73.5,73.3,232,612,415,1044,73]
+      ]
+    },
+    {
+      "model": "Endurace CFR",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cfr/endurace-cfr-di2/4279.html",
+      "retrieved": "2026-02-18",
+      "archive": "https://web.archive.org/web/20260218061909/https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cfr/endurace-cfr-di2/4279.html",
+      "sizes": [
+        ["3XS",510,350,73.5,70.3,123,402,405,959,60],
+        ["2XS",529,354,73.5,71.5,138,432,405,958,60],
+        ["XS",548,370,73.5,70.8,129,462,415,991,73],
+        ["S",568,375,73.5,71.8,146,492,415,993,73],
+        ["M",590,378,73.5,72.8,165,522,415,993,73],
+        ["L",611,387,73.5,73,186,552,415,1006,73],
+        ["XL",637,405,73.5,73.3,212,582,415,1029,73],
+        ["2XL",656,415,73.5,73.3,232,612,415,1044,73]
       ]
     },
     {
       "model": "Grail",
-      "year": 2023,
+      "year": 2021,
+      "lastYear": 2023,
       "category": "gravel",
-      "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf-slx/grail-cf-slx-7-di2/4503.html",
-      "retrieved": "2026-11-16",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/performance/grail/al/grail-7/3093.html",
+      "retrieved": "2023-06-08",
+      "archive": "https://web.archive.org/web/20230608143848/https://www.canyon.com/en-us/gravel-bikes/performance/grail/al/grail-7/3093.html",
+      "sizes": [
+        ["2XS",514,364,73.5,70,117,432,415,984,60],
+        ["XS",533,373,73.5,71,133,462,415,990,60],
+        ["S",556,390,73.5,70.8,124,492,430,1027,75],
+        ["M",579,405,73.5,72.3,143,522,430,1035,75],
+        ["L",605,412,73.5,72.5,169,552,430,1047,75],
+        ["XL",626,431,73.5,72.8,190,582,430,1070,75],
+        ["2XL",644,440,73.5,72.8,209,612,430,1085,75]
+      ]
+    },
+    {
+      "model": "Grail CF SL",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/cf-sl/grail-cf-sl-8-di2/2842.html",
+      "retrieved": "2021-11-19",
+      "archive": "https://web.archive.org/web/20211119172926/https://www.canyon.com/en-us/gravel-bikes/all-road/grail/cf-sl/grail-cf-sl-8-di2/2842.html",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["2XS",595,404,73.5,70.3,162,432,415,988,60],
+        ["XS",615,425,73.5,71.3,180,462,415,990,60],
+        ["S",638,442,73.5,71,200,492,425,1020,75],
+        ["M",660,461,73.5,72.5,219,522,425,1029,75],
+        ["L",688,478,73.5,72.5,243,552,425,1040,75],
+        ["XL",709,497,73.5,72.8,260,582,425,1063,75]
+      ]
+    },
+    {
+      "model": "Grail CF SL",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-sl-7/4149.html",
+      "retrieved": "2025-12-18",
+      "archive": "https://web.archive.org/web/20251218090133/https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-sl-7/4149.html",
+      "aliases": ["Grail CF SL 7 Aero"],
+      "sizes": [
+        ["2XS",545,372,73.5,69.5,123,420,425,1021,75],
+        ["XS",556,385,73.5,71,129,450,425,1024,75],
+        ["S",573,394,73.5,71.5,145,480,425,1034,75],
+        ["M",591,411,73.5,71.5,163,510,425,1057,75],
+        ["L",613,427,73.5,71.5,187,540,425,1080,75],
+        ["XL",633,435,73.5,71.8,207,570,425,1092,75],
+        ["2XL",655,454,73.5,71.8,230,600,425,1118,75]
+      ]
+    },
+    {
+      "model": "Grail CF SLX",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/cf-slx/grail-cf-slx-9-etap/3100.html",
+      "retrieved": "2021-12-30",
+      "archive": "https://web.archive.org/web/20211230215138/https://www.canyon.com/en-us/gravel-bikes/all-road/grail/cf-slx/grail-cf-slx-9-etap/3100.html",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["2XS",470,384,72.7,70.3,80,432,415,988,60],
+        ["XS",490,388,72.7,71.3,88,462,415,990,60],
+        ["S",513,405,72.8,71,91,492,425,1020,75],
+        ["M",536,421,72.8,72.5,97,522,425,1029,75],
+        ["L",563,423,72.8,72.5,125,552,425,1040,75],
+        ["XL",584,441,72.8,72.8,146,582,425,1063,75],
+        ["2XL",604,466,72.9,72.8,167,612,425,1073,75]
+      ]
+    },
+    {
+      "model": "Grail CF SLX",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf-slx/grail-cf-slx-8-axs-rs/4475.html",
+      "retrieved": "2026-02-17",
+      "archive": "https://web.archive.org/web/20260217120230/https://www.canyon.com/en-us/gravel-bikes/race/grail/cf-slx/grail-cf-slx-8-axs-rs/4475.html",
+      "sizes": [
+        ["2XS",545,372,73.5,69.5,123,420,425,1021,75],
+        ["XS",556,385,73.5,71,129,450,425,1024,75],
+        ["S",573,394,73.5,71.5,145,480,425,1034,75],
+        ["M",591,411,73.5,71.5,163,510,425,1057,75],
+        ["L",613,427,73.5,71.5,187,540,425,1080,75],
+        ["XL",633,435,73.5,71.8,207,570,425,1092,75],
+        ["2XL",655,454,73.5,71.8,230,600,425,1118,75]
+      ]
+    },
+    {
+      "model": "Grail CFR",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024132/https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
       "sizes": [
         ["2XS",525,372,74.1,68.5,98,432,435,1034,75],
         ["XS",537,385,73.6,70,103,462,435,1037,75],
@@ -105,29 +361,49 @@
       ]
     },
     {
-      "model": "Grail CFR",
-      "year": 2027,
+      "model": "Grizl",
+      "year": 2022,
+      "lastYear": 2025,
       "category": "gravel",
-      "source": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
-      "retrieved": "2026-11-14",
-      "archive": "https://web.archive.org/web/20261114024132/https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
-      "estimated": ["bbDrop"],
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-7-raw/3715.html",
+      "retrieved": "2025-12-18",
+      "archive": "https://web.archive.org/web/20251218053720/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-7-raw/3715.html",
       "sizes": [
-        ["2XS",525,372,74.1,68.5,98,432,435,1034,72],
-        ["XS",537,385,73.6,70,103,462,435,1037,72],
-        ["S",558,394,73.9,71.5,120,492,435,1039,73],
-        ["M",575,411,73.8,71.5,138,522,435,1062,73],
-        ["L",598,427,73.8,71.5,162,552,435,1085,73],
-        ["XL",618,435,73.8,71.8,182,582,435,1097,74],
-        ["2XL",640,454,73.8,71.8,205,612,435,1123,74]
+        ["3XS",512,372,73.5,69,115,402,420,1007,60],
+        ["2XS",522,377,73.5,69.8,122,432,420,1009,60],
+        ["XS",537,382,73.5,70.5,135,462,420,1012,60],
+        ["S",556,397,73.5,70.3,121,492,435,1044,75],
+        ["M",579,402,73.5,71.5,141,522,435,1045,75],
+        ["L",605,409,73.5,72,166,552,435,1055,75],
+        ["XL",626,427,73.5,72.5,186,582,435,1074,75],
+        ["2XL",644,436,73.5,72.5,205,612,435,1089,75]
       ]
     },
     {
       "model": "Grizl",
-      "year": 2022,
+      "year": 2026,
       "category": "gravel",
-      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-6/4552.html",
-      "retrieved": "2026-11-16",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-6/4444.html",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024138/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-6/4444.html",
+      "aliases": ["Grizl CF"],
+      "sizes": [
+        ["2XS",550,369,73.5,68.8,120,432,440,1047,75],
+        ["XS",559,380,73.5,69.5,126,462,440,1054,75],
+        ["S",578,388,73.5,70.5,141,492,440,1059,75],
+        ["M",596,404,73.5,71,158,522,440,1076,75],
+        ["L",619,420,73.5,71,183,552,440,1100,75],
+        ["XL",638,429,73.5,71,203,582,440,1115,75],
+        ["2XL",660,448,73.5,71,226,612,440,1142,75]
+      ]
+    },
+    {
+      "model": "Grizl CF",
+      "year": 2027,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024135/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
       "sizes": [
         ["2XS",550,369,73.5,68.8,120,432,440,1047,66],
         ["XS",559,380,73.5,69.5,126,462,440,1054,75],
@@ -139,36 +415,314 @@
       ]
     },
     {
-      "model": "Grizl CF",
-      "year": 2026,
-      "lastYear": 2027,
+      "model": "Grizl CF SL",
+      "year": 2021,
+      "lastYear": 2023,
       "category": "gravel",
-      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
-      "retrieved": "2026-11-14",
-      "archive": "https://web.archive.org/web/20261114024135/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf/grizl-cf-7-axs/4554.html",
-      "aliases": ["Grizl"],
-      "estimated": ["bbDrop"],
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-sl/grizl-cf-sl-6/3243.html",
+      "retrieved": "2023-05-15",
+      "archive": "https://web.archive.org/web/20230515120942/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-sl/grizl-cf-sl-6/3243.html",
+      "aliases": ["Grizl CF SL 7 1by"],
       "sizes": [
-        ["2XS",550,369,73.5,68.8,120,432,440,1047,73],
-        ["XS",559,380,73.5,69.5,126,462,440,1054,73],
-        ["S",578,388,73.5,70.5,141,492,440,1059,73],
-        ["M",596,404,73.5,71,158,522,440,1076,73],
-        ["L",619,420,73.5,71,183,552,440,1100,74],
-        ["XL",638,429,73.5,71,203,582,440,1115,74],
-        ["2XL",660,448,73.5,71,226,612,440,1142,74]
+        ["2XS",522,377,73.5,70,121,432,420,1007,60],
+        ["XS",537,382,73.5,71,133,462,420,1007,60],
+        ["S",556,397,73.5,71,118,492,435,1036,75],
+        ["M",579,402,73.5,72.3,138,522,435,1037,75],
+        ["L",605,409,73.5,72.5,164,552,435,1050,75],
+        ["XL",626,427,73.5,72.8,185,582,435,1072,75],
+        ["2XL",644,436,73.5,72.8,204,612,435,1086,75]
       ]
     },
     {
-      "model": "Ultimate",
+      "model": "Grizl CF SLX",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-etap/2853.html",
+      "retrieved": "2021-08-21",
+      "archive": "https://web.archive.org/web/20210821060836/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-etap/2853.html",
+      "aliases": ["Grizl CF SLX 8 eTap Suspension"],
+      "sizes": [
+        ["S",556,397,73.5,71,118,492,435,1036,75],
+        ["M",579,402,73.5,72.3,138,522,435,1037,75],
+        ["L",605,409,73.5,72.5,164,552,435,1050,75],
+        ["XL",626,427,73.5,72.8,185,582,435,1072,75],
+        ["2XL",644,436,73.5,72.8,204,612,435,1086,75]
+      ]
+    },
+    {
+      "model": "Grizl CF SLX",
       "year": 2023,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-di2/2968.html",
+      "retrieved": "2024-04-21",
+      "archive": "https://web.archive.org/web/20240421051956/https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-di2/2968.html",
+      "sizes": [
+        ["2XS",522,377,73.5,70,121,432,420,1007,60],
+        ["XS",537,382,73.5,71,133,462,420,1007,60],
+        ["S",556,397,73.5,71,118,492,435,1036,75],
+        ["M",579,402,73.5,72.3,138,522,435,1037,75],
+        ["L",605,409,73.5,72.5,164,552,435,1050,75],
+        ["XL",626,427,73.5,72.8,185,582,435,1072,75],
+        ["2XL",644,436,73.5,72.8,204,612,435,1086,75]
+      ]
+    },
+    {
+      "model": "Inflite CF SL",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "cyclocross",
+      "source": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-5/3549.html",
+      "retrieved": "2025-12-06",
+      "archive": "https://web.archive.org/web/20251206163612/https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-5/3549.html",
+      "sizes": [
+        ["3XS",487,357,73.5,70.2,94,422,415,970,55],
+        ["2XS",510,371,73.5,71.5,113,452,415,980,55],
+        ["XS",527,376,73.5,71,102,482,425,1000,66],
+        ["S",547,388,73.5,72.3,119,512,425,1006,66],
+        ["M",572,393,73.5,72.5,146,542,425,1018,64],
+        ["L",593,402,73.5,72.5,168,572,425,1034,64],
+        ["XL",616,418,73.5,72.7,192,602,425,1055,64],
+        ["2XL",637,428,73.5,72.7,214,632,425,1072,64]
+      ]
+    },
+    {
+      "model": "Inflite CF SL",
+      "year": 2022,
+      "category": "cyclocross",
+      "source": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-6/3020.html",
+      "retrieved": "2021-12-15",
+      "archive": "https://web.archive.org/web/20211215072008/https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-6/3020.html",
+      "sizes": [
+        ["3XS",487,357,73.5,70.2,94,422,415,970,55],
+        ["2XS",510,371,73.5,71.5,113,452,415,980,55],
+        ["XS",527,376,73.5,71,102,482,425,1000,66],
+        ["S",547,388,73.5,72.3,119,512,425,1006,66],
+        ["M",572,393,73.5,72.5,146,542,425,1018,64],
+        ["L",593,402,73.5,73.5,168,572,425,1034,64],
+        ["XL",616,418,73.5,72.7,192,602,425,1055,64],
+        ["2XL",637,428,73.5,72.7,214,632,425,1072,64]
+      ]
+    },
+    {
+      "model": "Inflite CF SL",
+      "year": 2025,
+      "category": "cyclocross",
+      "source": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-6/3843.html",
+      "retrieved": "2026-03-13",
+      "archive": "https://web.archive.org/web/20260313163434/https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-6/3843.html",
+      "sizes": [
+        ["XS",527,376,73.5,71,102,482,425,1000,66],
+        ["S",547,388,73.5,72.3,119,512,425,1006,66],
+        ["M",572,393,73.5,72.5,146,542,425,1018,64],
+        ["L",593,402,73.5,72.5,168,572,425,1034,64],
+        ["XL",616,418,73.5,72.7,192,602,425,1055,64],
+        ["2XL",637,428,73.5,72.7,214,632,425,1072,64]
+      ]
+    },
+    {
+      "model": "Inflite CF SLX",
+      "year": 2021,
+      "category": "cyclocross",
+      "source": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-9-team/2658.html",
+      "retrieved": "2021-06-17",
+      "archive": "https://web.archive.org/web/20210617015455/https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-9-team/2658.html",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["3XS",487,357,73.5,70.2,94,422,415,970,64],
+        ["2XS",510,371,73.5,71.5,113,452,415,980,64],
+        ["XS",527,376,73.5,71,102,482,425,1000,64],
+        ["S",547,388,73.5,72.3,119,512,425,1006,65],
+        ["M",572,393,73.5,72.5,146,542,425,1018,65],
+        ["L",593,402,73.5,72.5,168,572,425,1034,65],
+        ["XL",616,418,73.5,72.7,192,602,425,1055,65],
+        ["2XL",637,428,73.5,72.7,214,632,425,1072,65]
+      ]
+    },
+    {
+      "model": "Inflite CF SLX",
+      "year": 2025,
+      "category": "cyclocross",
+      "source": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-7/3844.html",
+      "retrieved": "2026-02-21",
+      "archive": "https://web.archive.org/web/20260221224410/https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-7/3844.html",
+      "sizes": [
+        ["XS",527,376,73.5,71,102,482,425,1000,66],
+        ["S",547,388,73.5,72.3,119,512,425,1006,66],
+        ["M",572,393,73.5,72.5,146,542,425,1018,64],
+        ["L",593,402,73.5,72.5,168,572,425,1034,64],
+        ["XL",616,418,73.5,72.7,192,602,425,1055,64],
+        ["2XL",637,428,73.5,72.7,214,632,425,1072,64]
+      ]
+    },
+    {
+      "model": "Inflite CF SLX",
+      "year": 2026,
+      "category": "cyclocross",
+      "source": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-8-di2/3552.html",
+      "retrieved": "2025-12-14",
+      "archive": "https://web.archive.org/web/20251214144051/https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-8-di2/3552.html",
+      "sizes": [
+        ["3XS",487,357,73.5,70.2,94,422,415,970,55],
+        ["2XS",510,371,73.5,71.5,113,452,415,980,55],
+        ["XS",527,376,73.5,71,102,482,425,1000,66],
+        ["S",547,388,73.5,72.3,119,512,425,1006,66],
+        ["M",572,393,73.5,72.5,146,542,425,1018,64],
+        ["L",593,402,73.5,72.5,168,572,425,1034,64],
+        ["XL",616,418,73.5,72.7,192,602,425,1055,64],
+        ["2XL",637,428,73.5,72.7,214,632,425,1072,64]
+      ]
+    },
+    {
+      "model": "Inflite CFR",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "cyclocross",
+      "source": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cfr/inflite-cfr/3846.html",
+      "retrieved": "2026-03-11",
+      "archive": "https://web.archive.org/web/20260311223617/https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cfr/inflite-cfr/3846.html",
+      "sizes": [
+        ["XS",527,376,73.5,71,102,482,425,1000,66],
+        ["S",547,388,73.5,72.3,119,512,425,1006,66],
+        ["M",572,393,73.5,72.5,146,542,425,1018,64],
+        ["L",593,402,73.5,72.5,168,572,425,1034,64],
+        ["XL",616,418,73.5,72.7,192,602,425,1055,64],
+        ["2XL",637,428,73.5,72.7,214,632,425,1072,64]
+      ]
+    },
+    {
+      "model": "Ultimate CF",
+      "year": 2025,
       "category": "race",
-      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html",
-      "retrieved": "2026-11-16",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-sl/ultimate-cf-7/4063.html",
+      "retrieved": "2026-07-13",
+      "archive": "https://web.archive.org/web/20260713064616/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-sl/ultimate-cf-7/4063.html",
+      "sizes": [
+        ["2XS",490,372,73.5,71.5,88,420,405,964,60],
+        ["XS",520,378,73.5,71.2,107,450,410,979,73],
+        ["S",539,390,73.5,72.8,121,480,410,983,73],
+        ["M",560,393,73.5,73.3,142,510,410,987,73],
+        ["L",580,401,73.5,73.3,162,540,413,1004,73],
+        ["XL",606,419,73.5,73.5,188,570,415,1029,73],
+        ["2XL",624,429,73.5,73.8,206,600,415,1042,73]
+      ]
+    },
+    {
+      "model": "Ultimate CF SL",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/ultimate-cf-sl-8-disc/2862.html",
+      "retrieved": "2021-04-19",
+      "archive": "https://web.archive.org/web/20210419205426/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/ultimate-cf-sl-8-disc/2862.html",
+      "sizes": [
+        ["2XS",500,368,73.9,69.6,89,434,415,983,72],
+        ["XS",522,378,73.8,71,107,467,415,988,72],
+        ["S",546,385,73.8,72.3,130,494,415,993,70],
+        ["M",567,391,73.8,73.3,148,522,415,996,70],
+        ["L",592,399,73.8,73.3,174,554,415,1011,70],
+        ["XL",613,418,73.8,73.5,195,584,415,1034,70],
+        ["2XL",631,428,73.8,73.8,213,614,415,1046,70]
+      ]
+    },
+    {
+      "model": "Ultimate CF SL",
+      "year": 2022,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-sl/ultimate-cf-sl-8/2861.html",
+      "retrieved": "2023-06-08",
+      "archive": "https://web.archive.org/web/20230608004654/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-sl/ultimate-cf-sl-8/2861.html",
+      "sizes": [
+        ["2XS",500,368,73.9,69.6,95,432,410,975,72],
+        ["XS",522,378,73.8,71,113,462,410,980,72],
+        ["S",546,385,73.8,72.3,136,492,410,985,70],
+        ["M",567,391,73.8,73.3,155,522,410,988,70],
+        ["L",592,399,73.8,73.3,181,552,410,1003,70],
+        ["XL",613,418,73.8,73.5,202,582,410,1026,70],
+        ["2XL",631,428,73.8,73.8,219,612,410,1039,70]
+      ]
+    },
+    {
+      "model": "Ultimate CF SLX",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-disc-etap/2864.html",
+      "retrieved": "2021-06-25",
+      "archive": "https://web.archive.org/web/20210625060645/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-disc-etap/2864.html",
+      "sizes": [
+        ["2XS",500,368,73.9,69.6,89,434,415,983,72],
+        ["XS",522,378,73.8,71,107,467,415,988,72],
+        ["S",546,385,73.8,72.3,130,494,415,993,70],
+        ["M",567,391,73.8,73.3,148,522,415,996,70],
+        ["L",592,399,73.8,73.3,174,554,415,1011,70],
+        ["XL",613,418,73.8,73.5,195,584,415,1034,70],
+        ["2XL",631,428,73.8,73.8,213,614,415,1046,70]
+      ]
+    },
+    {
+      "model": "Ultimate CF SLX",
+      "year": 2023,
+      "lastYear": 2027,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4066.html",
+      "retrieved": "2026-07-20",
+      "archive": "https://web.archive.org/web/20260720195407/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4066.html",
+      "aliases": ["Ultimate"],
       "sizes": [
         ["2XS",498,372,73.5,70,88,420,410,975,73],
         ["XS",520,378,73.5,71.2,107,450,410,979,73],
         ["S",539,390,73.5,72.8,121,480,410,982,73],
-        ["M",560,393,73.5,73.25,142,510,410,988,73],
+        ["M",560,393,73.5,73.3,142,510,410,988,73],
+        ["L",580,401,73.5,73.3,162,540,413,1003,73],
+        ["XL",606,419,73.5,73.5,188,570,415,1029,73],
+        ["2XL",624,429,73.5,73.8,206,600,415,1042,73]
+      ]
+    },
+    {
+      "model": "Ultimate CFR",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-disc-di2/2762.html",
+      "retrieved": "2021-08-14",
+      "archive": "https://web.archive.org/web/20210814213723/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-disc-di2/2762.html",
+      "sizes": [
+        ["2XS",500,368,73.9,69.6,89,434,415,983,72],
+        ["XS",522,378,73.8,71,107,467,415,988,72],
+        ["S",546,385,73.8,72.3,130,494,415,993,70],
+        ["M",567,391,73.8,73.3,148,522,415,996,70],
+        ["L",592,399,73.8,73.3,174,554,415,1011,70],
+        ["XL",613,418,73.8,73.5,195,584,415,1034,70],
+        ["2XL",631,428,73.8,73.8,213,614,415,1046,70]
+      ]
+    },
+    {
+      "model": "Ultimate CFR",
+      "year": 2024,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-di2/3325.html",
+      "retrieved": "2025-12-04",
+      "archive": "https://web.archive.org/web/20251204113005/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-di2/3325.html",
+      "sizes": [
+        ["2XS",498,372,73.5,71.5,88,420,405,965,60],
+        ["XS",520,378,73.5,71.2,107,450,410,979,73],
+        ["S",539,390,73.5,72.8,121,480,410,982,73],
+        ["M",560,393,73.5,73.3,142,510,410,988,73],
+        ["L",580,401,73.5,73.3,162,540,413,1003,73],
+        ["XL",606,419,73.5,73.5,188,570,415,1029,73],
+        ["2XL",624,429,73.5,73.8,206,600,415,1042,73]
+      ]
+    },
+    {
+      "model": "Ultimate CFR",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-axs/4071.html",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617012435/https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-axs/4071.html",
+      "sizes": [
+        ["2XS",498,372,73.5,70,88,420,410,975,73],
+        ["XS",520,378,73.5,71.2,107,450,410,979,73],
+        ["S",539,390,73.5,72.8,121,480,410,982,73],
+        ["M",560,393,73.5,73.3,142,510,410,988,73],
         ["L",580,401,73.5,73.3,162,540,413,1003,73],
         ["XL",606,419,73.5,73.5,188,570,415,1029,73],
         ["2XL",624,429,73.5,73.8,206,600,415,1042,73]

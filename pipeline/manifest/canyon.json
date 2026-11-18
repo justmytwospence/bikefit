@@ -3,6 +3,24 @@
  "file": "canyon",
  "pages": [
   {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/grizl-cf-sl-8/2850.html",
+   "timestamp": "20210526030231",
+   "sha256": "d2f01e7241f8709dd4542a52cfb7eb60539f78263c3227431e4b303042164838",
+   "family": "gravel-bikes/adventure/grizl",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20210526030231"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-7-raw/3715.html",
+   "timestamp": "20251218053720",
+   "sha256": "4aa2a3171b45c15038ae4e4f9593a019743f5a891e56405bb6729c8adc96924b",
+   "family": "gravel-bikes/adventure/grizl/al",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250216002450"
+  },
+  {
    "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/al/grizl-6/4444.html",
    "timestamp": "20261114024138",
    "sha256": "46a54353b1d28274c2128047f37f596e6d1daa9df0b80ab18d9673cba519198c",
@@ -21,6 +39,231 @@
    "firstSeen": "20261009204045"
   },
   {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-sl/grizl-cf-sl-7/2848.html",
+   "timestamp": "20210824042402",
+   "sha256": "db1fe4952898a2747ca3deea6070df54991c97ac43c4014c695d0c20512017d6",
+   "family": "gravel-bikes/adventure/grizl/cf-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210724205756"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-sl/grizl-cf-sl-6/3243.html",
+   "timestamp": "20230515120942",
+   "sha256": "652f9ad7b04386ff37d8e231a276c44758af643a77ba27a7aae527b18dbf9095",
+   "family": "gravel-bikes/adventure/grizl/cf-sl",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/Product-IncludeGeometry?pid=3243",
+     "timestamp": "20250615084425",
+     "sha256": "3798447bc9ca8cb3fa461812657846aa0df91a5921e6add26f460c8cdc4643e6"
+    }
+   ],
+   "firstSeen": "20230504215856"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-etap/2853.html",
+   "timestamp": "20210821060836",
+   "sha256": "e004f7ece689fd6eb2b70a9a03e5690fa70ec5b75274cb10d013d9d8e05a8c2a",
+   "family": "gravel-bikes/adventure/grizl/cf-slx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210810134148"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/cf-slx/grizl-cf-slx-8-di2/2968.html",
+   "timestamp": "20240421051956",
+   "sha256": "d77f2c9b0f0be4f219ac9df18fe84f4e3d6ac9d6ecd8df1e567c6aa4fdbbede8",
+   "family": "gravel-bikes/adventure/grizl/cf-slx",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/Product-IncludeGeometry?pid=2968",
+     "timestamp": "20240209152643",
+     "sha256": "6bcadfe9d70a2b67dd904fdc88f8910374746af896ed0afd0459969ace76717b"
+    }
+   ],
+   "firstSeen": "20240419133654"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/og/grizl-cf-6/4141.html",
+   "timestamp": "20251211121741",
+   "sha256": "7728d4add865b17c59e9596c0e9f8882b311e3418c0d3428bc1760844deb51d9",
+   "family": "gravel-bikes/adventure/grizl/og",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250701201330"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/adventure/grizl/og/grizl-cf-6/4141.html",
+   "timestamp": "20260504123621",
+   "sha256": "1fb114d22e21fa66c53703222c8b1b1eeecee7422554119a553f92236d557d6e",
+   "family": "gravel-bikes/adventure/grizl/og",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250701201330"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/grail-7/2370.html",
+   "timestamp": "20210511145332",
+   "sha256": "583f432e8445464a85f76e7ffd2eb86939ff5dfc44232e89da22482c046fe998",
+   "family": "gravel-bikes/all-road/grail",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201021102255"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/al/grail-6/2836.html",
+   "timestamp": "20210804030522",
+   "sha256": "3464f5299ed52bac2262312a050205d515e0b092612af816b373ac5fe2a0201b",
+   "family": "gravel-bikes/all-road/grail/al",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210727000417"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/al/grail-7/3093.html",
+   "timestamp": "20230315030921",
+   "sha256": "6f96d57fbd409a5b2305485f8c3fa644dc3460669368620e955e0b45c92346e0",
+   "family": "gravel-bikes/all-road/grail/al",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/Product-IncludeGeometry?pid=3093",
+     "timestamp": "20250727091054",
+     "sha256": "56250bf525906127b0f466154e2d22ecb404b9e77f4ce452957d64dde6f1d34c"
+    }
+   ],
+   "firstSeen": "20220328204442"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/cf-sl/grail-cf-sl-8-di2/2842.html",
+   "timestamp": "20211119172926",
+   "sha256": "0b3e0d40e5f201b51fbb6e297bb179664b25202555b2db0d1cc7eab108c8aa14",
+   "family": "gravel-bikes/all-road/grail/cf-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210613151732"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/cf-slx/grail-cf-slx-9-etap/3100.html",
+   "timestamp": "20211230215138",
+   "sha256": "3d4a97d17eb88fb8e384d0a8b92c9085b1218d766c659a0e9268cd445c2479f7",
+   "family": "gravel-bikes/all-road/grail/cf-slx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211201174904"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/all-road/grail/cf-slx/grail-cf-slx-frameset/2205.html",
+   "timestamp": "20220217013501",
+   "sha256": "8ea3da453ea60138e83a22456e8a95ddf095c17e1903980db62c8f950b809969",
+   "family": "gravel-bikes/all-road/grail/cf-slx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20220217013501"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/bike-packing/grizl/al/grizl-6/2844.html",
+   "timestamp": "20211201011854",
+   "sha256": "bc045ff65d38b53bfd2372b67d1c52b08c9fd76231e4b8415264c5a317fe8025",
+   "family": "gravel-bikes/bike-packing/grizl/al",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211201011854"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/bike-packing/grizl/cf-sl/grizl-cf-sl-7-1by/2849.html",
+   "timestamp": "20211208064349",
+   "sha256": "6ab45395fb19d24b2cf8aa7d6c0084edbcc936db51165b72c81fbf434d965741",
+   "family": "gravel-bikes/bike-packing/grizl/cf-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210906171422"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/bike-packing/grizl/cf-sl/grizl-cf-sl-6/3243.html",
+   "timestamp": "20230329071342",
+   "sha256": "ea801b124e5c9950e98184a451a45a003476e80616dc616e92ef246cf8de7a26",
+   "family": "gravel-bikes/bike-packing/grizl/cf-sl",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/Product-IncludeGeometry?pid=3243",
+     "timestamp": "20250615084425",
+     "sha256": "3798447bc9ca8cb3fa461812657846aa0df91a5921e6add26f460c8cdc4643e6"
+    }
+   ],
+   "firstSeen": "20220305104132"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/bike-packing/grizl/cf-slx/grizl-cf-slx-8-etap-suspension/2715.html",
+   "timestamp": "20211120000540",
+   "sha256": "2f41d80e1c5cc795b5b27f3fc8c735caae65f9a3de894a52dcc55fab3d8dfd4f",
+   "family": "gravel-bikes/bike-packing/grizl/cf-slx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210920233245"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/bike-packing/grizl/cf-slx/grizl-cf-slx-8-di2/2968.html",
+   "timestamp": "20220820085751",
+   "sha256": "8fb11dcf2d713d64b29a9d8b887b1759568c6a0db82ff1c15edbe75cca465f1e",
+   "family": "gravel-bikes/bike-packing/grizl/cf-slx",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/Product-IncludeGeometry?pid=2968",
+     "timestamp": "20240209152643",
+     "sha256": "6bcadfe9d70a2b67dd904fdc88f8910374746af896ed0afd0459969ace76717b"
+    }
+   ],
+   "firstSeen": "20220813204159"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/performance/grail/al/grail-7/3093.html",
+   "timestamp": "20230608143848",
+   "sha256": "81c9c6ef284b1d86da2327cb7f7b918fa72143df4af05bf818236a0b3b65a0a3",
+   "family": "gravel-bikes/performance/grail/al",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/Product-IncludeGeometry?pid=3093",
+     "timestamp": "20250727091054",
+     "sha256": "56250bf525906127b0f466154e2d22ecb404b9e77f4ce452957d64dde6f1d34c"
+    }
+   ],
+   "firstSeen": "20230517032249"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-sl-7-aero/4150.html",
+   "timestamp": "20260324133132",
+   "sha256": "48aa80330e188ecf9483e7427f8b0b93cfb1914ca20b849c8462a0bd4bbcc85a",
+   "family": "gravel-bikes/race/grail/cf",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250707173539"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf/grail-cf-sl-7/4149.html",
+   "timestamp": "20251218090133",
+   "sha256": "a8b18da58d26dba29f945abd7a9fcb8f1e98da5e6a5ea5619c7dc3e13f75fbd2",
+   "family": "gravel-bikes/race/grail/cf",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250701201330"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cf-slx/grail-cf-slx-8-axs-rs/4475.html",
+   "timestamp": "20260217120230",
+   "sha256": "26d80c3a8a7a78e3ed018e1c15f58610f01f01c63cf82ecdcde4d04cc8abfa9a",
+   "family": "gravel-bikes/race/grail/cf-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250721162619"
+  },
+  {
    "url": "https://www.canyon.com/en-us/gravel-bikes/race/grail/cfr/grail-cfr-axs/4510.html",
    "timestamp": "20261114024132",
    "sha256": "3d8661298553b330effdfc90a8071c3edb8e35095b99dd5aa72ccec6a40e85dd",
@@ -28,6 +271,42 @@
    "year": 2027,
    "related": [],
    "firstSeen": "20260918043729"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-sl/aeroad-cf-sl-7-wmn-disc/2769.html",
+   "timestamp": "20210623121232",
+   "sha256": "82e787e874751aab92ca7fcfd450484410dfad45c3ac57602daaa7605169ca1a",
+   "family": "road-bikes/aero-bikes/aeroad/cf-sl",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20210623121232"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-disc-axs/2451.html",
+   "timestamp": "20210920114352",
+   "sha256": "3e60d42a5bdd74a9a2c95ece930cade9f66aa90e16d8c61ae32fb02ac46923c1",
+   "family": "road-bikes/aero-bikes/aeroad/cf-slx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210920114352"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-disc-di2/2450.html",
+   "timestamp": "20220922074658",
+   "sha256": "9a9ec3f05d3597c6989d12479ea4c46bad6357cc6c3acc8b6c6f92f573d65c57",
+   "family": "road-bikes/aero-bikes/aeroad/cf-slx",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210921092059"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-7-axs-speed/4535.html",
+   "timestamp": "20251211030816",
+   "sha256": "325209c5bde6faf233dd5b721360a717385d03ef390ac1fa803817a993dc43b3",
+   "family": "road-bikes/aero-bikes/aeroad/cf-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250831080914"
   },
   {
    "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cf-slx/aeroad-cf-slx-8-di2/4533.html",
@@ -39,6 +318,24 @@
    "firstSeen": "20260629031651"
   },
   {
+   "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-disc-di2/2452.html",
+   "timestamp": "20210922134122",
+   "sha256": "63b01af1ecf1cf9ff7803cdd1582f7486651e39eec02d3cdc3fbc8bb5592b353",
+   "family": "road-bikes/aero-bikes/aeroad/cfr",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210917005723"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/3967.html",
+   "timestamp": "20251215095643",
+   "sha256": "f0d612a1f702c3ca030970d32b20df0d61e57c082b903a1ccb15cba75f8014de",
+   "family": "road-bikes/aero-bikes/aeroad/cfr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240721202400"
+  },
+  {
    "url": "https://www.canyon.com/en-us/road-bikes/aero-bikes/aeroad/cfr/aeroad-cfr-di2/4039.html",
    "timestamp": "20260914195047",
    "sha256": "ea3610562afc417920cc1839c98c831d750b427caf38bbe6b979990b240527f2",
@@ -48,6 +345,114 @@
    "firstSeen": "20250721162651"
   },
   {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/inflite-cf-sl-8/2443.html",
+   "timestamp": "20210310225718",
+   "sha256": "bdb5d862e978c4233357c311537319fbfe535617e2cc0b7f105a544d7c26ce0c",
+   "family": "road-bikes/cyclocross-bikes/inflite",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200806065607"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-6/3020.html",
+   "timestamp": "20211215072008",
+   "sha256": "39c726f9c7dffb305f9361a156114aa49e7758776aa7a38b5b35ae1cffa3de1c",
+   "family": "road-bikes/cyclocross-bikes/inflite/cf-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210920170753"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-5/3549.html",
+   "timestamp": "20251206163612",
+   "sha256": "ed39f2132a7d22822b66a77b6200d050679af19092d11b1c5222f9a4510e18a4",
+   "family": "road-bikes/cyclocross-bikes/inflite/cf-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202916"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-sl/inflite-cf-sl-6/3843.html",
+   "timestamp": "20260313163434",
+   "sha256": "537ee623a3646169e4adcf305162d35490ac5e720b5fab133e90089af52b3055",
+   "family": "road-bikes/cyclocross-bikes/inflite/cf-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250608051248"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-9-team/2658.html",
+   "timestamp": "20210617015455",
+   "sha256": "5293fb2a045b8e95c95148841568506070f32aefe153ccd301993ec59d002ae5",
+   "family": "road-bikes/cyclocross-bikes/inflite/cf-slx",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20210617015455"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-7/3844.html",
+   "timestamp": "20260221224410",
+   "sha256": "7eff1eb43341e3602fb4cdc98b1c3a82b990be6b55d553e441b8ffaaf5668948",
+   "family": "road-bikes/cyclocross-bikes/inflite/cf-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250608051248"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cf-slx/inflite-cf-slx-8-di2/3552.html",
+   "timestamp": "20251214144051",
+   "sha256": "0c89be9819b3ae6c7663f5c0d81c74add3560a61e42100fbd19dfa79bc137c93",
+   "family": "road-bikes/cyclocross-bikes/inflite/cf-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250718201128"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cfr/inflite-cfr/3846.html",
+   "timestamp": "20251212215017",
+   "sha256": "b528c655245441fd184a5f5f71dac4bd458ae6dc5c0bc3a7fe75f4d993744bb5",
+   "family": "road-bikes/cyclocross-bikes/inflite/cfr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250418132710"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/cyclocross-bikes/inflite/cfr/inflite-cfr/3846.html",
+   "timestamp": "20260311223617",
+   "sha256": "a92f813076c5d05245f773c543c62109b05a2aa537ef726aded996decf7cf70e",
+   "family": "road-bikes/cyclocross-bikes/inflite/cfr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250418132710"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/endurace-cf-slx-disc-frameset-mechanical/1500.html",
+   "timestamp": "20201222043244",
+   "sha256": "11c333b4ed83c54ab57889fb62609e8f61db77afb2373b82a5f4645ac1bf89ff",
+   "family": "road-bikes/endurance-bikes/endurace",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200815055918"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/al/endurace-7-disc/2961.html",
+   "timestamp": "20210926170009",
+   "sha256": "cb8d8cfc765a9c471577b2d28b05c4ef14987d367f5c0b904a83686871c471f0",
+   "family": "road-bikes/endurance-bikes/endurace/al",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210830170521"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
+   "timestamp": "20251230041557",
+   "sha256": "a05a0578fa156adcc52cf431b25e2350266eb309657421af280f9e07e4c6d0c5",
+   "family": "road-bikes/endurance-bikes/endurace/allroad",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250627184421"
+  },
+  {
    "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/allroad/endurace-allroad/4164.html",
    "timestamp": "20261104065553",
    "sha256": "3d47d8d846ed1c3f98bf45cbc1095394ee564abcefa574fbfbb69cc943b5f230",
@@ -55,6 +460,183 @@
    "year": 2027,
    "related": [],
    "firstSeen": "20250627184421"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf/endurace-cf-7/4274.html",
+   "timestamp": "20260406032756",
+   "sha256": "bdbb947706a5a75806b34a7e0ea77106bba4a4a42bc37a8b5866d29588977e5d",
+   "family": "road-bikes/endurance-bikes/endurace/cf",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250915203338"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-sl/endurace-cf-sl-8-disc/2963.html",
+   "timestamp": "20211101200234",
+   "sha256": "fa6506c9368b8c42d3fe720aefc2c42215aa713bc89a36b64d217f0513ec7649",
+   "family": "road-bikes/endurance-bikes/endurace/cf-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210917221909"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-8-disc-etap/2951.html",
+   "timestamp": "20210923200226",
+   "sha256": "48a3619da17d6e05c8dd4686de95523e3143050c4bae3c215e19faaa600c5b72",
+   "family": "road-bikes/endurance-bikes/endurace/cf-slx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210923200226"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-9-disc-etap/3370.html",
+   "timestamp": "20230606222845",
+   "sha256": "5cd5cf11d6f83870d9c3f28991f6b5739968dadf59d0c7bd3933aa23cbc232d2",
+   "family": "road-bikes/endurance-bikes/endurace/cf-slx",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/Product-IncludeGeometry?pid=3370",
+     "timestamp": "20250922125529",
+     "sha256": "2f23793ad213fd154c42449e21a8728605edcc85f278a2114ab97c8202263c6d"
+    }
+   ],
+   "firstSeen": "20220703063542"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-7-di2/4276.html",
+   "timestamp": "20251227013857",
+   "sha256": "6d4e3c2a6d04ccd00e5edddc415e8816f019a1916cb68b3f91d2812a54148468",
+   "family": "road-bikes/endurance-bikes/endurace/cf-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250911183234"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cf-slx/endurace-cf-slx-7-di2/4276.html",
+   "timestamp": "20260525235332",
+   "sha256": "36c64c80d7f320ffe31cd99f00420c85fa05a23d37e714397fa27c67f45301f8",
+   "family": "road-bikes/endurance-bikes/endurace/cf-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250911183234"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cfr/endurace-cfr-axs/3714.html",
+   "timestamp": "20251209152244",
+   "sha256": "38921b9a399209c62a9430d4eb90740bf1b1ac9b9f2a24e645811f051d96f87b",
+   "family": "road-bikes/endurance-bikes/endurace/cfr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250721162703"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/endurance-bikes/endurace/cfr/endurace-cfr-di2/4279.html",
+   "timestamp": "20260218061909",
+   "sha256": "8aefa646e9f11d7463ba31b9f7f96fa6f60ea6f867cfc51056dd92307c9d576a",
+   "family": "road-bikes/endurance-bikes/endurace/cfr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251009112328"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/aeroad/aeroad-cf-sl-7-disc/2447.html",
+   "timestamp": "20210319023136",
+   "sha256": "287ef985cb48133b80c2e136d70902685e9ba6698f7d19d634bcd92194c60464",
+   "family": "road-bikes/race-bikes/aeroad",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201020062152"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/ultimate-cf-sl-8-disc/2862.html",
+   "timestamp": "20210419205426",
+   "sha256": "2b33729eef58a704ae75d880afb2bb5a143a21fccc315eaa5b207cf21ab9a1eb",
+   "family": "road-bikes/race-bikes/ultimate",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201020172745"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-sl/ultimate-cf-sl-8-disc/2862.html",
+   "timestamp": "20211101200117",
+   "sha256": "205591e688c6c034689efdb8bf725c59eb6112100814789ec7f993da4720f82e",
+   "family": "road-bikes/race-bikes/ultimate/cf-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210623104453"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-sl/ultimate-cf-sl-8/2861.html",
+   "timestamp": "20230608004654",
+   "sha256": "af6902add14bfd6db6eb89a8a452bb1dfe654a4e063ab7313162c64e804d4c0e",
+   "family": "road-bikes/race-bikes/ultimate/cf-sl",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210916211300"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-sl/ultimate-cf-7/4063.html",
+   "timestamp": "20260713064616",
+   "sha256": "9ff37d9605dfba4cdbb48aeb520261c534ee4951ffa0956334824aeb52b51790",
+   "family": "road-bikes/race-bikes/ultimate/cf-sl",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250423212034"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-disc-etap/2864.html",
+   "timestamp": "20210625060645",
+   "sha256": "c892c0351e58f6817f63db68d60a186f44d1e602bc8e4096501c4ca77c374dc7",
+   "family": "road-bikes/race-bikes/ultimate/cf-slx",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20210623050629"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4066.html",
+   "timestamp": "20251215105512",
+   "sha256": "b0dad1e94b3dd825c2f821285ecc1c71fdf5dd6a720f9188e959d0ec64e834c0",
+   "family": "road-bikes/race-bikes/ultimate/cf-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250819041549"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4066.html",
+   "timestamp": "20260720195407",
+   "sha256": "fd55130ffe52897a5f0d96fe35e820cf9dc5992d7a9c9c4f87bbb2d5bb0a2d76",
+   "family": "road-bikes/race-bikes/ultimate/cf-slx",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250819041549"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-disc-di2/2762.html",
+   "timestamp": "20210814213723",
+   "sha256": "f2caaede6cb485b0d7106eebf22ea8a8fa75831cbbaa53c26c7003cafc6cde17",
+   "family": "road-bikes/race-bikes/ultimate/cfr",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210621074240"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-axs/4071.html",
+   "timestamp": "20260617012435",
+   "sha256": "1282e710ec68efbe81ec780f444eb7706894fc6f5f7fbfac29ffc3dd0d8815c4",
+   "family": "road-bikes/race-bikes/ultimate/cfr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202832"
+  },
+  {
+   "url": "https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cfr/ultimate-cfr-di2/3325.html",
+   "timestamp": "20251204113005",
+   "sha256": "cb6a603d2ba06d93d2a92c143867a6b75c6d2753b7e561938b2dfa0d684ff645",
+   "family": "road-bikes/race-bikes/ultimate/cfr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240224071552"
   }
  ]
 }
