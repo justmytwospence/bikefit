@@ -48,6 +48,15 @@
    "firstSeen": "20240518075630"
   },
   {
+   "url": "https://www.bmc-switzerland.com/roadmachine-01-mod-301834.html",
+   "timestamp": "20191210080820",
+   "sha256": "6734199ef0392c9f3738cbec92f08d14a80a58684c4d4251ce19088c900f201c",
+   "family": "roadmachine-01@old",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822121204"
+  },
+  {
    "url": "https://www.bmc-switzerland.com/roadmachine-01-one-2021.html",
    "timestamp": "20210923220118",
    "sha256": "8578b1efb94941859ee0d227151c19fd2677f8c086af9c7c3845c895ac03fada",
@@ -408,6 +417,15 @@
    "firstSeen": "20210126054952"
   },
   {
+   "url": "https://www.bmc-switzerland.com/eu_en/bmc-teammachine-slr01-mod-p2p-arctic-silver-prisma-carbon-23.html",
+   "timestamp": "20231206112632",
+   "sha256": "5205b732544f379fe863e35b5486ac7361da910b626d9e1c3efa9fa76ddcde90",
+   "family": "teammachine-slr-01@store",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220926065131"
+  },
+  {
    "url": "https://www.bmc-switzerland.com/teammachine-slr02-disc-one-301773.html",
    "timestamp": "20191215183448",
    "sha256": "4c4f8cd81561bb2c7ea1fcc24f5a3489a23820aa46bb10c9043ed60e2e462f4e",
@@ -460,6 +478,15 @@
    "year": 2021,
    "related": [],
    "firstSeen": "20190917005738"
+  },
+  {
+   "url": "https://www.bmc-switzerland.com/models/road/teammachine-slr-disc/teammachine-slr-disc-01-one-301435.html",
+   "timestamp": "20190720073943",
+   "sha256": "6a410e07d315348eba34cfa9b108691959dc96c1b56fd5b02d8c5eca610e9f2d",
+   "family": "teammachine-slr-disc-01@old",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190720073943"
   },
   {
    "url": "https://www.bmc-switzerland.com/teammachine-slr-disc-02-one-301447.html",

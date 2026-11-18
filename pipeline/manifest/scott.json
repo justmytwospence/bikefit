@@ -3,6 +3,39 @@
  "file": "scott",
  "pages": [
   {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-10-bike-blue",
+   "timestamp": "20220203065941",
+   "sha256": "033faccd702427692e8f5909ff298dc1cac725262b9d52957a928c1a03ce469a",
+   "family": "gb-addict-10-bike-blue",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://medias.ssg-service.com/geometry/2022/STRD22-02-GEOMETRY.html",
+     "timestamp": "20250927235731",
+     "sha256": "b52c6fcb8a2a14ce3ee3a1cc7ad33b8116eb4b86a10318e6f81d3c726a67fd1e"
+    }
+   ],
+   "firstSeen": "20220203065941"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-cx-rc-bike",
+   "timestamp": "20201127071009",
+   "sha256": "c486b1ac73e8d11cdc855f333639235130c57193b0e42fa7be68cc9556ed3403",
+   "family": "gb-addict-cx-rc-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200917010834"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-gravel-10-bike",
+   "timestamp": "20201128210306",
+   "sha256": "a42d0ffa820679be9b1d6d63507c95e4292a2bca913ea19e0b2e69a9ded729a5",
+   "family": "gb-addict-gravel-10-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200919025748"
+  },
+  {
    "url": "https://www.scott-sports.com/gb/en/product/scott-addict-gravel-10-disc-bike",
    "timestamp": "20180804011558",
    "sha256": "5f0a32b31620c2545bb953fb3611e456680702dda75b6f477bf463b25b2501e0",
@@ -12,6 +45,39 @@
    "firstSeen": "20180804011558"
   },
   {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-gravel-20-bike",
+   "timestamp": "20201108085557",
+   "sha256": "0046aa7a734aceeb1beb1f2dda4bb6879605d67ae41cc2d48b38fbe860f135a3",
+   "family": "gb-addict-gravel-20-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200919171114"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-gravel-30-bike",
+   "timestamp": "20260206131309",
+   "sha256": "02a69dd3dda33af9c0e71eec5afd2c0efebd202fed0d525301d95c0d0fe590ee",
+   "family": "gb-addict-gravel-30-bike",
+   "year": 2026,
+   "related": [
+    {
+     "url": "https://medias.ssg-service.com/geometry/2022/STRD22-01-GEOMETRY-R%26D-DEPT.html",
+     "timestamp": "20251226090222",
+     "sha256": "0f5393ce3b115f96ab4d3db610f2a70f05115670af033524f362468e5a6dfbca"
+    }
+   ],
+   "firstSeen": "20211202222826"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-pearl-white-bike",
+   "timestamp": "20200919200230",
+   "sha256": "e8ee977781f17d1f30417ad708f3786aa6d295b0686d44b194af7a0ff4a180f1",
+   "family": "gb-addict-rc-10-pearl-white-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200919200230"
+  },
+  {
    "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-10-prism-grey-green-bike",
    "timestamp": "20200920003659",
    "sha256": "9782c736e7c2d73541ca29aa873699e953baa15af794e3ad9aa38b212f263900",
@@ -19,6 +85,15 @@
    "year": 2021,
    "related": [],
    "firstSeen": "20200920003659"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-15-carbon-onyx-black-bike",
+   "timestamp": "20200920060215",
+   "sha256": "2df3d440e8ac60cab6bb9cf1fdbba78fb4e57ac935ed5ad8f3d4efdbf91e70b2",
+   "family": "gb-addict-rc-15-carbon-onyx-black-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920060215"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-15-disc-bike",
@@ -46,6 +121,51 @@
    "year": 2021,
    "related": [],
    "firstSeen": "20200403202213"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-40-bike",
+   "timestamp": "20200920065921",
+   "sha256": "4c6d2557c6ca252b9bd82c1f42662a38b13f1d9de99e241d682022c6948d7fba",
+   "family": "gb-addict-rc-40-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920065921"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-pro-bike",
+   "timestamp": "20200919142003",
+   "sha256": "39939f5432c747dfe8159848960e6af2d74c6d36b30c97576507c57b507dbc53",
+   "family": "gb-addict-rc-pro-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200919142003"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-addict-rc-ultimate-bike",
+   "timestamp": "20200920043526",
+   "sha256": "baa633cd928ac02abb39a71ea9e8843ac5d5c56775a961c921eadefa8b3eb8e7",
+   "family": "gb-addict-rc-ultimate-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200803045538"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-contessa-addict-gravel-15-bike",
+   "timestamp": "20201127234949",
+   "sha256": "8c3b5719346c792a0a04ee52cb3ceee8af66ac3c54c4d16d5e36657f8b14bd98",
+   "family": "gb-contessa-addict-gravel-15-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920065633"
+  },
+  {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-contessa-addict-rc-15-bike",
+   "timestamp": "20200920034250",
+   "sha256": "6e3cd5b77b43a90909d2ab56686caafd0cc5c85f4a44463cf0c572e667b50972",
+   "family": "gb-contessa-addict-rc-15-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920034250"
   },
   {
    "url": "https://www.scott-sports.com/gb/en/product/scott-contessa-speedster-gravel-15-bike",
@@ -105,6 +225,30 @@
    "firstSeen": "20200919124933"
   },
   {
+   "url": "https://www.scott-sports.com/gb/en/product/scott-speedster-gravel-40-bike",
+   "timestamp": "20201127134455",
+   "sha256": "4f307e40c049560a7c0e46fca32494e2b76d82dc557ae8bf577a0e89339110c6",
+   "family": "gb-speedster-gravel-40-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200918214633"
+  },
+  {
+   "url": "https://www.scott-sports.com/global/en/product/scott-addict-10-bike-blue",
+   "timestamp": "20220203111331",
+   "sha256": "9d765d8a6eb3ab5ea38c89f8546ba906e141cc9ce314057276ea784f6680b1b4",
+   "family": "global-addict-10-bike-blue",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://medias.ssg-service.com/geometry/2022/STRD22-02-GEOMETRY.html",
+     "timestamp": "20250927235731",
+     "sha256": "b52c6fcb8a2a14ce3ee3a1cc7ad33b8116eb4b86a10318e6f81d3c726a67fd1e"
+    }
+   ],
+   "firstSeen": "20220203111331"
+  },
+  {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-20-disc-dark-blue-bike",
    "timestamp": "20210119124457",
    "sha256": "6dbd310541a954c9e326550b1aefcb0338360c56581c471d7c2ce79418e386ba",
@@ -130,6 +274,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20200919054400"
+  },
+  {
+   "url": "https://www.scott-sports.com/global/en/product/scott-addict-gravel-20-bike",
+   "timestamp": "20201108093828",
+   "sha256": "bcab70e70f9e8692dc3a3cca55f747da6d68e08dc6bf657925f528103165df11",
+   "family": "global-addict-gravel-20-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20191115144340"
   },
   {
    "url": "https://www.scott-sports.com/global/en/product/scott-addict-rc-10-prism-grey-green-bike",
@@ -255,6 +408,15 @@
    "firstSeen": "20200423024216"
   },
   {
+   "url": "https://www.scott-sports.com/us/en/product/scott-addict-cx-rc-bike",
+   "timestamp": "20200919042338",
+   "sha256": "33bc52e0af33b01dd08f030a1c711adce15d9871613691e6e45a36dfccc5dff0",
+   "family": "us-addict-cx-rc-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200919042338"
+  },
+  {
    "url": "https://www.scott-sports.com/us/en/product/scott-addict-rc-20-bike-2021",
    "timestamp": "20251231062937",
    "sha256": "e7a26d0778406d834205f303c326185ebaf7439ba004130b58e73fc3c47709d1",
@@ -316,6 +478,15 @@
    "year": 2021,
    "related": [],
    "firstSeen": "20200919211216"
+  },
+  {
+   "url": "https://www.scott-sports.com/us/en/product/scott-speedster-gravel-40-bike",
+   "timestamp": "20200918225013",
+   "sha256": "b47dd8f6e97a5374da62bdd9e9c0d4eaf3bf8dcd2725643ea2575c1c3049a2c4",
+   "family": "us-speedster-gravel-40-bike",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200918225013"
   }
  ]
 }

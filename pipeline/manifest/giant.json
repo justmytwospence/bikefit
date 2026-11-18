@@ -3,6 +3,24 @@
  "file": "giant",
  "pages": [
   {
+   "url": "https://www.giant-bicycles.com/us/contend-1",
+   "timestamp": "20210519023458",
+   "sha256": "33fc05deccaba3b9a59b7405f05c3fb8da8a6bacf3331f97d851278d208cf1ee",
+   "family": "contend-1",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20170913074758"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-1-2020",
+   "timestamp": "20230605004210",
+   "sha256": "fea96ac3daaefa777c0694112fefdd26301cbee3abcf4286cb97357b61e87741",
+   "family": "contend-1",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191214213645"
+  },
+  {
    "url": "https://www.giant-bicycles.com/us/contend-1-2020",
    "timestamp": "20251208071444",
    "sha256": "04168f5af17d87da9e342b1cc7881f493fc90ae168b6f1c50bddf30e80b1e81d",
@@ -19,6 +37,33 @@
    "year": 2026,
    "related": [],
    "firstSeen": "20191214213645"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-3",
+   "timestamp": "20191227062802",
+   "sha256": "16708682d6dea0effd7f31897c1f05243c51e4f54f19c306825c25635ec5d6bf",
+   "family": "contend-3",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170620222527"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-3",
+   "timestamp": "20211203123403",
+   "sha256": "83328358cb2d4118cc69db9ed2dd174ea67a626a71c80d46d9a7a13056f18e97",
+   "family": "contend-3",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20170620222527"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-3",
+   "timestamp": "20230503161534",
+   "sha256": "4e9bbcee95ecdfe1c9c14fd8294bb1615b3f0d2f02e27827356b3f43f3b05e91",
+   "family": "contend-3",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20170620222527"
   },
   {
    "url": "https://www.giant-bicycles.com/us/contend-3-2022",
@@ -39,6 +84,24 @@
    "firstSeen": "20191207063745"
   },
   {
+   "url": "https://www.giant-bicycles.com/us/contend-ar-1",
+   "timestamp": "20211023210707",
+   "sha256": "13a0151fb6aaf48464f7e09dda67634558e81c46f77e30fb0933ee146c5f2850",
+   "family": "contend-ar",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200815111115"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-ar-3",
+   "timestamp": "20230603170947",
+   "sha256": "925e61ba2ebca5d87be911b4b76c98e478322b5e639c7f82af53a8be58de7d27",
+   "family": "contend-ar",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200922193911"
+  },
+  {
    "url": "https://www.giant-bicycles.com/us/contend-ar-3-2022",
    "timestamp": "20251013035424",
    "sha256": "45ffcc42fa2756a45af22288b528d80335878a2dfb2d63664c77dfdf8130a73e",
@@ -55,6 +118,42 @@
    "year": 2027,
    "related": [],
    "firstSeen": "20200922193911"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-sl-1-disc",
+   "timestamp": "20191122075414",
+   "sha256": "aef742fbce16739a1ec67ee40fbb8fdb9475f5bb49032e03278ce33299ab198b",
+   "family": "contend-sl",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190823223621"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-sl-1-disc-2019",
+   "timestamp": "20210924185539",
+   "sha256": "c957a961ca644c59afc6a7401b5be8695a57af136dd6c049dcaa13cd117bb787",
+   "family": "contend-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201112001925"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-sl-disc-2-2017",
+   "timestamp": "20230127134951",
+   "sha256": "954065e78f6f1d2d677534fa1996ff957f1ce91a409edcb488a671cdfc1bfb41",
+   "family": "contend-sl",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201204233357"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/contend-sl-0",
+   "timestamp": "20260716171714",
+   "sha256": "85abcf1069a23ec2540d36aaff91d24c4cf5058153cf8118e28f7df2a5ff8cc1",
+   "family": "contend-sl",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260716171714"
   },
   {
    "url": "https://www.giant-bicycles.com/us/defy-1-2015",
@@ -138,6 +237,33 @@
    "firstSeen": "20240203034253"
   },
   {
+   "url": "https://www.giant-bicycles.com/us/defy-advanced-pro-1",
+   "timestamp": "20190921172726",
+   "sha256": "d6ea92bf3d6e2f4f98f123ca40fbc6e816fdfccdda6668af3a741f9cd5a99718",
+   "family": "defy-advanced",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170619061042"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/defy-advanced-1",
+   "timestamp": "20211022002734",
+   "sha256": "3a74d5c136c7c0ced02ad57f275d8ced24d6865a5bf3384a7d0f13eecf1d0ea8",
+   "family": "defy-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190818171555"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/defy-advanced-2",
+   "timestamp": "20230617224538",
+   "sha256": "b6d4f5fc05acee1e77aa00250f6d5a3dd6d00f1e2555a70cbb0bdfc72420fafc",
+   "family": "defy-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722160219"
+  },
+  {
    "url": "https://www.giant-bicycles.com/us/defy-advanced-2",
    "timestamp": "20251014071609",
    "sha256": "5914a632d65866c057d6f2cc739166eb934444c640a02a49870608667f3b6a5f",
@@ -154,6 +280,33 @@
    "year": 2027,
    "related": [],
    "firstSeen": "20190722160219"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/propel-advanced-sl-1-disc",
+   "timestamp": "20191210182110",
+   "sha256": "12428332bf7966b1294c634e581204d3e3b3b427f53b0124350108617330c58b",
+   "family": "propel-advanced",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20180207180517"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/propel-advanced-sl-0-disc-2019",
+   "timestamp": "20210226100952",
+   "sha256": "39bd50880265551d4b8450f7ee5ce3811e6e7e2842489fcb35656592e1ed3c6e",
+   "family": "propel-advanced",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200812002434"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/propel-advanced-1-2023",
+   "timestamp": "20230325232851",
+   "sha256": "e62909d202d7efd57491d831776fd63738e596db7c196f11cac89a1d28c6a68a",
+   "family": "propel-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221223051648"
   },
   {
    "url": "https://www.giant-bicycles.com/us/propel-advanced-1-2023",
@@ -174,6 +327,42 @@
    "firstSeen": "20260307092352"
   },
   {
+   "url": "https://www.giant-bicycles.com/us/revolt-1-2017",
+   "timestamp": "20180409054537",
+   "sha256": "736f66d9e3229e7ceb50812c91c9be2986345c539ad730bf866d94e6ef78d382",
+   "family": "revolt-1",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20180409054537"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-1-2017",
+   "timestamp": "20210303182041",
+   "sha256": "e1f3d4e90b923bbf5a0bc95333db6b01ca2259e10d390574e80e466456287602",
+   "family": "revolt-1",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20180409054537"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-2",
+   "timestamp": "20211208162718",
+   "sha256": "fbae1bd29b446856e7216ac072e5e8a1fa393db76298b178759c8ac38ef25dd5",
+   "family": "revolt-2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200502204503"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-2",
+   "timestamp": "20230713002159",
+   "sha256": "09ab4073fcd40b972c4570ace7e5654329e457b3fd17bbad93f09e93ce2fefc0",
+   "family": "revolt-2",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200502204503"
+  },
+  {
    "url": "https://www.giant-bicycles.com/us/revolt-2",
    "timestamp": "20261114054436",
    "sha256": "f5ccc1945da446970705213cb2ece3c24eed83d89dba9fd9da737cceac360ac2",
@@ -181,6 +370,60 @@
    "year": 2027,
    "related": [],
    "firstSeen": "20200502204503"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-3-2017",
+   "timestamp": "20220124112750",
+   "sha256": "ac11582759d50ad2500a4ab7ebc7456a7cc47562178c3e86506e711ea89f5be4",
+   "family": "revolt-3",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20220124112750"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-3-2017",
+   "timestamp": "20250821193417",
+   "sha256": "9a093f9a76a97c8e6263aff6df9fa10dd0ee2fa4d3d568b651db99ae4ca9c6e2",
+   "family": "revolt-3",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220124112750"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-advanced-2",
+   "timestamp": "20191212081820",
+   "sha256": "3f526ad393acc3234fd7fd9e1ab52ec8a9606faa1972c69c057b9adbd37ce284",
+   "family": "revolt-advanced",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826091847"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-advanced-3",
+   "timestamp": "20211130030225",
+   "sha256": "1772d2b23ee9dc2bd8bf3beb56ffada0df709c7aebf76a73488ef62a94a2e8f0",
+   "family": "revolt-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201024152907"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-advanced-2",
+   "timestamp": "20230615205558",
+   "sha256": "5ced6d1b40c8889e2352c637498f3028d606ac602dbd231bd9eb3197213efe76",
+   "family": "revolt-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190826091847"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/revolt-advanced-1-2023",
+   "timestamp": "20250912183928",
+   "sha256": "59329fb01b96ec1e90ffcb9740df45e13810e90f58b47b614dfa73f2ee31260b",
+   "family": "revolt-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230511112222"
   },
   {
    "url": "https://www.giant-bicycles.com/us/revolt-advanced-2",
@@ -219,6 +462,33 @@
    "firstSeen": "20240908154342"
   },
   {
+   "url": "https://www.giant-bicycles.com/us/tcr-advanced-2",
+   "timestamp": "20191215072143",
+   "sha256": "9a9b917881bb76a88b7d51b5b66731fa217b2a244e99ac9ed2122699826d7bbd",
+   "family": "tcr-advanced",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821011001"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/tcr-advanced-pro-disc-frameset",
+   "timestamp": "20210927004927",
+   "sha256": "cbddc69116c4d1750af563571ef2215d9c2d45b201d34dad65fa1e4aea3cec99",
+   "family": "tcr-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20170925010136"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/tcr-advanced-disc-2-pro-compact",
+   "timestamp": "20230606024618",
+   "sha256": "a1218bb330ac3d5f99b2eb1486a540c23dd1a4106b0d2451b182924d5fbc20b8",
+   "family": "tcr-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220710013936"
+  },
+  {
    "url": "https://www.giant-bicycles.com/us/tcr-advanced-sl-frameset-2025",
    "timestamp": "20260618052954",
    "sha256": "55e1aeee3b622f6cfbfd341b2d5a676b7fb5112b9d153bd5fa9c6a03f39bbd9c",
@@ -226,6 +496,24 @@
    "year": 2026,
    "related": [],
    "firstSeen": "20240521205002"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/tcx-advanced-pro-2",
+   "timestamp": "20210918095100",
+   "sha256": "a289153bc2863f519c0afbc74307f6b9b3eae77a021bf0e863be2e79182c12dd",
+   "family": "tcx-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190921233212"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/tcx-advanced-pro-0",
+   "timestamp": "20230204092522",
+   "sha256": "609a8df17e45f2adf28b87d8814e23c38fedad77a3c8785b00184f4e6f5be06e",
+   "family": "tcx-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210918082338"
   },
   {
    "url": "https://www.giant-bicycles.com/us/tcx-advanced-2019",
@@ -246,6 +534,24 @@
    "firstSeen": "20251013065700"
   },
   {
+   "url": "https://www.giant-bicycles.com/us/tcx-slr-2-2019",
+   "timestamp": "20210301041617",
+   "sha256": "f0d23e0697df53c5751c4ce6f6dec150184e791afe45b6332ba1e955f6b00bd0",
+   "family": "tcx-slr",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920173628"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/tcx-slr-2-2019",
+   "timestamp": "20220814031101",
+   "sha256": "04a9235d566e119e32d1d42301b090f0a52fe09a45a3982adf607de01c1106f6",
+   "family": "tcx-slr",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920173628"
+  },
+  {
    "url": "https://www.giant-bicycles.com/us/tcx-slr-2-2016",
    "timestamp": "20250816093555",
    "sha256": "f426334acd9918c4206a74e3c5785d3f39e10fbdcf74d52c10220e0071a63271",
@@ -255,6 +561,33 @@
    "firstSeen": "20220518151952"
   },
   {
+   "url": "https://www.giant-bicycles.com/us/toughroad-slr-1",
+   "timestamp": "20191119062909",
+   "sha256": "601b4445d6bcd245b85903af6f37fa65f43e4f8ae63c2d4fdb34d44e4f3c9b49",
+   "family": "toughroad-slr",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170724192849"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/toughroad-slr-gx-1",
+   "timestamp": "20210621135506",
+   "sha256": "9ecbd50e521e5d5e5738bcc418fb8b59842dbd50e1b5e67cb410f1fd0183f69c",
+   "family": "toughroad-slr",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190818032932"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/toughroad-slr-2-2020",
+   "timestamp": "20230430210239",
+   "sha256": "87a322db4e807c68d5725d4b762a2690ce4de06468999694516ea6a2639356e1",
+   "family": "toughroad-slr",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191211051851"
+  },
+  {
    "url": "https://www.giant-bicycles.com/us/toughroad-slr-2-2020",
    "timestamp": "20260606104157",
    "sha256": "3cb91c1c1af0129de497b87cb3f0925085e5c81203b3bca5c21bdee726713a66",
@@ -262,6 +595,15 @@
    "year": 2026,
    "related": [],
    "firstSeen": "20191211051851"
+  },
+  {
+   "url": "https://www.giant-bicycles.com/us/toughroad-slr-gx-0-2018",
+   "timestamp": "20250824212128",
+   "sha256": "b56cb01d32697e35ef45a8f90b1a326be8f20fec8d1912fd0539413c1cd52334",
+   "family": "toughroad-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20190824093324"
   }
  ]
 }

@@ -30,6 +30,15 @@
    "firstSeen": "20241105160600"
   },
   {
+   "url": "https://www.colnago.com/en-us/premium-bikes/c68-gravel-bike/technical-specifications",
+   "timestamp": "20250517023402",
+   "sha256": "ffb0524e6ebb13824d0934df3551940afca17b7bb1c389e893ece60edd0f09b2",
+   "family": "c68-gravel",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241105155820"
+  },
+  {
    "url": "https://www.colnago.com/en/premium-bikes/c68-gravel-bike/technical-specifications",
    "timestamp": "20260210175734",
    "sha256": "70d907fc6211bb799fa57253584c1f34bebe67bdc26d216ead4c019ff9df8645",
@@ -111,6 +120,15 @@
    "firstSeen": "20241105152925"
   },
   {
+   "url": "https://www.colnago.com/en-us/products/c72-la-scala-bike",
+   "timestamp": "20260512085205",
+   "sha256": "c2a161f8cd7ff556ed6f98ac6a45f1c6a3c39b38e5742b0dc5a55ff25d63303a",
+   "family": "c72-road",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260512085205"
+  },
+  {
    "url": "https://www.colnago.com/bike-product/detail/g3-x-b",
    "timestamp": "20230925004529",
    "sha256": "307c511d0468f6b62873a5cc198210802195aae510dd3fb87410aab4d157612b",
@@ -190,6 +208,15 @@
    "year": 2024,
    "related": [],
    "firstSeen": "20220427012710"
+  },
+  {
+   "url": "https://www.colnago.com/en-us/products/v4-vddk",
+   "timestamp": "20260510130002",
+   "sha256": "0f7c09a3088db8e4fb2459efad593df438f73e986458225c3fc2d24646ae4a66",
+   "family": "v4",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241102094557"
   },
   {
    "url": "https://www.colnago.com/en/products/v4-bike",

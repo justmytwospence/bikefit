@@ -595,6 +595,15 @@
    "firstSeen": "20260722130824"
   },
   {
+   "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-new-2/",
+   "timestamp": "20260722130824",
+   "sha256": "f10ebc6122e23e1addfbbdecccdb2347efba35507772ab171d69aba65283f5fd",
+   "family": "oltre-rc-new",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260722130824"
+  },
+  {
    "url": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-team-replica-2026/",
    "timestamp": "20260612043325",
    "sha256": "ae854758e8fdff82dbcb616ba000207b0da56f1d6200c7f2fafde2f27e7803fd",
@@ -1100,6 +1109,15 @@
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xrb04-specialissima-frame-kit-4.html",
+   "timestamp": "20220818114232",
+   "sha256": "b97910181f854727178c4c919a90ad0f546c0573b3849a256f0ed830dc206c71",
+   "family": "specialissima-frame-kit",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220118111113"
+  },
+  {
+   "url": "https://www.bianchi.com/store/int_EN/xrb04-specialissima-frame-kit-4.html",
    "timestamp": "20250710212052",
    "sha256": "512157b0d1f069ac80bdc99154d79faa8cd0e49f2b0ff0e83ceb7b05109ce4c4",
    "family": "specialissima-frame-kit",
@@ -1154,6 +1172,15 @@
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/xsb10-specialissima-pro-racing-team.html",
+   "timestamp": "20230413105022",
+   "sha256": "9e11e430cb025e97080f9186af721eb53c822efec56bba258c03af6bb17fdf6e",
+   "family": "specialissima-pro-racing-team",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20230308091853"
+  },
+  {
+   "url": "https://www.bianchi.com/store/int_EN/xsb10-specialissima-pro-racing-team.html",
    "timestamp": "20251209194902",
    "sha256": "2805fc079b729e69652769390b8079d11b1eac1a8f73a6de36617ffa2430bd63",
    "family": "specialissima-pro-racing-team",
@@ -1196,6 +1223,24 @@
    "year": 2026,
    "related": [],
    "firstSeen": "20260606022847"
+  },
+  {
+   "url": "https://www.bianchi.com/store/int_EN/yrby8-specialissima-red-etap-axs-12sp-0.html",
+   "timestamp": "20231001183117",
+   "sha256": "0be2a72f3e8979ded54e014aa603870f85649c5463c0a6e08c69444880a5ae68",
+   "family": "specialissima-red-etap-axs-12sp",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220122124057"
+  },
+  {
+   "url": "https://www.bianchi.com/store/int_EN/yrby8-specialissima-red-etap-axs-12sp-0.html",
+   "timestamp": "20250513111814",
+   "sha256": "390ecc377c530da7acaca6a56f387886002768e6dfdad97117aee8969705d2d0",
+   "family": "specialissima-red-etap-axs-12sp",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20220122124057"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ysby8-specialissima-redetapaxs12sp-3.html",
@@ -1304,6 +1349,15 @@
    "year": 2026,
    "related": [],
    "firstSeen": "20230320161939"
+  },
+  {
+   "url": "https://www.bianchi.com/store/int_EN/yvb99-specialissima140thrc-dura-acedi212sp-10.html",
+   "timestamp": "20250418030353",
+   "sha256": "773e4accfaa8224034ec97d31eb069baad981f0d828c6e6e4c60123a564f724d",
+   "family": "specialissima140thrc-dura-acedi212sp",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20250418030353"
   },
   {
    "url": "https://www.bianchi.com/store/int_EN/ytb47-specialissimacomp-105di212sp-0.html",

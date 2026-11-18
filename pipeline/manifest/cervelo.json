@@ -264,6 +264,15 @@
    "firstSeen": "20190716001733"
   },
   {
+   "url": "https://www.cervelo.com/en/r3",
+   "timestamp": "20191021001948",
+   "sha256": "ea20c8735048446db7c98073b172b297314598c0688bbd79e98f854ed4311f63",
+   "family": "r3",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716222838"
+  },
+  {
    "url": "https://www.cervelo.com/en_US/r5",
    "timestamp": "20191216052042",
    "sha256": "c2b9567767279471237f2f127415ad60bc808ed8d445889dbad13a77f071188f",

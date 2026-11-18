@@ -3,6 +3,15 @@
  "file": "ribble",
  "pages": [
   {
+   "url": "https://www.ribblecycles.co.uk/ribble-aero-883-limited-edition-di2/",
+   "timestamp": "20200511110058",
+   "sha256": "a34add2d55f3fe2126cf63840133956bcf1740693e28498260ac70815ea8d7fa",
+   "family": "aero-883",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20200501120346"
+  },
+  {
    "url": "https://www.ribblecycles.co.uk/ribble-aero-883-shimano-ultegra-di2/",
    "timestamp": "20191211230012",
    "sha256": "4acec8560a614840ac6c7227355df94017ab3728e78ee9c21ebd794b207d0395",
@@ -426,6 +435,15 @@
    "firstSeen": "20190923044826"
   },
   {
+   "url": "https://www.ribblecycles.co.uk/ribble-cx-sl/",
+   "timestamp": "20240302005836",
+   "sha256": "3f2d6483c06f85ace387f217796de52dd286907380dcfc8b67fdd7dfba63d0ae",
+   "family": "cx-sl",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20190923044826"
+  },
+  {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-725/",
    "timestamp": "20191112205044",
    "sha256": "8d06e53caa8cd31e755cd5670169ee27d46ea6563c60d83cada609e3c030c934",
@@ -525,6 +543,15 @@
    "firstSeen": "20191121075948"
   },
   {
+   "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-shimano-tiagra-disc-1/",
+   "timestamp": "20240303124541",
+   "sha256": "4d490ce7c7aee0418e2d3e1dc21533ab99c308dd2b90834f714f772bf8d2c599",
+   "family": "endurance-al",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231128165030"
+  },
+  {
    "url": "https://www.ribblecycles.co.uk/ribble-endurance-al-disc/",
    "timestamp": "20191120073941",
    "sha256": "bfaa27d7a9338fced6bd5502c6db96675ac41a494a13deb93a25d4ac20a21bb1",
@@ -593,6 +620,15 @@
    "sha256": "3cc124a23327c8c3ba97f610cb3a887d61d729657c519f30374642001e06c5aa",
    "family": "endurance-sl",
    "year": 2024,
+   "related": [],
+   "firstSeen": "20190721131156"
+  },
+  {
+   "url": "https://www.ribblecycles.co.uk/ribble-endurance-sl/",
+   "timestamp": "20240918020345",
+   "sha256": "5397a41299753728074f3148e5801f8bae6dcd5af6ad4e9c195ddc8578abb2ce",
+   "family": "endurance-sl",
+   "year": 2025,
    "related": [],
    "firstSeen": "20190721131156"
   },
@@ -813,6 +849,15 @@
    "firstSeen": "20210331155203"
   },
   {
+   "url": "https://www.ribblecycles.co.uk/ribble-gravel-al/",
+   "timestamp": "20260306062042",
+   "sha256": "34f9e46404dc54a2acac712c5ae2bba692a1334fcf552b68a3ba513a8ff6b3b8",
+   "family": "gravel-al",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210331155203"
+  },
+  {
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
    "timestamp": "20211219144016",
    "sha256": "568fc75666bf3045d46587c598b179d724eaf33933682d281d149d91a7e4a8db",
@@ -834,6 +879,15 @@
    "url": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
    "timestamp": "20251012202449",
    "sha256": "fc74e6b78c3cf8f3df88e0dcaaf6a9bffeb3476b8b44edf370e4b4c0a68cd87f",
+   "family": "gravel-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210331200354"
+  },
+  {
+   "url": "https://www.ribblecycles.co.uk/ribble-gravel-sl/",
+   "timestamp": "20260116181819",
+   "sha256": "57c3b1b315dfda0f9f14c45e419965f26b218d9d2c45efae606fc15974593cd5",
    "family": "gravel-sl",
    "year": 2026,
    "related": [],

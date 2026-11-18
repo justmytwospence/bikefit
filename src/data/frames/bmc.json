@@ -53,17 +53,17 @@
       "model": "Roadmachine",
       "year": 2020,
       "category": "endurance",
-      "source": "https://www.bmc-switzerland.com/roadmachine-02-two.html",
-      "retrieved": "2019-12-14",
-      "archive": "https://web.archive.org/web/20191214132732/https://www.bmc-switzerland.com/roadmachine-02-two.html",
-      "estimated": ["headTubeLength","chainstay"],
+      "source": "https://www.bmc-switzerland.com/roadmachine-01-mod-301834.html",
+      "retrieved": "2019-12-10",
+      "archive": "https://web.archive.org/web/20191210080820/https://www.bmc-switzerland.com/roadmachine-01-mod-301834.html",
+      "estimated": ["chainstay","wheelbase"],
       "sizes": [
-        ["47",516,374,74.2,71.2,112,420,414,982,71],
-        ["51",541,382,74.2,71.2,139,457,415,999,71],
-        ["54",562,386,74.2,72,152,500,416,997,71],
-        ["56",586,390,74.2,72,181,522,417,1008,71],
-        ["58",610,394,74.2,72,206,539,418,1020,71],
-        ["61",644,398,74.2,72,242,573,419,1035,71]
+        ["47",516,374,74.2,71.2,112,420,414,981,71],
+        ["51",541,382,74.2,72,139,457,415,992,71],
+        ["54",562,386,74.2,72,156,500,416,1001,71],
+        ["56",586,390,74.2,72,181,522,417,1011,71],
+        ["58",610,394,74.2,72,206,539,418,1021,71],
+        ["61",644,398,74.2,72,242,573,419,1036,71]
       ]
     },
     {
