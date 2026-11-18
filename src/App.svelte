@@ -117,7 +117,7 @@
       />
       <ScoreCard {score} />
     </div>
-    <MetricStrip poseEval={evaluation.poses[pi]} target={shownTarget} level={resultsLevel} />
+    <MetricStrip poses={evaluation.poses} {targets} level={resultsLevel} />
   </section>
 
   <aside class="panel">
@@ -145,7 +145,8 @@
   .canvas > :global(.score) { position: absolute; right: 12px; bottom: 12px; }
   .panel { grid-area: panel; display: flex; flex-direction: column; min-height: 0; border-top: 1px solid var(--line); background: var(--bg); }
   .tabs { display: flex; border-bottom: 1px solid var(--line); background: var(--surface); }
-  .tabs button { flex: 1; min-height: 46px; border: 0; border-bottom: 3px solid transparent; background: transparent; font-weight: 600; color: var(--muted); }
+  .tabs button { flex: 1; min-height: 46px; padding: 0 6px; white-space: nowrap; border: 0; border-bottom: 3px solid transparent; background: transparent; font-weight: 600; color: var(--muted); }
+  @media (max-width: 400px) { .tabs button { font-size: 14px; } }
   .tabs :global(.menu) { flex: 0 0 auto; display: flex; align-items: center; }
   .tabs button.on { color: var(--ink); border-bottom-color: var(--accent); }
   .body { flex: 1; min-height: 0; display: flex; flex-direction: column; }
