@@ -46,7 +46,11 @@ npm run build
 - Hand-entered models go in `pipeline/overrides/<brand>.json` under `manual` with their source URL; one is used only when no page extracted that URL. The same file drops pages (`exclude`) and renames or recategorises models (`models`).
 - `npm test` validates every entry.
 
-Needs Node 22 (`.nvmrc`). Angle bands, hand-load bands and body proportions live in `src/model/styles.ts`, `src/model/body.ts` and `src/model/pose.ts`.
+Needs Node 22 (`.nvmrc`).
+
+## Deployment
+
+Vercel deploys every branch from Git: `main` to https://bikefitter.app, `dev` to https://dev.bikefitter.app, and a feature branch to `https://<branch>.bikefitter.app` once `npm run preview:domain -- <branch>` has added it. CI runs the tests, svelte-check and the build on every push. AGENTS.md has the branch workflow. Angle bands, hand-load bands and body proportions live in `src/model/styles.ts`, `src/model/body.ts` and `src/model/pose.ts`.
 
 ## Where the numbers come from
 

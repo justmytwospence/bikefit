@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run",
-    "catalog": "tsx pipeline/cli.ts"
+    "catalog": "tsx pipeline/cli.ts",
+    "preview:domain": "tsx scripts/preview-domain.ts"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
