@@ -8,7 +8,7 @@
   const name = $derived(STYLES[app.styleId].name);
 </script>
 
-<label class="score" title="How closely this setup matches the {name} style. Choose another style here.">
+<label class="score" title="How closely this setup matches the {name} style, on the hoods and in the drops, weighted by how you ride. Choose another style here.">
   <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
     <circle cx="20" cy="20" r="16" fill="none" stroke="var(--surface-2)" stroke-width="4" />
     <circle

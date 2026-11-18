@@ -234,7 +234,7 @@
     </div>
     {#if level >= 2}
       <div class="posepick">
-        <Segmented options={poseOptions} bind:value={ui.viewPose} ariaLabel="Hand position shown" compact />
+        <Segmented options={poseOptions} bind:value={ui.viewPose} ariaLabel="Hand position drawn" compact />
       </div>
     {/if}
   </div>
