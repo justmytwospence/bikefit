@@ -2,9 +2,9 @@ import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { forwardLayout } from './geometry';
 import { evaluateFit, riderPose, solveLeg } from './pose';
-import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
+import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_PARAMS } from './presets';
 import { makeContext } from './riding';
-import { SPIKE_BODY, SPIKE_FRAME } from './testFrames';
+import { SPIKE_BODY, SPIKE_FRAME, TEST_FRAMES } from './testFrames';
 import type { Ankling, Frame, PoseTarget } from './types';
 import { len, sub } from './vec';
 
@@ -87,7 +87,7 @@ describe('toe clearance', () => {
     expect(evaluateFit(s, L, c, tg).toeClearance).toBeCloseTo(-11.6, 1);
   });
   it('default body on endurance-56', () => {
-    const f = EXAMPLE_FRAMES.find((x) => x.id === 'endurance-56')!;
+    const f = TEST_FRAMES.find((x) => x.id === 'endurance-56')!;
     const c = makeContext(f, DEFAULT_COMPONENTS, 'neutral', 'tempo');
     const L = forwardLayout(f, DEFAULT_COMPONENTS, P);
     expect(evaluateFit(seg, L, c, tg).toeClearance).toBeCloseTo(-3.07, 1);

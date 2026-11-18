@@ -3,7 +3,8 @@ import { resolveSegments } from './body';
 import { forwardLayout } from './geometry';
 import { optimizeFit, type FitProblem } from './optimize';
 import { evaluateFit } from './pose';
-import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
+import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
+import { TEST_FRAMES } from './testFrames';
 import { makeContext, poseWeights } from './riding';
 import { bandsFor, STYLES } from './styles';
 import type { Body } from './types';
@@ -12,7 +13,7 @@ import type { Body } from './types';
  * The model is not tuned to these numbers; they are independent published observations it has to
  * reproduce. Sources are listed in README.md under "Where the numbers come from".
  */
-const frame = EXAMPLE_FRAMES.find((f) => f.id === 'endurance-56')!;
+const frame = TEST_FRAMES.find((f) => f.id === 'endurance-56')!;
 const ANSUR_MAN: Body = { ...DEFAULT_BODY, height: 1756, inseam: 846, shoeSize: 43, shoeSizeAuto: false };
 const ANSUR_WOMAN: Body = { ...DEFAULT_BODY, sex: 'female', height: 1629, inseam: 782, shoeSize: 39, shoeSizeAuto: false };
 const DEFAULT_MAN: Body = { ...DEFAULT_BODY, shoeSize: 43, shoeSizeAuto: false };

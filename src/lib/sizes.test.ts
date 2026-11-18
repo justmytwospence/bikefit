@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { buildCatalog, toFrame, type BrandFile } from '../data/catalog';
 import { FIXTURE } from '../data/fixture';
 import type { CompareRow } from '../model/optimize';
-import { EXAMPLE_FRAMES } from '../model/presets';
+import { TEST_FRAMES } from '../model/testFrames';
 import type { Frame } from '../model/types';
 import { catalogModelFor, groupRows, sizeFamily, sizeVerdictLine } from './sizes';
 
@@ -29,7 +29,7 @@ describe('sizeFamily', () => {
     const file: BrandFile = { brand: 'Solo', models: [{ ...tarmac, model: 'One', sizes: [['S', 520, 370, 73.5, 73, 140, 520, 410, 990, 72]] }] };
     const one = buildCatalog([file]);
     expect(sizeFamily(toFrame(one[0], one[0].sizes[0]), one, toFrame)).toBeNull();
-    expect(sizeFamily(EXAMPLE_FRAMES[0], FIXTURE, toFrame)).toBeNull();
+    expect(sizeFamily(TEST_FRAMES[0], FIXTURE, toFrame)).toBeNull();
   });
 });
 

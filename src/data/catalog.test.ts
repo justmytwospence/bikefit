@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   buildCatalog, CATALOG, CATEGORIES, GEOMETRY_KEYS, RANGES, slug, toFrame, yearLabel, type BrandFile,
 } from './catalog';
+import { DEFAULT_FRAME } from '../model/presets';
 import { FIXTURE, FIXTURE_FILES } from './fixture';
 
 describe('buildCatalog', () => {
@@ -67,5 +68,9 @@ describe('real catalog', () => {
       if (m.sizes.length > 1 && m.sizes[m.sizes.length - 1].reach <= m.sizes[0].reach) bad('reach not increasing');
     }
     expect(errs).toEqual([]);
+  });
+  it('still contains the default frame', () => {
+    const frames = CATALOG.flatMap((m) => m.sizes.map((s) => toFrame(m, s)));
+    expect(frames.find((f) => f.id === DEFAULT_FRAME.id)).toEqual(DEFAULT_FRAME);
   });
 });

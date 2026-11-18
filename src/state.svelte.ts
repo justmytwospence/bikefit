@@ -4,7 +4,6 @@ import { sizeFamily, type SizeOption } from './lib/sizes';
 import { defaults, migrate, type AppData } from './lib/appData';
 import { resolveSegments } from './model/body';
 import { idealLayout, type CompareRow, type FitProblem, type FitResult, type Verdict } from './model/optimize';
-import { EXAMPLE_FRAMES } from './model/presets';
 import { makeContext, poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
 import type { MeasureId } from './lib/measure';
@@ -322,8 +321,9 @@ export function duplicateFrame() {
   app.activeFrameId = f.id;
 }
 
+/** A frame of your own to type geometry into, starting from the current frame's numbers. */
 export function newFrame() {
-  const f = structuredClone(EXAMPLE_FRAMES[1]);
+  const f = structuredClone(activeFrame());
   f.id = crypto.randomUUID();
   f.name = 'My frame';
   app.frames.push(f);

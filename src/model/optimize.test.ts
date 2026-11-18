@@ -3,15 +3,15 @@ import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
 import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, standoverHeight, wrenchList, type FitProblem } from './optimize';
 import { evaluateFit } from './pose';
-import { TEST_BODY } from './testFrames';
-import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from './presets';
+import { TEST_BODY, TEST_FRAMES } from './testFrames';
+import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
 import { makeContext, poseWeights } from './riding';
 import { outside } from './score';
 import { bandsFor, STYLES } from './styles';
 import type { Evaluation, Frame, MetricId, PoseTarget, StyleId } from './types';
 
 const segments = resolveSegments(TEST_BODY);
-const frame = (id: string) => EXAMPLE_FRAMES.find((f) => f.id === id)!;
+const frame = (id: string) => TEST_FRAMES.find((f) => f.id === id)!;
 
 function problem(style: StyleId, f: Frame, mode: 'shop' | 'tune' = 'shop'): FitProblem {
   const st = STYLES[style];

@@ -37,21 +37,13 @@ export const DEFAULT_PARAMS: FitParams = {
   cleatOffset: 5,
 };
 
-function fr(
-  id: string, name: string, stack: number, reach: number, sta: number, hta: number,
-  ht: number, st: number, cs: number, wb: number, drop: number, maxSpacers: number, tyreWidth: number,
-): Frame {
-  return {
-    id, name, stack, reach, seatTubeAngle: sta, headTubeAngle: hta, headTubeLength: ht,
-    seatTubeLength: st, chainstay: cs, wheelbase: wb, bbDrop: drop, maxSpacers, tyreWidth,
-  };
-}
-
-export const EXAMPLE_FRAMES: Frame[] = [
-  fr('endurance-54', 'Example endurance 54', 575, 375, 73.5, 72, 165, 520, 415, 1000, 72, 40, 30),
-  fr('endurance-56', 'Example endurance 56', 595, 383, 73.5, 72.5, 185, 540, 415, 1012, 72, 40, 30),
-  fr('race-54', 'Example race 54', 545, 385, 73.5, 73, 140, 510, 408, 985, 70, 30, 28),
-  fr('race-56', 'Example race 56', 565, 393, 73.5, 73.5, 160, 530, 408, 993, 70, 30, 28),
-  fr('gravel-54', 'Example gravel 54', 580, 378, 73.5, 71, 155, 520, 425, 1035, 75, 40, 40),
-  fr('gravel-56', 'Example gravel 56', 600, 388, 73.5, 71.5, 175, 540, 425, 1050, 75, 40, 40),
-];
+/**
+ * The frame a new visitor starts on: a Trek Domane Gen 4 in 56, copied from the catalog
+ * (src/data/frames/trek.json) so the main bundle does not load the whole catalog.
+ * src/data/catalog.test.ts checks it still matches.
+ */
+export const DEFAULT_FRAME: Frame = {
+  id: 'cat:trek-domane-gen-4-2020-56', name: 'Trek Domane Gen 4 2020–2026 · 56',
+  stack: 591, reach: 377, seatTubeAngle: 73.3, headTubeAngle: 71.9, headTubeLength: 175,
+  seatTubeLength: 525, chainstay: 420, wheelbase: 1008, bbDrop: 78, maxSpacers: 40, tyreWidth: 32,
+};

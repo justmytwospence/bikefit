@@ -52,6 +52,17 @@ describe('migrate', () => {
     expect(defaults().tab).toBe('rider');
     expect(defaults().seenIntro).toBe(false);
   });
+  it('drops the old made-up example frames', () => {
+    const ex = (id: string) => ({ ...defaults().frames[0], id, name: `Example ${id}` });
+    const mine = { ...defaults().frames[0], id: 'mine', name: 'My frame' };
+    const d: any = { ...defaults(), frames: [ex('race-54'), ex('endurance-56'), mine], activeFrameId: 'endurance-56' };
+    const m = migrate(d)!;
+    expect(m.frames.map((f) => f.id)).toEqual(['mine']);
+    expect(m.activeFrameId).toBe('mine');
+    const only: any = { ...defaults(), frames: [ex('endurance-56')], activeFrameId: 'endurance-56' };
+    expect(migrate(only)!.frames).toEqual(defaults().frames);
+    expect(migrate(only)!.activeFrameId).toBe(defaults().activeFrameId);
+  });
   it('stored data with a changed baseline keeps tune mode', () => {
     const changed: any = defaults();
     delete changed.hasSetup;

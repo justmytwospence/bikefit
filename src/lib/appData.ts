@@ -1,4 +1,4 @@
-import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS, EXAMPLE_FRAMES } from '../model/presets';
+import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_FRAME, DEFAULT_OPTIONS, DEFAULT_PARAMS } from '../model/presets';
 import { presetLocks } from './knobs';
 import type { Units } from './units';
 import type {
@@ -43,8 +43,8 @@ export function defaults(): AppData {
     v: 2 as const,
     body: DEFAULT_BODY,
     styleId: 'endurance' as StyleId,
-    frames: EXAMPLE_FRAMES,
-    activeFrameId: 'endurance-56',
+    frames: [DEFAULT_FRAME],
+    activeFrameId: DEFAULT_FRAME.id,
     components: DEFAULT_COMPONENTS,
     options: DEFAULT_OPTIONS,
     current: DEFAULT_PARAMS,
@@ -66,6 +66,9 @@ export function migrate(raw: unknown): AppData | null {
   const d = raw as Record<string, any>;
   if ((d.v !== 1 && d.v !== 2) || !Array.isArray(d.frames) || d.frames.length === 0) return null;
   const base = defaults();
+  const frames = (d.frames as Frame[]).filter((f) => !isOldExample(f));
+  if (!frames.length) frames.push(...base.frames);
+  const activeFrameId = frames.some((f) => f.id === d.activeFrameId) ? d.activeFrameId : frames[0].id;
   let detail: AppData['detail'];
   let locks: Record<ParamKey, boolean>;
   if (d.detail && typeof d.detail === 'object' && 'rider' in d.detail) {
@@ -93,7 +96,8 @@ export function migrate(raw: unknown): AppData | null {
     baseline: { ...base.baseline, ...d.baseline },
     locks,
     detail,
-    frames: d.frames.map((f: Frame) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
+    frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
+    activeFrameId,
     effort: d.effort ?? null,
     hands: d.hands ?? null,
     units: d.units === 'imperial' ? 'imperial' : 'metric',
@@ -105,6 +109,10 @@ export function migrate(raw: unknown): AppData | null {
       ),
   } as AppData;
 }
+
+/** The made-up frames older versions saved for every visitor; dropped now that the catalog has real ones. */
+const OLD_EXAMPLE_IDS = new Set(['endurance-54', 'endurance-56', 'race-54', 'race-56', 'gravel-54', 'gravel-56']);
+const isOldExample = (f: Frame) => OLD_EXAMPLE_IDS.has(f.id) && f.name.startsWith('Example ');
 
 export function hiddenRiderValues(d: AppData): number {
   const lv = d.detail.rider;
