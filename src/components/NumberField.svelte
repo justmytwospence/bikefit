@@ -1,6 +1,6 @@
 <script lang="ts">
   let {
-    label, value = $bindable(), unit = '', min, max, step = 1, hint, placeholder, estimated = false,
+    label, value = $bindable(), unit = '', min, max, step = 1, hint, placeholder, estimated = false, onreset,
   }: {
     label: string;
     value: number;
@@ -11,6 +11,8 @@
     hint?: string;
     placeholder?: string;
     estimated?: boolean;
+    /** Offered in the label line while the value is your own, to go back to the estimate. */
+    onreset?: () => void;
   } = $props();
 
   const round = (n: number) => Math.round(n * 1000) / 1000;
@@ -28,7 +30,9 @@
 </script>
 
 <label class="nf">
-  <span class="l">{label}{#if unit} <span class="muted">({unit})</span>{/if}{#if estimated} <span class="est">est.</span>{/if}</span>
+  <span class="l">{label}{#if unit} <span class="muted">({unit})</span>{/if}{#if estimated} <span class="est">est.</span>{:else if onreset} <button
+    type="button" class="relink" onclick={(e) => { e.preventDefault(); onreset(); }}
+  >Use estimate</button>{/if}</span>
   <span class="row">
     <button type="button" aria-label="Decrease {label}" onclick={() => bump(-step)}>−</button>
     <input type="number" inputmode="decimal" {step} {min} {max} {placeholder} value={value} oninput={input} onblur={blur} />
@@ -39,7 +43,8 @@
 
 <style>
   .nf { display: block; margin-bottom: 12px; }
-  .l { display: block; font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .l { display: block; font-weight: 600; font-size: 13px; margin-bottom: 4px; min-height: 20px; }
+  .relink { width: auto; min-height: 0; font-size: 11px; padding: 0; border: 0; background: transparent; color: var(--accent); font-weight: 600; line-height: 1; margin-left: 2px; }
   .row { display: flex; gap: 6px; }
   button { flex: none; width: 44px; min-height: 44px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); font-size: 20px; line-height: 1; }
   input { text-align: center; min-width: 0; }

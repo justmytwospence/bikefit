@@ -20,6 +20,16 @@ export const POST_SHOWING: [number, number] = [30, 400];
 
 export type Impossible = 'pedal' | 'knee' | 'bars' | 'hip' | 'postLow' | 'postHigh';
 
+/** One-line versions for the message under a slider stopped at a limit. */
+export const IMPOSSIBLE_SHORT: Record<Impossible, string> = {
+  pedal: "foot can't reach the pedal",
+  knee: "knee can't bend further",
+  bars: "hands can't reach the bars",
+  hip: "hip can't fold further",
+  postLow: 'seatpost would bottom out',
+  postHigh: 'seatpost past its minimum insertion',
+};
+
 export const IMPOSSIBLE_TEXT: Record<Impossible, string> = {
   pedal: "your foot can't reach the pedal",
   knee: "your knee can't bend that far at the top of the stroke",

@@ -2,13 +2,13 @@
   import { noseSetback, railForSetback, setbackRange } from '../model/geometry';
   import { wrenchList } from '../model/advice';
   import { contactReadouts } from '../model/readouts';
-  import { IMPOSSIBLE_TEXT, possibleRange, type Impossible } from '../model/limits';
+  import { IMPOSSIBLE_SHORT, IMPOSSIBLE_TEXT, possibleRange, type Impossible } from '../model/limits';
   import type { Evaluation, FitParams, Layout } from '../model/types';
   import type { ParamKey } from '../model/types';
   import { clamp } from '../model/vec';
   import { fixedSummary, KNOB_ORDER, PRESET_FREE, PRESETS, presetLocks } from '../lib/knobs';
   import {
-    activeFrame, app, clearGhost, optimize, resetToBaseline, setHasSetup, ui,
+    activeFrame, app, clearGhost, optimize, resetToBaseline, setHasSetup, ui, undo,
   } from '../state.svelte';
   import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
@@ -53,9 +53,9 @@
   const cleatLim = $derived(possibleRange(o.cleatRange[0], o.cleatRange[1], 1, c.cleatOffset, (v) => with_({ cleatOffset: v })));
   type Lim = ReturnType<typeof possibleRange>;
   /** Says why the thumb cannot go further, while it sits against a limit. */
-  function stopText(l: Lim, v: number, words: [string, string]): string | undefined {
-    if (v <= l.lo && l.lowWhy) return `Any ${words[0]} and ${IMPOSSIBLE_TEXT[l.lowWhy]}.`;
-    if (v >= l.hi && l.highWhy) return `Any ${words[1]} and ${IMPOSSIBLE_TEXT[l.highWhy]}.`;
+  function stopText(l: Lim, v: number): string | undefined {
+    if (v <= l.lo && l.lowWhy) return `Stops here: ${IMPOSSIBLE_SHORT[l.lowWhy]}`;
+    if (v >= l.hi && l.highWhy) return `Stops here: ${IMPOSSIBLE_SHORT[l.highWhy]}`;
     return undefined;
   }
   /** Part choices the rider could not ride; the current one always stays available. */
@@ -74,6 +74,10 @@
   }
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 
+  const SETUP: { value: 'new' | 'mine'; label: string }[] = [
+    { value: 'new', label: 'New build' },
+    { value: 'mine', label: 'I ride it' },
+  ];
   const presetOptions = PRESETS.map((p) => ({ value: p.value, label: p.label, title: p.hint }));
   const GROUPS: { title: string; keys: ParamKey[] }[] = [
     { title: 'Saddle', keys: ['saddleHeight', 'railOffset', 'seatpostSetback'] },
@@ -95,23 +99,25 @@
 />
 <div class="scroll">
   <BikePicker />
-  {#if !app.hasSetup}
-    <p class="muted small start">
-      No setup saved for this bike yet: Optimize suggests a build{frame.id.startsWith('cat:') ? ' and checks its other sizes' : ''}.
-    </p>
-    <button type="button" class="link" onclick={() => setHasSetup(true)}>I already ride it: these settings are my setup</button>
-  {:else}
-    <p class="muted small start">Changes are counted from your setup. Optimize prefers adjustments over new parts.</p>
-    <button type="button" class="link" onclick={() => setHasSetup(false)}>Start a new build instead</button>
-  {/if}
+  <h2>Setup</h2>
+  <Segmented
+    options={SETUP} ariaLabel="This bike's setup"
+    bind:value={() => (app.hasSetup ? 'mine' : 'new'), (v) => setHasSetup(v === 'mine')}
+  />
+  <p class="muted small start">
+    {app.hasSetup
+      ? 'Changes are counted from your setup.'
+      : frame.id.startsWith('cat:') ? 'Optimize suggests a build and checks other sizes.' : 'Optimize suggests a build.'}
+  </p>
+
   {#snippet knob(k: ParamKey)}
     {#if k === 'saddleHeight'}
       <div use:measure={'saddleHeight'}>
       <SliderField
         label="Saddle height" min={o.saddleHeightRange[0]} max={o.saddleHeightRange[1]} step={0.5}
         bind:value={app.current.saddleHeight} bind:locked={app.locks.saddleHeight}
-        limit={[saddleLim.lo, saddleLim.hi]} stop={stopText(saddleLim, c.saddleHeight, ['lower', 'higher'])}
-        delta={app.hasSetup ? c.saddleHeight - b.saddleHeight : 0} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
+        limit={[saddleLim.lo, saddleLim.hi]} stop={stopText(saddleLim, c.saddleHeight)}
+        delta={app.hasSetup ? c.saddleHeight - b.saddleHeight : undefined} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
       />
       </div>
     {:else if k === 'railOffset'}
@@ -119,8 +125,8 @@
       <SliderField
         label="Setback to saddle nose" min={sbMin} max={sbMax} step={0.5}
         bind:value={() => Math.round(setback * 2) / 2, setSetback} bind:locked={app.locks.railOffset}
-        limit={[sbLim.lo, sbLim.hi]} stop={stopText(sbLim, Math.round(setback * 2) / 2, ['further forward', 'further back'])}
-        delta={app.hasSetup ? setbackDelta : 0} hint="Plumb line from the saddle nose to the floor; distance behind the bottom bracket" onedit={clearGhost}
+        limit={[sbLim.lo, sbLim.hi]} stop={stopText(sbLim, Math.round(setback * 2) / 2)}
+        delta={app.hasSetup ? setbackDelta : undefined} hint="Plumb from the saddle nose, behind the BB" onedit={clearGhost}
       />
       <p class="muted small rails">
         Rails: {c.railOffset === 0 ? 'centred' : Math.abs(c.railOffset) + ' mm ' + (c.railOffset > 0 ? 'forward' : 'back') + ' of centre'}
@@ -141,8 +147,8 @@
       <SliderField
         label="Spacers" min={0} max={frame.maxSpacers} step={o.spacerStep}
         bind:value={app.current.spacers} bind:locked={app.locks.spacers}
-        limit={[spacerLim.lo, spacerLim.hi]} stop={stopText(spacerLim, c.spacers, ['fewer', 'more'])}
-        delta={app.hasSetup ? c.spacers - b.spacers : 0} onedit={clearGhost}
+        limit={[spacerLim.lo, spacerLim.hi]} stop={stopText(spacerLim, c.spacers)}
+        delta={app.hasSetup ? c.spacers - b.spacers : undefined} hint="Under the stem, above the headset" onedit={clearGhost}
       />
       </div>
     {:else if k === 'stemLength'}
@@ -173,8 +179,8 @@
       <SliderField
         label="Cleat position" unit="mm back" min={o.cleatRange[0]} max={o.cleatRange[1]} step={1}
         bind:value={app.current.cleatOffset} bind:locked={app.locks.cleatOffset}
-        limit={[cleatLim.lo, cleatLim.hi]} stop={stopText(cleatLim, c.cleatOffset, ['further forward', 'further back'])}
-        delta={app.hasSetup ? c.cleatOffset - b.cleatOffset : 0} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
+        limit={[cleatLim.lo, cleatLim.hi]} stop={stopText(cleatLim, c.cleatOffset)}
+        delta={app.hasSetup ? c.cleatOffset - b.cleatOffset : undefined} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
       />
       </div>
     {:else if k === 'crankLength'}
@@ -224,9 +230,10 @@
   <button type="button" class="btn primary grow" disabled={ui.busy} onclick={optimize}>
     {#if ui.busy}<span class="spin"></span>Optimizing…{:else}Optimize{/if}
   </button>
-  {#if app.hasSetup}
-    <button type="button" class="btn" disabled={!hasChanges} onclick={resetToBaseline}>Reset</button>
-  {/if}
+  <button
+    type="button" class="btn sec" disabled={app.hasSetup ? !hasChanges : !ui.undo}
+    onclick={app.hasSetup ? resetToBaseline : undo}
+  >{app.hasSetup ? 'Reset' : 'Undo'}</button>
 </div>
 
 <style>
@@ -235,7 +242,6 @@
   .chips.locked { opacity: 0.55; }
   .rails { margin: -4px 0 10px; }
   .start { margin-top: 6px; }
-  .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
   .fixed, .frame { margin-top: 18px; }
   .fixed summary, .frame summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
   .fixed summary b::after, .frame summary b::after { content: ' ▾'; color: var(--muted); }
@@ -251,5 +257,6 @@
     border-top: 1px solid var(--line); background: var(--surface);
   }
   .grow { flex: 1; }
+  .sec { width: 96px; }
   .err { color: var(--off); }
 </style>

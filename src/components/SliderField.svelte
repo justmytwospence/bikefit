@@ -2,7 +2,7 @@
   import LockToggle from './LockToggle.svelte';
 
   let {
-    label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, locked = $bindable(false), hint, onedit, showLock = true,
+    label, value = $bindable(), min, max, step, unit = 'mm', delta, locked = $bindable(false), hint, onedit, showLock = true,
     limit, stop,
   }: {
     label: string;
@@ -11,6 +11,7 @@
     max: number;
     step: number;
     unit?: string;
+    /** Change from your setup; leave undefined when there is no setup, so no space is kept for it. */
     delta?: number;
     locked?: boolean;
     hint?: string;
@@ -41,8 +42,9 @@
   <div class="head">
     <span class="label">{label}</span>
     <span class="val">{Number.isInteger(value) ? value : value.toFixed(1)} {unit}</span>
-    {#if Math.abs(delta) >= 0.5}
-      <span class="delta">{delta > 0 ? '+' : '−'}{Math.abs(delta) % 1 ? Math.abs(delta).toFixed(1) : Math.abs(delta)}</span>
+    {#if delta !== undefined}
+      {@const d = Math.abs(delta)}
+      <span class="delta" class:none={d < 0.5}>{d < 0.5 ? '0' : (delta > 0 ? '+' : '−') + (d % 1 ? d.toFixed(1) : d)}</span>
     {/if}
     {#if showLock}<LockToggle {label} bind:locked />{/if}
   </div>
@@ -50,8 +52,8 @@
     type="range" {min} {max} {step} {value} style="--p:{pct}%;--lo:{lo}%;--hi:{hi}%" aria-label={label}
     class:limited={!!limit && (lo > 0 || hi < 100)} oninput={input}
   />
-  {#if stop}<div class="stop" role="status">{stop}</div>
-  {:else if hint}<div class="hint">{hint}</div>{/if}
+  <!-- Always one line, so a stop message never pushes the next control down. -->
+  <div class="msg" class:stop={!!stop} role={stop ? 'status' : undefined} title={stop ?? hint}>{stop ?? hint ?? ''}</div>
 </div>
 
 <style>
@@ -59,8 +61,12 @@
   .head { display: flex; align-items: center; gap: 8px; min-height: 36px; }
   .label { font-weight: 600; flex: 1; }
   .val { font-weight: 600; }
-  .delta { font-size: 12px; font-weight: 700; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); padding: 1px 7px; border-radius: 999px; }
+  .delta { font-size: 12px; font-weight: 700; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); padding: 1px 7px; border-radius: 999px; min-width: 48px; text-align: center; }
+  .delta.none { visibility: hidden; }
   .field.locked input[type='range'] { opacity: 0.55; }
-  .hint { font-size: 12px; color: var(--muted); margin-top: -6px; }
-  .stop { font-size: 12px; color: var(--off); font-weight: 600; margin-top: -6px; }
+  .msg {
+    font-size: 12px; color: var(--muted); margin-top: -6px; min-height: 1.4em; line-height: 1.4;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .msg.stop { color: var(--off); font-weight: 600; }
 </style>

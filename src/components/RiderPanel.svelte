@@ -78,21 +78,22 @@
       bind:value={() => toDisplay(app.body.inseam, inseamF), (v) => (app.body.inseam = fromDisplay(v, inseamF))}
     />
   </div>
-  <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly. This is usually 3 to 5 cm longer than your trouser inseam.</p>
+  <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly; 3 to 5 cm more than trouser inseam.</p>
 
-  <label class="shoe">
-    <span class="l">Shoe size {#if app.body.shoeSizeAuto}<span class="estb">suggested</span>{/if}</span>
+  <div class="shoe">
+    <div class="lrow">
+      <label for="shoe">Shoe size</label>
+      {#if app.body.shoeSizeAuto}<span class="estb">suggested</span>
+      {:else}<button type="button" class="relink" onclick={() => (app.body.shoeSizeAuto = true)}>Use suggested</button>{/if}
+    </div>
     <select
-      value={String(effectiveShoeSize(app.body))}
+      id="shoe" value={String(effectiveShoeSize(app.body))}
       onchange={(e) => { app.body.shoeSize = Number(e.currentTarget.value); app.body.shoeSizeAuto = false; }}
     >
       {#each shoes as s (s)}<option value={String(s)}>{shoeLabel(s, app.units)}</option>{/each}
     </select>
-  </label>
+  </div>
   <p class="muted small hint">The size of your cycling shoes.</p>
-  {#if !app.body.shoeSizeAuto}
-    <button type="button" class="link" onclick={() => (app.body.shoeSizeAuto = true)}>Use suggested size</button>
-  {/if}
 
   <h2>Flexibility</h2>
   <Segmented options={flex} bind:value={app.body.flexibility} ariaLabel="Flexibility" />
@@ -102,25 +103,25 @@
   <Segmented options={styleOptions} compact bind:value={app.styleId} ariaLabel="Riding style" />
   <p class="muted small hint">{style.blurb}</p>
   {#if lv >= 2}
-    <div class="label">Effort</div>
+    <div class="lrow">
+      <span>Effort</span>
+      {#if app.effort != null}<button type="button" class="relink" onclick={() => (app.effort = null)}>Use default</button>{/if}
+    </div>
     <Segmented options={efforts} ariaLabel="Effort" bind:value={() => effort, (v) => (app.effort = v)} />
     <p class="muted small hint">{EFFORT_LABELS[effort].hint}</p>
-    <div class="label">Where your hands are</div>
+    <div class="lrow">
+      <span>Where your hands are</span>
+      {#if app.hands != null}<button type="button" class="relink" onclick={() => (app.hands = null)}>Use default</button>{/if}
+    </div>
     <Segmented options={hands} ariaLabel="Hand position" bind:value={() => handsPref, (v) => (app.hands = v)} />
-    {#if app.effort != null || app.hands != null}
-      <button type="button" class="link" onclick={() => { app.effort = null; app.hands = null; }}>Use style default</button>
-    {/if}
 
     <h2>Arms and feet</h2>
     <NumberField
       label="Arm length" unit={armF.unit} min={armF.min} max={armF.max} step={armF.step}
-      estimated={app.body.armLength == null}
+      estimated={app.body.armLength == null} onreset={() => (app.body.armLength = null)}
       hint="Arm hanging straight: bony point of the shoulder to the centre of your closed fist"
       bind:value={() => toDisplay(app.body.armLength ?? 0.375 * app.body.height, armF), (v) => (app.body.armLength = fromDisplay(v, armF))}
     />
-    {#if app.body.armLength != null}
-      <button type="button" class="link" onclick={() => (app.body.armLength = null)}>Use estimate</button>
-    {/if}
     <div class="label">Ankling</div>
     <Segmented options={ankles} bind:value={app.body.ankling} ariaLabel="Ankling" />
     <p class="muted small hint">{ANKLING[app.body.ankling].hint}</p>
@@ -155,9 +156,11 @@
   .hint { margin-top: 6px; }
   .sexhint { margin-bottom: 14px; }
   .estb { font-size: 11px; font-weight: 600; color: var(--muted); background: var(--surface-2); border-radius: 999px; padding: 1px 6px; margin-left: 2px; }
-  .shoe { display: block; margin-top: 4px; }
-  .l, .label { display: block; font-weight: 600; font-size: 13px; margin-bottom: 4px; }
-  .label { margin-top: 12px; }
+  .label { display: block; font-weight: 600; font-size: 13px; margin: 12px 0 4px; }
+  /* A label with an optional reset link on the right; the row's height never changes. */
+  .lrow { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 28px; font-weight: 600; font-size: 13px; margin: 12px 0 4px; }
+  .shoe .lrow { margin-top: 4px; }
+  .relink { border: 0; background: transparent; color: var(--accent); font-weight: 600; font-size: 12px; padding: 0; min-height: 28px; }
   .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
   .hid { margin-top: 22px; }
   .intro ol { margin: 6px 0 10px; padding-left: 20px; }

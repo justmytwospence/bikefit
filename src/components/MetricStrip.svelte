@@ -62,10 +62,11 @@
           <div class="dot" style="left:{pos(v, b)}%; background:var(--{st})"></div>
         </div>
       {/each}
-      {#if status(poses[0].metrics[k], r[0][1]) !== 'info'}<div class="range">{range(r)}</div>{/if}
+      <!-- The warning takes the range line's place, so the strip (and the drawing above it) never resizes. -->
       {#if k === 'knee' && overextended}
-        <div class="warn">Can't reach the pedal: {Math.max(1, Math.round(shortfall))} mm short</div>
-      {/if}
+        {@const n = Math.max(1, Math.round(shortfall))}
+        <div class="range warn" title="Can't reach the pedal: {n} mm short">Leg {n} mm short</div>
+      {:else if status(poses[0].metrics[k], r[0][1]) !== 'info'}<div class="range">{range(r)}</div>{/if}
       {#if level === 3}<div class="cost">cost {r.map(([i, b]) => metricCost(poses[i].metrics[k], b).toFixed(2)).join(' / ')}</div>{/if}
     </div>
   {/each}
@@ -92,8 +93,8 @@
   .bar.thin + .bar.thin { margin-top: 3px; }
   .bar.thin .band { border-radius: 3px; }
   .bar.thin .dot { width: 6px; height: 6px; margin-left: -3px; }
-  .warn { font-size: 11px; font-weight: 600; color: var(--off); margin-top: 4px; }
-  .range { font-size: 11px; color: var(--muted); margin-top: 3px; }
+  .range { font-size: 11px; color: var(--muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .range.warn { color: var(--off); font-weight: 600; }
   .cost { font-size: 11px; color: var(--muted); margin-top: 3px; }
   @media (min-width: 900px) {
     .strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(78px, 1fr)); overflow: visible; padding: 10px 16px; }

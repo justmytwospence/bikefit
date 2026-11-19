@@ -2,7 +2,7 @@
   import { sizeVerdictLine } from '../lib/sizes';
   import { buildSummary } from '../model/advice';
   import { STYLES } from '../model/styles';
-  import { app, markAsMine, setHasSetup, ui, undo, useSize } from '../state.svelte';
+  import { app, markAsMine, setHasSetup, ui, useSize } from '../state.svelte';
 
   let { changes, hasChanges }: { changes: string[]; hasChanges: boolean } = $props();
 
@@ -42,7 +42,6 @@
       <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
     {/if}
     <div class="row">
-      {#if ui.undo}<button type="button" class="btn small" onclick={undo}>Undo</button>{/if}
       <button type="button" class="btn small" onclick={() => setHasSetup(true)}>Mark as my setup</button>
     </div>
   </div>
@@ -56,7 +55,6 @@
     {/if}
     {@render verdictLine()}
     <div class="row">
-      {#if ui.undo}<button type="button" class="btn small" onclick={undo}>Undo</button>{/if}
       <button type="button" class="btn small" onclick={markAsMine}>Mark as my setup</button>
     </div>
   </div>
