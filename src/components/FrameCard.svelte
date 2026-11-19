@@ -53,13 +53,16 @@
   {/if}
   <div class="small">{buildSummary(row.result.params, withCleats)}</div>
   <div class="small muted">{facts}</div>
-  {#if notes.length}
-    {#each notes as n}<div class="small muted">{n}</div>{/each}
-  {:else}
-    <div class="small okc">Fits within every target</div>
-  {/if}
+  <!-- Room for three notes when sizes can be switched, so the cards below stay put. -->
+  <div class="notes" class:reserve={group.sizes.length > 1}>
+    {#if notes.length}
+      {#each notes as n}<div class="small muted">{n}</div>{/each}
+    {:else}
+      <div class="small okc">Fits within every target</div>
+    {/if}
+  </div>
   <div class="btnrow">
-    <button type="button" class="btn small" disabled={showing === row.frameId} onclick={() => onshow(row)}>
+    <button type="button" class="btn small show" disabled={showing === row.frameId} onclick={() => onshow(row)}>
       {showing === row.frameId ? 'Showing' : size ? `Show size ${size}` : 'Show'}
     </button>
     <button type="button" class="btn small primary" onclick={() => onuse(row)}>Make it my bike</button>
@@ -83,4 +86,6 @@
   .chip.no { color: var(--off); background: color-mix(in srgb, var(--off) 14%, transparent); }
   .okc { color: var(--ok); font-weight: 600; }
   .btn { margin-top: 10px; }
+  .show { min-width: 128px; }
+  .notes.reserve { min-height: calc(3 * 1.4 * 13px); }
 </style>

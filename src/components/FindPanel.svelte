@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { buildSummary } from '../model/advice';
   import type { Verdict } from '../model/verdict';
   import { groupRows } from '../lib/sizes';
   import { compareKey, makePreviewMine, previewRow, runCompareAll, stopPreview } from '../find.svelte';
@@ -30,33 +29,14 @@
 <QuestionBar label="Bikes" ariaLabel="Bikes to check" options={sources} bind:value={ui.compareSource} />
 <div class="scroll">
 
-  {#if ui.preview}
-    <div class="card showing">
-      <b>Showing {ui.preview.row.frameName}</b>
-      <p class="verdict {ui.preview.row.result.verdict}">{VERDICT_TEXT[ui.preview.row.result.verdict]}</p>
-      <p class="small">{buildSummary(ui.preview.row.result.params, withCleats)}</p>
-      <div class="btnrow">
-        <button type="button" class="btn small primary" onclick={makePreviewMine}>Make it my bike</button>
-        <button type="button" class="btn small" onclick={stopPreview}>Stop showing</button>
-      </div>
-    </div>
-  {:else}
-    <p class="muted small">Tap Show on a bike to see it on the drawing with its suggested build. Your own bike and setup stay as they are until you make one yours.</p>
-  {/if}
-
   {#if ui.compareSource === 'all'}
     <CatalogBrowser />
   {:else}
-    <p class="muted">
-      Sorts your saved frames by whether they can be set up for your body and this style.
-      Sizes of the same model share a card, led by the one that fits best.
-      Within a group, the build closest to a standard one comes first. Standover is estimated from stack and seat tube length.
-    </p>
+    <p class="muted">Sorts your saved frames by fit. Sizes of one model share a card.</p>
     <button type="button" class="btn primary full" disabled={ui.busy} onclick={runCompareAll}>
-      {#if ui.busy}<span class="spin"></span>Comparing…{:else}Compare {app.frames.length} frames{/if}
+      {#if ui.busy}<span class="spin"></span>Comparing…{:else if stale}Out of date: compare again{:else}Compare {app.frames.length} frames{/if}
     </button>
     {#if ui.error}<p class="err">{ui.error}</p>{/if}
-    {#if stale}<p class="stale">Out of date, compare again.</p>{/if}
 
     {#if ui.compareRows}
       <div class="list" class:dim={stale}>
@@ -75,18 +55,38 @@
   {/if}
 </div>
 
+<!-- A fixed bar, so showing a bike never moves the list you tapped it in. -->
+<div class="showbar">
+  {#if ui.preview}
+    {@const v = ui.preview.row.result.verdict}
+    <div class="info">
+      <b class="nm">{ui.preview.row.frameName}</b>
+      <span class="small verdict {v}">{VERDICT_TEXT[v]}</span>
+    </div>
+    <button type="button" class="btn small primary" onclick={makePreviewMine}>Make it my bike</button>
+    <button type="button" class="btn small x" aria-label="Stop showing" onclick={stopPreview}>✕</button>
+  {:else}
+    <p class="muted small">Tap Show on a bike to try it on the drawing.</p>
+  {/if}
+</div>
+
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
-  .showing { margin-bottom: 12px; }
-  .showing p { margin: 6px 0; }
+  .showbar {
+    display: flex; align-items: center; gap: 8px; min-height: 64px;
+    padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--line); background: var(--surface);
+  }
+  .showbar p { margin: 0; }
+  .info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+  .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .x { width: 40px; padding: 0; }
   .verdict { font-weight: 600; }
   .verdict.fits { color: var(--ok); }
   .verdict.compromise { color: var(--near); }
   .verdict.no { color: var(--off); }
-  .btnrow { display: flex; gap: 8px; flex-wrap: wrap; }
   .full { width: 100%; }
   .list { margin-top: 16px; }
   .dim { opacity: 0.5; }
-  .stale { color: var(--muted); background: var(--surface-2); padding: 8px 12px; border-radius: 10px; margin-top: 12px; }
   .err { color: var(--off); }
 </style>

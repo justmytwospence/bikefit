@@ -63,18 +63,21 @@
   });
 </script>
 
-<p class="muted">Checks every bike in the catalog for your body and this style, and ranks them by fit score. Parts you marked as fixed in Fit my bike stay as they are.</p>
-{#if !ui.catalog || stale}
-  <button type="button" class="btn primary full" disabled={ui.catalog?.running} onclick={runCatalogFit}>
-    {ui.catalog ? 'Check again' : 'Find bikes that fit'}
-  </button>
-{/if}
-{#if ui.catalog?.running}
-  <p class="muted small">Checking {ui.catalog.done} of {ui.catalog.total} models…</p>
-  <progress max={ui.catalog.total} value={ui.catalog.done}></progress>
-{/if}
+<p class="muted">Ranks every catalog bike for your body and style. Fixed parts stay as they are.</p>
+<!-- One slot for the button, the progress and the count, so the filters and list never move. -->
+<div class="status">
+  {#if ui.catalog?.running}
+    <p class="muted small">Checking {ui.catalog.done} of {ui.catalog.total} models…</p>
+    <progress max={ui.catalog.total} value={ui.catalog.done}></progress>
+  {:else if !ui.catalog || stale}
+    <button type="button" class="btn primary full" onclick={runCatalogFit}>
+      {ui.catalog ? 'Out of date: check again' : 'Find bikes that fit'}
+    </button>
+  {:else}
+    <p class="muted small">{matching.length} bikes</p>
+  {/if}
+</div>
 {#if ui.error}<p class="err">{ui.error}</p>{/if}
-{#if stale}<p class="stale">Out of date, check again.</p>{/if}
 
 {#if ui.catalog && cat}
   <input type="search" placeholder="Search brand, model or year" aria-label="Search bikes" bind:value={query} />
@@ -92,7 +95,6 @@
     </div>
     <Segmented compact ariaLabel="Verdicts shown" options={shows} bind:value={show} />
   </div>
-  <p class="muted small">{matching.length} bikes</p>
   <div class="list" class:dim={stale}>
     {#each matching.slice(0, limit) as g (g.key)}
       <FrameCard
@@ -111,6 +113,8 @@
 <p class="muted small foot">Each model's sizes are checked outward from the one nearest your ideal bar position, until they stop fitting.</p>
 
 <style>
+  .status { min-height: 44px; display: flex; flex-direction: column; justify-content: center; gap: 4px; margin: 8px 0; }
+  .status p { margin: 0; }
   .full { width: 100%; }
   progress { width: 100%; }
   input[type='search'] { width: 100%; margin-top: 12px; }
@@ -119,6 +123,5 @@
   .list { margin-top: 8px; }
   .dim { opacity: 0.5; }
   .foot { margin-top: 14px; }
-  .stale { color: var(--muted); background: var(--surface-2); padding: 8px 12px; border-radius: 10px; margin-top: 12px; }
   .err { color: var(--off); }
 </style>
