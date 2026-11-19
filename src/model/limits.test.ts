@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { forwardLayout } from './geometry';
-import { impossible, limitCost, MIN_HIP, MIN_KNEE_TOP, possibleRange, POST_SHOWING, type Impossible } from './limits';
+import {
+  highestWhere, impossible, limitCost, MIN_HIP, MIN_KNEE_TOP, nearestPossible, possibleRange, POST_SHOWING, type Impossible,
+} from './limits';
 import { evaluateFit } from './pose';
 import { DEFAULT_COMPONENTS, DEFAULT_PARAMS } from './presets';
 import { makeContext } from './riding';
@@ -24,6 +26,28 @@ describe('possibleRange', () => {
   });
   it('does not block anything when nothing is possible', () => {
     expect(possibleRange(0, 20, 1, 5, () => 'bars')).toEqual({ lo: 0, hi: 20, lowWhy: null, highWhy: null });
+  });
+});
+
+describe('nearestPossible', () => {
+  const band = (a: number, b: number) => (v: number): Impossible | null => (v < a ? 'knee' : v > b ? 'pedal' : null);
+  it('keeps a possible value', () => {
+    expect(nearestPossible(550, 900, 0.5, 700, band(600, 780))).toBe(700);
+  });
+  it('finds the edge nearest an impossible value, on either side', () => {
+    expect(nearestPossible(550, 900, 0.5, 850, band(600, 781.7))).toBe(781.5);
+    expect(nearestPossible(550, 900, 0.5, 560, band(612.3, 781.7))).toBe(612.5);
+  });
+  it('is null when nothing is possible', () => {
+    expect(nearestPossible(0, 20, 1, 5, () => 'bars')).toBeNull();
+  });
+});
+
+describe('highestWhere', () => {
+  it('finds the last value that holds', () => {
+    expect(highestWhere(550, 900, 0.5, (v) => v <= 742.3)).toBe(742);
+    expect(highestWhere(550, 900, 0.5, () => true)).toBe(900);
+    expect(highestWhere(550, 900, 0.5, () => false)).toBeNull();
   });
 });
 

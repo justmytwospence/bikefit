@@ -15,13 +15,15 @@
   import BikePicker from './BikePicker.svelte';
   import FitResults from './FitResults.svelte';
   import FrameDetails from './FrameDetails.svelte';
+  import ImpossibleBanner from './ImpossibleBanner.svelte';
   import LockToggle from './LockToggle.svelte';
   import QuestionBar from './QuestionBar.svelte';
   import Segmented from './Segmented.svelte';
   import SliderField from './SliderField.svelte';
 
-  let { layout, evaluation, whyImpossible }: {
+  let { layout, evaluation, whyImpossible, reaches }: {
     layout: Layout; evaluation: Evaluation; whyImpossible: (p: FitParams) => Impossible | null;
+    reaches: (p: FitParams) => boolean;
   } = $props();
 
   const resultsLv = $derived(app.detail.results);
@@ -52,8 +54,11 @@
   const spacerLim = $derived(possibleRange(0, frame.maxSpacers, o.spacerStep, c.spacers, (v) => with_({ spacers: v })));
   const cleatLim = $derived(possibleRange(o.cleatRange[0], o.cleatRange[1], 1, c.cleatOffset, (v) => with_({ cleatOffset: v })));
   type Lim = ReturnType<typeof possibleRange>;
+  /** Why the current setup cannot be ridden at all; the banner says so once, instead of every slider. */
+  const blocked = $derived(whyImpossible(cur));
   /** Says why the thumb cannot go further, while it sits against a limit. */
   function stopText(l: Lim, v: number): string | undefined {
+    if (blocked) return undefined;
     if (v <= l.lo && l.lowWhy) return `Stops here: ${IMPOSSIBLE_SHORT[l.lowWhy]}`;
     if (v >= l.hi && l.highWhy) return `Stops here: ${IMPOSSIBLE_SHORT[l.highWhy]}`;
     return undefined;
@@ -99,6 +104,7 @@
   bind:value={() => app.scope, (v) => { app.scope = v; Object.assign(app.locks, presetLocks(v)); }}
 />
 <div class="scroll">
+  {#if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} />{/if}
   <BikePicker />
   <h2>Setup</h2>
   <Segmented

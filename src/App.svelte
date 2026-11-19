@@ -70,11 +70,13 @@
     ),
   );
   /** Why the rider could not ride these settings at all, for Fit my bike's hard stops. */
-  const whyImpossible = $derived((p: FitParams) =>
-    impossible(evaluateFit(
-      segments, forwardLayout(mine, app.components, p),
-      makeContext(mine, app.components, app.body.ankling, effort), targets, 36, false,
-    ), p.saddleHeight - mine.seatTubeLength));
+  const evalMine = (p: FitParams) => evaluateFit(
+    segments, forwardLayout(mine, app.components, p),
+    makeContext(mine, app.components, app.body.ankling, effort), targets, 36, false,
+  );
+  const whyImpossible = $derived((p: FitParams) => impossible(evalMine(p), p.saddleHeight - mine.seatTubeLength));
+  /** Whether the foot reaches the pedal with these settings, whatever the frame allows. */
+  const reaches = $derived((p: FitParams) => !evalMine(p).poses.some((x) => x.overextended));
   const contact = $derived(ui.viewPose);
   const pi = $derived(contact === 'drops' ? 1 : 0);
   // The drops pose has no knee bands of its own; borrow the hoods ones so the knee card stays.
@@ -170,7 +172,7 @@
     </div>
     <div class="body">
       {#if app.tab === 'rider'}<RiderPanel />
-      {:else if app.tab === 'mybike'}<MyBikePanel {layout} {evaluation} {whyImpossible} />
+      {:else if app.tab === 'mybike'}<MyBikePanel {layout} {evaluation} {whyImpossible} {reaches} />
       {:else}<FindPanel />{/if}
     </div>
   </aside>

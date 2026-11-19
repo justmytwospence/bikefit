@@ -75,6 +75,60 @@ export function limitCost(ev: Evaluation, postShowing: number): number {
 }
 
 /**
+ * The highest value on the `step` grid of [lo, hi] for which `holds` is true, when `holds` is true below some
+ * point and false above it (like the foot reaching the pedal as the saddle rises); null when it never holds.
+ */
+export function highestWhere(lo: number, hi: number, step: number, holds: (v: number) => boolean): number | null {
+  const n = Math.max(1, Math.round((hi - lo) / step));
+  const at = (i: number) => (i >= n ? hi : lo + i * step);
+  if (!holds(at(0))) return null;
+  if (holds(at(n))) return at(n);
+  let good = 0;
+  let bad = n;
+  while (bad - good > 1) {
+    const m = (good + bad) >> 1;
+    if (holds(at(m))) good = m;
+    else bad = m;
+  }
+  return at(good);
+}
+
+/**
+ * The value on the `step` grid of [lo, hi] nearest `current` that the body can ride, or null when none is.
+ * Scans coarsely, then bisects towards `current` so the answer is the edge of the possible stretch.
+ */
+export function nearestPossible(
+  lo: number, hi: number, step: number, current: number, why: (v: number) => Impossible | null,
+): number | null {
+  const n = Math.max(1, Math.round((hi - lo) / step));
+  const at = (i: number) => (i >= n ? hi : lo + i * step);
+  const ok = (i: number) => why(at(i)) === null;
+  const ci = Math.min(n, Math.max(0, Math.round((current - lo) / step)));
+  if (ok(ci)) return at(ci);
+  const stride = Math.max(1, Math.floor(n / 64));
+  let best: number | null = null;
+  for (let k = stride; k <= n && best === null; k += stride) {
+    for (const i of [ci - k, ci + k]) {
+      if (i < 0 || i > n || !ok(i)) continue;
+      if (best === null || Math.abs(i - ci) < Math.abs(best - ci)) best = i;
+    }
+  }
+  if (best === null) {
+    for (let i = 0; i <= n; i++) if (ok(i) && (best === null || Math.abs(i - ci) < Math.abs(best - ci))) best = i;
+  }
+  if (best === null) return null;
+  // Between `best` (possible) and the last coarse point before it (impossible), find the edge.
+  let good = best;
+  let bad = best > ci ? Math.max(ci, best - stride) : Math.min(ci, best + stride);
+  while (Math.abs(good - bad) > 1) {
+    const m = (good + bad) >> 1;
+    if (ok(m)) good = m;
+    else bad = m;
+  }
+  return at(good);
+}
+
+/**
  * The stretch of [lo, hi] (on the `step` grid) the body can ride, given a check that says why a
  * value is impossible. Picks the stretch holding `current`, or the one nearest it, and always
  * keeps `current` reachable so a setup that is already impossible can be dragged back.
