@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Verdict } from '../model/verdict';
   import { groupRows } from '../lib/sizes';
-  import { compareKey, makePreviewMine, previewRow, runCompareAll, stopPreview } from '../find.svelte';
+  import { compareKey, makePreviewMine, previewRow, previewSize, runCompareAll, stopPreview } from '../find.svelte';
   import { app, ui } from '../state.svelte';
   import CatalogBrowser from './CatalogBrowser.svelte';
   import FrameCard from './FrameCard.svelte';
@@ -45,7 +45,7 @@
           {#each g.models as m (m.key)}
             <FrameCard
               group={m} {withCleats} showing={ui.preview?.row.frameId ?? null}
-              onshow={(r) => previewRow(r, app.frames)}
+              onshow={previewSize}
               onuse={(r) => { previewRow(r, app.frames); makePreviewMine(); }}
             />
           {/each}

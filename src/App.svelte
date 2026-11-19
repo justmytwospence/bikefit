@@ -9,6 +9,7 @@
   import RiderPanel from './components/RiderPanel.svelte';
   import ScoreCard from './components/ScoreCard.svelte';
   import SettingsMenu from './components/SettingsMenu.svelte';
+  import { betweenSizes, sizeEntries } from './lib/sizes';
   import { resolveSegments } from './model/body';
   import { forwardLayout } from './model/geometry';
   import { idealLayout } from './model/optimize';
@@ -22,7 +23,7 @@
 
   const segments = $derived(resolveSegments(app.body));
   const style = $derived(STYLES[app.styleId]);
-  const targets = $derived(bandsFor(style, app.body.flexibility));
+  const targets = $derived(bandsFor(style, app.body.flexibility, app.body.height));
   const weights = $derived(poseWeights(app.hands ?? style.defaultHands));
   const effort = $derived(app.effort ?? style.defaultEffort);
   /** Your own bike; the drawing shows another one only while Find a bike has one on show. */
@@ -32,6 +33,22 @@
   const viewParams = $derived(previewing ? ui.preview!.row.result.params : app.current);
   const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
   const resultsLevel = $derived(app.detail.results);
+  /** The size the one on the drawing is too close to call against, drawn in outline behind it. */
+  const otherSize = $derived.by(() => {
+    if (previewing) return ui.preview!.other;
+    if (app.tab !== 'mybike' || app.hasSetup || !ui.sizes) return null;
+    const pair = betweenSizes(sizeEntries(ui.sizes.rows, ui.sizes.options));
+    const o = pair && pair.some((e) => e.frame.id === mine.id) ? pair.find((e) => e.frame.id !== mine.id)! : null;
+    return o ? { row: o.row, frame: o.frame, size: o.size } : null;
+  });
+  const ghostBike = $derived(
+    otherSize
+      ? {
+          frame: otherSize.frame, params: otherSize.row.result.params, label: `size ${otherSize.size}`,
+          layout: forwardLayout(otherSize.frame, app.components, otherSize.row.result.params),
+        }
+      : null,
+  );
 
   const shown = new Tween($state.snapshot(app.current), { duration: 450, easing: cubicOut });
   $effect(() => {
@@ -112,7 +129,7 @@
   <section class="view">
     <div class="canvas">
       <BikeView
-        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ideal}
+        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ghostBike} {ideal}
         target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}

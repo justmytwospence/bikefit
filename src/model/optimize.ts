@@ -3,10 +3,10 @@ import { dropsFromHoods, forwardLayout } from './geometry';
 import { limitCost } from './limits';
 import { evaluateFit } from './pose';
 import { makeContext } from './riding';
-import { buildPenalty, changePenalty, COMPROMISE_COST, fitCost, fitScore, partPenalty, sizingPenalty } from './score';
+import { buildPenalty, changePenalty, COMPROMISE_COST, fitCost, fitScore, frameCost, partPenalty, sizingPenalty } from './score';
 import type {
   Ankling, Components, Effort, Evaluation, FitContext, FitParams, Frame, Layout, ParamKey,
-  PartOptions, PoseTarget, Segments,
+  PartOptions, PoseTarget, Segments, StockCockpit,
 } from './types';
 import { clamp, type Vec2 } from './vec';
 import { buildFlags, fitFacts, verdictOf, type FitFacts, type Verdict } from './verdict';
@@ -28,6 +28,8 @@ export interface FitProblem {
   mode: 'tune' | 'shop';
   /** The rider's ideal hoods point; new builds are ranked by distance from it. Worked out when absent. */
   idealHoods?: Vec2;
+  /** The cockpit the riding style is anchored on; new builds are ranked by how far it sits from the ideal point. */
+  stock?: StockCockpit;
 }
 
 export interface FitResult {
@@ -155,6 +157,10 @@ export function optimizeFit(input: FitProblem): FitResult {
     verdict: 'fits',
     facts: fitFacts(problem, bestParams, bestEval),
   };
+  if (result.facts.stockRange) {
+    result.cost += frameCost(result.facts.stockRange);
+    result.score = fitScore(result.cost);
+  }
   result.notes = bindingNotes(problem, result);
   result.flags = buildFlags(problem, bestParams, result.facts);
   result.verdict = verdictOf(problem, bestEval, result.flags, result.facts);

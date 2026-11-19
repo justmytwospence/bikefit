@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { nearStems } from '../lib/catalogFit';
+import { betweenSizes, rankSizes, type SizeEntry } from '../lib/sizes';
 import { resolveSegments } from './body';
-import { compareFrames, idealLayout, optimizeFit, type CompareRow } from './optimize';
+import { compareFrames, idealLayout, optimizeFit } from './optimize';
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
 import { makeContext, poseWeights } from './riding';
 import { nominalStem } from './score';
@@ -42,6 +43,50 @@ const DOMANE: Ref = {
   stock: [70, 80, 90, 90, 100, 100, 110, 110],
   chart: [[152, 158], [158, 163], [163, 168], [168, 174], [174, 180], [180, 185], [185, 190], [190, 195]],
 };
+// Bikes the bands were not anchored on, to check the picks carry over. Geometry from the catalog,
+// height ranges from each maker's own pages (Giant's overlap, as published).
+/** Canyon Ultimate CF SLX (2023 on). */
+const ULTIMATE: Ref = {
+  name: 'ultimate', maxSpacers: 30, tyreWidth: 28,
+  rows: [
+    ['2XS', 498, 372, 73.5, 70, 88, 420, 410, 975, 73],
+    ['XS', 520, 378, 73.5, 71.2, 107, 450, 410, 979, 73],
+    ['S', 539, 390, 73.5, 72.8, 121, 480, 410, 982, 73],
+    ['M', 560, 393, 73.5, 73.3, 142, 510, 410, 988, 73],
+    ['L', 580, 401, 73.5, 73.3, 162, 540, 413, 1003, 73],
+    ['XL', 606, 419, 73.5, 73.5, 188, 570, 415, 1029, 73],
+    ['2XL', 624, 429, 73.5, 73.8, 206, 600, 415, 1042, 73],
+  ],
+  stock: [],
+  chart: [[160, 166], [166, 172], [172, 178], [178, 184], [184, 190], [190, 196], [196, 202]],
+};
+/** Canyon Endurace CF SLX (2023). */
+const ENDURACE: Ref = {
+  name: 'endurace', maxSpacers: 40, tyreWidth: 32,
+  rows: [
+    ['XS', 532, 370, 72.7, 71, 115, 462, 415, 982, 75],
+    ['S', 557, 376, 73.5, 72, 139, 492, 415, 988, 73],
+    ['M', 578, 382, 73.5, 73, 158, 522, 415, 990, 73],
+    ['L', 604, 389, 73.5, 73, 184, 552, 415, 1006, 73],
+    ['XL', 625, 407, 73.5, 73.3, 206, 582, 415, 1028, 73],
+  ],
+  stock: [],
+  chart: [[165, 171], [171, 178], [178, 185], [185, 192], [192, 198]],
+};
+/** Giant TCR Advanced (2021 on). */
+const TCR: Ref = {
+  name: 'tcr', maxSpacers: 30, tyreWidth: 28,
+  rows: [
+    ['XS', 517, 376, 74.5, 71, 120, 425, 405, 976, 72],
+    ['S', 528, 383, 74, 72.3, 130, 445, 405, 977, 69.5],
+    ['M', 545, 388, 73.5, 73.5, 145, 470, 405, 980, 69.5],
+    ['ML', 562, 393, 73, 73, 165, 500, 405, 991, 67],
+    ['L', 581, 402, 73, 73, 185, 530, 405, 1006, 67],
+    ['XL', 596, 412, 72.5, 72.5, 200, 560, 405, 1020, 67],
+  ],
+  stock: [],
+  chart: [[157, 169], [165, 175], [171, 181], [177, 187], [183, 193], [189, 199]],
+};
 
 const frames = (ref: Ref): Frame[] => ref.rows.map(([size, stack, reach, sta, hta, ht, st, cs, wb, bbDrop]) => ({
   id: `${ref.name}-${size}`, name: `${ref.name} · ${size}`, stack, reach, seatTubeAngle: sta, headTubeAngle: hta,
@@ -52,23 +97,32 @@ function rider(style: StyleId, heightMm: number) {
   const inseam = Math.round(0.472 * heightMm);
   const st = STYLES[style];
   const segments = resolveSegments({ ...DEFAULT_BODY, height: heightMm, inseam, shoeSizeAuto: true });
-  const targets = bandsFor(st, 'medium');
+  const targets = bandsFor(st, 'medium', heightMm);
   const w = poseWeights(st.defaultHands);
   const ideal = idealLayout(segments, targets, w, makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort), DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths);
   return {
     segments, inseam, targets, poseWeights: w, ankling: 'neutral' as const, effort: st.defaultEffort,
-    components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, idealHoods: ideal.hoods,
+    components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, idealHoods: ideal.hoods, stock: st.stock,
   };
 }
 
-/** Every size of a reference bike for this rider, as Find a bike checks them, best first. */
-function rank(ref: Ref, style: StyleId, heightMm: number): CompareRow[] {
-  const base = rider(style, heightMm);
-  return frames(ref)
-    .map((f) => compareFrames({ ...base, options: { ...DEFAULT_OPTIONS, ...nearStems(f, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, base.idealHoods) } }, [f])[0])
-    .sort((a, b) => a.result.cost - b.result.cost);
+const memo = new Map<string, SizeEntry[]>();
+/** Every size of a reference bike for this rider, as Find a bike checks them, in size order with their standing. */
+function sizes(ref: Ref, style: StyleId, heightMm: number): SizeEntry[] {
+  const key = `${ref.name}/${style}/${heightMm}`;
+  let out = memo.get(key);
+  if (!out) {
+    const base = rider(style, heightMm);
+    out = rankSizes(frames(ref).map((f, i) => ({
+      size: ref.rows[i][0], frame: f,
+      row: compareFrames({ ...base, options: { ...DEFAULT_OPTIONS, ...nearStems(f, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, base.idealHoods) } }, [f])[0],
+    })));
+    memo.set(key, out);
+  }
+  return out;
 }
-const sizeOf = (r: CompareRow) => r.frameName.split(' · ')[1];
+const pickIndex = (e: SizeEntry[]) => e.findIndex((x) => x.standing === 'pick');
+const scoreOf = (e: SizeEntry[], size: string) => e.find((x) => x.size === size)!.row.result.score;
 const mid = (ref: Ref, i: number) => Math.round((ref.chart[i][0] + ref.chart[i][1]) * 5);
 
 describe('nominalStem', () => {
@@ -86,8 +140,8 @@ describe('style anchors', () => {
     ['sport', TARMAC, 20, 0],
     ['race', TARMAC, 0, 10],
   ];
-  it.each(cases)('%s: the reference build sits mid-band on the hoods', (style, ref, spacers, extraStem) => {
-    const sum = { torso: 0, shoulder: 0 };
+  it.each(cases)('%s: the reference build sits mid-band on the hoods at every middle size', (style, ref, spacers, extraStem) => {
+    const off = { torso: 0, shoulder: 0 };
     const idx = [2, 3, 4, 5];
     for (const i of idx) {
       const base = rider(style, mid(ref, i));
@@ -96,42 +150,49 @@ describe('style anchors', () => {
         ...base, frame: frames(ref)[i], current: cur, baseline: cur, mode: 'tune',
         locks: { stemLength: true, stemAngle: true, spacers: true, crankLength: true },
       });
-      sum.torso += r.evaluation.poses[0].metrics.torso / idx.length;
-      sum.shoulder += r.evaluation.poses[0].metrics.shoulder / idx.length;
+      const b = base.targets[0].bands;
+      const m = r.evaluation.poses[0].metrics;
+      off.torso += (m.torso - (b.torso!.min + b.torso!.max) / 2) / idx.length;
+      off.shoulder += (m.shoulder - (b.shoulder!.min + b.shoulder!.max) / 2) / idx.length;
     }
-    const b = bandsFor(STYLES[style], 'medium')[0].bands;
-    expect(Math.abs(sum.torso - (b.torso!.min + b.torso!.max) / 2)).toBeLessThan(1);
-    expect(Math.abs(sum.shoulder - (b.shoulder!.min + b.shoulder!.max) / 2)).toBeLessThan(1.5);
+    expect(Math.abs(off.torso)).toBeLessThan(1);
+    expect(Math.abs(off.shoulder)).toBeLessThan(1.5);
   });
 });
 
 describe('size picks against manufacturer charts', () => {
-  it('Sporty picks the chart size of the race bike at mid-range heights', () => {
-    for (const i of [2, 3, 4]) expect(sizeOf(rank(TARMAC, 'sport', mid(TARMAC, i))[0]), `size index ${i}`).toBe(TARMAC.rows[i][0]);
-  }, 60000);
-  it('Sporty picks the chart size of the endurance bike, or one next to it', () => {
-    for (const i of [2, 3, 4, 5]) {
-      const best = sizeOf(rank(DOMANE, 'sport', mid(DOMANE, i))[0]);
-      expect(Math.abs(DOMANE.rows.findIndex((r) => r[0] === best) - i), `size index ${i}`).toBeLessThanOrEqual(1);
-    }
-  }, 60000);
-  it('Relaxed and Aggressive stay within one size of the chart', () => {
-    for (const [style, ref] of [['endurance', DOMANE], ['endurance', TARMAC], ['race', TARMAC]] as [StyleId, Ref][]) {
-      for (const i of [2, 4]) {
-        const best = sizeOf(rank(ref, style, mid(ref, i))[0]);
-        expect(Math.abs(ref.rows.findIndex((r) => r[0] === best) - i), `${style} ${ref.name} ${i}`).toBeLessThanOrEqual(1);
-      }
-    }
+  const anchors: [StyleId, Ref][] = [['sport', TARMAC], ['endurance', DOMANE], ['race', TARMAC]];
+  it.each(anchors)('%s: a rider in the middle of any chart size gets that size', (style, ref) => {
+    ref.chart.forEach((_, i) => expect(ref.rows[pickIndex(sizes(ref, style, mid(ref, i)))][0], `chart size ${ref.rows[i][0]}`).toBe(ref.rows[i][0]));
   }, 120000);
-  it('scores tell sizes apart and rule out the far ones', () => {
-    const rows = rank(TARMAC, 'sport', 1775);
-    const score = (s: string) => rows.find((r) => sizeOf(r) === s)!.result.score;
-    expect(score('56')).toBeGreaterThanOrEqual(95);
-    expect(score('52')).toBeLessThanOrEqual(score('56') - 10);
-    expect(score('44')).toBeLessThan(60);
-    expect(rows.find((r) => sizeOf(r) === '44')!.result.verdict).not.toBe('fits');
-    // A 160 cm rider cannot stand over the largest frame at all.
-    const small = rank(TARMAC, 'sport', 1600);
-    expect(small.find((r) => sizeOf(r) === '61')!.result.verdict).toBe('no');
+  it('the right size wins clearly in the middle of its range', () => {
+    for (const i of [3, 4]) {
+      const e = sizes(TARMAC, 'sport', mid(TARMAC, i));
+      const best = e[i].row.result.score;
+      expect(best).toBeGreaterThanOrEqual(95);
+      expect(betweenSizes(e)).toBeNull();
+      expect(e[i - 1].row.result.score).toBeLessThanOrEqual(best - 10);
+      expect(e[i + 1].row.result.score).toBeLessThanOrEqual(best - 10);
+      expect(e[i - 2].row.result.score).toBeLessThanOrEqual(best - 40);
+    }
   }, 60000);
+  it('a rider where two sizes meet is between them', () => {
+    expect(betweenSizes(sizes(TARMAC, 'sport', 1750))!.map((x) => x.size)).toEqual(['54', '56']);
+    expect(betweenSizes(sizes(TARMAC, 'sport', 1830))!.map((x) => x.size)).toEqual(['56', '58']);
+  }, 60000);
+  it('rules out sizes that are far off', () => {
+    expect(scoreOf(sizes(TARMAC, 'sport', 1775), '44')).toBeLessThan(20);
+    // A 160 cm rider cannot stand over the largest frame at all.
+    expect(sizes(TARMAC, 'sport', 1600).find((x) => x.size === '61')!.standing).toBe('no');
+  }, 60000);
+  it('marks a bike down for a style it was not built for', () => {
+    const best = (ref: Ref, style: StyleId, h: number) => { const e = sizes(ref, style, h); return e[pickIndex(e)].row.result; };
+    expect(best(TARMAC, 'endurance', 1775).score).toBeLessThanOrEqual(best(DOMANE, 'endurance', 1770).score - 15);
+    expect(best(DOMANE, 'sport', 1770).score).toBeLessThanOrEqual(best(TARMAC, 'sport', 1775).score - 15);
+    expect(best(TARMAC, 'endurance', 1775).verdict).toBe('compromise');
+  }, 60000);
+  const others: [StyleId, Ref][] = [['sport', ULTIMATE], ['endurance', ENDURACE], ['sport', TCR]];
+  it.each(others)('%s on a bike of another make stays within one size of its chart', (style, ref) => {
+    ref.chart.forEach((_, i) => expect(Math.abs(pickIndex(sizes(ref, style, mid(ref, i))) - i), `chart size ${ref.rows[i][0]}`).toBeLessThanOrEqual(1));
+  }, 120000);
 });

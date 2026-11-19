@@ -124,8 +124,17 @@ export interface PoseTarget {
   bands: Partial<Record<MetricId, Band>>;
 }
 export type StyleId = 'endurance' | 'sport' | 'race' | 'gravel';
+/**
+ * The cockpit a style is anchored on, relative to what a frame is sold with: where the stem sits in the
+ * frame's spacer range (0 slammed, 1 at the top) and how much longer than stock it is, mm.
+ */
+export interface StockCockpit {
+  spacerShare: number;
+  stemExtra: number;
+}
 export interface Style {
   id: StyleId;
+  stock: StockCockpit;
   name: string;
   blurb: string;
   cockpit: CockpitKind;

@@ -1,14 +1,20 @@
 <script lang="ts">
-  import { sizeVerdictLine } from '../lib/sizes';
+  import { betweenSizes, sizeAdviceLine, sizeEntries, type Standing } from '../lib/sizes';
   import { buildSummary } from '../model/advice';
   import { STYLES } from '../model/styles';
   import { app, markAsMine, setHasSetup, ui, useSize } from '../state.svelte';
+  import SizeCompare from './SizeCompare.svelte';
+  import SizeMap from './SizeMap.svelte';
 
   let { changes, hasChanges }: { changes: string[]; hasChanges: boolean } = $props();
 
   const resultsLv = $derived(app.detail.results);
   const c = $derived(app.current);
-  const VERDICT_TEXT = { fits: 'fits', compromise: 'fits with compromises', no: 'does not fit' } as const;
+  const STANDING_TEXT: Record<Standing, string> = {
+    pick: 'best size', alt: 'fits as well', ok: 'can be made to work', far: 'too far off', no: 'does not fit',
+  };
+  const entries = $derived(ui.sizes ? sizeEntries(ui.sizes.rows, ui.sizes.options) : []);
+  const pair = $derived(betweenSizes(entries));
 </script>
 
 {#snippet verdictLine()}
@@ -23,19 +29,23 @@
     <p>Saddle height {c.saddleHeight} mm</p>
     <p>{buildSummary(c, resultsLv >= 2)}</p>
     {@render verdictLine()}
-    {#if ui.sizes}
+    {#if entries.length}
       <h3>Sizes</h3>
       <div class="sizes" role="group" aria-label="Sizes">
-        {#each ui.sizes.options as o (o.frame.id)}
-          {@const r = ui.sizes.rows.find((x) => x.frameId === o.frame.id)!}
+        {#each entries as e (e.frame.id)}
           <button
-            type="button" class="sz {r.result.verdict}" class:on={o.frame.id === app.activeFrameId}
-            aria-pressed={o.frame.id === app.activeFrameId} aria-label="Size {o.size}: {VERDICT_TEXT[r.result.verdict]}"
-            title={VERDICT_TEXT[r.result.verdict]} onclick={() => useSize(o.frame.id)}
-          >{o.size}</button>
+            type="button" class="sz {e.standing}" class:on={e.frame.id === app.activeFrameId}
+            aria-pressed={e.frame.id === app.activeFrameId} aria-label="Size {e.size}: {STANDING_TEXT[e.standing]}"
+            title="{STANDING_TEXT[e.standing]} ({e.row.result.score})" onclick={() => useSize(e.frame.id)}
+          >{e.size}</button>
         {/each}
       </div>
-      <p class="small">{sizeVerdictLine(ui.sizes.rows, app.activeFrameId, (id) => ui.sizes!.options.find((o) => o.frame.id === id)!.size)}</p>
+      <p class="small">{sizeAdviceLine(entries, app.activeFrameId)}</p>
+      {#if pair}
+        <SizeCompare {pair} {entries} activeId={app.activeFrameId} onpick={(e) => useSize(e.frame.id)} />
+      {:else}
+        <SizeMap {entries} activeId={app.activeFrameId} onpick={(e) => useSize(e.frame.id)} />
+      {/if}
     {/if}
     {#if ui.notes && resultsLv >= 2}
       <h3>Why it stops here</h3>
@@ -70,10 +80,13 @@
   .changes h2 { margin-top: 0; }
   .sizes { display: flex; flex-wrap: wrap; gap: 6px; }
   .sz { min-width: 44px; min-height: 36px; border-radius: 10px; border: 2px solid transparent; font-weight: 700; background: var(--surface-2); }
-  .sz.fits { color: var(--ok); }
-  .sz.compromise { color: var(--near); }
-  .sz.no { color: var(--off); }
+  .sz.pick { color: var(--accent-ink); background: var(--ok); }
+  .sz.alt { color: var(--ok); }
+  .sz.ok { color: var(--near); }
+  .sz.far { color: var(--muted); opacity: 0.7; }
+  .sz.no { color: var(--off); opacity: 0.6; }
   .sz.on { border-color: currentColor; background: var(--surface); }
+  .sz.pick.on { color: var(--ok); }
   h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 12px 0 6px; }
   ul { margin: 0; padding-left: 18px; }
   li { margin-bottom: 3px; }

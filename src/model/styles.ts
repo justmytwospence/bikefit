@@ -22,7 +22,7 @@ function bands(r: Partial<Record<MetricId, [number, number]>>): Partial<Record<M
 }
 
 function style(
-  id: StyleId, name: string, blurb: string, defaults: Pick<Style, 'defaultEffort' | 'defaultHands'>,
+  id: StyleId, name: string, blurb: string, defaults: Pick<Style, 'defaultEffort' | 'defaultHands' | 'stock'>,
   hoodsElbow: number,
   hoods: Partial<Record<MetricId, [number, number]>>,
   drops: Partial<Record<MetricId, [number, number]>>,
@@ -40,34 +40,34 @@ function style(
 export const STYLES: Record<StyleId, Style> = {
   endurance: style(
     'endurance', 'Relaxed', 'Upright and comfortable for long days, like an endurance bike.',
-    { defaultEffort: 'easy', defaultHands: 'hoods' }, 158,
+    { defaultEffort: 'easy', defaultHands: 'hoods', stock: { spacerShare: 0.65, stemExtra: 0 } }, 158,
     {
-      knee: [140, 150], kneeTop: [62, 120], hip: [58, 76], torso: [46.5, 54.5], shoulder: [78, 90],
+      knee: [140, 150], kneeTop: [62, 120], hip: [58, 76], torso: [46.5, 54.5], shoulder: [77.5, 89.5],
       elbow: [150, 165], seatAngle: [71, 75], handLoad: [19, 31], kops: [-10, 40],
     },
     { hip: [47, 65], torso: [35, 45], shoulder: [73, 89], elbow: [125, 155], handLoad: [24, 38] },
   ),
   sport: style(
     'sport', 'Sporty', 'A moderate drop for fast group rides.',
-    { defaultEffort: 'tempo', defaultHands: 'hoods' }, 156,
+    { defaultEffort: 'tempo', defaultHands: 'hoods', stock: { spacerShare: 0.65, stemExtra: 0 } }, 156,
     {
-      knee: [140, 150], kneeTop: [62, 120], hip: [54, 72], torso: [42, 50], shoulder: [80, 92],
+      knee: [140, 150], kneeTop: [62, 120], hip: [54, 72], torso: [42, 50], shoulder: [79.5, 91.5],
       elbow: [150, 165], seatAngle: [71.5, 75.5], handLoad: [18, 30], kops: [-10, 40],
     },
     { hip: [43, 61], torso: [30.5, 40.5], shoulder: [76, 92], elbow: [125, 155], handLoad: [22, 36] },
   ),
   race: style(
     'race', 'Aggressive', 'Low and long for racing.',
-    { defaultEffort: 'hard', defaultHands: 'mixed' }, 155,
+    { defaultEffort: 'hard', defaultHands: 'mixed', stock: { spacerShare: 0, stemExtra: 10 } }, 155,
     {
-      knee: [140, 150], kneeTop: [62, 120], hip: [52, 70], torso: [39.5, 47.5], shoulder: [83, 95],
+      knee: [140, 150], kneeTop: [62, 120], hip: [52, 70], torso: [39.5, 47.5], shoulder: [82, 94],
       elbow: [150, 165], seatAngle: [72, 76], handLoad: [16, 28], kops: [-10, 40],
     },
     { hip: [41, 59], torso: [28, 38], shoulder: [78, 94], elbow: [125, 155], handLoad: [20, 34] },
   ),
   gravel: style(
     'gravel', 'Gravel', 'Stable and a little more upright for rough ground.',
-    { defaultEffort: 'tempo', defaultHands: 'hoods' }, 155,
+    { defaultEffort: 'tempo', defaultHands: 'hoods', stock: { spacerShare: 0.5, stemExtra: 0 } }, 155,
     {
       knee: [138, 148], kneeTop: [62, 120], hip: [56, 74], torso: [45, 53], shoulder: [79, 91],
       elbow: [148, 162], seatAngle: [71.5, 75.5], handLoad: [17, 29], kops: [-15, 40],
@@ -76,17 +76,25 @@ export const STYLES: Record<StyleId, Style> = {
   ),
 };
 
-export function bandsFor(style: Style, flexibility: Flexibility): PoseTarget[] {
+/** Stature the shoulder bands are quoted at, mm. */
+export const REF_HEIGHT = 1750;
+/**
+ * Degrees the shoulder bands close per cm of stature: frames grow more slowly than riders, and stock builds
+ * of recommended sizes show taller riders reaching less far for their size (sizing.test.ts).
+ */
+export const SHOULDER_PER_CM = 0.12;
+
+export function bandsFor(style: Style, flexibility: Flexibility, height = REF_HEIGHT): PoseTarget[] {
   const shift = flexibility === 'low' ? 3 : flexibility === 'high' ? -2 : 0;
+  const reach = (-SHOULDER_PER_CM * (height - REF_HEIGHT)) / 10;
   return style.poses.map((p) => {
     const b: Partial<Record<MetricId, Band>> = {};
     for (const k of Object.keys(p.bands) as MetricId[]) {
       const src = p.bands[k]!;
       b[k] = { ...src };
-      if (shift && (k === 'torso' || k === 'hip')) {
-        b[k]!.min += shift;
-        b[k]!.max += shift;
-      }
+      const d = k === 'torso' || k === 'hip' ? shift : k === 'shoulder' ? reach : 0;
+      b[k]!.min += d;
+      b[k]!.max += d;
     }
     return { handContact: p.handContact, elbowPref: p.elbowPref, bands: b };
   });

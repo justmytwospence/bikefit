@@ -1,4 +1,5 @@
 import { screenCatalog } from './lib/catalogFit';
+import type { SizeEntry } from './lib/sizes';
 import { runCatalog, runCompare, stopCatalog } from './lib/optimizeClient';
 import { idealLayout, type CompareRow } from './model/optimize';
 import { makeContext } from './model/riding';
@@ -111,7 +112,16 @@ export async function runCatalogFit() {
 export function previewRow(row: CompareRow, frames: Frame[]) {
   const f = frames.find((x) => x.id === row.frameId);
   if (!f) return;
-  ui.preview = { row: snap(row), frame: snap(f) };
+  ui.preview = { row: snap(row), frame: snap(f), other: null };
+  ui.animate = true;
+}
+
+/** Shows one size of a model; `other` is the size it is too close to call against, drawn in outline behind it. */
+export function previewSize(e: SizeEntry, other: SizeEntry | null) {
+  ui.preview = {
+    row: snap(e.row), frame: snap(e.frame),
+    other: other ? { row: snap(other.row), frame: snap(other.frame), size: other.size } : null,
+  };
   ui.animate = true;
 }
 

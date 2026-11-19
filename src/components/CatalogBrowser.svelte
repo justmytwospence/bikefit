@@ -3,7 +3,7 @@
   import type { FrameCategory } from '../data/catalog';
   import { groupRows, type ModelGroup } from '../lib/sizes';
   import { VERDICT_RANK, type Verdict } from '../model/verdict';
-  import { catalogKey, hasCachedCatalog, makePreviewMine, previewRow, runCatalogFit } from '../find.svelte';
+  import { catalogKey, hasCachedCatalog, makePreviewMine, previewRow, previewSize, runCatalogFit } from '../find.svelte';
   import { app, ui } from '../state.svelte';
   import FrameCard from './FrameCard.svelte';
   import Segmented from './Segmented.svelte';
@@ -66,7 +66,7 @@
   });
 </script>
 
-<p class="muted">Finds the size of every catalog bike that suits you best. Most bikes fit most riders in the right size, so the score mainly tells sizes apart and drops when a bike needs unusual parts. Equal scores list the newest first.</p>
+<p class="muted">Finds the size of every catalog bike that suits you best. The score is how close that size gets you to your position with the parts it is sold with, so bikes built for another riding style score lower. Equal scores list the newest first.</p>
 <!-- One slot for the button, the progress and the count, so the filters and list never move. -->
 <div class="status">
   {#if ui.catalog?.running}
@@ -102,7 +102,7 @@
     {#each matching.slice(0, limit) as g (g.key)}
       <FrameCard
         group={g} {withCleats} showScore showing={ui.preview?.row.frameId ?? null}
-        onshow={(r) => previewRow(r, ui.catalog!.frames)}
+        onshow={previewSize}
         onuse={(r) => { previewRow(r, ui.catalog!.frames); makePreviewMine(); }}
       />
     {:else}

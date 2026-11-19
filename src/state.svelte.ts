@@ -59,7 +59,12 @@ export const ui = $state({
   sizes: null as { rows: CompareRow[]; options: SizeOption[] } | null,
   compareSource: 'all' as 'saved' | 'all',
   /** A bike shown on the drawing from Find a bike, with its suggested build; not saved, not yours until made so. */
-  preview: null as { row: CompareRow; frame: Frame } | null,
+  preview: null as {
+    row: CompareRow;
+    frame: Frame;
+    /** The size this one is too close to call against, drawn in outline behind it. */
+    other: { row: CompareRow; frame: Frame; size: string } | null;
+  } | null,
   catalog: null as CatalogView | null,
 });
 
@@ -82,7 +87,7 @@ export function problem(mode: 'tune' | 'shop'): FitProblem {
   return snap({
     segments: resolveSegments(app.body),
     inseam: app.body.inseam,
-    targets: bandsFor(st, app.body.flexibility),
+    targets: bandsFor(st, app.body.flexibility, app.body.height),
     poseWeights: poseWeights(app.hands ?? st.defaultHands),
     ankling: app.body.ankling,
     effort: app.effort ?? st.defaultEffort,
@@ -93,6 +98,7 @@ export function problem(mode: 'tune' | 'shop'): FitProblem {
     current: app.current,
     locks: app.locks,
     mode,
+    stock: st.stock,
   });
 }
 

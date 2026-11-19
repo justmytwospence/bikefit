@@ -6,11 +6,13 @@
   import type { Components, FitParams, Frame, Layout } from '../../model/types';
   import { add, scale as vscale, type Vec2 } from '../../model/vec';
 
-  let { frame, components, layout, params }: {
+  let { frame, components, layout, params, variant = 'solid' }: {
     frame: Frame;
     components: Components;
     layout: Layout;
     params: FitParams;
+    /** `ghost` draws only the frame, fork and cockpit in outline, for a second size behind the first. */
+    variant?: 'solid' | 'ghost';
   } = $props();
 
   const sk = $derived(frameSkeleton(frame));
@@ -22,6 +24,18 @@
   const P = (q: Vec2) => `${q.x},${q.y}`;
 </script>
 
+{#if variant === 'ghost'}
+  <g stroke="var(--accent)" opacity="0.55" stroke-dasharray="26 16">
+    <polyline points={[sk.bb, sk.seatCluster, sk.headTop, sk.headBottom, sk.bb].map(P).join(' ')} stroke-width="9" />
+    <polyline points={[sk.seatCluster, sk.rearAxle, sk.bb].map(P).join(' ')} stroke-width="7" />
+    <path d={forkPath(sk.headBottom, sk.frontAxle, h)} stroke-width="8" />
+  </g>
+  <g stroke="var(--accent)" opacity="0.75">
+    <line x1={layout.headTop.x} y1={layout.headTop.y} x2={spacerTop.x} y2={spacerTop.y} stroke-width="14" />
+    <line x1={layout.stemBase.x} y1={layout.stemBase.y} x2={layout.clamp.x} y2={layout.clamp.y} stroke-width="8" />
+    <path d={barPath(layout.clamp, components.barReach, components.barDrop)} stroke-width="7" />
+  </g>
+{:else}
 {#each [sk.rearAxle, sk.frontAxle] as a}
   <circle cx={a.x} cy={a.y} r={311 + tyre / 2} stroke="var(--frame)" stroke-width={tyre} opacity=".55" />
   <circle cx={a.x} cy={a.y} r={311 + tyre - 3} stroke="#8f9399" stroke-width="3" stroke-dasharray="4 10" opacity=".5" />
@@ -49,3 +63,4 @@
 <path d={smoothClosedPath(hoodPoints(layout.clamp, layout.hoods, components.barReach))} fill="var(--ink)" stroke="none" />
 <circle cx="0" cy="0" r="98" stroke="#5d6066" stroke-width="10" stroke-dasharray="5 5" />
 <circle cx="0" cy="0" r="90" stroke="#7a7e85" stroke-width="5" />
+{/if}

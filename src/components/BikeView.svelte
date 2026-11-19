@@ -19,7 +19,7 @@
   import PillSelect from './PillSelect.svelte';
 
   let {
-    frame, components, layout, pose, farPose, ghostPose, ideal, target, poseEval, level, height, seg, params,
+    frame, components, layout, pose, farPose, ghostPose, ghostBike = null, ideal, target, poseEval, level, height, seg, params,
     toeTip, toeClearance, peakCrank,
   }: {
     frame: Frame;
@@ -28,6 +28,8 @@
     pose: RiderPose;
     farPose: RiderPose;
     ghostPose: RiderPose | null;
+    /** A second size of the same bike, drawn in outline behind the first. */
+    ghostBike?: { frame: Frame; layout: Layout; params: FitParams; label: string } | null;
     ideal: { saddle: Vec2; hoods: Vec2 };
     target: PoseTarget;
     poseEval: PoseEval;
@@ -147,6 +149,9 @@
       <line x1="0" y1="0" x2={farPose.spindle.x} y2={farPose.spindle.y} stroke="var(--rider-far)" stroke-width="14" />
 
       <Bike {frame} {components} {layout} {params} />
+      {#if ghostBike}
+        <Bike frame={ghostBike.frame} {components} layout={ghostBike.layout} params={ghostBike.params} variant="ghost" />
+      {/if}
 
       <line x1="0" y1="0" x2={pose.spindle.x} y2={pose.spindle.y} stroke="var(--ink)" stroke-width="16" />
       <circle cx="0" cy="0" r="16" fill="var(--ink)" stroke="none" />
@@ -219,6 +224,7 @@
   <div class="legend">
     {#if !inBand}<span><i class="t"></i> suggested</span>{/if}
     {#if ghostPose}<span><i class="g"></i> before</span>{/if}
+    {#if ghostBike}<span><i class="o"></i> {ghostBike.label}</span>{/if}
     {#if (level >= 2 || toeClearance < 0) && Number.isFinite(toeClearance) && toeClearance < 10}
       <span class="warn" class:bad={toeClearance < 0}>
         {toeClearance < 0 ? 'Toe overlap ' + Math.round(-toeClearance) : 'Toe clearance ' + Math.round(toeClearance)} mm
@@ -250,6 +256,7 @@
   .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
   .legend .t { border: 2px dashed var(--accent); }
   .legend .g { background: var(--rider); opacity: 0.2; }
+  .legend .o { border: 2px dashed var(--accent); border-radius: 2px; }
   .warn { color: var(--near); font-weight: 600; }
   .warn.bad { color: var(--off); }
   .viewctl { position: absolute; top: 8px; right: 10px; display: flex; flex-direction: row-reverse; gap: 6px; }
