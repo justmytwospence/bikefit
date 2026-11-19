@@ -30,7 +30,7 @@
 </script>
 
 <label class="nf">
-  <span class="l">{label}{#if unit} <span class="muted">({unit})</span>{/if}{#if estimated} <span class="est">est.</span>{:else if onreset} <button
+  <span class="l">{label}{#if unit}{' '}<span class="muted">({unit})</span>{/if}{#if estimated} <span class="est">est.</span>{:else if onreset} <button
     type="button" class="relink" onclick={(e) => { e.preventDefault(); onreset(); }}
   >Use estimate</button>{/if}</span>
   <span class="row">
