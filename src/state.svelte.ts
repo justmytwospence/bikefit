@@ -3,7 +3,8 @@ import { runCatalog, runCompare, runOptimize, runSizes, stopCatalog } from './li
 import { sizeFamily, type SizeOption } from './lib/sizes';
 import { defaults, migrate, type AppData } from './lib/appData';
 import { resolveSegments } from './model/body';
-import { idealLayout, type CompareRow, type FitProblem, type FitResult, type Verdict } from './model/optimize';
+import { idealLayout, type CompareRow, type FitProblem, type FitResult } from './model/optimize';
+import type { Verdict } from './model/verdict';
 import { makeContext, poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
 import type { MeasureId } from './lib/measure';

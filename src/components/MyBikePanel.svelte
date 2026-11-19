@@ -1,6 +1,6 @@
 <script lang="ts">
   import { noseSetback, railForSetback, setbackRange } from '../model/geometry';
-  import { buildSummary, wrenchList } from '../model/optimize';
+  import { buildSummary, wrenchList } from '../model/advice';
   import { contactReadouts } from '../model/readouts';
   import { IMPOSSIBLE_TEXT, possibleRange, type Impossible } from '../model/limits';
   import type { Evaluation, FitParams, Layout } from '../model/types';

@@ -1,5 +1,6 @@
 import type { CatalogModel, CatalogSize } from '../data/catalog';
-import { byVerdictThenCost, VERDICT_RANK, type CompareRow } from '../model/optimize';
+import { byVerdictThenCost, type CompareRow } from '../model/optimize';
+import { VERDICT_RANK } from '../model/verdict';
 import type { Frame } from '../model/types';
 
 export interface SizeOption {

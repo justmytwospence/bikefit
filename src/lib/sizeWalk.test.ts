@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import type { CompareRow, Verdict } from '../model/optimize';
+import type { CompareRow } from '../model/optimize';
+import type { Verdict } from '../model/verdict';
 import { walkSizes } from './sizeWalk';
 
 function run(verdicts: Verdict[], start: number) {

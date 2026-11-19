@@ -1,7 +1,9 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
-import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, standoverHeight, wrenchList, type FitProblem } from './optimize';
+import { wrenchList } from './advice';
+import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, type FitProblem } from './optimize';
+import { standoverHeight } from './verdict';
 import { POST_SHOWING } from './limits';
 import { evaluateFit } from './pose';
 import { TEST_BODY, TEST_FRAMES } from './testFrames';

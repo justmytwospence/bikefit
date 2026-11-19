@@ -1,5 +1,7 @@
 <script lang="ts">
-  import { buildSummary, type CompareRow, type Verdict } from '../model/optimize';
+  import { buildSummary } from '../model/advice';
+  import type { CompareRow } from '../model/optimize';
+  import type { Verdict } from '../model/verdict';
   import type { ModelGroup } from '../lib/sizes';
 
   let { group, withCleats, showScore = false, showing = null, onshow, onuse }: {

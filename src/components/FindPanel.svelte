@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { buildSummary, type Verdict } from '../model/optimize';
+  import { buildSummary } from '../model/advice';
+  import type { Verdict } from '../model/verdict';
   import { groupRows } from '../lib/sizes';
   import { STYLES } from '../model/styles';
   import { app, compareKey, makePreviewMine, previewRow, runCompareAll, stopPreview, ui } from '../state.svelte';

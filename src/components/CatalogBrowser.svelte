@@ -2,7 +2,7 @@
   import { onMount } from 'svelte';
   import type { FrameCategory } from '../data/catalog';
   import { groupRows } from '../lib/sizes';
-  import { VERDICT_RANK, type Verdict } from '../model/optimize';
+  import { VERDICT_RANK, type Verdict } from '../model/verdict';
   import { app, catalogKey, hasCachedCatalog, makePreviewMine, previewRow, runCatalogFit, ui } from '../state.svelte';
   import FrameCard from './FrameCard.svelte';
   import Segmented from './Segmented.svelte';
