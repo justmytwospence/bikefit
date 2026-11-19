@@ -10,7 +10,7 @@ The model's constants come from published measurements where they exist, not fro
 | Sit bones behind the saddle reference point | 40 mm | Assumption | None |
 | Thigh, shank and ankle as fractions of stature | 0.245, 0.246, 0.039 H | Winter (Drillis and Contini); de Leva 1996 agrees | Strong |
 | Knee extension band | 30 to 40° of flexion (140 to 150° included) | Ferrer-Roca et al. 2012; Millour et al. 2019; Swart and Holliday 2019 | Moderate |
-| Torso, hip and shoulder bands | per style | Fitting practice (Burt 2014; Pruitt) | Not research |
+| Torso, hip, shoulder and hand-load bands | per style | Anchored on stock builds of manufacturer-recommended sizes (below) | Calibrated, not research |
 
 Checked, not tuned: Peveler et al. 2005 (0.883 x inseam gives about 24° of static knee flexion), Bini and Hume 2016 and Millour et al. 2019 (pedalling adds about 8°), Millour et al. 2021 (30 to 40° for medium inseams).
 
