@@ -56,7 +56,8 @@
     <div class="card intro">
       <b>Start here</b>
       <ol>
-        <li>Enter your height and inseam below, and pick how you ride.</li>
+        <li>Start with your height and inseam, and pick how you ride.</li>
+        <li>Then add what you can measure under More measurements: arms, body segments, feet. Each one replaces an estimate.</li>
         <li>Have a bike? Pick it in Fit my bike and press Optimize.</li>
         <li>Shopping? Find a bike ranks the catalog for your body.</li>
       </ol>
@@ -116,7 +117,7 @@
   />
   <p class="muted small hint">{style.blurb}</p>
   <h2>More measurements</h2>
-  <p class="muted small">Optional. Anything you leave is estimated.</p>
+  <p class="muted small">Optional, but each one you measure replaces an estimate from your height, inseam and body type.</p>
 
   <details class="card sec" bind:open={app.riderOpen.ride}>
     <summary onclick={() => { if (!app.riderOpen.ride) event('Measurements opened', { section: 'ride' }); }}><b>Riding effort and hands</b><span class="muted small">{rideSummary}</span></summary>
