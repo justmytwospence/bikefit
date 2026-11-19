@@ -16,7 +16,7 @@
   import Torso from './draw/Torso.svelte';
   import FootInset from './FootInset.svelte';
   import Measurements from './draw/Measurements.svelte';
-  import Segmented from './Segmented.svelte';
+  import PillSelect from './PillSelect.svelte';
 
   let {
     frame, components, layout, pose, farPose, ghostPose, ideal, target, poseEval, level, height, seg, params,
@@ -225,17 +225,14 @@
       </span>
     {/if}
   </div>
+  <!-- Right-anchored and reversed: View never moves when Hands appears beside it. -->
   <div class="viewctl">
-    <div class="lvl">
-      <Segmented
-        options={LEVEL_OPTIONS} compact ariaLabel="Analysis detail"
-        bind:value={() => String(app.detail.results), (v) => (app.detail.results = Number(v) as Level)}
-      />
-    </div>
+    <PillSelect
+      label="View" ariaLabel="What the drawing shows" options={LEVEL_OPTIONS}
+      bind:value={() => String(app.detail.results), (v) => (app.detail.results = Number(v) as Level)}
+    />
     {#if level >= 2}
-      <div class="posepick">
-        <Segmented options={poseOptions} bind:value={ui.viewPose} ariaLabel="Hand position drawn" compact />
-      </div>
+      <PillSelect label="Hands" ariaLabel="Hand position drawn" options={poseOptions} bind:value={ui.viewPose} />
     {/if}
   </div>
   <button
@@ -257,16 +254,10 @@
   .legend .g { background: var(--rider); opacity: 0.2; }
   .warn { color: var(--near); font-weight: 600; }
   .warn.bad { color: var(--off); }
-  .viewctl { position: absolute; top: 8px; right: 10px; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
-  .lvl { width: 216px; }
-  .posepick { width: 150px; }
-  /* Phones: the switches get their own row above the drawing instead of covering it. */
+  .viewctl { position: absolute; top: 8px; right: 10px; display: flex; flex-direction: row-reverse; gap: 6px; }
+  /* Phones: the pills get their own row above the drawing instead of covering it. */
   @media (max-width: 479px) {
     .wrap { padding-top: 46px; }
-    .viewctl { left: 10px; flex-direction: row; justify-content: flex-end; align-items: center; }
-    .lvl { width: 192px; }
-    .posepick { width: 140px; }
-    .lvl :global(button), .posepick :global(button) { font-size: 13px; }
     .legend { top: 52px; max-width: calc(100% - 28px); }
   }
   .play { position: absolute; left: 12px; bottom: 12px; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); display: grid; place-items: center; }

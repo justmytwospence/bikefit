@@ -1,13 +1,13 @@
 <script lang="ts">
-  import { hiddenRiderValues } from '../lib/appData';
+  import { hiddenRiderValues, LEVEL_OPTIONS, type Level } from '../lib/appData';
   import { effectiveShoeSize, resolveSegments, SEGMENT_LABELS } from '../model/body';
   import { ANKLING, EFFORT_LABELS, HANDS_LABELS, shoeLabel } from '../model/riding';
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
   import { STYLES } from '../model/styles';
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
   import { app } from '../state.svelte';
-  import DetailToggle from './DetailToggle.svelte';
   import NumberField from './NumberField.svelte';
+  import QuestionBar from './QuestionBar.svelte';
   import Segmented from './Segmented.svelte';
 
   const lv = $derived(app.detail.rider);
@@ -41,7 +41,10 @@
   const fi = $derived(feetInches(app.body.height));
 </script>
 
-<DetailToggle bind:value={app.detail.rider} ariaLabel="Rider detail" />
+<QuestionBar
+  label="Measurements" ariaLabel="How much you measured" options={LEVEL_OPTIONS}
+  bind:value={() => String(app.detail.rider), (v) => (app.detail.rider = Number(v) as Level)}
+/>
 <div class="scroll">
   {#if !app.seenIntro}
     <div class="card intro">

@@ -2,12 +2,11 @@
   import { buildSummary } from '../model/advice';
   import type { Verdict } from '../model/verdict';
   import { groupRows } from '../lib/sizes';
-  import { STYLES } from '../model/styles';
   import { compareKey, makePreviewMine, previewRow, runCompareAll, stopPreview } from '../find.svelte';
   import { app, ui } from '../state.svelte';
   import CatalogBrowser from './CatalogBrowser.svelte';
   import FrameCard from './FrameCard.svelte';
-  import Segmented from './Segmented.svelte';
+  import QuestionBar from './QuestionBar.svelte';
 
   const stale = $derived(!!ui.compareRows && ui.compareKey !== compareKey());
   const withCleats = $derived(app.detail.results >= 2);
@@ -18,8 +17,8 @@
   ];
   const VERDICT_TEXT = { fits: 'Fits', compromise: 'Fits with compromises', no: 'Does not fit' } as const;
   const sources = [
-    { value: 'saved' as const, label: 'Saved' },
     { value: 'all' as const, label: 'All bikes' },
+    { value: 'saved' as const, label: 'Saved' },
   ];
   const models = $derived(groupRows(ui.compareRows ?? [], app.frames));
   const groups = $derived(
@@ -28,14 +27,8 @@
   );
 </script>
 
+<QuestionBar label="Bikes" ariaLabel="Bikes to check" options={sources} bind:value={ui.compareSource} />
 <div class="scroll">
-  <label class="fitfor">
-    <span>Fitting for</span>
-    <select aria-label="Riding style" bind:value={app.styleId}>
-      {#each Object.values(STYLES) as s (s.id)}<option value={s.id}>{s.name}</option>{/each}
-    </select>
-  </label>
-  <div class="source"><Segmented options={sources} bind:value={ui.compareSource} ariaLabel="Frames to compare" /></div>
 
   {#if ui.preview}
     <div class="card showing">
@@ -84,9 +77,6 @@
 
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
-  .fitfor { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 600; margin-bottom: 12px; }
-  .fitfor select { flex: 0 1 200px; }
-  .source { margin-bottom: 12px; }
   .showing { margin-bottom: 12px; }
   .showing p { margin: 6px 0; }
   .verdict { font-weight: 600; }
