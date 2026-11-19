@@ -2,15 +2,115 @@
   "brand": "Ridley",
   "models": [
     {
-      "model": "Grifn",
+      "model": "ASTR",
       "year": 2024,
-      "category": "endurance",
-      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKARRID685",
-      "retrieved": "2026-11-16",
-      "aliases": ["Grifn Road"],
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIASTRID078",
+      "retrieved": "2026-07-14",
+      "archive": "https://web.archive.org/web/20260714042305/https://www.ridley-bikes.com/en_US/bikes/SBIASTRID078",
+      "aliases": ["ASTR RS"],
       "sizes": [
-        ["XXS",524,375,75,71,100,440,420,992,75],
-        ["XS",540,375,74.5,71.5,115,470,420,993,75],
+        ["XS",536,376,74.5,71,115,475,425,1006,75],
+        ["S",550,392,74,71,130,500,425,1027,75],
+        ["M",571,406,74,71.5,150,520,425,1043,75],
+        ["L",595,419,74,71.5,175,550,425,1064,75],
+        ["XL",619,432,73.5,71.5,200,575,425,1085,75]
+      ]
+    },
+    {
+      "model": "Falcn",
+      "year": 2023,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIFALRID003",
+      "retrieved": "2025-07-21",
+      "archive": "https://web.archive.org/web/20250721102754/https://www.ridley-bikes.com/en_US/bikes/SBIFALRID003",
+      "aliases": ["Falcn RS"],
+      "sizes": [
+        ["XXS",492,374,74.5,71.5,95,428,407,967,75],
+        ["XS",513,378,74,72,115,455,407,974,75],
+        ["S",530,388,73.5,73,130,480,407,977,70],
+        ["M",551,397,73,73.5,150,499,407,987,70],
+        ["L",573,404,72.5,73.5,175,530,407,1002,68],
+        ["XL",599,411,72.5,74,200,555,407,1012,68]
+      ]
+    },
+    {
+      "model": "Falcn RS 2.0",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIFR2RID014",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114055636/https://www.ridley-bikes.com/en_US/bikes/SBIFR2RID014",
+      "sizes": [
+        ["XXS",500,375,76,73,85,460,410,954,78],
+        ["XS",514,392,76,73,100,480,410,975,78],
+        ["S",538,411,76,73,125,495,410,1000,78],
+        ["M",562,425,76,73,150,515,410,1022,78],
+        ["L",576,446,76,73,165,540,410,1048,78]
+      ]
+    },
+    {
+      "model": "Fenix Disc",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "endurance",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIFENRID001",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114055636/https://www.ridley-bikes.com/en_US/bikes/SBIFENRID001",
+      "sizes": [
+        ["XS",517,377,74,72,117,464,410,975,68],
+        ["S",541,385,73.5,73,140,492,410,982,66],
+        ["M",565,392,73,73.5,164,522,410,992,66],
+        ["L",591,401,72.5,73.5,194,549,413,1012,63],
+        ["XL",615,409,72.5,74,218,579,413,1022,63]
+      ]
+    },
+    {
+      "model": "Fenix SLA",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIFADRID096",
+      "retrieved": "2025-11-16",
+      "archive": "https://web.archive.org/web/20251116022645/https://www.ridley-bikes.com/en_US/bikes/SBIFADRID096",
+      "sizes": [
+        ["XXS",507,379,75,71.8,107,450,410,973,68],
+        ["XS",527,374,74,72,127,480,410,973,68],
+        ["S",543,384,73.5,73,142,510,410,982,66],
+        ["M",573,390,73,73.5,172,540,410,992,66],
+        ["L",599,396,72.5,73.5,202,570,413,1010,63],
+        ["XL",625,403,72.5,74,227,600,413,1019,63]
+      ]
+    },
+    {
+      "model": "Fenix SLiC",
+      "year": 2021,
+      "lastYear": 2024,
+      "category": "endurance",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/FFSFSDRID181",
+      "retrieved": "2025-12-14",
+      "archive": "https://web.archive.org/web/20251214044016/https://www.ridley-bikes.com/en_US/bikes/FFSFSDRID181",
+      "sizes": [
+        ["XS",517,377,74,72,117,464,410,975,68],
+        ["S",541,385,73.5,73,140,492,410,982,66],
+        ["M",565,392,73,73.5,164,522,410,992,66],
+        ["L",591,401,72.5,73.5,194,549,413,1012,63],
+        ["XL",615,409,72.5,74,218,579,413,1022,63]
+      ]
+    },
+    {
+      "model": "Grifn",
+      "year": 2023,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIGRSRID266",
+      "retrieved": "2026-03-17",
+      "archive": "https://web.archive.org/web/20260317162005/https://www.ridley-bikes.com/en_US/bikes/SBIGRSRID266",
+      "aliases": ["Grifn RS"],
+      "sizes": [
+        ["XXS",524,375,74.5,71,100,440,420,992,75],
+        ["XS",540,375,74.5,71.5,115,470,420,994,75],
         ["S",563,383,74,72,140,500,420,1005,73],
         ["M",587,391,73.5,72,165,520,420,1021,73],
         ["L",614,403,73.5,72,195,545,420,1043,71],
@@ -18,12 +118,30 @@
       ]
     },
     {
+      "model": "Grifn A",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKALRID004",
+      "retrieved": "2026-01-22",
+      "archive": "https://web.archive.org/web/20260122125358/https://www.ridley-bikes.com/en_US/bikes/SBIKALRID004",
+      "sizes": [
+        ["XXS",515,372,74.5,71.5,90,450,420,982,75],
+        ["XS",530,379,74.5,71.5,105,480,420,993,75],
+        ["S",553,386,74,72,130,505,420,1005,73],
+        ["M",577,394,74,72,155,530,420,1021,73],
+        ["L",603,406,74,72,182,555,420,1043,71],
+        ["XL",622,414,73.5,72,205,580,420,1057,71]
+      ]
+    },
+    {
       "model": "Helium",
-      "year": 2022,
+      "year": 2020,
+      "lastYear": 2026,
       "category": "race",
-      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIHEDRID172",
-      "retrieved": "2026-11-16",
-      "aliases": ["Helium Disc"],
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIHEDRID076",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114061152/https://www.ridley-bikes.com/en_US/bikes/SBIHEDRID076",
+      "aliases": ["Helium SLX"],
       "sizes": [
         ["XXS",507,379,75,71.8,110,450,405,970,68],
         ["XS",527,374,74,72,130,480,405,970,68],
@@ -34,12 +152,108 @@
       ]
     },
     {
+      "model": "Helium SLA",
+      "year": 2020,
+      "category": "race",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIHSARID200",
+      "retrieved": "2021-10-25",
+      "archive": "https://web.archive.org/web/20211025052305/https://www.ridley-bikes.com/en_US/bikes/SBIHSARID200",
+      "sizes": [
+        ["XXXS",500,371,75.5,70,107,390,405,976,67],
+        ["XXS",507,379,75,71.8,107,450,405,970,68],
+        ["XS",527,374,74,72,127,480,405,970,68],
+        ["S",543,384,73.5,73,142,510,405,977,66],
+        ["M",573,390,73,73.5,172,540,405,987,66],
+        ["L",599,396,72.5,73.5,202,570,408,1005,63],
+        ["XL",625,403,72.5,74,227,600,408,1014,63]
+      ]
+    },
+    {
+      "model": "Kanzo A",
+      "year": 2022,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIXTARID912",
+      "retrieved": "2026-07-11",
+      "archive": "https://web.archive.org/web/20260711141345/https://www.ridley-bikes.com/en_US/bikes/SBIXTARID912",
+      "sizes": [
+        ["XXS",528,374,75,70,100,450,430,1016,74],
+        ["XS",542,377,74.7,70.5,113,480,430,1019,74],
+        ["S",559,380,74,70.5,133,510,430,1029,72],
+        ["M",584,386,73,71,158,540,430,1034,72],
+        ["L",611,392,72.5,71,188,570,430,1056,70],
+        ["XL",636,399,72.5,71.5,213,600,430,1066,70]
+      ]
+    },
+    {
+      "model": "Kanzo Adventure",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKADRID009",
+      "retrieved": "2026-03-16",
+      "archive": "https://web.archive.org/web/20260316060957/https://www.ridley-bikes.com/en_US/bikes/SBIKADRID009",
+      "sizes": [
+        ["XS",546,379,74.5,70.8,115,470,435,1024,75],
+        ["S",569,387,74,70.8,140,495,435,1041,75],
+        ["M",591,401,74,70.5,165,520,435,1065,75],
+        ["L",617,415,74,70.5,192,545,435,1088,75],
+        ["XL",639,426,73.5,70.5,215,570,435,1107,75]
+      ]
+    },
+    {
+      "model": "Kanzo Adventure 1.0",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIXTCRID093",
+      "retrieved": "2025-10-06",
+      "archive": "https://web.archive.org/web/20251006131154/https://www.ridley-bikes.com/en_US/bikes/SBIXTCRID093",
+      "sizes": [
+        ["XS",537,371,74.5,70.5,120,490,435,1020,70],
+        ["S",557,375,74,71.5,140,520,435,1025,70],
+        ["M",568,376,73,71.5,150,540,435,1025,70],
+        ["L",590,385,73,72,170,560,435,1037,70],
+        ["XL",609,394,73,72,190,580,435,1052,70]
+      ]
+    },
+    {
+      "model": "Kanzo Adventure Alu",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKAVRID124",
+      "retrieved": "2026-07-21",
+      "archive": "https://web.archive.org/web/20260721005441/https://www.ridley-bikes.com/en_US/bikes/SBIKAVRID124",
+      "sizes": [
+        ["XXS",522,365,74.5,70.8,90,450,435,1003,75],
+        ["XS",536,381,74.5,70.8,105,480,435,1024,75],
+        ["S",560,390,74,70.8,130,505,435,1024,75],
+        ["M",582,403,74,70.8,155,530,435,1064,75],
+        ["L",608,418,74,70.8,182,555,435,1088,75],
+        ["XL",630,429,73.5,70.8,205,580,435,1106,75]
+      ]
+    },
+    {
+      "model": "Kanzo Fast",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKAFRID104",
+      "retrieved": "2026-02-14",
+      "archive": "https://web.archive.org/web/20260214050233/https://www.ridley-bikes.com/en_US/bikes/SBIKAFRID104",
+      "sizes": [
+        ["XS",537,373,74.5,71,115,470,425,1001,74],
+        ["S",563,380,73.5,71,144,495,425,1017,72],
+        ["M",587,385,73,71.5,168,520,425,1026,72],
+        ["L",613,393,72.5,71.5,197,545,425,1044,70],
+        ["XL",638,400,73,72,221,570,425,1053,70]
+      ]
+    },
+    {
       "model": "Kanzo Fast",
       "year": 2026,
       "category": "gravel",
-      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKF2RID019",
-      "retrieved": "2026-11-16",
-      "aliases": ["Kanzo Fast 2.0"],
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIKF2RID015",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114061156/https://www.ridley-bikes.com/en_US/bikes/SBIKF2RID015",
       "sizes": [
         ["XS",541,375,74.5,71,105,475,425,1006,80],
         ["S",561,394,74.5,71.5,125,500,425,1028,80],
@@ -48,18 +262,148 @@
       ]
     },
     {
+      "model": "Kanzo Speed",
+      "year": 2022,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIXTRRID544",
+      "retrieved": "2026-03-14",
+      "archive": "https://web.archive.org/web/20260314075006/https://www.ridley-bikes.com/en_US/bikes/SBIXTRRID544",
+      "sizes": [
+        ["XXS",520,376,75,70.3,100,450,420,999,74],
+        ["XS",542,375,74.5,71,120,480,420,999,74],
+        ["S",559,380,73.5,71,140,510,422,1024,72],
+        ["M",584,386,73,71.5,165,540,422,1023,72],
+        ["L",611,394,72.5,71.5,195,570,422,1039,70],
+        ["XL",637,399,72.5,72,220,600,422,1049,70]
+      ]
+    },
+    {
+      "model": "Noah",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "aero",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBINODRID066",
+      "retrieved": "2022-09-30",
+      "archive": "https://web.archive.org/web/20220930011619/https://www.ridley-bikes.com/en_US/bikes/SBINODRID066",
+      "aliases": ["Noah Aero+"],
+      "sizes": [
+        ["XXS",507,379,75,72,110,460,405,970,68],
+        ["XS",527,374,74,72,130,475,405,970,68],
+        ["S",542,384,73.5,73,145,490,405,977,66],
+        ["M",573,390,73,73.5,175,520,405,987,66],
+        ["L",599,396,72.5,73.5,205,550,408,1005,63]
+      ]
+    },
+    {
+      "model": "Noah",
+      "year": 2025,
+      "category": "aero",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBINH3RID022",
+      "retrieved": "2026-07-12",
+      "archive": "https://web.archive.org/web/20260712083437/https://www.ridley-bikes.com/en_US/bikes/SBINH3RID022",
+      "sizes": [
+        ["XS",532,392,76,72,130,485,407,995,72],
+        ["S",549,403,75.5,73,145,510,407,997,70],
+        ["M",570,412,75,73.5,165,540,407,1008,70],
+        ["L",594,420,74.5,73.5,190,560,407,1023,70]
+      ]
+    },
+    {
+      "model": "Noah Disc",
+      "year": 2022,
+      "category": "aero",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBINHDRID013",
+      "retrieved": "2026-03-17",
+      "archive": "https://web.archive.org/web/20260317162044/https://www.ridley-bikes.com/en_US/bikes/SBINHDRID013",
+      "sizes": [
+        ["XXS",493,375,74.5,71.5,95,430,405,969,68],
+        ["XS",516,378,74,72,117,455,405,975,68],
+        ["S",541,385,73.5,73,140,480,405,977,66],
+        ["M",565,393,73,73.5,164,505,405,987,66],
+        ["L",591,401,72.5,73.5,194,530,408,1007,63],
+        ["XL",616,409,72.5,74,218,555,408,1017,63]
+      ]
+    },
+    {
       "model": "Noah Fast",
       "year": 2025,
       "category": "aero",
-      "source": "https://www.ridley-bikes.com/en_US/bikes/SBINF3RID004",
-      "retrieved": "2026-11-16",
-      "aliases": ["Noah Fast 3.0","Noah"],
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBINF3RID082",
+      "retrieved": "2026-03-17",
+      "archive": "https://web.archive.org/web/20260317062251/https://www.ridley-bikes.com/en_US/bikes/SBINF3RID082",
       "sizes": [
         ["XXS",497,386,76.5,71.5,95,480,407,981,72],
         ["XS",504,399,76,72,100,485,407,993,72],
         ["S",521,410,75.5,73,115,510,407,996,70],
         ["M",541,420,75,73.5,135,540,407,1007,70],
         ["L",565,428,74.5,73.5,160,560,407,1023,70]
+      ]
+    },
+    {
+      "model": "Noah Fast Disc",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "aero",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBINFDRID094",
+      "retrieved": "2025-09-15",
+      "archive": "https://web.archive.org/web/20250915002755/https://www.ridley-bikes.com/en_US/bikes/SBINFDRID094",
+      "sizes": [
+        ["XXS",493,375,74.5,71.5,95,430,405,969,68],
+        ["XS",516,378,74,72,117,455,405,975,68],
+        ["S",541,385,73.5,73,140,480,405,977,66],
+        ["M",565,393,73,73.5,164,505,405,987,66],
+        ["L",591,401,72.5,73.5,194,530,408,1007,63],
+        ["XL",616,409,72.5,74,218,555,408,1017,63]
+      ]
+    },
+    {
+      "model": "X-Night",
+      "year": 2021,
+      "lastYear": 2024,
+      "category": "cyclocross",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIXNIRIDF28",
+      "retrieved": "2026-07-19",
+      "archive": "https://web.archive.org/web/20260719070814/https://www.ridley-bikes.com/en_US/bikes/SBIXNIRIDF28",
+      "sizes": [
+        ["41 (XXXXS)",492,382,75,71.5,89,450,425,1000,53],
+        ["48 (XXXS)",498,385,74.5,72,89,520,425,999,57],
+        ["50 (XXS)",516,381,74,72,105,540,425,999,60],
+        ["52 (XS)",534,376,73.5,72,121,560,425,999,62],
+        ["54 (S)",554,380,73.5,72,140,580,425,1009,64],
+        ["56 (M)",573,389,73.5,72,160,600,425,1020,64],
+        ["58 (L)",591,394,73,72,179,620,425,1034,64]
+      ]
+    },
+    {
+      "model": "X-Night RS",
+      "year": 2024,
+      "category": "cyclocross",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIXRSRID003",
+      "retrieved": "2026-06-12",
+      "archive": "https://web.archive.org/web/20260612182721/https://www.ridley-bikes.com/en_US/bikes/SBIXRSRID003",
+      "sizes": [
+        ["XS",497,382,74.5,71.5,90,475,425,1000,53],
+        ["S",526,384,74,72,115,495,425,1006,60],
+        ["M",552,391,73.5,72,140,535,425,1020,62],
+        ["L",573,405,73.5,72,160,550,425,1040,64]
+      ]
+    },
+    {
+      "model": "X-Ride",
+      "year": 2021,
+      "lastYear": 2024,
+      "category": "cyclocross",
+      "source": "https://www.ridley-bikes.com/en_US/bikes/SBIXRIRID982",
+      "retrieved": "2026-07-20",
+      "archive": "https://web.archive.org/web/20260720013934/https://www.ridley-bikes.com/en_US/bikes/SBIXRIRID982",
+      "sizes": [
+        ["XXS",496,382,75,71.5,89,450,425,1000,53],
+        ["XS",512,383,74.5,72,100,475,425,1000,57],
+        ["S",529,383,74,72,115,500,425,1004,60],
+        ["M",550,382,73.5,72,135,525,425,1009,62],
+        ["L",571,391,73.5,72,155,550,425,1023,64],
+        ["XL",595,399,73.5,72,180,575,425,1039,64]
       ]
     }
   ]

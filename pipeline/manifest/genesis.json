@@ -1,0 +1,312 @@
+{
+ "brand": "Genesis",
+ "file": "genesis",
+ "pages": [
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/cda-10",
+   "timestamp": "20191022110534",
+   "sha256": "30e97fac14fa6ca1c03e4aaaa662b2a525f9458c559592bbd34355dac276e602",
+   "family": "cda",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723173608"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/cda-10-2020",
+   "timestamp": "20191114032836",
+   "sha256": "2bd128dfb16af9b423a9559affbce8fd248e36479374bd2a7ffbe919c733fa0b",
+   "family": "cda-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191114032836"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-10",
+   "timestamp": "20191122002905",
+   "sha256": "ed6998472baa3dbddf2ed315575b11c26d47cd85fe616a437d3dc10216023de3",
+   "family": "croix-de-fer",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723180603"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-20",
+   "timestamp": "20200528044415",
+   "sha256": "4f2f505cadd535106e489e201a676d7f250303ec092a16969588b678b833d183",
+   "family": "croix-de-fer",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723180138"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-20-alt-2020",
+   "timestamp": "20191207123124",
+   "sha256": "ece8af3af480a51773c68b7bdb134fe059db26a414a378d69838f678fa612936",
+   "family": "croix-de-fer-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825101800"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-20-alt-2020",
+   "timestamp": "20200811012755",
+   "sha256": "a1690a3fdfaf1267462a44a3a2a5ddf8b45b98da1c422c6fe6132cb13c3df886",
+   "family": "croix-de-fer-2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190825101800"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-ti",
+   "timestamp": "20200528050334",
+   "sha256": "96b2fbfe3a764f98b1da69dd30dc51da749887e654b211f1340b6fb047c4f16d",
+   "family": "croix-de-fer-ti",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723172430"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-ti-fs",
+   "timestamp": "20191207115811",
+   "sha256": "4b3c5d856ecbab2cd2236a22ccba90e569dd66219b2bb4a09f29ff410e20978c",
+   "family": "croix-de-fer-ti",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723172448"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-ti-2020",
+   "timestamp": "20191207122008",
+   "sha256": "89470dce38cda8f1bc033237f6821fcb12caa1ca0f4498ffb8e809ad62e1a328",
+   "family": "croix-de-fer-ti-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825100646"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/croix-de-fer-ti-2020",
+   "timestamp": "20200620171922",
+   "sha256": "e781ee12f1bd6232401dade2a03fc32341eee0b53588f929726c2761e1f8cf80",
+   "family": "croix-de-fer-ti-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825100646"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/datum",
+   "timestamp": "20191121234531",
+   "sha256": "4c3f4a64f26b849f833774d98a8a0cbd196865f6773744c7ffad0c2011b83117",
+   "family": "datum",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723174050"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/datum",
+   "timestamp": "20200811003820",
+   "sha256": "d90881b7833ce5ab692bc2f4f2f38ae34b75c5fdd0d0f6c2091d2a74e42fbba7",
+   "family": "datum",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190723174050"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/delta-20",
+   "timestamp": "20191207123218",
+   "sha256": "318aef4c100ef9376b8cefceab88e117c564390425cda761118a17d838e144c4",
+   "family": "delta",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723182140"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/delta-10-2020",
+   "timestamp": "20200811013625",
+   "sha256": "747267b991d3d89d364d3e7779d5fd10864c24d5c06d14226f24f93b83b79916",
+   "family": "delta-2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20191114045944"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/delta-10-w",
+   "timestamp": "20191207115729",
+   "sha256": "5607c812ef863c73009f0cca555ad5f7f846919d1cfc1456066d591716d782da",
+   "family": "delta-w",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723173018"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/equilibrium",
+   "timestamp": "20190825095217",
+   "sha256": "28da3f45d262f7eafa3a00c56f99a4ab1a032e73e5ad45b3d566fe0401670a67",
+   "family": "equilibrium",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825095217"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/equilibrium-2020",
+   "timestamp": "20191114032801",
+   "sha256": "997f1ec284d400596de6bfc2a5d5b8a2e984095a38db01d066e30448272fb5f3",
+   "family": "equilibrium-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191114032801"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/equilibrium-disc-10",
+   "timestamp": "20191121233638",
+   "sha256": "c203e87b23ecae2e1256e08362accd7a8c00804b1aea77c755394ff7a146fa95",
+   "family": "equilibrium-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825085538"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/equilibrium-disc-10",
+   "timestamp": "20200811002342",
+   "sha256": "5952d4738ae5b58f570e518ec724901c3ffdbcec24b0af1c803ef9a197945354",
+   "family": "equilibrium-disc",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190825085538"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/equilibrium-disc-2020",
+   "timestamp": "20191209080028",
+   "sha256": "14d78a34f3fae7b30f4e0442f416a49defb2cfa99a9f911eecad7d353a260220",
+   "family": "equilibrium-disc-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723172513"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/flyer",
+   "timestamp": "20191022122651",
+   "sha256": "5f4caa38819ab93607f0f8ab17fc0059d5594e4f701f29fb4985c2ba27ba75ab",
+   "family": "flyer",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20081013030858"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/fugio-20",
+   "timestamp": "20191114032731",
+   "sha256": "69d726ba7f3908642cf2bda5bb04cf2bcb08f34e0eb11b80a33cb81b6b00fd84",
+   "family": "fugio",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190417150855"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/fugio-30-2020",
+   "timestamp": "20191207115612",
+   "sha256": "95e52b5ef744abb2d072ef9ac104df1aa1912a944b3b90ab5d1f528f99f8ef82",
+   "family": "fugio-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825085005"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/fugio-30-2020",
+   "timestamp": "20200620111824",
+   "sha256": "2eebc5637d5f460bdf074fb6dadb89abc6b7e0fd705eb3859eca29d5d0cc5505",
+   "family": "fugio-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825085005"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/vagabond",
+   "timestamp": "20191207115709",
+   "sha256": "895c979e7337c1434b429a0df99a4f96734559b7dbce91bd302d5d02bf4520dd",
+   "family": "vagabond",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825085043"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/vagabond-2020",
+   "timestamp": "20190915132112",
+   "sha256": "24f2ab080fa8fc34246fd24e82d08e051a92eca15daed5d5f3afa43173fdc1d0",
+   "family": "vagabond-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190915132112"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/vapour-20",
+   "timestamp": "20191121233828",
+   "sha256": "7da20e5bccb48868a8f8f9ca5b4be793a55fdcca7752ea535bc20e3dbe4087e4",
+   "family": "vapour",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723173644"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/vapour-20-202",
+   "timestamp": "20191114044229",
+   "sha256": "8b386c3692508df40f8dfaca0e884c81bf1e4e260e2a27acdb1ae2ebfd0f18f3",
+   "family": "vapour-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191114044229"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/vapour-30",
+   "timestamp": "20191207115657",
+   "sha256": "dfc2b709827f35bcf3a1df45e20524d4625ab04553b06599fc95988057a90221",
+   "family": "vapour-30",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723172502"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/vapour-30-2020",
+   "timestamp": "20191114032819",
+   "sha256": "d0327d001319fbb4231781dce5298236917565fb3171d22c7998daef857bc673",
+   "family": "vapour-30-2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191114032819"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/volare-disc-853-fs",
+   "timestamp": "20190915132033",
+   "sha256": "cd0b8747c7314f833e29f18e4b94fcca9e527b43ea4cc0e45360eefe20c344a0",
+   "family": "volare-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190915132033"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/volare-disc-853-fs",
+   "timestamp": "20200810235654",
+   "sha256": "097270d0901e0895ce61e970f1dc047e628f2d7cd9bf8fa0024b2afe1ba0e88d",
+   "family": "volare-disc",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190915132033"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/zero",
+   "timestamp": "20191207115841",
+   "sha256": "0f36611f7454daa7ef8ef128c4e84ee7687d9b3575eeb21a80033e60771f8855",
+   "family": "zero",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723175919"
+  },
+  {
+   "url": "https://www.genesisbikes.co.uk/bike/zero-sl-frameset",
+   "timestamp": "20191022120259",
+   "sha256": "f353ddb6c826b25c3b8830953e9201f3062f3d00cce187451f6353589b40764e",
+   "family": "zero-sl",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723181107"
+  }
+ ]
+}

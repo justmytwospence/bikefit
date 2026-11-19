@@ -1,0 +1,501 @@
+{
+ "brand": "Diamondback",
+ "file": "diamondback",
+ "pages": [
+  {
+   "url": "https://www.diamondback.com/arden-2-d41",
+   "timestamp": "20191210124301",
+   "sha256": "8adcc1c0c4a7925a97a364a6df5f721f9c074cddbed5aa5a5129cf7669dc9099",
+   "family": "arden-2-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824203900"
+  },
+  {
+   "url": "https://www.diamondback.com/arden-3-d41",
+   "timestamp": "20191210133035",
+   "sha256": "1b9c9dda96fa3d0e670af1974642c6c18c0001a90f39fca5e4e0fdc41dcd3b63",
+   "family": "arden-3-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824204246"
+  },
+  {
+   "url": "https://www.diamondback.com/arden-4-carbon-d41",
+   "timestamp": "20191210123929",
+   "sha256": "fe43710afdbddfd3ef3c810769283c83a52e536e893337464a2df60452c7aa3c",
+   "family": "arden-4-carbon-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824203549"
+  },
+  {
+   "url": "https://www.diamondback.com/arden-5c-d41",
+   "timestamp": "20191210124202",
+   "sha256": "77a0d274825245241a974af670c61b539ef95f084dee159065cd85016fdbd783",
+   "family": "arden-5c-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824203847"
+  },
+  {
+   "url": "https://www.diamondback.com/arden1-r142",
+   "timestamp": "20191209072023",
+   "sha256": "02cf585f876d07252864e00e84da12d71ff351a3e4ebef81ea91e86842afd18e",
+   "family": "arden1-r142",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826080140"
+  },
+  {
+   "url": "https://www.diamondback.com/arden4-d42",
+   "timestamp": "20191209072224",
+   "sha256": "27ba2a2788e3dc776338b97b07ad9f8d984075a8dc4a416e4b272b6a6b043945",
+   "family": "arden4-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826080148"
+  },
+  {
+   "url": "https://www.diamondback.com/arden5carbon-d42",
+   "timestamp": "20191209075044",
+   "sha256": "6cf2635f9c502b5798c71230561fdc0b35401e45b51421b9d4a13fb0676e24f4",
+   "family": "arden5carbon-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826080409"
+  },
+  {
+   "url": "https://www.diamondback.com/arden5carbon-d42",
+   "timestamp": "20200804054155",
+   "sha256": "b96bb77e767ef7946fc4cc6e435e50de3ff0f0125b419ec7da0209ac86e00782",
+   "family": "arden5carbon-d42",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190826080409"
+  },
+  {
+   "url": "https://www.diamondback.com/century-1-d41",
+   "timestamp": "20191018213915",
+   "sha256": "2ff4c54570f25cade9149f8bdc2f5917c6a5b0cc81d5742cb5e0d2406235b8e2",
+   "family": "century-1-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821032306"
+  },
+  {
+   "url": "https://www.diamondback.com/century-144327",
+   "timestamp": "20180222140733",
+   "sha256": "19114066c64f51bf179df663a594c7e17b5896636bbca454ff24bd53ff5c3655",
+   "family": "century-144327",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20180222140733"
+  },
+  {
+   "url": "https://www.diamondback.com/century-2-d41",
+   "timestamp": "20191210132651",
+   "sha256": "5cfc87170ae03ec0af4c6c44211f52e3b1461ba8ad20fed5562697d23fbef2a9",
+   "family": "century-2-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824204233"
+  },
+  {
+   "url": "https://www.diamondback.com/century-3-d41",
+   "timestamp": "20191210133551",
+   "sha256": "0e52a6aff540f6c136ee95a0e66265af90c4195c449bdebda076c0bb8d075708",
+   "family": "century-3-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824204337"
+  },
+  {
+   "url": "https://www.diamondback.com/century-3-d42",
+   "timestamp": "20191207110403",
+   "sha256": "7baed1033c8f893ec210097eaeeb70ad10b2f5da3e1488cd667145b40a778f1d",
+   "family": "century-3-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826075937"
+  },
+  {
+   "url": "https://www.diamondback.com/century-3-d42",
+   "timestamp": "20200805190032",
+   "sha256": "17eed57bab85aecfd5c89a00ef54310596f31de01a0973ca83121e3379559b9d",
+   "family": "century-3-d42",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190826075937"
+  },
+  {
+   "url": "https://www.diamondback.com/century-5c-carbon-d42",
+   "timestamp": "20191209074817",
+   "sha256": "6489fa17e724f7286ec411faced268c52c4def3354c0f4433a831e1ce715c259",
+   "family": "century-5c-carbon-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826080405"
+  },
+  {
+   "url": "https://www.diamondback.com/century-6c-carbon-d42",
+   "timestamp": "20191209075733",
+   "sha256": "2f3961499c2ab67e382e6b1f097562d1c35d6ebe9e4d0f3c549af8f2f41e59dd",
+   "family": "century-6c-carbon-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826080454"
+  },
+  {
+   "url": "https://www.diamondback.com/century1-d42",
+   "timestamp": "20191209070040",
+   "sha256": "7abf76673ab4af25c6a2bd071e1ae74d5345b90cf8416645f74d85bb74142a13",
+   "family": "century1-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826075901"
+  },
+  {
+   "url": "https://www.diamondback.com/century2-r142",
+   "timestamp": "20191209070232",
+   "sha256": "64bf6906549ac37fd6c2433782d74ca16b92368af8775754b75733bd178c5094",
+   "family": "century2-r142",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826075918"
+  },
+  {
+   "url": "https://www.diamondback.com/century4carbon",
+   "timestamp": "20191209065959",
+   "sha256": "6e9d721e802d497e02a6854a35964f78fbc967ee3ae92867df8fbb2d8d828ad4",
+   "family": "century4carbon",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190826075756"
+  },
+  {
+   "url": "https://www.diamondback.com/century4carbon",
+   "timestamp": "20201001144728",
+   "sha256": "e3016a96f761b5f5ae4df3b8b33c220d0aef6132b1a1ba167f67f2886f03e273",
+   "family": "century4carbon",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190826075756"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjenn-3-d41",
+   "timestamp": "20191023052915",
+   "sha256": "83f4bad727be00f52a1d073cade754ba79d61def133313c83469212f4c120c25",
+   "family": "haanjenn-3-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824204358"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjenn2-d42",
+   "timestamp": "20191118210602",
+   "sha256": "51a9602d41db377af98eccae2c5a93c2543d797378da63dec872040be10379dd",
+   "family": "haanjenn2-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717130543"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjenn3-d42",
+   "timestamp": "20191118161002",
+   "sha256": "7d9b5263defc0ecee538472370594ecb083a4d1029cd428d60f214ffc61889e7",
+   "family": "haanjenn3-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723011833"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjenn3-d42",
+   "timestamp": "20200711034801",
+   "sha256": "0d4369a61613fe84b9d604db57aca1b31cf0bf907e031eaedad83498edf1bf1e",
+   "family": "haanjenn3-d42",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190723011833"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-2-4479",
+   "timestamp": "20210228001553",
+   "sha256": "9e1f222e30ef4b9d43f6eee08628f9c347131cd1de6c29515027d8b9c08ff968",
+   "family": "haanjo-2-4479",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200923230401"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-2-4670",
+   "timestamp": "20211130211741",
+   "sha256": "ae5614c2fb758d271fe29825fee5ebd9a0a883e25273a6282e9d2341aaefb860",
+   "family": "haanjo-2-4670",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211130211741"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-2-4670",
+   "timestamp": "20230414045011",
+   "sha256": "00fe64000c99ba8b02a04e5eddd39a4b80ca6042f7f1ffb95352a19b95a6661c",
+   "family": "haanjo-2-4670",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20211130211741"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-2-5082",
+   "timestamp": "20250404144009",
+   "sha256": "7c76593722374ba060c5c3f9f7d610f61c94599b02580fc43ac9735772dc92a8",
+   "family": "haanjo-2-5082",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240225020103"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-2-d41",
+   "timestamp": "20191210123955",
+   "sha256": "ee5446fa88875d08d549c6c4b7a5545f8fc20b8027a0dd98d737440ac057f474",
+   "family": "haanjo-2-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824203804"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-3-4671",
+   "timestamp": "20211022154801",
+   "sha256": "42ca8aa1fc49665aec84380f0432102d0d0c468502ab0de8492bc73ec721d390",
+   "family": "haanjo-3-4671",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210618221517"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-3-4671",
+   "timestamp": "20230313055158",
+   "sha256": "204e8aefb508d511f9e3c5e2e43ccb72f3e256b921009fcae3f0a7f423cea6d7",
+   "family": "haanjo-3-4671",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210618221517"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-3-5081",
+   "timestamp": "20231012053938",
+   "sha256": "d3d722ec8cba68ce0fdf666f7caf000149f53d0eded4b6987108ac1859bd8adc",
+   "family": "haanjo-3-5081",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231012053938"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-3-5081",
+   "timestamp": "20240620021743",
+   "sha256": "56ecc3f75e042b57569859cd8f01aa1951c9d322af63c897d513c0eb13747cfb",
+   "family": "haanjo-3-5081",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231012053938"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-4-4482",
+   "timestamp": "20211020191114",
+   "sha256": "5df61e3d2fc624ba988bfad8152eeaf19486b235a001e7711fee69aa385fea2c",
+   "family": "haanjo-4-4482",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210303020544"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-4-4482",
+   "timestamp": "20230324121809",
+   "sha256": "cb2600c60ad27f4e4aa1752b4c559c7e023c224be89845cdc5f76385b0e12366",
+   "family": "haanjo-4-4482",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210303020544"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-4-exp-5079",
+   "timestamp": "20231004175103",
+   "sha256": "821559e79918d2741679d78c534a0f8311aef0e716ab72161e99371e0a45fd86",
+   "family": "haanjo-4-exp-5079",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231004175103"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-4-exp-5079",
+   "timestamp": "20250327014220",
+   "sha256": "8b30c1cd28cea35d8f0d372420e98a8da344e5714a712ae196302da57a4050d0",
+   "family": "haanjo-4-exp-5079",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20231004175103"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-5-4478",
+   "timestamp": "20211204080721",
+   "sha256": "d0a074b0f61840f6470eb9d2891b9ad29dd3e83271eb304bc00809d4488253cd",
+   "family": "haanjo-5-4478",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923224109"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-5-4478",
+   "timestamp": "20230409035154",
+   "sha256": "6870ed4601892a2b475a5904d7c7d2b9418420706d2c77c3614bc46f590c06ad",
+   "family": "haanjo-5-4478",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923224109"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-5-5078",
+   "timestamp": "20250422040310",
+   "sha256": "a22442a4e7b6d888489b510fe3b27822f300a5ef48781640f895ad7d734428da",
+   "family": "haanjo-5-5078",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240225025231"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-5c-exp-carbon-d41",
+   "timestamp": "20191023103425",
+   "sha256": "f7e9d66c1401b8b22deacdf06cab30ea940ab914bef01cf860119af6e09aff59",
+   "family": "haanjo-5c-exp-carbon-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190417155417"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-5c-exp-carbon-d42",
+   "timestamp": "20191118211811",
+   "sha256": "f1a5b247d14d2ffa4fcfddbebed06cf92481e3ab6e1cea69b37a79e695c07ac9",
+   "family": "haanjo-5c-exp-carbon-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717130637"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-5c-exp-carbon-d42",
+   "timestamp": "20200519022829",
+   "sha256": "a2dd5ff466397b3cca334fc6efba9be4e71a39ef8a4407f9235fd233d6480c94",
+   "family": "haanjo-5c-exp-carbon-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717130637"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-6c-carbon-4477",
+   "timestamp": "20211204080154",
+   "sha256": "2554c37ec7c4291faef711304cfab6cf626a5d32e1f8fa780cbd360d901d6032",
+   "family": "haanjo-6c-carbon-4477",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210213225000"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-6c-carbon-4477",
+   "timestamp": "20230326183623",
+   "sha256": "8030a42f09d93840d6c4248217b04868cfc65fa125c51567b3dca9de35fb8343",
+   "family": "haanjo-6c-carbon-4477",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210213225000"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-7c-carbon-4484",
+   "timestamp": "20211020191715",
+   "sha256": "2247270b0c0d77646df1b4e48e4348d2cdec156ab1964758e149e1a78e4ef33c",
+   "family": "haanjo-7c-carbon-4484",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210303205950"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-7c-carbon-4484",
+   "timestamp": "20230326175132",
+   "sha256": "6f6177f7eaf8a88d0ac7defe228147eba7a1c99bb731d514e792059354eb0239",
+   "family": "haanjo-7c-carbon-4484",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210303205950"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-7c-carbon-d41",
+   "timestamp": "20191023052713",
+   "sha256": "477b81ba8e4c72ca2181e47ecc907ce19cd092ec44d0a38d254bb7a615498b77",
+   "family": "haanjo-7c-carbon-d41",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824204206"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-7c-carbon-d42",
+   "timestamp": "20191118221056",
+   "sha256": "5d0b1f04d92af6bd96edbf071e5f71bf28b8fae25a49d11f303a914712881db8",
+   "family": "haanjo-7c-carbon-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717131026"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-7c-carbon-d42",
+   "timestamp": "20200621081157",
+   "sha256": "62f79b559c2adb1c599551d72345cced86e9ae0ff2b315d73d18225c75aa12f4",
+   "family": "haanjo-7c-carbon-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717131026"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-8c-carbon-4617",
+   "timestamp": "20211204084845",
+   "sha256": "8bd4a9b47dda12084145e5023b93efca765a50cf04aaca04c5dde60d3e0911aa",
+   "family": "haanjo-8c-carbon-4617",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210118050545"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo-8c-carbon-4617",
+   "timestamp": "20230312141245",
+   "sha256": "bdfef21266376e0e3e970358d86c91baf7c33d15731d08c8186655361980a31b",
+   "family": "haanjo-8c-carbon-4617",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210118050545"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo3",
+   "timestamp": "20191119005828",
+   "sha256": "f83a6f641ca2f8eb243d6da0ab6854b0ff12d2707671e7bc22111f7662a929d9",
+   "family": "haanjo3",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190724091337"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo3",
+   "timestamp": "20210121213213",
+   "sha256": "fb4569a6eda70e3a9f20e47afb8b50daa1f6e67c03866cac795a5ce7b63c19fd",
+   "family": "haanjo3",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190724091337"
+  },
+  {
+   "url": "https://www.diamondback.com/haanjo4-d42",
+   "timestamp": "20191118233705",
+   "sha256": "5ccd23c6e307c4fd61ba659cc9e3449608727347759740f9e2a9056364d72151",
+   "family": "haanjo4-d42",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190723011725"
+  }
+ ]
+}

@@ -35,9 +35,9 @@ describe('buildCatalog', () => {
 
 describe('real catalog', () => {
   it('is big enough', () => {
-    // 463 models from 32 brands when the pipeline last ran; fail on a big loss.
-    expect(CATALOG.length).toBeGreaterThanOrEqual(440);
-    expect(new Set(CATALOG.map((m) => m.brand)).size).toBeGreaterThanOrEqual(25);
+    // 812 models from 49 brands when the pipeline last ran; fail on a big loss.
+    expect(CATALOG.length).toBeGreaterThanOrEqual(770);
+    expect(new Set(CATALOG.map((m) => m.brand)).size).toBeGreaterThanOrEqual(46);
   });
   it('has valid entries', () => {
     const cats = CATEGORIES.map((c) => c.value);

@@ -1,0 +1,492 @@
+{
+ "brand": "Litespeed",
+ "file": "litespeed",
+ "pages": [
+  {
+   "url": "https://litespeed.com/products/arenberg",
+   "timestamp": "20231211000554",
+   "sha256": "447d70bab9639412d3e370596df12bb658633358e3ae1bcf5fea7d85fce9f40a",
+   "family": "arenberg",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230528171404"
+  },
+  {
+   "url": "https://litespeed.com/products/arenberg-fi",
+   "timestamp": "20251214180404",
+   "sha256": "34bb484339d70eead7e3ec940484a4224260ae6669838280f8d1b87511fdf1bb",
+   "family": "arenberg",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231104102709"
+  },
+  {
+   "url": "https://litespeed.com/products/arenberg-fi",
+   "timestamp": "20261029192510",
+   "sha256": "752b37673583386622a5512b33180445ae50ebc958cd46c1afa3b8ee96e3bc70",
+   "family": "arenberg",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231104102709"
+  },
+  {
+   "url": "https://litespeed.com/products/cherohala-frame",
+   "timestamp": "20191215155324",
+   "sha256": "164dc3e50045a5557becea6ffa4a1e3faa96d3bf466e8b986a3153017bf5bcf5",
+   "family": "cherohala",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191121142721"
+  },
+  {
+   "url": "https://litespeed.com/collections/titanium-road-bikes/products/cherohala-frame",
+   "timestamp": "20210618005117",
+   "sha256": "46b4a3fde8897ba3c091a9420474b12a0e01839163962359976e6ffb746ffdff",
+   "family": "cherohala",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200808032302"
+  },
+  {
+   "url": "https://litespeed.com/products/cherohala",
+   "timestamp": "20231127145632",
+   "sha256": "3931adb4ef3439163612b6bd816f463df13781bec338340962e08a2ec668baf3",
+   "family": "cherohala",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191207213744"
+  },
+  {
+   "url": "https://litespeed.com/products/cherohala-frame",
+   "timestamp": "20251014222452",
+   "sha256": "7ecef985c4f79aedd13903789b7682e710ea4baece78de0b8ffedd533f9b3600",
+   "family": "cherohala",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20191121142721"
+  },
+  {
+   "url": "https://litespeed.com/products/cherohala",
+   "timestamp": "20261018014231",
+   "sha256": "d366c053901574c11ed5e86de7711573fcc40b3fd2cdef5c5d25950d57cb2ebd",
+   "family": "cherohala",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20191207213744"
+  },
+  {
+   "url": "https://litespeed.com/our-bikes/titanium/adventure/2018-cherohala-se",
+   "timestamp": "20180730230634",
+   "sha256": "7c98212a9ad064d9166c60ba0bd1fe435b18dd52bc48c750d1fc187e5eb4c5be",
+   "family": "cherohala-se@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20170921062116"
+  },
+  {
+   "url": "https://litespeed.com/products/coll-dels-reis",
+   "timestamp": "20250824003121",
+   "sha256": "7dda0a7b44b20f842061f0e63d62d2c6b2bdce1211f188a36a33c7165c3bde36",
+   "family": "coll-dels-reis",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250316034014"
+  },
+  {
+   "url": "https://litespeed.com/products/coll-dels-reis-frame",
+   "timestamp": "20261029192516",
+   "sha256": "26680ef8946f78175e1640a3a431cf5a24bec15ee01e0e6fb2c6e6c5a123cf79",
+   "family": "coll-dels-reis",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250327233946"
+  },
+  {
+   "url": "https://litespeed.com/products/flint",
+   "timestamp": "20231127145507",
+   "sha256": "78cfab8edac0e486e4be4b9692bfc99d1677b3e0efe1dfe5c06850959b4c9b6a",
+   "family": "flint",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230817101516"
+  },
+  {
+   "url": "https://litespeed.com/products/flint-fi-frame",
+   "timestamp": "20251016185143",
+   "sha256": "2072df155d132aff1fcdea94ad88e9e87771d18e1a68579113f3f730150e6653",
+   "family": "flint",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231104075134"
+  },
+  {
+   "url": "https://litespeed.com/products/flint",
+   "timestamp": "20261114013036",
+   "sha256": "2b4b6c7b22867860cf9ddd4bcfe1ab460557d7a61e10cc0d11892f61042a73ed",
+   "family": "flint",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230817101516"
+  },
+  {
+   "url": "https://litespeed.com/products/ghisallo",
+   "timestamp": "20250906035330",
+   "sha256": "9fb3675442ee2965637e1655390b00f6381eec25c252da695866b6a037ab7bc4",
+   "family": "ghisallo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250409232335"
+  },
+  {
+   "url": "https://litespeed.com/products/ghisallo-frame",
+   "timestamp": "20261114013040",
+   "sha256": "4b443c7724b00f1bd566ba5bdc373236ba97ec5c5e217bbefc1dcccbd376fa85",
+   "family": "ghisallo",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250622044922"
+  },
+  {
+   "url": "https://litespeed.com/products/gravel",
+   "timestamp": "20191121130828",
+   "sha256": "c24a6fbd82c939fc889871e134fdae40238ed2de6d17116de781f153c28ed94a",
+   "family": "gravel",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191117005729"
+  },
+  {
+   "url": "https://litespeed.com/products/gravel-frame",
+   "timestamp": "20211019084050",
+   "sha256": "a064e912f340bc137f7ae68cd20f49804e4138bc64bba7010a3bc44202634bb7",
+   "family": "gravel",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191207212209"
+  },
+  {
+   "url": "https://litespeed.com/products/gravel-frame",
+   "timestamp": "20220814172058",
+   "sha256": "b4fff59c2bbc8eb7c4086b2dc4aa6075b1a3e9e5b7183a9f67b5becb70e133ed",
+   "family": "gravel",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191207212209"
+  },
+  {
+   "url": "https://litespeed.com/our-bikes/titanium/adventure/2018-gravel",
+   "timestamp": "20180721113300",
+   "sha256": "124f155aa61f8494f204df8b2d8eab64a5861b14cd6efd71f1486a1e80aec1b3",
+   "family": "gravel@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20170430042536"
+  },
+  {
+   "url": "https://litespeed.com/products/spezia",
+   "timestamp": "20231209030459",
+   "sha256": "2b879c5670ddfbe9a222afac59d22d5a6e81b780b04dbeb3433772540a2a1285",
+   "family": "spezia",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230528172559"
+  },
+  {
+   "url": "https://litespeed.com/products/spezia",
+   "timestamp": "20251011233722",
+   "sha256": "27161c790e37ca431372ceb80b1ac293fb2bfaf3a2a898acacf0d7bd764e50e8",
+   "family": "spezia",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230528172559"
+  },
+  {
+   "url": "https://litespeed.com/products/spezia",
+   "timestamp": "20261029192511",
+   "sha256": "4fce3ed1636d5066ad3841e76a5ddbb9f9b382b656ce9d9f487b97966cfd0c15",
+   "family": "spezia",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230528172559"
+  },
+  {
+   "url": "https://litespeed.com/products/t1sl",
+   "timestamp": "20191207211319",
+   "sha256": "c006d4e1f3e05ddf845a34a4d3b9e0fed902a4e06dfbb9fee84fe47616ef4870",
+   "family": "t1sl",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191120194712"
+  },
+  {
+   "url": "https://litespeed.com/products/t1sl",
+   "timestamp": "20210921163901",
+   "sha256": "c241ae5a1d554710a330d2ffdc224d2cb595cc2f5aab24265f456071a7133f87",
+   "family": "t1sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191120194712"
+  },
+  {
+   "url": "https://litespeed.com/products/t1sl",
+   "timestamp": "20231003032748",
+   "sha256": "46b13acafbb733f8e9b10845b298e72ca7315acc5fa099ba849ed4c8ba1ee3f8",
+   "family": "t1sl",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191120194712"
+  },
+  {
+   "url": "https://litespeed.com/products/t1sl-disc",
+   "timestamp": "20191207212418",
+   "sha256": "ae8501ee1791e9608ed5594e4bd5045685299c65098c9ee94eaaed9c40af9315",
+   "family": "t1sl-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191112181444"
+  },
+  {
+   "url": "https://litespeed.com/products/t1sl-disc",
+   "timestamp": "20211208061422",
+   "sha256": "37271645249e89a0942ac69308ebfe1d0117cd237197de09090086b247d5c1f8",
+   "family": "t1sl-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191112181444"
+  },
+  {
+   "url": "https://litespeed.com/products/t1sl-disc",
+   "timestamp": "20230128193053",
+   "sha256": "05632be2a19ba5c96c22239fc924daadb32c05f8fdb91bbf5df9de6c82c5a5ca",
+   "family": "t1sl-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191112181444"
+  },
+  {
+   "url": "https://litespeed.com/our-bikes/titanium/t-series/2018-t1sl-disc",
+   "timestamp": "20180731000603",
+   "sha256": "2f80a932b5a30588125c3efdaad61e43ebb6b49e2249266ca7de2042bd520379",
+   "family": "t1sl-disc@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20170512111600"
+  },
+  {
+   "url": "https://litespeed.com/collections/titanium-road-bikes/products/litespeed-t2-frameset",
+   "timestamp": "20191014030913",
+   "sha256": "7f4b066c2ba357d475f00dd59a5183a981edb990a67267c2d9eaa863bde6d4c3",
+   "family": "t2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190724054210"
+  },
+  {
+   "url": "https://litespeed.com/collections/titanium-road-bikes/products/litespeed-t2-disc-frameset",
+   "timestamp": "20190916052028",
+   "sha256": "381d649aa7bf803839394bbeb95a77258ffe16ecc78b49d17cd274eb5ef0a6f3",
+   "family": "t2-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190916052028"
+  },
+  {
+   "url": "https://litespeed.com/products/t5",
+   "timestamp": "20191207211201",
+   "sha256": "fe8eb2dc82b8cacee28d977e32147b610476212e904a2cd920c67e0f2fe603fb",
+   "family": "t5",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191112012017"
+  },
+  {
+   "url": "https://litespeed.com/collections/titanium-road-bikes/products/t5-frame",
+   "timestamp": "20210921162217",
+   "sha256": "7ce026b6ebef946cf0d28fdb74a5cfab30d53bf45880a1a22588d3886751cc15",
+   "family": "t5",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191207211149"
+  },
+  {
+   "url": "https://litespeed.com/products/t5",
+   "timestamp": "20231210233744",
+   "sha256": "7384295c4369aea77c44fda93f18685e103e94a81f9c9d5ffe0abe330a5e5a80",
+   "family": "t5",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191112012017"
+  },
+  {
+   "url": "https://litespeed.com/products/t5",
+   "timestamp": "20240901153723",
+   "sha256": "3247b55f2949384b8159f551c7128bb9456a0a4a984b050b13ebeab8d4f35a70",
+   "family": "t5",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20191112012017"
+  },
+  {
+   "url": "https://litespeed.com/products/toscano",
+   "timestamp": "20231210224437",
+   "sha256": "5759f7bce156fab4ee486ac56aeb23e4cca36b8b19f0d422f12cf9a0c3b3abe9",
+   "family": "toscano",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231104195441"
+  },
+  {
+   "url": "https://litespeed.com/products/toscano-frame",
+   "timestamp": "20250918192200",
+   "sha256": "9c27d8a2fb85adea0d972f004f7aa1102e03275b73c7e14929a287dc6c4e12ca",
+   "family": "toscano",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231104075223"
+  },
+  {
+   "url": "https://litespeed.com/products/toscano-fi",
+   "timestamp": "20261114012958",
+   "sha256": "95cf40d14072ea0f7a0898de7dcf06d46fe575187ae1fb2b055e17b5a3e81e0a",
+   "family": "toscano",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231104102903"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate",
+   "timestamp": "20191121130753",
+   "sha256": "a3b25da8fe6d4b247fb5813c8ea01534592a115e67c00f2cae2590222df7d8c7",
+   "family": "ultimate",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191116233235"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate",
+   "timestamp": "20211028101848",
+   "sha256": "d125bef23ebace1a718bdee32a1776e5ab86d30aa3e736c99ceb2ded372f161a",
+   "family": "ultimate",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191116233235"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate",
+   "timestamp": "20231211003525",
+   "sha256": "4ec69f9567f20d00b3dd2f8f3b5714b79c6bab733065b495b8d5352ea84e8f3b",
+   "family": "ultimate",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191116233235"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate",
+   "timestamp": "20240413114632",
+   "sha256": "1f49998baedf52e52565ea1058db9799cb819c900700bea844a927241b639b98",
+   "family": "ultimate",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191116233235"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-disc",
+   "timestamp": "20191215043603",
+   "sha256": "2d3d3480dfec3dcea9e10496567fdb42a7b936f24b3ce6ed14e858503f8968c6",
+   "family": "ultimate-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191112182524"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-disc",
+   "timestamp": "20210919233005",
+   "sha256": "e2a87cc654f6bcb806c960a63dfed924f27d8c0c2128444b1ae953bc19a782f2",
+   "family": "ultimate-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191112182524"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-disc-frame",
+   "timestamp": "20231127145501",
+   "sha256": "9e760ff43213e2da8c685a6faee1864a2bd4bd65a15780622b7c58207aa11adc",
+   "family": "ultimate-disc",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191116233322"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-disc",
+   "timestamp": "20251210210454",
+   "sha256": "ec3ff4e9ba2892858336558c1b1eb35452870c3b5dea21a5f5169feac49726c1",
+   "family": "ultimate-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20191112182524"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-disc",
+   "timestamp": "20261029192519",
+   "sha256": "07be066b03bf577d7f5c5dc8a4d3112015a57d4b5ba320298b5a4ecf5fc3e3df",
+   "family": "ultimate-disc",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20191112182524"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-g2-frame",
+   "timestamp": "20231127145748",
+   "sha256": "669cd15a57f5b6f67951586a7ccceb60c8ab8678890e3c7e666dce619897a73a",
+   "family": "ultimate-g2",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230131180210"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-g2",
+   "timestamp": "20251227034929",
+   "sha256": "a7feecb5eedd04632651705be83c6f44fd2f02bbf485c727b5aa1d300eca2673",
+   "family": "ultimate-g2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231003035322"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-g2",
+   "timestamp": "20261114012958",
+   "sha256": "4a3f8ff6c2ec2d3f917448fef3be8f4ff1c65dfc92da54bf6dc1091c6fa14443",
+   "family": "ultimate-g2",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231003035322"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-gravel",
+   "timestamp": "20191207211952",
+   "sha256": "9495d29c12825909f04880bf6f48b163f6f7027ff68ab93ae3fa56f408548025",
+   "family": "ultimate-gravel",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191117011100"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-gravel",
+   "timestamp": "20211019083909",
+   "sha256": "410eb3076011a7f813c06dc14f41519a99bb213b4d864f7777763f8b4fb23ea4",
+   "family": "ultimate-gravel",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191117011100"
+  },
+  {
+   "url": "https://litespeed.com/products/ultimate-gravel-frame",
+   "timestamp": "20230604235143",
+   "sha256": "40ce3b1452bdd2b1cf4ec03fec0691f253891ef267d59421040a52b87aa1acbe",
+   "family": "ultimate-gravel",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191113114747"
+  }
+ ]
+}

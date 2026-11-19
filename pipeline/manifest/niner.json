@@ -1,0 +1,42 @@
+{
+ "brand": "Niner",
+ "file": "niner",
+ "pages": [
+  {
+   "url": "https://www.ninerbikes.com/ore-9-rdo-4-star-shimano-grx-800-1x-12sp/",
+   "timestamp": "20250916011531",
+   "sha256": "ede5dd9830800ff74cdf2dcc4ef8f9c6bb10bbe203fc51d174d5e973585348d4",
+   "family": "ore-9-rdo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250419150207"
+  },
+  {
+   "url": "https://www.ninerbikes.com/rlt-9-frameset-1/",
+   "timestamp": "20250917083156",
+   "sha256": "66d92a6eb3124becd16e5292851e6c0b75902c863be9cfdf06892476ba9873ac",
+   "family": "rlt-9",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241012070443"
+  },
+  {
+   "url": "https://www.ninerbikes.com/rlt-9-rdo-frame/",
+   "timestamp": "20250918172245",
+   "sha256": "6e9b7e55c869babd0afd1c1ffb0d0ed14272180a617671c8cb2d59d2a7a70e25",
+   "family": "rlt-9-rdo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241103012457"
+  },
+  {
+   "url": "https://www.ninerbikes.com/rlt-9-steel-3-star-sram-rival-1-us/",
+   "timestamp": "20250810103406",
+   "sha256": "79d781c143335b6db247dbbebef493598deb4508ffd9fa9749aeb2d9c0f86a2d",
+   "family": "rlt-9-steel",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241102235908"
+  }
+ ]
+}

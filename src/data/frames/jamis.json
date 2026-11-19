@@ -1,0 +1,356 @@
+{
+  "brand": "Jamis",
+  "models": [
+    {
+      "model": "Aurora",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://www.jamisbikes.com/usa/aurora.html",
+      "retrieved": "2021-02-25",
+      "archive": "https://web.archive.org/web/20210225051511/https://www.jamisbikes.com/usa/aurora.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["47",518,371,74,70,100,449,440,1024,65],
+        ["50",538,386,74,71.5,115,470,440,1032,65],
+        ["53",557,381,73,71.5,135,491,440,1033,65],
+        ["55",571,386,73,71.5,150,506,440,1044,65],
+        ["57",585,385,72,71.5,165,521,440,1047,65],
+        ["59",602,389,72,72,180,539,440,1051,65],
+        ["62",618,393,72,72.5,195,556,440,1055,65]
+      ]
+    },
+    {
+      "model": "Icon",
+      "year": 2018,
+      "category": "race",
+      "source": "https://www.jamisbikes.com/usa/iconpro.html",
+      "retrieved": "2018-05-28",
+      "archive": "https://web.archive.org/web/20180528052058/https://www.jamisbikes.com/usa/iconpro.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["44",493,372,73,70.5,100,431,415,968,69],
+        ["48",496,363,73,71.5,100,435,415,968,69],
+        ["51",517,371,73,72,120,460,415,979,69],
+        ["54",541,379,73,73,140,490,415,977,69],
+        ["56",561,394,73,73,160,514,415,988,69],
+        ["58",580,403,73,73,180,537,415,1013,69],
+        ["61",599,407,73,73,200,561,415,1023,69]
+      ]
+    },
+    {
+      "model": "Nova",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "cyclocross",
+      "source": "https://www.jamisbikes.com/usa/novapro.html",
+      "retrieved": "2021-01-15",
+      "archive": "https://web.archive.org/web/20210115234710/https://www.jamisbikes.com/usa/novapro.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["48",529,370,75,71,100,483,425,999,69],
+        ["51",545,372,74,71.5,115,501,425,1001,69],
+        ["54",561,373,73,72,130,519,425,1002,69],
+        ["56",577,383,73,72.5,145,538,425,1013,69],
+        ["58",590,388,72.5,72.5,160,552,425,1024,67],
+        ["61",615,396,72,73,185,581,425,1033,67]
+      ]
+    },
+    {
+      "model": "Quest",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.jamisbikes.com/usa/questcomp.html",
+      "retrieved": "2020-11-12",
+      "archive": "https://web.archive.org/web/20201112034059/https://www.jamisbikes.com/usa/questcomp.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["48",550,367,75,71,133,483,415,993,71],
+        ["51",570,371,74,72,151,505,415,995,70],
+        ["54",588,375,73,72.5,168,524,415,999,68],
+        ["56",607,379,73,73,186,545,415,1004,68],
+        ["58",626,383,73,73,207,565,415,1018,67],
+        ["61",645,387,73,73,227,586,415,1028,67]
+      ]
+    },
+    {
+      "model": "Renegade Alloy",
+      "year": 2018,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/usa/renegadeexile.html",
+      "retrieved": "2019-07-25",
+      "archive": "https://web.archive.org/web/20190725050658/https://www.jamisbikes.com/usa/renegadeexile.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["44",495,351,73,71,98,417,424,975,56],
+        ["48",515,360,73,71,121,437,424,992,55],
+        ["51",535,369,73,71,100,457,427,1005,74],
+        ["54",565,378,73,71.5,132,487,430,1023,72],
+        ["56",595,387,73,71.5,163,517,430,1042,72],
+        ["58",620,396,73,72,188,543,430,1051,71],
+        ["61",640,405,73,72.5,207,563,435,1066,71]
+      ]
+    },
+    {
+      "model": "Renegade Alloy",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "retrieved": "2021-11-30",
+      "archive": "https://web.archive.org/web/20211130190507/https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["44",495,353,73,71,105,417,430,983,55],
+        ["48",527,360,73,71,80,449,430,1000,74],
+        ["51",544,370,73,71,96,466,430,1012,74],
+        ["54",573,380,73,71,126,495,430,1027,72],
+        ["56",601,389,73,71,156,523,435,1051,72],
+        ["58",627,399,73,72,181,550,435,1061,71],
+        ["61",647,407,73,72,201,570,435,1076,71]
+      ]
+    },
+    {
+      "model": "Renegade Alloy",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/alloy-renegade/",
+      "retrieved": "2026-07-21",
+      "archive": "https://web.archive.org/web/20260721051217/https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/alloy-renegade/",
+      "sizes": [
+        ["48",528,360,72,71,90,450,435,1000,80],
+        ["51",545,370,72,71,110,480,435,1010,80],
+        ["54",575,380,72,71,140,510,435,1030,80],
+        ["56",605,390,72,71,175,530,435,1051,80],
+        ["58",630,400,72,71,200,550,435,1070,80],
+        ["61",650,410,72,71,220,570,435,1085,80]
+      ]
+    },
+    {
+      "model": "Renegade Carbon",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "retrieved": "2023-09-25",
+      "archive": "https://web.archive.org/web/20230925174814/https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["48",515,360,73,70.5,96,437,427,997,74],
+        ["51",535,369,73,71,114,457,427,1005,74],
+        ["54",565,378,73,71.5,146,487,430,1023,72],
+        ["56",595,387,73,71.5,177,517,430,1042,72],
+        ["58",620,396,73,72,202,543,430,1051,71],
+        ["61",640,405,73,72.5,221,563,435,1066,71]
+      ]
+    },
+    {
+      "model": "Renegade Carbon",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/carbon-renegade/",
+      "retrieved": "2026-06-13",
+      "archive": "https://web.archive.org/web/20260613052319/https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/carbon-renegade/",
+      "sizes": [
+        ["48",528,360,72,71,90,450,435,1000,80],
+        ["51",545,370,72,71,110,480,435,1010,80],
+        ["54",575,380,72,71,140,510,435,1030,80],
+        ["56",605,390,72,71,175,530,435,1051,80],
+        ["58",630,400,72,71,200,550,435,1070,80],
+        ["61",650,410,72,71,220,570,435,1085,80]
+      ]
+    },
+    {
+      "model": "Renegade Steel",
+      "year": 2018,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/usa/renegadeexpat.html",
+      "retrieved": "2019-01-21",
+      "archive": "https://web.archive.org/web/20190121192554/https://www.jamisbikes.com/usa/renegadeexpat.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["44",495,351,73,71,98,417,424,975,56],
+        ["48",515,360,73,71,120,437,424,992,55],
+        ["51",535,369,73,71,100,457,427,1005,74],
+        ["54",565,378,73,71.5,132,487,430,1023,72],
+        ["56",595,387,73,71.5,163,517,430,1042,72],
+        ["58",620,396,73,72,188,543,430,1051,71],
+        ["61",640,405,73,72.5,207,563,435,1066,71]
+      ]
+    },
+    {
+      "model": "Renegade Steel",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "retrieved": "2021-11-30",
+      "archive": "https://web.archive.org/web/20211130190507/https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "aliases": ["Renegade Steel S2"],
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["44",505,351,73,71,121,427,424,980,55],
+        ["48",525,360,73,71,142,447,424,995,55],
+        ["51",545,369,73,71,124,467,427,1008,74],
+        ["54",575,378,73,71.5,155,497,430,1026,72],
+        ["56",605,387,73,71.5,187,527,430,1045,72],
+        ["58",630,396,73,72,211,553,430,1055,71],
+        ["61",650,405,73,72.5,230,573,435,1064,71]
+      ]
+    },
+    {
+      "model": "Renegade Steel",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/steel-renegade/",
+      "retrieved": "2026-11-17",
+      "archive": "https://web.archive.org/web/20261117005049/https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/steel-renegade/",
+      "aliases": ["Renegade Steel S3/S4"],
+      "sizes": [
+        ["48",528,360,72,71,80,450,435,995,80],
+        ["51",545,370,72,71,99,480,435,1010,80],
+        ["54",575,380,72,71,130,510,435,1030,80],
+        ["56",605,390,72,71,162,530,435,1051,80],
+        ["58",630,400,72,71,189,550,435,1070,80],
+        ["61",650,410,72,71,210,570,435,1085,80]
+      ]
+    },
+    {
+      "model": "Renegade Steel S1/S2",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/steel-renegade/",
+      "retrieved": "2026-11-17",
+      "archive": "https://web.archive.org/web/20261117005049/https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/steel-renegade/",
+      "sizes": [
+        ["48",528,370,73,70,85,450,450,1029,80],
+        ["51",545,375,73,70,104,480,450,1040,80],
+        ["54",575,380,73,71,132,510,450,1046,80],
+        ["56",605,390,73,71,163,530,450,1067,80],
+        ["58",630,400,73,71,189,550,450,1085,80],
+        ["61",650,410,73,71,211,570,450,1102,80]
+      ]
+    },
+    {
+      "model": "Renegade Steel S3",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "retrieved": "2021-11-30",
+      "archive": "https://web.archive.org/web/20211130190507/https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["44",505,351,73,71,116,427,424,983,55],
+        ["48",525,360,73,71,84,447,424,997,74],
+        ["51",545,369,73,71,109,467,427,1021,74],
+        ["54",575,378,73,71.5,136,497,430,1030,72],
+        ["56",605,387,73,71.5,166,527,430,1045,72],
+        ["58",630,396,73,72,191,553,430,1054,71],
+        ["61",650,405,73,72.5,210,573,435,1069,71]
+      ]
+    },
+    {
+      "model": "Supernova",
+      "year": 2018,
+      "category": "cyclocross",
+      "source": "https://www.jamisbikes.com/usa/supernovateam.html",
+      "retrieved": "2018-06-04",
+      "archive": "https://web.archive.org/web/20180604124957/https://www.jamisbikes.com/usa/supernovateam.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["51",559,367,74,71.5,130,517,425,1001,69],
+        ["54",575,368,73,72,145,535,425,1002,69],
+        ["56",592,379,73,72.5,160,555,425,1013,69],
+        ["58",604,385,72.5,72.5,175,568,425,1024,69],
+        ["61",630,391,72,73,200,598,425,1033,69]
+      ]
+    },
+    {
+      "model": "Ventura",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.jamisbikes.com/usa/venturacomp.html",
+      "retrieved": "2019-04-01",
+      "archive": "https://web.archive.org/web/20190401025450/https://www.jamisbikes.com/usa/venturacomp.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["48",535,360,75,71,125,467,415,981,71],
+        ["51",556,366,74,72,145,490,415,985,70],
+        ["54",573,373,73,72.5,160,508,420,991,68],
+        ["56",598,376,73,73,185,535,420,998,68],
+        ["58",616,383,73,73,205,554,425,1015,67],
+        ["61",635,388,73,73,225,575,425,1026,67]
+      ]
+    },
+    {
+      "model": "Ventura",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/road/ventura/",
+      "retrieved": "2025-11-13",
+      "archive": "https://web.archive.org/web/20251113013602/https://www.jamisbikes.com/bikes/adventure-gravel/road/ventura/",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["48",531,360,75,70,125,463,415,988,71],
+        ["51",553,365,74,71.5,145,486,415,990,69],
+        ["54",570,373,73,72,160,505,420,996,68],
+        ["56",598,376,73,73,185,535,420,998,68],
+        ["58",616,383,73,73,205,554,425,1015,66],
+        ["61",635,388,73,73,225,575,425,1026,66]
+      ]
+    },
+    {
+      "model": "Ventura All-Road",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/all-road/ventura-allroad/",
+      "retrieved": "2026-07-21",
+      "archive": "https://web.archive.org/web/20260721042420/https://www.jamisbikes.com/bikes/adventure-gravel/all-road/ventura-allroad/",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["48",523,375,75,70,92,454,438,1018,80],
+        ["51",557,377,74,71.5,122,491,438,1020,80],
+        ["54",574,380,73,72,140,509,438,1022,78],
+        ["56",598,387,73,73,162,535,438,1027,78],
+        ["58",618,396,73,73,185,556,438,1043,76],
+        ["61",638,405,73,73,206,578,438,1058,76]
+      ]
+    },
+    {
+      "model": "Ventura Women's",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.jamisbikes.com/bikes/adventure-gravel/road/ventura/",
+      "retrieved": "2025-11-13",
+      "archive": "https://web.archive.org/web/20251113013602/https://www.jamisbikes.com/bikes/adventure-gravel/road/ventura/",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["44",521,358,76,70,115,452,415,984,71],
+        ["48",538,363,75.5,71,130,470,415,987,69],
+        ["51",561,368,75,71,155,495,415,1000,69],
+        ["54",580,375,74.5,72,170,515,420,1001,68]
+      ]
+    },
+    {
+      "model": "Xenith",
+      "year": 2018,
+      "category": "race",
+      "source": "https://www.jamisbikes.com/usa/xenithcomp.html",
+      "retrieved": "2020-09-01",
+      "archive": "https://web.archive.org/web/20200901204857/https://www.jamisbikes.com/usa/xenithcomp.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["48",496,363,73,71.5,100,435,415,968,68],
+        ["51",517,371,73,72,120,460,415,979,68],
+        ["54",542,378,73,73,140,491,415,977,68],
+        ["56",561,394,73,73,160,514,415,988,68],
+        ["58",580,402,73,73,180,537,415,1013,68],
+        ["61",599,407,73,73,200,561,415,1023,68]
+      ]
+    }
+  ]
+}

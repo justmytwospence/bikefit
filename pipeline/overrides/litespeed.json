@@ -1,5 +1,48 @@
 {
  "manual": [],
  "exclude": [],
- "models": {}
+ "models": {
+  "T1sl": {
+   "model": "Ultimate",
+   "aliases": [
+    "T1sl"
+   ]
+  },
+  "T1sl Disc": {
+   "model": "Ultimate",
+   "aliases": [
+    "T1sl Disc"
+   ]
+  },
+  "T2": {
+   "model": "Ultimate",
+   "aliases": [
+    "T2"
+   ]
+  },
+  "T2 Disc": {
+   "model": "Ultimate",
+   "aliases": [
+    "T2 Disc"
+   ]
+  },
+  "Ultimate Disc": {
+   "model": "Ultimate",
+   "aliases": [
+    "Ultimate Disc"
+   ]
+  },
+  "Toscano": {
+   "model": "Ultimate G2",
+   "aliases": [
+    "Toscano"
+   ]
+  },
+  "Coll dels Reis": {
+   "model": "Ghisallo",
+   "aliases": [
+    "Coll dels Reis"
+   ]
+  }
+ }
 }

@@ -1,0 +1,244 @@
+{
+  "brand": "Felt",
+  "models": [
+    {
+      "model": "AR",
+      "year": 2018,
+      "category": "aero",
+      "source": "https://www.feltbicycles.com/usa/2016/bikes/road/aero/ar1.aspx",
+      "retrieved": "2018-05-05",
+      "archive": "https://web.archive.org/web/20180505163312/https://www.feltbicycles.com/usa/2016/bikes/road/aero/ar1.aspx",
+      "sizes": [
+        ["48",510,367,74.5,71,110,440,408,974,72],
+        ["51",523,379,74,72.5,120,470,408,977,70],
+        ["54",546,383,73.5,73,140,500,410,980,70],
+        ["56",567,392,73.5,73.5,160,520,410,988,70],
+        ["58",588,406,73.5,74,180,550,410,1003,70],
+        ["61",617,417,73,74,210,590,410,1024,70]
+      ]
+    },
+    {
+      "model": "AR",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "aero",
+      "source": "https://www.feltbicycles.com/en-us/bikes/road-bikes/ar-aero-road/ar-advanced-ultegradi2.html",
+      "retrieved": "2025-12-17",
+      "archive": "https://web.archive.org/web/20251217052525/https://www.feltbicycles.com/en-us/bikes/road-bikes/ar-aero-road/ar-advanced-ultegradi2.html",
+      "sizes": [
+        ["48",501,370,74.3,71,97,441,408,974,72],
+        ["51",518,381,74.4,72.1,111,473,408,977,70],
+        ["54",539,383,73.5,73,130,503,410,980,70],
+        ["56",561,394,73.5,73.5,150,526,410,988,70],
+        ["58",579,408,73.5,73.5,167,553,410,1003,70],
+        ["61",608,419,73,73,198,601,412,1024,70]
+      ]
+    },
+    {
+      "model": "Breed",
+      "year": 2023,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-carbon/breed-advanced-grx610.html",
+      "retrieved": "2026-02-16",
+      "archive": "https://web.archive.org/web/20260216022831/https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-carbon/breed-advanced-grx610.html",
+      "sizes": [
+        ["47",544,374,74,70,100,440,430,1023,72],
+        ["51",562,379,74,70.5,116,470,430,1029,72],
+        ["54",575,385,74,70.5,130,500,430,1040,72],
+        ["56",591,389,73,71,145,530,430,1045,72],
+        ["58",607,394,73,71.5,160,560,430,1050,72],
+        ["61",626,398,72,71.5,180,595,430,1060,72]
+      ]
+    },
+    {
+      "model": "Breed Alloy",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/breed-gravel/breed-20.html",
+      "retrieved": "2025-12-12",
+      "archive": "https://web.archive.org/web/20251212010746/https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/breed-gravel/breed-20.html",
+      "sizes": [
+        ["47",544,374,74,70,100,440,420,1013,72],
+        ["51",562,380,74,70.5,116,470,420,1019,72],
+        ["54",575,385,74,70.5,130,500,420,1030,72],
+        ["56",591,389,73,71,145,520,420,1035,72],
+        ["58",607,393,73,71.5,160,540,420,1039,72],
+        ["61",626,397,72,71.5,180,570,420,1048,72]
+      ]
+    },
+    {
+      "model": "Broam",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/broam-adventure/broam-60.html",
+      "retrieved": "2025-12-12",
+      "archive": "https://web.archive.org/web/20251212000540/https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/broam-adventure/broam-60.html",
+      "sizes": [
+        ["47",551,372,74,70.5,125,410,450,1039,72],
+        ["51",570,371,74,70.5,145,435,450,1045,72],
+        ["54",591,380,74,71,165,460,450,1056,72],
+        ["56",605,385,73,71,180,485,450,1066,72],
+        ["58",624,389,73,71,200,515,450,1076,72],
+        ["61",643,399,73,71,220,545,450,1092,72]
+      ]
+    },
+    {
+      "model": "FR",
+      "year": 2018,
+      "lastYear": 2023,
+      "category": "race",
+      "source": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/fr-road-race/fr-frd-ultimate-frame.html",
+      "retrieved": "2025-12-07",
+      "archive": "https://web.archive.org/web/20251207062947/https://www.feltbicycles.com/en-us/archive/2023/road-bikes/fr-road-race/fr-frd-ultimate-frame.html",
+      "sizes": [
+        ["43",499,362,75.3,70.5,90,405,403,965,72],
+        ["47",512,369,74.5,71.5,100,425,403,967,72],
+        ["51",530,377,74,72.3,115,465,403,969,72],
+        ["54",550,385,73.5,73,135,505,405,980,70],
+        ["56",572,394,73.5,73.5,155,525,405,986,70],
+        ["58",594,405,73.3,73.8,177,555,407,1003,70],
+        ["61",621,414,73,74,205,595,410,1021,70]
+      ]
+    },
+    {
+      "model": "FR",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-expert-105-di2.html",
+      "retrieved": "2026-03-12",
+      "archive": "https://web.archive.org/web/20260312015945/https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-expert-105-di2.html",
+      "sizes": [
+        ["45",496,365,75.3,70.5,90,405,406,967,74],
+        ["48",509,371,74.5,71.5,100,426,406,969,74],
+        ["51",527,375,74,72.4,115,467,406,971,74],
+        ["54",546,385,73.5,72.6,135,507,408,982,72],
+        ["56",567,390,73.5,73.2,155,527,408,988,72],
+        ["58",591,404,73.3,73.8,177,558,410,1005,72],
+        ["61",617,412,73,73.8,205,595,410,1020,72]
+      ]
+    },
+    {
+      "model": "FR Alloy",
+      "year": 2018,
+      "category": "race",
+      "source": "https://www.feltbicycles.com/usa/2016/bikes/road/race/fr/fr60-2018.aspx",
+      "retrieved": "2018-04-26",
+      "archive": "https://web.archive.org/web/20180426182858/https://www.feltbicycles.com/usa/2016/bikes/road/race/fr/fr60-2018.aspx",
+      "sizes": [
+        ["47",512,370,74.5,71.5,110,425,407,973,72],
+        ["51",529,378,74,72.3,125,465,407,980,72],
+        ["54",550,385,73.5,73,145,505,407,980,70],
+        ["56",571,394,73.5,73.5,165,525,407,990,70],
+        ["58",591,405,73.3,73.8,185,555,410,1008,70],
+        ["61",621,414,73,74,215,595,410,1023,70]
+      ]
+    },
+    {
+      "model": "FR Alloy",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "race",
+      "source": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-30.html",
+      "retrieved": "2024-04-23",
+      "archive": "https://web.archive.org/web/20240423121039/https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-30.html",
+      "sizes": [
+        ["43",499,363,75.3,70.5,90,405,403,971,72],
+        ["47",512,371,74.5,71.5,100,425,403,973,72],
+        ["51",530,378,74,72.3,115,465,403,975,72],
+        ["54",550,385,73.5,73,135,505,405,982,70],
+        ["56",572,393,73.5,73.5,155,525,405,988,70],
+        ["58",592,405,73.3,73.8,175,555,407,1006,70],
+        ["61",621,414,73,74,205,595,410,1021,70]
+      ]
+    },
+    {
+      "model": "FX",
+      "year": 2018,
+      "lastYear": 2024,
+      "category": "cyclocross",
+      "source": "https://www.feltbicycles.com/en-us/archive/2024/cyclocross-bikes/fx-cyclocross-race/fx-advanced-grx-600.html",
+      "retrieved": "2025-12-10",
+      "archive": "https://web.archive.org/web/20251210202346/https://www.feltbicycles.com/en-us/archive/2024/cyclocross-bikes/fx-cyclocross-race/fx-advanced-grx-600.html",
+      "sizes": [
+        ["47",523,380,75.5,70.5,110,470,430,1022,65],
+        ["50",533,382,74.5,70.5,120,500,430,1028,65],
+        ["53",544,384,73.5,71,130,530,430,1029,65],
+        ["55",568,397,73.5,72,150,550,430,1033,65],
+        ["57",587,406,73.5,72,170,570,430,1048,65],
+        ["60",607,420,73.5,72,190,590,430,1068,65]
+      ]
+    },
+    {
+      "model": "New Breed",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://feltbicycles.com/products/new-breed-pro-sram-force-xplor",
+      "retrieved": "2026-11-19",
+      "tyreWidth": 45,
+      "sizes": [
+        ["M/54",558,380,74.5,70,103,482,430,1036,74.5],
+        ["L/56",576,390,74.5,70.5,121,503,430,1044,72],
+        ["XL/58",600,395,74,71,146,527,430,1053,72],
+        ["XXL/61",631,405,74,71.5,173,557,430,1067,72]
+      ]
+    },
+    {
+      "model": "VR",
+      "year": 2018,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/vr-endurance-road/vr-advanced-105.html",
+      "retrieved": "2025-12-07",
+      "archive": "https://web.archive.org/web/20251207124044/https://www.feltbicycles.com/en-us/archive/2023/road-bikes/vr-endurance-road/vr-advanced-105.html",
+      "sizes": [
+        ["43",521,355,75.3,70.3,115,410,412,977,72],
+        ["47",539,362,74.7,71.3,130,430,412,981,72],
+        ["51",555,369,74.5,72,145,450,415,989,70],
+        ["54",576,379,74,72.5,165,480,415,1000,70],
+        ["56",595,386,73.5,72.5,185,500,415,1013,70],
+        ["58",614,392,73,72.5,205,520,417,1027,70],
+        ["61",633,401,73,72.5,225,550,417,1042,70]
+      ]
+    },
+    {
+      "model": "VR",
+      "year": 2024,
+      "lastYear": 2025,
+      "category": "endurance",
+      "source": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-expert-105-di2.html",
+      "retrieved": "2025-12-14",
+      "archive": "https://web.archive.org/web/20251214064736/https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-expert-105-di2.html",
+      "sizes": [
+        ["43",521,355,75.3,70.3,110,386,415,980,72],
+        ["47",539,363,74.7,71.3,125,406,415,985,72],
+        ["51",555,370,74.5,72,140,426,415,989,70],
+        ["54",576,378,74,72.5,160,456,415,999,70],
+        ["56",595,386,73.5,72.5,180,476,415,1013,70],
+        ["58",614,393,73,72.5,200,496,417,1028,70],
+        ["61",633,401,73,72.5,220,526,417,1042,70]
+      ]
+    },
+    {
+      "model": "VR Alloy",
+      "year": 2018,
+      "lastYear": 2024,
+      "category": "endurance",
+      "source": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-60.html",
+      "retrieved": "2025-12-12",
+      "archive": "https://web.archive.org/web/20251212002402/https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-60.html",
+      "sizes": [
+        ["43",521,355,75.3,70.3,115,410,415,977,72],
+        ["47",539,362,74.7,71.3,130,430,415,981,72],
+        ["51",555,369,74.5,72,145,450,417,989,70],
+        ["54",576,379,74,72.5,165,480,417,1000,70],
+        ["56",595,386,73.5,72.5,185,500,417,1013,70],
+        ["58",614,392,73,72.5,205,520,417,1027,70],
+        ["61",633,401,73,72.5,225,550,417,1042,70]
+      ]
+    }
+  ]
+}

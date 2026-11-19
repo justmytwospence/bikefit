@@ -1,0 +1,288 @@
+{
+  "brand": "Diamondback",
+  "models": [
+    {
+      "model": "Arden",
+      "year": 2019,
+      "category": "endurance",
+      "source": "https://www.diamondback.com/arden-2-d41",
+      "retrieved": "2019-12-10",
+      "archive": "https://web.archive.org/web/20191210124301/https://www.diamondback.com/arden-2-d41",
+      "aliases": ["Arden 1","Arden 2"],
+      "sizes": [
+        ["48",528,363,75.5,70.5,120,420,415,984,72],
+        ["50",539,370,75,71,130,440,415,990,72],
+        ["52",562,369,74.5,72,150,460,415,987,72],
+        ["54",586,371,74,72,175,480,415,997,72],
+        ["56",605,376,73.5,72.5,195,500,415,1003,70]
+      ]
+    },
+    {
+      "model": "Arden Carbon",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.diamondback.com/arden5carbon-d42",
+      "retrieved": "2020-08-04",
+      "archive": "https://web.archive.org/web/20200804054155/https://www.diamondback.com/arden5carbon-d42",
+      "sizes": [
+        ["48",515,366,75.5,70.5,105,420,415,987,72],
+        ["50",542,364,75,71,130,440,415,985,72],
+        ["52",565,368,74.5,72,150,460,415,987,72],
+        ["54",589,371,74,72,175,480,415,998,72],
+        ["56",607,375,73.5,72.5,195,500,415,1003,70]
+      ]
+    },
+    {
+      "model": "Century",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.diamondback.com/century-3-d42",
+      "retrieved": "2020-08-05",
+      "archive": "https://web.archive.org/web/20200805190032/https://www.diamondback.com/century-3-d42",
+      "aliases": ["Century 2","Century 3"],
+      "sizes": [
+        ["50",537,376,75,71.5,125,470,415,990,73],
+        ["52",558,375,74,72,145,490,415,991,73],
+        ["54",572,372,73.3,72.8,160,510,415,987,70],
+        ["56",591,378,73,73,180,530,415,997,70],
+        ["58",609,388,73,73,200,550,415,1013,68],
+        ["60",627,392,72.5,73,220,570,415,1022,68]
+      ]
+    },
+    {
+      "model": "Century 1",
+      "year": 2018,
+      "lastYear": 2019,
+      "category": "endurance",
+      "source": "https://www.diamondback.com/century1-d42",
+      "retrieved": "2019-12-09",
+      "archive": "https://web.archive.org/web/20191209070040/https://www.diamondback.com/century1-d42",
+      "sizes": [
+        ["50",530,374,75.3,72.5,125,470,415,979,73],
+        ["52",551,372,74,72.5,145,490,415,978,73],
+        ["54",565,375,73.3,72.8,160,510,415,984,70],
+        ["56",584,374,73,73,180,530,415,995,70],
+        ["58",601,391,73,73.3,200,550,415,1007,68]
+      ]
+    },
+    {
+      "model": "Century Carbon",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.diamondback.com/century4carbon",
+      "retrieved": "2020-10-01",
+      "archive": "https://web.archive.org/web/20201001144728/https://www.diamondback.com/century4carbon",
+      "sizes": [
+        ["50",532,372,75,72,115,470,415,968,73],
+        ["52",553,371,74,72.5,135,490,415,981,73],
+        ["54",566,375,73.3,72.8,150,510,415,987,70],
+        ["56",595,378,73,73,180,530,415,997,70],
+        ["58",612,388,73,73,200,550,415,1013,68],
+        ["60",631,391,72.5,73,220,570,415,1022,68]
+      ]
+    },
+    {
+      "model": "Haanjenn 2",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjenn2-d42",
+      "retrieved": "2019-11-18",
+      "archive": "https://web.archive.org/web/20191118210602/https://www.diamondback.com/haanjenn2-d42",
+      "sizes": [
+        ["XS",541,380,76,70,120,395,440,1031,74],
+        ["SM",554,377,75,71,130,425,440,1023,74],
+        ["MD",570,377,74,71.5,145,455,440,1023,74],
+        ["LG",586,382,74,72,160,485,440,1029,74]
+      ]
+    },
+    {
+      "model": "Haanjo 2",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-2-d41",
+      "retrieved": "2019-12-10",
+      "archive": "https://web.archive.org/web/20191210123955/https://www.diamondback.com/haanjo-2-d41",
+      "sizes": [
+        ["50",549,373,74.5,69,130,475,440,1044,70],
+        ["53",576,369,73,70,155,505,440,1041,70],
+        ["56",599,371,72.5,71,175,535,440,1041,70],
+        ["59",627,375,72,72,200,565,440,1044,70]
+      ]
+    },
+    {
+      "model": "Haanjo 2",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-2-4670",
+      "retrieved": "2023-04-14",
+      "archive": "https://web.archive.org/web/20230414045011/https://www.diamondback.com/haanjo-2-4670",
+      "sizes": [
+        ["47",541,364,73,70,110,395,440,1018,70],
+        ["SM",549,373,74.5,69,130,475,440,1044,70],
+        ["MD",576,369,73,70,155,505,440,1041,70],
+        ["LG",599,371,72.5,71,175,535,440,1041,70],
+        ["XL",627,375,72,72,200,565,440,1044,70]
+      ]
+    },
+    {
+      "model": "Haanjo 2",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-2-5082",
+      "retrieved": "2025-04-04",
+      "archive": "https://web.archive.org/web/20250404144009/https://www.diamondback.com/haanjo-2-5082",
+      "sizes": [
+        ["47",541,375,75,69,110,380,435,1035,75],
+        ["50",562,383,75,70,130,450,435,1043,75],
+        ["53",578,384,74,70.5,145,500,435,1045,74],
+        ["56",594,387,72.5,71,160,535,435,1048,73],
+        ["59",617,405,72.5,71,185,565,435,1074,73]
+      ]
+    },
+    {
+      "model": "Haanjo 3",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo3",
+      "retrieved": "2019-11-19",
+      "archive": "https://web.archive.org/web/20191119005828/https://www.diamondback.com/haanjo3",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["50",549,373,74.5,69,130,475,440,1044,72],
+        ["53",576,369,73,70,155,505,440,1041,70],
+        ["56",599,371,72.5,71,175,535,440,1041,70],
+        ["59",627,375,72,72,200,565,440,1044,73]
+      ]
+    },
+    {
+      "model": "Haanjo 3",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-3-4671",
+      "retrieved": "2023-03-13",
+      "archive": "https://web.archive.org/web/20230313055158/https://www.diamondback.com/haanjo-3-4671",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["47",536,381,75,70,105,395,440,1033,70],
+        ["50",546,379,75,70,120,475,440,1039,72],
+        ["53",576,369,73.5,70,155,505,440,1041,70],
+        ["56",605,380,73.5,70,175,535,440,1041,70],
+        ["59",629,394,73.5,70,200,565,440,1062,70]
+      ]
+    },
+    {
+      "model": "Haanjo 3",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-3-5081",
+      "retrieved": "2024-06-20",
+      "archive": "https://web.archive.org/web/20240620021743/https://www.diamondback.com/haanjo-3-5081",
+      "sizes": [
+        ["47",541,375,75,69,110,380,435,1035,75],
+        ["50",562,383,75,70,130,450,435,1043,75],
+        ["53",578,384,74,70.5,145,500,435,1045,74],
+        ["56",594,387,72.5,71,160,535,435,1048,73],
+        ["59",617,405,72.5,71,185,565,435,1074,73]
+      ]
+    },
+    {
+      "model": "Haanjo 4",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo4-d42",
+      "retrieved": "2019-11-18",
+      "archive": "https://web.archive.org/web/20191118233705/https://www.diamondback.com/haanjo4-d42",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["50",549,373,74.5,69,130,475,440,1044,72],
+        ["53",576,369,73,70,155,505,440,1041,70],
+        ["56",599,371,72.5,71,175,535,440,1041,70],
+        ["59",627,375,72,72,200,565,440,1044,70]
+      ]
+    },
+    {
+      "model": "Haanjo 4",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-4-4482",
+      "retrieved": "2023-03-24",
+      "archive": "https://web.archive.org/web/20230324121809/https://www.diamondback.com/haanjo-4-4482",
+      "sizes": [
+        ["47",535,380,75,70,105,395,440,1033,70],
+        ["50",550,377,75,70,120,450,440,1039,70],
+        ["53",583,367,73.5,72,155,505,440,1041,70],
+        ["56",610,379,73.5,72,175,535,440,1041,70],
+        ["59",633,392,73.5,72,200,565,440,1062,70]
+      ]
+    },
+    {
+      "model": "Haanjo 4 EXP",
+      "year": 2023,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-4-exp-5079",
+      "retrieved": "2025-03-27",
+      "archive": "https://web.archive.org/web/20250327014220/https://www.diamondback.com/haanjo-4-exp-5079",
+      "sizes": [
+        ["47",559,370,75,69,110,380,435,1038,75],
+        ["50",581,379,75,70,130,450,435,1045,75],
+        ["53",594,380,74,70.5,145,500,435,1045,74],
+        ["56",612,382,72.5,71,160,535,435,1049,73],
+        ["59",636,400,72.5,71,185,565,435,1075,73]
+      ]
+    },
+    {
+      "model": "Haanjo 5",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-5-4478",
+      "retrieved": "2023-04-09",
+      "archive": "https://web.archive.org/web/20230409035154/https://www.diamondback.com/haanjo-5-4478",
+      "sizes": [
+        ["47",536,380,75,70,105,395,440,1033,70],
+        ["50",550,377,75,70,120,450,440,1039,70],
+        ["53",583,367,73.5,72,155,505,440,1041,70],
+        ["56",610,379,73.5,72,175,535,440,1041,70],
+        ["60",633,392,73.5,72,200,565,440,1062,70]
+      ]
+    },
+    {
+      "model": "Haanjo 5",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-5-5078",
+      "retrieved": "2025-04-22",
+      "archive": "https://web.archive.org/web/20250422040310/https://www.diamondback.com/haanjo-5-5078",
+      "sizes": [
+        ["47",559,370,75,69,110,380,435,1038,75],
+        ["50",581,379,75,70,130,450,435,1045,75],
+        ["53",594,380,74,70.5,145,500,435,1034,74],
+        ["56",612,382,72.5,71,160,535,435,1049,73],
+        ["60",636,400,72.5,71,185,565,435,1075,73]
+      ]
+    },
+    {
+      "model": "Haanjo Carbon",
+      "year": 2018,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.diamondback.com/haanjo-6c-carbon-4477",
+      "retrieved": "2023-03-26",
+      "archive": "https://web.archive.org/web/20230326183623/https://www.diamondback.com/haanjo-6c-carbon-4477",
+      "sizes": [
+        ["50",543,374,74.5,69,130,500,430,1028,70],
+        ["53",570,371,73.5,70,155,530,430,1025,70],
+        ["56",593,373,72.5,71,175,560,430,1025,70],
+        ["59",622,378,72,72,200,590,430,1028,70]
+      ]
+    }
+  ]
+}

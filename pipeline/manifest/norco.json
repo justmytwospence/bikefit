@@ -1,0 +1,726 @@
+{
+ "brand": "Norco",
+ "file": "norco",
+ "pages": [
+  {
+   "url": "https://www.norco.com/bikes/road/adventure/search-alu/search-a-claris/",
+   "timestamp": "20180225121836",
+   "sha256": "8e5552065486b00cc71cb7d5b5c1305db7308e81a5777bc42747ce2966b482cd",
+   "family": "search-aluminum@2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170912153118"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-aluminum/2023-search-a1/",
+   "timestamp": "20231211022608",
+   "sha256": "cf26c76fa43664156b41724de27860aa01141805255e301af9c3c44d69f84c0c",
+   "family": "search-aluminum@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230127204215"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-aluminum/2023-search-a1/",
+   "timestamp": "20250803051555",
+   "sha256": "046558de2dca5caf866c4a23fc4c4f601ce634ae99578a8c146b36da313c34a9",
+   "family": "search-aluminum@2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230127204215"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-aluminum/25-search-a-cues/",
+   "timestamp": "20251211112340",
+   "sha256": "9d031624e92796e01a8b24b645a213b9dc6e0caf959bfde776c5b6f9d47703b5",
+   "family": "search-aluminum@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250729161143"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/dirt-dropbar/gravel/search-carbon/search-c-105/",
+   "timestamp": "20191214053442",
+   "sha256": "1a359a72042d4d95c0c60201eff9b5a2297a3e5bff51dd81551b2ec9a2826dc7",
+   "family": "search-carbon@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825004130"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-carbon/25-search-c-grx/",
+   "timestamp": "20251205054411",
+   "sha256": "191a8ce82764807a1d7994825c7c4c7fa2e1e5a0ef3acb9275bfe8d2049da8c4",
+   "family": "search-carbon@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250729161143"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-carbon/26-search-c-force/",
+   "timestamp": "20251205050647",
+   "sha256": "f64a0efddb108304f2fe173eafa3e98a0725f8cf93b185c8c674767dfd4e9eab",
+   "family": "search-carbon@2026",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250729161143"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/gravel/search-xr-aluminum/search-xr-a-suspension/",
+   "timestamp": "20211028115426",
+   "sha256": "c82d1233c6f55ddbd5644cf16f66d7103d98e55ae9c2f5271536c0f10fbd8beb",
+   "family": "search-xr-aluminum-suspension@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201028030901"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2021-search-xr-a-suspension/",
+   "timestamp": "20220812032750",
+   "sha256": "9ccfee7f8d7bb33a29b7d4981864f15e2a204c07d2cce63643b39de5ba0095a7",
+   "family": "search-xr-aluminum-suspension@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220524063036"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2022-search-xr-a-suspension/",
+   "timestamp": "20230329134327",
+   "sha256": "2edf6991ad6378e9267d439dd38a4e266aa25ca17ef55af99bbf682460f61013",
+   "family": "search-xr-aluminum-suspension@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221202201946"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a-suspension/",
+   "timestamp": "20230923181553",
+   "sha256": "3f93033a6c194a2b9963a28108195c94309675f447b5d113f4a3232327e81316",
+   "family": "search-xr-aluminum-suspension@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230127212109"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a-suspension/",
+   "timestamp": "20250803180558",
+   "sha256": "a0a61ffb05b6df20f9068f454131c1ed3c66de38026a62e71a3204159b54ce34",
+   "family": "search-xr-aluminum-suspension@2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230127212109"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/dirt-dropbar/gravel/search-xr-aluminum/search-xr-aluminum-105/",
+   "timestamp": "20191213000401",
+   "sha256": "3da65b963022a853c337e370c5e366003bc00e2afa1ac02aa7f7c687a679a73b",
+   "family": "search-xr-aluminum@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821155150"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/gravel/search-xr-aluminum/search-xr-aluminum-105/",
+   "timestamp": "20200810091051",
+   "sha256": "205c691005516610dcd22944567630671e03e659394e3b00311cdde2f42de43d",
+   "family": "search-xr-aluminum@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200810091051"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/dirt-dropbar/gravel/search-xr-aluminum/search-xr-a1/",
+   "timestamp": "20191113122057",
+   "sha256": "1564a344ab23a733c7140148b0a6be6f16f4fe31720774ec72a551ce6b6d7d59",
+   "family": "search-xr-aluminum@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191113122057"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/gravel/search-xr-aluminum/search-xr-a1/",
+   "timestamp": "20211028104251",
+   "sha256": "e0eeeccc348c108e1e2905b8f2e53635519b98f8b494f7b408470ec71768cac9",
+   "family": "search-xr-aluminum@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201001132706"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2021-search-xr-a1/",
+   "timestamp": "20220812031514",
+   "sha256": "f4c5a63d95c913064ad39b26d79b26d9e8477be62ec49b760185ae8cb3fdc69f",
+   "family": "search-xr-aluminum@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220524051528"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2022-search-xr-a1/",
+   "timestamp": "20230923165959",
+   "sha256": "310161239e7cfe6712947b4dee0a731131872466b98c2bf9b1b93f52080b8e42",
+   "family": "search-xr-aluminum@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20221202185826"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2022-search-xr-a1/",
+   "timestamp": "20241101190243",
+   "sha256": "eec37411a50af0c64b46b63d3f01490acea9be04ca9cff7c4109d1a87a648abc",
+   "family": "search-xr-aluminum@2022",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20221202185826"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a2/",
+   "timestamp": "20231027015922",
+   "sha256": "8bdcc676864211e7abdccc6f92ffff6ae426d08fe429ccdf28a85df389cddc50",
+   "family": "search-xr-aluminum@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230127204014"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a2/",
+   "timestamp": "20250803051303",
+   "sha256": "343043bfd864462469097fc40f315870ac7d5a043b9dd09f948a5e1ba86e22a3",
+   "family": "search-xr-aluminum@2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230127204014"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/adventure/search-xr-carbon/search-xr-force-1/",
+   "timestamp": "20180218051338",
+   "sha256": "7c3d4083879644f043c32a4b10ceefa3abfb6a3e858ab3417dbeb046915514cb",
+   "family": "search-xr-carbon@2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170929231322"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/dirt-dropbar/gravel/search-xr-carbon/search-xr-carbon-apex-1/",
+   "timestamp": "20191206123510",
+   "sha256": "5bb9e1ea9b620d6d95654d312479c12395bb6384cec57d64555015f876607f6e",
+   "family": "search-xr-carbon@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821044730"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/gravel/search-xr-carbon/search-xr-carbon-force-1/",
+   "timestamp": "20200813171857",
+   "sha256": "804cac192e39e7106375bd8d2077179a115dfe872aefc880440db733f966ee10",
+   "family": "search-xr-carbon@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200813171857"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/dirt-dropbar/gravel/search-xr-carbon/search-xr-c1/",
+   "timestamp": "20191113121814",
+   "sha256": "91c596228fbe3db7470047633af7ad137140ad17144eb81e28898351ec241ea3",
+   "family": "search-xr-carbon@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191113121814"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/gravel/search-xr-carbon/search-xr-c2/",
+   "timestamp": "20211028113257",
+   "sha256": "9c68840d928dcb41bc9c13fd01daec0a08a02566582ef817572942747444e3b4",
+   "family": "search-xr-carbon@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200929025546"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-carbon/2021-search-xr-c1/",
+   "timestamp": "20220812024740",
+   "sha256": "573a052e47794a30e163378d0358d973987a1566a2fe8f2272f1bf491ad6e6d8",
+   "family": "search-xr-carbon@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220524063347"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-carbon/2022-search-xr-c/",
+   "timestamp": "20230329134225",
+   "sha256": "d5c8463656414af3e8e1a9c29f86d529096ad344640fb3770b36bb06f0af33e5",
+   "family": "search-xr-carbon@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221202202803"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-carbon/2022-search-xr-c/",
+   "timestamp": "20240418045644",
+   "sha256": "f3eb77a426e6d85ae2c0f0377acf157cb02fa4fdac588ae11121f888f89da4ff",
+   "family": "search-xr-carbon@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20221202202803"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/adventure/search-xr-steel/search-xrs-105/",
+   "timestamp": "20180215224304",
+   "sha256": "482c0cca1de3e99b55372a93029c778e889ef0f51829e8b8d64964473a2f4501",
+   "family": "search-xr-steel@2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20171001121230"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/dirt-dropbar/gravel/search-xr-steel/search-xr-steel-rival-1/",
+   "timestamp": "20191117102154",
+   "sha256": "eb6b62aff6b10a6f46e2952d297a83b29067d29faf52cc6f060695f81179e619",
+   "family": "search-xr-steel@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821051344"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/dirt-dropbar/gravel/search-xr-steel/search-xr-s1/",
+   "timestamp": "20191113124915",
+   "sha256": "7580fe3b8e6d98c1fe5f085014778e7d53cb01d35e1e2c8fa801688830373e7c",
+   "family": "search-xr-steel@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191113124915"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/road/gravel/search-xr-steel/search-xr-s1/",
+   "timestamp": "20200516140818",
+   "sha256": "d507d6a9029520bd880c5e7dd61162a741ece42aa4026b1f3a8752b9c54e5f1f",
+   "family": "search-xr-steel@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20200516140818"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/gravel/search-xr-steel/search-xr-s2/",
+   "timestamp": "20211028113621",
+   "sha256": "48e0df0a21224fb2a6afcb06a248f01ba32beafa9899f8fe0d899c67c5e41050",
+   "family": "search-xr-steel@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200929031736"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-steel/2021-search-xr-s1/",
+   "timestamp": "20220524064246",
+   "sha256": "3da73b47be52b060cc2fbc9826fbd9f0b3000dbc7dca63eb95f7e41743f7d1ea",
+   "family": "search-xr-steel@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20220521224604"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-steel/2023-search-xr-s1/",
+   "timestamp": "20230329124829",
+   "sha256": "17ba11ffb70da08bd35a323225c1644d136958efefc67d77d2205310b75b0f82",
+   "family": "search-xr-steel@2023",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221202204537"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/gravel/search-xr-steel/2023-search-xr-s1/",
+   "timestamp": "20241101204251",
+   "sha256": "a495d30ce31f140dc56669ad34aa9375f5e80931caebb8dd7fb614b8f417120a",
+   "family": "search-xr-steel@2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20221202204537"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/pavement/all-road/section-aluminum/section-aluminum-105/",
+   "timestamp": "20191206131641",
+   "sha256": "bf37e7cf6e1ef14e7b94e07bb6167cfb4d27948a326e47ef6a12aaed6ee2767f",
+   "family": "section-aluminum@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822004504"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/pavement/all-road/section-aluminum/section-a1/",
+   "timestamp": "20191206125956",
+   "sha256": "a03ac335e786b52534d843d21876a5ac71acc247b1a812e71eb24d8b6682a58d",
+   "family": "section-aluminum@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191018035622"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/all-road/section-aluminum/section-a2/",
+   "timestamp": "20211028114919",
+   "sha256": "498863299088ac22f12572fceaab96a34459535dab1681b14d7c7282e37b6073",
+   "family": "section-aluminum@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201001121431"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/all-road/section-aluminum/2021-section-a1/",
+   "timestamp": "20230325113411",
+   "sha256": "34a476afed44d68bb50ad43f3be6e02649860b5e7a3ad8c3d91f126bf3abbccd",
+   "family": "section-aluminum@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220524063549"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/pavement/all-road/section-carbon/section-carbon-ultegra-sl/",
+   "timestamp": "20191117101858",
+   "sha256": "5f3b12cc3978cfb2af228a676101ee2588a5675bcd76192c458476e76c31a817",
+   "family": "section-carbon@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821120834"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/all-road/section-carbon/section-carbon-rival/",
+   "timestamp": "20200810083436",
+   "sha256": "c25fa00d45eb6eb46cd0d5cdbeb9158b3296413d818a3e4d91fb51d5fc2a864b",
+   "family": "section-carbon@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200808234445"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/pavement/all-road/section-carbon/section-c1/",
+   "timestamp": "20191206123515",
+   "sha256": "55dd0d88ecdcf1dc0f0bff56af7b57d7468957daf5db1df5193a63c303f70e2e",
+   "family": "section-carbon@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191018033743"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/road/all-road/section-carbon/section-c1/",
+   "timestamp": "20200813165430",
+   "sha256": "9d1c81b2cab088d9518c5dd1a9dd273125eef8466e637d8035229cfc7743ccf3",
+   "family": "section-carbon@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200813165430"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/all-road/section-carbon/section-c3/",
+   "timestamp": "20210928141549",
+   "sha256": "9fa137fea38fd6e7d46751c00b37e475cf36e129642fda21a0821fe40c88dd47",
+   "family": "section-carbon@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201026220606"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/all-road/section-carbon/2021-section-c3/",
+   "timestamp": "20230325103744",
+   "sha256": "edb795c4fea2bd94d9cd29714ce2760481ea59fc5f6455d7731a1a1c0d2d6982",
+   "family": "section-carbon@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220524054012"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/pavement/all-road/section-steel/section-steel-105/",
+   "timestamp": "20191214062901",
+   "sha256": "e568abbd8bad9ae2ce0aa3497d82b504443d4e72883a9a8d3fc05624c40f44e8",
+   "family": "section-steel@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822011642"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/all-road/section-steel/section-steel-frame-fork/",
+   "timestamp": "20200813172808",
+   "sha256": "aeb796be546c9825e498e20a1ea291c3fce6b911f5448336e452004458d6a620",
+   "family": "section-steel@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200813172808"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/pavement/all-road/section-steel/section-s1/",
+   "timestamp": "20191214153729",
+   "sha256": "fb86a98429b17f35bc3dca08ec7e8aedba537f24eab7f2195596317f63b7f5a6",
+   "family": "section-steel@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191018034808"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/road/all-road/section-steel/section-s-frame-fork/",
+   "timestamp": "20200810091028",
+   "sha256": "6fa3949af856c9084a15d097d9e0ca15237cd3249160c0ac39264a343dc3105d",
+   "family": "section-steel@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200810091028"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/all-road/section-steel/section-s2/",
+   "timestamp": "20211028120740",
+   "sha256": "610f6d4fdff5205adc25d71afebf5fe6956e8f6480a2c0ba0b367b3e67a729a1",
+   "family": "section-steel@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201001124501"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/all-road/section-steel/2021-section-s-frame-fork/",
+   "timestamp": "20230325112448",
+   "sha256": "5750b87993eaa579aa041443edeae324b392e1e2bd3746b656bd444c825af16e",
+   "family": "section-steel@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220524062622"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/pavement/road-race/tactic-carbon/tactic-sl-disc-ultegra/",
+   "timestamp": "20191210033823",
+   "sha256": "823017324239cc7c9cd94d4dc5d49f61db5add2f64cecb2ac95786bbbebf85f3",
+   "family": "tactic-sl-disc@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825011903"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/pavement/road-race/tactic-sl-disc-carbon/tactic-sl-disc-ultegra/",
+   "timestamp": "20191208050804",
+   "sha256": "2d19e96d6f53d018647e6cea17bf8064f4f02b030dea2382c1f02e1eee22fe29",
+   "family": "tactic-sl-disc@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821111930"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/road-race/tactic-sl-disc-carbon/tactic-sl-disc-ultegra/",
+   "timestamp": "20200813172649",
+   "sha256": "33690b9d7ebc95db01549ca8fbe024462f609fa844411f93afebf8de0a3398b3",
+   "family": "tactic-sl-disc@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200813172649"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/pavement/road-race/tactic-carbon/tactic-slr-framefork/",
+   "timestamp": "20191206024107",
+   "sha256": "ba3394e47116d7c10ac51d59224666650a63bc72d1ef60e90e3d2d343b906dbe",
+   "family": "tactic-slr@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190824000232"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/race/tactic/tactic-105/",
+   "timestamp": "20180303021305",
+   "sha256": "b6e50a4fce72fad04edca420e4846afd3147ae46578e1024d8bfd8ffb38d169f",
+   "family": "tactic@2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20150406015817"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/pavement/road-race/tactic-carbon/tactic-105/",
+   "timestamp": "20191208045320",
+   "sha256": "b087c066988ec74f8a4a83f3d9f6e335cb26c1b7b40e3746f4a2152530769b17",
+   "family": "tactic@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821111650"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/road-race/tactic-carbon/tactic-ultegra-di2/",
+   "timestamp": "20200813174158",
+   "sha256": "f8910211ae0935a7a89e3c4931cee9fa2b6d703045b05e645202e3a104e8e00b",
+   "family": "tactic@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200813174158"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/dirt-dropbar/cyclocross/threshold-aluminum/threshold-a-apex-1/",
+   "timestamp": "20191122232329",
+   "sha256": "45baab4d8ffa673d026d62f96ccc07b8d211c1e7895412424bf315ad2717929b",
+   "family": "threshold-aluminum@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718214820"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/dirt-dropbar/cyclocross/threshold-aluminum/threshold-aluminum-apex-1/",
+   "timestamp": "20191206131929",
+   "sha256": "4a74bbae6e6be5a85d4768107a6e9287ff2b5d075c34e9c27c406da8980a381b",
+   "family": "threshold-aluminum@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821160422"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/cyclocross/threshold-aluminum/threshold-aluminum-apex-1/",
+   "timestamp": "20200813163848",
+   "sha256": "b486c7bf337b3de0f9526a85662c02f915c5de4a558d347e51a7eaeb979271f3",
+   "family": "threshold-aluminum@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200813163848"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/dirt-dropbar/cyclocross/threshold-aluminum/threshold-a1/",
+   "timestamp": "20191115074224",
+   "sha256": "9df07b394feb904577c2b837e33bf154fa89545b9ee3d03ffcbb05ba6fa129c2",
+   "family": "threshold-aluminum@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190918194606"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/road/cyclocross/threshold-aluminum/threshold-a1/",
+   "timestamp": "20201001115611",
+   "sha256": "709a06f332e2593f8f3df7075c634ed700aad0f778e6b2986ddd503a7091514f",
+   "family": "threshold-aluminum@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001115611"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/cyclocross/threshold/threshold-a1/",
+   "timestamp": "20211028112125",
+   "sha256": "6b6fb75c82b09c43f572456dd8393adfe46ab7ae854f53a2187b4f6c3b873417",
+   "family": "threshold-aluminum@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201028141746"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/cyclocross/threshold/2021-threshold-a1/",
+   "timestamp": "20220812025527",
+   "sha256": "e854df449e3d770686d8f1c93861bfa933680193557ddd776b881343794a44a8",
+   "family": "threshold-aluminum@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220521213822"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/dirt-dropbar/cyclocross/threshold-carbon/threshold-c-105/",
+   "timestamp": "20191210024954",
+   "sha256": "a507498de4ef04ffee410cc8b6979dfed57cfa881c8fc0e6804e5ad572a4fcf4",
+   "family": "threshold-carbon@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825224457"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/dirt-dropbar/cyclocross/threshold-carbon/threshold-carbon-apex-1/",
+   "timestamp": "20191210022943",
+   "sha256": "7bc8889c2724d7a5da9dc64c59725d57f78b3d09475c03394cdb4e6b9e32c644",
+   "family": "threshold-carbon@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822004108"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/dirt-dropbar/cyclocross/threshold-carbon/threshold-c1/",
+   "timestamp": "20191117102137",
+   "sha256": "f7a21cf59d3f314f6950ace6e524e982ac2ef4660f4bba7b32a35fcb01e93294",
+   "family": "threshold-carbon@2020",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190918195004"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2020/road/cyclocross/threshold-carbon/threshold-c1/",
+   "timestamp": "20201001125020",
+   "sha256": "6028851b1b40d15c454cd9d27df41a67b8b404067829f85a8e989ced9193dd11",
+   "family": "threshold-carbon@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001125020"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2021/road/cyclocross/threshold/threshold-c-frame-fork/",
+   "timestamp": "20211017092916",
+   "sha256": "da86731b7ffbf1599c985abd44e9e213e12d70f8612db6e6e90f0291b19134a0",
+   "family": "threshold-carbon@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201026212454"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/cyclocross/threshold/2021-threshold-c-frame-fork/",
+   "timestamp": "20220524052155",
+   "sha256": "a0af6cf372e16b73ffe80c58a0cfeaae54ec8945b801c3c03971bd3c02412368",
+   "family": "threshold-carbon@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20220524052155"
+  },
+  {
+   "url": "https://www.norco.com/bikes/road/endurance/valence-alu/valence-a-sora/",
+   "timestamp": "20180225124855",
+   "sha256": "ca2b26ff870b8ec4a60b3e5ab7638ca1d66273435a5fa5e98051cdc695109f17",
+   "family": "valence-aluminum@2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170503153018"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/pavement/endurance/valence-aluminum/valence-aluminum-105/",
+   "timestamp": "20191213011442",
+   "sha256": "719c4967c2bc3dcbd67b9494d6a851f382afaa14f6f66564ac4919e2bca0675e",
+   "family": "valence-aluminum@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821164236"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/road/endurance/valence-aluminum/valence-aluminum-105/",
+   "timestamp": "20200810074953",
+   "sha256": "cdc21378b89b494d755e4d864e49d7b1f22880abdf14e4c200d852821d595c8b",
+   "family": "valence-aluminum@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200810074953"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/pavement/endurance/valence-carbon/valence-c-105/",
+   "timestamp": "20191122231744",
+   "sha256": "e51665658b3758c97e10ffdd4f7ec60c3fefa6a3b08a11e245b06b22cd0ab6d8",
+   "family": "valence-carbon@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718214450"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2019/pavement/endurance/valence-carbon/valence-carbon-105/",
+   "timestamp": "20191210021404",
+   "sha256": "7b263a93ed2ed1e5e548dec52d9a4718de4557f97f15efb76c0111d74c719ddc",
+   "family": "valence-carbon@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190821045622"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/pavement/endurance/valence-aluminum/valence-disc-a-105-mech/",
+   "timestamp": "20191212233234",
+   "sha256": "2d36e008a1d3e8c199682489f58a5fe876ea8d57e724356c0f02c17912b1e020",
+   "family": "valence-disc-aluminum@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825221117"
+  },
+  {
+   "url": "https://www.norco.com/bikes/2018/pavement/endurance/valence-carbon/valence-disc-c-105/",
+   "timestamp": "20191122231024",
+   "sha256": "2590863ff18c78d831603c31f250c5695aa81dda63c3b3bdc1a9e36436ea3cb1",
+   "family": "valence-disc-carbon@2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718213402"
+  }
+ ]
+}

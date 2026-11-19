@@ -1,0 +1,744 @@
+{
+ "brand": "Fuji",
+ "file": "fuji",
+ "pages": [
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/cyclocross/altamira-cx/altamira-cx-1-3",
+   "timestamp": "20191022030620",
+   "sha256": "b88071579c3051f1c5ca5a0a228a410f8175264f08e23d037970e086a12de527",
+   "family": "altamira-cx",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170512042700"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/cyclocross/altamira-cx/altamira-cx-1-1",
+   "timestamp": "20211205010355",
+   "sha256": "d00253582fb44c943c0060f3caf8b904a2c391312f4767255a340c4e4a3d3404",
+   "family": "altamira-cx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20170512041603"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/altamira-cx-114",
+   "timestamp": "20230601081524",
+   "sha256": "1364ed629416728e575eb4465cbbd41c1cb6fe2850c12319ef4caa0cb50123a1",
+   "family": "altamira-cx",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190325094950"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/brevet/brevet-1-1",
+   "timestamp": "20191220040157",
+   "sha256": "8a8683633e8169df6e14d0a61b65385e68a7a412864d4442abc61cf68fea53c6",
+   "family": "brevet",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170906192515"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/womens/brevet/brevet-1-1",
+   "timestamp": "20200628155818",
+   "sha256": "0b1eeccf8dbe032ba706227cb3fbe875092d00c267bc5ffef6b12389d31619dc",
+   "family": "brevet",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170909010951"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2019/Fuji/brevet-11",
+   "timestamp": "20231211124556",
+   "sha256": "7fd6fef774a688d5d7380941bdac596d782ef7ac811d95fce5536671f00fc65f",
+   "family": "brevet",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191122111213"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/cyclocross/cross/cross-1-1",
+   "timestamp": "20191022020843",
+   "sha256": "5c519004eceee408797ca58eabd8664376105c64393c56dd9e539ffc3de18ee2",
+   "family": "cross",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170521072707"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/cyclocross/cross/cross-1-3",
+   "timestamp": "20211205014715",
+   "sha256": "0b69556fc1921ca90f11461fe6a3549b41fa00c485add8a7041b5e71e49b69e1",
+   "family": "cross",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191112224406"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2021/Fuji/cross-136",
+   "timestamp": "20230410132725",
+   "sha256": "ff7418a59e9aa530dcc5442139e2c0784011c344538393df80b0fa5ebdb41674",
+   "family": "cross",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220123033020"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/cross-154",
+   "timestamp": "20250818112911",
+   "sha256": "5a78375440bdd872acc9969f83132b767a58e1e796b14abf1c63447b12f17bc2",
+   "family": "cross",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210510215209"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/womens/cross-womens/cross-1-7-w",
+   "timestamp": "20180816044834",
+   "sha256": "1b093dffd1706812c40d7a4556bbab9c790a06bed67b1b098ad573265b9ff4ee",
+   "family": "cross-w",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20171005160845"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/cross-17-w",
+   "timestamp": "20210728234212",
+   "sha256": "4e51611a681c0524902957d9988e37677d5c4d013de8675da220ddc586aaaa89",
+   "family": "cross-w",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201112014545"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/cross-17-w",
+   "timestamp": "20230610110527",
+   "sha256": "4e51611a681c0524902957d9988e37677d5c4d013de8675da220ddc586aaaa89",
+   "family": "cross-w",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201112014545"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/cross-17-w",
+   "timestamp": "20250826180902",
+   "sha256": "4e51611a681c0524902957d9988e37677d5c4d013de8675da220ddc586aaaa89",
+   "family": "cross-w",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201112014545"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/finest/finest-1-5-disc",
+   "timestamp": "20200501225109",
+   "sha256": "03f9e3cc227f8ebecb81b45a352fdc114105a6e5a8e060a45800f66fc2149398",
+   "family": "finest",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170611095526"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/finest/finest-1-9-disc",
+   "timestamp": "20191220041536",
+   "sha256": "d8b7562f8fa88dfc793a405ae594e5e51892d0a704a683d826198afcabead3f9",
+   "family": "finest",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20181213101720"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/finest-13-disc3",
+   "timestamp": "20231211121640",
+   "sha256": "63502eb20d9b253f15c2eaa0796441ea601daf5bf7091ca837294949693cefd4",
+   "family": "finest",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20190228205820"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/finest-13-disc3",
+   "timestamp": "20250827101554",
+   "sha256": "63502eb20d9b253f15c2eaa0796441ea601daf5bf7091ca837294949693cefd4",
+   "family": "finest",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20190228205820"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/finest/finest-2-1",
+   "timestamp": "20200501225120",
+   "sha256": "306b7f6762a26d456735c0d0450ed17e4b9e569fdc7c15265404f086077257b5",
+   "family": "finest-2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170516103757"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/finest/finest-2-3",
+   "timestamp": "20191220042415",
+   "sha256": "ea56d9dec0282ba9fad35537bbe22e1ddf224d9ae8c7aa383f10f2a7310de217",
+   "family": "finest-2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170327021009"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/finest-213",
+   "timestamp": "20230608220332",
+   "sha256": "ba6db1c39bc4c8f32ab67cc1b8c448b5ab786620a75a917cc85ef527af815c13",
+   "family": "finest-2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210508195445"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/finest-25-le-23",
+   "timestamp": "20250810185221",
+   "sha256": "9ef3f02897c72a71b03b1180bbea788c3cbb1de93296c4a53493cff8170053e8",
+   "family": "finest-2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204091326"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/gran-fondo/gran-fondo-1-1",
+   "timestamp": "20191220040110",
+   "sha256": "04d43185240b49454911405a64d2ffee4d7613a4511f42cf65470a9a4581ed26",
+   "family": "gran-fondo",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20171001220340"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/gran-fondo/gran-fondo-1-1",
+   "timestamp": "20211205013100",
+   "sha256": "f9c8f8974b0ae7a43323e93614b2f90964ab81c75e8542c032c619af9bb0e006",
+   "family": "gran-fondo",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20171001220340"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/2022-gran-fondo-1-3",
+   "timestamp": "20230928115747",
+   "sha256": "e781505004a98f6e4f35560aa8fb8e6360810dd835af186fdf397dbcdaf3164f",
+   "family": "gran-fondo",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230208143334"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/gran-fondo-11-22",
+   "timestamp": "20250810194619",
+   "sha256": "cc97ab513dc10e656d315f0fb0285ac088a2077a83e68a6419511fde29cbd79e",
+   "family": "gran-fondo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204101935"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/gran-fondo-classico/gran-fondo-classico-1-1",
+   "timestamp": "20191220040134",
+   "sha256": "12b8c0a83d0437b08e564ccf0b979933a374ec91fe2f5bbcd343721bcff94e64",
+   "family": "gran-fondo-classico",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170508022219"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/gran-fondo-classico/gran-fondo-classico-1-3",
+   "timestamp": "20200628160601",
+   "sha256": "cb1a7037ef1d19a5298a55dfdcd39b3baee116c71e37c143d89bb82a26883fc9",
+   "family": "gran-fondo-classico",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170924074352"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2019/Fuji/gran-fondo-classico-113",
+   "timestamp": "20231210081903",
+   "sha256": "01e1a029d9d95ce935f3514238398c0623964dc3a326566a5554cc6e6819d9a6",
+   "family": "gran-fondo-classico",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20191122105332"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/gran-fondo-classico-133",
+   "timestamp": "20250314190442",
+   "sha256": "f754d975e75f7df34361a4deca648ac329e6a7e6c6a0bdaedab42c67693c5c5a",
+   "family": "gran-fondo-classico",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20190228205831"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari/jari-1-5",
+   "timestamp": "20191220042454",
+   "sha256": "e8999402282e8e12e2d2a57769ada11b46217c198a9c18f50561fe6f98afb53a",
+   "family": "jari",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20161115233815"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari/jari-2-3",
+   "timestamp": "20211205014519",
+   "sha256": "dee529fdc489ddecf7f6abb4f612a11a9532fc7f7f13cd364d461afef79664c7",
+   "family": "jari",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20181020070513"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari/jari-2-5",
+   "timestamp": "20221208072146",
+   "sha256": "03464b970e8bf4642f043f8ff1a50ec01d9a7caa16fe0309c526253e58e778de",
+   "family": "jari",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20181025103738"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/jari-13-22",
+   "timestamp": "20250810192233",
+   "sha256": "ff136b1a5c95d16b4e34ed844e7cfd3c99b020fc3ca9d74f197636505c50abb5",
+   "family": "jari",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204095641"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/jari-25-22",
+   "timestamp": "20260617061655",
+   "sha256": "a9248684bd30c537eac50d7af206da35f03f10f510f7db9d399f31a66e8cb97e",
+   "family": "jari",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231018093628"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari-carbon/jari-carbon-1-1",
+   "timestamp": "20191220040240",
+   "sha256": "192b24ba7bd74fa5ea33d3f1cd5471b75bb919bcbbef6e803332c3d680555758",
+   "family": "jari-carbon",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191112224310"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari-carbon/jari-carbon-1-3",
+   "timestamp": "20210916195033",
+   "sha256": "e0318b29f85e259512ea3428f2688892811ea9bce527104cf3c0abb9a4cce2dd",
+   "family": "jari-carbon",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191112224315"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2021/Fuji/jari-carbon-113",
+   "timestamp": "20231211220044",
+   "sha256": "33e521e5dc04a233515362b2d2a51139427975c986b3e4effd2243f92f0b3cc8",
+   "family": "jari-carbon",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220123024527"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/jari-carbon-11-24",
+   "timestamp": "20260513193339",
+   "sha256": "aa98ffe72ee6efd12847309b5cf84ce525ca75007598fc867b15fa20e275b3e3",
+   "family": "jari-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250327172046"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/jari-carbon-13-22",
+   "timestamp": "20251009042616",
+   "sha256": "cb3505599b5253bfcedc8f67482ea92e4dc443facc2070438abff16f75d42a77",
+   "family": "jari-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241009170912"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/2022-jari-carbon-cx",
+   "timestamp": "20230928121359",
+   "sha256": "d391a889a7aab567d0bb9d2435b028684caa6853999d51405f5cd7e7e69b1a43",
+   "family": "jari-carbon-cx",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230811045945"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/jari-carbon-cx-22",
+   "timestamp": "20250810200504",
+   "sha256": "714af669faf864a03bcf2bae5eab2e9333feb430ae7bb70f8a4f84d746713f65",
+   "family": "jari-carbon-cx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204094411"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/jari-carbon-cx-22",
+   "timestamp": "20260323092419",
+   "sha256": "5c15ec2cefb3db0ef54a4116bdc9898021190d1adda99edf5bdfeef0f42a77c5",
+   "family": "jari-carbon-cx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204094411"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/kasane-13-22",
+   "timestamp": "20260212052651",
+   "sha256": "6307851a643a5080f6f2b9f8959effd25ec83846a70a37602878461aeb24177c",
+   "family": "kasane",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250327171632"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/kasane-21-22",
+   "timestamp": "20250731144657",
+   "sha256": "32e48e01b1e8b6531781e74e7f230f5144d69563f8631ad347b1b02385ad702e",
+   "family": "kasane",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241108124427"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/roubaix/roubaix-1-3",
+   "timestamp": "20191022035752",
+   "sha256": "a4cefb009e29a36f742179402cd84c59e414a554fa14624bf13421fef97d9ce5",
+   "family": "roubaix",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170507054104"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-115",
+   "timestamp": "20210728175611",
+   "sha256": "cb9b35f77a625724e28a64d97b170107e935b7df1acf7d8dec528a84479d3422",
+   "family": "roubaix",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20180918025055"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-115",
+   "timestamp": "20231211230719",
+   "sha256": "cb9b35f77a625724e28a64d97b170107e935b7df1acf7d8dec528a84479d3422",
+   "family": "roubaix",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20180918025055"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-134",
+   "timestamp": "20240118171737",
+   "sha256": "0a8e66e855d4138c68a57aa42a341927d7379af7014439b1a7005db54b2d3cbf",
+   "family": "roubaix",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20180918025111"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-11-disc2",
+   "timestamp": "20191222005156",
+   "sha256": "411f63580905d6d22adb0fd004319b3cce89897d916d2e8d38799670678f0e4e",
+   "family": "roubaix-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20181002051402"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-11-disc2",
+   "timestamp": "20210802122332",
+   "sha256": "8f5db51984c0cb35369d2f5587aca2327bb33670fd171d12d07f228b66249976",
+   "family": "roubaix-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20181002051402"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-13-disc2",
+   "timestamp": "20230927211821",
+   "sha256": "7233984af22e96fb238b804c9e2488352a1a14d213b783e2dd92a1e9af87b268",
+   "family": "roubaix-disc",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20181002101136"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-13-w",
+   "timestamp": "20191222005754",
+   "sha256": "c4dda8675d741c2a50f371cc1f01a735d1ffc1d9de8243ae136f6065bdd47c48",
+   "family": "roubaix-w",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20181002051442"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-11-w",
+   "timestamp": "20210728232548",
+   "sha256": "dbe1e1667abed60ed5cc2ca96e90578350ef3b55bdd63dd4f3017354d7633a45",
+   "family": "roubaix-w",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20181002051407"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/roubaix-11-w",
+   "timestamp": "20230930160148",
+   "sha256": "dbe1e1667abed60ed5cc2ca96e90578350ef3b55bdd63dd4f3017354d7633a45",
+   "family": "roubaix-w",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20181002051407"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/sl/sl-1-1",
+   "timestamp": "20191222005825",
+   "sha256": "6cb0deeae888a9bba00eb34571657a3d150d21a654946676404297999b0a2c2f",
+   "family": "sl",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20161220014515"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/sl/sl-1-1",
+   "timestamp": "20211018124542",
+   "sha256": "a4d31370fe2f731c305f6329d30a24bbecfad75b0ddf51b881f4feac5024ea27",
+   "family": "sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20161220014515"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2021/Fuji/sl-215",
+   "timestamp": "20230321041001",
+   "sha256": "c0a0c0d05791dfa87afa3d1a5ecdca5e4df199a47c5ee5a886aff28a47076c56",
+   "family": "sl",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220123023714"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/sl-a/sl-a-1-1",
+   "timestamp": "20211205015119",
+   "sha256": "54b5b1a7d0d755fa59411621eba73f39eb3cd33071aa00625665c829f86bb9cb",
+   "family": "sl-a",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201021015445"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/2022-sl-a-1-3",
+   "timestamp": "20230925125421",
+   "sha256": "1fc4a7a63e16b989cee87db53a97e20b468f38f4ba1c89b0df99597015d7601f",
+   "family": "sl-a",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230208132928"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/sl-a-disc-22",
+   "timestamp": "20251106181527",
+   "sha256": "f611ed155bbb3689f98ee02be0a1863f72bf1c2384782443e2617aaa7c819755",
+   "family": "sl-a",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204090643"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/sl-a-disc-22",
+   "timestamp": "20260222032946",
+   "sha256": "f611ed155bbb3689f98ee02be0a1863f72bf1c2384782443e2617aaa7c819755",
+   "family": "sl-a",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204090643"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/sportif/sportif-2-1",
+   "timestamp": "20191220042033",
+   "sha256": "464c1be3872f46efad80210e6f078cd51305ab95d9ca6be2331ca6cf261f8926",
+   "family": "sportif",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170501231543"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/sportif/sportif-2-3",
+   "timestamp": "20211205020542",
+   "sha256": "562df9cbffb962e5762141432f221fae896458a3eca6c60d25895e5c56fd619b",
+   "family": "sportif",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20161203015724"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/2021-sportif-2-3",
+   "timestamp": "20231001042101",
+   "sha256": "7d2ab44de32c9ae32362ff2223c0a1511b7236ff5a51192d12751b31f5c47a91",
+   "family": "sportif",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230208124139"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/sportif-23-21",
+   "timestamp": "20250820192722",
+   "sha256": "d4e5adc7cd92d1bba12cfb3aab7c563c87c2f8ded183b4077b1ee884ebba0f09",
+   "family": "sportif",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204100224"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/sportif/sportif-1-5-disc",
+   "timestamp": "20191220040847",
+   "sha256": "8cd70462051cb62aea49716fec00ca2b713770a16f2de1edff099996b7e9ed06",
+   "family": "sportif-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170326105838"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/endurance/sportif/sportif-1-3-disc",
+   "timestamp": "20210916192047",
+   "sha256": "143bb64117c228a18113fd4846b8b5bef54f8db6c67bfa67bdee903dfd8d39dc",
+   "family": "sportif-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20170512030717"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/2022-sportif-1-1-disc",
+   "timestamp": "20231001045331",
+   "sha256": "84becf69488646c032e32b24a9f104b1871fb0b60fb52d03a72507b25a056bfc",
+   "family": "sportif-disc",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230202011335"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/sportif-11-disc-22",
+   "timestamp": "20251119192148",
+   "sha256": "96b29a361b96394886fbc62a8f1cc7771e5e5bc79b54c7913ab2150050be14af",
+   "family": "sportif-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204103328"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/supreme/supreme-1-1",
+   "timestamp": "20191220040038",
+   "sha256": "831deacec609988844aa2806e35a9903a32fc202e1da16289adfd91dec47a5b5",
+   "family": "supreme",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170612154904"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/supreme/supreme-1-1",
+   "timestamp": "20211018132821",
+   "sha256": "7b4b509486c814c630e56f9b9de347a9c4893a8719feea79f6ab8e5fa7775673",
+   "family": "supreme",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20170612154904"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/supreme/supreme-1-1",
+   "timestamp": "20221208054739",
+   "sha256": "d950ac362e330db82712ac5b1d4c9354b7d06da4a455593d212c439ea405ac14",
+   "family": "supreme",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20170612154904"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/touring/touring",
+   "timestamp": "20191220040951",
+   "sha256": "5bd8f9fb2d6a072c80c11824b450d5666b7948ae49ee1afa082392bab1c515c6",
+   "family": "touring",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170902054151"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/touring/touring",
+   "timestamp": "20200803152757",
+   "sha256": "f78cdcb9ef0f967074cb86366d789018351c0bd0c13e4136aea95d696f0aca66",
+   "family": "touring",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20170902054151"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/2021-touring-disc",
+   "timestamp": "20230715065651",
+   "sha256": "d38494c588cf53470277649b99e1fab3711246b82595b4cdb2750fdea7ee34e0",
+   "family": "touring",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230208144034"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/touring-disc-21",
+   "timestamp": "20251213220945",
+   "sha256": "7db606730f8c74100748606e40cde6aaa1862489d340aa04056388d21df2038e",
+   "family": "touring",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204100944"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/touring-disc-21",
+   "timestamp": "20260513155303",
+   "sha256": "941478f609fd05ff0d3e2e221142a17a70bd5df66c04115d9ce54aa2024fb704",
+   "family": "touring",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204100944"
+  },
+  {
+   "url": "https://archive.fujibikes.com/2018/Fuji/transonic-134",
+   "timestamp": "20191222001653",
+   "sha256": "b0ce5e70513fae9cfa95c89f888dda14cf1d042a03262ff45d183228d21b8f42",
+   "family": "transonic",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20181002101147"
+  },
+  {
+   "url": "https://www.fujibikes.com/usa/bikes/road/competition/transonic/transonic-2-1",
+   "timestamp": "20210916194953",
+   "sha256": "70f0c202a3e5a610a6d232727754c87b783fc22363b2160effd07831e3c976b4",
+   "family": "transonic",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20161204144552"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/2022-transonic-1-3",
+   "timestamp": "20231001050556",
+   "sha256": "11a82288e8fbb11f952b535ad4956a91cb09c425c702195587816866851f17f9",
+   "family": "transonic",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230202012238"
+  },
+  {
+   "url": "https://www.fujibikes.com/products/transonic-11-22",
+   "timestamp": "20250914203445",
+   "sha256": "7a0a5544410f82ee3b83a12e59a873b3c2b5a137d1aee7377699eb8f869be059",
+   "family": "transonic",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231204091734"
+  }
+ ]
+}

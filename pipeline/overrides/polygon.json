@@ -1,5 +1,128 @@
 {
  "manual": [],
- "exclude": [],
- "models": {}
+ "exclude": [
+  "https://www.polygonbikes.com/my/bikes/description/2018-bend-riv"
+ ],
+ "models": {
+  "Helios A0": {
+   "model": "Helios A",
+   "aliases": [
+    "Helios A0"
+   ]
+  },
+  "Helios A7": {
+   "model": "Helios A",
+   "aliases": [
+    "Helios A7"
+   ]
+  },
+  "Helios A8": {
+   "model": "Helios A",
+   "aliases": [
+    "Helios A8"
+   ]
+  },
+  "Helios A9": {
+   "model": "Helios A",
+   "aliases": [
+    "Helios A9"
+   ]
+  },
+  "Helios A7X": {
+   "model": "Helios A",
+   "aliases": [
+    "Helios A7X"
+   ]
+  },
+  "Helios A8X": {
+   "model": "Helios A",
+   "aliases": [
+    "Helios A8X"
+   ]
+  },
+  "Helios A9X": {
+   "model": "Helios A",
+   "aliases": [
+    "Helios A9X"
+   ]
+  },
+  "Tambora G4": {
+   "model": "Tambora G",
+   "aliases": [
+    "Tambora G4"
+   ]
+  },
+  "Tambora G5": {
+   "model": "Tambora G",
+   "aliases": [
+    "Tambora G5"
+   ]
+  },
+  "Tambora G7": {
+   "model": "Tambora G",
+   "aliases": [
+    "Tambora G7"
+   ]
+  },
+  "Tambora G8X": {
+   "model": "Tambora G",
+   "aliases": [
+    "Tambora G8X"
+   ]
+  },
+  "Tambora A4": {
+   "model": "Tambora A",
+   "aliases": [
+    "Tambora A4"
+   ]
+  },
+  "Tambora A5": {
+   "model": "Tambora A",
+   "aliases": [
+    "Tambora A5"
+   ]
+  },
+  "Tambora A9X": {
+   "model": "Tambora A",
+   "aliases": [
+    "Tambora A9X"
+   ]
+  },
+  "Strattos S2": {
+   "model": "Strattos S2/S3",
+   "aliases": [
+    "Strattos S2"
+   ]
+  },
+  "Strattos S3": {
+   "model": "Strattos S2/S3",
+   "aliases": [
+    "Strattos S3"
+   ]
+  },
+  "Strattos S4": {
+   "model": "Strattos S4/S5",
+   "aliases": [
+    "Strattos S4"
+   ]
+  },
+  "Strattos S5": {
+   "model": "Strattos S4/S5",
+   "aliases": [
+    "Strattos S5"
+   ]
+  },
+  "Strattos S7": {
+   "model": "Strattos S7/S8",
+   "aliases": [
+    "Strattos S7"
+   ]
+  },
+  "Strattos S8": {
+   "model": "Strattos S7/S8",
+   "aliases": [
+    "Strattos S8"
+   ]
+  }
+ }
 }

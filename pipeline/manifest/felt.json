@@ -1,0 +1,708 @@
+{
+ "brand": "Felt",
+ "file": "felt",
+ "pages": [
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/aero/ar1.aspx",
+   "timestamp": "20180505163312",
+   "sha256": "4e708869e13ca82d1fc4a7f003287ba39ee85d477c0efe7fc30a36dfc0db105e",
+   "family": "ar",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20160315045651"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/ar-aero-road/ar-advanced-ultegradi2.html",
+   "timestamp": "20251217052525",
+   "sha256": "ce504183ad87fca14bc8709e4470d01504367049b431f9346fcb243ad12815f2",
+   "family": "ar-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240421195723"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/ar-aero-road/ar-advanced-105-di2.html",
+   "timestamp": "20260118180226",
+   "sha256": "ac0d0112046a9c652a7112338837136f83d88bc50161bcab0fc21d741fa2abb9",
+   "family": "ar-advanced-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241010212141"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/ar-aero-road/ar-advanced-ultegra.html",
+   "timestamp": "20251007130604",
+   "sha256": "0386beb187ee5d5a0d74f9c1b12861965e8aa0e75136b69e4195bc728618df9f",
+   "family": "ar-advanced-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241010211818"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/ar-aero-road/ar-advanced-105.html",
+   "timestamp": "20251214082118",
+   "sha256": "fa18188672aaee39e4d003de9842bac9f24636cc97d4888bb35d2891f35ba3e1",
+   "family": "ar-advanced-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250615215046"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/ar-aero-road/ar-frd-ultimate-duraacedi2.html",
+   "timestamp": "20251211124529",
+   "sha256": "3a6b68b0388e32f5570ed45309b8e333cce1670bc079379708a28b468e4657c3",
+   "family": "ar-frd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240424161753"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/ar-aero-road/ar-frd-ultimate-duraacedi2.html",
+   "timestamp": "20251207065434",
+   "sha256": "86b6543e5d32aa2f7699ea142de684e3d91efa4b6f5cf56f021699200690803e",
+   "family": "ar-frd-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241010200406"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/ar-aero-road/ar-frd-ultimate-frame.html",
+   "timestamp": "20260116130512",
+   "sha256": "0ca8ec177ff987410864377d5a8c327ed3aa64f314f6443e1f98cd2c7102e19f",
+   "family": "ar-frd-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241010205548"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/ar-aero-road/ar-frd-ultimate-duraacedi2.html",
+   "timestamp": "20251210091404",
+   "sha256": "b7d82a441569a918984ac880cb02384604d82631499caf628f0b762fb61fcb3c",
+   "family": "ar-frd-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250623231101"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-gravel/breed-20.html",
+   "timestamp": "20240119034427",
+   "sha256": "b13468c26c1956a15e3015520d301ae773c4977e6492ecafb7d170e683bc5dc1",
+   "family": "breed-20",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20240119034427"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/gravel-adventurebikes/breed-gravel/breed-20.html",
+   "timestamp": "20250617172611",
+   "sha256": "c6fa3430b0d445d1498bb615d9dc1353e423f0165fe3a20a6657cc369f468d1f",
+   "family": "breed-20-2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20250617172611"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/gravel-adventurebikes/breed-gravel/breed-20.html",
+   "timestamp": "20260121190719",
+   "sha256": "c78aebfa6d5dc05057e8e1559461287d69e5c84234c68266d7a4e90450411014",
+   "family": "breed-20-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617172611"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/breed-gravel/breed-20.html",
+   "timestamp": "20251212010746",
+   "sha256": "89777db2eaeb1419df29778f836b92ba3c4b048a4fce23746ffa938c53e065e0",
+   "family": "breed-20-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617181619"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-gravel/breed-30.html",
+   "timestamp": "20250212065120",
+   "sha256": "ecd732239df7ba4290d0402ebcd2baa135d5048c9450be4c3b619b03e2f5d401",
+   "family": "breed-30",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240424151233"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/gravel-adventurebikes/breed-gravel/breed-30.html",
+   "timestamp": "20250615213718",
+   "sha256": "4dd8fb19765ba43641bf4487487c576cc68826c04ab67be9f027073bd81c45a9",
+   "family": "breed-30-2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20250615213718"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/gravel-adventurebikes/breed-gravel/breed-30.html",
+   "timestamp": "20260121193401",
+   "sha256": "3a5e3b89fdefef5c7631adbe207d43dcc58eee5c8a43e0a32480f4a00b2f4086",
+   "family": "breed-30-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250615213718"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/breed-gravel/breed-30.html",
+   "timestamp": "20250620190609",
+   "sha256": "d64f7566b6b49631085bfee2139619a87a89cc68ccb36f9289f7d73121134207",
+   "family": "breed-30-2024",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20250620190609"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/breed-gravel/breed-30.html",
+   "timestamp": "20260122063748",
+   "sha256": "b9a191c7447aa157c9b28c5e4442244379e24d2cb9ec15094141134634061de4",
+   "family": "breed-30-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250620190609"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-carbon/breed-advanced-grx610.html",
+   "timestamp": "20251110132423",
+   "sha256": "ceffc4162f9ded8a149017098a0e18e4004f260d56b32b6ef022beb7bb9df49e",
+   "family": "breed-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240418102658"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-carbon/breed-advanced-grx610.html",
+   "timestamp": "20260216022831",
+   "sha256": "ceffc4162f9ded8a149017098a0e18e4004f260d56b32b6ef022beb7bb9df49e",
+   "family": "breed-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240418102658"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/gravel-adventurebikes/breed-carbon/breed-advanced-grx600.html",
+   "timestamp": "20251211204903",
+   "sha256": "b9453d738e4649866438786bda8d90a2d37f3efae64721345659cf5b78e11b8f",
+   "family": "breed-advanced-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617164611"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/breed-carbon/breed-advanced-grx610.html",
+   "timestamp": "20260113225600",
+   "sha256": "b1fa3000bdf329bbcb2602ce77cd02a4c8f468821203264c7e79684eec5eb107",
+   "family": "breed-advanced-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617183023"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/breed-carbon/breed-advanced-grx820.html",
+   "timestamp": "20251211215328",
+   "sha256": "a3459301e69bba1344f84873e4e8962eba9e35df6adc374407a025100e5b6e52",
+   "family": "breed-advanced-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250623223553"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-carbon/breed-frd-un1td-lesramredxploraxs.html",
+   "timestamp": "20251205235453",
+   "sha256": "ea823935f943d60489f0e3e0906d6956c83fc0b8dc23cb8100d262a48fe30286",
+   "family": "breed-frd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250420033433"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/breed-carbon/breed-frd-un1td-lesramredxploraxs.html",
+   "timestamp": "20260209173139",
+   "sha256": "dc9e0a11e0ef97e742c49fe17f6a57bc78e2e837d071662649c67ec08f03ccdd",
+   "family": "breed-frd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250420033433"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/broam-adventure/broam-30.html",
+   "timestamp": "20250206164606",
+   "sha256": "e3d3e4aaf11d1403ed0bfeb684a59031e2984434b3656222bcd2adf04c201bd0",
+   "family": "broam-30",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240612190818"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/gravel-adventurebikes/broam-adventure/broam-30.html",
+   "timestamp": "20251209223507",
+   "sha256": "bed3b9db338f0a3cb03b1d387ecd6c118ca78eda03df6a7b9f538a12820c44fd",
+   "family": "broam-30-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613190139"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/broam-adventure/broam-30.html",
+   "timestamp": "20251205055013",
+   "sha256": "7f682be8cd031962d7d93c812a27377ae5531594e3e6b4227c1abf0bffaead1e",
+   "family": "broam-30-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613200759"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/broam-adventure/broam-40.html",
+   "timestamp": "20250213104730",
+   "sha256": "3ecfe141d6489d57d8d77b4b395a9121f8105baef0ca5fdfb030b340b27e5e9d",
+   "family": "broam-40",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425120932"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/broam-adventure/broam-40.html",
+   "timestamp": "20251205023740",
+   "sha256": "a1ee2f162886d383d22c4bb121f2e78cff8c7ff49bde4fff1b4c8ad30b8149f2",
+   "family": "broam-40-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250624072225"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/gravel-adventurebikes/broam-adventure/broam-60.html",
+   "timestamp": "20250212234821",
+   "sha256": "71ca8aa4d7a1f13c687218e32a15442402ef83e56ac5458e68cd38dcc0aad6f6",
+   "family": "broam-60",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240612183352"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/gravel-adventurebikes/broam-adventure/broam-60.html",
+   "timestamp": "20251207073034",
+   "sha256": "69189f003fb07536eb0ee1e0c88b81a2aa5d2e3e57e3baccff1d43fe4ddf9549",
+   "family": "broam-60-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250623224414"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/gravel-adventurebikes/broam-adventure/broam-60.html",
+   "timestamp": "20251212000540",
+   "sha256": "76da3be97bd7ef73b4a85c2effa30795956b3415702b1c233d592539cf63eeb9",
+   "family": "broam-60-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617170349"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/race/fr/fr6.aspx",
+   "timestamp": "20180502082350",
+   "sha256": "36925c6846458727ceb0130449fcdc9f0226b818bfdb6233e192706cd9749988",
+   "family": "fr",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20160805210148"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-30.html",
+   "timestamp": "20230816164839",
+   "sha256": "76771bb0076050b9ab056d0eba1215f5555f7dae574ff80e2bd71c377181c9bf",
+   "family": "fr-30",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20240120183642"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-30.html",
+   "timestamp": "20240423121039",
+   "sha256": "4fcb917eaf78638a5c0242fb41598e904c2e2f54825506c3bd44d7c885557c0e",
+   "family": "fr-30",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20240120183642"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/fr-road-race/fr-30.html",
+   "timestamp": "20251205032903",
+   "sha256": "8343e7244bc7672c07bf2ede183f5c1047b06c970742744ebefd958069e194c7",
+   "family": "fr-30-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250624081354"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-advanced-105.html",
+   "timestamp": "20250118005228",
+   "sha256": "094387fb01800ea21e3d83a4d20df442e61388c5a9558b5bb738528baeef6cb5",
+   "family": "fr-advanced",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240530101816"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/fr-road-race/fr-advanced-105-di2.html",
+   "timestamp": "20251206001406",
+   "sha256": "8c8294cda0448d41e53c40e597bbe12785c0025c532f2d61dc81bcf12e3421bc",
+   "family": "fr-advanced-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250623221523"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/fr-road-race/fr-advanced-105.html",
+   "timestamp": "20251205051552",
+   "sha256": "f9afadfe0632acd721fe83101c8826cbf2904941c46208e9ee625c3be9115b7e",
+   "family": "fr-advanced-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250615205018"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/fr-road-race/fr-advanced-ultegradi2.html",
+   "timestamp": "20260116124612",
+   "sha256": "0b0979138337859d90111a10ba7cc30d5c8e921f329b40f904ba222ed7fe6c2b",
+   "family": "fr-advanced-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250623222405"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-advanced-%2b-duraacedi2.html",
+   "timestamp": "20250213233651",
+   "sha256": "fa8c7e70154d41d9a085330f4dfa0b59469fc55aa2f54a82e84cd74dbe36fbcb",
+   "family": "fr-advanced-plus",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241010211926"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/fr-road-race/fr-advanced-%2b-duraacedi2.html",
+   "timestamp": "20251205020049",
+   "sha256": "de50015b4998480dfa61861e0ba49ac04a94a9b15fb0ff0127928037c65f64a0",
+   "family": "fr-advanced-plus-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613191135"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/race/fr/fr60-2018.aspx",
+   "timestamp": "20180426182858",
+   "sha256": "dd2684d64070aeec734222184d4e599a08ac385dc20d4f03e4e2598ea15d01ac",
+   "family": "fr-alloy",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170905102158"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/race/frw/fr30w.aspx",
+   "timestamp": "20180505135200",
+   "sha256": "aa6240009f629d0398054d4f5190ce4e1b64fd41a540bc2de76f99189b75ca19",
+   "family": "fr-alloy-w",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20160921123533"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-expert-105-di2.html",
+   "timestamp": "20250927234323",
+   "sha256": "fd955374f4f370fcd9233606aa2424fcd53074ad53a57f20ce399c3c6c8aa454",
+   "family": "fr-expert",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260312015945"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-expert-105-di2.html",
+   "timestamp": "20260312015945",
+   "sha256": "fd955374f4f370fcd9233606aa2424fcd53074ad53a57f20ce399c3c6c8aa454",
+   "family": "fr-expert",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260312015945"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-frd-dura-ace-di2.html",
+   "timestamp": "20250927234323",
+   "sha256": "4fa829b4d648c07e913e1d262aa81dcfd57de644b6f450f19f265d5f46b40ff9",
+   "family": "fr-frd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250624065110"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-frd-dura-ace-di2.html",
+   "timestamp": "20260208073339",
+   "sha256": "937a7922bc2f7f7f6ae669c0e5143217b8b1505655c9123d27bde21a8c407e93",
+   "family": "fr-frd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250624065110"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/fr-road-race/fr-frd-ultimate-frame.html",
+   "timestamp": "20251207062947",
+   "sha256": "278bebbfa6b5dceb540a14353ac6d6a76b9381df194e842ef48ba866ba337a69",
+   "family": "fr-frd-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617170842"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/fr-pro-ultegra-di2.html",
+   "timestamp": "20251211054926",
+   "sha256": "24f3da69cb06045e7cac5886158ecf9f6bad23697f3aef4d62134e0ee8b32483",
+   "family": "fr-pro",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613192147"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/fr-road-race/1003013770.html",
+   "timestamp": "20250217110301",
+   "sha256": "9b31361d92df93d867e758dbc490507cb85f477f0f8796438ccc6c73126d059f",
+   "family": "fr-road-race",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240527033810"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/race/frw/fr5w.aspx",
+   "timestamp": "20180424231149",
+   "sha256": "f64b7e44f050c23913fafc918f1626166c9ac580c047f4fb6c301740fdafde24",
+   "family": "fr-w",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20160829122918"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/cross/fx-16/f1x.aspx",
+   "timestamp": "20180507121939",
+   "sha256": "e415b5a3a5ce7412373319305ffbf33a8e9b5f6616b81849ca17a71eaff21289",
+   "family": "fx",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170714043750"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/cyclocross-bikes/fx-cyclocross-race/fx-advanced-grx-600.html",
+   "timestamp": "20251205060810",
+   "sha256": "8074f5f14971104bdf065bcac499b66d5df2b8b413698e2b7f01d91c06c3af38",
+   "family": "fx-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425083105"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/cyclocross-bikes/fx-cyclocross-race/fx-advanced-grx-600.html",
+   "timestamp": "20251212005403",
+   "sha256": "8e2ed426fc6052a5f52990ae2a302a1709ed8fd0a8248ee8655f1613181fd965",
+   "family": "fx-advanced-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250615214943"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/cyclocross-bikes/fx-cyclocross-race/fx-advanced-grx-600.html",
+   "timestamp": "20251210202346",
+   "sha256": "fa3708c6d4ddade52fcfd9194316436e1cbf5768b520e6de158707081b8b494d",
+   "family": "fx-advanced-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250623214355"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/endurance/vr/vr3-2018.aspx",
+   "timestamp": "20180510150637",
+   "sha256": "842cedc1054f35a37055b131919c65ad4c394000471eb15741cd126712708973",
+   "family": "vr",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170902030618"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-40.html",
+   "timestamp": "20250206154503",
+   "sha256": "fd2f01a2c73e50e92da9d4adcb4e605f81b660534ee755fa706c50869b05bd0f",
+   "family": "vr-40",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240423041547"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/vr-endurance-road/vr-40.html",
+   "timestamp": "20251205021112",
+   "sha256": "fb567e4155918f7b50ef94016e98df7d868e7aa96240828b3801286591ddc625",
+   "family": "vr-40-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617165747"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-40.html",
+   "timestamp": "20251211215201",
+   "sha256": "c30b576e2ed150780c6d29e886787c109e4cb9402a83c991a9c608db05bb97c4",
+   "family": "vr-40-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250615214715"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-60.html",
+   "timestamp": "20250206161254",
+   "sha256": "08c8e00203483b3d852bd44d96e84318ad933d914b1cd2e0c1a39e6335eae9ba",
+   "family": "vr-60",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240413093702"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-60.html",
+   "timestamp": "20251212002402",
+   "sha256": "9012eb57019561e0f6fb422d782b819c4ac87adbb4246955918841899d25c532",
+   "family": "vr-60-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250615211039"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-advanced-105.html",
+   "timestamp": "20250119091821",
+   "sha256": "0728b12f70c44a92a0ab4b42c7f7b6f38b4a087ca13a330302b930a7d2c2a14c",
+   "family": "vr-advanced",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240424152153"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/vr-endurance-road/vr-advanced-105.html",
+   "timestamp": "20251207124044",
+   "sha256": "73daa76d04852adb9e93b89eeb1b9e8c594a0cdf56e25362ca04b568b7cc8bb5",
+   "family": "vr-advanced-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613193629"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/endurance/vr/vr30.aspx",
+   "timestamp": "20180425001527",
+   "sha256": "d3bff60bc2b16b0c73b4715b0d8f66fdfb57e1e224712e69dde7d5bd12deda4d",
+   "family": "vr-alloy",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20160805205634"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/endurance/vrw/vr40w.aspx",
+   "timestamp": "20180501135954",
+   "sha256": "47aa410d4235ccf1e5ab92015be5757c9fdf368e5ed9d6d6bea07003eb0a2380",
+   "family": "vr-alloy-w",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20160811112652"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/1002997877.html",
+   "timestamp": "20240424160150",
+   "sha256": "5294686e549d25e17e98d6180b22a9e2cc52bea1e80e13b9ace1e22e7c16715b",
+   "family": "vr-endurance-road",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20240424160150"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/vr-endurance-road/1002997877.html",
+   "timestamp": "20251215134250",
+   "sha256": "9ca3b19d3ef0bf6082c256196df87c17b94e1d136b3b090629120e989becb496",
+   "family": "vr-endurance-road-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251215134250"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2023/road-bikes/vr-endurance-road/1002997879.html",
+   "timestamp": "20260314140821",
+   "sha256": "ea9728f9dcd1f6514d65eb311934c7d55125e50ff587794b64f27624927a2313",
+   "family": "vr-endurance-road-2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260314140821"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-expert-105-di2.html",
+   "timestamp": "20251214064736",
+   "sha256": "e89c84412d7e6a1f76252770cb40d05793e7cacd6483bab3eef74d3c5948809d",
+   "family": "vr-expert",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617160933"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-expert-105-di2.html",
+   "timestamp": "20260312021349",
+   "sha256": "f6bc8ec2efc9e56026aba51cd527eefd37cb8500e9525c2fda7be69ec6b5b39b",
+   "family": "vr-expert-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260312021349"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-pro-ultegra-di2.html",
+   "timestamp": "20251206001644",
+   "sha256": "bcac2c16dd89b97b41ceb9b52209f3d6dfc4f23dd0f34426bdbad317d8ff425a",
+   "family": "vr-pro",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250617173435"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-pro-ultegra-di2.html",
+   "timestamp": "20250613191925",
+   "sha256": "b84970e3e2d7bb33b8e6607eb61c98e8a4c7ff3a06d382887ce18b89c5c26ff9",
+   "family": "vr-pro-2024",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20250613191925"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-pro-ultegra-di2.html",
+   "timestamp": "20260113182616",
+   "sha256": "5827dfdcf4e9c18dec9f3721ecf000abea74498459302954584ff958321c2b8a",
+   "family": "vr-pro-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613191925"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/bikes/road-bikes/vr-endurance-road/vr-race-105.html",
+   "timestamp": "20251210173736",
+   "sha256": "a947cde47492dac138b18a7d253ee55037fdf777ce3c3b28c84dbe9dd3f6d3ff",
+   "family": "vr-race",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613193411"
+  },
+  {
+   "url": "https://www.feltbicycles.com/en-us/archive/2024/road-bikes/vr-endurance-road/vr-race-105.html",
+   "timestamp": "20251214074313",
+   "sha256": "a51087f6abc0d1b4c8a5ebe7d96798352cb6382e3c0b5320248a50dc81a1ac90",
+   "family": "vr-race-2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250624070031"
+  },
+  {
+   "url": "https://www.feltbicycles.com/usa/2016/bikes/road/endurance/vrw/vr6w.aspx",
+   "timestamp": "20180423091547",
+   "sha256": "850e6b40abbc173cc5bc3cd3b9202f1eafb0e3b976ebc7fca0cd5bf91f2875bd",
+   "family": "vr-w",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20160811112446"
+  }
+ ]
+}

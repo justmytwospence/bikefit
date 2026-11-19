@@ -1,0 +1,459 @@
+{
+  "brand": "Fuji",
+  "models": [
+    {
+      "model": "Altamira CX",
+      "year": 2018,
+      "category": "cyclocross",
+      "source": "https://archive.fujibikes.com/2018/Fuji/altamira-cx-114",
+      "retrieved": "2023-06-01",
+      "archive": "https://web.archive.org/web/20230601081524/https://archive.fujibikes.com/2018/Fuji/altamira-cx-114",
+      "sizes": [
+        ["XXS 48",531,378,75.5,70.5,100,480,425,1009,53],
+        ["S 52",538,386,74.5,71,125,520,425,1021,55],
+        ["M 54",549,388,74,71.3,135,540,425,1022,55],
+        ["XS 50",552,382,75,70.5,115,500,425,1021,53],
+        ["L 56",562,393,73.3,72,145,560,425,1026,57],
+        ["XL 58",578,398,73,72.5,160,580,425,1031,57]
+      ]
+    },
+    {
+      "model": "Brevet",
+      "year": 2018,
+      "lastYear": 2019,
+      "category": "endurance",
+      "source": "https://archive.fujibikes.com/2019/Fuji/brevet-11",
+      "retrieved": "2023-12-11",
+      "archive": "https://web.archive.org/web/20231211124556/https://archive.fujibikes.com/2019/Fuji/brevet-11",
+      "sizes": [
+        ["XXS 44",506,369,75.5,71,100,400,415,984,69],
+        ["XS 47",531,368,75,71.5,125,430,415,986,69],
+        ["S 50",557,371,74.5,72,150,460,415,993,69],
+        ["M 53",576,364,73.5,72,170,490,415,993,69],
+        ["L 56",602,377,73.5,73,190,520,415,994,69]
+      ]
+    },
+    {
+      "model": "Cross",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "cyclocross",
+      "source": "https://archive.fujibikes.com/2021/Fuji/cross-136",
+      "retrieved": "2023-04-10",
+      "archive": "https://web.archive.org/web/20230410132725/https://archive.fujibikes.com/2021/Fuji/cross-136",
+      "sizes": [
+        ["XXS 46",522,370,75.5,70,100,460,425,1007,66],
+        ["XS 49",535,377,75,71,110,490,425,1009,66],
+        ["S 52",554,376,74,71.5,130,520,425,1011,64],
+        ["M 54",566,378,73.5,72,140,540,425,1011,64],
+        ["L 56",580,383,73,72,160,560,425,1021,64],
+        ["XL 58",602,391,73,72,180,580,425,1037,62],
+        ["XXL 61",621,405,73,72,200,610,425,1058,62]
+      ]
+    },
+    {
+      "model": "Cross W",
+      "year": 2018,
+      "category": "cyclocross",
+      "source": "https://archive.fujibikes.com/2018/Fuji/cross-17-w",
+      "retrieved": "2025-08-26",
+      "archive": "https://web.archive.org/web/20250826180902/https://archive.fujibikes.com/2018/Fuji/cross-17-w",
+      "sizes": [
+        ["XXS 44",496,371,75.5,70.5,95,440,425,997,66],
+        ["XS 47",524,370,75,71,100,470,425,998,66],
+        ["S 50",548,373,74.5,71.5,125,500,425,1006,64],
+        ["M 53",564,373,74,72,140,530,425,1006,64],
+        ["L 56",583,377,73,72,160,560,425,1016,64]
+      ]
+    },
+    {
+      "model": "Finest",
+      "year": 2018,
+      "lastYear": 2019,
+      "category": "endurance",
+      "source": "https://www.fujibikes.com/usa/bikes/road/endurance/finest/finest-1-9-disc",
+      "retrieved": "2019-12-20",
+      "archive": "https://web.archive.org/web/20191220041536/https://www.fujibikes.com/usa/bikes/road/endurance/finest/finest-1-9-disc",
+      "sizes": [
+        ["XXS 44",505,369,75.5,71,100,400,415,984,69],
+        ["XS 47",531,368,75,71.5,125,430,415,986,69],
+        ["S 50",557,371,74.5,72,150,460,415,993,69],
+        ["M 53",575,365,73.5,72,170,490,415,993,69],
+        ["L 56",601,377,73.5,73,190,520,415,994,69]
+      ]
+    },
+    {
+      "model": "Finest 2",
+      "year": 2018,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://www.fujibikes.com/products/finest-25-le-23",
+      "retrieved": "2025-08-10",
+      "archive": "https://web.archive.org/web/20250810185221/https://www.fujibikes.com/products/finest-25-le-23",
+      "sizes": [
+        ["XXS 44",529,358,75.5,71,100,400,418,996,69],
+        ["XS 47",529,368,75,71.5,125,430,418,999,69],
+        ["S 50",554,376,74.5,72,150,460,418,996,69],
+        ["M 53",578,369,73.5,72,170,490,418,996,69],
+        ["L 56",600,377,73.5,73,190,520,418,997,69]
+      ]
+    },
+    {
+      "model": "Gran Fondo",
+      "year": 2018,
+      "lastYear": 2022,
+      "category": "endurance",
+      "source": "https://www.fujibikes.com/products/gran-fondo-11-22",
+      "retrieved": "2025-08-10",
+      "archive": "https://web.archive.org/web/20250810194619/https://www.fujibikes.com/products/gran-fondo-11-22",
+      "sizes": [
+        ["XXS 46",506,369,75,71,100,420,415,984,69],
+        ["XS 49",531,368,74.5,71.5,125,450,415,987,69],
+        ["S 52",557,368,73.8,71.5,150,480,415,990,69],
+        ["M 54",582,373,73.5,73,170,500,415,984,69],
+        ["L 56",602,376,73,73,190,520,415,993,69],
+        ["XL 58",625,389,73,73,215,540,415,1013,69],
+        ["XXL 61",645,403,73,73,235,570,415,1033,69]
+      ]
+    },
+    {
+      "model": "Gran Fondo Classico",
+      "year": 2018,
+      "lastYear": 2019,
+      "category": "endurance",
+      "source": "https://archive.fujibikes.com/2019/Fuji/gran-fondo-classico-113",
+      "retrieved": "2023-12-10",
+      "archive": "https://web.archive.org/web/20231210081903/https://archive.fujibikes.com/2019/Fuji/gran-fondo-classico-113",
+      "sizes": [
+        ["XS 47",519,386,75,71,125,441,415,992,69],
+        ["M 53",561,382,73,71.5,170,500,415,1001,69],
+        ["L 55",591,378,73,73,190,520,415,993,69],
+        ["XL 58",612,403,73,73,210,550,415,1013,69],
+        ["XXL 61",635,417,73,73,235,580,415,1033,69]
+      ]
+    },
+    {
+      "model": "Jari",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "gravel",
+      "source": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari/jari-1-5",
+      "retrieved": "2019-12-20",
+      "archive": "https://web.archive.org/web/20191220042454/https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari/jari-1-5",
+      "aliases": ["Jari Carbon"],
+      "sizes": [
+        ["XXS 46",532,363,74.5,70.5,110,460,435,1004,69],
+        ["XS 49",541,375,74.5,70.5,120,490,435,1020,69],
+        ["S 52",560,375,74,71,140,520,435,1022,67],
+        ["M 54",572,370,73,71.5,150,540,435,1016,67],
+        ["L 56",592,379,73,72,170,560,435,1027,67],
+        ["XL 58",609,383,72.5,72,190,580,435,1037,65],
+        ["XXL 61",628,397,72.5,72,210,610,435,1058,65]
+      ]
+    },
+    {
+      "model": "Jari",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari/jari-2-5",
+      "retrieved": "2022-12-08",
+      "archive": "https://web.archive.org/web/20221208072146/https://www.fujibikes.com/usa/bikes/road/adventure-and-touring/jari/jari-2-5",
+      "sizes": [
+        ["XXS 46",522,360,74.5,69.5,100,460,435,1010,69],
+        ["XS 48",548,363,75,70.5,120,480,435,1012,72],
+        ["S 52",560,368,74,70.5,140,520,435,1023,72],
+        ["M 54",584,372,73,71,155,540,435,1028,70],
+        ["L 55.5",595,382,73,71.5,170,560,435,1039,70],
+        ["XL 57.5",616,392,73,71.5,190,580,435,1054,70],
+        ["XXL 60",635,405,73,71.5,210,600,435,1074,70]
+      ]
+    },
+    {
+      "model": "Jari",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.fujibikes.com/products/jari-25-22",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617061655/https://www.fujibikes.com/products/jari-25-22",
+      "sizes": [
+        ["XXS 46",522,360,74.5,69.5,100,460,435,1010,69],
+        ["XS 48",548,363,75,70.5,120,480,435,1012,72],
+        ["S 52",560,367,74,70.5,140,520,435,1023,72],
+        ["M 54",581,372,73,71,155,540,435,1028,70],
+        ["L 55.5",595,382,73,71.5,170,555,435,1039,70],
+        ["XL 57.5",616,392,73,71.5,190,575,435,1054,70],
+        ["XXL 60",635,406,73,71.5,210,600,435,1075,70]
+      ]
+    },
+    {
+      "model": "Jari Carbon",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://archive.fujibikes.com/2021/Fuji/jari-carbon-113",
+      "retrieved": "2023-12-11",
+      "archive": "https://web.archive.org/web/20231211220044/https://archive.fujibikes.com/2021/Fuji/jari-carbon-113",
+      "sizes": [
+        ["XS 49",541,375,74.5,70.5,120,490,435,1023,69],
+        ["S 52",560,374,74,71,140,520,435,1025,67],
+        ["M 54",572,370,73,71.5,150,540,435,1020,67],
+        ["L 56",592,379,73,72,170,560,435,1030,67],
+        ["XL 58",609,383,72.5,72,190,580,435,1040,65],
+        ["XXL 61",628,397,72.5,72,210,610,435,1061,65]
+      ]
+    },
+    {
+      "model": "Jari Carbon",
+      "year": 2022,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.fujibikes.com/products/jari-carbon-11-24",
+      "retrieved": "2026-05-13",
+      "archive": "https://web.archive.org/web/20260513193339/https://www.fujibikes.com/products/jari-carbon-11-24",
+      "sizes": [
+        ["XS 48",526,365,74,70,100,480,425,997,72],
+        ["S 50",543,375,74,71,115,500,425,1004,72],
+        ["M 53",567,385,74,71,140,530,425,1022,72],
+        ["L 56",591,395,74,71,165,560,425,1040,72],
+        ["XL 59",614,405,74,71,190,590,425,1058,72]
+      ]
+    },
+    {
+      "model": "Jari Carbon CX",
+      "year": 2022,
+      "category": "cyclocross",
+      "source": "https://www.fujibikes.com/products/jari-carbon-cx-22",
+      "retrieved": "2026-03-23",
+      "archive": "https://web.archive.org/web/20260323092419/https://www.fujibikes.com/products/jari-carbon-cx-22",
+      "sizes": [
+        ["XS 49",535,372,75,71,110,490,425,1009,66],
+        ["S 52",554,375,74,71.5,130,520,425,1011,64],
+        ["M 54",566,378,73.5,72,140,540,425,1011,64],
+        ["L 56",580,385,73,72,160,560,425,1021,64],
+        ["XL 58",602,390,73,72,180,580,425,1037,62],
+        ["XXL 61",621,405,73,72,200,610,425,1058,62]
+      ]
+    },
+    {
+      "model": "Kasane",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.fujibikes.com/products/kasane-13-22",
+      "retrieved": "2026-02-12",
+      "archive": "https://web.archive.org/web/20260212052651/https://www.fujibikes.com/products/kasane-13-22",
+      "sizes": [
+        ["XS 47",500,365,75,70.5,96,445,415,978,76],
+        ["S 51",520,373,74,71.5,116,485,415,979,74],
+        ["M 54",540,380,74,72.5,136,515,415,990,72],
+        ["L 56",569,390,74,72.5,165,535,415,1020,72],
+        ["XL 58",587,401,73,72.5,186,553,415,1022,72],
+        ["XXL 61",615,410,73,72.5,214,575,415,1039,70]
+      ]
+    },
+    {
+      "model": "Roubaix",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://archive.fujibikes.com/2018/Fuji/roubaix-134",
+      "retrieved": "2024-01-18",
+      "archive": "https://web.archive.org/web/20240118171737/https://archive.fujibikes.com/2018/Fuji/roubaix-134",
+      "sizes": [
+        ["XXS 46",498,372,75,71,100,420,405,977,70],
+        ["XS 49",499,377,74.5,71.5,100,450,405,978,70],
+        ["S 52",520,379,73.8,72,120,480,405,987,70],
+        ["M 54",543,384,73.5,73,140,500,405,978,68],
+        ["L 56",562,388,73,73,160,520,405,989,68],
+        ["XL 58",579,403,73,73,180,540,405,1009,66],
+        ["XXL 61",599,417,73,73,200,570,405,1029,66],
+        ["XXXL 64",618,426,73,73,220,600,405,1044,66]
+      ]
+    },
+    {
+      "model": "Roubaix Disc",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://archive.fujibikes.com/2018/Fuji/roubaix-13-disc2",
+      "retrieved": "2023-09-27",
+      "archive": "https://web.archive.org/web/20230927211821/https://archive.fujibikes.com/2018/Fuji/roubaix-13-disc2",
+      "sizes": [
+        ["XXS 46",498,372,75,71,100,420,410,978,70],
+        ["XS 49",500,376,74.5,71.5,100,450,410,979,70],
+        ["S 52",521,378,73.8,72,120,480,410,983,70],
+        ["M 54",547,384,73.5,73,140,500,410,979,68],
+        ["L 56",563,388,73,73,160,520,410,989,68],
+        ["XL 58",580,403,73,73,180,540,410,1010,66],
+        ["XXL 61",603,417,73,73,200,570,410,1029,66],
+        ["XXXL 64",619,426,73,73,220,600,410,1044,66]
+      ]
+    },
+    {
+      "model": "Roubaix W",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://archive.fujibikes.com/2018/Fuji/roubaix-11-w",
+      "retrieved": "2023-09-30",
+      "archive": "https://web.archive.org/web/20230930160148/https://archive.fujibikes.com/2018/Fuji/roubaix-11-w",
+      "sizes": [
+        ["XXS 44",496,371,75.5,71,95,400,410,975,73],
+        ["XS 47",512,373,75,71.5,110,430,410,977,73],
+        ["S 50",519,381,74.5,71.5,121,460,410,990,70],
+        ["M 53",541,379,74,72,142,490,410,992,70],
+        ["L 56",564,387,73.5,73,162,520,410,988,68]
+      ]
+    },
+    {
+      "model": "SL",
+      "year": 2018,
+      "category": "race",
+      "source": "https://www.fujibikes.com/usa/bikes/road/competition/sl/sl-1-1",
+      "retrieved": "2019-12-22",
+      "archive": "https://web.archive.org/web/20191222005825/https://www.fujibikes.com/usa/bikes/road/competition/sl/sl-1-1",
+      "sizes": [
+        ["XXS 46",497,372,75,71,100,420,405,974,68],
+        ["XS 49",499,377,74.5,71.5,100,450,405,975,68],
+        ["S 52",520,378,73.8,71.5,120,480,405,979,68],
+        ["M 54",540,385,73.5,73,135,500,405,974,68],
+        ["L 56",559,389,73,73,155,520,405,983,68],
+        ["XL 58",580,403,73,73,175,540,405,1003,68],
+        ["XXL 61",598,417,73,73,195,570,405,1023,68]
+      ]
+    },
+    {
+      "model": "SL",
+      "year": 2021,
+      "category": "race",
+      "source": "https://archive.fujibikes.com/2021/Fuji/sl-215",
+      "retrieved": "2023-03-21",
+      "archive": "https://web.archive.org/web/20230321041001/https://archive.fujibikes.com/2021/Fuji/sl-215",
+      "sizes": [
+        ["XXS 46",497,372,75,71,100,420,410,979,68],
+        ["XS 49",499,377,74.5,71.5,100,450,410,980,68],
+        ["S 52",520,378,73.8,71.5,120,480,410,979,68],
+        ["M 54",540,385,73.5,73,135,500,410,978,68],
+        ["L 56",559,389,73,73,155,520,410,983,68],
+        ["XL 58",580,403,73,73,175,540,410,1009,68],
+        ["XXL 61",598,417,73,73,195,570,410,1029,68]
+      ]
+    },
+    {
+      "model": "SL-A",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.fujibikes.com/usa/bikes/road/competition/sl-a/sl-a-1-1",
+      "retrieved": "2021-12-05",
+      "archive": "https://web.archive.org/web/20211205015119/https://www.fujibikes.com/usa/bikes/road/competition/sl-a/sl-a-1-1",
+      "sizes": [
+        ["XXS 46",498,372,75,71,100,420,410,978,70],
+        ["XS 49",500,376,74.5,71.5,100,450,410,979,70],
+        ["S 52",521,378,73.8,72,120,480,410,983,70],
+        ["M 54",547,384,73.5,73,140,500,410,979,68],
+        ["L 56",563,388,73,73,160,520,410,989,68],
+        ["XL 58",580,403,73,73,180,540,410,1010,66],
+        ["XXL 61",603,417,73,73,200,570,410,1029,66],
+        ["XXXL 64",619,426,73,73,220,600,410,1044,66]
+      ]
+    },
+    {
+      "model": "SL-A",
+      "year": 2022,
+      "category": "race",
+      "source": "https://www.fujibikes.com/products/sl-a-disc-22",
+      "retrieved": "2026-02-22",
+      "archive": "https://web.archive.org/web/20260222032946/https://www.fujibikes.com/products/sl-a-disc-22",
+      "sizes": [
+        ["XS 47",515,365,75,71,110,420,415,979,76],
+        ["S 51",530,373,74,71.5,125,450,415,988,74],
+        ["M 54",555,380,74,72.5,145,500,415,988,74],
+        ["L 56",580,390,74,72.5,175,520,415,1005,72],
+        ["XL 58",605,400,73,72.5,200,540,415,1025,72],
+        ["XXL 61",625,415,73,73,220,570,415,1035,70]
+      ]
+    },
+    {
+      "model": "Sportif",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://www.fujibikes.com/products/sportif-23-21",
+      "retrieved": "2025-08-20",
+      "archive": "https://web.archive.org/web/20250820192722/https://www.fujibikes.com/products/sportif-23-21",
+      "sizes": [
+        ["XXS 46",507,389,75,71,100,420,418,986,69],
+        ["XS 49",532,382,74.5,71.5,125,450,418,988,69],
+        ["S 52",556,378,73.8,71.5,150,480,418,997,69],
+        ["M 54",581,383,73.5,73,170,500,418,986,69],
+        ["L 56",600,377,73,73,190,520,418,996,69],
+        ["XL 58",624,389,73,73,215,540,418,1018,69],
+        ["XXL 61",643,404,73,73,235,570,418,1036,69]
+      ]
+    },
+    {
+      "model": "Sportif Disc",
+      "year": 2018,
+      "lastYear": 2022,
+      "category": "endurance",
+      "source": "https://www.fujibikes.com/products/sportif-11-disc-22",
+      "retrieved": "2025-11-19",
+      "archive": "https://web.archive.org/web/20251119192148/https://www.fujibikes.com/products/sportif-11-disc-22",
+      "sizes": [
+        ["XXS 46",505,370,75,71,100,420,415,984,69],
+        ["XS 49",531,368,74.5,71.5,125,450,415,986,69],
+        ["S 52",554,369,73.8,71.5,150,480,415,995,69],
+        ["M 54",581,373,73.5,73,170,500,415,984,69],
+        ["L 56",601,376,73,73,190,520,415,993,69],
+        ["XL 58",625,389,73,73,215,540,415,1013,69],
+        ["XXL 61",644,403,73,73,235,570,415,1033,69]
+      ]
+    },
+    {
+      "model": "Supreme",
+      "year": 2018,
+      "lastYear": 2022,
+      "category": "race",
+      "source": "https://www.fujibikes.com/usa/bikes/road/competition/supreme/supreme-1-1",
+      "retrieved": "2022-12-08",
+      "archive": "https://web.archive.org/web/20221208054739/https://www.fujibikes.com/usa/bikes/road/competition/supreme/supreme-1-1",
+      "sizes": [
+        ["XXS 44",484,365,75.5,70.5,97,420,410,969,73],
+        ["XS 47",505,372,75,71.5,115,450,410,975,73],
+        ["S 50",521,377,74.5,71.5,135,480,410,987,70],
+        ["M 53",538,381,74,72,151,510,410,992,70],
+        ["L 56",562,388,73.5,73,172,540,410,989,68]
+      ]
+    },
+    {
+      "model": "Touring",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://www.fujibikes.com/products/touring-disc-21",
+      "retrieved": "2026-05-13",
+      "archive": "https://web.archive.org/web/20260513155303/https://www.fujibikes.com/products/touring-disc-21",
+      "sizes": [
+        ["XS 49",549,377,74,70,110,450,450,1048,78],
+        ["S 52",561,379,73.5,70.5,120,490,450,1048,78],
+        ["L 56",601,377,73.5,71,160,530,450,1055,78],
+        ["XL 58",620,386,73,71,180,550,450,1070,78],
+        ["XXL 61",638,395,73,71,200,580,450,1086,78],
+        ["XXXL 64",657,402,72.5,71,220,610,450,1100,78]
+      ]
+    },
+    {
+      "model": "Transonic",
+      "year": 2018,
+      "lastYear": 2022,
+      "category": "aero",
+      "source": "https://www.fujibikes.com/products/transonic-11-22",
+      "retrieved": "2025-09-14",
+      "archive": "https://web.archive.org/web/20250914203445/https://www.fujibikes.com/products/transonic-11-22",
+      "sizes": [
+        ["XXS 46",487,367,74.8,70.6,93,440,410,971,73],
+        ["XS 49",500,374,74.3,71,109,457,410,982,70],
+        ["S 52",523,382,74.2,72,129,484,410,988,70],
+        ["M 54",541,392,74.2,72.7,145,503,410,989,68],
+        ["L 56",562,399,73.5,73,166,520,410,999,68],
+        ["XL 58",577,410,73.5,73,183,538,410,1016,66],
+        ["XXL 61",596,418,73,73,203,567,410,1030,66]
+      ]
+    }
+  ]
+}

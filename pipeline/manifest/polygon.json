@@ -1,0 +1,1320 @@
+{
+ "brand": "Polygon",
+ "file": "polygon",
+ "pages": [
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/bend-r2/",
+   "timestamp": "20201129065448",
+   "sha256": "2f49a5624ca94051a4945b77ebca008d1009ee7cbbe6cdad3376737e4cbff92b",
+   "family": "bend-r2",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920094308"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r2/",
+   "timestamp": "20230610115135",
+   "sha256": "c05508364f81a135ff5ef520d46e29d7cf908419e8035f3252d76eda489e3f83",
+   "family": "bend-r2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220703165943"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r2/",
+   "timestamp": "20250510115458",
+   "sha256": "f79d2f5f4ec45fe95fb4c9bef3f5b0a419a3c3ff8d2a94b608a5b49147d5a035",
+   "family": "bend-r2",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20220703165943"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r2-2019/",
+   "timestamp": "20250909035925",
+   "sha256": "d2d0d686aa6061c44caaaf516d952a6cc29e50ee72d766587724726168e1ad8b",
+   "family": "bend-r2-2019",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202210"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r2-2019/",
+   "timestamp": "20260808162949",
+   "sha256": "3dce639a506e1eaafdbdff97e4c1fc06a1229b1f9f755fae01d06cf6af0ac9e1",
+   "family": "bend-r2-2019",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250714202210"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/bend-r5/",
+   "timestamp": "20200922234939",
+   "sha256": "09ef0bb7317ac1e885a692e40aedea7b29c289b0126105f79afda1b7d8931f90",
+   "family": "bend-r5",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200922234939"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r5/",
+   "timestamp": "20230609211846",
+   "sha256": "dcd5e8daa019dc228c52bb1aa818e4615aa6fcfee91da430754efa7e3c62b6b1",
+   "family": "bend-r5",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220704022605"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r5/",
+   "timestamp": "20250428221302",
+   "sha256": "7b27593e89dee253f4e35ee424e564716fda35a04f8b8a1aecdbdc3cf4788c1a",
+   "family": "bend-r5",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20220704022605"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r5-2019/",
+   "timestamp": "20251213230914",
+   "sha256": "910f0a94551de1093cce29d270b223e44ff9ce75f9fae51fd29ffbe11c5b8f7f",
+   "family": "bend-r5-2019",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202210"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r5-2019/",
+   "timestamp": "20260702202222",
+   "sha256": "d46d7a18c3b23d1d869b338538fc3894a967383d36a36f4d6a99024c0038198a",
+   "family": "bend-r5-2019",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250714202210"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r7/",
+   "timestamp": "20250714202210",
+   "sha256": "f3237d7a7fde0a5a8e2fda4427dabdf912a056b04c36bf8b4f811b5f8b4ee7ad",
+   "family": "bend-r7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240424023834"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/bend-r7/",
+   "timestamp": "20260813185929",
+   "sha256": "5cc2b06dadc58dc3beabec548081908eae8fc3a56b3adbd9898cad134c38315b",
+   "family": "bend-r7",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240420022327"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r9x/",
+   "timestamp": "20250714201926",
+   "sha256": "eaadd8a5d958927375a24e4dd71a3c1b520b47613b11c798db03b208be219896",
+   "family": "bend-r9x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240412103930"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-r9x/",
+   "timestamp": "20260711105659",
+   "sha256": "db3e4b8c439bc2a6dc41af661274f0f5d200561d2ae3eda85200e6105e8ef764",
+   "family": "bend-r9x",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240412103930"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/bend-riv/",
+   "timestamp": "20191207185252",
+   "sha256": "ce1d33571d140bab938a9c0b63f594b6ca7a03061c55d331f9377441b1057def",
+   "family": "bend-riv",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190817125052"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/bend-riv/",
+   "timestamp": "20200920102733",
+   "sha256": "0cdb595461014584ee8269c1724dafb6709b03af784ad883e6e71535db1b1653",
+   "family": "bend-riv",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190817125052"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-bend-riv",
+   "timestamp": "20180321232301",
+   "sha256": "84a7001b922405bab04a88db79fc2852b1bc3b83f279fd29b4ca1d08ebdd65a9",
+   "family": "bend-riv-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826222143"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/bend-rv-105/",
+   "timestamp": "20191209082213",
+   "sha256": "2f2619896b48fb96ca3ca24c84e398a1591d9b2df0fe30526977c8f8c786bcd6",
+   "family": "bend-rv",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190818011516"
+  },
+  {
+   "url": "https://www.polygonbikes.com/bend-v9x/",
+   "timestamp": "20251006163204",
+   "sha256": "b69f333888264ee84fe0875e76f98a513fd8dcb61c1e626fb4d0c85f70957dca",
+   "family": "bend-v9x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240424034133"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/bend-v9x/",
+   "timestamp": "20260515114203",
+   "sha256": "bca5b85ede0d2157e258dc3f2c87b0992e4836fb34202fa0f19acb1a5579742d",
+   "family": "bend-v9x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240421154035"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a0-axs/",
+   "timestamp": "20250907205907",
+   "sha256": "d08a7035d524ec49a7229af776778d6e1b5fd5301a42dbd0498692474a2900d9",
+   "family": "helios-a0",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250907205907"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a0-axs/",
+   "timestamp": "20260808165548",
+   "sha256": "cc07b75e907b70eed9a1f4123151a819ef079bb2819a7d0d145750143b4454b1",
+   "family": "helios-a0",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250907205907"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7/",
+   "timestamp": "20230604150334",
+   "sha256": "91f8563d8563e324aec931374a485bdf7ab315aa34772ad66b3a63bc32e52d62",
+   "family": "helios-a7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220705065926"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7-di2/",
+   "timestamp": "20251112233128",
+   "sha256": "69d731b3059d6a4cb72696cf557e6e6784a5177e3421b17d8158dac943efaf82",
+   "family": "helios-a7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7-di2/",
+   "timestamp": "20260812170607",
+   "sha256": "b222767ecfa58a4f7d204478b07eb2769ad652fbee2614ae65f906a6acf26405",
+   "family": "helios-a7",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7-2025/",
+   "timestamp": "20251113000733",
+   "sha256": "2aba4b81ecf8709474860e2bbdcacc7475dce253bf598ee2b83534376eb737b4",
+   "family": "helios-a7-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250916045815"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7-2025/",
+   "timestamp": "20260609030723",
+   "sha256": "dc505788e68ccea7c921b4e6e26822c7f0ec7bc0842bc5456374387ca7803e8a",
+   "family": "helios-a7-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250916045815"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7x/",
+   "timestamp": "20230329190249",
+   "sha256": "1077303431ee0026a84715883d20ddee87de9932f88c40e2eb395a06f24048f4",
+   "family": "helios-a7x",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221109063517"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/helios-a7x/",
+   "timestamp": "20251006205317",
+   "sha256": "3e4be474ecc4c3f5d1edcb2dbfe065122412e030e7a1a71dec8e2f67e6d98d44",
+   "family": "helios-a7x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240421151310"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/helios-a7x/",
+   "timestamp": "20260813190128",
+   "sha256": "c1003ec3ca82899e4a0d188fd44a8f54e667f56ad559b80807528d4d698afc09",
+   "family": "helios-a7x",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240421151310"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7x-2025/",
+   "timestamp": "20250910110946",
+   "sha256": "393a1fe82f5ef0a9267d000d2e2e6fe380b9269e432d126a3ee043d721dc02af",
+   "family": "helios-a7x-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250910110946"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a7x-2025/",
+   "timestamp": "20260422234120",
+   "sha256": "b18439db08a70b2c2dc46672e9eb77319e46a1075f26cf4910b63b04e4408fbe",
+   "family": "helios-a7x-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250910110946"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8/",
+   "timestamp": "20230610105921",
+   "sha256": "8a8bd36d8371d670fb316d527aff45bc3342d82ba60df0f4356496a4727915fd",
+   "family": "helios-a8",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220705073304"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8-di2/",
+   "timestamp": "20251010155319",
+   "sha256": "6aed863bf70e5bb65be68da32245a9d822bd7009239b8a3bba86569d22ebbb7f",
+   "family": "helios-a8",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8-di2/",
+   "timestamp": "20260812175421",
+   "sha256": "acc8dd406c18da38a730b66e58e221ffdb7ccee0fc2cba837953b4c195ed01d6",
+   "family": "helios-a8",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8-2025/",
+   "timestamp": "20251213214816",
+   "sha256": "4f44a1c177f0fca7b313ed8e71afaa1af2b85e5156cb5c11a54bd23feaec58e1",
+   "family": "helios-a8-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8-2025/",
+   "timestamp": "20260617220826",
+   "sha256": "7168952dbbe5cc16cc7b15659f71b5ecd6c3d86c8da80856888f18bb87126c4c",
+   "family": "helios-a8-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8x/",
+   "timestamp": "20231019100113",
+   "sha256": "9b074fbf85db378f9e9f3ff86915ce7baa077c88b78eedea6a882097eb2ee483",
+   "family": "helios-a8x",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220705071519"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/helios-a8x/",
+   "timestamp": "20251208005711",
+   "sha256": "addac97813796e450af1e0b58e9bf28ce16ede84216076945b14f918e97595f0",
+   "family": "helios-a8x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240421142003"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/helios-a8x/",
+   "timestamp": "20260611035100",
+   "sha256": "e70c8734146eae060f0b0bf889a33e7619dd305bc7fec19f8a22db793657a12b",
+   "family": "helios-a8x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240421142003"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8x-2025/",
+   "timestamp": "20251107125550",
+   "sha256": "7edb9f2382f99fa2ed8b4f8df2750044d02062556b7dda8a659c2c153c01e269",
+   "family": "helios-a8x-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8x-2025/",
+   "timestamp": "20260328051316",
+   "sha256": "a47257269cd260d2f524e88e973f1984d0c22db84a05acd919462e3ec94a73bb",
+   "family": "helios-a8x-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714202145"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a8x-2/",
+   "timestamp": "20220812024045",
+   "sha256": "7312dd89f809a16670364fcc8e165597c282a01a979014b10b178ec2b70f7be4",
+   "family": "helios-a8x-v2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220812024045"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a9-di2-powermeter/",
+   "timestamp": "20251215175245",
+   "sha256": "0a913bc9f7f0f289c3c32d9922b4bf2bc6467ceab8c0ec7a560df527c660b4a2",
+   "family": "helios-a9",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201922"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a9-di2-powermeter/",
+   "timestamp": "20260813192044",
+   "sha256": "ff9435873165c142d555951a68c157374e9ec41c34c011164107a31316545b77",
+   "family": "helios-a9",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250714201922"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a9x-dura-ace-c60/",
+   "timestamp": "20230609205127",
+   "sha256": "54c4cbc3df0eb2d876f4c6d387c91bc6150d9247b7f7423674b7fb6673fef828",
+   "family": "helios-a9x",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220809223151"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/helios-a9x-dura-ace-c60/",
+   "timestamp": "20251208012904",
+   "sha256": "efa81e303bf20a2b3181414edd547785ca5e86434355fc36688f3f09a5db979d",
+   "family": "helios-a9x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240412114333"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/helios-a9x-c60-powermeter/",
+   "timestamp": "20260810175201",
+   "sha256": "1190ebcc3735217e7946bf841eeced6937f97220fbb5c80f297f063b6393aecf",
+   "family": "helios-a9x",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240420010426"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a9x-entity-wr5-2025/",
+   "timestamp": "20251211221737",
+   "sha256": "aa7af245e9feec1e075b3d7f3bdfc5f5ae929edd50e9e2e0fb94dfa34dbec833",
+   "family": "helios-a9x-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250918064721"
+  },
+  {
+   "url": "https://www.polygonbikes.com/helios-a9x-entity-wr5-2025/",
+   "timestamp": "20260611043948",
+   "sha256": "b390ed64c0915e2da21de6370f0eb7a375af7c30dcd25f91d18c6c719d25194d",
+   "family": "helios-a9x-2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250918064721"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt8-chrome/",
+   "timestamp": "20190916041547",
+   "sha256": "60788ec13f4538296c5ad8c589f6289ede92aa4cd3bfa07bd0c786a0df76b338",
+   "family": "helios-lt8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721232821"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt8-disc/",
+   "timestamp": "20200920110436",
+   "sha256": "97357c37f552ac000a9648a38b43c9399cfe55d24b63107d66a43fc38da1c4fa",
+   "family": "helios-lt8",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920110436"
+  },
+  {
+   "url": "https://www.polygonbikes.com/id/bikes/description/2018-helios-lt8-red",
+   "timestamp": "20180227091319",
+   "sha256": "5e45b4f1edc817ac9cf4d42ea5306d12b084c6e1a01c7e2bbe1e347db41ca8f5",
+   "family": "helios-lt8-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20180122015238"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt8-2/",
+   "timestamp": "20200807182748",
+   "sha256": "38e2bd08b76b7d64c04eede3ace50acc4dcf5e3ac47a26feda35e5eb023c429d",
+   "family": "helios-lt8-v2",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200807182748"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9/",
+   "timestamp": "20190916041442",
+   "sha256": "d8c8cd68a3bef12260d383a6fa38275a6f7366f265ef6da77a5a1a4f8442c9b1",
+   "family": "helios-lt9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721232708"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9/",
+   "timestamp": "20200807181737",
+   "sha256": "9ec237e05ae7b852b0c64ac8481ac95033efa8f95fa54d9271867abe8d1932d9",
+   "family": "helios-lt9",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190721232708"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-helios-lt9",
+   "timestamp": "20180318080733",
+   "sha256": "7116e36ddcc8e5ce8176e821ba8e85caf05f3d3a3bbb22def500753fce98a024",
+   "family": "helios-lt9-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826222615"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9x-etap/",
+   "timestamp": "20191112182643",
+   "sha256": "af0126da20786ba03a3e4e930839a496fe8d78858e916a1410b91394449741f2",
+   "family": "helios-lt9x",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721232326"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9x-ace/",
+   "timestamp": "20200807181955",
+   "sha256": "b96fb765a4e5978643cbb5f6c7257be1e53b8af383f08d123d65db6457e85b2a",
+   "family": "helios-lt9x",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190721233407"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-helios-lt9-x",
+   "timestamp": "20180328123930",
+   "sha256": "cb0534f9c5fd4531dfb512d47633552d03f668b4110bb6a8760d7ac09952b54e",
+   "family": "helios-lt9x-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826221648"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s2/",
+   "timestamp": "20230609213850",
+   "sha256": "3e7a7c5d7857af0f9bce6e6138b4b9f05cd969549ece2af332618a0653f3dd96",
+   "family": "strattos-s2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220704035349"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s2/",
+   "timestamp": "20260609025942",
+   "sha256": "1e776fab7b728a81a4d357e1aa90190f86cf92452605b60c8a091d15fd6cfca9",
+   "family": "strattos-s2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220704035349"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s2/",
+   "timestamp": "20251208020223",
+   "sha256": "52b2e30b23a8a620d714a2b91814b6d8961c376ae3351abeaacefc7e0277ce46",
+   "family": "strattos-s2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240421153254"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-2",
+   "timestamp": "20180318080632",
+   "sha256": "a81c516608c5060d7d8f5cbe8c843bcdfcd8a67336e87548b6ba0206ce782acb",
+   "family": "strattos-s2-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826222621"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s2-2020/",
+   "timestamp": "20230329223723",
+   "sha256": "0cdcb9348c549aaa09609f94f4ce99050ccaa8d031dc276d7edbfc5f2f8b7d52",
+   "family": "strattos-s2-2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220809230149"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s2-2020/",
+   "timestamp": "20251211213228",
+   "sha256": "4dbc60e6e67ba67157a89c0fa5a4505d3f33be235bfb6950e77e130503369ee5",
+   "family": "strattos-s2-2020",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220809230149"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s2-2020/",
+   "timestamp": "20260614070257",
+   "sha256": "b165ee34d1c0163146d20309f4b8905794b2793a8a241357d0af167b6e027510",
+   "family": "strattos-s2-2020",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220809230149"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s2-2/",
+   "timestamp": "20200920105914",
+   "sha256": "a393cabf4357f2da1d13645a231ac95a05f10125f7eab1c45fbcd3c5a05e18fe",
+   "family": "strattos-s2-v2",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190718050556"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s2-2/",
+   "timestamp": "20251213011325",
+   "sha256": "9164abdc8884108cc6545a8bdd6bb95bda8188ee059fc94aa0b1575a7ebec4e4",
+   "family": "strattos-s2-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201858"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s2-2/",
+   "timestamp": "20260328051226",
+   "sha256": "a5f31f63fdc1a2c6d79fe4fa11603b95dfb1055e8e6ee63b5c57c5a5a82545cd",
+   "family": "strattos-s2-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201858"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s2-3/",
+   "timestamp": "20190916085446",
+   "sha256": "10f4739bee0f875211e901fa3cca5fc80eb232a4d32d5cccf0ba237b428534b9",
+   "family": "strattos-s2-v3",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722000654"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s2-3/",
+   "timestamp": "20200607184816",
+   "sha256": "a863b9985a3b776ee9bc9bf905a7de2df59a2c534a195ff3a8ffa1c3458d372e",
+   "family": "strattos-s2-v3",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722000654"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s3/",
+   "timestamp": "20230610120411",
+   "sha256": "ec99f1b3911d691f1f432b19e7a4a00050e00c506d6aaf5e86c2173b0927b89c",
+   "family": "strattos-s3",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220703173033"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s3/",
+   "timestamp": "20251213014629",
+   "sha256": "62f28f3fc3efa6d4ea65416e16f46cca816d4377b63f597f408b66e1aac35a29",
+   "family": "strattos-s3",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240420022454"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s3/",
+   "timestamp": "20260308212510",
+   "sha256": "db404b499524e9f11405a5a68dfa77661fba55ef20fe6e584bae4bfd46068073",
+   "family": "strattos-s3",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240420022454"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-3",
+   "timestamp": "20180318080738",
+   "sha256": "4d4cb7161afa0d8d3756c1067614fedf50648efdbf3323465f349627df365c4f",
+   "family": "strattos-s3-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826222413"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s3-2/",
+   "timestamp": "20190916085535",
+   "sha256": "b8410f4707832431c9ff3005d9b1fb7d2c8f8f0c786c3478300d4a8b3ddfb040",
+   "family": "strattos-s3-v2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722000755"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s3-2/",
+   "timestamp": "20250907200042",
+   "sha256": "773e94f50bf8d7476bc65db6492f775d637605d75f98ad5de1df2d049f60fa65",
+   "family": "strattos-s3-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250314073705"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s3-2/",
+   "timestamp": "20260813173733",
+   "sha256": "2bd24f009733e310ebab9af35f244bc6a57e152243c366b7d5457ecdf37fe85a",
+   "family": "strattos-s3-v2",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250314073705"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4/",
+   "timestamp": "20230411231319",
+   "sha256": "dd62489521635df85925884054453271d6003eafd2fe39000ebdb476b0f06ae6",
+   "family": "strattos-s4",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220928022739"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4/",
+   "timestamp": "20251213220043",
+   "sha256": "5ce82d1e9121ed7006bc71225b339922f98283b3bad8a440b8f812eaae3d4dc2",
+   "family": "strattos-s4",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220928022739"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4/",
+   "timestamp": "20260510045253",
+   "sha256": "6f0f068a37807948e1b7e5dded8eb19c3076d7b7850f26ec4d0340566662063c",
+   "family": "strattos-s4",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220928022739"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-4",
+   "timestamp": "20180318080743",
+   "sha256": "7ec2d62cfd7c9b693f17ae72a72e2d78c6d8a897b7dba7106d42f95562990097",
+   "family": "strattos-s4-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826222421"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4-2020/",
+   "timestamp": "20230610041141",
+   "sha256": "673fabe9b7aa6bd96527b72dcade5e1cedba21e93ee428e555dd6bf935260c9d",
+   "family": "strattos-s4-2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221206094712"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4-2020/",
+   "timestamp": "20250918021453",
+   "sha256": "3ee2b11c23a3f5e903c60e0e88188b91ffc1c3239b17a293540500ec1421d52d",
+   "family": "strattos-s4-2020",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20221206094712"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4-2020/",
+   "timestamp": "20260812171317",
+   "sha256": "e88286615afd59cc239c479982f4ab799a409b6969b0b5baafe78249f102d313",
+   "family": "strattos-s4-2020",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20221206094712"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s4-2/",
+   "timestamp": "20190916035945",
+   "sha256": "3ecf5e21155de0d280dc52757c4349d3740d694353ce1dbbf84fef6001af8a79",
+   "family": "strattos-s4-v2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721230220"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4-2/",
+   "timestamp": "20220707043139",
+   "sha256": "4811b576eacc9416dfe5b8a7828dd2ff7f96c1144130005a996a80cc2136258e",
+   "family": "strattos-s4-v2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220707043139"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4-2/",
+   "timestamp": "20250917141926",
+   "sha256": "62e3a834e29744c04f0e48156d92f6acba7945e05774d70187ee0e27243ca10b",
+   "family": "strattos-s4-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220707043139"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4-2/",
+   "timestamp": "20260512001335",
+   "sha256": "79f1867a8c9d7f64713b3af8e11d71f10ae64b542bfc32d22e6aadcd4c303b54",
+   "family": "strattos-s4-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220707043139"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s4d/",
+   "timestamp": "20260515082019",
+   "sha256": "adf43bb815916309f7b08c539e01664da13d1a2eb687a8c2c8a9076de8461580",
+   "family": "strattos-s4d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240624125847"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s4d/",
+   "timestamp": "20251213224319",
+   "sha256": "c073b458572bad1447ed39261aeca61d5cdcaf365bb1479c75eb34bcdffd3d8f",
+   "family": "strattos-s4d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250917144412"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s5-disc-brakes/",
+   "timestamp": "20190919043356",
+   "sha256": "198350c1468b8c384361281eb239ce18cb29c4d9e134415dd901adcdc3a30739",
+   "family": "strattos-s5",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190919043356"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s5-disc-brakes/",
+   "timestamp": "20200923191554",
+   "sha256": "1660bc6cf03a5425b661af029eb5b0a8f3b366888345687bfda8b5451a301925",
+   "family": "strattos-s5",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190919043356"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s5/",
+   "timestamp": "20251010154944",
+   "sha256": "7c70d66c46694f1924a4a752c14eeda8283cc9c3af9f3322335f0e6bc96829d1",
+   "family": "strattos-s5",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240414143800"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s5/",
+   "timestamp": "20260313174318",
+   "sha256": "d6c3a104840661c8571d15305f4d151b31b6240054a87380bd25abb249f62898",
+   "family": "strattos-s5",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240414143800"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-5",
+   "timestamp": "20180318034552",
+   "sha256": "e46bdf168243af20ccf1bf40337e13285c5fb62ba0e0dda90573783389f95994",
+   "family": "strattos-s5-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826222739"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s5-2/",
+   "timestamp": "20190923111343",
+   "sha256": "9b3a66be01e5c627e0e9c49e4a387067082782023e820b3d251864c0a3444686",
+   "family": "strattos-s5-v2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721232425"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s5-2/",
+   "timestamp": "20200920103842",
+   "sha256": "f19c16021d78756962bcfe8f9b3394021f530c1da925a8bda43cc618046f76c5",
+   "family": "strattos-s5-v2",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190721232425"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5-2/",
+   "timestamp": "20230323150120",
+   "sha256": "efc7c5e2deeaf00d710a9a83bbd86c6a89406a0e454c1eb891d540f7f50d2c52",
+   "family": "strattos-s5-v2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220707051228"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5-2/",
+   "timestamp": "20250917150329",
+   "sha256": "a732ce497b01721b0f2e86bf5d59662b86fb6d80aa1b8643b8706cfc554fb0d9",
+   "family": "strattos-s5-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220707051228"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5-2/",
+   "timestamp": "20260217151719",
+   "sha256": "e1968c29dd64cafaa496262d970c789d64819128948a6fb0b0812938a3c25086",
+   "family": "strattos-s5-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220707051228"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5d/",
+   "timestamp": "20230530022035",
+   "sha256": "bc34606390a0c99edbadfc2673a99b7e623c343848729ef122207988c7d0b723",
+   "family": "strattos-s5d",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220705073128"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s5d/",
+   "timestamp": "20251006202054",
+   "sha256": "73e78564529e264db058c39c294fcc86b5e7189ce3785b896fbe0324c9aeefbe",
+   "family": "strattos-s5d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240414142108"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s5d/",
+   "timestamp": "20260513131436",
+   "sha256": "464777a0cd7d3cc73d773089101bc373099939f7ee0c077895d21710db67be74",
+   "family": "strattos-s5d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240414142108"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5d-2020/",
+   "timestamp": "20230325041609",
+   "sha256": "07d51691ba1a56182acb12f1dbdb13cda42dfcbcfe807c1eea37e9e4d8bf682c",
+   "family": "strattos-s5d-2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221206093751"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5d-2020/",
+   "timestamp": "20250909092253",
+   "sha256": "e52e240fe94b0404bf2447a5da8684b93ada47d8c0ca4bf8a000f44bd3a92f82",
+   "family": "strattos-s5d-2020",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20221206093751"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5d-2020/",
+   "timestamp": "20260513122021",
+   "sha256": "0fc9d1dd9799f16f4ae9df59e426c5af4189a0201e876900abf98a78b79dd3cc",
+   "family": "strattos-s5d-2020",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20221206093751"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s5d-2022/",
+   "timestamp": "20260216083817",
+   "sha256": "d717960304048f4aa7609bf127d6699b8e12e848201d77a64f9337f988b436d8",
+   "family": "strattos-s5d-2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260216083817"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s6d/",
+   "timestamp": "20250917045441",
+   "sha256": "c2c70336a8183e732b56f94be70634ccecb1e48cab621760a76768f77a96d499",
+   "family": "strattos-s6d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201922"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s6d/",
+   "timestamp": "20260618013547",
+   "sha256": "fce2c54a020d6d4f34bb57e412e4701670895bf0a8c1e0c3d552c022d46b24e3",
+   "family": "strattos-s6d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201922"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s7-disc-brakes/",
+   "timestamp": "20190919040455",
+   "sha256": "79f6605b8f4a3b5a6df40eda8b37b9421a1711b2770bd0a08f1d6800834b5b16",
+   "family": "strattos-s7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190919040455"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s7-disc-brakes/",
+   "timestamp": "20200807175256",
+   "sha256": "d449644086ae29725fd6636ba8e5418a4f0e270dae989e907c2ead4cd93c5114",
+   "family": "strattos-s7",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190919040455"
+  },
+  {
+   "url": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-7",
+   "timestamp": "20180323080122",
+   "sha256": "28376fb01f3d7786efcf4a8a065a79a0323f14e67a06ef70be72d4ec1a8ab50e",
+   "family": "strattos-s7-2018",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20170826222630"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s7-2/",
+   "timestamp": "20190916040006",
+   "sha256": "255d74e2f726ec155f5e81e2f1c2e8eb34505e865c5a11adb6ec1aa605260989",
+   "family": "strattos-s7-v2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721230230"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s7-2/",
+   "timestamp": "20201007194205",
+   "sha256": "d2bf9c3f45c5e34d0b16ee5bd3c4d702eede22064b39572e8705074a38dd6915",
+   "family": "strattos-s7-v2",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190721230230"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s7d/",
+   "timestamp": "20230608020330",
+   "sha256": "1022d6f42255ba312fc5a026db2a149add718e49ecfa3aaa72848021a265413a",
+   "family": "strattos-s7d",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220704031611"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s7d/",
+   "timestamp": "20250714201927",
+   "sha256": "44796e6b975bd0c0ab454352d55ba63bce3aeca5d2e81bfac22f45e12c19ad47",
+   "family": "strattos-s7d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220704031611"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s7d/",
+   "timestamp": "20260514005934",
+   "sha256": "467d14436885b6abaaf76062e569837cbef58a4ae5bc5cd97499d3af4f88c761",
+   "family": "strattos-s7d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240420002410"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s7d-2022/",
+   "timestamp": "20251211205351",
+   "sha256": "afd28925f8ec55638f892ed28f984077b51bd260c25059b6b1726391fb9f53e2",
+   "family": "strattos-s7d-2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250917044304"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s7d-2022/",
+   "timestamp": "20260617221626",
+   "sha256": "884f46b6796ead71f9953f56d530fe02c1fe2365517aa069d7cec3a477a67062",
+   "family": "strattos-s7d-2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250917044304"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s7d-2/",
+   "timestamp": "20251006200333",
+   "sha256": "d4094bfb061c3e870690cc20ba9bb37f84bc1a8083bf296d00afc1a838b13309",
+   "family": "strattos-s7d-v2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251006200333"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s7d-2/",
+   "timestamp": "20260810203333",
+   "sha256": "c49e6db7c9ae69c9958f002ae002cd1080a66463f445e1ff499d3052d686fc87",
+   "family": "strattos-s7d-v2",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251006200333"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s7x/",
+   "timestamp": "20260515080907",
+   "sha256": "f3ddd1c77b38b4b1bb1f6db00e7573ef59bdc97626b89824b179e12632d4a2cd",
+   "family": "strattos-s7x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260515080907"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s8-disc-brakes/",
+   "timestamp": "20190919042110",
+   "sha256": "b9e4050f6d09009db0fed70929882b6bb7ec9cef341a0b76c2ff8e894c472e8f",
+   "family": "strattos-s8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190919042110"
+  },
+  {
+   "url": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s8-disc-brakes/",
+   "timestamp": "20200923185646",
+   "sha256": "4ca5341836867cc535035597229fc8510b838c07642335ff740c5f6876eb019b",
+   "family": "strattos-s8",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190919042110"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s8d/",
+   "timestamp": "20230609223902",
+   "sha256": "aa96e1017a448bb5e8a36a4f5642d7884f7ed71c16f7a9edcb8d8af43b242686",
+   "family": "strattos-s8d",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220627085655"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s8d/",
+   "timestamp": "20251215170219",
+   "sha256": "a3da8fefe70bfaf9a2ecab1b7b96e07df4336efa60b193d612e6461914ec2d19",
+   "family": "strattos-s8d",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240421135926"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/strattos-s8d/",
+   "timestamp": "20260812172501",
+   "sha256": "05c60a8f0f324b8eb891f359df00bdb12b9d84d375c63c35acdec8c1ea59bd4e",
+   "family": "strattos-s8d",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240421135926"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s8d-2022/",
+   "timestamp": "20250909040820",
+   "sha256": "6a3da86e4509996462ad61c89caa6ed0e1336461358bddb612ff8d9ce1a73628",
+   "family": "strattos-s8d-2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250909040820"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s8d-2022/",
+   "timestamp": "20260809073631",
+   "sha256": "bb7c49cbdd44dffd1642d8e90d9f0171b0a9c7fc56a1beec49e9e92442cf9168",
+   "family": "strattos-s8d-2022",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250909040820"
+  },
+  {
+   "url": "https://www.polygonbikes.com/strattos-s8x-a/",
+   "timestamp": "20260515072821",
+   "sha256": "a98fafe83ef7fd952f35ba20f7f0b355ef1091356915eb59c3339f01772c8d99",
+   "family": "strattos-s8x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260515072821"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-a4/",
+   "timestamp": "20251109213330",
+   "sha256": "4dd2d5abea0bf58076d0212fe694c8fe76232f31a84dde8698f5c2b39f41263c",
+   "family": "tambora-a4",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201936"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/tambora-a4/",
+   "timestamp": "20260813190219",
+   "sha256": "a0b58c31b3411b5b5838810ce297f3a220f69fa19be8ccf98168c825da2001a6",
+   "family": "tambora-a4",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251013222135"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-a5/",
+   "timestamp": "20251213231406",
+   "sha256": "3bd6d750024edf6a037d9d9a55e6dc30dc96856b5fa5cbe527f2dbe2a4c52c29",
+   "family": "tambora-a5",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201926"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-a5/",
+   "timestamp": "20260811151156",
+   "sha256": "63484a5ead87ae341644c4c32a82acf554697f05fcc44afeac6a376e822c2c50",
+   "family": "tambora-a5",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250714201926"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-a9x/",
+   "timestamp": "20251208003948",
+   "sha256": "9bb2b641de4686e77ba9aa6359f32bcb72284942a0b2e0d91366347c196a00ab",
+   "family": "tambora-a9x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250714201926"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-a9x/",
+   "timestamp": "20260813174647",
+   "sha256": "003b720e09233d3ae9b21708de34daf8f0b274605de8f8ae9f6054d9b309d13c",
+   "family": "tambora-a9x",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250714201926"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-g4/",
+   "timestamp": "20250505154122",
+   "sha256": "5a4d33356aa719a8c1de5718077f92d869da8618e0b7e08394c02f51e808cf18",
+   "family": "tambora-g4",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240424024320"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/tambora-g4/",
+   "timestamp": "20260614062856",
+   "sha256": "d5d25d060dfede952d7f60bcbbdb3d488dc29ef337941bdcc3de674f251ce411",
+   "family": "tambora-g4",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251013210042"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-g5/",
+   "timestamp": "20251215170044",
+   "sha256": "49c511b0a4799d17742c191fb9db3aa7ec22cd5d2a74f6502f620c0caae47c64",
+   "family": "tambora-g5",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240412104325"
+  },
+  {
+   "url": "https://www.polygonbikes.com/us/tambora-g5/",
+   "timestamp": "20260509164019",
+   "sha256": "91a6dab7d8238f5cb9b16a8d38985afddfd0ca9b193773d7931999c5aa50123f",
+   "family": "tambora-g5",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251018192327"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-g7/",
+   "timestamp": "20251215180553",
+   "sha256": "803cd57cbb2edce2d9c862a1f97053bcfecf1fe0b279256d9991b3053693cf2c",
+   "family": "tambora-g7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240424033941"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-g7/",
+   "timestamp": "20260611042759",
+   "sha256": "614d905dfd13e78a9da2b97b263ae0d75f368484b55c13c892d12455288eeb46",
+   "family": "tambora-g7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240424033941"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-g8x/",
+   "timestamp": "20251215180049",
+   "sha256": "95fc099c9d5aa2e32fbadd2881cb8e6c68b2dedd7c4b0bc77ff717eb6e34ffda",
+   "family": "tambora-g8x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240412115454"
+  },
+  {
+   "url": "https://www.polygonbikes.com/tambora-g8x/",
+   "timestamp": "20260328051115",
+   "sha256": "1de45a6fb78fc1a70ec2ee4fcc23cfb6b2031d403560ccea2825a1471cdd1005",
+   "family": "tambora-g8x",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240412115454"
+  }
+ ]
+}

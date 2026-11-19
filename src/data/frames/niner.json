@@ -1,0 +1,69 @@
+{
+  "brand": "Niner",
+  "models": [
+    {
+      "model": "ORE 9 RDO",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.ninerbikes.com/ore-9-rdo-4-star-shimano-grx-800-1x-12sp/",
+      "retrieved": "2025-09-16",
+      "archive": "https://web.archive.org/web/20250916011531/https://www.ninerbikes.com/ore-9-rdo-4-star-shimano-grx-800-1x-12sp/",
+      "sizes": [
+        ["47cm",545,369,74,69,90,430,435,1034,70],
+        ["50cm",560,395,74,69,106,460,435,1066,70],
+        ["53cm",579,405,74,69,126,490,435,1083,70],
+        ["56cm",598,413,73,69,146,520,435,1099,70],
+        ["59cm",617,422,73,69,167,550,435,1115,70],
+        ["62cm",636,441,73,69,188,580,435,1142,70]
+      ]
+    },
+    {
+      "model": "RLT 9",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.ninerbikes.com/rlt-9-frameset-1/",
+      "retrieved": "2025-09-17",
+      "archive": "https://web.archive.org/web/20250917083156/https://www.ninerbikes.com/rlt-9-frameset-1/",
+      "sizes": [
+        ["47cm",537,361,74.5,70,105,430,435,1005,75],
+        ["50cm",558,365,74,70.5,125,460,435,1012,75],
+        ["53cm",578,374,73.5,71,145,490,435,1023,75],
+        ["56cm",594,383,73,71.5,165,520,435,1036,70],
+        ["59cm",615,397,73,72,185,550,435,1051,70],
+        ["62cm",636,407,72.5,72.5,205,580,435,1060,70]
+      ]
+    },
+    {
+      "model": "RLT 9 RDO",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.ninerbikes.com/rlt-9-rdo-frame/",
+      "retrieved": "2025-09-18",
+      "archive": "https://web.archive.org/web/20250918172245/https://www.ninerbikes.com/rlt-9-rdo-frame/",
+      "sizes": [
+        ["47cm",535,362,74.5,70,105,430,430,1000,75],
+        ["50cm",556,366,74,70.5,125,460,430,1007,75],
+        ["53cm",577,374,73.5,71,145,490,430,1017,75],
+        ["56cm",592,384,73,71.5,165,520,430,1030,70],
+        ["59cm",613,398,73,72,185,550,430,1045,70],
+        ["62cm",634,405,72.5,72.5,205,580,430,1054,70]
+      ]
+    },
+    {
+      "model": "RLT 9 Steel",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.ninerbikes.com/rlt-9-steel-3-star-sram-rival-1-us/",
+      "retrieved": "2025-08-10",
+      "archive": "https://web.archive.org/web/20250810103406/https://www.ninerbikes.com/rlt-9-steel-3-star-sram-rival-1-us/",
+      "sizes": [
+        ["47cm",543,365,74.5,70,110,470,435,1008,75],
+        ["50cm",558,367,74,70.5,125,500,435,1015,75],
+        ["53cm",579,375,73.5,71,145,530,435,1025,75],
+        ["56cm",597,384,73,71.5,165,560,435,1038,70],
+        ["59cm",615,398,73,72,185,590,435,1053,70],
+        ["62cm",636,406,72.5,72.5,205,620,435,1062,70]
+      ]
+    }
+  ]
+}

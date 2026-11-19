@@ -89,7 +89,8 @@
  },
  {
   "file": "rose",
-  "brand": "Rose"
+  "brand": "Rose",
+  "note": "Geometry from a client-side API, never archived; current range hand-entered."
  },
  {
   "file": "salsa",
@@ -217,7 +218,8 @@
  },
  {
   "file": "lynskey",
-  "brand": "Lynskey"
+  "brand": "Lynskey",
+  "note": "Geometry in a Wix rich-text table; current range hand-entered."
  },
  {
   "file": "marin",
@@ -334,7 +336,7 @@
  {
   "file": "van-rysel",
   "brand": "Van Rysel",
-  "note": "Geometry only in product images on every archived source; no adapter."
+  "note": "Geometry only in product images; current range hand-entered from the charts."
  },
  {
   "file": "ventum",

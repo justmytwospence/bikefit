@@ -1,0 +1,375 @@
+{
+ "brand": "Vitus",
+ "file": "vitus",
+ "pages": [
+  {
+   "url": "https://vitusbikes.com/products/energie-cyclocross-bike-apex",
+   "timestamp": "20210922151709",
+   "sha256": "ee1bf2944c23ffe60b440c64557658768252d9dbb764a4a12209b2f3bd32e5a4",
+   "family": "energie",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200925041654"
+  },
+  {
+   "url": "https://vitusbikes.com/products/energie-cyclocross-bike-apex",
+   "timestamp": "20231210001852",
+   "sha256": "32d6385b1f3bbae25f57185bb3201062b9a717f8ac1ebcef8b740eda8e42ec68",
+   "family": "energie",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200925041654"
+  },
+  {
+   "url": "https://vitusbikes.com/products/energie-cyclocross-bike-apex",
+   "timestamp": "20260617134808",
+   "sha256": "c8db946d23d5760d8fd125c39af1ef0af5307e3664586daf6c5a176c6075f2d1",
+   "family": "energie",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200925041654"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-energie-vrs-cyclocross-bike-07e7",
+   "timestamp": "20251006101914",
+   "sha256": "6fe48bc26623fcc0e1bc9efbcf67378dee4ab6ed2fc0774ad0e5872b464f0827",
+   "family": "energie",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231003081730"
+  },
+  {
+   "url": "https://vitusbikes.com/products/energie-crx-etap-cyclocross-bike-force",
+   "timestamp": "20210922132744",
+   "sha256": "71b1e8c0d00ddf88daac193ea3ac228ae8c35aa43828a39f9bc707a64046c272",
+   "family": "energie-carbon",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200925021821"
+  },
+  {
+   "url": "https://vitusbikes.com/products/energie-crx-etap-cyclocross-bike-force",
+   "timestamp": "20231209234156",
+   "sha256": "4dc56a592ab901551f58e793d9a04c678a3512d3c92e9d539e516bacd29f0cb6",
+   "family": "energie-carbon",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200925021821"
+  },
+  {
+   "url": "https://vitusbikes.com/products/energie-cr-cyclocross-bike-rival",
+   "timestamp": "20250910212737",
+   "sha256": "cd0b6681202ce12357cfe237769f0d3dd74ff20c6da5d8c695b517d7e2b2b66d",
+   "family": "energie-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200925041859"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-energie-evo-cr-cyclocross-bike-rival",
+   "timestamp": "20211024032345",
+   "sha256": "12765edd5c6fca7de305068f81de254dc22abd27388f5cb23fc46ac37bde599e",
+   "family": "energie-evo",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200919154200"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-energie-evo-c-cyclocross-bike-apex",
+   "timestamp": "20230926061310",
+   "sha256": "c02fbb2ad845a95f9f99aaa9846b34d0571b9297ccab92b8b7319c461e03abb4",
+   "family": "energie-evo",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200919154411"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-energie-evo-apex-cyclocross-bike-07e7",
+   "timestamp": "20251119192811",
+   "sha256": "7efa64d12dcf343152e43dd104fbf904d92902c166847ad1cd4246adb41b6626",
+   "family": "energie-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230321072558"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-energie-evo-frameset-07e7",
+   "timestamp": "20260617140210",
+   "sha256": "6e19e8942d1ba6d09ba7a2fe8d152fec211e48e6a02771c8558b1c126b60fafb",
+   "family": "energie-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230608151237"
+  },
+  {
+   "url": "https://vitusbikes.com/products/razor-vr-disc-road-bike-sora",
+   "timestamp": "20210922141505",
+   "sha256": "5d95c9e9c6568f61bb61bd9b1e649e51d6fe3fc4b0c49d5a4ee841da96cded9f",
+   "family": "razor",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200925030853"
+  },
+  {
+   "url": "https://vitusbikes.com/products/razor-vr-disc-road-bike-sora",
+   "timestamp": "20231210003631",
+   "sha256": "8e4f2076266aab646c357d1e2cbb560dd5eef5a556827f75dceb795fc16a0780",
+   "family": "razor",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200925030853"
+  },
+  {
+   "url": "https://vitusbikes.com/products/razor-road-bike-claris",
+   "timestamp": "20250715105321",
+   "sha256": "4a9c76c02e074c7a1dee5baa9b73f0d187668d38586f3f0bfd412be7e63d302b",
+   "family": "razor",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210120091848"
+  },
+  {
+   "url": "https://vitusbikes.com/products/razor-womens-road-bike-claris",
+   "timestamp": "20260617133943",
+   "sha256": "7b4da99ef47466a1b20cd040fb3b7f287417f792352f443f7ed885080c7520df",
+   "family": "razor",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200919155443"
+  },
+  {
+   "url": "https://vitusbikes.com/products/substance-v-2-adventure-road-bike",
+   "timestamp": "20210922133130",
+   "sha256": "721fc46d04c7f82320888eb3e73cc18612c110949cd76d877e126899d7aaa304",
+   "family": "substance",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200924070051"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-substance-vrs-2-adventure-road-bike-grx-600-2022",
+   "timestamp": "20231206083801",
+   "sha256": "5a9d4825d84bc9438f78315660c073b3063348b4578104ab71732fba5130b590",
+   "family": "substance",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220527154507"
+  },
+  {
+   "url": "https://vitusbikes.com/products/substance-vrs-2-adventure-road-bike",
+   "timestamp": "20260617134101",
+   "sha256": "c826025d31d846aa720cd9db949fba8a4f0ca660ce55de4e69ed94f91a0b938d",
+   "family": "substance",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200926025632"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-substance-2-adventure-road-bike-microshift-2022",
+   "timestamp": "20250910213157",
+   "sha256": "21f5bce1c2c1b043d07138493312d233af08f5efd9dc33697c98e55e66c8b916",
+   "family": "substance",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220527162925"
+  },
+  {
+   "url": "https://vitusbikes.com/products/substance-crs-1-adventure-road-bike",
+   "timestamp": "20210922135901",
+   "sha256": "56357ae4c1f75918394fcbf5cd98ea48ce1990eb5787e3a0fdbdb7227d370a60",
+   "family": "substance-carbon",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200811093412"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-substance-crs-2-adventure-road-bike",
+   "timestamp": "20231210005100",
+   "sha256": "eba26d2b5bd01939f12b5f170edf8961e1ad1f3156c5cf52d2b4535f3e1e94c9",
+   "family": "substance-carbon",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200924081001"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-substance-crs-2-adventure-road-bike",
+   "timestamp": "20250618022534",
+   "sha256": "59734e9d9939e8b38347ec831bee94e99da99d099df400034329fe5761454eae",
+   "family": "substance-carbon",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20200924081001"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-substance-crx-1-adventure-road-bike",
+   "timestamp": "20260617124927",
+   "sha256": "12f52dca2e554ec6f582319e880a38c149108e68af431e99e058fe847839ee22",
+   "family": "substance-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200919145144"
+  },
+  {
+   "url": "https://vitusbikes.com/products/substance-srs-1-adventure-road-bike",
+   "timestamp": "20210924213101",
+   "sha256": "dfa2c7b5114cf10dcf0423f34b0cb125d8b5f8fa6b6c0521e776f8550b15d150",
+   "family": "substance-steel",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200925034212"
+  },
+  {
+   "url": "https://vitusbikes.com/products/substance-srs-1-adventure-road-bike",
+   "timestamp": "20231210005808",
+   "sha256": "b05c85f04fe462b37cc706394d015b6c04cdc387d1dd9fa21a40fd13cdf8d1b6",
+   "family": "substance-steel",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200925034212"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-substance-srs-1-adventure-road-bike",
+   "timestamp": "20250918003444",
+   "sha256": "3c26591ee0400b2d2614c2e60b213695a0a0a753e5433315cf8d46cee987b3cd",
+   "family": "substance-steel",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200924092538"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-venon-evo-rs-ultegra-di2-aero-all-road-bike-07e7",
+   "timestamp": "20231003064245",
+   "sha256": "0f25379dd1ac95c8adc68623fdbe55b44f4981b1673c7521303d01935f840e4e",
+   "family": "venon-evo",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230819092024"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-venon-evo-frameset-07e7",
+   "timestamp": "20260617125345",
+   "sha256": "dd1ee480be866e8447a1e0e2c64e9d5266259f95a43b4112d419b162f039f198",
+   "family": "venon-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230921214312"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-venon-evo-rs-105-di2-all-road-bike-07e7",
+   "timestamp": "20251006111841",
+   "sha256": "3291529a64ddee9db6b7cf932eaf4f2a0fd2074d11ed97f523e4dc5c70b8131b",
+   "family": "venon-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230921223630"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitesse-evo-cr-road-bike-105",
+   "timestamp": "20210922134405",
+   "sha256": "65e18c5f0f3e735b58e45301112bdf40da3d783c090085797299240439b8a137",
+   "family": "vitesse-evo",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200806062402"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitesse-evo-cr-road-bike-105",
+   "timestamp": "20231210010324",
+   "sha256": "01f23f425c18c7bfecf7930b67a884cf398e6f49e4d2415b25ce4c35b8358f68",
+   "family": "vitesse-evo",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200806062402"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitesse-evo-crs-road-bike-ultegra",
+   "timestamp": "20250910213023",
+   "sha256": "178da3818572e96b7bb1774cb27d11b9f2da34b6d971f3d858baa4049ff79007",
+   "family": "vitesse-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200806074139"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-vitesse-evo-cr-road-bike-105",
+   "timestamp": "20260617134246",
+   "sha256": "6874552011e80ad678fa5f1e32ff8819087a9d2930318c7bb5c8c1dae03739dc",
+   "family": "vitesse-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200924090150"
+  },
+  {
+   "url": "https://vitusbikes.com/products/zenium-cr-road-bike-105",
+   "timestamp": "20210922151319",
+   "sha256": "618513ae804153692b9924777b367649d61d4e5ec0190faaa03e2418eefe8bf8",
+   "family": "zenium",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200806073340"
+  },
+  {
+   "url": "https://vitusbikes.com/products/vitus-zenium-road-bike-tiagra",
+   "timestamp": "20231210003421",
+   "sha256": "c532983a5b04697344942b25840b5600851a9f04e221860b2ad966b5a768445c",
+   "family": "zenium",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200924074745"
+  },
+  {
+   "url": "https://vitusbikes.com/products/zenium-cr-road-bike-105",
+   "timestamp": "20251006113809",
+   "sha256": "b3d5d5751b68b79cd6707fa5264c526d8175f068f791906759c61f56d0d00abc",
+   "family": "zenium",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200806073340"
+  },
+  {
+   "url": "https://vitusbikes.com/products/zenium-crw-road-bike-105",
+   "timestamp": "20260617124510",
+   "sha256": "f5dc558cd1009fa41b0cc0aafada7f8eaaf1da56e6929382ebee8196bfaab9fd",
+   "family": "zenium",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200806063619"
+  },
+  {
+   "url": "https://vitusbikes.com/products/zx1-crs-road-bike-ultegra",
+   "timestamp": "20210922142609",
+   "sha256": "e96e80ec016c8d038d953e2b854fc5bebffbe829be59520c7b42b8c4a245f8ec",
+   "family": "zx-1-evo",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200925032139"
+  },
+  {
+   "url": "https://vitusbikes.com/products/zx1-crx-etap-road-bike-red",
+   "timestamp": "20230926064723",
+   "sha256": "a1956eaf56da0017d36b06724e23352830574d82c4c9f54df7e2bb2cdcdd3792",
+   "family": "zx-1-evo",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200925042633"
+  },
+  {
+   "url": "https://vitusbikes.com/products/zx1-cr-road-bike-105",
+   "timestamp": "20251006110019",
+   "sha256": "e11d5cbce27e5fc29f49f087d677b9978e956238c97208bbb178c46bc14750db",
+   "family": "zx-1-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200924081528"
+  },
+  {
+   "url": "https://vitusbikes.com/products/zx1-cr-road-bike-105",
+   "timestamp": "20260617131840",
+   "sha256": "4857d7fad1088e5fdb9549adf2a658ce5e575cc11ad353c1ea91dfe932dd37f5",
+   "family": "zx-1-evo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200924081528"
+  }
+ ]
+}

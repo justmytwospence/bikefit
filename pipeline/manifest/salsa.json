@@ -1,0 +1,321 @@
+{
+ "brand": "Salsa",
+ "file": "salsa",
+ "pages": [
+  {
+   "url": "https://www.salsacycles.com/bikes/cutthroat/2018_cutthroat_force_1",
+   "timestamp": "20191023124747",
+   "sha256": "fc7d7ff54246f12e4c8fd864effafafb99733ef6948e4f0cc9ce9d1d65295f33",
+   "family": "cutthroat",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170910210739"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/cutthroat/2020_cutthroat_frameset",
+   "timestamp": "20211020041941",
+   "sha256": "9149ca6620f05a5e42f5290aa029f0c1b44856f565f67776f4d2a4403fadb6e7",
+   "family": "cutthroat",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191206074851"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2025-cutthroat-c-grx-610-1x",
+   "timestamp": "20250913142737",
+   "sha256": "d494b7479f7a98029fd76c278a0e044454b10d6b1c8c3a9da89891a8db9425f5",
+   "family": "cutthroat",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250319165300"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/cutthroat-c-grx-610-1x",
+   "timestamp": "20260814192635",
+   "sha256": "2a046045816fd207615761c9ee514f8534b430df223357ba715659cd84b73864",
+   "family": "cutthroat",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260402120109"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/fargo/2018_fargo_gx_29",
+   "timestamp": "20191114232741",
+   "sha256": "c22db77d82c5cd0a5480c6edd7ece8df07d321dd28257bb234875c740b2e5ef5",
+   "family": "fargo",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170910200654"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/fargo/2019_fargo_ti_frameset",
+   "timestamp": "20211021123901",
+   "sha256": "d839363ef43e66740d4faf98dfc798b8ee0cd3f881744c82f7d92422683c0b91",
+   "family": "fargo",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20180713182746"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2025-fargo-frameset",
+   "timestamp": "20251208155952",
+   "sha256": "ff50f742747a4f458e4e3757b735cb01eea083d035d81e25f4b362abeff92ab6",
+   "family": "fargo",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250322002027"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2026-fargo-apex-s1000-axs-transmission",
+   "timestamp": "20261118051549",
+   "sha256": "43dd88484ee4972587e58b19753e9c68e590ad3f5bf3cf304f0129d789c114a9",
+   "family": "fargo",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260402034324"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/fargo-32-steel-frameset",
+   "timestamp": "20261114154323",
+   "sha256": "c33efb6c14c298fcb60bf66bbf4a16ad26d7798b14585d1346045e6a0b7ffe1f",
+   "family": "fargo-32",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20261114154323"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/flyway-c-grx-610",
+   "timestamp": "20260524193103",
+   "sha256": "f1104f49e9852ce5ede55baebe4910d0b29969a4f5440035f58abdd65c406bba",
+   "family": "flyway",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260312190415"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2022-journeyer-frameset",
+   "timestamp": "20251013161701",
+   "sha256": "2b46d6d4788d446be1b97bbc350a2a38dd0a997b3d630193703ccaeccb0b3cba",
+   "family": "journeyer",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250325155940"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2022-journeyer-frameset",
+   "timestamp": "20260815010140",
+   "sha256": "71eb49d9ba7d9bf32bfb311a925a40a14bb80a307455c9a7e612edf18c547a7d",
+   "family": "journeyer",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250325155940"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/journeyman/2019_journeyman_apex_1_700_black",
+   "timestamp": "20191206224624",
+   "sha256": "9824e0ac1fe89ceb1e9ca900230bd721157650d746be5d80e2f2f681bcb4d447",
+   "family": "journeyman",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717033107"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/journeyman/2019_journeyman_apex_1_700_black",
+   "timestamp": "20211021103308",
+   "sha256": "ffb148a8a9317fac18de73494be8ab9541cdb5d6ee223d8b9037299fb2b04397",
+   "family": "journeyman",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190717033107"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2019_journeyman_sora_650",
+   "timestamp": "20260511031630",
+   "sha256": "5e31ea5a9fef19e5f53aad2d6733a7d8df05fdc39b751b0ea80a213f0319e5a9",
+   "family": "journeyman",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250810040345"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2019_journeyman_sora_700",
+   "timestamp": "20251214233508",
+   "sha256": "22c21fe57b532a8ba9f0e468bc954fed06854598e55f7c0129a36ef7f2e83b02",
+   "family": "journeyman",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250803212832"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/marrakesh/2019_marrakesh_deore",
+   "timestamp": "20191207163036",
+   "sha256": "f3f165dfea8252c4aabf45fc9bcbef6b409925aae6d61b71c592f1639266183c",
+   "family": "marrakesh",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716041124"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/marrakesh/2019_marrakesh_deore",
+   "timestamp": "20210928041803",
+   "sha256": "35c787bd2b6a2bd2b7a18d8d493d507fb3f6cc2e30888ac83fe0319deef7574c",
+   "family": "marrakesh",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716041124"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2021_marrakesh_alivio",
+   "timestamp": "20260512071543",
+   "sha256": "f12e69141dc8e2c24188a86fda39c844ca8d64dee310f8a46f31734529df9554",
+   "family": "marrakesh",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260512071543"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2021_marrakesh_sora",
+   "timestamp": "20250803211244",
+   "sha256": "bb13a2b4687191e828fce371ff4f45ccd7578b875d5ca5e5cf6e8208b06fd429",
+   "family": "marrakesh",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250803211244"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/stormchaser/2020_stormchaser_single_speed",
+   "timestamp": "20211021123624",
+   "sha256": "ceba08bdc47b67013a26d1db22ca4cfcd225fe2329b6f54bbe3eb91863785091",
+   "family": "stormchaser",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200320165110"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2021_stormchaser_frameset",
+   "timestamp": "20250916070431",
+   "sha256": "a7130649274dfd20a0c5bab8e14dbb721cce27fc3e288896ba40b38bd1e0c65b",
+   "family": "stormchaser",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250321230950"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2024-stormchaser-apex-eagle-sus",
+   "timestamp": "20261114154355",
+   "sha256": "9f877f7cc25a3cb64f2841209db1ed5cbf86b88d2541c5059400e5b6a5b97ef5",
+   "family": "stormchaser",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250315140034"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/vaya/2018_vaya_apex",
+   "timestamp": "20181022095539",
+   "sha256": "cb79ea18c833ad87132f077cf6ef96cd2e7fd0f1918e0192daf3935113f18f52",
+   "family": "vaya",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20170927204806"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/vaya/2020_vaya_grx_600",
+   "timestamp": "20211021105957",
+   "sha256": "078b891064eadfbc54ca33fe2707c8a6bbc3417e9d2e7b8e956a877a7eb1ac5e",
+   "family": "vaya",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190917161847"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2019-vaya-frameset",
+   "timestamp": "20251201215400",
+   "sha256": "48c7004805030a90ffb77915df5f26a40859b813d75d9bb9f299d859618b5789",
+   "family": "vaya",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250716135111"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2019-vaya-frameset",
+   "timestamp": "20260317053710",
+   "sha256": "8119a781cabcbc15e162aa01d079abb13fe667b1ea9d2e3e7b57f0e8dd0b6820",
+   "family": "vaya",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250716135111"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/warbird/2018_warbird_carbon_ultegra",
+   "timestamp": "20191206002501",
+   "sha256": "dafdf027ad1fc2d7f51c9f872c51d9be46e4eee85d99ac86ac26703c73b61c0d",
+   "family": "warbird",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20170912061447"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/warbird/2020_warbird_grx_810_di2",
+   "timestamp": "20211021112956",
+   "sha256": "fcc23aedb213ff778cdaa52a9764ad3b4ceecea0229a00b099739153df3a4529",
+   "family": "warbird",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200304011559"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2025-warbird-c-grx-820-2x",
+   "timestamp": "20251201014917",
+   "sha256": "01393aa28bff9c611d3867f7c772eabe09270347cb25e2e4c9676f172351ae13",
+   "family": "warbird",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250321235404"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2025-warbird-c-grx-820-2x",
+   "timestamp": "20261114153159",
+   "sha256": "91ffa8c43fd5b8bcb27bad58cc1abdc0b222e808e1b78850563b7218523b4132",
+   "family": "warbird",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250321235404"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/warroad/2019_warroad_carbon_force_1_650",
+   "timestamp": "20191222200248",
+   "sha256": "5d62f0d9335f50bf52b6ebf94cbac917543531d5bea875555603d84f268450f6",
+   "family": "warroad",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190401022748"
+  },
+  {
+   "url": "https://www.salsacycles.com/bikes/warroad/2020_warroad_carbon_force_axs_700",
+   "timestamp": "20211024070716",
+   "sha256": "7aa9709295c4c2a81fc442c2ca04977e5284a21da30bfce4a2d601a80637f2d2",
+   "family": "warroad",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200423001627"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2022-warroad-c-ultegra",
+   "timestamp": "20251013154853",
+   "sha256": "22b13c150e6e44d648c30d38c8a9aae46a3c91590410dee27573b5fe14d51e4b",
+   "family": "warroad",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250315142458"
+  },
+  {
+   "url": "https://www.salsacycles.com/products/2022-warroad-c-ultegra",
+   "timestamp": "20260329171416",
+   "sha256": "9b7e15ad5f4325e031262ad26fdac931aa4207de9e082167e0291033e5fc23f6",
+   "family": "warroad",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250315142458"
+  }
+ ]
+}

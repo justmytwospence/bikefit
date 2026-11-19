@@ -1,0 +1,60 @@
+{
+ "brand": "Lapierre",
+ "file": "lapierre",
+ "pages": [
+  {
+   "url": "https://lapierrebikes.com/en-int/products/aerostorm-drs-lfata",
+   "timestamp": "20260807002411",
+   "sha256": "daa50d2f4a34276c5e73206fc7552b4705c23db4df1e869178c88ee029eb1ee0",
+   "family": "aerostorm-drs",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260806210526"
+  },
+  {
+   "url": "https://lapierrebikes.com/en-int/products/crosshill-20-lcaua",
+   "timestamp": "20260807051640",
+   "sha256": "e663369b84807b45c96d77734950b8748b21acff6aa9ffdad90acd98110763b9",
+   "family": "crosshill",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260806224643"
+  },
+  {
+   "url": "https://lapierrebikes.com/en-int/products/crosshill-cf-90-lcjua",
+   "timestamp": "20260809043100",
+   "sha256": "7f0ecb8d6ab035eaf75ef6c481932d1d48023868f5b7a46af93b25ae628504af",
+   "family": "crosshill-cf",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260612205631"
+  },
+  {
+   "url": "https://lapierrebikes.com/en-int/products/pulsium-60-lpptb",
+   "timestamp": "20260813121325",
+   "sha256": "8afe428a24a92704d9919c35c3efbebc33e1479d33da86c8deaad78562169ffb",
+   "family": "pulsium",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260806204610"
+  },
+  {
+   "url": "https://lapierrebikes.com/en-int/products/sensium-10-lsfpa",
+   "timestamp": "20260813113533",
+   "sha256": "7d617b2c5ee4805b8ff20e45e1f7310f249752921cb9e6cea627c016afb2a7a9",
+   "family": "sensium",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260806204618"
+  },
+  {
+   "url": "https://lapierrebikes.com/en-int/products/xelius-drs-10-lxfua",
+   "timestamp": "20260813130312",
+   "sha256": "4e52715d8834bc1a3b566bc2b378182a5db4b7253ae9748ecd70c92c818baac5",
+   "family": "xelius-drs",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260529180407"
+  }
+ ]
+}

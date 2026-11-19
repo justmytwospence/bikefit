@@ -1,0 +1,554 @@
+{
+  "brand": "Polygon",
+  "models": [
+    {
+      "model": "Bend R2",
+      "year": 2019,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/bend-r2/",
+      "retrieved": "2023-06-10",
+      "archive": "https://web.archive.org/web/20230610115135/https://www.polygonbikes.com/bend-r2/",
+      "sizes": [
+        ["S",569,365,74,71,140,430,420,999,80],
+        ["M",600,380,74,71.5,170,480,420,1019,80],
+        ["L",632,395,74,72.5,200,535,420,1034,80]
+      ]
+    },
+    {
+      "model": "Bend R5",
+      "year": 2019,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/bend-r5/",
+      "retrieved": "2023-06-09",
+      "archive": "https://web.archive.org/web/20230609211846/https://www.polygonbikes.com/bend-r5/",
+      "sizes": [
+        ["S",569,365,74,71,140,430,420,999,80],
+        ["M",600,380,74,71.5,170,480,420,1019,80],
+        ["L",632,395,74,72.5,200,535,420,1034,80]
+      ]
+    },
+    {
+      "model": "Bend R7",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/us/bend-r7/",
+      "retrieved": "2026-08-13",
+      "archive": "https://web.archive.org/web/20260813185929/https://www.polygonbikes.com/us/bend-r7/",
+      "sizes": [
+        ["S",563,364,74.5,70,140,405,440,1030,72],
+        ["M",612,382,74,70,165,450,440,1056,72],
+        ["L",621,396,73.5,70.5,200,495,440,1078,72],
+        ["XL",654,416,73.5,70.5,235,540,440,1110,72]
+      ]
+    },
+    {
+      "model": "Bend R9X",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/bend-r9x/",
+      "retrieved": "2026-07-11",
+      "archive": "https://web.archive.org/web/20260711105659/https://www.polygonbikes.com/bend-r9x/",
+      "sizes": [
+        ["S",563,364,74.5,70,140,405,440,1030,72],
+        ["M",612,382,74,70,165,450,440,1056,72],
+        ["L",621,396,73.5,70.5,200,495,440,1078,72],
+        ["XL",654,416,73.5,70.5,235,540,440,1110,72]
+      ]
+    },
+    {
+      "model": "Bend RIV",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/bend-riv/",
+      "retrieved": "2020-09-20",
+      "archive": "https://web.archive.org/web/20200920102733/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/bend-riv/",
+      "sizes": [
+        ["49",606,397,74,72,180,490,440,1060,65],
+        ["52",625,410,73.5,72,200,520,440,1080,65],
+        ["56",649,415,73,72,225,560,440,1092,65],
+        ["59",668,425,73,72,245,590,440,1109,65]
+      ]
+    },
+    {
+      "model": "Bend RV",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/bend-rv-105/",
+      "retrieved": "2019-12-09",
+      "archive": "https://web.archive.org/web/20191209082213/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/bend-rv-105/",
+      "estimated": ["wheelbase"],
+      "sizes": [
+        ["49",538,381,74,70.5,120,490,435,1014,65],
+        ["52",564,383,73.5,71,140,520,435,1030,65],
+        ["56",585,392,73.5,71.5,165,560,435,1043,65],
+        ["59",605,406,73.5,72,185,590,435,1055,65]
+      ]
+    },
+    {
+      "model": "Bend V9X",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/us/bend-v9x/",
+      "retrieved": "2026-05-15",
+      "archive": "https://web.archive.org/web/20260515114203/https://www.polygonbikes.com/us/bend-v9x/",
+      "sizes": [
+        ["S",564,363,74,69,105,405,445,1038,75],
+        ["M",589,376,73.5,69.5,130,450,445,1054,75],
+        ["L",624,389,73,70,165,495,445,1076,75],
+        ["XL",657,409,73,70,200,540,445,1107,75]
+      ]
+    },
+    {
+      "model": "Helios A",
+      "year": 2022,
+      "lastYear": 2025,
+      "category": "aero",
+      "source": "https://www.polygonbikes.com/helios-a8-2025/",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617220826/https://www.polygonbikes.com/helios-a8-2025/",
+      "aliases": ["Helios A7","Helios A7X","Helios A8","Helios A8X","Helios A9X"],
+      "sizes": [
+        ["XXS",505,370,75,71.5,100,450,415,968,73],
+        ["XS",520,375,74.7,71.8,115,475,415,976,73],
+        ["S",535,380,74.3,72,130,500,415,984,73],
+        ["M",550,385,74,72.3,145,520,415,991,73],
+        ["L",565,390,73.7,72.3,160,545,415,1001,73],
+        ["XL",581,395,73.3,72.8,175,570,415,1006,73]
+      ]
+    },
+    {
+      "model": "Helios A",
+      "year": 2026,
+      "category": "aero",
+      "source": "https://www.polygonbikes.com/helios-a9-di2-powermeter/",
+      "retrieved": "2026-08-13",
+      "archive": "https://web.archive.org/web/20260813192044/https://www.polygonbikes.com/helios-a9-di2-powermeter/",
+      "aliases": ["Helios A0","Helios A7","Helios A8","Helios A9"],
+      "sizes": [
+        ["XXXS",493,370,75,71,90,395,410,969,78],
+        ["XXS",503,375,74.7,71.3,100,420,410,976,78],
+        ["XS",511,385,74.3,71.5,110,457,410,988,76],
+        ["S",523,390,74,72.3,120,489,410,985,73],
+        ["M",533,400,73.7,72.5,130,499,410,996,73],
+        ["L",551,405,73.3,72.8,150,518,410,1005,72],
+        ["XL",571,420,73,73,170,536,410,1024,72]
+      ]
+    },
+    {
+      "model": "Helios LT8",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "race",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt8-2/",
+      "retrieved": "2020-08-07",
+      "archive": "https://web.archive.org/web/20200807182748/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt8-2/",
+      "sizes": [
+        ["46",507,377,74.2,71,110,465,405,975,68],
+        ["50",525,383,73.8,72,125,500,410,983,68],
+        ["53",547,388,73.5,73,145,530,410,986,68],
+        ["56",568,397,73.5,73.5,165,560,410,996,68],
+        ["58",578,404,73,73.5,176,580,410,1007,68],
+        ["60",611,410,72.5,73.5,200,600,410,1020,68]
+      ]
+    },
+    {
+      "model": "Helios LT8",
+      "year": 2020,
+      "category": "race",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt8-disc/",
+      "retrieved": "2020-09-20",
+      "archive": "https://web.archive.org/web/20200920110436/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt8-disc/",
+      "sizes": [
+        ["XS",507,377,74.2,71,110,465,415,985,68],
+        ["S",525,383,73.8,72,125,500,415,988,68],
+        ["M",547,388,73.5,73,145,530,415,991,68],
+        ["L",568,397,73.5,73.5,165,560,415,1001,68]
+      ]
+    },
+    {
+      "model": "Helios LT9",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "race",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9/",
+      "retrieved": "2020-08-07",
+      "archive": "https://web.archive.org/web/20200807181737/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9/",
+      "sizes": [
+        ["46",507,377,74.2,71,110,465,405,975,68],
+        ["50",525,383,73.8,72,125,500,410,983,68],
+        ["53",547,388,73.5,73,145,530,410,986,68],
+        ["56",568,397,73.5,73.5,165,560,410,996,68],
+        ["58",578,404,73,73.5,176,580,410,1007,68],
+        ["60",611,410,72.5,73.5,200,600,410,1020,68]
+      ]
+    },
+    {
+      "model": "Helios LT9X",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "race",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9x-ace/",
+      "retrieved": "2020-08-07",
+      "archive": "https://web.archive.org/web/20200807181955/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/helios-lt9x-ace/",
+      "sizes": [
+        ["46",507,377,74.2,71,110,465,405,975,68],
+        ["50",525,383,73.8,72,125,500,410,983,68],
+        ["53",547,388,73.5,73,145,530,410,986,68],
+        ["56",568,397,73.5,73.5,165,560,410,996,68],
+        ["58",578,404,73,73.5,176,580,410,1007,68],
+        ["60",611,410,72.5,73.5,200,600,410,1020,68]
+      ]
+    },
+    {
+      "model": "Strattos S2/S3",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-2",
+      "retrieved": "2018-03-18",
+      "archive": "https://web.archive.org/web/20180318080632/https://www.polygonbikes.com/my/bikes/description/2018-strattos-2",
+      "aliases": ["Strattos S2","Strattos S3"],
+      "estimated": ["chainstay","wheelbase"],
+      "sizes": [
+        ["47",535,365,74,70.5,115,470,415,989,70],
+        ["50",556,373,74,71,135,500,416,999,70],
+        ["53",576,380,73.5,71.5,155,530,417,1008,70],
+        ["56",609,385,73,72.5,185,560,418,1023,70],
+        ["58",625,399,73,73,200,580,419,1030,70]
+      ]
+    },
+    {
+      "model": "Strattos S2/S3",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s2-3/",
+      "retrieved": "2020-06-07",
+      "archive": "https://web.archive.org/web/20200607184816/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s2-3/",
+      "aliases": ["Strattos S2","Strattos S3"],
+      "sizes": [
+        ["48",523,380,74.5,70.5,120,460,415,995,75],
+        ["51",544,384,74,71,140,490,415,1001,75],
+        ["54",558,389,73.5,72,160,520,415,1004,75],
+        ["57",567,394,73.5,72,180,550,415,1015,75],
+        ["60",605,408,73.5,72,200,580,415,1036,75]
+      ]
+    },
+    {
+      "model": "Strattos S2/S3",
+      "year": 2020,
+      "lastYear": 2024,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s2-2/",
+      "retrieved": "2026-03-28",
+      "archive": "https://web.archive.org/web/20260328051226/https://www.polygonbikes.com/strattos-s2-2/",
+      "aliases": ["Strattos S2","Strattos S3"],
+      "sizes": [
+        ["S",520,381,74.5,70.5,120,460,415,994,75],
+        ["M",541,385,74,71,140,490,415,1001,75],
+        ["L",563,389,73.5,72,160,520,415,1003,75],
+        ["XL",582,394,73.5,72,180,550,415,1015,75]
+      ]
+    },
+    {
+      "model": "Strattos S2/S3",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s3-2/",
+      "retrieved": "2026-08-13",
+      "archive": "https://web.archive.org/web/20260813173733/https://www.polygonbikes.com/strattos-s3-2/",
+      "aliases": ["Strattos S3"],
+      "sizes": [
+        ["S",512,383,74.5,72.5,105,470,415,977,73],
+        ["M",535,387,73.5,73,130,500,415,985,70],
+        ["L",559,389,73.5,73,155,520,415,995,70],
+        ["XL",585,391,73,73,185,550,415,1006,68]
+      ]
+    },
+    {
+      "model": "Strattos S4/S5",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-4",
+      "retrieved": "2018-03-18",
+      "archive": "https://web.archive.org/web/20180318080743/https://www.polygonbikes.com/my/bikes/description/2018-strattos-4",
+      "aliases": ["Strattos S4","Strattos S5"],
+      "estimated": ["chainstay","wheelbase"],
+      "sizes": [
+        ["47",524,369,74.5,70.3,130,470,415,984,70],
+        ["50",531,374,74,71,135,500,415,987,70],
+        ["53",552,381,73.5,71.5,155,530,416,997,70],
+        ["56",582,385,73,72,185,560,417,1010,70],
+        ["58",600,399,73,73,200,580,418,1018,70]
+      ]
+    },
+    {
+      "model": "Strattos S4/S5",
+      "year": 2019,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s5-2/",
+      "retrieved": "2019-09-23",
+      "archive": "https://web.archive.org/web/20190923111343/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s5-2/",
+      "aliases": ["Strattos S4","Strattos S5"],
+      "sizes": [
+        ["48",520,381,74.5,70.5,120,460,415,994,75],
+        ["51",541,385,74,71,140,490,415,1001,75],
+        ["54",563,389,73.5,72,160,520,415,1003,75],
+        ["57",582,394,73.5,72,180,550,415,1015,75],
+        ["60",601,408,73.5,72,200,580,415,1034,75]
+      ]
+    },
+    {
+      "model": "Strattos S4/S5",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s5-2/",
+      "retrieved": "2020-09-20",
+      "archive": "https://web.archive.org/web/20200920103842/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/all-rounder-eur/strattos-s5-2/",
+      "aliases": ["Strattos S4","Strattos S5"],
+      "sizes": [
+        ["S",520,381,74.5,70.5,120,460,415,994,75],
+        ["M",541,385,74,71,140,490,415,1001,75],
+        ["L",563,389,73.5,72,160,520,415,1003,75],
+        ["XL",582,394,73.5,72,180,550,415,1015,75],
+        ["XXL",601,408,73.5,72,200,580,415,1034,75]
+      ]
+    },
+    {
+      "model": "Strattos S4/S5",
+      "year": 2022,
+      "lastYear": 2024,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s4-2/",
+      "retrieved": "2026-05-12",
+      "archive": "https://web.archive.org/web/20260512001335/https://www.polygonbikes.com/strattos-s4-2/",
+      "aliases": ["Strattos S4","Strattos S5"],
+      "sizes": [
+        ["XS",494,383,75,72,90,450,415,976,73],
+        ["S",510,384,74.5,72.5,105,470,415,977,73],
+        ["M",533,387,74,73,130,500,415,985,70],
+        ["L",557,390,73.5,73,155,520,415,995,70],
+        ["XL",583,392,73,73,185,550,415,1006,68]
+      ]
+    },
+    {
+      "model": "Strattos S4D",
+      "year": 2024,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s4d/",
+      "retrieved": "2026-05-15",
+      "archive": "https://web.archive.org/web/20260515082019/https://www.polygonbikes.com/strattos-s4d/",
+      "sizes": [
+        ["XXS",490,371,75.5,70.5,90,390,415,975,73],
+        ["XS",494,383,75,72,90,450,415,976,73],
+        ["S",510,384,74.5,72.5,105,470,415,977,73],
+        ["M",533,387,74,73,130,500,415,985,70],
+        ["L",557,390,73.5,73,155,520,415,995,70],
+        ["XL",583,392,73,73,185,550,415,1006,68]
+      ]
+    },
+    {
+      "model": "Strattos S5D",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s5d-2020/",
+      "retrieved": "2026-05-13",
+      "archive": "https://web.archive.org/web/20260513122021/https://www.polygonbikes.com/strattos-s5d-2020/",
+      "sizes": [
+        ["XS",519,375,74.7,71.8,117,475,415,977,73],
+        ["S",533,380,74.3,72,132,500,415,985,73],
+        ["M",549,385,74,72.3,147,520,415,992,73],
+        ["L",564,390,73.7,72.5,162,545,415,1000,73],
+        ["XL",579,395,73.3,72.8,177,570,415,1007,73]
+      ]
+    },
+    {
+      "model": "Strattos S5D",
+      "year": 2022,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s5d/",
+      "retrieved": "2023-05-30",
+      "archive": "https://web.archive.org/web/20230530022035/https://www.polygonbikes.com/strattos-s5d/",
+      "sizes": [
+        ["XS",519,375,75,72,90,450,415,976,73],
+        ["S",533,380,74.5,72.5,105,470,415,977,73],
+        ["M",549,385,74,73,130,500,415,985,70],
+        ["L",564,390,73.5,73,155,520,415,995,70],
+        ["XL",579,395,73,73,185,550,415,1006,68]
+      ]
+    },
+    {
+      "model": "Strattos S6D",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s6d/",
+      "retrieved": "2026-06-18",
+      "archive": "https://web.archive.org/web/20260618013547/https://www.polygonbikes.com/strattos-s6d/",
+      "sizes": [
+        ["XXS",493,373,75.5,70.5,90,390,415,970,73],
+        ["XS",495,383,75,72,90,454,415,976,73],
+        ["S",511,383,74.5,72.5,105,474,415,977,73],
+        ["M",534,387,74,73,130,500,415,985,70],
+        ["L",558,390,73.5,73,155,525,415,995,70],
+        ["XL",584,392,73,73,185,554,417,1008,68],
+        ["XXL",612,403,73,73,215,584,417,1028,68]
+      ]
+    },
+    {
+      "model": "Strattos S7/S8",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/my/bikes/description/2018-strattos-7",
+      "retrieved": "2018-03-23",
+      "archive": "https://web.archive.org/web/20180323080122/https://www.polygonbikes.com/my/bikes/description/2018-strattos-7",
+      "aliases": ["Strattos S7"],
+      "estimated": ["chainstay","wheelbase"],
+      "sizes": [
+        ["47",507,385,75.5,72.3,110,470,414,977,68],
+        ["50",521,389,74.5,72.5,125,500,415,983,68],
+        ["53",536,388,73.5,72.8,140,530,415,990,68],
+        ["56",557,399,73,73,160,560,416,999,68],
+        ["59",578,406,72.8,73.6,180,590,417,1009,68]
+      ]
+    },
+    {
+      "model": "Strattos S7/S8",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s7-disc-brakes/",
+      "retrieved": "2020-08-07",
+      "archive": "https://web.archive.org/web/20200807175256/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s7-disc-brakes/",
+      "aliases": ["Strattos S7","Strattos S8"],
+      "sizes": [
+        ["45",493,382,75,72,90,456,415,959,73],
+        ["48",514,383,74.5,72,105,475,415,965,73],
+        ["51",534,387,74,73,130,500,415,976,70],
+        ["54",558,390,73.5,73,155,525,415,985,70],
+        ["57",584,392,73,73,185,555,417,999,68],
+        ["60",612,403,73,73,215,584,417,1019,68]
+      ]
+    },
+    {
+      "model": "Strattos S7/S8",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s8-disc-brakes/",
+      "retrieved": "2020-09-23",
+      "archive": "https://web.archive.org/web/20200923185646/https://www.polygonbikes.com/eur/shop/bikes-eur/road-eur/performance-eur/strattos-s8-disc-brakes/",
+      "aliases": ["Strattos S7","Strattos S8"],
+      "sizes": [
+        ["XS",493,382,75,72,90,456,415,959,73],
+        ["S",514,383,74.5,72,105,475,415,965,73],
+        ["M",534,387,74,73,130,500,415,976,70],
+        ["L",558,390,73.5,73,155,525,415,985,70],
+        ["XL",584,392,73,73,185,555,417,999,68],
+        ["XXL",612,403,73,73,215,584,417,1019,68]
+      ]
+    },
+    {
+      "model": "Strattos S7D",
+      "year": 2022,
+      "lastYear": 2024,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/us/strattos-s7d/",
+      "retrieved": "2026-05-14",
+      "archive": "https://web.archive.org/web/20260514005934/https://www.polygonbikes.com/us/strattos-s7d/",
+      "sizes": [
+        ["XXS",493,373,75,71.5,90,439,415,970,73],
+        ["XS",495,383,75,72,90,454,415,976,73],
+        ["S",511,383,74.5,72.5,105,474,415,977,73],
+        ["M",534,387,74,73,130,500,415,985,70],
+        ["L",558,390,73.5,73,155,525,415,995,70],
+        ["XL",584,392,73,73,185,554,417,1008,68],
+        ["XXL",612,403,73,73,215,584,417,1028,68]
+      ]
+    },
+    {
+      "model": "Strattos S7X",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s7x/",
+      "retrieved": "2026-05-15",
+      "archive": "https://web.archive.org/web/20260515080907/https://www.polygonbikes.com/strattos-s7x/",
+      "sizes": [
+        ["XXS",493,373,75,70.5,90,439,415,970,73],
+        ["XS",495,382,75,72,90,454,415,976,73],
+        ["S",511,383,74.5,72.5,105,474,415,977,73],
+        ["M",534,387,74,73,130,500,415,985,70],
+        ["L",558,390,73.5,73,155,525,415,995,70],
+        ["XL",584,391,73,73,185,554,417,1008,68],
+        ["XXL",612,403,73,73,215,584,417,1028,68]
+      ]
+    },
+    {
+      "model": "Strattos S8D",
+      "year": 2022,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s8d-2022/",
+      "retrieved": "2026-08-09",
+      "archive": "https://web.archive.org/web/20260809073631/https://www.polygonbikes.com/strattos-s8d-2022/",
+      "sizes": [
+        ["XXS",493,373,75,71.5,90,439,415,970,73],
+        ["XS",495,383,75,72,90,454,415,976,73],
+        ["S",511,383,74.5,72.5,105,474,415,977,73],
+        ["M",534,387,74,73,130,500,415,985,70],
+        ["L",558,390,73.5,73,155,525,415,995,70],
+        ["XL",584,392,73,73,185,554,417,1008,68],
+        ["XXL",612,403,73,73,215,584,417,1028,68]
+      ]
+    },
+    {
+      "model": "Strattos S8X",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.polygonbikes.com/strattos-s8x-a/",
+      "retrieved": "2026-05-15",
+      "archive": "https://web.archive.org/web/20260515072821/https://www.polygonbikes.com/strattos-s8x-a/",
+      "sizes": [
+        ["XXS",493,373,75,71.5,90,439,415,970,73],
+        ["XS",495,383,75,72,90,454,415,976,73],
+        ["S",511,383,74.5,72.5,105,474,415,977,73],
+        ["M",534,387,74,73,130,500,415,985,70],
+        ["L",558,390,73.5,73,155,525,415,995,70],
+        ["XL",584,392,73,73,185,554,417,1008,68],
+        ["XXL",612,403,73,73,215,584,417,1028,68]
+      ]
+    },
+    {
+      "model": "Tambora A",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/tambora-a9x/",
+      "retrieved": "2026-08-13",
+      "archive": "https://web.archive.org/web/20260813174647/https://www.polygonbikes.com/tambora-a9x/",
+      "aliases": ["Tambora A4","Tambora A5","Tambora A9X"],
+      "sizes": [
+        ["S",566,371,74.8,70.3,143,404,415,997,79],
+        ["M",591,383,74.3,71.8,163,448,415,1003,79],
+        ["L",621,400,73.8,72.1,193,492,415,1026,79],
+        ["XL",648,415,73.3,72.3,221,535,415,1048,79]
+      ]
+    },
+    {
+      "model": "Tambora G",
+      "year": 2024,
+      "category": "gravel",
+      "source": "https://www.polygonbikes.com/us/tambora-g4/",
+      "retrieved": "2026-06-14",
+      "archive": "https://web.archive.org/web/20260614062856/https://www.polygonbikes.com/us/tambora-g4/",
+      "aliases": ["Tambora G4","Tambora G5","Tambora G7","Tambora G8X"],
+      "sizes": [
+        ["S",568,369,74.5,70,143,404,425,1017,78],
+        ["M",593,381,74,71.5,163,448,425,1022,78],
+        ["L",622,397,73.5,71.8,193,492,425,1045,78],
+        ["XL",650,412,73,72,221,535,425,1067,78]
+      ]
+    }
+  ]
+}

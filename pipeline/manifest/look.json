@@ -1,0 +1,366 @@
+{
+ "brand": "Look",
+ "file": "look",
+ "pages": [
+  {
+   "url": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-green-mat",
+   "timestamp": "20211230230557",
+   "sha256": "3b9d1c81f0e7dc0a0af0805d0ed9523a867298fd0dce6a04fc9d8da8defbe037",
+   "family": "765-gravel",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201031083226"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-black-glossy-mat",
+   "timestamp": "20230321044029",
+   "sha256": "dac3949ba07cdd572bb45c88853af2f2979c4c3cbce0057ea312c75714b2c526",
+   "family": "765-gravel",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201031073345"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-red-dust-metallic-satin",
+   "timestamp": "20250213061508",
+   "sha256": "06e16d1325445c9258294b17ccf9ffce8562254c1f1dead318528b1f2b9556cf",
+   "family": "765-gravel",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240419090055"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-red-dust-metallic-satin",
+   "timestamp": "20260105183134",
+   "sha256": "e72a17d63f4875aab7ddf3d676b8061226195f75a48fe1ec0fbcd5a54c2e203c",
+   "family": "765-gravel",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240419090055"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/gravel-bikes/gravel/765-gravel-rs-green-mat",
+   "timestamp": "20191122231720",
+   "sha256": "fa764dc64d056a6478c45d9ad15ba21f800324868afa971f8feac13cd5d93f1f",
+   "family": "765-gravel-rs",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191122231720"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-rs-limited-edition",
+   "timestamp": "20210923015946",
+   "sha256": "a8a50e682267c9113add3503eb6a587b5d6598794bd6036fe4e398836677fe93",
+   "family": "765-gravel-rs",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200519004703"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/gravel-bikes/gravel/765-gravel-rs-black-chromatic-petrol-full-glossy",
+   "timestamp": "20230328190809",
+   "sha256": "fc64f8c49911cae6c11f3f00852d031a4ca54ecd58029556ea3b774ebf2ae468",
+   "family": "765-gravel-rs",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220127152639"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-rs-black-chromatic-frameset",
+   "timestamp": "20250618024640",
+   "sha256": "af1a01138f2e6c26d15911c294cc1e29e26e1d6f8c35540850e272e8b5fa53bc",
+   "family": "765-gravel-rs",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241210022737"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-rs-ekar-1x13",
+   "timestamp": "20260311005502",
+   "sha256": "939298015211c09a495c2b75ab8ba56616173ea2eda35a15d40ea3cad722b46f",
+   "family": "765-gravel-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260311005502"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-black-glossy-mat",
+   "timestamp": "20191207085222",
+   "sha256": "ea3c2ea83fe432fd2e9ffa6a9d86de19217b8e7858f98c1ad0d2d74abcde7967",
+   "family": "765-optimum",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191207085222"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-metallic-blue-glossy",
+   "timestamp": "20211025162917",
+   "sha256": "c6e2d4493826d79a0803aa509ab94539f6a8f66a5c010c7f34febbc3e31c61ba",
+   "family": "765-optimum",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210412121218"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum/765-optimum-interference-red-mat-glossy",
+   "timestamp": "20231004003059",
+   "sha256": "6df8e19f7dea895cec6a291ed41f7af5c1df29436259d3494c94c1ee9138ec2e",
+   "family": "765-optimum",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220127150522"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-105-2x12",
+   "timestamp": "20260207110821",
+   "sha256": "bad057139540550adde9235d3e45cee7ec64529e2347c176e8d9c02fcbeaf278",
+   "family": "765-optimum",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250323142546"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-chameleon-green-blue",
+   "timestamp": "20250815191246",
+   "sha256": "289a37738b6ecdb75828c044a8d09c5b023a61f1aa8b2085281222ca61381456",
+   "family": "765-optimum",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230201194706"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-disc-black-glossy",
+   "timestamp": "20210926160547",
+   "sha256": "82a12d4d3d889548a49cc77d13a5b874fad83d1de81b7213af09e9e76d831bf7",
+   "family": "765-optimum-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210926160547"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-interference-red-mat-glossy",
+   "timestamp": "20230325145604",
+   "sha256": "e0c5ebf1710e26d1daaa787a2038328f40dddac1c50fb1118049fccd6683546b",
+   "family": "785-huez",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220127152027"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-grey-blue-satin",
+   "timestamp": "20260616092849",
+   "sha256": "8be442884837e2836e2ceb719a111c20489b24222db75c0eb40e0f4082fc531e",
+   "family": "785-huez",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241006072638"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-proteam-black-frameset",
+   "timestamp": "20251221151403",
+   "sha256": "1d64fbdb3946f9eb3028d32d4a015937b1523bef8b96ef0c46da2a891566237a",
+   "family": "785-huez",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240419090306"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-disc-black-metallic-red-mat-glossy",
+   "timestamp": "20210919205747",
+   "sha256": "24a98f4516edaad416958526e0a6fdcbb24a59747d3655b1bd8bf810875680a9",
+   "family": "785-huez-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210126032135"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-disc-black-metallic-red-mat-glossy",
+   "timestamp": "20230204194020",
+   "sha256": "badf7e8a0ed57c9b5cb7bf82b9e5ba35e1bd02a76682e1064fbfe400cbebee51",
+   "family": "785-huez-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210126032135"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-rs-frameset-2021",
+   "timestamp": "20211017072104",
+   "sha256": "da1331105b12c5b45dd6cf34d5039a396b169fd92935c8395d31130f1e55ebfe",
+   "family": "785-huez-rs",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210412134243"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-rs-frameset-2021",
+   "timestamp": "20230605111500",
+   "sha256": "a9c4c88177f32b84aa54fb6277e06e8d19dc4b6c6179521b8173cf38f2bd0472",
+   "family": "785-huez-rs",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210412134243"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-chameleon-mat-glossy",
+   "timestamp": "20250323144019",
+   "sha256": "b8e3a8d2a679e6e7454f562de79773346f948827ec8d3c5409c49c29e16d6c23",
+   "family": "785-huez-rs",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20231202180614"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-red-axs-scope-artech-2",
+   "timestamp": "20260621042905",
+   "sha256": "f844b6ce88cdc759c66498ceb679bbfd92d8472d1eeb3ff55afcfdfd4b321ae5",
+   "family": "785-huez-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260417130323"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-rs-disc-full-black-mat-glossy",
+   "timestamp": "20211027232045",
+   "sha256": "36f2aab21319ddb128c04116cec9b05ed2cfb248867f669d0498a3e7309a6367",
+   "family": "785-huez-rs-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210118195854"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-rs-disc-frameset-2021",
+   "timestamp": "20230203171908",
+   "sha256": "7d75e6f16065a628ce3ece54d09be60e7dd874b083acd45b6983e23dd17916ca",
+   "family": "785-huez-rs-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20211127055201"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-disc-proteam-white-glossy-dadi2",
+   "timestamp": "20251112180803",
+   "sha256": "ebf101b9faf21af128c32dcae123e5cc6bace6328caf862c1d7aed7e986cf364",
+   "family": "785-huez-rs-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241010084112"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-interference-red-mat-glossy",
+   "timestamp": "20240814134525",
+   "sha256": "6490a27a6a2affcec181dfb6db98db33aec52ae96ddc1b17f1a62a5138b9c5c3",
+   "family": "795-blade",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240419085824"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-disc-full-black-mat-glossy-look-wheels",
+   "timestamp": "20211220131434",
+   "sha256": "1faa77b454b7ed15aada81e0a8a9d262394a926998b272cd7d6591224afcf280",
+   "family": "795-blade-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201213222345"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-disc-full-black-mat-glossy-look-wheels",
+   "timestamp": "20230209083158",
+   "sha256": "8faded1c700e2c31dd373e50da293809366e735cedb763934c8dff0ae81d116e",
+   "family": "795-blade-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201213222345"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-disc-grey-blue-satin-us-ca",
+   "timestamp": "20250522165434",
+   "sha256": "c0b2ea1efd2524d347261c32b1a2390e788348197e5e129eb12f10b20d0e7686",
+   "family": "795-blade-disc",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230331230454"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-2021-frameset",
+   "timestamp": "20211028163236",
+   "sha256": "d5281ec834474b6504f7b0fe45df245ff0c7982eaad7bec83c03ad9a27b331c4",
+   "family": "795-blade-rs",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210412113902"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-2021-frameset",
+   "timestamp": "20230209081323",
+   "sha256": "85f336961da0bde080b6af014775eb1534e6fefdc9e2099eb3227fe664d35366",
+   "family": "795-blade-rs",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210412113902"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-iconic-platinum-white-r50d",
+   "timestamp": "20251220205703",
+   "sha256": "301fc39465b9d73e35dfde33e5e3e019f38ac6748e4176b6614d9444670b4ca6",
+   "family": "795-blade-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240713002218"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-red-axs",
+   "timestamp": "20260611104841",
+   "sha256": "0981aff9a89788dde87f4c72c9ebd8dd3d135907339c630a6f1f142b2514e7bf",
+   "family": "795-blade-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241210030055"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/blade-rs-2/795-blade-rs-iconic-edition-frameset",
+   "timestamp": "20260810043533",
+   "sha256": "a6361113023ce6247745fe3f5dab34a9d68dac724e18ad01de83b59ef016cf08",
+   "family": "795-blade-rs-2",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260810043533"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-disc-chameleon-mat-glossy",
+   "timestamp": "20211017084956",
+   "sha256": "d6c56f987366ce0db5d0281854aaa3007d42eccb53b2c68830409a5d31a6bcea",
+   "family": "795-blade-rs-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210412120330"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-disc-chameleon-mat-glossy",
+   "timestamp": "20230603040653",
+   "sha256": "c2f71c74620f78635553b205e0fac32f08020865db535caf6aec072d714c5506",
+   "family": "795-blade-rs-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210412120330"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/gravel-bikes/gravel/g85-cezal-frameset",
+   "timestamp": "20260518123156",
+   "sha256": "7293b679d2ac852f120b9986035065638447fc85e3075a1e64a3741b45592977",
+   "family": "g85-cezal",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260416221455"
+  },
+  {
+   "url": "https://www.lookcycle.com/us-en/products/bikes/gravel-bikes/gravel/g85-cezal-rs-frameset",
+   "timestamp": "20261009193533",
+   "sha256": "5deb563c01aa84ee7e5dd6285f2ddc12e6e884a7f41b24b436d14a93ead64457",
+   "family": "g85-cezal-rs",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20261009193533"
+  }
+ ]
+}

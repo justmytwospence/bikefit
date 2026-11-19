@@ -1,0 +1,222 @@
+{
+ "brand": "Ritchey",
+ "file": "ritchey",
+ "pages": [
+  {
+   "url": "https://ritcheylogic.com/bike/frames/break-away-outback-frameset",
+   "timestamp": "20230925173403",
+   "sha256": "720ff12456b97cc2a2b8011525dd75cc4b09b5a029ebac314a4bf5ef25d4746b",
+   "family": "break-away-outback",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220702211956"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/break-away-outback-frameset",
+   "timestamp": "20251205081710",
+   "sha256": "5e6a8d0b716d47f0c5338ee82b0e650169499f9565196d335920dee062e11ce6",
+   "family": "break-away-outback",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220702211956"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/break-away-outback-frameset",
+   "timestamp": "20261117190807",
+   "sha256": "ff76bf910009a2d9cc0fd9faebc4fbf6d38890193fb2c720d1bd1cd91035d002",
+   "family": "break-away-outback",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20220702211956"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/break-away-road-logic-frameset",
+   "timestamp": "20231129180642",
+   "sha256": "13dfc761e7859996704598eb841968b5a9ee5d3b60c5bb79afba5c89f3b1ccb8",
+   "family": "break-away-road-logic",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231129180642"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/break-away-road-logic-frameset",
+   "timestamp": "20250523181550",
+   "sha256": "4c7c4b3a035b96334d32db365bbdc51047715e71f72ed53c009900fba977ab86",
+   "family": "break-away-road-logic",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20231129180642"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/break-away-road-logic-frameset",
+   "timestamp": "20261102124622",
+   "sha256": "f0403e5acc79816fa04ad910dcb176d75b08c3ef73a1e44ac3219572eae9f2c0",
+   "family": "break-away-road-logic",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231129180642"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/montebello-frameset",
+   "timestamp": "20251212083004",
+   "sha256": "efe5cb35f8819bfbf6e4aa83286f7e09cd8b9f272765923e754285d5185df3ad",
+   "family": "montebello",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240621004802"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/montebello-frameset",
+   "timestamp": "20260714154829",
+   "sha256": "b921c95f550898df84597ae9db3bed899d7eabb3732b43adfc7bcc7ce1614d17",
+   "family": "montebello",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240621004802"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/outback-50th-anniversary-frameset",
+   "timestamp": "20231228123914",
+   "sha256": "22840f8f769d43d8e1f85aae9451ea40587291644eb40184a12881342f5440cb",
+   "family": "outback",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230209050437"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/outback-frameset",
+   "timestamp": "20251212041100",
+   "sha256": "a7383724245e0e32c886bca24b618264b81317a82064f710320723e5322643ce",
+   "family": "outback",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220702235237"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/outback-frameset",
+   "timestamp": "20261114013308",
+   "sha256": "407edc7201e9270d8dacd8ec4d9cb05475e83b1967ca45e50a5ed5adadbdc743",
+   "family": "outback",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20220702235237"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/outback-frameset-my2023",
+   "timestamp": "20251012201955",
+   "sha256": "b4991a49ab8aacf55b48eb131113425e6a1c14205b0bc372baecebae1224269a",
+   "family": "outback@2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241015024427"
+  },
+  {
+   "url": "https://ritcheylogic.com/product/outback-frameset-my2023",
+   "timestamp": "20260122044337",
+   "sha256": "7fa25c19a4b0011f31f9d8486cc78e53079c80d37d9972286fe4086ab6dcc92b",
+   "family": "outback@2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250427234410"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/road-logic-50th-anniversary-frameset",
+   "timestamp": "20230321045642",
+   "sha256": "e2658e465feafb4d974181e0d81d47a342de3132cd02ec7e26ebfe893c95eb46",
+   "family": "road-logic",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220626225528"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/road-logic-frameset",
+   "timestamp": "20251208191938",
+   "sha256": "dfc15f9112837925f9aae7b7b6f1b6c021a195ed1ce69a76b3c2e1917845a2fb",
+   "family": "road-logic",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230609140814"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/road-logic-frameset",
+   "timestamp": "20261102124621",
+   "sha256": "b40c98b9225632ecc85fb3c04fdbb11c4f002d49b767d28df500fef8ab1679b3",
+   "family": "road-logic",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230609140814"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/road-logic-disc-frameset",
+   "timestamp": "20231207075059",
+   "sha256": "8a97401793643259b87d02b84699df424b189f9fa8455130729e84e9c9ab70a4",
+   "family": "road-logic-disc",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220627204355"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/road-logic-disc-frameset",
+   "timestamp": "20251126220624",
+   "sha256": "3d13e7d4c639209a0109238fea146dcb05100a456422d40c296c7828dc68dc68",
+   "family": "road-logic-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220627204355"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/road-logic-disc-frameset",
+   "timestamp": "20260809193209",
+   "sha256": "c064fbdbe7e6d3f6a3c44a935e537f9f1143d31e130463dcc0078f5f4722130b",
+   "family": "road-logic-disc",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20220627204355"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/septimer-break-away-carbon-frameset",
+   "timestamp": "20251208195153",
+   "sha256": "c7577985c47d9c232d44739095a88936aa4f63e6257f93a580428eb89a9d15f7",
+   "family": "septimer-break-away-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251126121405"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/septimer-break-away-carbon-frameset",
+   "timestamp": "20260714161527",
+   "sha256": "7c84d3450103c16bce7e5f27c94a838bd1b5e3936ce69a0ce8f691ef048f0c07",
+   "family": "septimer-break-away-carbon",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251126121405"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/swiss-cross-disc-frameset",
+   "timestamp": "20231129184321",
+   "sha256": "ebcb6b9c992f48dee50505dbb0791c7ae0cc0a3b3fb70c2baf32d1f26a737305",
+   "family": "swiss-cross-disc",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220705102100"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/swiss-cross-disc-frameset",
+   "timestamp": "20251107222757",
+   "sha256": "90280d32623d360146ea49403b2f504e016bf3ee927a9af6da6613bf4f36c71f",
+   "family": "swiss-cross-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220705102100"
+  },
+  {
+   "url": "https://ritcheylogic.com/bike/frames/swiss-cross-disc-frameset",
+   "timestamp": "20260809201355",
+   "sha256": "696bfda745f24fda075ec2437a7b92b1dd202ae2b6c3e01b95905a47a250d19a",
+   "family": "swiss-cross-disc",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20220705102100"
+  }
+ ]
+}

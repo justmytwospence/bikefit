@@ -1,0 +1,218 @@
+{
+  "brand": "Vitus",
+  "models": [
+    {
+      "model": "Energie",
+      "year": 2020,
+      "category": "cyclocross",
+      "source": "https://vitusbikes.com/products/energie-cyclocross-bike-apex",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617134808/https://vitusbikes.com/products/energie-cyclocross-bike-apex",
+      "sizes": [
+        ["XS",531,386,74,71,105,470,425,1012,70],
+        ["S",551,397,74,71.3,125,490,425,1025,70],
+        ["M",570,407,74,71.3,145,510,425,1041,70],
+        ["L",585,417,74,71.3,160,530,425,1056,70],
+        ["XL",597,429,74,71.3,173,550,425,1072,70]
+      ]
+    },
+    {
+      "model": "Energie",
+      "year": 2023,
+      "category": "cyclocross",
+      "source": "https://vitusbikes.com/products/vitus-energie-evo-apex-cyclocross-bike-07e7",
+      "retrieved": "2025-11-19",
+      "archive": "https://web.archive.org/web/20251119192811/https://vitusbikes.com/products/vitus-energie-evo-apex-cyclocross-bike-07e7",
+      "tyreWidth": 45,
+      "sizes": [
+        ["XS",523,376,74.8,70.3,100,480,435,1017,66],
+        ["S",542,386,74.2,70.8,120,500,435,1029,66],
+        ["M",565,396,73.8,71.5,140,520,435,1040,66],
+        ["L",590,406,73.4,72.1,165,540,435,1052,66],
+        ["XL",611,415,73,72.5,183,560,435,1063,66]
+      ]
+    },
+    {
+      "model": "Energie Carbon",
+      "year": 2020,
+      "category": "cyclocross",
+      "source": "https://vitusbikes.com/products/energie-cr-cyclocross-bike-rival",
+      "retrieved": "2025-09-10",
+      "archive": "https://web.archive.org/web/20250910212737/https://vitusbikes.com/products/energie-cr-cyclocross-bike-rival",
+      "sizes": [
+        ["XS",524,384,75,70.5,115,500,425,1021,55],
+        ["S",536,386,74.5,71,125,520,425,1021,55],
+        ["M",547,388,74,71.5,135,540,425,1022,55],
+        ["L",561,394,73.5,72,145,560,425,1026,55],
+        ["XL",578,398,73,72.5,160,580,425,1031,55]
+      ]
+    },
+    {
+      "model": "Energie EVO",
+      "year": 2021,
+      "lastYear": 2023,
+      "category": "cyclocross",
+      "source": "https://vitusbikes.com/products/vitus-energie-evo-frameset-07e7",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617140210/https://vitusbikes.com/products/vitus-energie-evo-frameset-07e7",
+      "tyreWidth": 45,
+      "sizes": [
+        ["XS",523,376,74.8,70.3,101,470,425,1007,66],
+        ["S",542,386,74.2,70.8,120,490,425,1019,66],
+        ["M",565,396,73.8,71.5,142,510,425,1030,66],
+        ["L",590,406,73.4,72.1,166,530,425,1042,66],
+        ["XL",611,415,73,72.5,183,550,425,1053,66]
+      ]
+    },
+    {
+      "model": "Razor",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://vitusbikes.com/products/razor-road-bike-claris",
+      "retrieved": "2025-07-15",
+      "archive": "https://web.archive.org/web/20250715105321/https://vitusbikes.com/products/razor-road-bike-claris",
+      "sizes": [
+        ["XS",511,373,75,71,117,500,412,983,70],
+        ["S",537,384,74.5,73,137,520,410,987,70],
+        ["M",556,386,74,73,157,540,410,992,70],
+        ["L",576,387,73.5,73,177,560,410,997,70],
+        ["XL",595,391,73.3,73,197,580,410,1009,70],
+        ["XXL",607,410,73.5,73,210,600,410,1032,70]
+      ]
+    },
+    {
+      "model": "Substance",
+      "year": 2020,
+      "lastYear": 2022,
+      "category": "gravel",
+      "source": "https://vitusbikes.com/products/vitus-substance-2-adventure-road-bike-microshift-2022",
+      "retrieved": "2025-09-10",
+      "archive": "https://web.archive.org/web/20250910213157/https://vitusbikes.com/products/vitus-substance-2-adventure-road-bike-microshift-2022",
+      "sizes": [
+        ["XS",534,371,74.2,70.6,112,475,436,1018,70],
+        ["S",551,377,74,71.3,127,495,436,1023,70],
+        ["M",568,382,73.5,71.5,144,515,436,1031,70],
+        ["L",577,391,73.5,71.5,154,535,436,1044,70],
+        ["XL",595,398,73.2,71.5,173,555,440,1057,70],
+        ["XXL",606,412,73.2,71.8,184,575,440,1072,70]
+      ]
+    },
+    {
+      "model": "Substance Carbon",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://vitusbikes.com/products/vitus-substance-crx-1-adventure-road-bike",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617124927/https://vitusbikes.com/products/vitus-substance-crx-1-adventure-road-bike",
+      "sizes": [
+        ["XS",537,366,73.5,70.5,120,490,435,1020,68],
+        ["S",557,370,73.5,71,140,520,435,1021,68],
+        ["M",568,371,73,71.5,150,540,435,1025,68],
+        ["L",590,380,73,72,170,560,435,1036,68],
+        ["XL",609,383,72.5,72,190,580,435,1052,68]
+      ]
+    },
+    {
+      "model": "Substance Steel",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://vitusbikes.com/products/vitus-substance-srs-1-adventure-road-bike",
+      "retrieved": "2025-09-18",
+      "archive": "https://web.archive.org/web/20250918003444/https://vitusbikes.com/products/vitus-substance-srs-1-adventure-road-bike",
+      "sizes": [
+        ["XS",534,371,74.2,70.6,108,500,436,1010,70],
+        ["S",551,377,74,71.3,123,520,436,1016,70],
+        ["M",568,382,73.5,71.5,140,540,436,1024,70],
+        ["L",577,391,73.5,71.5,150,560,436,1037,70],
+        ["XL",595,398,73.2,71.5,169,580,440,1050,70],
+        ["XXL",606,412,73.2,71.8,180,600,440,1065,70]
+      ]
+    },
+    {
+      "model": "Venon EVO",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://vitusbikes.com/products/vitus-venon-evo-frameset-07e7",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617125345/https://vitusbikes.com/products/vitus-venon-evo-frameset-07e7",
+      "tyreWidth": 45,
+      "sizes": [
+        ["XS",518,373,74.6,70.7,102,460,420,1002,71],
+        ["S",539,379,74.2,71.1,120,480,420,1007,70],
+        ["M",560,387,73.8,71.5,143,500,420,1020,70],
+        ["L",587,396,73.4,72.1,168,520,420,1030,70],
+        ["XL",607,403,73,72.5,187,540,420,1039,70],
+        ["XXL",625,414,73,72.7,206,560,420,1053,70]
+      ]
+    },
+    {
+      "model": "Vitesse EVO",
+      "year": 2020,
+      "category": "race",
+      "source": "https://vitusbikes.com/products/vitesse-evo-crs-road-bike-ultegra",
+      "retrieved": "2025-09-10",
+      "archive": "https://web.archive.org/web/20250910213023/https://vitusbikes.com/products/vitesse-evo-crs-road-bike-ultegra",
+      "estimated": ["wheelbase"],
+      "sizes": [
+        ["XS",522,366,74.5,71.5,115,460,415,979,72],
+        ["S",534,376,74.2,72.2,125,480,415,984,72],
+        ["M",548,382,73.5,73,140,500,415,990,69],
+        ["L",563,393,73.5,73,155,520,415,997,69],
+        ["XL",582,403,73,73.5,175,550,415,1005,69],
+        ["XXL",601,407,72.5,73.5,195,570,415,1013,67]
+      ]
+    },
+    {
+      "model": "Vitesse EVO",
+      "year": 2021,
+      "category": "race",
+      "source": "https://vitusbikes.com/products/vitus-vitesse-evo-cr-road-bike-105",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617134246/https://vitusbikes.com/products/vitus-vitesse-evo-cr-road-bike-105",
+      "tyreWidth": 30,
+      "sizes": [
+        ["XS",503,376,73.6,70.9,105,470,410,983,70],
+        ["S",524,381,73.5,71.6,127,490,410,992,69],
+        ["M",547,387,73.4,72.4,145,510,410,991,69],
+        ["L",565,396,73.3,72.9,163,530,410,1000,68],
+        ["XL",582,402,73.2,73.2,180,550,410,1009,68],
+        ["XXL",599,410,73.5,73.5,196,570,410,1019,68]
+      ]
+    },
+    {
+      "model": "Zenium",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://vitusbikes.com/products/vitus-zenium-road-bike-tiagra",
+      "retrieved": "2023-12-10",
+      "archive": "https://web.archive.org/web/20231210003421/https://vitusbikes.com/products/vitus-zenium-road-bike-tiagra",
+      "sizes": [
+        ["XS",509,369,74.5,70,110,430,415,992,70],
+        ["S",528,375,74,70.5,130,460,415,1001,70],
+        ["M",544,382,73.5,71,150,490,415,1009,70],
+        ["L",576,385,73,71.5,175,520,415,1017,70],
+        ["XL",602,394,73,72,200,550,415,1029,70],
+        ["XXL",626,404,72.5,72.5,225,580,415,1036,70]
+      ]
+    },
+    {
+      "model": "ZX-1 EVO",
+      "year": 2020,
+      "category": "aero",
+      "source": "https://vitusbikes.com/products/zx1-cr-road-bike-105",
+      "retrieved": "2026-06-17",
+      "archive": "https://web.archive.org/web/20260617131840/https://vitusbikes.com/products/zx1-cr-road-bike-105",
+      "sizes": [
+        ["XS",516,370,74.3,71.5,115,460,410,968,72],
+        ["S",534,378,74,72.5,130,480,410,972,72],
+        ["M",548,385,73.5,73,145,500,410,980,70],
+        ["L",557,393,73,73,155,525,410,991,69],
+        ["XL",569,406,73,73,170,550,410,1009,67],
+        ["XXL",588,412,72.5,73,190,570,410,1020,67]
+      ]
+    }
+  ]
+}

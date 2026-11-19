@@ -1,0 +1,1122 @@
+{
+ "brand": "Marin",
+ "file": "marin",
+ "pages": [
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-argenta",
+   "timestamp": "20211127115657",
+   "sha256": "64347aeaef36c771b42084976c7924319bff256fa96638e28a1fc60ef044529a",
+   "family": "argenta@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128023219"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-argenta",
+   "timestamp": "20240715140926",
+   "sha256": "b4fbce6bc82a9bf7d7f07997690ec672310459ba8952f8c2ea7549b51a9d9442",
+   "family": "argenta@2018",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20201128023219"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-cortina-ax2",
+   "timestamp": "20211127104734",
+   "sha256": "459bdbac7c83f4661b594ee61857438ed066c5241c4e2d3d6b0f1d1fcdb58873",
+   "family": "cortina@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204102839"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-cortina-ax1",
+   "timestamp": "20211127195559",
+   "sha256": "df466291cd400adab1f00c7dcbffd06e59601f91729981be8cba02f92727dfec",
+   "family": "cortina@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201203192659"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-cortina-ax2",
+   "timestamp": "20220622145527",
+   "sha256": "b31e0324e68dc222b06038c138edeea935ede365b623c91d0ec8256b8661cf27",
+   "family": "cortina@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201203192538"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-cortina-ax1",
+   "timestamp": "20250806112222",
+   "sha256": "487fb5b48d4d9e620867303574ebc873718d0545593ac30cc7aaf7da7d8bb72e",
+   "family": "cortina@2019",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201203192659"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-four-corners",
+   "timestamp": "20211127211024",
+   "sha256": "c7f14af3f7d3f76ec61825dbc6b2fb2b3e2213bc796b7143a772a38f03c73cdd",
+   "family": "four-corners@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201203201530"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-four-corners",
+   "timestamp": "20211204174931",
+   "sha256": "9b73758f62b9f107b88f7ad9a85f7c2bb8408a6670a067943d244625023d1698",
+   "family": "four-corners@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128024504"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-four-corners-elite",
+   "timestamp": "20220620210332",
+   "sha256": "880c3502b4c30db69f644a5ff518a47c88650bb84fe28fba9225446fae15f090",
+   "family": "four-corners@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128133932"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-four-corners",
+   "timestamp": "20211127205441",
+   "sha256": "455ecb7a626a462e3dbbd3fabeb01e30be17a9e961128a952a69d1aae16ba36a",
+   "family": "four-corners@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204111732"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-four-corners",
+   "timestamp": "20231211001055",
+   "sha256": "e70ae7d57ab6c52e67d682748f079c9f3c53e13df4a940d8b063c6f650b7eb91",
+   "family": "four-corners@2020",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20201204111732"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-four-corners",
+   "timestamp": "20250513134601",
+   "sha256": "96431377b0b5928164395d46123cec0e9db6be5647b11da81f104c2fa67f4f6d",
+   "family": "four-corners@2020",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20201204111732"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-four-corners",
+   "timestamp": "20210922150610",
+   "sha256": "ff952f37a4e58b322c6161618240d3194e255882602dabbe92e3f774fd371ae9",
+   "family": "four-corners@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201129163319"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-four-corners",
+   "timestamp": "20231211031626",
+   "sha256": "aa733ccb1ce3fa4cf4dc6bcf83e3f00d30498c366478065aed27f668d2c414ec",
+   "family": "four-corners@2021",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20201129163319"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-four-corners",
+   "timestamp": "20250909202102",
+   "sha256": "29668be8c30f3b59bfc9cc959ff09734e6fe31eb7aac3060c36723579784b6f4",
+   "family": "four-corners@2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201129163319"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-four-corners",
+   "timestamp": "20211012032322",
+   "sha256": "f27c760a4ed8fa35a5e7194766b632a354a4c3092a1f6a8eb1dc57a9894a0f7c",
+   "family": "four-corners@2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210617092555"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-four-corners",
+   "timestamp": "20230922054639",
+   "sha256": "0142baef1bad0a506c6c81d163129210c2603fd27b2ca42e068e44738452bc0e",
+   "family": "four-corners@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210617092555"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-four-corners",
+   "timestamp": "20250518080806",
+   "sha256": "f67167a889a8ce01609068497898c3c033e138b8deb24294ca44fbb0ab1341b6",
+   "family": "four-corners@2022",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20210617092555"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-four-corners",
+   "timestamp": "20221209000857",
+   "sha256": "9d522e576c667c8d05331d19570fc344ba8342e17a45688dd86e0090be411f1d",
+   "family": "four-corners@2023",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220715191615"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-four-corners-2",
+   "timestamp": "20241205202539",
+   "sha256": "a42222ac17c3ceeeb2a8949c2d773cf5211a922107a740137c573ac448678adb",
+   "family": "four-corners@2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230715020222"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-four-corners-2",
+   "timestamp": "20251007142840",
+   "sha256": "f9869792e0d6b7886afee4cbb61c9066f152bca4157ff6ebdca72dd7456645ab",
+   "family": "four-corners@2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240414035100"
+  },
+  {
+   "url": "https://marinbikes.com/products/2024-four-corners-2",
+   "timestamp": "20261108191850",
+   "sha256": "2a35c9bb77631384eab6e88c0d85806cbdc5677bbfd29731275249082016fa99",
+   "family": "four-corners@2024",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251215170342"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2025-four-corners-1",
+   "timestamp": "20250524172625",
+   "sha256": "3e96c2ed7703b10a9a158a1420acc0802143dc44812c2a5907ccc4c308de06e4",
+   "family": "four-corners@2025",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20250218140410"
+  },
+  {
+   "url": "https://marinbikes.com/products/2025-1-four-corners-1",
+   "timestamp": "20260608234719",
+   "sha256": "9bf9bd049fea5c9bea548381d53c404e1db9456d872a3fb5eeada9cbf94f4c47",
+   "family": "four-corners@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251207182913"
+  },
+  {
+   "url": "https://marinbikes.com/products/2026-four-corners-1",
+   "timestamp": "20261109195152",
+   "sha256": "4b094e3553241a476343c1d5f053710b20376badcba3805ffc5ba33327effb2e",
+   "family": "four-corners@2026",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260511235144"
+  },
+  {
+   "url": "https://marinbikes.com/products/gestalt",
+   "timestamp": "20251215164011",
+   "sha256": "b8ade8c5a4989aa440a9718a2c1422f0043af6afe774b6713da02f7efddd89fd",
+   "family": "gestalt",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251215164011"
+  },
+  {
+   "url": "https://marinbikes.com/products/gestalt",
+   "timestamp": "20261109195020",
+   "sha256": "aa5608d92b98b2109fed6f5429314ea1856e29c37c763bbc5f01f6d9e405cd56",
+   "family": "gestalt",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251215164011"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-gestalt-x10",
+   "timestamp": "20211204172435",
+   "sha256": "4eeab242689e222f7662808ab9af878ec40809a2fd668b4c6070afeec54caa62",
+   "family": "gestalt-x@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128022253"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-gestalt-x10",
+   "timestamp": "20211204203349",
+   "sha256": "31e33a01037a45eccb58c118e6b86c99d179a96b8da97f3545f383e224592bdf",
+   "family": "gestalt-x@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201203201142"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-gestalt-x11",
+   "timestamp": "20211127204002",
+   "sha256": "1eb438fce060969a57dff3d2274dbc6357231136d12025a796e31611d05892e2",
+   "family": "gestalt-x@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204110952"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-gestalt-x10",
+   "timestamp": "20210921054718",
+   "sha256": "7208482ce08f143713d5d675d47c3c2ccc58f9020e27bf5891aea7974737d563",
+   "family": "gestalt-x@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204111349"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-gestalt-x11",
+   "timestamp": "20220930095551",
+   "sha256": "c2246d9d640befdb529bfdaa9f548b9ee9074dfb437cead55ae7b7afbd35ce36",
+   "family": "gestalt-x@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201204111311"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-gestalt-x11",
+   "timestamp": "20250909073013",
+   "sha256": "c1d4266494ecff4a94ff877759394cd7e847498f220eb75e7528fc66bdcc8854",
+   "family": "gestalt-x@2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201204111311"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-gestalt-x10",
+   "timestamp": "20210926005311",
+   "sha256": "6eae1a62f7e33cb67e717c3ef6667deae9eaa00f6dffb0e868cfc4738a57a61f",
+   "family": "gestalt-x@2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210617090450"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-gestalt-x11",
+   "timestamp": "20231004035342",
+   "sha256": "93776e1ecb8e6f503b6a1f791e55469b09a4d6ba105a3bda3b87ba2895d8b9ab",
+   "family": "gestalt-x@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210617090401"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-gestalt-x11",
+   "timestamp": "20250909201623",
+   "sha256": "630fdfc42801b9643a1a1c702bea366bd5b69e46b2cb8743af89ebb495be6f28",
+   "family": "gestalt-x@2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210617090401"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-gestalt-xr",
+   "timestamp": "20231211025730",
+   "sha256": "a29daea61341f456af957cbde632a7869ae72c980a2e03d428877b9907c43296",
+   "family": "gestalt-x@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230301165928"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-gestalt-x10",
+   "timestamp": "20250316163951",
+   "sha256": "3405cb425e96dfb4cdf1a3ce69e2525f1c15b69f09fdeb08716b69a228358f65",
+   "family": "gestalt-x@2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20221008015300"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-gestalt-x10",
+   "timestamp": "20231211004343",
+   "sha256": "bacfd4db187e382f00ed47ba50b2d53308474d3ee3425951cc446169cdc97471",
+   "family": "gestalt-x@2024",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231211004343"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-gestalt-xr",
+   "timestamp": "20250518165521",
+   "sha256": "ae583d5d60b6dc04a3bb4902a3d0848fe12a173b6abf51848aea208fa34b7d92",
+   "family": "gestalt-x@2024",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240414050336"
+  },
+  {
+   "url": "https://marinbikes.com/products/2024-gestalt-xr-copy",
+   "timestamp": "20261108191836",
+   "sha256": "a13ca0416574c5ca214515372c90428729bfcc66a0e7dc4fe6c2541f60d226c3",
+   "family": "gestalt-x@2024",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251207200429"
+  },
+  {
+   "url": "https://marinbikes.com/products/2025-gestalt-x10",
+   "timestamp": "20260608053549",
+   "sha256": "3e656b5ce08bd6f7b450854cbf9c7422d07d3523581da3ce94327dd733cfccf7",
+   "family": "gestalt-x@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260217181208"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2025-gestalt-xr",
+   "timestamp": "20250915004652",
+   "sha256": "736d64cefbf2ca5b3ac48f7f01f606f68d20efaa6056459b82cd206d2919ae9f",
+   "family": "gestalt-x@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241102085510"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-gestalt-2",
+   "timestamp": "20211127120747",
+   "sha256": "09e025958a547c3d3f9d1076b7aa3a4b349fc0e240a5f8184589a672dd08e3de",
+   "family": "gestalt@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128112816"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-gestalt",
+   "timestamp": "20211127121132",
+   "sha256": "e7ec594caf590b74558a733146bb488a126b449e0e9e3c50bd135028ccf7a0bf",
+   "family": "gestalt@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204114339"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-gestalt",
+   "timestamp": "20250803090106",
+   "sha256": "e30fa6647c5400619818a22e28ebc4a256e0ccdff03b1e1830d76345eb78782c",
+   "family": "gestalt@2019",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201204114339"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-gestalt",
+   "timestamp": "20211127205722",
+   "sha256": "6ee7352ed545e5faf0c623478e007a2feed242c92f505007dcc9d25a444586b6",
+   "family": "gestalt@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201203200214"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-gestalt-2",
+   "timestamp": "20210921233155",
+   "sha256": "6169ff3d952c6de776a6dbb3fbe6a0f7c55d1174054ceb317c5bb5fc8338779a",
+   "family": "gestalt@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201124095417"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-gestalt",
+   "timestamp": "20221205084851",
+   "sha256": "55f880ff7488ba75087973c9d2a7d56ffaf1200e75eb0cc4f37435cc1f838be0",
+   "family": "gestalt@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201124094858"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-gestalt",
+   "timestamp": "20241212112425",
+   "sha256": "0715686089e95d0a3617be23b9501c5fe868d5c7a59a6f8fa3cdd2a73f16643d",
+   "family": "gestalt@2021",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20201124094858"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-gestalt",
+   "timestamp": "20210926011040",
+   "sha256": "b40e83ae4e0a6e7c7e04ef276a9bd8872d819451d1ce0b41a3f8a4ea71c5a906",
+   "family": "gestalt@2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210617092842"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-gestalt-1",
+   "timestamp": "20230930224549",
+   "sha256": "18ea9db82bcea2c9e4893459ef563e3ffd8cd5953ff3781c314fb01ee842bb38",
+   "family": "gestalt@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210617082829"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-gestalt",
+   "timestamp": "20251107040202",
+   "sha256": "680c262ddd4c333146014f4aa96a912147caeb6f2a03b6479768489792baea0f",
+   "family": "gestalt@2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210617092842"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-gestalt",
+   "timestamp": "20231012024919",
+   "sha256": "0b4729a009b4d99f6b2915dd6238e5032df24bd744555d96d236778dd227317d",
+   "family": "gestalt@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20221207110841"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-gestalt",
+   "timestamp": "20251009090530",
+   "sha256": "fed44b2bfdb2a7e4f479681d7a3397e2d250d7694ffee8561139b5a00c9c21cf",
+   "family": "gestalt@2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20221207110841"
+  },
+  {
+   "url": "https://marinbikes.com/products/2023-gestalt-1",
+   "timestamp": "20261109195020",
+   "sha256": "2654369e60cc2a3f925bbea7fc7b75e5f54a613f9b740c2b2655483f48f1f776",
+   "family": "gestalt@2023",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260121034136"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-gestalt-1",
+   "timestamp": "20231206012322",
+   "sha256": "72971a58c8e9912722313535cdc2045d34e5c6a9f46e5088a786de3536075b17",
+   "family": "gestalt@2024",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231010084020"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-gestalt",
+   "timestamp": "20250712043953",
+   "sha256": "d8115c9c32811a1db3a4f574e8fb9e05115c756ef41abab052fd3270cedad610",
+   "family": "gestalt@2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231206021240"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2025-gestalt",
+   "timestamp": "20250909061451",
+   "sha256": "a9b42d35be4ecec06569399dc6ac687d768aa145d8b72e6b6d74666c00127cbf",
+   "family": "gestalt@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241102072259"
+  },
+  {
+   "url": "https://marinbikes.com/products/2026-gestalt-1",
+   "timestamp": "20261109195020",
+   "sha256": "d2c76c216f71a48b3336ed2debe38bf2d5550cdb8d9d27ba95b4669bb153ba63",
+   "family": "gestalt@2026",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260823131558"
+  },
+  {
+   "url": "https://marinbikes.com/products/headlands-2",
+   "timestamp": "20261108191843",
+   "sha256": "b9e70de631d7dcd12c788488a009db19aa97dda1807f9227030746f8af33a845",
+   "family": "headlands",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260509015557"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-headlands-2",
+   "timestamp": "20211127112504",
+   "sha256": "46421e023d7ed4d926b94d3176301ff557f63c591b04439084c9bd73515828e8",
+   "family": "headlands@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128105437"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-headlands-2",
+   "timestamp": "20211204140831",
+   "sha256": "d0cba941fe8b22627339e0885cabb3437e4b792dbad8b85d55b6e76df1670113",
+   "family": "headlands@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204111110"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-headlands-2",
+   "timestamp": "20230604043327",
+   "sha256": "dcaa2040e25bbddfda39d62b8321b7b9f9de163e11476dc3c6161dde2d41aebd",
+   "family": "headlands@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201204111110"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-headlands-frame-kit",
+   "timestamp": "20251112092620",
+   "sha256": "681b43cc924cd097872953b421c8e3829674eccb19da4349fdf48324ef9671ee",
+   "family": "headlands@2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201124100423"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-headlands-1",
+   "timestamp": "20210926004343",
+   "sha256": "1b4b3399835b3757319a05facd1a67b9689e98535aa27f1b9a9d9f6c3ca653d6",
+   "family": "headlands@2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210617085424"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-headlands-2",
+   "timestamp": "20231004034201",
+   "sha256": "967f68901e62f76ce8e2467f8262319654e77610700b1e721d4c0901a5b99882",
+   "family": "headlands@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220104185412"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-headlands-1",
+   "timestamp": "20250524230146",
+   "sha256": "b4cdcccbc0fa732590283c6b33cd91a72afbd1262d2b1d522557c10619031550",
+   "family": "headlands@2022",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20210617085424"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-headlands-2",
+   "timestamp": "20230925101925",
+   "sha256": "7e75d1c70fbed6038847a1cee675b4e79a1bd17669d86630fb562d0cfe481804",
+   "family": "headlands@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220810234305"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-headlands-1",
+   "timestamp": "20250207084856",
+   "sha256": "d9bea60b7da5362e94c743d53e3cc39d5d5425e255792142433e8e83770a52fc",
+   "family": "headlands@2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20220810234320"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-headlands-1",
+   "timestamp": "20231206014956",
+   "sha256": "69af0d2a6400fedc65c2086b81b3d318e07198f438131af12947f5378f23f888",
+   "family": "headlands@2024",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231206014956"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-headlands-frame-kit",
+   "timestamp": "20250513123453",
+   "sha256": "c3615aa28ceb63f49e626db8c31a94a2f925aebf7f43b012189aecc52a475a8e",
+   "family": "headlands@2024",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240414035712"
+  },
+  {
+   "url": "https://marinbikes.com/products/2024-headlands-1",
+   "timestamp": "20261108191843",
+   "sha256": "340189cd8a67756087e59dfc732067d6c71dce67b233f7291f74913be55fa234",
+   "family": "headlands@2024",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251207182756"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2025-headlands-1",
+   "timestamp": "20250420134405",
+   "sha256": "cc52b8e3dc819b21516bed2b7fe274f5dee5bab0c8297ed1184af8fc511b9bc0",
+   "family": "headlands@2025",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241102091640"
+  },
+  {
+   "url": "https://marinbikes.com/products/2025-1-headlands-1",
+   "timestamp": "20261108191843",
+   "sha256": "5428c2b27b0f90cb40a664c8425aa6736943f044199afb72bab957462439dd3b",
+   "family": "headlands@2025",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260608053550"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-lombard-1",
+   "timestamp": "20211127114548",
+   "sha256": "d0780197f64a5608407565e6bf213e4cd32de2f3ba5bdbe5c6ef339e6edec928",
+   "family": "lombard@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128022032"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-lombard-1",
+   "timestamp": "20211127115358",
+   "sha256": "9cc4569c96ff1cd5c2b23352084487d9d581316c051f8c72cd6cb942d7e67540",
+   "family": "lombard@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204112811"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-lombard-2",
+   "timestamp": "20220614002704",
+   "sha256": "6c62ec502d7119ca1fafca2012d1f8af972153036a53dd0808f1cd453e8cc250",
+   "family": "lombard@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128015407"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-lombard-2",
+   "timestamp": "20250812023007",
+   "sha256": "161fc21a7062568ec56875f370ea52bc581a1404805b2bbe158d8b107cdcd7b1",
+   "family": "lombard@2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201128015407"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-lombard-1",
+   "timestamp": "20210921061612",
+   "sha256": "77c1c982f664cc037b8c5a918f19ce13360541f0f93945ea16e699ac8ceb42fa",
+   "family": "lombard@2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210617093127"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-lombard-1",
+   "timestamp": "20221004141308",
+   "sha256": "deb6e37b77f895b9ca0b52ec1190711511db0d97540e285e03b1d938de10dcdd",
+   "family": "lombard@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210617093127"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-lombard-1",
+   "timestamp": "20221129053018",
+   "sha256": "ee9886cb5eee020d10365a7b1439bab2e626468c55aedb0a7caf47c564ace54b",
+   "family": "lombard@2023",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220811001600"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-lombard-1",
+   "timestamp": "20250909111800",
+   "sha256": "7fd6d33c39225f50acba4d7ca1d1da8c565618d40ca5ae16c281525e6b99b786",
+   "family": "lombard@2023",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220811001600"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-lombard-1",
+   "timestamp": "20231211005300",
+   "sha256": "203d2ad7c8b7eebb5ef3146d3d612cc94d00a2bf5cc6eef6285d81e036869875",
+   "family": "lombard@2024",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231010004933"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-lombard-1",
+   "timestamp": "20250918034742",
+   "sha256": "6dae01903769c0a082a0325503ac9d9e9d6ee688cf9cf0cb8fbbc59481d3de0a",
+   "family": "lombard@2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231010004933"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-nicasio-2",
+   "timestamp": "20211204193621",
+   "sha256": "7dc525c1a7905bcdde0114c04c1d37715c3097d9c73a2e4a8a7422536d7894c5",
+   "family": "nicasio-2@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128134353"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-nicasio-2",
+   "timestamp": "20211127104243",
+   "sha256": "dc388013a4460928f8b6fc2eb1c5e4fc5f8216e75c5fd8572b05db4c83d9371f",
+   "family": "nicasio-2@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204132607"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-nicasio-2",
+   "timestamp": "20211204191059",
+   "sha256": "dc454c46f78f4de8d4a1536981ca54a7d7cafe591f6e0033bfe560485d5e88a3",
+   "family": "nicasio-2@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201124085508"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-nicasio-2",
+   "timestamp": "20230604031532",
+   "sha256": "5bdbaae68f1f0f3e532311d8156c7bcd214cfdf5c8d950d79e208a2af90cf248",
+   "family": "nicasio-2@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201124085508"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-nicasio-2",
+   "timestamp": "20250912153008",
+   "sha256": "293ec33b89fb22fb9c7f6fc0947488720cb53c3f4ab73cfc8ea9bd79a1ff57c2",
+   "family": "nicasio-2@2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201124085508"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-nicasio-2",
+   "timestamp": "20211111162857",
+   "sha256": "89c960baf010f6a4c6279cac35ab664125858202db92ab551407b668af56276e",
+   "family": "nicasio-2@2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210617080146"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-nicasio-2",
+   "timestamp": "20231210230958",
+   "sha256": "ee36553497f8c51f5d86698a93e276570dd232ec5a4e574608981edd2b666774",
+   "family": "nicasio-2@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210617080146"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-nicasio-2",
+   "timestamp": "20250916040155",
+   "sha256": "e509277a58c973df82c8a8e8b1542faf81130fc2295c562719a3e752670168cc",
+   "family": "nicasio-2@2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210617080146"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-nicasio-2",
+   "timestamp": "20230926183256",
+   "sha256": "dfe00069815d9c14f48299db9d1915db0b8b1cfef0ae0dc63de27cab717dc0bb",
+   "family": "nicasio-2@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220810225857"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-nicasio-2",
+   "timestamp": "20250524160923",
+   "sha256": "532ef13fd29f08b7cff6badade012b6f4bd2c3de00326452cf037925a60d3be8",
+   "family": "nicasio-2@2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20220810225857"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-nicasio-2",
+   "timestamp": "20231210233349",
+   "sha256": "05b1267814f752838dce4d20a94851331d0f577af62dcd1e216c2f6b25583bc7",
+   "family": "nicasio-2@2024",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231023050906"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-nicasio-2",
+   "timestamp": "20250724230128",
+   "sha256": "fef7aa2e448d7483000e918e7216701349ff17e0817f51296064f065fb446fe9",
+   "family": "nicasio-2@2024",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231023050906"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2025-nicasio-2",
+   "timestamp": "20251009172630",
+   "sha256": "7747a6fee73fbb079a09cd2f91c11653e10acdce7f953a012332f1ff307bb219",
+   "family": "nicasio-2@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250217122154"
+  },
+  {
+   "url": "https://marinbikes.com/products/2025-nicasio-2-canada",
+   "timestamp": "20261109195301",
+   "sha256": "05c7d411b5ae9346db36aa46b261458b0acd0cbc86ab7330af8675542c63ef28",
+   "family": "nicasio-2@2025",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260324132757"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-nicasio-ridge",
+   "timestamp": "20211204205438",
+   "sha256": "55ee546168e8a018ad607b86addbbf88a41fba002016c09abc103a25f0560385",
+   "family": "nicasio-ridge@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128025850"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-nicasio-ridge",
+   "timestamp": "20211127115755",
+   "sha256": "472a0461f015b2f0837113f1234e7839be740b9d5488fd5535297e315dfb6a49",
+   "family": "nicasio-ridge@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201203201208"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-nicasio-ridge",
+   "timestamp": "20230314190940",
+   "sha256": "ea355375601d606fb2da580d886d5c036c7f8a41ed125227cfb97557d92c0a9a",
+   "family": "nicasio-ridge@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201203201208"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2025-nicasio-st",
+   "timestamp": "20250518070102",
+   "sha256": "5d32da2d03174351dc55d28e79be8fe594b9db07fa1312e61ce7dca612acd57a",
+   "family": "nicasio-st@2025",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241102075438"
+  },
+  {
+   "url": "https://marinbikes.com/products/2025-nicasio-st",
+   "timestamp": "20261109195153",
+   "sha256": "01a482fb2b40983c30d4aef4d85280a6dbecbca9e6b3314c34ada5a1765a8b66",
+   "family": "nicasio-st@2025",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260216132746"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-nicasio",
+   "timestamp": "20211127105509",
+   "sha256": "cda0c4507a21ef52adc6da88815e5d80480007aeebab61a4456c54173ab8fd23",
+   "family": "nicasio@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204103745"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-nicasio",
+   "timestamp": "20211204192725",
+   "sha256": "9de441515a0b7504d5368150e11ac238595d8a3555df2ce1b3e8aa541cf9a55f",
+   "family": "nicasio@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128134046"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2019-nicasio",
+   "timestamp": "20240519031707",
+   "sha256": "608f0389363211d79b75afe8d05af5c3e863685e207c35415990f51935f40c08",
+   "family": "nicasio@2019",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20201128134046"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-nicasio",
+   "timestamp": "20211127122101",
+   "sha256": "7125966f3387d8f9ca7cd521889ffff07c86f1bb71aa2235159bb021b4023e1f",
+   "family": "nicasio@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204145910"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-nicasio-1",
+   "timestamp": "20230609114152",
+   "sha256": "b385523f03363f74648e21b850b9fb4c7b9f4c412a91e496b49e132cab6a873e",
+   "family": "nicasio@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201128021759"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2020-nicasio-1",
+   "timestamp": "20241201173302",
+   "sha256": "ef8f536f7c87134f2baae1bc5841977aec9c915fa3aff5d900e3822062e6692c",
+   "family": "nicasio@2020",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20201128021759"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-nicasio",
+   "timestamp": "20211130053617",
+   "sha256": "91e2deea9ef3127832c2b11096fd7d98335b35ea15da370ea1278a94fad6bb1b",
+   "family": "nicasio@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201101123928"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-nicasio",
+   "timestamp": "20230604033451",
+   "sha256": "13335bbd71a8bfb34b5bc06c69278c0a5b0a50c0f7266811adf8c0b6a5e7ac23",
+   "family": "nicasio@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201101123928"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2021-nicasio",
+   "timestamp": "20250914233451",
+   "sha256": "76a3fa812d6bf1b9889ac3efd6be99082ca7749a5665a639501718ff0a7e03db",
+   "family": "nicasio@2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201101123928"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-nicasio-1",
+   "timestamp": "20210921060449",
+   "sha256": "baa2dd1455f3945fa2b251da5310ef7cbc796032bd26fcd0b84e8790b44492a7",
+   "family": "nicasio@2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210617091207"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-nicasio-1",
+   "timestamp": "20231211031947",
+   "sha256": "0edcfd74d1d927d138f6b13c8f44e943f02d468f7f61e64eab23dc3a3fa3c907",
+   "family": "nicasio@2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210617091207"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2022-nicasio-1",
+   "timestamp": "20250425025705",
+   "sha256": "a50d2854925889beea37717ef1147642125cb9bbcd87d8c448fbbf4c12db775f",
+   "family": "nicasio@2022",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20210617091207"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-nicasio",
+   "timestamp": "20231209075316",
+   "sha256": "955e0af79146b9f5491401fe99664c6fb00ab89ea75872eb0b4e93970eaece03",
+   "family": "nicasio@2023",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220810225041"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2023-nicasio",
+   "timestamp": "20241208153440",
+   "sha256": "4a4a389f3cf481cef3dbc991e62d359901a64343749340efa714d9a4eacd2be1",
+   "family": "nicasio@2023",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20220810225041"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-nicasio",
+   "timestamp": "20231206005527",
+   "sha256": "0aff3bc9d3975edd1525fc1c3d312e071e1bb83dbed4a655fc324e9aff71fd73",
+   "family": "nicasio@2024",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231010115727"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2024-nicasio",
+   "timestamp": "20250325222445",
+   "sha256": "8627ab60d89c73039d7767de205e3d8b6b6f676a7453eb271c1b7e17ea45a7ab",
+   "family": "nicasio@2024",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20231010115727"
+  },
+  {
+   "url": "https://marinbikes.com/products/2024-nicasio-copy",
+   "timestamp": "20261109195152",
+   "sha256": "fcf111a218209e38ec037d7d09bc2d8516a994cac780d52662420a90a2abd5db",
+   "family": "nicasio@2024",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260501122710"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2025-nicasio-1",
+   "timestamp": "20251012025156",
+   "sha256": "43590d19992c43922b29596cb92b15913aa3ba4f85212fabf6000b9df1fbdbac",
+   "family": "nicasio@2025",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241102092829"
+  },
+  {
+   "url": "https://marinbikes.com/products/2025-nicasio-1",
+   "timestamp": "20261109195005",
+   "sha256": "a8685fa4f9ce38f823a37d9d4f4a5620412bf13bc14aabacdd88b147a0a08c80",
+   "family": "nicasio@2025",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260216132746"
+  },
+  {
+   "url": "https://www.marinbikes.com/bikes/2018-ravenna",
+   "timestamp": "20211128092604",
+   "sha256": "91cf76a870d8d3d6f4dd27d9343ee07a0d03ae3bbb98e2183bc64619c5578962",
+   "family": "ravenna@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201128025809"
+  }
+ ]
+}

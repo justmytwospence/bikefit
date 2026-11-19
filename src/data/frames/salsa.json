@@ -3,33 +3,292 @@
   "models": [
     {
       "model": "Cutthroat",
-      "year": 2024,
+      "year": 2018,
       "category": "gravel",
-      "source": "https://www.salsacycles.com/products/2026-cutthroat-c-frameset",
-      "retrieved": "2026-11-16",
-      "tyreWidth": 56,
+      "source": "https://www.salsacycles.com/bikes/cutthroat/2018_cutthroat_force_1",
+      "retrieved": "2019-10-23",
+      "archive": "https://web.archive.org/web/20191023124747/https://www.salsacycles.com/bikes/cutthroat/2018_cutthroat_force_1",
       "sizes": [
-        ["52",585,357,74.5,69,90,356,445,1050,70],
-        ["54",592,372,74.25,69,98,419,445,1066,70],
-        ["56",620,385,74.25,69,127,508,445,1091,70],
-        ["58",645,394,74,69,154,559,445,1110,70],
-        ["60",664,406,73.75,69,175,584,445,1129,70]
+        ["SM",594,375,74,70,90,406,445,1053,70],
+        ["MD",620,376,74,70,115,483,445,1057,70],
+        ["LG",645,383,73,71,140,533,445,1068,70],
+        ["XL",664,397,73,71,160,584,445,1089,70]
+      ]
+    },
+    {
+      "model": "Cutthroat",
+      "year": 2020,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/cutthroat-c-grx-610-1x",
+      "retrieved": "2026-08-14",
+      "archive": "https://web.archive.org/web/20260814192635/https://www.salsacycles.com/products/cutthroat-c-grx-610-1x",
+      "sizes": [
+        ["52cm",585,357,74.5,69,90,356,445,1050,70],
+        ["54cm",592,372,74.3,69,98,419,445,1066,70],
+        ["56cm",620,385,74.3,69,127,508,445,1091,70],
+        ["58cm",645,394,74,69,154,559,445,1110,70],
+        ["60cm",664,406,73.8,69,175,584,445,1129,70]
+      ]
+    },
+    {
+      "model": "Fargo",
+      "year": 2018,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/bikes/fargo/2018_fargo_gx_29",
+      "retrieved": "2019-11-14",
+      "archive": "https://web.archive.org/web/20191114232741/https://www.salsacycles.com/bikes/fargo/2018_fargo_gx_29",
+      "sizes": [
+        ["XS",594,350,74,68.5,90,356,445,1045,70],
+        ["SM",615,352,74,69,110,406,445,1061,70],
+        ["MD",643,368,73,69,140,457,445,1077,70],
+        ["LG",671,385,73,69,170,508,445,1104,70],
+        ["XL",690,409,73,69,190,559,445,1136,70]
+      ]
+    },
+    {
+      "model": "Fargo",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/bikes/fargo/2019_fargo_ti_frameset",
+      "retrieved": "2021-10-21",
+      "archive": "https://web.archive.org/web/20211021123901/https://www.salsacycles.com/bikes/fargo/2019_fargo_ti_frameset",
+      "sizes": [
+        ["XS",594,350,74,68.5,90,356,445,1050,70],
+        ["SM",615,364,74,69,110,406,445,1067,70],
+        ["MD",643,368,73,69,140,457,445,1083,70],
+        ["LG",671,385,73,69,170,508,445,1110,70],
+        ["XL",690,409,73,69,190,559,445,1141,70]
+      ]
+    },
+    {
+      "model": "Fargo",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2025-fargo-frameset",
+      "retrieved": "2025-12-08",
+      "archive": "https://web.archive.org/web/20251208155952/https://www.salsacycles.com/products/2025-fargo-frameset",
+      "sizes": [
+        ["X-Small",594,350,74,68.5,90,356,445,1050,70],
+        ["Small",615,364,74,69,110,406,445,1067,70],
+        ["Medium",643,368,73,69,140,457,445,1083,70],
+        ["Large",671,385,73,69,170,508,445,1110,70],
+        ["X-Large",690,409,73,69,190,559,445,1141,70]
+      ]
+    },
+    {
+      "model": "Fargo",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2026-fargo-apex-s1000-axs-transmission",
+      "retrieved": "2026-11-18",
+      "archive": "https://web.archive.org/web/20261118051549/https://www.salsacycles.com/products/2026-fargo-apex-s1000-axs-transmission",
+      "sizes": [
+        ["X-Small",584,352,74,68.5,90,356,462,1067,70],
+        ["Small",605,366,74,69,110,406,462,1083,70],
+        ["Medium",633,371,73,69,140,457,462,1099,70],
+        ["Large",661,388,73,69,170,508,462,1126,70],
+        ["X-Large",680,412,73,69,190,559,462,1158,70]
+      ]
+    },
+    {
+      "model": "Fargo 32",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/fargo-32-steel-frameset",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114154323/https://www.salsacycles.com/products/fargo-32-steel-frameset",
+      "estimated": ["chainstay","wheelbase","bbDrop"],
+      "sizes": [
+        ["Small",641,388,75,67,90,390,434,1141,73],
+        ["Medium",664,407,75,67,115,440,435,1170,73],
+        ["Large",678,428,75,67,130,490,436,1197,74],
+        ["X-Large",692,450,75,67,145,540,436,1107,74]
+      ]
+    },
+    {
+      "model": "Flyway",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/flyway-c-grx-610",
+      "retrieved": "2026-05-24",
+      "archive": "https://web.archive.org/web/20260524193103/https://www.salsacycles.com/products/flyway-c-grx-610",
+      "sizes": [
+        ["X-Small",541,375,76,70.5,90,390,425,1012,76],
+        ["Small",550,388,75,70.5,100,430,425,1028,76],
+        ["Medium",569,392,74,70.5,120,470,425,1039,76],
+        ["Medium/Large",592,405,74,70.5,145,505,425,1060,76],
+        ["Large",625,421,74,70.5,180,540,425,1088,76],
+        ["X-Large",644,435,74,70.5,200,575,425,1109,76]
+      ]
+    },
+    {
+      "model": "Journeyer",
+      "year": 2022,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2022-journeyer-frameset",
+      "retrieved": "2026-08-15",
+      "archive": "https://web.archive.org/web/20260815010140/https://www.salsacycles.com/products/2022-journeyer-frameset",
+      "sizes": [
+        ["49cm",510,366,76,68.5,90,340,440,1027,70],
+        ["51cm",528,368,75,69.5,105,380,440,1028,70],
+        ["53cm",552,372,74,69.5,130,410,440,1040,70],
+        ["55cm",570,376,73,69.5,150,450,440,1050,70],
+        ["57cm",598,387,73,69.5,180,490,440,1072,70],
+        ["60cm",627,408,73,69.5,210,520,440,1104,70]
+      ]
+    },
+    {
+      "model": "Journeyman",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2019_journeyman_sora_650",
+      "retrieved": "2026-05-11",
+      "archive": "https://web.archive.org/web/20260511031630/https://www.salsacycles.com/products/2019_journeyman_sora_650",
+      "sizes": [
+        ["50cm",528,364,75.5,70,100,380,440,1017,72],
+        ["52cm",544,364,74,70.5,115,450,440,1018,72],
+        ["54cm",567,367,73,70.5,140,470,440,1029,72],
+        ["55.5cm",595,373,73,70.5,170,510,440,1045,72],
+        ["57cm",624,379,73,70.5,200,530,440,1061,72],
+        ["59.5cm",639,394,72.5,70.5,215,560,440,1081,72]
+      ]
+    },
+    {
+      "model": "Marrakesh",
+      "year": 2019,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2021_marrakesh_sora",
+      "retrieved": "2025-08-03",
+      "archive": "https://web.archive.org/web/20250803211244/https://www.salsacycles.com/products/2021_marrakesh_sora",
+      "sizes": [
+        ["50cm",540,361,75.5,69.5,90,440,455,1041,77],
+        ["52cm",554,366,74.5,70.8,100,480,455,1040,77],
+        ["54cm",563,373,73.5,70.8,110,520,455,1050,77],
+        ["55cm",578,373,73,70.8,125,560,455,1055,77],
+        ["57cm",601,381,72.5,70.8,150,590,455,1070,77],
+        ["59.5cm",625,392,72,70.8,175,620,455,1090,77]
+      ]
+    },
+    {
+      "model": "Marrakesh",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2021_marrakesh_alivio",
+      "retrieved": "2026-05-12",
+      "archive": "https://web.archive.org/web/20260512071543/https://www.salsacycles.com/products/2021_marrakesh_alivio",
+      "sizes": [
+        ["50cm",540,361,75.5,69.5,90,440,455,1041,77],
+        ["52cm",554,366,74.5,70.8,100,480,455,1040,77],
+        ["54cm",565,373,73.5,70.8,110,520,455,1050,77],
+        ["55cm",578,373,73,70.8,125,560,455,1055,77],
+        ["57cm",601,381,72.5,70.8,150,590,455,1070,77],
+        ["59cm",625,392,72,70.8,175,620,455,1090,77]
+      ]
+    },
+    {
+      "model": "Stormchaser",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "cyclocross",
+      "source": "https://www.salsacycles.com/products/2021_stormchaser_frameset",
+      "retrieved": "2025-09-16",
+      "archive": "https://web.archive.org/web/20250916070431/https://www.salsacycles.com/products/2021_stormchaser_frameset",
+      "sizes": [
+        ["49cm",530,366,75.3,70,90,390,435,1017,70],
+        ["52.5cm",544,371,74,70,105,440,435,1027,70],
+        ["54.5cm",563,373,73,70,125,475,435,1037,70],
+        ["56cm",581,382,73,70,145,510,435,1053,70],
+        ["57.5cm",600,392,73,70,165,520,435,1069,70],
+        ["59cm",619,401,73,70,185,545,435,1085,70],
+        ["61cm",637,411,73.1,70,205,570,435,1101,70]
+      ]
+    },
+    {
+      "model": "Stormchaser",
+      "year": 2024,
+      "category": "cyclocross",
+      "source": "https://www.salsacycles.com/products/2024-stormchaser-apex-eagle-sus",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114154355/https://www.salsacycles.com/products/2024-stormchaser-apex-eagle-sus",
+      "sizes": [
+        ["49cm",535,359,75.3,70,90,390,435,1023,64],
+        ["52.5cm",549,363,74,70,105,440,435,1033,64],
+        ["54.5cm",568,365,73,70,125,475,435,1042,64],
+        ["56cm",587,374,73,70,145,510,435,1058,64],
+        ["57.5cm",606,383,73,70,165,520,435,1074,64],
+        ["59cm",625,392,73,70,185,545,435,1090,64],
+        ["61cm",644,402,73.1,70,205,570,435,1107,64]
+      ]
+    },
+    {
+      "model": "Vaya",
+      "year": 2018,
+      "lastYear": 2020,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/bikes/vaya/2020_vaya_grx_600",
+      "retrieved": "2021-10-21",
+      "archive": "https://web.archive.org/web/20211021105957/https://www.salsacycles.com/bikes/vaya/2020_vaya_grx_600",
+      "sizes": [
+        ["49.5cm",543,355,75.5,70.3,100,380,450,1019,75],
+        ["52cm",547,368,74.5,71.5,100,450,450,1023,75],
+        ["54cm",590,365,73.5,71.5,145,470,450,1034,75],
+        ["55cm",609,364,73,71.5,165,510,450,1039,75],
+        ["57cm",628,372,72.5,71.5,185,530,450,1054,75],
+        ["59.5cm",647,385,72,71.5,205,560,450,1073,75]
       ]
     },
     {
       "model": "Warbird",
-      "year": 2022,
+      "year": 2018,
       "category": "gravel",
-      "source": "https://www.salsacycles.com/products/2025-warbird-c-force-axs-wide",
-      "retrieved": "2026-11-16",
+      "source": "https://www.salsacycles.com/bikes/warbird/2018_warbird_carbon_ultegra",
+      "retrieved": "2019-12-06",
+      "archive": "https://web.archive.org/web/20191206002501/https://www.salsacycles.com/bikes/warbird/2018_warbird_carbon_ultegra",
       "sizes": [
-        ["49",517.9,360.2,75,71,90,390,430,996.1,70],
-        ["52.5",547.1,368.1,74,70.75,120,440,430,1012,70],
-        ["54.5",566,372,73,70.75,140,475,430,1022.4,70],
-        ["56",584.9,381.2,73,70.75,160,510,430,1038.2,70],
-        ["57.5",603.7,390.4,73,70.75,180,520,430,1054,70],
-        ["59",622.6,399.6,73,70.75,200,545,430,1069.8,70],
-        ["61",641.5,407.7,72.5,70.75,220,570,430,1084.5,70]
+        ["51cm",528,369,74.5,70,100,455,430,1007,70],
+        ["53cm",548,373,73.5,70.5,120,495,430,1014,70],
+        ["55cm",567,377,73,70.5,140,520,430,1025,70],
+        ["56cm",590,385,73,72,160,540,430,1031,70],
+        ["58cm",616,386,72.5,72,185,575,430,1035,70],
+        ["60cm",640,392,72,72,210,605,430,1049,70]
+      ]
+    },
+    {
+      "model": "Warbird",
+      "year": 2020,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://www.salsacycles.com/products/2025-warbird-c-grx-820-2x",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114153159/https://www.salsacycles.com/products/2025-warbird-c-grx-820-2x",
+      "sizes": [
+        ["49cm",518,360,75,71,90,390,430,996,70],
+        ["52.5cm",547,368,74,70.8,120,440,430,1012,70],
+        ["54.5cm",566,372,73,70.8,140,475,430,1022,70],
+        ["56cm",585,381,73,70.8,160,510,430,1038,70],
+        ["57.5cm",604,390,73,70.8,180,520,430,1054,70],
+        ["59cm",623,400,73,70.8,200,545,430,1070,70],
+        ["61cm",642,408,72.5,70.8,220,570,430,1085,70]
+      ]
+    },
+    {
+      "model": "Warroad",
+      "year": 2019,
+      "lastYear": 2022,
+      "category": "endurance",
+      "source": "https://www.salsacycles.com/products/2022-warroad-c-ultegra",
+      "retrieved": "2026-03-29",
+      "archive": "https://web.archive.org/web/20260329171416/https://www.salsacycles.com/products/2022-warroad-c-ultegra",
+      "sizes": [
+        ["49cm",507,363,75,70.5,92,400,415,980,72],
+        ["52.5cm",547,368,74,71,132,450,415,994,72],
+        ["54.5cm",566,372,73,71,152,485,415,1005,72],
+        ["56cm",584,381,73,71,172,520,415,1020,72],
+        ["57.5cm",604,391,73,71,192,530,415,1036,72],
+        ["59cm",622,400,73,71,212,555,415,1052,72],
+        ["61cm",641,408,72.5,71,232,580,415,1066,72]
       ]
     }
   ]

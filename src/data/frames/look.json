@@ -2,35 +2,208 @@
   "brand": "Look",
   "models": [
     {
-      "model": "785 Huez",
-      "year": 2022,
-      "category": "race",
-      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-frameset-new",
-      "retrieved": "2026-11-16",
-      "aliases": ["785 Huez RS","Huez"],
+      "model": "765 Gravel",
+      "year": 2019,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-rs-black-chromatic-frameset",
+      "retrieved": "2025-06-18",
+      "archive": "https://web.archive.org/web/20250618024640/https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-rs-black-chromatic-frameset",
+      "aliases": ["765 Gravel RS"],
       "estimated": ["wheelbase","bbDrop"],
       "sizes": [
-        ["XS",519.2,365.3,74.5,71.5,94.4,480,410,969,73],
-        ["S",543.3,375.3,74.5,71.5,119.6,504,410,986,73],
-        ["M",567.3,385.6,74.5,73,140.7,530,410,986,70.5],
-        ["L",591.3,395.5,74.5,73,165.8,554,410,1004,70.5],
-        ["XL",615.3,405.6,74.5,73,193.5,579,410,1022,68]
+        ["XS",530,355,74,70.3,112,470,420,1010,71],
+        ["S",554,365,74,70.3,137,490,420,1024,72],
+        ["M",578,375,73,70.3,163,510,420,1038,72],
+        ["L",602,385,73,70.3,188,535,420,1053,72],
+        ["XL",626,395,73,70.3,214,560,420,1067,73]
+      ]
+    },
+    {
+      "model": "765 Gravel",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-rs-ekar-1x13",
+      "retrieved": "2026-03-11",
+      "archive": "https://web.archive.org/web/20260311005502/https://www.lookcycle.com/us-en/products/gravel/gravel-bikes/765-gravel-rs-ekar-1x13",
+      "aliases": ["765 Gravel RS"],
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",530,355,74,70.3,112,450,420,1010,71],
+        ["S",554,365,74,70.3,137,473,420,1024,72],
+        ["M",578,375,73,70.3,163,500,420,1038,72],
+        ["L",602,385,73,70.3,188,525,420,1053,72],
+        ["XL",626,395,73,70.3,214,551,420,1067,73]
+      ]
+    },
+    {
+      "model": "765 Optimum",
+      "year": 2019,
+      "category": "endurance",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-black-glossy-mat",
+      "retrieved": "2019-12-07",
+      "archive": "https://web.archive.org/web/20191207085222/https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-black-glossy-mat",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",530,355,74,70.8,139,470,410,987,72],
+        ["S",554,365,74,70.8,164,490,410,998,72],
+        ["M",578,375,73,72,182,510,410,1009,72],
+        ["L",602,385,73,72,206,535,410,1019,72],
+        ["XL",626,395,73,72,233,560,410,1030,72]
+      ]
+    },
+    {
+      "model": "765 Optimum",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-disc-black-glossy",
+      "retrieved": "2021-09-26",
+      "archive": "https://web.archive.org/web/20210926160547/https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-disc-black-glossy",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",530,355,74,70.8,139,470,415,987,72],
+        ["S",554,365,74,70.8,164,490,415,998,72],
+        ["M",578,375,73,72,182,510,415,1009,72],
+        ["L",602,385,73,72,206,535,415,1019,72],
+        ["XL",626,395,73,72,233,560,415,1030,72]
+      ]
+    },
+    {
+      "model": "765 Optimum",
+      "year": 2023,
+      "lastYear": 2025,
+      "category": "endurance",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-105-2x12",
+      "retrieved": "2026-02-07",
+      "archive": "https://web.archive.org/web/20260207110821/https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum-105-2x12",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",534,358,74,70.8,117,470,415,989,72],
+        ["S",558,368,74,70.8,142,490,415,1000,72],
+        ["M",582,379,74,70.8,170,510,415,1010,72],
+        ["L",606,389,74,70.8,195,535,415,1021,72],
+        ["XL",630,399,74,70.8,223,560,415,1032,72]
+      ]
+    },
+    {
+      "model": "765 Optimum Plus",
+      "year": 2021,
+      "lastYear": 2022,
+      "category": "endurance",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum/765-optimum-interference-red-mat-glossy",
+      "retrieved": "2023-10-04",
+      "archive": "https://web.archive.org/web/20231004003059/https://www.lookcycle.com/us-en/products/bikes/road-bikes/endurance/765-optimum/765-optimum-interference-red-mat-glossy",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",530,355,74,70.3,112,470,420,987,72],
+        ["S",554,365,74,70.3,137,490,420,998,72],
+        ["M",578,375,73,70.3,163,510,420,1009,72],
+        ["L",602,385,73,70.3,188,535,420,1019,72],
+        ["XL",626,395,73,70,214,560,420,1030,72]
+      ]
+    },
+    {
+      "model": "785 Huez",
+      "year": 2021,
+      "lastYear": 2025,
+      "category": "race",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-disc-proteam-white-glossy-dadi2",
+      "retrieved": "2025-11-12",
+      "archive": "https://web.archive.org/web/20251112180803/https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-disc-proteam-white-glossy-dadi2",
+      "aliases": ["785 Huez RS"],
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",510,365,74,71.8,117,480,415,974,71],
+        ["S",534,375,74,71.8,142,504,415,984,71],
+        ["M",558,385,73,73,161,530,415,994,71],
+        ["L",582,395,73,73,185,554,415,1005,70],
+        ["XL",606,405,73,73,211,579,415,1015,70]
+      ]
+    },
+    {
+      "model": "785 Huez",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-red-axs-scope-artech-2",
+      "retrieved": "2026-06-21",
+      "archive": "https://web.archive.org/web/20260621042905/https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez-rs-red-axs-scope-artech-2",
+      "aliases": ["785 Huez RS"],
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",519,365,74.5,71.5,94,480,410,978,71],
+        ["S",543,375,74.5,71.5,120,504,410,988,71],
+        ["M",567,386,74.5,73,141,530,410,998,70],
+        ["L",591,396,74.5,73,166,554,410,1009,70],
+        ["XL",615,406,74.5,73,194,579,410,1019,70]
+      ]
+    },
+    {
+      "model": "785 Huez RS",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-rs-frameset-2021",
+      "retrieved": "2023-06-05",
+      "archive": "https://web.archive.org/web/20230605111500/https://www.lookcycle.com/us-en/products/bikes/road-bikes/altitude/785-huez/785-huez-rs-frameset-2021",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",510,365,74,71.8,117,480,405,974,71],
+        ["S",534,375,74,71.8,142,504,405,984,71],
+        ["M",558,385,73,73,161,530,405,994,71],
+        ["L",582,395,73,73,185,554,405,1005,70],
+        ["XL",606,405,73,73,211,579,405,1015,70]
+      ]
+    },
+    {
+      "model": "795 Blade",
+      "year": 2021,
+      "lastYear": 2024,
+      "category": "aero",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-interference-red-mat-glossy",
+      "retrieved": "2024-08-14",
+      "archive": "https://web.archive.org/web/20240814134525/https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-interference-red-mat-glossy",
+      "aliases": ["795 Blade RS Disc"],
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",505,367,75.8,71.8,112,445,415,973,70],
+        ["S",539,377,75.8,71.8,137,470,415,987,70],
+        ["M",553,386,75.8,73,156,494,415,993,70],
+        ["L",578,396,75.8,73,181,519,415,1003,70],
+        ["XL",601,406,75.8,73,206,544,415,1013,70]
       ]
     },
     {
       "model": "795 Blade RS",
       "year": 2021,
       "category": "aero",
-      "source": "https://www.lookcycle.com/us-en/products/blade-rs-2/795-blade-rs-red-axs",
-      "retrieved": "2026-11-16",
-      "aliases": ["Blade RS 2"],
+      "source": "https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-2021-frameset",
+      "retrieved": "2023-02-09",
+      "archive": "https://web.archive.org/web/20230209081323/https://www.lookcycle.com/us-en/products/bikes/road-bikes/aero/795-blade-rs-2021-frameset",
       "estimated": ["wheelbase","bbDrop"],
       "sizes": [
-        ["XS",501.2,371.3,74.5,71.8,90.4,479.6,415,974,73],
-        ["S",525.2,381.3,74.5,71.8,115.6,504.4,415,992,73],
-        ["M",549.2,391.2,74.5,73,136.7,529.9,415,991,70.5],
-        ["L",573.2,401.2,74.5,73,161.8,554.8,415,1009,70.5],
-        ["XL",597.2,411.2,74.5,73,189.5,579.7,415,1027,68]
+        ["XS",505,367,75.8,71.8,112,445,405,973,70],
+        ["S",529,377,75.8,71.8,137,470,405,983,70],
+        ["M",553,386,75.8,73,156,494,405,993,70],
+        ["L",578,396,75.8,73,181,519,405,1003,70],
+        ["XL",601,406,75.8,73,206,544,405,1013,70]
+      ]
+    },
+    {
+      "model": "795 Blade RS 2",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://www.lookcycle.com/us-en/products/blade-rs-2/795-blade-rs-iconic-edition-frameset",
+      "retrieved": "2026-08-10",
+      "archive": "https://web.archive.org/web/20260810043533/https://www.lookcycle.com/us-en/products/blade-rs-2/795-blade-rs-iconic-edition-frameset",
+      "estimated": ["headTubeLength","wheelbase","bbDrop"],
+      "sizes": [
+        ["XXS",486,361,75,70.7,85,463,415,965,70],
+        ["XS",501,371,74.5,71.8,90,480,415,971,70],
+        ["S",525,381,74.5,71.8,116,504,415,981,70],
+        ["M",549,391,74.5,73,137,530,415,991,70],
+        ["L",573,401,74.5,73,162,555,415,1001,70],
+        ["XL",597,411,74.5,73,190,580,415,1011,70]
       ]
     },
     {
@@ -47,6 +220,23 @@
         ["M",549.2,391.2,74.5,73,136.7,529.9,410,986,70.5],
         ["L",573.2,401.2,74.5,73,161.8,554.8,410,1004,70.5],
         ["XL",597.2,411.2,74.5,73,189.5,579.7,410,1022,68]
+      ]
+    },
+    {
+      "model": "G85 Cezal",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.lookcycle.com/us-en/products/bikes/gravel-bikes/gravel/g85-cezal-rs-frameset",
+      "retrieved": "2026-10-09",
+      "archive": "https://web.archive.org/web/20261009193533/https://www.lookcycle.com/us-en/products/bikes/gravel-bikes/gravel/g85-cezal-rs-frameset",
+      "aliases": ["G85 Cezal RS"],
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",547,360,74,69.5,83,470,425,1020,72],
+        ["S",566,370,74,69.5,103,490,425,1031,72],
+        ["M",590,380,74,70,129,510,425,1046,72],
+        ["L",614,390,74,70,154,530,425,1060,73],
+        ["XL",638,400,74,70.5,180,550,425,1074,73]
       ]
     }
   ]

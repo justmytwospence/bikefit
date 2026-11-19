@@ -3,23 +3,42 @@
   "models": [
     {
       "model": "Aerostorm DRS",
-      "year": 2025,
+      "year": 2026,
       "category": "aero",
       "source": "https://lapierrebikes.com/en-int/products/aerostorm-drs-lfata",
-      "retrieved": "2026-11-16",
-      "aliases": ["Aerostorm","Aircode","Aircode DRS"],
+      "retrieved": "2026-08-07",
+      "archive": "https://web.archive.org/web/20260807002411/https://lapierrebikes.com/en-int/products/aerostorm-drs-lfata",
+      "estimated": ["headTubeLength"],
       "sizes": [
-        ["M",500,395,75,72,102,510,405,977.6,68],
-        ["L",530,410,75,72,133,550,405,1002.1,68],
-        ["XL",560,425,75,72,165,580,405,1026.6,68]
+        ["S",470,380,75,72,80,490,405,957,68],
+        ["M",500,395,75,72,102,510,405,978,68],
+        ["L",530,410,75,72,133,550,405,1002,68],
+        ["XL",560,425,75,72,165,580,405,1027,68]
+      ]
+    },
+    {
+      "model": "Crosshill AL",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://lapierrebikes.com/en-int/products/crosshill-20-lcaua",
+      "retrieved": "2026-08-07",
+      "archive": "https://web.archive.org/web/20260807051640/https://lapierrebikes.com/en-int/products/crosshill-20-lcaua",
+      "sizes": [
+        ["XS",517,367,73,70,90,420,435,1004,75],
+        ["S",547,377,73,70.5,120,460,435,1020,75],
+        ["M",606,379,72.5,71,150,500,435,1028,75],
+        ["L",606,388,72.5,71,180,550,435,1047,75],
+        ["XL",636,389,71.5,72,210,600,435,1053,75]
       ]
     },
     {
       "model": "Crosshill CF",
       "year": 2023,
+      "lastYear": 2026,
       "category": "gravel",
-      "source": "https://lapierrebikes.com/en-int/products/crosshill-cf-80-lchua",
-      "retrieved": "2026-11-16",
+      "source": "https://lapierrebikes.com/en-int/products/crosshill-cf-90-lcjua",
+      "retrieved": "2026-08-09",
+      "archive": "https://web.archive.org/web/20260809043100/https://lapierrebikes.com/en-int/products/crosshill-cf-90-lcjua",
       "aliases": ["Crosshill"],
       "tyreWidth": 44,
       "sizes": [
@@ -34,9 +53,11 @@
     {
       "model": "Pulsium",
       "year": 2021,
+      "lastYear": 2026,
       "category": "endurance",
-      "source": "https://lapierrebikes.com/en-int/products/pulsium-80-lprta",
-      "retrieved": "2026-11-16",
+      "source": "https://lapierrebikes.com/en-int/products/pulsium-60-lpptb",
+      "retrieved": "2026-08-13",
+      "archive": "https://web.archive.org/web/20260813121325/https://lapierrebikes.com/en-int/products/pulsium-60-lpptb",
       "aliases": ["Pulsium 8.0"],
       "sizes": [
         ["XS",527,375,74.5,71,120,440,415,993,72],
@@ -45,6 +66,23 @@
         ["L",579,389,73.5,72,175,520,415,1017,69],
         ["XL",599,394,73,72,195,550,415,1028,69],
         ["XXL",618,400,72.5,72.5,215,580,415,1036,67]
+      ]
+    },
+    {
+      "model": "Sensium",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://lapierrebikes.com/en-int/products/sensium-10-lsfpa",
+      "retrieved": "2026-08-13",
+      "archive": "https://web.archive.org/web/20260813113533/https://lapierrebikes.com/en-int/products/sensium-10-lsfpa",
+      "estimated": ["wheelbase"],
+      "sizes": [
+        ["XS",521,375,74.5,71.5,125,460,415,983,68],
+        ["M",530,385,74,72.5,165,520,415,987,68],
+        ["S",542,381,74.5,72,145,490,415,992,68],
+        ["L",547,392,73.5,73,185,550,415,995,68],
+        ["XL",567,400,73,73,205,580,415,1004,68],
+        ["XXL",585,411,73,73.5,220,610,415,1012,68]
       ]
     },
     {
@@ -61,6 +99,22 @@
         ["L",557,403,74,73,160,520,405,1005,67],
         ["XL",580,415,74,74,180,550,405,1014,67],
         ["XXL",599,428,74,74,200,580,405,1032,67]
+      ]
+    },
+    {
+      "model": "Xelius DRS",
+      "year": 2026,
+      "category": "race",
+      "source": "https://lapierrebikes.com/en-int/products/xelius-drs-10-lxfua",
+      "retrieved": "2026-08-13",
+      "archive": "https://web.archive.org/web/20260813130312/https://lapierrebikes.com/en-int/products/xelius-drs-10-lxfua",
+      "sizes": [
+        ["XS",501,376,74,72,105,440,405,969,67],
+        ["S",516,383,74,72,120,460,405,981,67],
+        ["M",538,393,74,73,140,490,405,989,67],
+        ["L",557,403,74,73,160,520,405,1005,67],
+        ["XL",580,415,72,72,180,550,405,1014,67],
+        ["XXL",599,428,74,73,200,580,405,1032,67]
       ]
     }
   ]

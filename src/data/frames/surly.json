@@ -1,0 +1,306 @@
+{
+  "brand": "Surly",
+  "models": [
+    {
+      "model": "Bridge Club",
+      "year": 2019,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/bridge-club-black",
+      "retrieved": "2026-04-21",
+      "archive": "https://web.archive.org/web/20260421002623/https://surlybikes.com/products/bridge-club-black",
+      "sizes": [
+        ["X-Small",553,376,73,70,110,336,435,1032,60],
+        ["Small",567,397,73,71,120,406,435,1048,60],
+        ["Medium",576,419,73,71,130,457,435,1073,60],
+        ["Large",590,435,73,71,145,508,435,1093,60],
+        ["X-Large",609,444,73,71,165,559,435,1109,60]
+      ]
+    },
+    {
+      "model": "Cross-Check",
+      "year": 2018,
+      "lastYear": 2023,
+      "category": "cyclocross",
+      "source": "https://surlybikes.com/bikes/cross_check",
+      "retrieved": "2023-08-30",
+      "archive": "https://web.archive.org/web/20230830033455/https://surlybikes.com/bikes/cross_check",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["42cm",528,379,75,72,91,420,420,990,66],
+        ["46cm",528,381,74.5,72,91,460,420,992,66],
+        ["50cm",528,389,74,72,91,500,425,1005,66],
+        ["52cm",528,390,73.5,72,91,520,425,1006,66],
+        ["54cm",538,395,73,72,102,540,425,1014,66],
+        ["56cm",557,394,72.5,72,121,560,425,1020,66],
+        ["58cm",576,398,72.5,72,141,580,425,1030,66],
+        ["60cm",594,407,72,72,160,600,425,1045,66],
+        ["62cm",613,411,72,72,180,620,425,1055,66],
+        ["64cm",631,425,72,72,200,599,425,1075,66]
+      ]
+    },
+    {
+      "model": "Disc Trucker 26in",
+      "year": 2018,
+      "category": "gravel",
+      "source": "https://surlybikes.com/bikes/disc_trucker",
+      "retrieved": "2019-11-20",
+      "archive": "https://web.archive.org/web/20191120043439/https://surlybikes.com/bikes/disc_trucker",
+      "sizes": [
+        ["42cm",497,367,75,70,111,420,460,1037,47],
+        ["46cm",503,371,74.5,70,117,460,460,1043,47],
+        ["50cm",532,375,74,71,144,500,460,1047,47],
+        ["52cm",550,375,73.5,71,163,520,460,1053,47],
+        ["54cm",568,379,73,71,182,540,460,1064,47],
+        ["56cm",588,388,73,71,203,560,460,1080,47],
+        ["58cm",606,394,72.5,71,222,580,460,1091,47]
+      ]
+    },
+    {
+      "model": "Disc Trucker 26in",
+      "year": 2021,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/disc-trucker-26-frameset-hi-viz-black",
+      "retrieved": "2026-04-09",
+      "archive": "https://web.archive.org/web/20260409041955/https://surlybikes.com/products/disc-trucker-26-frameset-hi-viz-black",
+      "sizes": [
+        ["42cm",515,362,75,70,125,420,450,1026,50],
+        ["46cm",520,371,74.5,70,130,460,450,1037,50],
+        ["50cm",561,369,74,71,170,500,450,1040,50],
+        ["52cm",576,375,73.5,71,185,520,450,1050,50],
+        ["54cm",595,378,73,71,205,540,450,1061,50],
+        ["56cm",613,388,73,71,225,560,450,1076,50]
+      ]
+    },
+    {
+      "model": "Disc Trucker 700c",
+      "year": 2018,
+      "category": "gravel",
+      "source": "https://surlybikes.com/bikes/disc_trucker",
+      "retrieved": "2019-11-20",
+      "archive": "https://web.archive.org/web/20191120043439/https://surlybikes.com/bikes/disc_trucker",
+      "sizes": [
+        ["56cm",588,389,73,72,152,560,460,1056,78],
+        ["58cm",606,394,72.5,72,171,580,460,1067,78],
+        ["60cm",623,403,72.5,72,189,600,460,1081,78],
+        ["62cm",643,401,72,72,210,620,460,1085,78],
+        ["64cm",658,406,72,72,226,640,460,1095,78]
+      ]
+    },
+    {
+      "model": "Disc Trucker 700c",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/disc-trucker-700c-grandpas-khakis",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024523/https://surlybikes.com/products/disc-trucker-700c-grandpas-khakis",
+      "sizes": [
+        ["56cm",613,388,73,72,175,560,450,1051,80],
+        ["58cm",632,391,72.5,72,195,580,450,1060,80],
+        ["60cm",652,400,72.5,72,215,600,450,1076,80],
+        ["62cm",671,402,72,72,235,620,450,1084,80],
+        ["64cm",685,413,72,72,250,640,450,1090,80]
+      ]
+    },
+    {
+      "model": "Grappler",
+      "year": 2023,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/grappler-frameset-subterranean-homesick-blue",
+      "retrieved": "2026-03-28",
+      "archive": "https://web.archive.org/web/20260328021149/https://surlybikes.com/products/grappler-frameset-subterranean-homesick-blue",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["X-Small",585,381,73,69.5,160,507,425,1057,50],
+        ["Small",604,405,73,69.5,180,386,425,1088,50],
+        ["Medium",623,420,73,69.5,200,437,425,1109,50],
+        ["Large",641,444,73,69.5,220,488,425,1140,50],
+        ["X-Large",660,458,73,69.5,240,539,425,1162,50]
+      ]
+    },
+    {
+      "model": "Long Haul Trucker 26in",
+      "year": 2018,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/long-haul-trucker",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811023227/https://surlybikes.com/products/long-haul-trucker",
+      "sizes": [
+        ["42cm",497,367,75,70,111,420,460,1037,47],
+        ["46cm",503,371,74.5,70,117,460,460,1043,47],
+        ["50cm",532,375,74,71,144,500,460,1047,47],
+        ["52cm",550,375,73.5,71,163,520,460,1053,47],
+        ["54cm",568,379,73,71,182,540,460,1064,47],
+        ["56cm",588,388,73,71,203,560,460,1080,47],
+        ["58cm",606,394,72.5,71,222,580,460,1091,47],
+        ["60cm",623,403,72.5,71.5,238,600,460,1100,47],
+        ["62cm",643,401,72,71.5,259,620,460,1105,47]
+      ]
+    },
+    {
+      "model": "Long Haul Trucker 700c",
+      "year": 2018,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/long-haul-trucker",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811023227/https://surlybikes.com/products/long-haul-trucker",
+      "sizes": [
+        ["56cm",588,389,73,72,152,560,460,1056,78],
+        ["58cm",606,394,72.5,72,171,580,460,1067,78],
+        ["60cm",623,401,72.5,72,189,600,460,1081,78],
+        ["62cm",643,403,72,72,210,620,460,1085,78]
+      ]
+    },
+    {
+      "model": "Midnight Special",
+      "year": 2018,
+      "lastYear": 2025,
+      "category": "endurance",
+      "source": "https://surlybikes.com/bikes/midnight_special",
+      "retrieved": "2025-03-28",
+      "archive": "https://web.archive.org/web/20250328085842/https://surlybikes.com/bikes/midnight_special",
+      "sizes": [
+        ["40cm",531,363,75.5,71,95,400,425,993,70],
+        ["46cm",538,366,74,71.5,100,460,425,994,70],
+        ["50cm",544,379,73.5,72,110,500,425,1007,65],
+        ["54cm",560,389,73.5,72.5,125,540,425,1018,65],
+        ["56cm",580,393,73,73,140,560,425,1012,65],
+        ["58cm",599,402,73,73,160,580,425,1027,65],
+        ["60cm",620,409,72.5,73.5,180,600,425,1036,65],
+        ["64cm",641,423,72.5,74,200,640,425,1050,65]
+      ]
+    },
+    {
+      "model": "Midnight Special",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://surlybikes.com/products/midnight-special-700c-black-cherry-fizz",
+      "retrieved": "2026-09-16",
+      "archive": "https://web.archive.org/web/20260916163444/https://surlybikes.com/products/midnight-special-700c-black-cherry-fizz",
+      "sizes": [
+        ["40cm",533,360,75.2,70.7,95,400,425,996,68],
+        ["46cm",539,363,73.7,71.2,100,460,425,996,68],
+        ["50cm",546,376,73.2,71.7,110,500,425,1009,63],
+        ["54cm",562,386,73.2,72.2,125,540,425,1019,63],
+        ["56cm",581,392,73,73,140,560,425,1022,65],
+        ["58cm",600,402,73,73,160,580,425,1037,65],
+        ["60cm",621,409,72.5,73.5,180,600,425,1046,65],
+        ["64cm",642,421,72.4,73.9,200,640,425,1060,65]
+      ]
+    },
+    {
+      "model": "Pacer",
+      "year": 2019,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://surlybikes.com/products/pacer",
+      "retrieved": "2026-04-09",
+      "archive": "https://web.archive.org/web/20260409041748/https://surlybikes.com/products/pacer",
+      "sizes": [
+        ["42cm",499,377,75.5,71,84,420,410,981,72],
+        ["46cm",515,378,75.5,71.5,99,460,410,983,72],
+        ["50cm",517,385,74.5,72,99,500,410,986,72],
+        ["52cm",523,389,74,72.5,104,520,410,987,72],
+        ["54cm",539,390,73.5,72.5,119,540,415,993,72],
+        ["56cm",557,395,73,73,136,560,415,999,72],
+        ["58cm",576,404,73,73.5,154,580,415,1009,72],
+        ["60cm",593,404,72.5,73.5,171,600,415,1014,72],
+        ["62cm",612,413,72.5,74,189,620,415,1023,72]
+      ]
+    },
+    {
+      "model": "Preamble",
+      "year": 2023,
+      "lastYear": 2025,
+      "category": "endurance",
+      "source": "https://surlybikes.com/products/preamble-frameset-black",
+      "retrieved": "2026-06-11",
+      "archive": "https://web.archive.org/web/20260611045634/https://surlybikes.com/products/preamble-frameset-black",
+      "sizes": [
+        ["X-Small",517,352,74,70,120,410,420,987,54],
+        ["Small",535,381,73,71,135,505,420,1013,54],
+        ["Medium",567,391,72.5,72,130,565,435,1030,66],
+        ["Large",605,404,72,72,170,605,435,1055,66],
+        ["X-Large",643,421,72,72,210,645,435,1085,66]
+      ]
+    },
+    {
+      "model": "Straggler",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/straggler-shaggy-carpet",
+      "retrieved": "2026-11-14",
+      "archive": "https://web.archive.org/web/20261114024619/https://surlybikes.com/products/straggler-shaggy-carpet",
+      "sizes": [
+        ["46 (650b)",508,364,75,70,90,390,416,984,62],
+        ["49 (650b)",530,363,73.5,71,110,430,416,982,62],
+        ["52 (650b)",554,365,72.5,71,135,460,416,993,62],
+        ["54 (700c)",571,391,74,71.5,120,490,435,1034,72],
+        ["56 (700c)",592,389,73,72,140,520,435,1033,72],
+        ["58 (700c)",611,393,72.5,72,160,545,435,1043,72],
+        ["61 (700c)",639,404,72.5,72,190,570,435,1063,72],
+        ["64 (700c)",668,420,72.5,72,220,620,435,1088,72]
+      ]
+    },
+    {
+      "model": "Straggler 650b",
+      "year": 2018,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://surlybikes.com/bikes/straggler",
+      "retrieved": "2025-03-26",
+      "archive": "https://web.archive.org/web/20250326204914/https://surlybikes.com/bikes/straggler",
+      "sizes": [
+        ["38cm",483,371,75.5,69.5,85,380,405,980,54],
+        ["42cm",498,369,74.5,70,100,420,405,978,54],
+        ["46cm",511,371,74,71,110,460,405,977,54],
+        ["50cm",523,383,74,71.5,120,500,405,988,54],
+        ["52cm",534,386,73,72,130,520,405,990,54],
+        ["54cm",548,392,72.5,72,145,540,410,1005,54],
+        ["56cm",563,402,72.5,72,160,560,410,1020,54],
+        ["58cm",586,410,72.5,72,185,580,410,1035,54]
+      ]
+    },
+    {
+      "model": "Straggler 700c",
+      "year": 2018,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://surlybikes.com/products/straggler-700c-cold-steel-blue",
+      "retrieved": "2026-03-28",
+      "archive": "https://web.archive.org/web/20260328021448/https://surlybikes.com/products/straggler-700c-cold-steel-blue",
+      "sizes": [
+        ["54cm",549,396,73,72,107,540,425,1017,72],
+        ["56cm",567,401,72.5,72,121,560,430,1032,72],
+        ["58cm",591,408,72.5,72,146,580,430,1047,72],
+        ["60cm",609,412,72,72,165,600,430,1057,72],
+        ["62cm",628,421,72,72,185,620,430,1072,72]
+      ]
+    },
+    {
+      "model": "Travel Check",
+      "year": 2019,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://surlybikes.com/bikes/legacy/travel_check",
+      "retrieved": "2025-01-19",
+      "archive": "https://web.archive.org/web/20250119231805/https://surlybikes.com/bikes/legacy/travel_check",
+      "sizes": [
+        ["42cm",528,379,75,72,91,420,420,990,66],
+        ["46cm",528,381,74.5,72,91,460,420,992,66],
+        ["50cm",528,389,74,72,91,500,425,1005,66],
+        ["52cm",528,390,73.5,72,91,520,425,1006,66],
+        ["54cm",538,395,73,72,102,540,425,1014,66],
+        ["56cm",557,394,72.5,72,121,560,425,1020,66],
+        ["58cm",576,398,72.5,72,141,580,425,1030,66],
+        ["60cm",594,407,72,72,160,600,425,1045,66],
+        ["62cm",613,411,72,72,180,620,425,1055,66]
+      ]
+    }
+  ]
+}

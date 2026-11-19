@@ -1,0 +1,267 @@
+{
+ "brand": "Jamis",
+ "file": "jamis",
+ "pages": [
+  {
+   "url": "https://www.jamisbikes.com/usa/aurora.html",
+   "timestamp": "20180614185418",
+   "sha256": "66b8b36576f9e117811d8fe23c04a6109f042a2c39d88bed454081f30a62e4f3",
+   "family": "aurora",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20150911000206"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/aurora.html",
+   "timestamp": "20210225051511",
+   "sha256": "ae8e7c37267cea2dcbf94e058fee931bc363337ded85ecb1ad759120f129eb9e",
+   "family": "aurora",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20150911000206"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/iconpro.html",
+   "timestamp": "20180528052058",
+   "sha256": "87465e75f906a18321f14a2666ec99f5438d8cc056182e2d7e316c3b73dee70a",
+   "family": "icon",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20150912005910"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/novapro.html",
+   "timestamp": "20180528050747",
+   "sha256": "6ad0d80d0c420bb2cf4e84f3d7ee5800a762b55260d78f51062bf0e2e029e8fd",
+   "family": "nova",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20150912052850"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/novapro.html",
+   "timestamp": "20210115234710",
+   "sha256": "0c5254feca68b08754596a41657e812a2dc7fd5605cc09272a4d888cd10642d7",
+   "family": "nova",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20150912052850"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/questcomp.html",
+   "timestamp": "20180611000219",
+   "sha256": "494516975865c1bb28751ca94cb54ef3d57309e1e688e56bcfb072985f2aec3a",
+   "family": "quest",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20150912193446"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/questcomp.html",
+   "timestamp": "20201112034059",
+   "sha256": "ba8014fd407786a6381c39f81f8383ecc43c609f03dd2b4124a3eb7d977443e4",
+   "family": "quest",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20150912193446"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+   "timestamp": "20211130190507",
+   "sha256": "3c4f864086b2afcdcfcb0de2ac6e9991ef00b2e98e1164507c34f514b6f167a5",
+   "family": "renegade",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210405233449"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/renegade/",
+   "timestamp": "20230925174814",
+   "sha256": "1a2fb1ff7009dd7cbec4b96aff1b30aa6bb5dc8cc9780ba7b9b910a66dd8aa5e",
+   "family": "renegade",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210405233449"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/new-renegade/",
+   "timestamp": "20250513065324",
+   "sha256": "3414daef49d2b097d4f4cad61b8fe60a345ec4ae2c666f7fe131b3b2ffc8bf19",
+   "family": "renegade",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240505012022"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/renegadeexile.html",
+   "timestamp": "20190725050658",
+   "sha256": "e3d2155c07ea9dc2abeb0a19115e5edc3ec9eb9d6145b4892afde3cc059c11f9",
+   "family": "renegade-alloy",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20150912233308"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/renegade-a1.html",
+   "timestamp": "20210109171313",
+   "sha256": "528d64b84c55c7ab4aee4281de9ca7fcfc4954f8fae1db3866234646d4f3b96f",
+   "family": "renegade-alloy",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200616083937"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/alloy-renegade/",
+   "timestamp": "20251012161145",
+   "sha256": "1415bd461766bc9a6d4378ad848092d4117271a7e7d930c5cfc1768121a8590f",
+   "family": "renegade-alloy",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250613003559"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/alloy-renegade/",
+   "timestamp": "20260721051217",
+   "sha256": "a93f1df1ea5539f4c0e0b768715cc80f06b66d5cca85e0983e3ada2e28f983a2",
+   "family": "renegade-alloy",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260317132407"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/renegadeexpert.html",
+   "timestamp": "20190718095818",
+   "sha256": "b7d10ac14f59c6cc8bca4efb51bcc310bdea26bd0f67d0151186faa24a5cd1c5",
+   "family": "renegade-carbon",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20150914005245"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/renegadec1.html",
+   "timestamp": "20210124061442",
+   "sha256": "001c3b8fda82c22a61cf4e54b0693cffb192cf214f372739b8d48ac649778449",
+   "family": "renegade-carbon",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200305175431"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/allroad-adventure/carbon-renegade/",
+   "timestamp": "20251012161240",
+   "sha256": "9be107254351e341841be95f9290e82a1d4444622fc3ffc772ea2b6171c94cad",
+   "family": "renegade-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250612235639"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/carbon-renegade/",
+   "timestamp": "20260613052319",
+   "sha256": "a97df8e66ccbbe94dd12fa0845c91b4e5aa50410e524cb8964c2fa1706d26323",
+   "family": "renegade-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260317113757"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/renegadeexpat.html",
+   "timestamp": "20190121192554",
+   "sha256": "8424ac55930911a28bf6352c417dd5fb0db13483199ef56021ef00908c836ebf",
+   "family": "renegade-steel",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20150912233341"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/renegades3.html",
+   "timestamp": "20210124050948",
+   "sha256": "2253b19f99b68793f1543f6d7e7fc9e70045004f04995758f03c1068c2edec6a",
+   "family": "renegade-steel",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200507084138"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/gravel-adventure/steel-renegade/",
+   "timestamp": "20261117005049",
+   "sha256": "b0f19924e7fe18a207379ff92bfcb007999344c130171f05f8145d57ba40df93",
+   "family": "renegade-steel",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260317123155"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/supernovateam.html",
+   "timestamp": "20180604124957",
+   "sha256": "7ddf2f1c8c38f04af8b7339065159717199e2b2b8b682d9a32d00c165a105766",
+   "family": "supernova",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20150912005947"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/venturacomp.html",
+   "timestamp": "20190401025450",
+   "sha256": "9cd66af7dc73740036a81860b9b20c523586318beb37ff6abbc5af494825eac4",
+   "family": "ventura",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20150919003458"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/road/ventura/",
+   "timestamp": "20211130173049",
+   "sha256": "ab60e43cfce88c9ec0c59e7063a648f3e1675982a931a4a0fed67a0f130e7513",
+   "family": "ventura",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210421102042"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/road/ventura/",
+   "timestamp": "20230925154116",
+   "sha256": "8a7a238b56e079da34f763b305b5e0fa0ef55dfe9e0f4bae9597d1d6686f6e86",
+   "family": "ventura",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210421102042"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/road/ventura/",
+   "timestamp": "20251113013602",
+   "sha256": "d9562744038892d5d91ad679b11bac99077bab2f86123255643050db8257d8c0",
+   "family": "ventura",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210421102042"
+  },
+  {
+   "url": "https://www.jamisbikes.com/bikes/adventure-gravel/all-road/ventura-allroad/",
+   "timestamp": "20260721042420",
+   "sha256": "c1970894397510c69eebee85685206e6f383608dfc6fe7d30af9f5e21e647536",
+   "family": "ventura-allroad",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260317122701"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/xenithpro.html",
+   "timestamp": "20180610235754",
+   "sha256": "a7fd41de64e58f3cf9308203b50bf61ed20b4e72d44679a008fc8a5c8a0fb810",
+   "family": "xenith",
+   "year": 2018,
+   "related": [],
+   "firstSeen": "20151010102131"
+  },
+  {
+   "url": "https://www.jamisbikes.com/usa/xenithcomp.html",
+   "timestamp": "20200901204857",
+   "sha256": "6c7f803955a5da1f857c7314ef90beb821f0ce5c755e1dd63a1a53c66abfa9a5",
+   "family": "xenith",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20151014034606"
+  }
+ ]
+}

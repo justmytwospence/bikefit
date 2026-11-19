@@ -1,5 +1,8 @@
 {
  "manual": [],
- "exclude": [],
+ "exclude": [
+  "https://www.marinbikes.com/bikes/2019-nicasio-2",
+  "https://www.marinbikes.com/bikes/2019-nicasio-ridge"
+ ],
  "models": {}
 }

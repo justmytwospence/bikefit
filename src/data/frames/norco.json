@@ -1,0 +1,371 @@
+{
+  "brand": "Norco",
+  "models": [
+    {
+      "model": "Search Aluminum",
+      "year": 2018,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/adventure/search-alu/search-a-claris/",
+      "retrieved": "2018-02-25",
+      "archive": "https://web.archive.org/web/20180225121836/https://www.norco.com/bikes/road/adventure/search-alu/search-a-claris/",
+      "sizes": [
+        ["48",529,366,74.8,70.8,115,425,425,996,73],
+        ["50.5",545,371,74.3,71.3,130,450,425,1002,73],
+        ["53",562,376,73.5,72,148,480,425,1006,70],
+        ["55.5",584,384,73.3,72.3,170,510,425,1019,70],
+        ["58",604,393,73,72.5,193,540,425,1033,68],
+        ["60.5",627,400,72.8,72.8,215,570,425,1045,68]
+      ]
+    },
+    {
+      "model": "Search Aluminum",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-aluminum/2023-search-a1/",
+      "retrieved": "2025-08-03",
+      "archive": "https://web.archive.org/web/20250803051555/https://www.norco.com/bikes/road/gravel/search-aluminum/2023-search-a1/",
+      "sizes": [
+        ["49",534,380,73.5,70.8,100,450,415,997,83],
+        ["52",554,385,73.3,71,120,480,418,1010,83],
+        ["55",572,390,73,71.3,140,510,420,1022,80],
+        ["58",589,395,72.8,71.5,160,540,423,1034,78],
+        ["61",609,400,72.5,71.8,180,580,425,1046,78]
+      ]
+    },
+    {
+      "model": "Search Aluminum",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-aluminum/25-search-a-cues/",
+      "retrieved": "2025-12-11",
+      "archive": "https://web.archive.org/web/20251211112340/https://www.norco.com/bikes/road/gravel/search-aluminum/25-search-a-cues/",
+      "sizes": [
+        ["1",554,385,74.5,69.5,100,440,425,1037,75],
+        ["2",564,400,74.3,69.5,110,475,425,1056,75],
+        ["3",587,415,74,69.5,135,510,428,1082,75],
+        ["4",611,430,73.8,69.5,160,545,430,1108,75],
+        ["5",634,445,73.5,69.5,185,580,430,1132,75]
+      ]
+    },
+    {
+      "model": "Search Carbon",
+      "year": 2018,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/2018/dirt-dropbar/gravel/search-carbon/search-c-105/",
+      "retrieved": "2019-12-14",
+      "archive": "https://web.archive.org/web/20191214053442/https://www.norco.com/bikes/2018/dirt-dropbar/gravel/search-carbon/search-c-105/",
+      "sizes": [
+        ["45.5",516,359,75,70.5,100,400,425,985,75],
+        ["48",529,366,74.8,70.8,115,425,425,996,73],
+        ["50.5",545,371,74.3,71.3,130,450,425,1002,73],
+        ["53",562,376,73.5,72,148,480,425,1006,70],
+        ["55.5",584,384,73.3,72.3,170,510,425,1019,70],
+        ["58",604,393,73,72.5,193,540,425,1033,68],
+        ["60.5",627,400,72.8,72.8,215,570,425,1045,68]
+      ]
+    },
+    {
+      "model": "Search Carbon",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-carbon/26-search-c-force/",
+      "retrieved": "2025-12-05",
+      "archive": "https://web.archive.org/web/20251205050647/https://www.norco.com/bikes/road/gravel/search-carbon/26-search-c-force/",
+      "sizes": [
+        ["1",554,385,74.5,69.5,100,440,425,1037,75],
+        ["2",564,400,74.3,69.5,110,475,425,1056,75],
+        ["3",587,415,74,69.5,135,510,428,1082,75],
+        ["4",611,430,73.8,69.5,160,545,430,1108,75],
+        ["5",634,445,73.5,69.5,185,580,430,1132,75]
+      ]
+    },
+    {
+      "model": "Search XR Aluminum",
+      "year": 2019,
+      "lastYear": 2022,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2022-search-xr-a1/",
+      "retrieved": "2024-11-01",
+      "archive": "https://web.archive.org/web/20241101190243/https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2022-search-xr-a1/",
+      "sizes": [
+        ["45.5",504,355,74,70.8,110,410,410,970,57],
+        ["48",524,362,73.8,71,130,435,410,981,57],
+        ["50.5",547,376,74.3,71,120,460,423,1006,75],
+        ["53",563,383,73.8,71.5,138,490,423,1015,73],
+        ["55.5",580,390,73.3,71.8,155,520,423,1028,73],
+        ["58",600,399,73,72,178,550,425,1042,70],
+        ["60.5",620,407,72.8,72.3,198,580,425,1054,70]
+      ]
+    },
+    {
+      "model": "Search XR Aluminum",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2021-search-xr-a1/",
+      "retrieved": "2022-08-12",
+      "archive": "https://web.archive.org/web/20220812031514/https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2021-search-xr-a1/",
+      "sizes": [
+        ["50.5",547,396,74.3,71,120,460,423,1026,75],
+        ["53",563,398,73.8,71.5,138,490,423,1030,73],
+        ["55.5",580,400,73.3,71.8,155,520,425,1038,73],
+        ["58",600,409,73,72,178,550,425,1052,70],
+        ["60.5",620,417,72.8,72.3,198,580,425,1064,70]
+      ]
+    },
+    {
+      "model": "Search XR Aluminum",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a2/",
+      "retrieved": "2025-08-03",
+      "archive": "https://web.archive.org/web/20250803051303/https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a2/",
+      "sizes": [
+        ["49",544,375,74,69.8,120,450,425,1018,78],
+        ["52",564,380,73.8,70,140,480,428,1031,78],
+        ["55",581,385,73.5,70.3,160,510,430,1043,75],
+        ["58",599,390,73.3,70.5,180,540,433,1056,73],
+        ["61",619,395,73,70.8,200,580,435,1068,73]
+      ]
+    },
+    {
+      "model": "Search XR Aluminum Suspension",
+      "year": 2021,
+      "lastYear": 2022,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2022-search-xr-a-suspension/",
+      "retrieved": "2023-03-29",
+      "archive": "https://web.archive.org/web/20230329134327/https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2022-search-xr-a-suspension/",
+      "sizes": [
+        ["50.5",561,390,73.7,69.5,95,460,423,1040,69],
+        ["53",573,392,73.2,69.5,110,490,423,1048,66],
+        ["55.5",594,395,72.7,70,130,520,425,1056,66],
+        ["58",615,402,72.5,70,155,550,425,1072,64],
+        ["60.5",634,411,72.3,70,175,580,425,1087,64]
+      ]
+    },
+    {
+      "model": "Search XR Aluminum Suspension",
+      "year": 2023,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a-suspension/",
+      "retrieved": "2025-08-03",
+      "archive": "https://web.archive.org/web/20250803180558/https://www.norco.com/bikes/road/gravel/search-xr-aluminum/2023-search-xr-a-suspension/",
+      "sizes": [
+        ["49",559,385,72.8,69.3,95,450,430,1045,68],
+        ["52",579,390,72.5,69.5,115,480,433,1058,68],
+        ["55",596,395,72.3,69.8,135,510,435,1070,65],
+        ["58",613,400,72,70,155,540,438,1082,63],
+        ["61",633,405,71.8,70.3,175,580,440,1094,63]
+      ]
+    },
+    {
+      "model": "Search XR Carbon",
+      "year": 2018,
+      "lastYear": 2022,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-xr-carbon/2022-search-xr-c/",
+      "retrieved": "2024-04-18",
+      "archive": "https://web.archive.org/web/20240418045644/https://www.norco.com/bikes/road/gravel/search-xr-carbon/2022-search-xr-c/",
+      "sizes": [
+        ["45.5",504,355,74,70.8,110,410,410,970,57],
+        ["48",524,362,73.8,71,130,435,410,981,57],
+        ["50.5",547,376,74.3,71,120,460,423,1006,75],
+        ["53",563,383,73.8,71.5,138,490,423,1015,73],
+        ["55.5",580,390,73.3,71.8,155,520,423,1026,73],
+        ["58",600,399,73,72,178,550,425,1042,70],
+        ["60.5",620,407,72.8,72.3,198,580,425,1054,70]
+      ]
+    },
+    {
+      "model": "Search XR Steel",
+      "year": 2018,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/gravel/search-xr-steel/2023-search-xr-s1/",
+      "retrieved": "2024-11-01",
+      "archive": "https://web.archive.org/web/20241101204251/https://www.norco.com/bikes/road/gravel/search-xr-steel/2023-search-xr-s1/",
+      "sizes": [
+        ["45.5",507,355,74,70.8,100,410,420,980,57],
+        ["48",526,362,73.8,71,120,435,420,991,57],
+        ["50.5",549,375,74.3,71,110,460,430,1014,75],
+        ["53",563,383,73.8,71.5,125,490,430,1023,73],
+        ["55.5",583,390,73.3,71.8,145,520,430,1033,73],
+        ["58",600,399,73,72,165,550,433,1050,70],
+        ["60.5",620,407,72.8,72.3,185,580,433,1062,70]
+      ]
+    },
+    {
+      "model": "Section Aluminum",
+      "year": 2019,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/2020/pavement/all-road/section-aluminum/section-a1/",
+      "retrieved": "2019-12-06",
+      "archive": "https://web.archive.org/web/20191206125956/https://www.norco.com/bikes/2020/pavement/all-road/section-aluminum/section-a1/",
+      "sizes": [
+        ["45.5",515,362,75,70.8,98,400,415,978,75],
+        ["48",526,369,74.5,71.3,108,425,415,984,75],
+        ["50.5",537,376,74,71.8,120,450,415,992,73],
+        ["53",556,386,73.8,72.3,138,480,415,1002,73],
+        ["55.5",574,392,73.3,72.5,155,510,415,1009,73],
+        ["58",594,401,73,72.8,178,540,418,1026,70],
+        ["60.5",614,409,72.8,73,198,570,418,1038,70],
+        ["63",633,418,71.8,73,218,595,418,1053,70]
+      ]
+    },
+    {
+      "model": "Section Carbon",
+      "year": 2019,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/all-road/section-carbon/2021-section-c3/",
+      "retrieved": "2023-03-25",
+      "archive": "https://web.archive.org/web/20230325103744/https://www.norco.com/bikes/road/all-road/section-carbon/2021-section-c3/",
+      "sizes": [
+        ["48",526,369,74.5,71.3,108,385,415,984,75],
+        ["50.5",537,376,74,71.8,120,414,415,992,73],
+        ["53",556,386,73.8,72.3,138,442,415,1002,73],
+        ["55.5",574,392,73.3,72.5,155,477,415,1009,73],
+        ["58",594,401,73,72.8,178,507,418,1026,70],
+        ["60.5",614,409,72.8,73,198,537,418,1038,70]
+      ]
+    },
+    {
+      "model": "Section Steel",
+      "year": 2019,
+      "lastYear": 2022,
+      "category": "gravel",
+      "source": "https://www.norco.com/bikes/road/all-road/section-steel/2021-section-s-frame-fork/",
+      "retrieved": "2023-03-25",
+      "archive": "https://web.archive.org/web/20230325112448/https://www.norco.com/bikes/road/all-road/section-steel/2021-section-s-frame-fork/",
+      "sizes": [
+        ["48",526,369,74.5,71.3,95,435,415,984,75],
+        ["50.5",537,376,74,71.3,108,460,415,992,73],
+        ["53",555,386,73.8,72.3,125,490,415,1002,73],
+        ["55.5",574,392,73.3,72.5,143,520,415,1009,73],
+        ["58",594,401,73,72.8,165,550,418,1026,70],
+        ["60.5",614,409,72.8,73,185,580,418,1038,70]
+      ]
+    },
+    {
+      "model": "Tactic",
+      "year": 2018,
+      "lastYear": 2019,
+      "category": "race",
+      "source": "https://www.norco.com/bikes/2018/pavement/road-race/tactic-carbon/tactic-sl-disc-ultegra/",
+      "retrieved": "2019-12-10",
+      "archive": "https://web.archive.org/web/20191210033823/https://www.norco.com/bikes/2018/pavement/road-race/tactic-carbon/tactic-sl-disc-ultegra/",
+      "aliases": ["Tactic SL Disc","Tactic SLR"],
+      "sizes": [
+        ["48",514,373,74.5,71.5,110,445,405,967,70],
+        ["50.5",527,379,74,72.5,120,470,405,969,70],
+        ["53",542,387,73.8,72.8,135,500,405,980,70],
+        ["55.5",557,395,73.5,73,150,530,408,992,70],
+        ["58",577,404,73.3,73.3,170,560,408,1005,70],
+        ["60.5",597,413,73,73.5,190,590,408,1017,70]
+      ]
+    },
+    {
+      "model": "Threshold Aluminum",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "cyclocross",
+      "source": "https://www.norco.com/bikes/2019/road/cyclocross/threshold-aluminum/threshold-aluminum-apex-1/",
+      "retrieved": "2020-08-13",
+      "archive": "https://web.archive.org/web/20200813163848/https://www.norco.com/bikes/2019/road/cyclocross/threshold-aluminum/threshold-aluminum-apex-1/",
+      "sizes": [
+        ["45.5",512,368,75.5,69.5,95,455,420,1001,70],
+        ["48",523,370,75,70,105,480,420,1003,70],
+        ["50.5",537,374,74.5,70.5,118,505,420,1007,70],
+        ["53",553,379,74,71.3,130,530,423,1010,70],
+        ["55.5",570,386,73.5,72,145,555,423,1016,70],
+        ["58",588,395,73.3,72.3,165,580,425,1032,69],
+        ["60.5",608,404,73,72.5,185,605,425,1044,69]
+      ]
+    },
+    {
+      "model": "Threshold Carbon",
+      "year": 2018,
+      "lastYear": 2021,
+      "category": "cyclocross",
+      "source": "https://www.norco.com/bikes/road/cyclocross/threshold/2021-threshold-c-frame-fork/",
+      "retrieved": "2022-05-24",
+      "archive": "https://web.archive.org/web/20220524052155/https://www.norco.com/bikes/road/cyclocross/threshold/2021-threshold-c-frame-fork/",
+      "sizes": [
+        ["48",523,370,75,70,105,480,420,1003,70],
+        ["50.5",537,374,74.5,70.5,118,505,420,1007,70],
+        ["53",553,379,74,71.3,130,530,423,1010,70],
+        ["55.5",570,386,73.5,72,145,555,423,1016,70],
+        ["58",588,395,73.3,72.3,165,580,425,1032,69],
+        ["60.5",608,404,73,72.5,185,605,425,1044,69]
+      ]
+    },
+    {
+      "model": "Valence Aluminum",
+      "year": 2018,
+      "lastYear": 2019,
+      "category": "endurance",
+      "source": "https://www.norco.com/bikes/2019/road/endurance/valence-aluminum/valence-aluminum-105/",
+      "retrieved": "2020-08-10",
+      "archive": "https://web.archive.org/web/20200810074953/https://www.norco.com/bikes/2019/road/endurance/valence-aluminum/valence-aluminum-105/",
+      "sizes": [
+        ["48",529,363,74.5,71.3,120,425,412,975,75],
+        ["50.5",542,370,74,71.8,135,450,415,986,73],
+        ["53",561,376,73.5,72.3,153,480,415,994,73],
+        ["55.5",583,385,73.3,72.5,175,510,415,1007,73],
+        ["58",603,393,73,72.8,198,540,418,1023,70],
+        ["60.5",625,401,72.8,73,220,570,418,1035,70]
+      ]
+    },
+    {
+      "model": "Valence Carbon",
+      "year": 2018,
+      "lastYear": 2019,
+      "category": "endurance",
+      "source": "https://www.norco.com/bikes/2019/pavement/endurance/valence-carbon/valence-carbon-105/",
+      "retrieved": "2019-12-10",
+      "archive": "https://web.archive.org/web/20191210021404/https://www.norco.com/bikes/2019/pavement/endurance/valence-carbon/valence-carbon-105/",
+      "sizes": [
+        ["48",528,363,74.5,71.3,120,425,412,976,75],
+        ["50.5",542,370,74,71.8,135,450,415,987,73],
+        ["53",561,376,73.5,72.3,153,480,415,992,73],
+        ["55.5",584,384,73.3,72.5,175,510,415,1004,73],
+        ["58",603,393,73,72.8,198,540,418,1021,70],
+        ["60.5",626,401,72.8,73,220,570,418,1033,70]
+      ]
+    },
+    {
+      "model": "Valence Disc Aluminum",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.norco.com/bikes/2018/pavement/endurance/valence-aluminum/valence-disc-a-105-mech/",
+      "retrieved": "2019-12-12",
+      "archive": "https://web.archive.org/web/20191212233234/https://www.norco.com/bikes/2018/pavement/endurance/valence-aluminum/valence-disc-a-105-mech/",
+      "sizes": [
+        ["48",529,366,74.8,70.8,115,425,415,986,73],
+        ["50.5",545,371,74.3,71.3,130,450,415,992,73],
+        ["53",562,376,73.5,72,148,480,415,996,70],
+        ["55.5",585,384,73.3,72.3,170,510,415,1009,70],
+        ["58",604,393,73,72.5,193,540,418,1026,68],
+        ["60.5",627,400,72.8,72.8,215,570,418,1038,68]
+      ]
+    },
+    {
+      "model": "Valence Disc Carbon",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.norco.com/bikes/2018/pavement/endurance/valence-carbon/valence-disc-c-105/",
+      "retrieved": "2019-11-22",
+      "archive": "https://web.archive.org/web/20191122231024/https://www.norco.com/bikes/2018/pavement/endurance/valence-carbon/valence-disc-c-105/",
+      "sizes": [
+        ["48",529,368,74.8,70.8,115,425,415,988,73],
+        ["50.5",545,371,74.3,71.3,130,450,415,992,73],
+        ["53",562,376,73.5,72,148,480,415,996,70],
+        ["55.5",585,384,73.3,72.3,170,510,415,1009,70],
+        ["58",604,393,73,72.5,193,540,418,1026,68],
+        ["60.5",627,400,72.8,72.8,215,570,418,1038,68]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,735 @@
+{
+ "brand": "Ridley",
+ "file": "ridley",
+ "pages": [
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIASTRID078",
+   "timestamp": "20250915065437",
+   "sha256": "b89b32351870d4685b7eb47935e6eed19f4ece8cf69e7f95cfec7eab9d3d7a05",
+   "family": "astr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250121135556"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIASTRID078",
+   "timestamp": "20260714042305",
+   "sha256": "5a199e4068e491372d1c2e8d4b4ad23c16edb3bd4635e62a269a5070c0321296",
+   "family": "astr",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250121135556"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIARSRID018",
+   "timestamp": "20250723081237",
+   "sha256": "fe1841a12368f9ea167abddcbcd755b190de2b19777b9d0dc22fce169000ee3b",
+   "family": "astr-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241205065229"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIARSRID063",
+   "timestamp": "20260317151129",
+   "sha256": "c3bbbfbe62c76bb3978f0cbd73abc9d12456d4f8e50fabc1c3c34e725a647e1b",
+   "family": "astr-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260217001716"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFALRID003",
+   "timestamp": "20250721102754",
+   "sha256": "9dd82095cca5d1671c3c627d711a0016c4d595e1695aefc7b5a3ab49b04d3e5e",
+   "family": "falcn",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241205082629"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFALRID173",
+   "timestamp": "20261114055636",
+   "sha256": "b7b6b8b3c96b6da00c7dafe73043a6c0b64c5a47d15bad8e6fa45a69a1aed471",
+   "family": "falcn",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20261114055636"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFRSRID016",
+   "timestamp": "20231129121100",
+   "sha256": "04ff27d3603a22b25b7fa5e17c94d94328c9615c293044181d15c952b6b15356",
+   "family": "falcn-rs",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230921154028"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFRSRID101",
+   "timestamp": "20251109193426",
+   "sha256": "93dab3af21325e21cc2334dbac62660f3d39e7605ed1645e92c6c1e8d132211d",
+   "family": "falcn-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240525194138"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFRSRID101",
+   "timestamp": "20260711054311",
+   "sha256": "27910a70fc269f2c6c3fefea27020589c48477ff612023052eb1580280e711f7",
+   "family": "falcn-rs",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240525194138"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFR2RID014",
+   "timestamp": "20261114055636",
+   "sha256": "921a33aa4e652ea47edf71f1cc9238bec4dfbc7b0dd7b25c924167ceff61a2e0",
+   "family": "falcn-rs-2-0",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20261114055636"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFENRID003",
+   "timestamp": "20231210211707",
+   "sha256": "67057aa5b1444d3f9dffedc31bf6f3b3231593658a9f48aa63834865e58ff641",
+   "family": "fenix-disc",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230322065832"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFENRID003",
+   "timestamp": "20250809182259",
+   "sha256": "438eeb677621625b6c700e1fe9a5e7d9e3743ff9ff82630b2c60f1e2f7cde68a",
+   "family": "fenix-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230322065832"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFENRID001",
+   "timestamp": "20261114055636",
+   "sha256": "bc97062cc5eccc29b2b24a0b8e7a187ad66022dc74da11e97feb123009447f5f",
+   "family": "fenix-disc",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230923112738"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFADRID070",
+   "timestamp": "20211205151049",
+   "sha256": "12bde04660652a79037974adac2da46fdfb966759bd2a99c2ced5327f3efb3a2",
+   "family": "fenix-sla",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210417094216"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFADRID070",
+   "timestamp": "20230923115943",
+   "sha256": "40791bf7f8986ab83780fb9196af2d00ae5930b7a0da34e1fad5836f380413da",
+   "family": "fenix-sla",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210417094216"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFADRID096",
+   "timestamp": "20251116022645",
+   "sha256": "ec688b897590e2f7de739dca631e7c8d0d908b193c2e52b6077d871c5b3b916a",
+   "family": "fenix-sla",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230925200026"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFADRID039",
+   "timestamp": "20260717090836",
+   "sha256": "a5b42e75a0242cc200f0a6f0d63b33faeb9b5ba7d58cc73a3dcfa2198d221090",
+   "family": "fenix-sla",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230925190321"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFSDRID618",
+   "timestamp": "20211205150607",
+   "sha256": "8bd888f586d33b0f3bd199586cb3a336e5236ee9bfd8735d289b5e7b4b2713f0",
+   "family": "fenix-slic",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210618215417"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIFSDRID538",
+   "timestamp": "20230127125343",
+   "sha256": "7d38fc88a5e4cd7f4837481b2bf98905a3cc4cc172de5380576e230a4038335d",
+   "family": "fenix-slic",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20211201132307"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/FFSFSDRID181",
+   "timestamp": "20251214044016",
+   "sha256": "44113980f7ad43d9ab7ddfa412f3cc5392d3e37525cc4210e55c1a54ba9a6e7d",
+   "family": "fenix-slic",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240525195311"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/FFSFSDRID213",
+   "timestamp": "20260209090023",
+   "sha256": "4283a991606e2df7c10406e4f8ada72ce50d9f5651a25d777fc7f6ce433607b3",
+   "family": "fenix-slic",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230923115313"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKARRID022",
+   "timestamp": "20230928080357",
+   "sha256": "92e92d157d586972575f60195b9708bee9714dfdba53c5844e33afebb366f86a",
+   "family": "grifn",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230604015321"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKARRID112",
+   "timestamp": "20260316051847",
+   "sha256": "6484376857417c34847b421657c3ec499c0f04f8a6c45ccdb01e3db59104439b",
+   "family": "grifn",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230604013655"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKARRID255",
+   "timestamp": "20251109195801",
+   "sha256": "45ce86438c1a49f6a096264c7ed218d750f616a0fca49849e633a742f26cf04a",
+   "family": "grifn",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240227142509"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKALRID004",
+   "timestamp": "20251214054117",
+   "sha256": "3665b65bc27091bde0d62f0f35ba972f4e2b3e75339d468951621c7dfd5b7a8d",
+   "family": "grifn-a",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808104603"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKALRID004",
+   "timestamp": "20260122125358",
+   "sha256": "3665b65bc27091bde0d62f0f35ba972f4e2b3e75339d468951621c7dfd5b7a8d",
+   "family": "grifn-a",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808104603"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIGRSRID081",
+   "timestamp": "20251211020612",
+   "sha256": "b6d0342e7d36b0e05df8c66f1834a40821338d337e8ba8bec274d766b85ad1b1",
+   "family": "grifn-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808103352"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIGRSRID266",
+   "timestamp": "20260317162005",
+   "sha256": "22dc9d8721097b4290eef7b14a16edf135df0a370a1011e563ba82ecbd582883",
+   "family": "grifn-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260216180432"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHEDRID010",
+   "timestamp": "20230604014238",
+   "sha256": "84173b2b36bc473432686ded31ab84b3fed003c036dafc2ce7fd314c774930e2",
+   "family": "helium",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220516090353"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHEDRID076",
+   "timestamp": "20251211175830",
+   "sha256": "fe9367f38d50a0cc2b9bcd9e9d7b3fbae3b6efedbcd214080a7a4de8253f25f4",
+   "family": "helium",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240228185806"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHEDRID076",
+   "timestamp": "20261114061152",
+   "sha256": "747d1b7dea2beb325d5220bbde5636c57fea6f085fa29f2691788803cf8df81a",
+   "family": "helium",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240228185806"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHSARID200",
+   "timestamp": "20211025052305",
+   "sha256": "b5b50c8f549f84dc254f98e206bec63f696149d1f3e866ba1c17be00670511a2",
+   "family": "helium-sla",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211025052305"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHSXRID300",
+   "timestamp": "20210928111341",
+   "sha256": "913ee0ebbdf3f1738c6a6ba1a2139bb0bcb349d4dda2d1b7524c7e9d279b1377",
+   "family": "helium-slx",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210417093813"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHXDRID064",
+   "timestamp": "20230926152554",
+   "sha256": "6359280a76be560619fb7ba0451758fd1468663a653c9d14412478c8f2eedb87",
+   "family": "helium-slx",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20211201130527"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHXDRID135",
+   "timestamp": "20251006042024",
+   "sha256": "4fb8ad4fe3436f5f1f636d1c1dd5c02c8c159acb7daf908baf5c51ac42650273",
+   "family": "helium-slx",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231202043348"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIHXDRID125",
+   "timestamp": "20260715163012",
+   "sha256": "ecfd41b7d2502baf04e9ccfbdcc6d2cb331a880446b44c521f05136239266447",
+   "family": "helium-slx",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231206182835"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTARID672",
+   "timestamp": "20211205150410",
+   "sha256": "c481f099b9b7510dc609f4b9fbb2726d87be0a28178f82c8ab17da01864efd04",
+   "family": "kanzo-a",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210511200121"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTARID912",
+   "timestamp": "20231211003444",
+   "sha256": "e08477c2fab8bb671adb87bef3cb12edc6a5d54b949eb51b77ced36f98ed3db8",
+   "family": "kanzo-a",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230322062806"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTARID912",
+   "timestamp": "20251214054344",
+   "sha256": "837e1b7f68a0ee65823925217d399072a10ce92a51c507fa6dd89dffb51c5850",
+   "family": "kanzo-a",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230322062806"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTARID912",
+   "timestamp": "20260711141345",
+   "sha256": "6aa8356d7e49b258c9bab78119f37011b6f3c15070fa1b1dbf5a4af6a465fc20",
+   "family": "kanzo-a",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230322062806"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKADRID038",
+   "timestamp": "20231210234418",
+   "sha256": "76e313563ea27b79d07b3ce32518fde0b246478ca66c5b8d17dab99a13cd4838",
+   "family": "kanzo-adventure",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220516085415"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKADRID009",
+   "timestamp": "20260316060957",
+   "sha256": "6c8116543a7739583fa46e5deaed818a7064954f94d8d24f58e848ee97dc9506",
+   "family": "kanzo-adventure",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231210073158"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKADRID013",
+   "timestamp": "20251218030622",
+   "sha256": "f9960160f2620dbf6ce415bfb16e273856cc46229c300f5ff0956b528ad8e3a8",
+   "family": "kanzo-adventure",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220409144522"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTCRID093",
+   "timestamp": "20211201122337",
+   "sha256": "e3f8e352cb6cd5ebdbd50c3e63a903735f9217b3f936a15c0aa7be2355ef8de0",
+   "family": "kanzo-adventure-1-0",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210726152804"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTCRID093",
+   "timestamp": "20231004122014",
+   "sha256": "6986dfdc79731a0612480af2b851ca3e62c515556e08658ccdc47896f37689b9",
+   "family": "kanzo-adventure-1-0",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210726152804"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTCRID093",
+   "timestamp": "20251006131154",
+   "sha256": "05cd68c2599075023a16cca21cf7ab712b5b9731c0b1f7206a91d3e5a7d39dbe",
+   "family": "kanzo-adventure-1-0",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210726152804"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKAVRID026",
+   "timestamp": "20251115082717",
+   "sha256": "b1640ea59d5b45305d266d61fd83e33bbc364be7054b3eec09276686e1034edf",
+   "family": "kanzo-adventure-alu",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241008070408"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKAVRID124",
+   "timestamp": "20260721005441",
+   "sha256": "14e7e095994ca9ae213e3828b44c8c2df6b4d8f817c46c1ebd34ca7614e3af7c",
+   "family": "kanzo-adventure-alu",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260609093934"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKAFRID013",
+   "timestamp": "20211205140752",
+   "sha256": "bd52f775a15251f4525116134bf8bbaf8586c4d62101011d92986365afa47abf",
+   "family": "kanzo-fast",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210417082233"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKAFRID013",
+   "timestamp": "20230510055328",
+   "sha256": "410f47a8a5c053e3a64f12a779084f67e23b6041b23632a20ac5ec43f4d71820",
+   "family": "kanzo-fast",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210417082233"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKAFRID087",
+   "timestamp": "20251107072005",
+   "sha256": "b2d3fcfa38e8afa3b1ea324c39e578049f9c9469bb1bb4c1fb706fe2ee1db4fb",
+   "family": "kanzo-fast",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231210080424"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKAFRID104",
+   "timestamp": "20260214050233",
+   "sha256": "9d64aae74fb54444122b8296f34dda63848717b423c21cd0694c9c69cd2ab35e",
+   "family": "kanzo-fast",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231130042404"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIKF2RID015",
+   "timestamp": "20261114061156",
+   "sha256": "5485605951ff92e3d015d17ddf14671330943d8782014110a0b2be334c4a5adf",
+   "family": "kanzo-fast-2",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20261114061156"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTRRID496",
+   "timestamp": "20211205144344",
+   "sha256": "84579f03a89aac3332a4454f40827ded38e32fd3724a9e972695fb4e393729c5",
+   "family": "kanzo-speed",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211025044030"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTRRID490",
+   "timestamp": "20230924170616",
+   "sha256": "8cd0d440c966a13da53f87afa06d0fa051a8a30894d876aea2618fbdcfa8b674",
+   "family": "kanzo-speed",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220516081851"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTRRID544",
+   "timestamp": "20250621173050",
+   "sha256": "85b20fb6ce4a9f9afdb41a99395944a1b5527307cbef4cf60615318eeb394d0f",
+   "family": "kanzo-speed",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230510055326"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXTRRID544",
+   "timestamp": "20260314075006",
+   "sha256": "85b20fb6ce4a9f9afdb41a99395944a1b5527307cbef4cf60615318eeb394d0f",
+   "family": "kanzo-speed",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230510055326"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINOARIDA53",
+   "timestamp": "20210928095512",
+   "sha256": "ed11cb7616636ebfb76e1cfee506e9bb114880e4c5711915d004b7ff47498f9a",
+   "family": "noah",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210618203059"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINH3RID023",
+   "timestamp": "20251211085037",
+   "sha256": "cb4efdcc97a7c8605cb2f66a0e9c9585af050225038b038fdad8f3defd64e203",
+   "family": "noah",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250316221042"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINH3RID022",
+   "timestamp": "20260712083437",
+   "sha256": "9ce64a7a3b2fc05ee8e2b5ad8a7f7c8596a347898b7b8f87f80f903872c69d53",
+   "family": "noah",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250721103818"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINODRID076",
+   "timestamp": "20211028165152",
+   "sha256": "dbce348d385b74f0c2b5f624d2a9e0682611c4bec2406bef9b86ad8df1204bbd",
+   "family": "noah-aero",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210618202104"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINODRID066",
+   "timestamp": "20220930011619",
+   "sha256": "24953a87d87cca6bb1a11791a30692a5581255b35cc7c0fd133b97491ca9c72a",
+   "family": "noah-aero",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220516095833"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINHDRID003",
+   "timestamp": "20230131061805",
+   "sha256": "fe0b19ac9a1a31c211bb53a6c3d173c361d054ae2ef853b26bb421596d9345d1",
+   "family": "noah-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220516075938"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINHDRID013",
+   "timestamp": "20260317162044",
+   "sha256": "a52639ff518c4ca5d7dc80d8892365ae503a424a49450b85693c195aa63a5c6a",
+   "family": "noah-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220627112535"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINHDRID018",
+   "timestamp": "20251115093251",
+   "sha256": "498a37db84727efe2f7e9683707c5d0cf41b3de5bd3094932b5d000922157e1a",
+   "family": "noah-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20220516074105"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINF3RID076",
+   "timestamp": "20251213013753",
+   "sha256": "2cd972242244396af6c323ffe1a907c65cc40b9f5966f76c592f0a13828b2029",
+   "family": "noah-fast",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250420230629"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINF3RID082",
+   "timestamp": "20260317062251",
+   "sha256": "c9c282144d39249cded81d71741c9518cdfe91cdb7c451ddd34a4ef11e315550",
+   "family": "noah-fast",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250116184301"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINFDRID032",
+   "timestamp": "20210928110158",
+   "sha256": "eb8f991c366e7469aa84ae7e080498f9d359da02a47e636ba9a4a8bf00a81cad",
+   "family": "noah-fast-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210417092038"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINFDRID094",
+   "timestamp": "20231130084826",
+   "sha256": "512bcebd9f8cbbd8e6bcc25580b895aa9e4f0bf8a4b5130c5e9e3cc4db3877da",
+   "family": "noah-fast-disc",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230203174727"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINFDRID071",
+   "timestamp": "20260316063544",
+   "sha256": "ee60a5d15f44ddc8d9dcfce1fe31512a5189a032eb87ae5ca5f2a04cf84c7b84",
+   "family": "noah-fast-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231206182958"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBINFDRID094",
+   "timestamp": "20250915002755",
+   "sha256": "9eefd937a95e14eb91891e8bb07e32dee452f95ba58102a4ee0dd11878387368",
+   "family": "noah-fast-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230203174727"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXNIRIDE25",
+   "timestamp": "20211028182743",
+   "sha256": "4d2f0f9e5863cc3c321dce18b6108405aeee98315ea2008a0f48365c9c99a370",
+   "family": "x-night",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210417094057"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXNIRIDF12",
+   "timestamp": "20230606054510",
+   "sha256": "d834527ce5d0dd43028a379fe30ecccb1ab1ec6597176e2cd4cc6a698cd42f93",
+   "family": "x-night",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220516081019"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXNIRIDF28",
+   "timestamp": "20251115085118",
+   "sha256": "1bd9dd69d9e696756cc833e6dee55f1201fc7228f94f473f00d63f253778e887",
+   "family": "x-night",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808112917"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXNIRIDF28",
+   "timestamp": "20260719070814",
+   "sha256": "3da27cda50947269d2c6aabb4a4fb53245f637966f4efef7ac3abf6576964b1c",
+   "family": "x-night",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240808112917"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXRSRID003",
+   "timestamp": "20250914235701",
+   "sha256": "86cef638c5f3b0cf7132d84d630463e4cd774504bb509d9d86ce3e9972f9e0e4",
+   "family": "x-night-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240304011535"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXRSRID003",
+   "timestamp": "20260612182721",
+   "sha256": "e261564305852682bb57072c44b03efd0101ef92dfb255ab9a4b1113bb564f59",
+   "family": "x-night-rs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240304011535"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXRIRID922",
+   "timestamp": "20211025051257",
+   "sha256": "dc38dc88f84db0e8f64b64f2a179d61aa581b1198c4ed81d78eafeecf7157f28",
+   "family": "x-ride",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210509014650"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXRIRID922",
+   "timestamp": "20230120164702",
+   "sha256": "e0bb9f85f01fd64a4d2b7f3966e1b27caa4d401b4c1312613b5c455d3867fddc",
+   "family": "x-ride",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210509014650"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXRIRID967",
+   "timestamp": "20251214175800",
+   "sha256": "8cb84a7f84e6361f073830b0f238f8dbe23af8a33e2073346eb1df77f70cde80",
+   "family": "x-ride",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230604010903"
+  },
+  {
+   "url": "https://www.ridley-bikes.com/en_US/bikes/SBIXRIRID982",
+   "timestamp": "20260720013934",
+   "sha256": "c53ce967e0b5635ad9fd44efce3369f1cadf5d885ade7f2f287fdf0a0aef1fd0",
+   "family": "x-ride",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240223015544"
+  }
+ ]
+}

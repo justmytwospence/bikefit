@@ -1,0 +1,456 @@
+{
+ "brand": "Surly",
+ "file": "surly",
+ "pages": [
+  {
+   "url": "https://surlybikes.com/bikes/bridge_club",
+   "timestamp": "20191215062538",
+   "sha256": "e269086374b6531844d9ee4d05ada2af6c085d2168f489ff4af716d3f56ec909",
+   "family": "bridge-club",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20181225094555"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/bridge_club",
+   "timestamp": "20211022062935",
+   "sha256": "a082a132889dcd7a03bb8b5454b16a6a96d7457ed3053c6004eec57f79a1c560",
+   "family": "bridge-club",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20181225094555"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/bridge_club",
+   "timestamp": "20231129062014",
+   "sha256": "740ae127841e1e11b385e70c40314d1e2efdc4430cc3f609cdca0be0563d487d",
+   "family": "bridge-club",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20181225094555"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/bridge_club",
+   "timestamp": "20250330085510",
+   "sha256": "fd09ea33ed2ba835ea07d3e95ade9442b9cbf89206ced0681ad7361d21a629a0",
+   "family": "bridge-club",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20181225094555"
+  },
+  {
+   "url": "https://surlybikes.com/products/bridge-club-black",
+   "timestamp": "20260421002623",
+   "sha256": "a82898885633a5e785ce5fa38540d88859c4f299e670faaacfbd375cfce2adad",
+   "family": "bridge-club",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250427012020"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/cross_check",
+   "timestamp": "20191215171108",
+   "sha256": "b0886804274c607d310d6742249ea5dbe9d41e88e65b81daccc98551f3a55b5d",
+   "family": "cross-check",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20110924052313"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/cross_check",
+   "timestamp": "20211028205858",
+   "sha256": "d7ac833483ecc67af5cc6130b54abc31c688c1a60e64cfd05d03d74a69fa50b6",
+   "family": "cross-check",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20110924052313"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/cross_check",
+   "timestamp": "20230830033455",
+   "sha256": "89f6a538c1bdf40863a4b81d784222946e4259a7012d1fcdff08bfafe92fa31d",
+   "family": "cross-check",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20110924052313"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/disc_trucker",
+   "timestamp": "20191120043439",
+   "sha256": "3b037df53d958c62d2908d8ae5cb0ba605bbb59f935e53bc6b0948307b69f71f",
+   "family": "disc-trucker",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20110924030608"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/disc_trucker",
+   "timestamp": "20211204185531",
+   "sha256": "96708c4e44262a73df255a840d908fe86f6b8739c2a1f227debec0c02f709d9c",
+   "family": "disc-trucker",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20110924030608"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/disc_trucker",
+   "timestamp": "20231207025821",
+   "sha256": "2e3caa988b74866cfe235910262a4e4da238bebbfa716630a4bcbe9907104ada",
+   "family": "disc-trucker",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20110924030608"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/disc_trucker",
+   "timestamp": "20250326035544",
+   "sha256": "29c08142a268d8dd8e8935571d3b29664a518e04b7ba3b6f817bc046c7b65ab1",
+   "family": "disc-trucker",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20110924030608"
+  },
+  {
+   "url": "https://surlybikes.com/products/disc-trucker-26-frameset-hi-viz-black",
+   "timestamp": "20260409041955",
+   "sha256": "17f2d3d30f0162822f642816f459f1147bb9e1e38658f790ac832d173d64f3ad",
+   "family": "disc-trucker-26in",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250426105232"
+  },
+  {
+   "url": "https://surlybikes.com/products/disc-trucker-26-frameset-pea-lime-soup",
+   "timestamp": "20251127061002",
+   "sha256": "0d719942c053f893fa8d2a6df4d144bb152b1b98fefb13776ed4b8021ac16a4d",
+   "family": "disc-trucker-26in",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250418032541"
+  },
+  {
+   "url": "https://surlybikes.com/products/disc-trucker-700c-frameset-hi-viz-black",
+   "timestamp": "20251126161539",
+   "sha256": "75f08c1475b822e93fbcb4d614c0bdf891015330a82c2b9d42760de5654ec362",
+   "family": "disc-trucker-700c",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250418033952"
+  },
+  {
+   "url": "https://surlybikes.com/products/disc-trucker-700c-grandpas-khakis",
+   "timestamp": "20261114024523",
+   "sha256": "4b50573a53e417670418f66486d7513769f33a17536a63401275206f483325a5",
+   "family": "disc-trucker-700c",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260220171544"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/grappler",
+   "timestamp": "20231204225407",
+   "sha256": "b7c0cb162eef00a3536b614fdcfe41e01662d0dcb10c9c557eb4ededcb8b0b0d",
+   "family": "grappler",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20221027023821"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/grappler",
+   "timestamp": "20250317193138",
+   "sha256": "d42a974a07a644c0196e60c4ba6e4b497204475dd5dd19d1613b38dd01a566ce",
+   "family": "grappler",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20221027023821"
+  },
+  {
+   "url": "https://surlybikes.com/products/grappler-frameset-subterranean-homesick-blue",
+   "timestamp": "20260328021149",
+   "sha256": "c3589847843c897e6b2f6355c65b8645485b1847d914f68008e7383322a23c74",
+   "family": "grappler",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250426120355"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/long_haul_trucker",
+   "timestamp": "20191210005628",
+   "sha256": "8da96c2ab2e28faebe65bc69739409fa51092fec2ac7b1dc74944bbe5d03b5f0",
+   "family": "long-haul-trucker",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20110923165106"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/long_haul_trucker",
+   "timestamp": "20211205131409",
+   "sha256": "fdde4b3d6a0db32cecd817c3cb654082efd2ede9def7e54900d16bda0a57ee6e",
+   "family": "long-haul-trucker",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20110923165106"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/long_haul_trucker",
+   "timestamp": "20220409163412",
+   "sha256": "e69a1b26709824f68467dc7c6d54f93c71b3f66e84ae3e4938ab20bf1c3bdd78",
+   "family": "long-haul-trucker",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20110923165106"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/long_haul_trucker",
+   "timestamp": "20250326231936",
+   "sha256": "7d92dd7ad189c3995a8549986a04562580c677d2836c53bd841f026fec720092",
+   "family": "long-haul-trucker",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20170216203141"
+  },
+  {
+   "url": "https://surlybikes.com/products/long-haul-trucker",
+   "timestamp": "20260811023227",
+   "sha256": "9307b0d949bded65d629f8b5ab18546632071ff300c5f90c30dfad231b5e797a",
+   "family": "long-haul-trucker",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250805111806"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/midnight_special",
+   "timestamp": "20191120043517",
+   "sha256": "ee6683741b0d252aa030ca9ca7c002192b8d50d634ed70b80a66e62a45d413e0",
+   "family": "midnight-special",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20180218013839"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/midnight_special",
+   "timestamp": "20211204185938",
+   "sha256": "20052bb0f12dadad98def7135b11f858ff373795388b2ded18fbfe160b034cf9",
+   "family": "midnight-special",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20180218013839"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/midnight_special",
+   "timestamp": "20231206232959",
+   "sha256": "b37d6cc5887ae7c86879da1a0d6d24fe39dfec93ac8ba0da901e9203fbc7bbe1",
+   "family": "midnight-special",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20180218013839"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/midnight_special",
+   "timestamp": "20250328085842",
+   "sha256": "aabb5fbcff677670106df17e3698dcf48f9529cc459ed1970dfa2106c2d979b1",
+   "family": "midnight-special",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20180218013839"
+  },
+  {
+   "url": "https://surlybikes.com/products/midnight-special-700c-black-cherry-fizz",
+   "timestamp": "20260916163444",
+   "sha256": "6affa504a4a55d9913a7cdbf18156236a6d737967e4538f0ff9bef8eecdf7860",
+   "family": "midnight-special",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260203213913"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/pacer",
+   "timestamp": "20191214113620",
+   "sha256": "fa279cd8c9ca69b51822e9e93aef6d7deccde776bce28d8a54d112261dc18423",
+   "family": "pacer",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822072110"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/pacer",
+   "timestamp": "20211024220139",
+   "sha256": "a8eb212ea7db0fa6d91676e1a4365b19af1d57553a2801535f4516679eb0c963",
+   "family": "pacer",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190822072110"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/pacer",
+   "timestamp": "20230930230431",
+   "sha256": "7d697c57d4c34ad738c5fb4aecf609943f9bf2328d5976468314600c92948f33",
+   "family": "pacer",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20190822072110"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/pacer",
+   "timestamp": "20250126151709",
+   "sha256": "5be582109da3fab8a6fca44953cea0ebef45d5e643b5513b4661d62d17dbbf4f",
+   "family": "pacer",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20190822072110"
+  },
+  {
+   "url": "https://surlybikes.com/products/pacer",
+   "timestamp": "20260409041748",
+   "sha256": "c0e2f1dc134c13d30be6b8cf5092d36827d7f0a75050cc4677f4668aca780d8b",
+   "family": "pacer",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260409041748"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/preamble",
+   "timestamp": "20231208084513",
+   "sha256": "a8158fe25a8139061566ce38b19f53e90fc63048b0ffe7e80d533234907bf527",
+   "family": "preamble",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230301210031"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/preamble",
+   "timestamp": "20250322231651",
+   "sha256": "2120b9fb713a4b68e5b5082b53b48ad10f9c189e836b744f516e48f746dcc1de",
+   "family": "preamble",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230301210031"
+  },
+  {
+   "url": "https://surlybikes.com/products/preamble-frameset-black",
+   "timestamp": "20260611045634",
+   "sha256": "6b36a246094e607b02ab8a63a6aba0c808d674c01889723eb6575a611687bef3",
+   "family": "preamble",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250424041806"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/straggler",
+   "timestamp": "20191207202142",
+   "sha256": "4798b8f60f3402c06ef7c0c4546ad01a2d559cb7694a96cccf1f112da363a1dc",
+   "family": "straggler",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20130919074246"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/straggler",
+   "timestamp": "20211025111056",
+   "sha256": "27cf8d96ce148b609fa5f48c457875ff8f0cf1a342f7fade474592072a93af29",
+   "family": "straggler",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20130919074246"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/straggler",
+   "timestamp": "20231204221910",
+   "sha256": "90da1050bff22b1ee8017a1d9d4c472b0da3e56c4617a826c90a30594b2a806e",
+   "family": "straggler",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20130919074246"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/straggler",
+   "timestamp": "20250326204914",
+   "sha256": "f14a049e33336c59e06e11b8374b08967b37bd9b307e451485a0f4d28eb7b026",
+   "family": "straggler",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20130919074246"
+  },
+  {
+   "url": "https://surlybikes.com/products/straggler-shaggy-carpet",
+   "timestamp": "20261114024619",
+   "sha256": "72c99d7037154cef7474a31e11a3075e8037e807bec941de7c2f466fb1ca5da6",
+   "family": "straggler",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250925225234"
+  },
+  {
+   "url": "https://surlybikes.com/products/straggler-650b-frameset-black",
+   "timestamp": "20250813005258",
+   "sha256": "620784825b85510c8bbde515c1257e8d946fb8f76c9fa7b02ac25efaaec59845",
+   "family": "straggler-650b",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250416152821"
+  },
+  {
+   "url": "https://surlybikes.com/products/straggler-650b-black",
+   "timestamp": "20260814184903",
+   "sha256": "5d45a437aa937ab533245e0cc61ff39acc03da354eeaa97a369a2c0c60312b5b",
+   "family": "straggler-650b",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250416174146"
+  },
+  {
+   "url": "https://surlybikes.com/products/straggler-700c-cold-steel-blue",
+   "timestamp": "20250920042640",
+   "sha256": "fbc8d6bfde2dc36764d02f37657873c5820299bfd87131f4008964572609c3da",
+   "family": "straggler-700c",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250421155228"
+  },
+  {
+   "url": "https://surlybikes.com/products/straggler-700c-cold-steel-blue",
+   "timestamp": "20260328021448",
+   "sha256": "420cc30b52889f7ec6a4a6adc9013c383de5093ead481544fa3d9d3667ac02d0",
+   "family": "straggler-700c",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250421155228"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/travel_check",
+   "timestamp": "20191210175033",
+   "sha256": "69525bb48f9e4d23f7e3a34a0d9cae469bc899aba68d3ddd520d0607784c4e42",
+   "family": "travel-check",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190823154725"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/travel_check",
+   "timestamp": "20211017220926",
+   "sha256": "c18435c2f2de6b9706bffa9dbc97a1f27bd94d28d8c0da8f28c9a09e1df4d5e7",
+   "family": "travel-check",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190823154725"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/travel_check",
+   "timestamp": "20231201230855",
+   "sha256": "e188181c185a3f8db290e35ba050bfd8e33a6357149fc947f702486ab08a4852",
+   "family": "travel-check",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20190823154725"
+  },
+  {
+   "url": "https://surlybikes.com/bikes/legacy/travel_check",
+   "timestamp": "20250119231805",
+   "sha256": "8bffe31519df5c9ec3fdf9e95aa6d3db976d33afd8bdb45d96849757580443f6",
+   "family": "travel-check",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20190823154725"
+  }
+ ]
+}

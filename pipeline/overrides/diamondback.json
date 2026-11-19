@@ -1,5 +1,36 @@
 {
  "manual": [],
  "exclude": [],
- "models": {}
+ "models": {
+  "Arden 1": {
+   "model": "Arden",
+   "aliases": [
+    "Arden 1"
+   ]
+  },
+  "Arden 2": {
+   "model": "Arden",
+   "aliases": [
+    "Arden 2"
+   ]
+  },
+  "Arden 3": {
+   "model": "Arden",
+   "aliases": [
+    "Arden 3"
+   ]
+  },
+  "Century 2": {
+   "model": "Century",
+   "aliases": [
+    "Century 2"
+   ]
+  },
+  "Century 3": {
+   "model": "Century",
+   "aliases": [
+    "Century 3"
+   ]
+  }
+ }
 }

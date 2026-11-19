@@ -1,0 +1,307 @@
+{
+  "brand": "Genesis",
+  "models": [
+    {
+      "model": "CDA",
+      "year": 2019,
+      "category": "cyclocross",
+      "source": "https://www.genesisbikes.co.uk/bike/cda-10-2020",
+      "retrieved": "2019-11-14",
+      "archive": "https://web.archive.org/web/20191114032836/https://www.genesisbikes.co.uk/bike/cda-10-2020",
+      "sizes": [
+        ["XS",553,365,74,71,115,470,430,1007,73],
+        ["S",572,375,73.5,71,135,500,430,1023,73],
+        ["M",593,385,73.5,71.5,155,530,430,1035,73],
+        ["L",612,395,73,71.5,175,550,430,1052,73],
+        ["XL",633,405,72.5,72,195,580,430,1063,73]
+      ]
+    },
+    {
+      "model": "CDA",
+      "year": 2025,
+      "category": "cyclocross",
+      "source": "https://www.genesisbikes.co.uk/product/genesis-cda-10-gn10010md/GN10010MD",
+      "retrieved": "2026-11-19",
+      "sizes": [
+        ["XS",561,375,74,70,115,470,435,1035,73],
+        ["S",584,375,73.5,71,135,500,435,1033,73],
+        ["M",603,385,73.5,71,155,530,435,1049,73],
+        ["L",624,395,73,71.5,175,550,435,1061,73],
+        ["XL",645,405,72.5,72,195,580,435,1072,73]
+      ]
+    },
+    {
+      "model": "Croix de Fer",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "gravel",
+      "source": "https://www.genesisbikes.co.uk/bike/croix-de-fer-20-alt-2020",
+      "retrieved": "2020-08-11",
+      "archive": "https://web.archive.org/web/20200811012755/https://www.genesisbikes.co.uk/bike/croix-de-fer-20-alt-2020",
+      "sizes": [
+        ["XS",553,365,74,71,115,470,430,1007,73],
+        ["S",572,375,73.5,71,135,500,430,1023,73],
+        ["M",593,385,73.5,71.5,155,530,430,1035,73],
+        ["L",612,395,73,71.5,175,550,430,1052,73],
+        ["XL",633,405,72.5,72,195,580,430,1063,73]
+      ]
+    },
+    {
+      "model": "Croix de Fer",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.genesisbikes.co.uk/product/genesis-croix-de-fer-30-gn10911md/GN10911MD",
+      "retrieved": "2026-11-19",
+      "sizes": [
+        ["XS",552,395,74,71,100,470,435,1042,73],
+        ["S",566,395,74,71,115,490,435,1046,73],
+        ["M",585,385,73.5,71,135,530,435,1043,73],
+        ["L",604,395,73.5,71,155,560,435,1059,73],
+        ["XL",623,405,73.5,71,175,590,435,1076,73]
+      ]
+    },
+    {
+      "model": "Croix de Fer Ti",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "gravel",
+      "source": "https://www.genesisbikes.co.uk/bike/croix-de-fer-ti-2020",
+      "retrieved": "2020-06-20",
+      "archive": "https://web.archive.org/web/20200620171922/https://www.genesisbikes.co.uk/bike/croix-de-fer-ti-2020",
+      "sizes": [
+        ["XS",551,365,74,71,125,470,430,1006,73],
+        ["S",570,375,73.5,71,145,500,430,1023,73],
+        ["M",591,385,73.5,71.5,165,530,430,1035,73],
+        ["L",610,395,73,71.5,185,550,430,1051,73],
+        ["XL",631,405,72.5,72,205,580,430,1063,73]
+      ]
+    },
+    {
+      "model": "Croix de Fer Ti",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.genesisbikes.co.uk/product/genesis-croix-de-fer-ti-frameset-gn11410md/GN11410MD",
+      "retrieved": "2026-11-19",
+      "sizes": [
+        ["XS",540,395,74,71,110,470,435,1042,73],
+        ["S",568,395,74,71,140,490,435,1046,73],
+        ["M",589,385,73.5,71,160,530,435,1043,73],
+        ["L",608,395,73.5,71,180,560,435,1059,73],
+        ["XL",627,405,73.5,71,200,590,435,1076,73]
+      ]
+    },
+    {
+      "model": "Datum",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.genesisbikes.co.uk/bike/datum",
+      "retrieved": "2020-08-11",
+      "archive": "https://web.archive.org/web/20200811003820/https://www.genesisbikes.co.uk/bike/datum",
+      "sizes": [
+        ["XS",544,365,73.5,72,115,460,420,985,72],
+        ["S",563,375,73.5,72,135,490,420,1001,72],
+        ["M",585,385,73.3,72,155,520,420,1017,72],
+        ["L",602,395,73,72,175,540,420,1033,72],
+        ["XL",621,405,73,72,195,570,420,1050,72]
+      ]
+    },
+    {
+      "model": "Delta",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.genesisbikes.co.uk/bike/delta-10-2020",
+      "retrieved": "2020-08-11",
+      "archive": "https://web.archive.org/web/20200811013625/https://www.genesisbikes.co.uk/bike/delta-10-2020",
+      "sizes": [
+        ["XS",538,365,74,71,130,460,420,992,72],
+        ["S",559,375,73.5,71.5,150,490,420,1005,72],
+        ["M",578,385,73.5,71.5,170,520,420,1021,72],
+        ["L",599,395,73,72,190,540,420,1032,72],
+        ["XL",618,405,73,72,210,570,420,1049,72]
+      ]
+    },
+    {
+      "model": "Delta W",
+      "year": 2019,
+      "category": "endurance",
+      "source": "https://www.genesisbikes.co.uk/bike/delta-10-w",
+      "retrieved": "2019-12-07",
+      "archive": "https://web.archive.org/web/20191207115729/https://www.genesisbikes.co.uk/bike/delta-10-w",
+      "sizes": [
+        ["XXS",527,374,75,71.5,125,450,415,988,73],
+        ["XS",541,375,74,71.5,140,475,415,992,73],
+        ["S",559,380,73.5,71.5,160,495,415,1001,71],
+        ["M",575,385,73.3,72,176,510,415,1009,71]
+      ]
+    },
+    {
+      "model": "Equilibrium",
+      "year": 2019,
+      "category": "endurance",
+      "source": "https://www.genesisbikes.co.uk/bike/equilibrium-2020",
+      "retrieved": "2019-11-14",
+      "archive": "https://web.archive.org/web/20191114032801/https://www.genesisbikes.co.uk/bike/equilibrium-2020",
+      "sizes": [
+        ["XS",533,374,73.5,72,120,460,420,1009,72],
+        ["S",556,375,73.5,72,140,490,420,1009,72],
+        ["M",579,385,73.5,72,160,520,420,1016,72],
+        ["L",598,395,73,72,180,540,420,1032,72],
+        ["XL",618,405,73,72,200,570,420,1048,72]
+      ]
+    },
+    {
+      "model": "Equilibrium Disc",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "endurance",
+      "source": "https://www.genesisbikes.co.uk/bike/equilibrium-disc-10",
+      "retrieved": "2020-08-11",
+      "archive": "https://web.archive.org/web/20200811002342/https://www.genesisbikes.co.uk/bike/equilibrium-disc-10",
+      "sizes": [
+        ["XS",545,365,74,71,105,460,420,990,72],
+        ["S",559,375,73.5,71.5,120,490,420,1000,72],
+        ["M",584,386,73.5,73,140,530,420,1003,72],
+        ["L",599,395,73,72,160,550,420,1019,72],
+        ["XL",618,405,72.5,72,180,580,420,1035,72]
+      ]
+    },
+    {
+      "model": "Flyer",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.genesisbikes.co.uk/bike/flyer",
+      "retrieved": "2019-10-22",
+      "archive": "https://web.archive.org/web/20191022122651/https://www.genesisbikes.co.uk/bike/flyer",
+      "sizes": [
+        ["XS",533,374,73.5,72,120,460,420,1009,72],
+        ["S",556,375,73.5,72,140,490,420,1009,72],
+        ["M",579,385,73.5,72,160,520,420,1016,72],
+        ["L",598,395,73,72,180,540,420,1032,72],
+        ["XL",618,405,73,72,200,570,420,1048,72]
+      ]
+    },
+    {
+      "model": "Fugio",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "gravel",
+      "source": "https://www.genesisbikes.co.uk/bike/fugio-30-2020",
+      "retrieved": "2020-06-20",
+      "archive": "https://web.archive.org/web/20200620111824/https://www.genesisbikes.co.uk/bike/fugio-30-2020",
+      "sizes": [
+        ["XS",556,365,73,70.5,125,470,425,1012,65],
+        ["S",575,375,73,70.5,145,500,425,1029,65],
+        ["M",594,385,73,70.5,165,530,425,1045,65],
+        ["L",613,395,73,70.5,185,550,425,1062,65],
+        ["XL",631,405,73,70.5,205,580,425,1077,65]
+      ]
+    },
+    {
+      "model": "Vagabond",
+      "year": 2019,
+      "category": "gravel",
+      "source": "https://www.genesisbikes.co.uk/bike/vagabond",
+      "retrieved": "2019-12-07",
+      "archive": "https://web.archive.org/web/20191207115709/https://www.genesisbikes.co.uk/bike/vagabond",
+      "sizes": [
+        ["S",589,355,72.5,71,120,430,445,1030,73],
+        ["M",608,375,72.5,71,140,460,445,1056,73],
+        ["L",627,395,72.5,71,160,490,445,1083,73],
+        ["XL",646,410,72.5,71,180,520,445,1104,73]
+      ]
+    },
+    {
+      "model": "Vagabond",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.genesisbikes.co.uk/product/genesis-vagabond-10-gn11811md/GN11811MD",
+      "retrieved": "2026-11-19",
+      "tyreWidth": 50,
+      "sizes": [
+        ["XS",569,370,74,69,155,400,440,1061,47],
+        ["S",592,385,74,69,180,450,440,1085,47],
+        ["M",617,415,74,69,160,495,450,1122,72],
+        ["L",640,430,74,69,185,530,450,1146,72],
+        ["XL",659,445,74,69,205,580,450,1168,72]
+      ]
+    },
+    {
+      "model": "Vapour",
+      "year": 2019,
+      "category": "cyclocross",
+      "source": "https://www.genesisbikes.co.uk/bike/vapour-20",
+      "retrieved": "2019-11-21",
+      "archive": "https://web.archive.org/web/20191121233828/https://www.genesisbikes.co.uk/bike/vapour-20",
+      "sizes": [
+        ["XS",544,365,74,71,115,460,430,1004,73],
+        ["S",563,375,73.5,71,135,490,430,1020,73],
+        ["M",583,385,73.5,71.5,155,520,430,1032,73],
+        ["L",602,395,73,71.5,175,550,430,1049,73],
+        ["XL",623,405,73,72,195,580,430,1060,73]
+      ]
+    },
+    {
+      "model": "Vapour 30",
+      "year": 2019,
+      "category": "cyclocross",
+      "source": "https://www.genesisbikes.co.uk/bike/vapour-30",
+      "retrieved": "2019-12-07",
+      "archive": "https://web.archive.org/web/20191207115657/https://www.genesisbikes.co.uk/bike/vapour-30",
+      "sizes": [
+        ["XS",532,366,74.5,70.5,113,470,425,1006,70],
+        ["S",552,372,74,70.5,134,500,425,1024,70],
+        ["M",574,380,73.5,72,152,530,425,1037,67],
+        ["L",596,388,73.3,72,176,560,425,1047,67],
+        ["XL",618,396,73,72,201,590,425,1063,65]
+      ]
+    },
+    {
+      "model": "Volare Disc",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "race",
+      "source": "https://www.genesisbikes.co.uk/bike/volare-disc-853-fs",
+      "retrieved": "2020-08-10",
+      "archive": "https://web.archive.org/web/20200810235654/https://www.genesisbikes.co.uk/bike/volare-disc-853-fs",
+      "sizes": [
+        ["XS",525,365,74,71.5,115,470,405,970,72],
+        ["S",542,375,73.5,72,130,490,407,983,72],
+        ["M",560,385,73.5,73,145,520,407,983,70],
+        ["L",578,395,73.3,73.3,165,540,410,996,68],
+        ["XL",593,405,72.5,73.3,180,560,410,1011,68]
+      ]
+    },
+    {
+      "model": "Zero",
+      "year": 2019,
+      "category": "race",
+      "source": "https://www.genesisbikes.co.uk/bike/zero",
+      "retrieved": "2019-12-07",
+      "archive": "https://web.archive.org/web/20191207115841/https://www.genesisbikes.co.uk/bike/zero",
+      "sizes": [
+        ["XS",524,365,74,71.5,115,460,410,975,72],
+        ["S",540,375,73.5,72,130,490,410,985,72],
+        ["M",558,385,73.3,73,150,520,410,985,70],
+        ["L",576,395,73,73.3,165,550,410,999,68],
+        ["XL",595,405,72.5,73.3,185,580,410,1015,68]
+      ]
+    },
+    {
+      "model": "Zero SL",
+      "year": 2019,
+      "category": "race",
+      "source": "https://www.genesisbikes.co.uk/bike/zero-sl-frameset",
+      "retrieved": "2019-10-22",
+      "archive": "https://web.archive.org/web/20191022120259/https://www.genesisbikes.co.uk/bike/zero-sl-frameset",
+      "sizes": [
+        ["XS",530,375,74,72,130,480,405,974,68],
+        ["S",545,385,73.5,73,145,510,407,977,68],
+        ["M",575,390,73,73.5,175,540,407,1003,68],
+        ["L",602,400,72.5,73.5,205,570,410,1003,68],
+        ["XL",625,405,72.5,74,230,600,410,1012,68]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+ "brand": "Boardman",
+ "file": "boardman",
+ "pages": [
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2403-adv-8.9.html",
+   "timestamp": "20251210082711",
+   "sha256": "e2cf30f21288c5e4a31bedb653aaa0fd0aab6f40d46bad320251244aa5b429fd",
+   "family": "adv-alloy",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808005729"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2403-adv-8.9.html",
+   "timestamp": "20261105152427",
+   "sha256": "1578a78f3ed311a4fd461c143fcd1c85eaa0590b80dcc9c903e314bdd8b89ea9",
+   "family": "adv-alloy",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240808005729"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2332-adv-8.9-2021.html",
+   "timestamp": "20211203195308",
+   "sha256": "da24f766886656bf59ad2558560ec5fe998fa04f04c7897386b8ed6d0d59d027",
+   "family": "adv-alloy-2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200919223430"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2331-adv-8.62021.html",
+   "timestamp": "20230930063644",
+   "sha256": "c548e7e96221217cd039166a3430ffeb7e86541e3e851261303f4d23b432d4f8",
+   "family": "adv-alloy-2021",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200919221441"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2331-adv-8.62021.html",
+   "timestamp": "20251210084810",
+   "sha256": "685ac50768b347be846946b9162d97df1f58533485d8329fc12536fdc65ae0c3",
+   "family": "adv-alloy-2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200919221441"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2331-adv-8.62021.html",
+   "timestamp": "20260925231651",
+   "sha256": "edf550e825e2d3c9f94ca9a580717a4ce8d9f68063cae6b26d014e8af7d206ed",
+   "family": "adv-alloy-2021",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20200919221441"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2409-adv-8.6-womens.html",
+   "timestamp": "20250930145017",
+   "sha256": "c7cc8782df7de38c8eb6fdeb856a8a4cb1e4708df20141633f13f79b40ec9771",
+   "family": "adv-alloy-womens",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808001215"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2409-adv-8.6-womens.html",
+   "timestamp": "20260619150528",
+   "sha256": "10e81cbfc314a4f3afb387c27193fd1598185c73ee554b0748c761f2430b9893",
+   "family": "adv-alloy-womens",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808001215"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2333-adv-8.6w-2021.html",
+   "timestamp": "20211203193026",
+   "sha256": "382dcd17f4acedc38c560371c65c33af0aa9e239402d23daab85105b3ae53385",
+   "family": "adv-alloy-womens-2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200629091651"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2333-adv-8.6w-2021.html",
+   "timestamp": "20230930062458",
+   "sha256": "c15f638f358ed5ae929190e7272e205b49bd039860d5f523603300f9bef7ede4",
+   "family": "adv-alloy-womens-2021",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200629091651"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2333-adv-8.6w-2021.html",
+   "timestamp": "20250930145018",
+   "sha256": "e9691e444f88ad9b0fc0f4373b438d444f25f4b2d7d33035dcaad05db8f9a1b5",
+   "family": "adv-alloy-womens-2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200629091651"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2333-adv-8.6w-2021.html",
+   "timestamp": "20261021125814",
+   "sha256": "4e362da7ef753fcdb14bb0e42d807ebd1f96a412324416db390ef52b335dd59f",
+   "family": "adv-alloy-womens-2021",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20200629091651"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2394-adv-9.2.html",
+   "timestamp": "20231203131800",
+   "sha256": "46a03f654c581b745fbc0f7fef877667cd984887d9ea08e18f2f9a9a323c11ad",
+   "family": "adv-carbon",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231203131800"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2400-adv-9.2.html",
+   "timestamp": "20251029035848",
+   "sha256": "5957cdda09632fcb03b98c785984cda3814a5fdefd27b3f0e2f6a5e2a3b341a7",
+   "family": "adv-carbon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808013000"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2399-adv-9.0.html",
+   "timestamp": "20261030212508",
+   "sha256": "c86306cfbfb30ff989e986583521f6bc53f56f93b35dbe1c75fe197181f416e2",
+   "family": "adv-carbon",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240808021004"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2232-adv-9.0.html",
+   "timestamp": "20191017174823",
+   "sha256": "ed3567f7cedb0d9d8deb00f7d04648bd236042c6e8e2cc19d5db5bb9a9ed590d",
+   "family": "adv-carbon-2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718233050"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2375-adv-9.0-2021.html",
+   "timestamp": "20210724110105",
+   "sha256": "98dd86e590fb317e13ecaeeb38ab0040169c3876f7a171a7bff5cdc700f07baa",
+   "family": "adv-carbon-2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201113065440"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2375-adv-9.0-2021.html",
+   "timestamp": "20231203141015",
+   "sha256": "fe2fb192f92dab6b7eaa4f62aac48df43b92e259a3fd0351180e30ac0c6e03b2",
+   "family": "adv-carbon-2021",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20201113065440"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2375-adv-9.0-2021.html",
+   "timestamp": "20251115121233",
+   "sha256": "9580da75d040e8f005b6c4da226917ddbd965f7d6acd6ad8265fa82f78dda55a",
+   "family": "adv-carbon-2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201113065440"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2375-adv-9.0-2021.html",
+   "timestamp": "20261020111106",
+   "sha256": "8eeb9f8bd3192464fe87b03df618ed4ecf28c5e946a027811dc20211f57178d3",
+   "family": "adv-carbon-2021",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20201113065440"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2386-adv-9.4-2022.html",
+   "timestamp": "20211203200745",
+   "sha256": "be42a6b032f76191c1c6ea6756cb85f289e94d9a68d32f6cda653148d2065321",
+   "family": "adv-carbon-2022",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210812124320"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2386-adv-9.4-2022.html",
+   "timestamp": "20230930071359",
+   "sha256": "b2f8256b775088e4d8eeb08065fc0480bee65cc0405a8c40a2d4213d59df9778",
+   "family": "adv-carbon-2022",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210812124320"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2386-adv-9.4-2022.html",
+   "timestamp": "20251210091550",
+   "sha256": "54a8a9bd1dae663afa61068240b7af490dcb1d9692f8b64dafc1dd6f72be0ced",
+   "family": "adv-carbon-2022",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210812124320"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2386-adv-9.4-2022.html",
+   "timestamp": "20261021125620",
+   "sha256": "0765f9d0270957089a5385dc408592b0e00e3b55f5a176a7962a42d59d7ab71b",
+   "family": "adv-carbon-2022",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20210812124320"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2309-air-frameset.html",
+   "timestamp": "20190916062600",
+   "sha256": "9cf820f9bb5ef3c8adac4f38cd88d72fd06ea525e1762e8bff0550a1e9bd1a2b",
+   "family": "air",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190916062600"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2204-2018-air-9.0.html",
+   "timestamp": "20190916070142",
+   "sha256": "c65057f3ae2865b12406c406c08e6020588ce73190d5978195d5678127b78030",
+   "family": "air-2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190916070142"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2377-2021-air-9.8-ltd.html",
+   "timestamp": "20210127095030",
+   "sha256": "cd1d3e6fa3e8c66c9fc56b2fab65cf381f1be05fa50f087f4743ec51149a1cca",
+   "family": "air-2021",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20210127095030"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2231-2018-air-9.2-womens.html",
+   "timestamp": "20190822090445",
+   "sha256": "320f943c58189b18134a951974217d6dad60b4c5fa2ae6bc83d46805ffe7c77c",
+   "family": "air-womens-2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822090445"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2197-2018-cxr-9.0.html",
+   "timestamp": "20200526030708",
+   "sha256": "7b3efce9fd3bda841aef915ef7361ea4395cd36ccab909ec358d20b6fed4d503",
+   "family": "cxr-2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718235210"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2203-2018-cxr-9.2.html",
+   "timestamp": "20191212130947",
+   "sha256": "e574e3a4eb637582f0107d852e00f8196f16f1efb1266269a198d8c9863b82db",
+   "family": "cxr-2018",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718233210"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2282-cxr-9.2-frameset.html",
+   "timestamp": "20200524145855",
+   "sha256": "0e548d13bb549fe6e379e64bab52dc563b9896a1d0852e2b83b0d458bf9fe943",
+   "family": "cxr-2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20200524145855"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2419-slr-9.6-carbon.html",
+   "timestamp": "20251006132429",
+   "sha256": "d59da16887ac49c9c4283f9feab97321b046ae8c94a516cf2c42515cb15bb524",
+   "family": "slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250317235254"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2419-slr-9.6-carbon.html",
+   "timestamp": "20260619150528",
+   "sha256": "f4f4f204acb0bdb1eb5e13e6074033fcd2c342a30a794ad3d6872cb7fa07fe12",
+   "family": "slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250317235254"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2398-slr-8.9-di2-disc-carbon.html",
+   "timestamp": "20231203150707",
+   "sha256": "344d52436890c5e3b92ffd22e2d715778890418b086d1c53ce295bab2a14ab8f",
+   "family": "slr-8",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231203150707"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2398-slr-8.9-di2-disc-carbon.html",
+   "timestamp": "20250419191316",
+   "sha256": "6df4bebd4edb5d0e55ce6cc676d6b2a7b9d2fe3d127c2e23c14275de2370cf8d",
+   "family": "slr-8",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20231203150707"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2398-slr-8.9-di2-disc-carbon.html",
+   "timestamp": "20260419121344",
+   "sha256": "96cb2043ecd9e51212b4048402d800801a4598a0507e79b8b06d4fb89b901c2e",
+   "family": "slr-8",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231203150707"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2122-slr-8.9-carbon-grey.html",
+   "timestamp": "20200720221820",
+   "sha256": "58540b97faad40c5710892835ae75cd7b98d82b16a6051cc3447b2081f02a23a",
+   "family": "slr-8-2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190718235356"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2341-slr-8.9-2021.html",
+   "timestamp": "20211203201409",
+   "sha256": "dc178c58bac6e0acb34107483e23ee3c8be2ac459315a63b1686b808194d6119",
+   "family": "slr-8-2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200811170001"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2337-slr-8.6-2021.html",
+   "timestamp": "20231203134004",
+   "sha256": "125e3e4da70226a8d6f7a4201f45d22d8a1a1de4881db43b25afd0ba72384ab2",
+   "family": "slr-8-2021",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200811154820"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2341-slr-8.9-2021.html",
+   "timestamp": "20251115130101",
+   "sha256": "d7ca9c46cb77f4297438e41486471a37597f0a679d61d61fa2a0dc335492687a",
+   "family": "slr-8-2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200811170001"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2369-slr-8.9-carbon-disc-2021.html",
+   "timestamp": "20261030211940",
+   "sha256": "fe24b6c36bda8109d5f53a46c9f56de71f559f8749f5dac742b702738a454401",
+   "family": "slr-8-2021",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20200919214346"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2137-slr-8.9-carbon-womens.html",
+   "timestamp": "20191017190920",
+   "sha256": "d02986d5caf09bbef6c26f831ee0c0f3590142d00180518bf5e737b79bce7181",
+   "family": "slr-8-womens-2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190719001804"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2137-slr-8.9-carbon-womens.html",
+   "timestamp": "20200524134319",
+   "sha256": "9e62608431e65f1bed834da2216f765f4069b75161344af001c1f9b5d827cdad",
+   "family": "slr-8-womens-2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190719001804"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2339-slr-8.6w-2021.html",
+   "timestamp": "20211203192624",
+   "sha256": "012e976d93edba07b3f61a717dc73fce25b8c8020681a284e358be3012784795",
+   "family": "slr-8-womens-2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200811160711"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2339-slr-8.6w-2021.html",
+   "timestamp": "20231203141402",
+   "sha256": "51bd1df2c8fcdc45703039bb45c4366cbd1415a8f4a7ded5e51065fce520b3b8",
+   "family": "slr-8-womens-2021",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200811160711"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2342-slr-8.9-womens-2021.html",
+   "timestamp": "20251210084429",
+   "sha256": "c16e9f4bc727377daab8f42940b2ef7c07d70ac307093cfe5d3d5fdea7422f9b",
+   "family": "slr-8-womens-2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200811161517"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2339-slr-8.6w-2021.html",
+   "timestamp": "20261020111106",
+   "sha256": "788d298d99b9b978462fd327e48ca55c6685bbf510a49ee1b3982a96aa7f233f",
+   "family": "slr-8-womens-2021",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20200811160711"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2257-slr-9.4.html",
+   "timestamp": "20200421214318",
+   "sha256": "8e41d95b534f8f1b80923b3d9bb4b08d5551ea605f98a96aedeb35014f25fbdc",
+   "family": "slr-9-2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20200421214318"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2258-slr-9.6.html",
+   "timestamp": "20190916061458",
+   "sha256": "ce9b5de3960a8553b44048e4da531928dd08cae3553706a88baabe1d1f9df2b6",
+   "family": "slr-9-2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718233303"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2317-slr-disc-frameset.html",
+   "timestamp": "20191212140543",
+   "sha256": "bae7b79be60da28446f7916df9dc864e3b453525a5245abf1ca57addaa2c57e4",
+   "family": "slr-9-disc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822094408"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2263-slr-9.6-disc.html",
+   "timestamp": "20190822092754",
+   "sha256": "022552938e7bc1e5be37b0d6b4ac4fe868a75b7fd629ea326ceebabbe7a220fa",
+   "family": "slr-9-disc-2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822092754"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2261-slr-9.2-disc.html",
+   "timestamp": "20200811170311",
+   "sha256": "09e99f41fbb2632cd8fb5d1b6cb15c17cc00d0fe04a4b35511a6d695e278bd34",
+   "family": "slr-9-disc-2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200811170311"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2360-slr-9.6-disc-2021.html",
+   "timestamp": "20211203191415",
+   "sha256": "84b4f6373d9053c20bbdde9a37b8c302d51b227d955aa85eef295787043f9f9c",
+   "family": "slr-9-disc-2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200919214454"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2360-slr-9.6-disc-2021.html",
+   "timestamp": "20231203135950",
+   "sha256": "82c667240d862c44e1d60e0bae64748ddf73ff5ed80ef241e5c333b726ed7ba9",
+   "family": "slr-9-disc-2021",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20200919214454"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2360-slr-9.6-disc-2021.html",
+   "timestamp": "20250930145017",
+   "sha256": "40a631fa726bb631b280c698922ba3a7f36eb0c69594d08ea4c4503a3ed7e582",
+   "family": "slr-9-disc-2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200919214454"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2360-slr-9.6-disc-2021.html",
+   "timestamp": "20260612172943",
+   "sha256": "e6b48132cace6154ebd82fee0157ef4ab2af5b6c385ce4a0ac7022174bc4b783",
+   "family": "slr-9-disc-2021",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200919214454"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2324-slr-9.2-disc-womens.html",
+   "timestamp": "20190822090413",
+   "sha256": "e39092afccd05038d5f78011172f2214da717ca2ec15440299feac3eddde7d04",
+   "family": "slr-9-disc-womens",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822090413"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2324-slr-9.2-disc-womens.html",
+   "timestamp": "20200526005336",
+   "sha256": "4336f14a3d332a8ecc0e5d3d04584cf6ca2abc352346093db7cb4ac580fbc3fd",
+   "family": "slr-9-disc-womens",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822090413"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2323-slr-9.2-womens.html",
+   "timestamp": "20190822092929",
+   "sha256": "36b1ac522735225f578f39106a1bf1e93bfa44f5cdc9fcf6520634f6e067c972",
+   "family": "slr-9-womens",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822092929"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2323-slr-9.2-womens.html",
+   "timestamp": "20200524121026",
+   "sha256": "44fd541875525684f9ad0796cf2880748571103d05729f359f28739314d81d11",
+   "family": "slr-9-womens",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822092929"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2303-slr-race-frameset.html",
+   "timestamp": "20191212133700",
+   "sha256": "8a6d3beda25cc3eb15b5085abf1529cd461467d244e2ea66951b01c23f0a0eec",
+   "family": "slr-race",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191017180503"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2374-slr-9.6-disc-titanium.html",
+   "timestamp": "20201129231539",
+   "sha256": "019622fa44da7c10a33e4e1ab1bf0c4f12838369a8021a880ad86cf205fda8da",
+   "family": "slr-titanium",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201028061319"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2423-boardman-slr-8.9-womens-carbon.html",
+   "timestamp": "20250930145017",
+   "sha256": "33327510877c53b04de9c4c79104eb503d69c9af2269dceed54913c4a1afa6df",
+   "family": "slr-womens",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250317234251"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2423-boardman-slr-8.9-womens-carbon.html",
+   "timestamp": "20261030211940",
+   "sha256": "1bd35a9cab411031566a212e91e62602e713479c57c456f3d5596a197e2edb9f",
+   "family": "slr-womens",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250317234251"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2411-trvl-8.9-db.html",
+   "timestamp": "20250930145059",
+   "sha256": "29613918bec232b2df1ddfb967445672e3c4f35b32e2f17e00383c9211e9edd5",
+   "family": "trvl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240808002818"
+  },
+  {
+   "url": "https://www.boardmanbikes.com/gb_en/products/2412-trvl-9.2-db.html",
+   "timestamp": "20261030212508",
+   "sha256": "acdcc2a13ab70f0a1ed2d8f1e40c5d7b4ae0ea52561106f6cacc91d4f8c60247",
+   "family": "trvl",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240808004725"
+  }
+ ]
+}

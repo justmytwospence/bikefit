@@ -1,0 +1,1236 @@
+{
+ "brand": "Kona",
+ "file": "kona",
+ "pages": [
+  {
+   "url": "https://konaworld.com/2018/jake_the_snake.cfm",
+   "timestamp": "20181005002209",
+   "sha256": "c273e26477fcebb632fda772e5ddc46b5ab9ec350a2d1baa8d7cc09b770cf6c5",
+   "family": "jake-the-snake@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180902201453"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/jake_the_snake.cfm",
+   "timestamp": "20210120131749",
+   "sha256": "ef1b349751d75476ec4400d7794c87bf14be2c46410c4553702196387b9fdf6d",
+   "family": "jake-the-snake@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920044054"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/jake_the_snake.cfm",
+   "timestamp": "20230320221916",
+   "sha256": "97b4ed44d8974ce2fba955978d858d851908405e5b7b7be12cf34b883f94e298",
+   "family": "jake-the-snake@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920044054"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/jake_the_snake.cfm",
+   "timestamp": "20210614125042",
+   "sha256": "737d675c54888663083e4246c0a113c3b4319eafe6c7b710cbc4cb12d81c4516",
+   "family": "jake-the-snake@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920050848"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/jake_the_snake.cfm",
+   "timestamp": "20230204093332",
+   "sha256": "3566e3a9de5ce74ae53b75b42cb0cc924b3abb0d79fb128208d3211ac0d299f9",
+   "family": "jake-the-snake@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920050848"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/jake_the_snake.cfm",
+   "timestamp": "20210513020949",
+   "sha256": "dc77b5fd6b15ca112c61a17933d59ac091936724b6130546e69835bd14479ef2",
+   "family": "jake-the-snake@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001180619"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/jake_the_snake.cfm",
+   "timestamp": "20230126224933",
+   "sha256": "ff1f4c76aa9171f09cd5ea207c90e2978a9eb88bdae9e60aa95f2a621b9a287a",
+   "family": "jake-the-snake@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201001180619"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/jake_the_snake.cfm",
+   "timestamp": "20210919013224",
+   "sha256": "fd0a827aa97616e67fda8ff14ca098fd14ea45d9c114630319dd71f729de2c49",
+   "family": "jake-the-snake@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919013224"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/jake_the_snake.cfm",
+   "timestamp": "20230327000900",
+   "sha256": "9791a7adf661b2ba9b4be67786e8a0443faaf90a6c7bd336ef7aceef134bc969",
+   "family": "jake-the-snake@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919013224"
+  },
+  {
+   "url": "https://konaworld.com/products/libre",
+   "timestamp": "20230929203545",
+   "sha256": "446603a9c057e2deab875ac78cc5845e10ace962ce7308347512dd24a5a2f7b2",
+   "family": "libre",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610175645"
+  },
+  {
+   "url": "https://konaworld.com/products/libre",
+   "timestamp": "20250807091240",
+   "sha256": "97e7389170ad608e64a15d02a5fb16844442b174a8d9f5b701e49cbfc49d4638",
+   "family": "libre",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230610175645"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/libre_al.cfm",
+   "timestamp": "20210706165032",
+   "sha256": "ce0e3303a05028d8446195ec97d50cf5cc03935713b2bcb258cfad6e2c3f7ec7",
+   "family": "libre-al@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210706165032"
+  },
+  {
+   "url": "https://konaworld.com/products/libre-cr",
+   "timestamp": "20231002140032",
+   "sha256": "d1046dba68035c9d55ff5047bfd4d1337654ca660d88132e87eac7e4142d4aa2",
+   "family": "libre-cr",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610173707"
+  },
+  {
+   "url": "https://konaworld.com/products/libre-cr-dl",
+   "timestamp": "20240527144216",
+   "sha256": "1436a23cae75eddd8773b440175d90fb7e627ff3ea41e0e979b517401a11a4b7",
+   "family": "libre-cr",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610172412"
+  },
+  {
+   "url": "https://konaworld.com/products/libre-cr-g2",
+   "timestamp": "20250916034950",
+   "sha256": "cfac3dd60533a1f2951159b3d62daea304e11dab5a850c53e1396a64500a4845",
+   "family": "libre-cr-g2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250429203054"
+  },
+  {
+   "url": "https://konaworld.com/products/libre-cr-g2",
+   "timestamp": "20260224120937",
+   "sha256": "79aaf12d0f047564f63c1549e32d0a79842339db6e48ad8fadb8233859f275ed",
+   "family": "libre-cr-g2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250429203054"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/libre_cr.cfm",
+   "timestamp": "20210919020913",
+   "sha256": "28238072487c1ef81b2b4b8149302669e8510f27d9823613be3f83d1fec451fe",
+   "family": "libre-cr@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919020913"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/libre_cr.cfm",
+   "timestamp": "20230326101117",
+   "sha256": "78a2635323bd7abe63b2c805bee569a98e6934e59cc36c145369367b54253822",
+   "family": "libre-cr@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919020913"
+  },
+  {
+   "url": "https://konaworld.com/products/libre-g2",
+   "timestamp": "20260219203658",
+   "sha256": "983372ff3ba500f421e5a8d9624e7ab6f8c9544cad5ca48ed3c14b86b5ea722e",
+   "family": "libre-g2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260219203658"
+  },
+  {
+   "url": "https://konaworld.com/2019/libre.cfm",
+   "timestamp": "20191202052413",
+   "sha256": "e2facfd8d997d23f759053f0fc01f2fd87317b5b4da16932ec4759ba8a179f17",
+   "family": "libre@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190803230444"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/libre.cfm",
+   "timestamp": "20210614132445",
+   "sha256": "13ee2a0cb47729637bc5e07bb09caef67b31c64105ac7119d3fe9aab43b8276e",
+   "family": "libre@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200921011447"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/libre.cfm",
+   "timestamp": "20230204100112",
+   "sha256": "46e872d38be3dc58c4a8a6ce5f212702eb30ba1a9974a4d1360c794ae588c0fa",
+   "family": "libre@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200921011447"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/libre_dl.cfm",
+   "timestamp": "20210513041014",
+   "sha256": "e6bfd05903371e0e152612be51bbf2973b2146046ab266193a8b6c24a2cdfc41",
+   "family": "libre@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001202123"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/libre.cfm",
+   "timestamp": "20230427212428",
+   "sha256": "84470c56399800e290c4f0f3cc7a56f799a508a159e25db928a96a61f10b10bf",
+   "family": "libre@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201130042537"
+  },
+  {
+   "url": "https://konaworld.com/2021/libre.cfm",
+   "timestamp": "20210801231848",
+   "sha256": "657ff2ffd2f1f1a410e9a8e4cb36a8265d16ba892ef50b695d03f58efa46b39c",
+   "family": "libre@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210801231848"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/libre.cfm",
+   "timestamp": "20230326081211",
+   "sha256": "b1681dc98892996b1b325664fd3e97f275f0ea83012b4ce480b48741722ed0b4",
+   "family": "libre@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919020632"
+  },
+  {
+   "url": "https://konaworld.com/2022/libre.cfm",
+   "timestamp": "20230111002730",
+   "sha256": "11b7f50e6b33f9b0cab5704f4d74be8d3e72a20b88c4ad42d31d4868afbe0826",
+   "family": "libre@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20230111002730"
+  },
+  {
+   "url": "https://konaworld.com/2018/major_jake.cfm",
+   "timestamp": "20181014084514",
+   "sha256": "99da8ed9ff8be9c3149f93e49c3b7f83d9f7f3093829c6af659c444ac4f8876d",
+   "family": "major-jake@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180829031331"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/major_jake.cfm",
+   "timestamp": "20210515144646",
+   "sha256": "bb927e9d3fc1a9755db4cbff68776f72fb36eb1b7ec71eb59175c10649e9649d",
+   "family": "major-jake@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200921003603"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/major_jake.cfm",
+   "timestamp": "20230320225009",
+   "sha256": "4009cada8662281074da6949a179f7856d8412d3aafb6c8b02941ae56e905ca5",
+   "family": "major-jake@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200921003603"
+  },
+  {
+   "url": "https://konaworld.com/2019/major_jake.cfm",
+   "timestamp": "20191018042112",
+   "sha256": "93f93900cc9cedf57b102803f6696c4f69efcd9d094b9ff2e6ae7f5c8f1e37df",
+   "family": "major-jake@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191018042112"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/major_jake.cfm",
+   "timestamp": "20210119063528",
+   "sha256": "053a2c247b595d9a4b39aca6587cae690f700f5a59123f99ab8efaefd7912e6f",
+   "family": "major-jake@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920054517"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/major_jake.cfm",
+   "timestamp": "20230320231929",
+   "sha256": "a4f7d9758de88e93e6237590c6338616aeb0b14935f249a9b61580997aa5e302",
+   "family": "major-jake@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920054517"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/major_jake.cfm",
+   "timestamp": "20210822211347",
+   "sha256": "e9d737a3f00d0699345c6391b220f023481b5e4a5d47a47a0804cbeeb793eea1",
+   "family": "major-jake@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201001185515"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/major_jake.cfm",
+   "timestamp": "20230324095826",
+   "sha256": "1c1a6e9805a0a6ebd0241520fd2eea9bd5dd1049da961388083c1f013fa153c4",
+   "family": "major-jake@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201001185515"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/major_jake.cfm",
+   "timestamp": "20210919020548",
+   "sha256": "0b32c7e09ea7ad5f29a03a7582ae0c160b9acbb8bd6d40f204d181048a9155d2",
+   "family": "major-jake@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919020548"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/major_jake.cfm",
+   "timestamp": "20230327002249",
+   "sha256": "0681fd4a348f6aa5050a8ea60d3d670422f25cfbff203c47b075a7700ba203eb",
+   "family": "major-jake@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919020548"
+  },
+  {
+   "url": "https://konaworld.com/products/ouroboros",
+   "timestamp": "20251005194025",
+   "sha256": "30c676e16009813e80d2328f5e19962f4b507d3df30ea5957f439875972374c0",
+   "family": "ouroboros",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250717224028"
+  },
+  {
+   "url": "https://konaworld.com/products/ouroboros",
+   "timestamp": "20260415182345",
+   "sha256": "4be2853f1cac44e261eea248366cb00daf72eb315db4e3b39c0b1a964439f1d8",
+   "family": "ouroboros",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250717224028"
+  },
+  {
+   "url": "https://konaworld.com/products/ouroboros-cr",
+   "timestamp": "20250805081426",
+   "sha256": "85148048a03f4b409d98b51dfe24e4edf2d5d4981a874673d0466ef46280f376",
+   "family": "ouroboros-cr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240430184039"
+  },
+  {
+   "url": "https://konaworld.com/products/ouroboros-cr",
+   "timestamp": "20260322180205",
+   "sha256": "9f7e7e68ad83c4b1a026bc877235f44fd9d53dda5c840eeb656eb3dfb8f3889b",
+   "family": "ouroboros-cr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240430184039"
+  },
+  {
+   "url": "https://konaworld.com/products/ouroboros-cr-36",
+   "timestamp": "20260809224403",
+   "sha256": "a5ea46005f49878f3b667a916bd9e8ba3016a83bb9c9f05beb655571290f2762",
+   "family": "ouroboros-cr@36",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260809224403"
+  },
+  {
+   "url": "https://konaworld.com/products/rove",
+   "timestamp": "20231219195224",
+   "sha256": "e2cb63c8c7832eb5755a6c67d63741bab712d6de8984be002ad007c770c74ee9",
+   "family": "rove",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610214901"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-dl",
+   "timestamp": "20251005182741",
+   "sha256": "0992a0441357e8a713c6c48fdb8e44a5602ff89e28613c0ae604357aeb1ce025",
+   "family": "rove",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230609140150"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-ms",
+   "timestamp": "20260322194539",
+   "sha256": "fc37b64cdc8cb0ea69fc184acae6eecb20e0837933ba09f671160ff163601606",
+   "family": "rove",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241005120047"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-al-650-1",
+   "timestamp": "20231002142211",
+   "sha256": "d15b029424f62ced1db28b2e472458628768dda52d30a4d664bb8b93f5287807",
+   "family": "rove-al-650",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610181317"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-al-650-1",
+   "timestamp": "20251005191326",
+   "sha256": "f7d32af7bc140d8c2daa913225adcbf078438a1e8ce14df107b83d31ee80dc32",
+   "family": "rove-al-650",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230610181317"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/rove_al_650.cfm",
+   "timestamp": "20210919024510",
+   "sha256": "a0006c83edebc0533095ab62ad970ce1c0876d2dce29c77b23936c5b88cc7f42",
+   "family": "rove-al-650@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919024510"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/rove_al_650.cfm",
+   "timestamp": "20230327000254",
+   "sha256": "099de69e17cec4c6f956e308575d8dfa8c941c040ae96195257ae075641b6bd7",
+   "family": "rove-al-650@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919024510"
+  },
+  {
+   "url": "https://konaworld.com/2022/rove_al_650.cfm",
+   "timestamp": "20230515040640",
+   "sha256": "622e78daab8c328ee64a259b762006b14c44c7bb91ae48d243cbae503737286d",
+   "family": "rove-al-650@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20230515040640"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-al-700",
+   "timestamp": "20230628143531",
+   "sha256": "23b72946c452c96a770eeae222deb5af7fa0e6aa7f95f66da825eaca887e57ca",
+   "family": "rove-al-700",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://kro.konaworld.com/36e/geo.cfm?content=rove_al_700",
+     "timestamp": "20240803093527",
+     "sha256": "bb298d2a2483593d8d29f5cff0abed79ed06c62aaad2c151f7d46068abbb91f2"
+    }
+   ],
+   "firstSeen": "20230610185000"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-al-700-1",
+   "timestamp": "20240518072805",
+   "sha256": "de7ba93606894b43268f997eb7f018b32042999b072d8799d5c46c3aa0f42e1e",
+   "family": "rove-al-700",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230927213714"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/rove_al_700.cfm",
+   "timestamp": "20221019175012",
+   "sha256": "d24972737dbdf0de81a80a0493c8d1a39ed8906a70e002509e5a241c44fbd63b",
+   "family": "rove-al-700@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221019175012"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-al-700-36b",
+   "timestamp": "20251005182703",
+   "sha256": "ade761c0c0fc77df33e9290081986ac92f657f0304f4408d30d96273004226ef",
+   "family": "rove-al-700@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250318195415"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-al-700-36b",
+   "timestamp": "20260219221008",
+   "sha256": "8937e9d46938623c94fb07127e4c09a2920a147b69f5c3f2a11af90490280766",
+   "family": "rove-al-700@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250318195415"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-al-37",
+   "timestamp": "20260322193950",
+   "sha256": "1224989d449d77f2787cc44283403803bba91602a3af929591f2fd230ad66a86",
+   "family": "rove-al@37",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260322193950"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-ltd",
+   "timestamp": "20231203150955",
+   "sha256": "22e323517782375a62f6f79fb69fd6d3e9895af1aaa2cd3c0c27ac734adfc49a",
+   "family": "rove-ltd",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610185653"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-ltd",
+   "timestamp": "20251005194850",
+   "sha256": "78da07d3bf0146939987250cf27b893eb7e06e7dc9d47ddbecf2f044d7cd4d48",
+   "family": "rove-ltd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230610185653"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-ltd-frame",
+   "timestamp": "20260322215811",
+   "sha256": "02c67b3d1652538803b9ac4776c999b48e145aa2cf6292989c9499640c3d7755",
+   "family": "rove-ltd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230926161307"
+  },
+  {
+   "url": "https://konaworld.com/2018/rove_ltd.cfm",
+   "timestamp": "20181009160350",
+   "sha256": "dc6e39e06bc8cbc3ee29f22cf140374c51b4154c354c3dfb66d1b8b368ecc209",
+   "family": "rove-ltd@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180803233806"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove_ltd.cfm",
+   "timestamp": "20210120130344",
+   "sha256": "ff5a5dea62a76ad985602b142678053833d852bc5aaf0f14772e48c24a647881",
+   "family": "rove-ltd@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920043247"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove_ltd.cfm",
+   "timestamp": "20230320220315",
+   "sha256": "5a7aaa98b58d72d26302bd384285cf9cf6ec7773f31624322080fd6121dccf03",
+   "family": "rove-ltd@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920043247"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_ltd.cfm",
+   "timestamp": "20210119054637",
+   "sha256": "91ba7db57b29040d35c68b3e4bad2358ea751e1f02056b077c57807ca10ea323",
+   "family": "rove-ltd@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920045101"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_ltd.cfm",
+   "timestamp": "20230327004413",
+   "sha256": "9e8f227a926394d01bf1c46bcc6399a4b8ee55a90001ff76d9d5484bc6c12a30",
+   "family": "rove-ltd@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920045101"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/rove_ltd.cfm",
+   "timestamp": "20210919011542",
+   "sha256": "f52bc8dee835e6e9e5620b9d5af6736e7407ab4a75e069789e1a4c0d0e69c1a8",
+   "family": "rove-ltd@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919011542"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/rove_ltd.cfm",
+   "timestamp": "20230327004926",
+   "sha256": "89559defc31eb6392057ffdee90d1bb57a42d2375f49e262d683c00053d0d796",
+   "family": "rove-ltd@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919011542"
+  },
+  {
+   "url": "https://konaworld.com/2022/rove_ltd.cfm",
+   "timestamp": "20221212231232",
+   "sha256": "9553358ee739a08ab989ecebf3ae08e531e1c4e2d083a73529672d876502a25e",
+   "family": "rove-ltd@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221212231232"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-ltd-36sh",
+   "timestamp": "20250911144145",
+   "sha256": "6eb31874adbc05cc30ac58616b5050b35107c03bbcced7694b482d34437459de",
+   "family": "rove-ltd@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250614041649"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-ltd-36sh",
+   "timestamp": "20260328024356",
+   "sha256": "f5b7784d71d66a269b50bbb3574088a0c9d31c0b939f50f6047d65bc694c4e14",
+   "family": "rove-ltd@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250614041649"
+  },
+  {
+   "url": "https://konaworld.com/2018/rove_nrb.cfm",
+   "timestamp": "20181011025205",
+   "sha256": "c4d0f76b8f097d33f367c079076917755e45a426134b8f989572a137926386a1",
+   "family": "rove-nrb@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180803225344"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove_nrb_dl.cfm",
+   "timestamp": "20210513021057",
+   "sha256": "5b8eecc839117a09ed66ddf440b21e634c2021764e9ef44db4772058fca2db36",
+   "family": "rove-nrb@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920034836"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove_nrb_dl.cfm",
+   "timestamp": "20230320212451",
+   "sha256": "ecad841b4651d0394d7c3f26d877de93ace682c70bf1ba0b03883242163cf991",
+   "family": "rove-nrb@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920034836"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_nrb.cfm",
+   "timestamp": "20210119062311",
+   "sha256": "413fe5cf042bc4318621e7d93ad1d1a68fc5a823cc64f01e61c34a186569a402",
+   "family": "rove-nrb@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920053235"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_nrb.cfm",
+   "timestamp": "20221128123914",
+   "sha256": "94d56d5246fbd90af9412844e7ad9d78ee7e5ee2c7096b1cde2381a74a68661f",
+   "family": "rove-nrb@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920053235"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/rove_nrb.cfm",
+   "timestamp": "20210513023855",
+   "sha256": "96b5dc0003d4e6dbb5fdaadad15f930abc41df413188d97bf1e5a6525d967c6e",
+   "family": "rove-nrb@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001183850"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/rove_nrb_dl.cfm",
+   "timestamp": "20230204092420",
+   "sha256": "d3de739295c8e884f9ecea1ee1087c508320ed662439c1aabe045acee5306924",
+   "family": "rove-nrb@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201001193037"
+  },
+  {
+   "url": "https://konaworld.com/2022/rove_nrb.cfm",
+   "timestamp": "20221229210518",
+   "sha256": "3b53e85e5e689ec583a658d381eff78ea837a90789747dd21cfc2ac955dab47e",
+   "family": "rove-nrb@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221229210518"
+  },
+  {
+   "url": "https://konaworld.com/2018/rove_st.cfm",
+   "timestamp": "20181009154118",
+   "sha256": "c8e64f169f0eab22357609944c5402ed83466ffe46706a951214090d364ef809",
+   "family": "rove-st@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180805122127"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove_st.cfm",
+   "timestamp": "20210515135314",
+   "sha256": "d58bb5a048fccf4403eca3521cb00e452fd523f96c155ac6002104633b9c575d",
+   "family": "rove-st@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920234819"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove_st.cfm",
+   "timestamp": "20230320215406",
+   "sha256": "91066cf72a05ae9ba3e565f4fcc9a585565a40571f5f50af0a9619ac5197ea96",
+   "family": "rove-st@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920234819"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_st.cfm",
+   "timestamp": "20210713065519",
+   "sha256": "72ec1482f1cd3762b1420594cc5ba22d19b6a1b44f1664ada56d39f467bb41e8",
+   "family": "rove-st@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200920044652"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_st.cfm",
+   "timestamp": "20230314112846",
+   "sha256": "bf20768ca9dc7777cbc86398dde6298776ee548bda6c00da39abd5309891ceba",
+   "family": "rove-st@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920044652"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/rove_st.cfm",
+   "timestamp": "20210513040454",
+   "sha256": "2d7b4ddd5616d74d51ba2cc4cead96ff7d3420d051595e521e8cd1690877b412",
+   "family": "rove-st@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200824051605"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/rove_st.cfm",
+   "timestamp": "20230204095351",
+   "sha256": "1553fb0ed308d4a718f9eda163606ad2a2d93803b69fd4335a190560e7328771",
+   "family": "rove-st@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200824051605"
+  },
+  {
+   "url": "https://konaworld.com/2018/rove.cfm",
+   "timestamp": "20181012214132",
+   "sha256": "e118e2b5042233c5c8b719ca0e493cc5bd8673650cc15e1fd9af1669aa8513ca",
+   "family": "rove@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180809003733"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove.cfm",
+   "timestamp": "20210515133902",
+   "sha256": "993bdc4b650cc887d2f2e578c23a63ab93d2220b160c19671a8fc438106c9c5b",
+   "family": "rove@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920233812"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/rove_dl.cfm",
+   "timestamp": "20230320230709",
+   "sha256": "df063080d77095cd3a4f85c5f40a85cd6a4e6e9249a27c63b8438749fabe5660",
+   "family": "rove@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200921005635"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_dl.cfm",
+   "timestamp": "20210614111707",
+   "sha256": "8ea09a27e773c8a892c1f83065adce868a49a62268838dfc03b7812f4359ff72",
+   "family": "rove@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920035243"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/rove_dl.cfm",
+   "timestamp": "20230204081039",
+   "sha256": "7c998f46c3ab07ce5047f134c0924d31ef425756136b83638fdfa1215c946487",
+   "family": "rove@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920035243"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/rove.cfm",
+   "timestamp": "20210513035527",
+   "sha256": "6505448d830cef25f134fc213b9b3c0e10ef280715ef892400277392c8d25c59",
+   "family": "rove@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001195251"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/rove_dl.cfm",
+   "timestamp": "20230509152925",
+   "sha256": "c4c8b596d62a158e5e4ad43dd185b54667671438664c844c19576d50d54a64d7",
+   "family": "rove@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201001191022"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/rove_dl.cfm",
+   "timestamp": "20211206210722",
+   "sha256": "f7f32f490fb6e49fa17fbd41c3c3421f9df8e8a06254b48aee8c1f99f5d01eff",
+   "family": "rove@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919022409"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/rove.cfm",
+   "timestamp": "20230401192553",
+   "sha256": "01f05fced43dedcd08cae170fb1b89ab9ed3634f70866e4a4cc9da5253064ee8",
+   "family": "rove@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919005751"
+  },
+  {
+   "url": "https://konaworld.com/2022/rove.cfm",
+   "timestamp": "20221127102540",
+   "sha256": "55867660495d1a75d79023f093255a8568e6efb3d54f9d8fb0db4b7a979ecd3d",
+   "family": "rove@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221127102540"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-dl-36sr",
+   "timestamp": "20251011022205",
+   "sha256": "dc205c4f5b7a0cbf576bdcd009c9628b7c5576b0297825423e6d0ea6cb5f204a",
+   "family": "rove@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250429122016"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-dl-36sr",
+   "timestamp": "20260916172315",
+   "sha256": "6f68845ba1b90fc13b53cc3c356d039455764979f9c6d6b6c07132abbd30da6a",
+   "family": "rove@36",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250429122016"
+  },
+  {
+   "url": "https://konaworld.com/products/rove-37",
+   "timestamp": "20260322194757",
+   "sha256": "7f9f282307210fae91cb168709e0c7184e36ac9ac1f4b2e419d743c6ec59b28f",
+   "family": "rove@37",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260322194757"
+  },
+  {
+   "url": "https://konaworld.com/2018/super_jake.cfm",
+   "timestamp": "20181008055953",
+   "sha256": "8ad0ae37cad73943b18da282141bf4f2a39c92ac38dda84053ce368594cfcc86",
+   "family": "super-jake@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180906010326"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/super_jake.cfm",
+   "timestamp": "20210120130719",
+   "sha256": "d40e27f8e3b53115dcf35b69ca0475194387cf8d5b8a76e612fb2dda6e6cf2ff",
+   "family": "super-jake@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920043521"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/super_jake.cfm",
+   "timestamp": "20230320220636",
+   "sha256": "ebbba660f42fd56af666f8773236724b90e8260d665ce49614d07f91210b0c8a",
+   "family": "super-jake@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920043521"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/super_jake.cfm",
+   "timestamp": "20210614124402",
+   "sha256": "7d793f0dd2a63ae6e4b9fd683c820ea37e4fa02139407dcc229b65cc10502405",
+   "family": "super-jake@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920045538"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/super_jake.cfm",
+   "timestamp": "20230204092223",
+   "sha256": "37b40f966bfdfefb89eef7b3b2fc419dca03afac99cf78db9ce006c9ff03ad94",
+   "family": "super-jake@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920045538"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/super_jake_frame.cfm",
+   "timestamp": "20210513020541",
+   "sha256": "c33acfb02f612276b3e83ca9d765c31f3068c3e60ab67f83ba91bd76cc1204bf",
+   "family": "super-jake@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001180111"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/super_jake_frame.cfm",
+   "timestamp": "20230126211756",
+   "sha256": "aeaa46212b042e964f0c3d8aef8fb0daca253cb13d14908595f743a0368ce995",
+   "family": "super-jake@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201001180111"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra",
+   "timestamp": "20231130121827",
+   "sha256": "3c2d9368da996244029ab6ac752449efbc719157aaabd69b250d75048aaec3cc",
+   "family": "sutra",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610143006"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra",
+   "timestamp": "20240703084342",
+   "sha256": "3c3de30fd3ae09ffe81b1d19feab2ad31eacb33f2ec3bbba0c19229cda099d39",
+   "family": "sutra",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230610143006"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra-ltd",
+   "timestamp": "20230930023526",
+   "sha256": "9da0c9715df4e6e87799afb3eae6aa0804e32425a25c3eddc840d9a92a6787f1",
+   "family": "sutra-ltd",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230610044820"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra-ltd",
+   "timestamp": "20251223115558",
+   "sha256": "aee882c7e9da4a1c7b7eb6b8005d3dde919a6246a28c3ed36103221625836801",
+   "family": "sutra-ltd",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230610044820"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra-ltd",
+   "timestamp": "20260916172327",
+   "sha256": "b916b2a09a0715b6a3c94bacea847c7341376026a1711201fa7dfb8e1563ddb9",
+   "family": "sutra-ltd",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230610044820"
+  },
+  {
+   "url": "https://konaworld.com/2018/sutra_ltd.cfm",
+   "timestamp": "20181012203304",
+   "sha256": "51caf636b529462a6f3f362bef99c8f8076915a29d3105aea13a689f1147b95d",
+   "family": "sutra-ltd@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180723034657"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/sutra_ltd.cfm",
+   "timestamp": "20210723032147",
+   "sha256": "8f016d0d7ce46396e42954d09c0027459fc1bc9a13e51f6810ba920c10af8b0a",
+   "family": "sutra-ltd@2018",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200920043929"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/sutra_ltd.cfm",
+   "timestamp": "20230401201730",
+   "sha256": "5ab912a2db2896a4a82ce00d8554be4b205a2a358a3102af351f0b157f49e8c8",
+   "family": "sutra-ltd@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920043929"
+  },
+  {
+   "url": "https://konaworld.com/2019/sutra_ltd.cfm",
+   "timestamp": "20191117151442",
+   "sha256": "1120da3bbecb213fd3bdc388856730f1092a767a29144e7be8d55bb9882e0c5b",
+   "family": "sutra-ltd@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191106172632"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/sutra_ltd.cfm",
+   "timestamp": "20210119060112",
+   "sha256": "056e61a2ba74b5d846bdc5fc97ad6e7f813285319093d57baaf870803ffad762",
+   "family": "sutra-ltd@2019",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200921003526"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/sutra_ltd.cfm",
+   "timestamp": "20221128121651",
+   "sha256": "02d6de25028ec0e938f33958584adf7ca82b267f2730a9636095ffd14b3f1bf6",
+   "family": "sutra-ltd@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200921003526"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/sutra_ltd.cfm",
+   "timestamp": "20210822025109",
+   "sha256": "5eaa024522348e36685cdc384906b65aaa62e752b298171749b9b88b8f8befc0",
+   "family": "sutra-ltd@2020",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201001180346"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/sutra_ltd.cfm",
+   "timestamp": "20230126231840",
+   "sha256": "161af55e02e237ab4bee74cb391bc74d382e4c0bdddc79e19b7b8c4473d1482a",
+   "family": "sutra-ltd@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201001180346"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/sutra_ltd.cfm",
+   "timestamp": "20210919013048",
+   "sha256": "5fb205eb847355f186e07ecb59f950219f0b35c084b8178c7c4a18a308dc8648",
+   "family": "sutra-ltd@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919013048"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/sutra_ltd.cfm",
+   "timestamp": "20230401195854",
+   "sha256": "aa81b1ced1331bf1003a5da43db98faa1dffcac36e424e3ec1b74a78a3782667",
+   "family": "sutra-ltd@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919013048"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra-ltd-36sh",
+   "timestamp": "20250916075221",
+   "sha256": "952c18a620ff758935d1410f163a74aee144fc5a8520dc1082354fe5c9d4aed9",
+   "family": "sutra-ltd@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250614052542"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra-ltd-36sh",
+   "timestamp": "20260328024343",
+   "sha256": "5ba2f1a6163f42f8d9f3c474f8f002472e87652247ffe7c1f616bb19fe26e3ab",
+   "family": "sutra-ltd@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250614052542"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/sutra_ultd.cfm",
+   "timestamp": "20210919021157",
+   "sha256": "a070ba167899ba283c5404310a963a73e8ab548c4381894d93dc7deefdedfe66",
+   "family": "sutra-ultd@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919021157"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/sutra_ultd.cfm",
+   "timestamp": "20230327003816",
+   "sha256": "2652eadc22df83cdc8525d7664a57d23f32d75ef778054b9ca2f31b395c9ded7",
+   "family": "sutra-ultd@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919021157"
+  },
+  {
+   "url": "https://konaworld.com/2018/sutra.cfm",
+   "timestamp": "20181003123616",
+   "sha256": "4eec3b72bb19f81745bb3618dae4c0a00f905b26260653d577c482888200ec2c",
+   "family": "sutra@2018",
+   "year": 2019,
+   "related": [],
+   "firstSeen": "20180721201513"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/sutra.cfm",
+   "timestamp": "20210506035716",
+   "sha256": "143da6c787c59b504d3775a89a96765e0307348199406fe03a068b96e4dc6bd7",
+   "family": "sutra@2018",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920234436"
+  },
+  {
+   "url": "https://konaworld.com/archive/2018/sutra.cfm",
+   "timestamp": "20230512010841",
+   "sha256": "037c108fe9f4139dce32a992913416297cf92bdf2519e335d4631f612ffaa822",
+   "family": "sutra@2018",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200920234436"
+  },
+  {
+   "url": "https://konaworld.com/2019/sutra.cfm",
+   "timestamp": "20191230111831",
+   "sha256": "5716288b00e18626ff02662f239115e01935a87a40e9f5d8cc9efb59e8094bc2",
+   "family": "sutra@2019",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190801010956"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/sutra.cfm",
+   "timestamp": "20210729193915",
+   "sha256": "ee63f73aaa7bc6633afb417205e504809a793c468f9c6a769e744318a577b18b",
+   "family": "sutra@2019",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200921001240"
+  },
+  {
+   "url": "https://konaworld.com/archive/2019/sutra.cfm",
+   "timestamp": "20230204090822",
+   "sha256": "0f105fc12f99e3b054f6a23fc3b7c44e93960f1a621f54271f6c914a43f41259",
+   "family": "sutra@2019",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200921001240"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/sutra.cfm",
+   "timestamp": "20210513040145",
+   "sha256": "b927f6ef6c5bb6c33d4df4a86b22b2f846430dc66161ad4b88dfea1fc01ea032",
+   "family": "sutra@2020",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201001200538"
+  },
+  {
+   "url": "https://konaworld.com/archive/2020/sutra.cfm",
+   "timestamp": "20230126213333",
+   "sha256": "e7f0ddd0382e38c8bc7be25c416065c23052bd26656352ff3853a7693b155aef",
+   "family": "sutra@2020",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201001200538"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/sutra.cfm",
+   "timestamp": "20210919010250",
+   "sha256": "d859b64e420c4f9870d8a2d8b8a48ab107266f5cf867dac23cf706bbb2a04d65",
+   "family": "sutra@2021",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210919010250"
+  },
+  {
+   "url": "https://konaworld.com/archive/2021/sutra.cfm",
+   "timestamp": "20230327005947",
+   "sha256": "0783ff4cb07e04071c699caa418542ce717cf5fefb77d6f2162264cf1b6f49eb",
+   "family": "sutra@2021",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210919010250"
+  },
+  {
+   "url": "https://konaworld.com/2022/sutra.cfm",
+   "timestamp": "20230401210017",
+   "sha256": "32595ebdb63ad7b7b76a9dc531ed814f67d09af8b794c2265a8d45482a6d7093",
+   "family": "sutra@2022",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20230401210017"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra-36sh",
+   "timestamp": "20250805084908",
+   "sha256": "f72a2ba8499abc4155c44df0993df8b71f48af1bb5c02aeddfbf881f88a94e44",
+   "family": "sutra@36",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250517131831"
+  },
+  {
+   "url": "https://konaworld.com/products/sutra-36sh",
+   "timestamp": "20260916172313",
+   "sha256": "0bda908695d438b03899d4ea50100ff9684540071679ad7b70699b136eb2ea0a",
+   "family": "sutra@36",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250517131831"
+  }
+ ]
+}
