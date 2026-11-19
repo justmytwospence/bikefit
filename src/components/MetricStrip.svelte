@@ -9,7 +9,6 @@
 
   /** Leg and saddle metrics barely move between hoods and drops, so they show the hoods value only. */
   const LEG: MetricId[] = ['knee', 'kneeTop', 'seatAngle', 'kops'];
-  const LABEL = ['H', 'D'];
   const NAME = ['Hoods', 'Drops'];
 
   const ids = $derived(
@@ -49,7 +48,7 @@
       <div class="name">{METRIC_LABELS[k].short}</div>
       <div class="nums" class:pair>
         {#each r as [i, b] (i)}
-          <div class="num">{#if pair}<i>{LABEL[i]}</i>{/if}{text(k, poses[i].metrics[k])}<span>{b.unit}</span></div>
+          <div class="num">{text(k, poses[i].metrics[k])}<span>{b.unit}</span>{#if pair}<small>{NAME[i].toLowerCase()}</small>{/if}</div>
         {/each}
       </div>
       {#each r as [i, b] (i)}
@@ -84,7 +83,8 @@
   .nums { display: flex; gap: 10px; align-items: baseline; }
   .num { font-size: 22px; font-weight: 600; line-height: 1.2; white-space: nowrap; }
   .nums.pair .num { font-size: 17px; }
-  .num i { font-style: normal; font-size: 10px; font-weight: 700; color: var(--muted); margin-right: 2px; }
+  /* Spelled out under each value: a bare H or D read as a mystery. */
+  .num small { display: block; font-size: 10px; font-weight: 600; line-height: 1.1; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
   .num span { font-size: 13px; color: var(--muted); margin-left: 1px; }
   .bar { position: relative; height: 10px; margin-top: 4px; background: var(--surface-2); border-radius: 5px; }
   .band { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--ok) 28%, transparent); border-radius: 5px; }
