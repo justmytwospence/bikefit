@@ -46,6 +46,16 @@ describe('saddle height limits for the test rider', () => {
     expect(r.lo).toBe(570);
     expect(r.lowWhy).toBe('postLow');
   });
+  it('lets every rider point their toes to reach the pedal, whatever their usual ankling', () => {
+    const top = (ankling: 'heelDrop' | 'neutral' | 'toePoint') => {
+      const c = makeContext(frame, DEFAULT_COMPONENTS, ankling, style.defaultEffort);
+      const w = (h: number) =>
+        impossible(evaluateFit(seg, forwardLayout(frame, DEFAULT_COMPONENTS, { ...DEFAULT_PARAMS, saddleHeight: h }), c, targets), h - frame.seatTubeLength);
+      return possibleRange(550, 900, 0.5, DEFAULT_PARAMS.saddleHeight, w).hi;
+    };
+    expect(top('heelDrop')).toBe(top('toePoint'));
+    expect(top('neutral')).toBe(top('toePoint'));
+  });
 });
 
 describe('impossible', () => {

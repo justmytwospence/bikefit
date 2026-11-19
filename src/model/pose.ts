@@ -23,11 +23,23 @@ export function solveFoot(seg: Segments, spindle: Vec2, soleDeg: number, footSta
   return { ball, ankle, toe };
 }
 
+/**
+ * Sole angle a rider falls back on when the leg cannot reach with their usual one: toes pointed, as anyone
+ * does to stay on a pedal that is a little too far away. Never flatter than the usual angle.
+ */
+export function reachingSole(ankling: FitContext['ankling'], phiDeg: number): number {
+  return Math.max(soleAngle(ankling, phiDeg), soleAngle('toePoint', phiDeg));
+}
+
 export function solveLeg(seg: Segments, hip: Vec2, layout: Layout, ctx: FitContext, crankDeg: number) {
   const phi = crankDeg * RAD;
   const spindle: Vec2 = { x: layout.crankLength * Math.cos(phi), y: layout.crankLength * Math.sin(phi) };
-  const soleDeg = soleAngle(ctx.ankling, crankDeg);
-  const { ball, ankle, toe } = solveFoot(seg, spindle, soleDeg, ctx.footStack, layout.cleatOffset);
+  let soleDeg = soleAngle(ctx.ankling, crankDeg);
+  let { ball, ankle, toe } = solveFoot(seg, spindle, soleDeg, ctx.footStack, layout.cleatOffset);
+  if (len(sub(ankle, hip)) >= seg.femur + seg.tibia) {
+    soleDeg = reachingSole(ctx.ankling, crankDeg);
+    ({ ball, ankle, toe } = solveFoot(seg, spindle, soleDeg, ctx.footStack, layout.cleatOffset));
+  }
   const d = len(sub(ankle, hip));
   const dir = unit(sub(ankle, hip));
   if (d >= seg.femur + seg.tibia) {
@@ -158,18 +170,23 @@ function evaluatePose(
     const pr = phi * RAD;
     const sx = crank * Math.cos(pr);
     const sy = crank * Math.sin(pr);
-    const a = soleAngle(ctx.ankling, phi) * RAD;
-    const ux = Math.cos(a);
-    const uy = -Math.sin(a);
-    const nx = Math.sin(a);
-    const ny = Math.cos(a);
-    const bx = sx + nx * fs + ux * cleat;
-    const by = sy + ny * fs + uy * cleat;
-    const ax = bx - ux * seg.footBack + nx * seg.ankleHeight;
-    const ay = by - uy * seg.footBack + ny * seg.ankleHeight;
-    const dx = ax - hipX;
-    const dy = ay - hipY;
-    const d = Math.hypot(dx, dy);
+    // Usual sole angle first; out of reach, the rider points their toes (reachingSole).
+    let bx = 0, ax = 0, dx = 0, dy = 0, d = 0;
+    for (const sole of [soleAngle(ctx.ankling, phi), reachingSole(ctx.ankling, phi)]) {
+      const a = sole * RAD;
+      const ux = Math.cos(a);
+      const uy = -Math.sin(a);
+      const nx = Math.sin(a);
+      const ny = Math.cos(a);
+      bx = sx + nx * fs + ux * cleat;
+      const by = sy + ny * fs + uy * cleat;
+      ax = bx - ux * seg.footBack + nx * seg.ankleHeight;
+      const ay = by - uy * seg.footBack + ny * seg.ankleHeight;
+      dx = ax - hipX;
+      dy = ay - hipY;
+      d = Math.hypot(dx, dy);
+      if (d < reach) break;
+    }
     let kneeAngle: number;
     let beta: number;
     if (d >= reach) {

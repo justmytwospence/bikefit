@@ -23,6 +23,8 @@ Known gaps:
 - Riders under about 155 cm and over about 193 cm score lower on every bike: the smallest and largest frames are proportionally too long and too short for them.
 - The standover estimate reads up to 38 mm high on sloping frames (the Domane), so it only flags a frame below zero estimated clearance and rules one out below −40 mm.
 
+Reaching the pedal: the foot keeps the rider's chosen ankling while it can, and points its toes (the Toes point curve) when the leg would otherwise come up short. The saddle is out of reach only when even that fails, so the limit does not depend on the ankling chosen. For a 175 cm rider with an 81 cm inseam it sits at about 750 mm, 32 mm above 0.883 × inseam.
+
 Adopting the first two alone puts saddle heights about 5 cm too low, so they wait for a source that pins down the whole chain. Standover is an estimate from stack and seat tube length. Saddle height from height and inseam is good to about ±15 mm; set it finally by knee angle or feel.
 
 ## Styles and size picks
