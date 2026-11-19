@@ -2,7 +2,7 @@
   import LockToggle from './LockToggle.svelte';
 
   let {
-    label, value = $bindable(), min, max, step, unit = 'mm', delta, locked = $bindable(false), hint, onedit, showLock = true,
+    label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, locked = $bindable(false), hint, onedit, showLock = true,
     limit, stop,
   }: {
     label: string;
@@ -11,7 +11,7 @@
     max: number;
     step: number;
     unit?: string;
-    /** Change from your setup; leave undefined when there is no setup, so no space is kept for it. */
+    /** Change from your setup; its slot is always kept, so the value never shifts sideways. */
     delta?: number;
     locked?: boolean;
     hint?: string;
@@ -24,8 +24,10 @@
   } = $props();
   const at = (v: number) => Math.max(0, Math.min(100, ((v - min) / (max - min)) * 100));
   const pct = $derived(at(value));
-  const lo = $derived(limit ? at(limit[0]) : 0);
-  const hi = $derived(limit ? at(limit[1]) : 100);
+  const d = $derived(Math.abs(delta));
+  // Slivers of blocked track at the ends read as glitches, not limits; the thumb still stops there.
+  const lo = $derived(limit && at(limit[0]) >= 2 ? at(limit[0]) : 0);
+  const hi = $derived(limit && at(limit[1]) <= 98 ? at(limit[1]) : 100);
 
   function input(e: Event & { currentTarget: HTMLInputElement }) {
     let v = Number(e.currentTarget.value);
@@ -42,10 +44,7 @@
   <div class="head">
     <span class="label">{label}</span>
     <span class="val">{Number.isInteger(value) ? value : value.toFixed(1)} {unit}</span>
-    {#if delta !== undefined}
-      {@const d = Math.abs(delta)}
-      <span class="delta" class:none={d < 0.5}>{d < 0.5 ? '0' : (delta > 0 ? '+' : '−') + (d % 1 ? d.toFixed(1) : d)}</span>
-    {/if}
+    <span class="delta" class:none={d < 0.5}>{d < 0.5 ? '0' : (delta > 0 ? '+' : '−') + (d % 1 ? d.toFixed(1) : d)}</span>
     {#if showLock}<LockToggle {label} bind:locked />{/if}
   </div>
   <input

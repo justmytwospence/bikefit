@@ -110,6 +110,10 @@ input[type="range"]::-moz-range-thumb {
   width: 18px; height: 18px; border-radius: 50%; background: var(--accent); border: 3px solid #fff;
   box-shadow: 0 1px 4px rgb(0 0 0 / 0.3);
 }
+/* Focus rings the thumb, not a box around the whole 44 px tall input. */
+input[type="range"]:focus, input[type="range"]:focus-visible { outline: none; }
+input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 40%, transparent); }
+input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 40%, transparent); }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation-duration: 0.01ms !important; }
