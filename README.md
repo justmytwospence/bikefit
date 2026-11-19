@@ -7,19 +7,25 @@ Four concepts are kept separate:
 - **Body**: height, inseam, flexibility and optional segment lengths.
 - **Bike**: frame geometry plus cockpit and contact dimensions.
 - **Fit parameters**: the knobs (saddle height and fore/aft, seatpost setback, spacers, stem, cranks). Changing one moves the contact points relative to all the others.
-- **Style**: target joint-angle bands (relaxed, sporty, aggressive, gravel), picked under How you ride on the Rider tab, on Find a bike, or from the score. The ideal saddle and hand positions are derived from your body and shown as targets.
+- **Style**: target joint-angle bands (relaxed, sporty, aggressive, gravel), picked under How you ride on the Rider tab or from the score. The ideal saddle and hand positions are derived from your body and shown as targets.
 
-**Fit my bike** is where you set up the bike you ride or are buying. Pick the frame (one you have saved, or Choose from catalog), then change the settings and press Optimize. Without a saved setup, Optimize suggests a build and, for a catalog frame, checks the model's other sizes and says if one fits better; tap a size to switch to it. After I already ride it, changes are counted from your setup and Optimize prefers adjustments over new parts. Frame geometry and parts are in the section at the bottom. Sliders and part choices stop where your body could not ride the bike (foot off the pedal, knee past about 140 degrees, hands off the bars).
+**Fit my bike** is where you set up the bike you ride or are buying. Pick the frame (one you have saved, or Choose from catalog; Duplicate, New frame of my own and Delete are in the ⋯ menu beside it), then change the settings and press Optimize. The Setup switch says whether this is a New build or a bike you already ride. For a new build, Optimize suggests one and, for a catalog frame, checks the model's other sizes and says if one fits better; tap a size to switch to it. Once you ride it, changes are counted from your setup and Optimize prefers adjustments over new parts. Frame geometry and parts are in the section at the bottom. Sliders and part choices stop where your body could not ride the bike (foot off the pedal, knee past about 140 degrees, hands off the bars).
 
-**Find a bike** ranks bikes for your body and style. All bikes checks the whole catalog (the two likeliest sizes of each model, walked outward until they stop fitting) and lists what fits by fit score, with search and brand, category, year and verdict filters. Saved sorts your saved frames into fits, fits with compromises (a raised stem, maxed spacers, tight standover, little or a lot of seatpost, heavy toe overlap) and does not fit; saved sizes of one model share a card led by the best size. Each bike shows the build it needs, the saddle-to-bar drop and the estimated standover. Show puts a bike on the drawing with its suggested build without touching your own bike; Make it my bike switches to it.
+**Find a bike** ranks bikes for your body and style. All bikes checks the whole catalog (the two likeliest sizes of each model, walked outward until they stop fitting) and lists what fits by fit score, with search and brand, category, year and verdict filters. Saved sorts your saved frames into fits, fits with compromises (a raised stem, maxed spacers, tight standover, little or a lot of seatpost, heavy toe overlap) and does not fit; saved sizes of one model share a card led by the best size. Each bike shows the build it needs, the saddle-to-bar drop and the estimated standover. Show puts a bike on the drawing with its suggested build without touching your own bike; the bar at the bottom makes it your bike or stops showing it.
 
 The catalog (`src/data/frames/`, one JSON file per brand, each model with its source URL and a web.archive.org snapshot) holds manufacturer geometry for drop-bar bikes from 2018 on.
 
 The settings menu (gear at the end of the tab row) exports and imports everything as `bikefit.json`, and copies a link carrying your body, setup and current frame. Opening a link asks before replacing what this browser has saved; nothing leaves the browser otherwise.
 
-## Detail levels
+## Three questions
 
-Each tab asks its own question. Rider has Simple, Detailed and Expert, for how much you have measured; hidden inputs keep their estimated or entered values. Frame geometry shows stack and reach until you ask for all measurements. Fit my bike asks what you can change: Tools only (saddle, spacers, cleats), New parts (also stem and seatpost) or Everything (also cranks). Optimize leaves the rest as it is, and the lock on each part makes your own mix. The Simple, Detailed and Expert switch on the drawing sets how much the drawing, metric strip and results show.
+Each is asked once, in its own place, because you may want different answers to each:
+
+- **Measurements** (bar at the top of Rider): Simple, Detailed or Expert, for how much you have measured yourself; hidden inputs keep their estimated or entered values.
+- **Can change** (bar at the top of Fit my bike): Tools only (saddle, spacers, cleats), New parts (also stem and seatpost) or Everything (also cranks). Those settings are listed for Optimize; the rest wait, collapsed, under Stays as it is. The lock on each setting fixes it where it is, for your own mix, without moving it.
+- **View** (pill on the drawing): Simple, Detailed or Expert, for how much the drawing, metric strip and results show. From Detailed on, a Hands pill switches the drawing between hoods and drops.
+
+Frame geometry shows stack and reach until you ask for all measurements.
 
 ## What is modelled
 
