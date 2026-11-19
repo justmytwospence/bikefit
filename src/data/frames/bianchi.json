@@ -19,12 +19,12 @@
     },
     {
       "model": "Arcadex",
-      "year": 2026,
-      "lastYear": 2027,
+      "year": 2025,
+      "lastYear": 2026,
       "category": "gravel",
-      "source": "https://www.bianchi.com/en/shop/bikes/gravel/adventure/arcadex/gravel-adventure-arcadex-arcadex-comp-arcadex-comp-2/",
+      "source": "https://www.bianchi.com/en/shop/bikes/gravel/adventure/arcadex/arcadex-pro/gravel-adventure-arcadex-arcadex-pro-arcadex-pro/",
       "retrieved": "2026-08-31",
-      "archive": "https://web.archive.org/web/20260831091927/https://www.bianchi.com/en/shop/bikes/gravel/adventure/arcadex/gravel-adventure-arcadex-arcadex-comp-arcadex-comp-2/",
+      "archive": "https://web.archive.org/web/20260831084100/https://www.bianchi.com/en/shop/bikes/gravel/adventure/arcadex/arcadex-pro/gravel-adventure-arcadex-arcadex-pro-arcadex-pro/",
       "sizes": [
         ["XS",544,376,74.5,70.5,90,410,430,1020,75],
         ["SM",563,383,74,70.5,110,448,430,1034,75],
@@ -38,10 +38,11 @@
       "year": 2023,
       "lastYear": 2026,
       "category": "gravel",
-      "source": "https://www.bianchi.com/store/int_EN/yvbl3-arcadex-al-grx-610-12sp-1.html",
-      "retrieved": "2025-12-11",
-      "archive": "https://web.archive.org/web/20251211190904/https://www.bianchi.com/store/int_EN/yvbl3-arcadex-al-grx-610-12sp-1.html",
+      "source": "https://www.bianchi.com/shop/bikes/gravel/adventure/arcadex-al/arcadex-al/arcadex-al/",
+      "retrieved": "2026-06-12",
+      "archive": "https://web.archive.org/web/20260612044011/https://www.bianchi.com/shop/bikes/gravel/adventure/arcadex-al/arcadex-al/arcadex-al/",
       "aliases": ["Arcadex Alloy","Arcadex Alu"],
+      "tyreWidth": 45,
       "sizes": [
         ["XS",537,389,74.5,70.5,100,410,430,1027,75],
         ["SM",556,396,75,70.5,120,450,430,1041,75],
@@ -60,14 +61,14 @@
       "archive": "https://web.archive.org/web/20260118101506/https://www.bianchi.com/store/int_EN/ysb8d-aria-10511sp-9.html",
       "estimated": ["seatTubeLength","wheelbase"],
       "sizes": [
-        ["440",481,376,75,70.5,95,429,410,963,58],
-        ["470",490,379,74.5,70.5,105,440,410,967,58],
-        ["500",499,387,74.5,71.5,110,451,410,970,58],
-        ["530",525,385,74,72,125,482,410,981,68],
-        ["550",541,390,73.5,72.5,140,501,410,987,68],
-        ["570",557,395,73.5,73,155,521,410,993,68],
-        ["590",576,397,73,73,175,543,412,1001,68],
-        ["610",595,398,72.5,73,195,566,414,1009,68]
+        ["440",481,376,75,70.5,95,428,410,963,58],
+        ["470",490,379,74.5,70.5,105,439,410,967,58],
+        ["500",499,387,74.5,71.5,110,450,410,971,58],
+        ["530",525,385,74,72,125,481,410,981,68],
+        ["550",541,390,73.5,72.5,140,501,410,988,68],
+        ["570",557,395,73.5,73,155,520,410,994,68],
+        ["590",576,397,73,73,175,543,412,1002,68],
+        ["610",595,398,72.5,73,195,566,414,1010,68]
       ]
     },
     {
@@ -95,40 +96,23 @@
       "archive": "https://web.archive.org/web/20250623150620/https://www.bianchi.com/store/int_EN/ysb3c-impulsopro-ekar1x13ps-10.html",
       "estimated": ["seatTubeLength"],
       "sizes": [
-        ["480",510,378,75.5,70.5,100,427,425,1009,53],
+        ["480",510,378,75.5,70.5,100,426,425,1009,53],
         ["500",529,383,75,70.5,115,447,425,1018,58],
-        ["520",542,385,74.5,71,125,461,425,1019,60],
-        ["540",554,386,74,71.5,135,474,425,1020,60],
-        ["560",569,391,73.5,72,145,490,425,1024,62],
-        ["580",583,396,73,72.5,160,505,425,1028,62]
+        ["520",542,385,74.5,71,125,460,425,1019,60],
+        ["540",554,386,74,71.5,135,473,425,1020,60],
+        ["560",569,391,73.5,72,145,489,425,1024,62],
+        ["580",583,396,73,72.5,160,504,425,1028,62]
       ]
     },
     {
       "model": "Infinito",
       "year": 2022,
-      "lastYear": 2023,
-      "category": "endurance",
-      "source": "https://www.bianchi.com/store/int_EN/ysbz5-infinito-ultegradi212sp-1.html",
-      "retrieved": "2025-08-31",
-      "archive": "https://web.archive.org/web/20250831000323/https://www.bianchi.com/store/int_EN/ysbz5-infinito-ultegradi212sp-1.html",
-      "sizes": [
-        ["470",521,370,74.5,70.5,120,420,415,986,68],
-        ["500",539,375,74.5,71.5,135,450,415,988,68],
-        ["530",553,376,74,71.5,150,480,415,993,68],
-        ["550",569,381,73.5,72,165,500,415,999,68],
-        ["570",585,386,73.5,72.5,180,520,415,1004,68],
-        ["590",599,392,73,72.5,195,540,420,1018,68],
-        ["610",614,392,72.5,72.5,210,560,420,1023,68]
-      ]
-    },
-    {
-      "model": "Infinito",
-      "year": 2025,
-      "lastYear": 2026,
+      "lastYear": 2025,
       "category": "endurance",
       "source": "https://www.bianchi.com/store/int_EN/ytb7d-infinito-10512sp-2.html",
       "retrieved": "2025-12-09",
       "archive": "https://web.archive.org/web/20251209204205/https://www.bianchi.com/store/int_EN/ytb7d-infinito-10512sp-2.html",
+      "aliases": ["Infinito XE"],
       "sizes": [
         ["470",521,371,74.5,70.5,120,420,415,986,68],
         ["500",539,375,74.5,71.5,135,450,415,988,68],
@@ -142,11 +126,11 @@
     {
       "model": "Infinito",
       "year": 2026,
-      "lastYear": 2027,
       "category": "endurance",
       "source": "https://www.bianchi.com/en/shop/bikes/road/all-rounder/infinito/infinito/infinito-infinito-infinito-2/",
       "retrieved": "2026-07-22",
       "archive": "https://web.archive.org/web/20260722130943/https://www.bianchi.com/en/shop/bikes/road/all-rounder/infinito/infinito/infinito-infinito-infinito-2/",
+      "aliases": ["Infinito Paris-Roubaix"],
       "sizes": [
         ["470",531,370,75,70.5,115,420,420,990,73],
         ["500",552,372,74.5,71,135,450,422,997,73],
@@ -158,44 +142,13 @@
       ]
     },
     {
-      "model": "Infinito Paris-Roubaix",
-      "year": 2026,
-      "category": "endurance",
-      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-paris-roubaix/",
-      "retrieved": "2026-06-12",
-      "archive": "https://web.archive.org/web/20260612052941/https://www.bianchi.com/shop/bikes/road/all-rounder/infinito/infinito-pro/infinito-paris-roubaix/",
-      "sizes": [
-        ["530",566,373,74,71,150,480,422,1002,73],
-        ["550",584,377,73.5,72,165,500,422,1003,73],
-        ["570",600,382,73.5,72.5,180,520,422,1008,73]
-      ]
-    },
-    {
-      "model": "Infinito XE",
+      "model": "Oltre",
       "year": 2022,
       "lastYear": 2026,
-      "category": "endurance",
-      "source": "https://www.bianchi.com/store/int_EN/ysb7d-infinitoxe-10511sp-10.html",
-      "retrieved": "2025-08-02",
-      "archive": "https://web.archive.org/web/20250802203708/https://www.bianchi.com/store/int_EN/ysb7d-infinitoxe-10511sp-10.html",
-      "sizes": [
-        ["470",521,371,74.5,70.5,120,420,415,986,68],
-        ["500",539,375,74.5,71.5,135,450,415,988,68],
-        ["530",553,377,74,71,150,480,415,993,68],
-        ["550",569,381,73.5,72,165,500,415,999,68],
-        ["570",585,386,73.5,72.5,180,520,415,1004,68],
-        ["590",600,391,73,72.5,195,540,420,1019,68],
-        ["610",614,392,72.5,72.5,210,560,420,1023,68]
-      ]
-    },
-    {
-      "model": "Oltre",
-      "year": 2023,
-      "lastYear": 2027,
       "category": "aero",
-      "source": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-new-2/",
-      "retrieved": "2026-07-22",
-      "archive": "https://web.archive.org/web/20260722130824/https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-rc-new-2/",
+      "source": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-pro/",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811050314/https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-pro/",
       "sizes": [
         ["470",470,385,74.5,70.5,83,450,410,982,58],
         ["500",478,392,74.5,71.5,88,480,410,983,58],
@@ -207,12 +160,12 @@
     },
     {
       "model": "Oltre Race",
-      "year": 2024,
+      "year": 2023,
       "lastYear": 2026,
       "category": "aero",
-      "source": "https://www.bianchi.com/store/int_EN/ytb8d-oltrerace-10512sp-5.html",
-      "retrieved": "2025-08-02",
-      "archive": "https://web.archive.org/web/20250802203655/https://www.bianchi.com/store/int_EN/ytb8d-oltrerace-10512sp-5.html",
+      "source": "https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-race-2/",
+      "retrieved": "2026-06-06",
+      "archive": "https://web.archive.org/web/20260606022837/https://www.bianchi.com/shop/bikes/road/aero/oltre/oltre-race-2/",
       "sizes": [
         ["440",481,376,75,70.5,95,420,410,977,58],
         ["470",490,379,74.5,70.5,105,440,410,982,58],
@@ -226,12 +179,12 @@
     },
     {
       "model": "Oltre XR4",
-      "year": 2022,
+      "year": 2021,
       "lastYear": 2026,
       "category": "aero",
-      "source": "https://www.bianchi.com/store/int_EN/yrb17-oltre-xr4-ultegra-di2-4.html",
-      "retrieved": "2025-07-16",
-      "archive": "https://web.archive.org/web/20250716022307/https://www.bianchi.com/store/int_EN/yrb17-oltre-xr4-ultegra-di2-4.html",
+      "source": "https://www.bianchi.com/store/int_EN/yrb09-oltre-xr4-red-etap-axs-12sp-3.html",
+      "retrieved": "2026-02-15",
+      "archive": "https://web.archive.org/web/20260215225523/https://www.bianchi.com/store/int_EN/yrb09-oltre-xr4-red-etap-axs-12sp-3.html",
       "sizes": [
         ["470",490,377,74.5,70.5,105,420,410,982,58],
         ["500",499,384,74.5,71.5,110,450,410,983,58],
@@ -243,13 +196,33 @@
       ]
     },
     {
-      "model": "Specialissima",
+      "model": "Oltre XR4",
       "year": 2022,
+      "lastYear": 2024,
+      "category": "aero",
+      "source": "https://www.bianchi.com/store/int_EN/yrbl2-oltre-xr4-ultegra-11sp-10.html",
+      "retrieved": "2024-10-10",
+      "archive": "https://web.archive.org/web/20241010095518/https://www.bianchi.com/store/int_EN/yrbl2-oltre-xr4-ultegra-11sp-10.html",
+      "estimated": ["seatTubeLength"],
+      "sizes": [
+        ["440",479,372,74.5,70,95,426,400,968,58],
+        ["470",490,377,74.5,70.5,105,439,400,972,58],
+        ["500",499,384,74.5,71.5,110,450,400,974,58],
+        ["530",525,385,74,72,125,481,406,979,68],
+        ["550",541,390,73.5,72.5,140,501,407,986,68],
+        ["570",557,395,73.5,73,155,520,407,991,68],
+        ["590",576,398,73,73,175,543,409,1003,68],
+        ["610",595,399,72.5,73,195,566,411,1009,68]
+      ]
+    },
+    {
+      "model": "Specialissima",
+      "year": 2021,
       "lastYear": 2026,
       "category": "race",
-      "source": "https://www.bianchi.com/store/int_EN/ysby6-specialissima-ultegradi212sp-1.html",
-      "retrieved": "2025-07-16",
-      "archive": "https://web.archive.org/web/20250716021902/https://www.bianchi.com/store/int_EN/ysby6-specialissima-ultegradi212sp-1.html",
+      "source": "https://www.bianchi.com/store/int_EN/yrby7-specialissima-ultegra-11sp-8.html",
+      "retrieved": "2026-02-19",
+      "archive": "https://web.archive.org/web/20260219024925/https://www.bianchi.com/store/int_EN/yrby7-specialissima-ultegra-11sp-8.html",
       "sizes": [
         ["470",490,376,74.5,70.5,105,426,410,979,58],
         ["500",499,384,74.5,71.5,110,452,410,981,58],
@@ -262,12 +235,12 @@
     },
     {
       "model": "Specialissima",
-      "year": 2024,
-      "lastYear": 2027,
+      "year": 2023,
+      "lastYear": 2026,
       "category": "race",
-      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-rc-frameset/",
+      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-comp-new/specialissima-2027/",
       "retrieved": "2026-07-21",
-      "archive": "https://web.archive.org/web/20260721033248/https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-rc-new/specialissima-rc-frameset/",
+      "archive": "https://web.archive.org/web/20260721041222/https://www.bianchi.com/shop/bikes/road/all-rounder/specialissima-new/specialissima-comp-new/specialissima-2027/",
       "sizes": [
         ["470",486,379,74.5,70.5,100,420,410,982,58],
         ["500",494,386,74.5,71.5,105,450,410,983,58],
@@ -279,12 +252,12 @@
     },
     {
       "model": "Sprint",
-      "year": 2022,
+      "year": 2021,
       "lastYear": 2026,
       "category": "race",
-      "source": "https://www.bianchi.com/store/int_EN/ytbr6-sprint-105di212sp-2.html",
-      "retrieved": "2025-08-02",
-      "archive": "https://web.archive.org/web/20250802203633/https://www.bianchi.com/store/int_EN/ytbr6-sprint-105di212sp-2.html",
+      "source": "https://www.bianchi.com/shop/bikes/road/all-rounder/sprint/sprint/sprint-icr/",
+      "retrieved": "2026-06-12",
+      "archive": "https://web.archive.org/web/20260612042936/https://www.bianchi.com/shop/bikes/road/all-rounder/sprint/sprint/sprint-icr/",
       "sizes": [
         ["470",497,377,74.5,70.5,105,420,410,982,60],
         ["500",505,383,74.5,71.5,110,450,410,983,60],
@@ -304,12 +277,12 @@
       "archive": "https://web.archive.org/web/20260612045212/https://www.bianchi.com/shop/bikes/road/cyclocross/zolder/zolder-pro/zolder-pro/",
       "estimated": ["seatTubeLength"],
       "sizes": [
-        ["480",510,378,75.5,70.5,100,454,425,1009,53],
-        ["500",529,383,75,70.5,115,479,425,1018,58],
-        ["520",542,385,74.5,71,125,496,425,1019,60],
-        ["540",554,386,74,71.5,135,511,425,1020,60],
-        ["560",569,391,73.5,72,145,531,425,1024,62],
-        ["580",583,396,73,72.5,160,549,425,1028,62]
+        ["480",510,378,75.5,70.5,100,453,425,1009,53],
+        ["500",529,383,75,70.5,115,477,425,1018,58],
+        ["520",542,385,74.5,71,125,494,425,1019,60],
+        ["540",554,386,74,71.5,135,510,425,1020,60],
+        ["560",569,391,73.5,72,145,529,425,1024,62],
+        ["580",583,396,73,72.5,160,547,425,1028,62]
       ]
     }
   ]

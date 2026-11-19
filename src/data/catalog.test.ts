@@ -35,8 +35,8 @@ describe('buildCatalog', () => {
 
 describe('real catalog', () => {
   it('is big enough', () => {
-    // 549 models from 32 brands when the pipeline last ran; fail on a big loss.
-    expect(CATALOG.length).toBeGreaterThanOrEqual(521);
+    // 463 models from 32 brands when the pipeline last ran; fail on a big loss.
+    expect(CATALOG.length).toBeGreaterThanOrEqual(440);
     expect(new Set(CATALOG.map((m) => m.brand)).size).toBeGreaterThanOrEqual(25);
   });
   it('has valid entries', () => {
@@ -68,6 +68,30 @@ describe('real catalog', () => {
       if (m.sizes.length > 1 && m.sizes[m.sizes.length - 1].reach <= m.sizes[0].reach) bad('reach not increasing');
     }
     expect(errs).toEqual([]);
+  });
+  it('dates well-known generations and lists each once', () => {
+    const named = (brand: string, model: string) => CATALOG.filter((m) => m.brand === brand && m.model === model);
+    const [sl7, ...moreSl7] = named('Specialized', 'Tarmac SL7');
+    expect(moreSl7).toEqual([]);
+    expect(sl7).toMatchObject({ year: 2021, lastYear: 2024 });
+    // Specialized's frame stack and reach, not the 'stack to stem' it lists beside them.
+    expect(sl7.sizes.find((s) => s.size === '56')).toMatchObject({ stack: 555, reach: 398 });
+    expect(named('Specialized', 'Tarmac SL8')).toHaveLength(1);
+    expect(named('Specialized', 'Tarmac SL8')[0].year).toBe(2024);
+    expect(named('Specialized', 'Tarmac')).toEqual([]);
+    expect(named('Trek', 'Domane Gen 4').map((m) => m.year)).toEqual([2023]);
+    expect(named('Trek', 'Domane Gen 3')).toHaveLength(1);
+    expect(named('Trek', 'Domane Gen 3')[0].lastYear).toBeLessThanOrEqual(2023);
+    expect(named('Trek', 'Domane')).toEqual([]);
+    expect(named('BMC', 'URS').length).toBeLessThanOrEqual(2);
+  });
+  it('has no stray rows or years the pages cannot support', () => {
+    const labels = CATALOG.flatMap((m) => m.sizes.map((s) => `${m.id} ${s.size}`));
+    expect(labels.filter((l) => / in$/.test(l))).toEqual([]);
+    // A year past the newest capture (2026) only where the maker states the model year: 7 models, not the 52
+    // that captures late in 2026 once pushed into 2027.
+    expect(CATALOG.filter((m) => m.lastYear > 2026).length).toBeLessThanOrEqual(10);
+    expect(CATALOG.filter((m) => m.year < 2018)).toEqual([]);
   });
   it('still contains the default frame', () => {
     const frames = CATALOG.flatMap((m) => m.sizes.map((s) => toFrame(m, s)));

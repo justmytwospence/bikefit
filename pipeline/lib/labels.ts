@@ -31,7 +31,7 @@ export const LABELS: Record<GeometryKey, string[]> = {
 };
 
 const REJECT = [
-  'effective stack', 'effective reach', 'with stem', 'cockpit', 'standover', 'stand over', 'top tube', 'bb height',
+  'effective stack', 'effective reach', 'with stem', 'to stem', 'cockpit', 'standover', 'stand over', 'top tube', 'bb height',
   'fork', 'trail',
 ];
 

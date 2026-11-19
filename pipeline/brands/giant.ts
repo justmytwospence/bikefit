@@ -28,12 +28,15 @@ const adapter: Adapter = {
     if (!tables.length) return [];
     // The cart dialog's screen-reader heading can come first; else the page title before ' (2019) | ...'.
     const title = $('h1').not('.sr-only').first().text().trim() || $('title').text().split(/\s[(|]/)[0].trim();
-    const model = familyName(title);
+    const model = familyName(title, ['compact']);
     if (!model || /cart|e\+|eplus/i.test(model)) return [];
+    // The page title carries the model year: TCR Advanced 2 (2019) | Men Race bike | Giant Bicycles United States.
+    // Pages of older bikes stay online for years, so it dates a page better than its capture does.
+    const year = Number($('title').text().match(/\((20\d\d)\)/)?.[1]) || undefined;
     const category = categoryFrom(model, [
       [/propel/i, 'aero'], [/defy|contend/i, 'endurance'], [/revolt|toughroad/i, 'gravel'], [/tcx/i, 'cyclocross'],
     ], 'race');
-    return [{ model, category, sizes: tables.sort((a, b) => b.length - a.length)[0] }];
+    return [{ model, year, category, sizes: tables.sort((a, b) => b.length - a.length)[0] }];
   },
 };
 export default adapter;

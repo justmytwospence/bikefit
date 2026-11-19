@@ -54,7 +54,7 @@
     {
       "model": "Equation",
       "year": 2025,
-      "lastYear": 2027,
+      "lastYear": 2026,
       "category": "race",
       "source": "https://www.argon18.com/en-us/bikes/road/equation/shimano-105",
       "retrieved": "2026-10-12",
@@ -162,9 +162,9 @@
       "year": 2023,
       "lastYear": 2024,
       "category": "gravel",
-      "source": "https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-xplr",
-      "retrieved": "2025-12-15",
-      "archive": "https://web.archive.org/web/20251215205514/https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-xplr",
+      "source": "https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-axs-xplr",
+      "retrieved": "2026-10-12",
+      "archive": "https://web.archive.org/web/20261012032953/https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-axs-xplr",
       "sizes": [
         ["XXS",525,358,75.5,69.5,104,420,428,1003,80],
         ["XS",545,368,74.9,71,119,450,428,1006,80],
@@ -177,7 +177,7 @@
     {
       "model": "Krypton",
       "year": 2023,
-      "lastYear": 2027,
+      "lastYear": 2026,
       "category": "endurance",
       "source": "https://www.argon18.com/en-us/bikes/all-road/krypton/shimano-105-di2",
       "retrieved": "2026-10-13",
@@ -244,6 +244,24 @@
       ]
     },
     {
+      "model": "Nitrogen",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://www.argon18.com/en-us/bikes/road/nitrogen/nitrogen-shimano-ultegra-di2",
+      "retrieved": "2026-10-12",
+      "archive": "https://web.archive.org/web/20261012212611/https://www.argon18.com/en-us/bikes/road/nitrogen/nitrogen-shimano-ultegra-di2",
+      "aliases": ["Nitrogen Pro"],
+      "sizes": [
+        ["XXS",486,370,75,71.2,81,395,410,967,71],
+        ["XS",508,377,74.5,72.1,97,425,410,972,75],
+        ["S",531,384,74,72.7,113,460,410,975,79],
+        ["M",555,392,73.5,72.7,138,505,410,990,79],
+        ["L",580,400,73,72.7,165,550,410,1006,79],
+        ["XL",607,409,72.5,73,192,595,410,1020,79]
+      ]
+    },
+    {
       "model": "Nitrogen Disc",
       "year": 2021,
       "lastYear": 2026,
@@ -260,32 +278,14 @@
       ]
     },
     {
-      "model": "Nitrogen Pro",
-      "year": 2026,
-      "lastYear": 2027,
-      "category": "aero",
-      "source": "https://www.argon18.com/en-us/bikes/road/nitrogen-pro/nitrogen-pro-sram-red",
-      "retrieved": "2026-07-14",
-      "archive": "https://web.archive.org/web/20260714070912/https://www.argon18.com/en-us/bikes/road/nitrogen-pro/nitrogen-pro-sram-red",
-      "aliases": ["Nitrogen"],
-      "sizes": [
-        ["XXS",486,370,75,71.2,81,395,410,967,71],
-        ["XS",508,377,74.5,72.1,97,425,410,972,75],
-        ["S",531,384,74,72.7,113,460,410,975,79],
-        ["M",555,392,73.5,72.7,138,505,410,990,79],
-        ["L",580,400,73,72.7,165,550,410,1006,79],
-        ["XL",607,409,72.5,73,192,595,410,1020,79]
-      ]
-    },
-    {
-      "model": "Sum Pro",
+      "model": "Sum",
       "year": 2022,
       "lastYear": 2025,
       "category": "race",
       "source": "https://www.argon18.com/en-us/bikes/road/sum-pro/sram-red-axs",
       "retrieved": "2026-07-14",
       "archive": "https://web.archive.org/web/20260714061752/https://www.argon18.com/en-us/bikes/road/sum-pro/sram-red-axs",
-      "aliases": ["Sum"],
+      "aliases": ["Sum Pro"],
       "estimated": ["headTubeLength"],
       "sizes": [
         ["XXS",471,375,75,71.2,80,395,410,967,69],

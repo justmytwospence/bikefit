@@ -9,10 +9,10 @@ const sz = (size: string, stack: number, reach: number, extra: Record<string, nu
 });
 const sizes = (off = 0) => [sz('S', 520 + off, 370), sz('M', 540 + off, 380), sz('L', 560 + off, 390)];
 
-function setup(pagesData: { year: number; ts: string; url: string; out: Extracted[] }[]) {
+function setup(pagesData: { year: number; ts: string; url: string; out: Extracted[]; firstSeen?: string }[]) {
   const manifest: Manifest = {
     brand: 'Test', file: 'test',
-    pages: pagesData.map((p) => ({ url: p.url, timestamp: p.ts, sha256: 'x', family: 'f', year: p.year, related: [] })),
+    pages: pagesData.map((p) => ({ url: p.url, timestamp: p.ts, sha256: 'x', family: 'f', year: p.year, related: [], firstSeen: p.firstSeen })),
   };
   const pages = new Map<string, Page>(pagesData.map((p) => [pageKey(p.url, p.ts), { url: p.url, timestamp: p.ts, html: p.url, related: {} }]));
   const adapter: Adapter = {
@@ -22,7 +22,15 @@ function setup(pagesData: { year: number; ts: string; url: string; out: Extracte
   return { manifest, pages, adapter };
 }
 const none: Overrides = { manual: [], exclude: [], models: {} };
-const ex = (model: string, s = sizes()): Extracted => ({ model, category: 'race', sizes: s });
+const ex = (model: string, s = sizes(), year?: number): Extracted => ({ model, year, category: 'race', sizes: s });
+/** One page per call: a capture on 1 March of `year` at its own URL. */
+let serial = 0;
+const at = (year: number, ...out: Extracted[]) => ({ year, ts: `${year}0301000000`, url: `https://a/${++serial}`, out });
+const build = (...data: ReturnType<typeof at>[]) => {
+  const { manifest, pages, adapter } = setup(data);
+  return buildBrand(adapter, manifest, pages, none, midFill).models;
+};
+const four = (off = 0) => [...sizes(off), sz('XL', 580 + off, 400)];
 
 describe('buildBrand', () => {
   it('merges identical geometry across years', () => {
@@ -65,7 +73,7 @@ describe('buildBrand', () => {
   it('drops a manual entry whose model and years are already covered', () => {
     const man = (model: string, year: number) => ({
       model, year, category: 'race' as const, source: `https://other/${model}${year}`, retrieved: '2026-01-01',
-      sizes: [['S', 520, 370, 73.5, 72.5, 120, 500, 410, 980, 72], ['M', 540, 380, 73.5, 72.5, 120, 500, 410, 980, 72]] as SizeRow[],
+      sizes: [['S', 530, 370, 73.5, 72.5, 120, 500, 410, 980, 72], ['M', 550, 380, 73.5, 72.5, 120, 500, 410, 980, 72]] as SizeRow[],
     });
     const { manifest, pages, adapter } = setup([
       { year: 2020, ts: '20200301000000', url: 'https://a/1', out: [ex('Bike')] },
@@ -79,14 +87,29 @@ describe('buildBrand', () => {
     const { manifest, pages, adapter } = setup([{ year: 2024, ts: '20240301000000', url: 'https://a/1', out: [ex('A', s)] }]);
     expect(buildBrand(adapter, manifest, pages, none, midFill).models[0].sizes).toHaveLength(3);
   });
-  it('merges a prefix-related name with the same geometry, latest name leading', () => {
-    const { manifest, pages, adapter } = setup([
-      { year: 2022, ts: '20220301000000', url: 'https://a/1', out: [ex('Domane')] },
-      { year: 2024, ts: '20240301000000', url: 'https://a/2', out: [ex('Domane Gen 4')] },
-    ]);
-    const f = buildBrand(adapter, manifest, pages, none, midFill);
-    expect(f.models).toHaveLength(1);
-    expect(f.models[0]).toMatchObject({ model: 'Domane Gen 4', year: 2022, lastYear: 2024, aliases: ['Domane'] });
+  it('merges a name into the generation it was on sale with', () => {
+    const m = build(at(2021, ex('Domane')), at(2022, ex('Domane')), at(2022, ex('Domane Gen 4')), at(2024, ex('Domane Gen 4')));
+    expect(m).toHaveLength(1);
+    expect(m[0]).toMatchObject({ model: 'Domane Gen 4', year: 2021, lastYear: 2024, aliases: ['Domane'] });
+  });
+  it('leaves an older bike out of a generation it never overlapped', () => {
+    const m = build(at(2020, ex('Roubaix')), at(2022, ex('Roubaix')), at(2023, ex('Roubaix SL8')), at(2026, ex('Roubaix SL8')));
+    expect(m.map((x) => `${x.model} ${x.year}-${x.lastYear}`)).toEqual(['Roubaix 2020-2022', 'Roubaix SL8 2023-2026']);
+  });
+  it('counts a year apart as on sale together once a later generation exists', () => {
+    const m = build(
+      at(2022, ex('Checkpoint SL')), at(2023, ex('Checkpoint SL')), at(2024, ex('Checkpoint SL Gen 2')),
+      at(2024, ex('Checkpoint SL Gen 3', sizes(30))),
+    );
+    expect(m.map((x) => x.model)).toEqual(['Checkpoint SL Gen 2', 'Checkpoint SL Gen 3']);
+    expect(m[0]).toMatchObject({ year: 2022, lastYear: 2024, aliases: ['Checkpoint SL'] });
+  });
+  it('leads with the shorter name when neither states a generation', () => {
+    for (const [early, late] of [['Krypton Pro', 'Krypton'], ['Krypton', 'Krypton Pro']]) {
+      const m = build(at(2021, ex(early)), at(2024, ex(late)));
+      expect(m).toHaveLength(1);
+      expect(m[0]).toMatchObject({ model: 'Krypton', year: 2021, lastYear: 2024, aliases: ['Krypton Pro'] });
+    }
   });
   it('keeps unrelated names apart even with the same geometry', () => {
     const { manifest, pages, adapter } = setup([
@@ -94,15 +117,73 @@ describe('buildBrand', () => {
     ]);
     expect(buildBrand(adapter, manifest, pages, none, midFill).models.map((m) => m.model)).toEqual(['Émonda', 'Madone']);
   });
-  it('does not chain generations through a shared prefix', () => {
-    const { manifest, pages, adapter } = setup([
-      { year: 2021, ts: '20210301000000', url: 'https://a/1', out: [ex('Madone')] },
-      { year: 2023, ts: '20230301000000', url: 'https://a/2', out: [ex('Madone Gen 6')] },
-      { year: 2024, ts: '20240301000000', url: 'https://a/3', out: [ex('Madone Gen 7')] },
-    ]);
-    const f = buildBrand(adapter, manifest, pages, none, midFill);
-    expect(f.models.map((m) => m.model)).toEqual(['Madone Gen 6', 'Madone Gen 7']);
-    expect(f.models.find((m) => m.model === 'Madone Gen 7')!.aliases).toEqual(['Madone']);
+  it('gives a name to the older of two generations and never chains them', () => {
+    const m = build(
+      at(2021, ex('Madone')), at(2023, ex('Madone')), at(2023, ex('Madone Gen 6')), at(2023, ex('Madone Gen 7')), at(2024, ex('Madone Gen 7')),
+    );
+    expect(m.map((x) => x.model)).toEqual(['Madone Gen 6', 'Madone Gen 7']);
+    expect(m[0]).toMatchObject({ year: 2021, lastYear: 2023, aliases: ['Madone'] });
+    expect(m[1]).toMatchObject({ year: 2023, lastYear: 2024 });
+    expect(m[1].aliases).toBeUndefined();
+  });
+  it('merges a page that lists fewer sizes and keeps every size', () => {
+    const m = build(at(2020, ex('Bike', four().slice(0, 3))), at(2024, ex('Bike', four())), at(2025, ex('Bike', four().slice(1))));
+    expect(m).toHaveLength(1);
+    expect(m[0]).toMatchObject({ year: 2020, lastYear: 2025 });
+    expect(m[0].sizes.map((r) => r[0])).toEqual(['S', 'M', 'L', 'XL']);
+  });
+  it('keeps apart size runs that only overlap', () => {
+    const other = [sz('M', 540, 380), sz('L', 560, 390), sz('XXL', 600, 410)];
+    expect(build(at(2020, ex('Bike')), at(2024, ex('Bike', other)))).toHaveLength(2);
+  });
+  it('ignores a value one page had to estimate', () => {
+    const noDrop = sizes().map((s) => ({ ...s, bbDrop: undefined })) as unknown as ReturnType<typeof sz>[];
+    const m = build(at(2020, ex('Bike', sizes().map((s) => ({ ...s, bbDrop: 60 })))), at(2024, ex('Bike', noDrop)));
+    expect(m).toHaveLength(1);
+    expect(m[0].estimated).toBeUndefined();
+    expect(m[0].sizes[0][9]).toBe(60);
+    expect(m[0]).toMatchObject({ year: 2020, lastYear: 2024, source: 'https://a/' + (serial - 1) });
+  });
+  it('takes one differing size of four as a corrected typo, two as another frame', () => {
+    const fixed = four().map((s) => (s.size === 'M' ? { ...s, wheelbase: 990, reach: 384 } : s));
+    const m = build(at(2020, ex('Bike', four())), at(2024, ex('Bike', fixed)));
+    expect(m).toHaveLength(1);
+    expect(m[0].sizes[1]).toEqual(['M', 540, 384, 73.5, 72.5, 120, 500, 410, 990, 72]);
+    const two = fixed.map((s) => (s.size === 'L' ? { ...s, wheelbase: 1000 } : s));
+    expect(build(at(2020, ex('Bike', four())), at(2024, ex('Bike', two)))).toHaveLength(2);
+  });
+  it('uses the model year a page states and drops pages from before 2018', () => {
+    const m = build(at(2025, ex('Old', sizes(), 2016)), at(2025, ex('Bike', sizes(10), 2019)), at(2026, ex('Bike', sizes(10), 2021)));
+    expect(m.map((x) => `${x.model} ${x.year}-${x.lastYear}`)).toEqual(['Bike 2019-2021']);
+  });
+  it('dates a capture by its calendar year, and a first capture as a model year no later than the page', () => {
+    const one = (ts: string, firstSeen?: string) => {
+      const { manifest, pages, adapter } = setup([{ year: 0, ts, url: 'https://a/1', out: [ex('Bike')], firstSeen }]);
+      return buildBrand(adapter, manifest, pages, none, midFill).models[0].year;
+    };
+    expect(one('20261105000000')).toBe(2026);
+    expect(one('20261105000000', '20260901000000')).toBe(2026);
+    expect(one('20240301000000', '20220901000000')).toBe(2023);
+    expect(one('20240301000000', '20220301000000')).toBe(2022);
+    expect(one('20240301000000', '20160301000000')).toBe(2018);
+  });
+  it('drops only the stray row when reach falls out of order', () => {
+    const s = [sz('S', 520, 370), sz('M', 540, 380), sz('23 in', 550, 470), sz('L', 560, 390), sz('XL', 580, 400)];
+    expect(build(at(2024, ex('Bike', s)))[0].sizes.map((r) => r[0])).toEqual(['S', 'M', 'L', 'XL']);
+  });
+  it('pins years from the overrides to the frame with that size', () => {
+    const { manifest, pages, adapter } = setup([at(2022, ex('Bike')), at(2024, ex('Bike')), at(2023, ex('Bike', sizes(20)))]);
+    const years = [{ model: 'Bike', size: 'M', stack: 540, reach: 380, year: 2021, note: 'launch report' }];
+    const f = buildBrand(adapter, manifest, pages, { ...none, years }, midFill);
+    expect(f.models.map((x) => `${x.year}-${x.lastYear}`)).toEqual(['2021-2024', '2023-undefined']);
+  });
+  it('keeps the frame more pages show when two share a name and first year', () => {
+    const { manifest, pages, adapter } = setup([at(2020, ex('Bike', sizes(10))), at(2020, ex('Bike')), at(2022, ex('Bike'))]);
+    const log: string[] = [];
+    const f = buildBrand(adapter, manifest, pages, none, midFill, (s) => log.push(s));
+    expect(f.models).toHaveLength(1);
+    expect(f.models[0].sizes[0][1]).toBe(520);
+    expect(log.some((l) => l.startsWith('duplicate: Test Bike 2020'))).toBe(true);
   });
   it('keeps two entries when a stack differs by 3 mm', () => {
     const { manifest, pages, adapter } = setup([

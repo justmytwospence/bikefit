@@ -3,7 +3,7 @@
   "models": [
     {
       "model": "Boone",
-      "year": 2020,
+      "year": 2019,
       "lastYear": 2021,
       "category": "cyclocross",
       "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-6-disc/p/33095/",
@@ -23,9 +23,9 @@
       "model": "Boone",
       "year": 2022,
       "category": "cyclocross",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-disc-frameset/p/35696/",
-      "retrieved": "2023-06-05",
-      "archive": "https://web.archive.org/web/20230605023209/https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-disc-frameset/p/35696/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-6/p/35337/",
+      "retrieved": "2023-10-01",
+      "archive": "https://web.archive.org/web/20231001222518/https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-6/p/35337/",
       "sizes": [
         ["49",534,375,75,71,110,476,425,1001,70],
         ["52",547,379,74.5,71.5,123,493,425,1005,70],
@@ -38,7 +38,6 @@
     {
       "model": "Checkmate",
       "year": 2025,
-      "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/drop-bar-gravel-bikes/checkmate/checkmate-slr-7-axs/p/58668/",
       "retrieved": "2025-07-17",
@@ -71,12 +70,12 @@
     },
     {
       "model": "Checkpoint ALR",
-      "year": 2020,
+      "year": 2019,
       "lastYear": 2021,
       "category": "gravel",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-alr/checkpoint-alr-frameset/p/29761/",
-      "retrieved": "2020-08-14",
-      "archive": "https://web.archive.org/web/20200814023246/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-alr/checkpoint-alr-frameset/p/29761/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-alr/checkpoint-alr-5/p/32557/",
+      "retrieved": "2021-12-12",
+      "archive": "https://web.archive.org/web/20211212013715/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-alr/checkpoint-alr-5/p/32557/",
       "sizes": [
         ["49",532,373,75,71.4,90,490,425,995,78],
         ["52",549,379,74,71.6,107,520,425,1005,78],
@@ -89,7 +88,7 @@
     {
       "model": "Checkpoint ALR Gen 2",
       "year": 2022,
-      "lastYear": 2026,
+      "lastYear": 2025,
       "category": "gravel",
       "source": "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/checkpoint-alr-5-gen-2/p/41640/",
       "retrieved": "2025-07-17",
@@ -106,7 +105,7 @@
     },
     {
       "model": "Checkpoint ALR Gen 3",
-      "year": 2022,
+      "year": 2025,
       "category": "gravel",
       "source": "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/f/F224-2/checkpoint-alr-5-gen-3/49946/",
       "retrieved": "2026-11-16",
@@ -121,29 +120,13 @@
       ]
     },
     {
-      "model": "Checkpoint ALR Gen 3",
-      "year": 2026,
-      "category": "gravel",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/checkpoint-alr-frameset-gen-3/p/57659/",
-      "retrieved": "2025-07-06",
-      "archive": "https://web.archive.org/web/20250706025048/https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/checkpoint-alr-frameset-gen-3/p/57659/",
-      "sizes": [
-        ["XS",545,380,74.1,71.2,96,490,435,1025,78],
-        ["S",566,385,73.7,71.6,117,520,435,1033,78],
-        ["M",589,391,73.2,71.8,140,540,435,1041,76],
-        ["ML",611,397,72.8,72.2,162,560,435,1048,76],
-        ["L",630,402,72.5,72.3,181,580,435,1058,74],
-        ["XL",650,408,72.1,72.6,201,610,435,1070,74]
-      ]
-    },
-    {
       "model": "Checkpoint SL",
-      "year": 2020,
-      "lastYear": 2022,
+      "year": 2019,
+      "lastYear": 2021,
       "category": "gravel",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-7/p/29344/",
-      "retrieved": "2021-10-20",
-      "archive": "https://web.archive.org/web/20211020142248/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-7/p/29344/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-6/p/32559/",
+      "retrieved": "2021-11-09",
+      "archive": "https://web.archive.org/web/20211109225340/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-6/p/32559/",
       "sizes": [
         ["49",532,373,75,71.4,90,490,425,995,78],
         ["52",549,379,74,71.6,107,520,425,1005,78],
@@ -158,9 +141,9 @@
       "year": 2022,
       "lastYear": 2025,
       "category": "gravel",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-frameset-gen-2/p/35076/",
-      "retrieved": "2024-11-19",
-      "archive": "https://web.archive.org/web/20241119103956/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-frameset-gen-2/p/35076/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-7-axs-gen-2/p/41394/",
+      "retrieved": "2025-03-30",
+      "archive": "https://web.archive.org/web/20250330071039/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-7-axs-gen-2/p/41394/",
       "aliases": ["Checkpoint SL"],
       "sizes": [
         ["49",538,393,74.1,71.2,90,490,435,1025,78],
@@ -173,11 +156,12 @@
     },
     {
       "model": "Checkpoint SL Gen 3",
-      "year": 2025,
+      "year": 2024,
+      "lastYear": 2025,
       "category": "gravel",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-gen-3-frameset/p/46765/",
-      "retrieved": "2025-03-26",
-      "archive": "https://web.archive.org/web/20250326064732/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-gen-3-frameset/p/46765/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-5-axs-gen-3/p/47071/",
+      "retrieved": "2025-04-05",
+      "archive": "https://web.archive.org/web/20250405234107/https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-5-axs-gen-3/p/47071/",
       "sizes": [
         ["49",535,380,74,71,86,445,430,1013,76],
         ["52",556,386,74,71.4,106,480,430,1022,76],
@@ -189,7 +173,7 @@
     },
     {
       "model": "Crockett",
-      "year": 2020,
+      "year": 2019,
       "lastYear": 2023,
       "category": "cyclocross",
       "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/crockett/crockett-disc-frameset/p/35664/",
@@ -206,62 +190,9 @@
       ]
     },
     {
-      "model": "Domane",
-      "year": 2020,
-      "category": "endurance",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-disc/p/23148/",
-      "retrieved": "2019-11-19",
-      "archive": "https://web.archive.org/web/20191119210319/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-disc/p/23148/",
-      "sizes": [
-        ["44",510,360,74.6,70.3,95,390,420,983,80],
-        ["47",527,364,74.6,71,110,420,420,986,80],
-        ["50",546,368,74.6,71.1,130,450,420,996,80],
-        ["52",561,371,74.2,71.3,145,475,420,1003,80],
-        ["54",575,374,73.7,71.3,160,500,420,1010,80],
-        ["56",591,377,73.3,71.9,175,525,420,1008,78],
-        ["58",611,380,73,72,195,548,425,1022,78],
-        ["23 in",628,478,72,69.3,120,559,438,1183,58]
-      ]
-    },
-    {
       "model": "Domane AL",
       "year": 2020,
-      "lastYear": 2021,
-      "category": "endurance",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2/p/33037/",
-      "retrieved": "2021-10-22",
-      "archive": "https://web.archive.org/web/20211022123250/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2/p/33037/",
-      "sizes": [
-        ["47",527,364,74.6,71,110,420,420,986,80],
-        ["50",546,368,74.6,71.1,130,450,420,996,80],
-        ["52",561,371,74.2,71.3,145,475,420,1003,80],
-        ["54",575,374,73.7,71.3,160,500,420,1010,80],
-        ["56",591,377,73.3,71.9,175,525,420,1008,78],
-        ["58",611,380,73,72,195,548,425,1022,78],
-        ["60",632,383,72.8,72.1,220,567,425,1032,75],
-        ["62",656,386,72.5,72.1,245,586,425,1042,75]
-      ]
-    },
-    {
-      "model": "Domane AL",
-      "year": 2021,
-      "category": "endurance",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-4-disc/p/33085/",
-      "retrieved": "2021-05-14",
-      "archive": "https://web.archive.org/web/20210514105230/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-4-disc/p/33085/",
-      "sizes": [
-        ["44",510,360,74.6,70.3,95,390,420,983,80],
-        ["49",540,368,74.6,70.8,123,440,425,1001,80],
-        ["52",561,371,74.2,71.3,145,475,420,1003,80],
-        ["54",575,374,73.7,71.3,160,500,420,1010,80],
-        ["56",591,377,73.3,71.9,175,525,420,1008,78],
-        ["58",611,380,73,72,195,548,425,1022,78],
-        ["61",646,385,72.7,72.1,235,576,425,1038,75]
-      ]
-    },
-    {
-      "model": "Domane AL",
-      "year": 2024,
+      "lastYear": 2024,
       "category": "endurance",
       "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-rim/p/33037/",
       "retrieved": "2025-02-24",
@@ -279,29 +210,12 @@
     },
     {
       "model": "Domane AL Gen 3",
-      "year": 2024,
+      "year": 2021,
+      "lastYear": 2023,
       "category": "endurance",
       "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-4-gen-3/p/33085/",
       "retrieved": "2023-11-29",
       "archive": "https://web.archive.org/web/20231129122912/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-4-gen-3/p/33085/",
-      "sizes": [
-        ["44",510,360,74.6,70.3,95,390,420,983,80],
-        ["49",540,368,74.6,70.8,123,440,425,1001,80],
-        ["52",561,371,74.2,71.3,145,475,420,1003,80],
-        ["54",575,374,73.7,71.3,160,500,420,1010,80],
-        ["56",591,377,73.3,71.9,175,525,420,1018,78],
-        ["58",611,380,73,72,195,548,425,1022,78],
-        ["61",646,385,72.7,72.1,235,576,425,1038,75]
-      ]
-    },
-    {
-      "model": "Domane AL Gen 4",
-      "year": 2024,
-      "lastYear": 2026,
-      "category": "endurance",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-4-gen-4/p/41607/",
-      "retrieved": "2025-07-18",
-      "archive": "https://web.archive.org/web/20250718235355/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-4-gen-4/p/41607/",
       "aliases": ["Domane AL"],
       "sizes": [
         ["44",510,360,74.6,70.3,95,390,420,983,80],
@@ -314,16 +228,31 @@
       ]
     },
     {
-      "model": "Domane Gen 3",
-      "year": 2021,
-      "lastYear": 2023,
+      "model": "Domane AL Gen 4",
+      "year": 2023,
+      "lastYear": 2025,
       "category": "endurance",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-9-gen-3/p/35714/",
-      "retrieved": "2023-03-23",
-      "archive": "https://web.archive.org/web/20230323104901/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-9-gen-3/p/35714/",
-      "aliases": ["Domane"],
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-gen-4/p/41587/",
+      "retrieved": "2025-07-18",
+      "archive": "https://web.archive.org/web/20250718220337/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-gen-4/p/41587/",
       "sizes": [
-        ["47",527,364,74.6,71,110,420,420,986,80],
+        ["44",510,360,74.6,70.3,95,390,420,983,80],
+        ["49",540,368,74.6,70.8,123,440,425,1001,80],
+        ["52",561,371,74.2,71.3,145,475,420,1003,80],
+        ["54",575,374,73.7,71.3,160,500,420,1010,80],
+        ["56",591,377,73.3,71.9,175,525,420,1018,78],
+        ["58",611,380,73,72,195,548,425,1022,78],
+        ["61",646,385,72.7,72.1,235,576,425,1038,75]
+      ]
+    },
+    {
+      "model": "Domane ALR",
+      "year": 2018,
+      "category": "endurance",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-alr/domane-alr-frameset/p/21570/",
+      "retrieved": "2019-08-21",
+      "archive": "https://web.archive.org/web/20190821032220/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-alr/domane-alr-frameset/p/21570/",
+      "sizes": [
         ["50",546,368,74.6,71.1,130,450,420,996,80],
         ["52",561,371,74.2,71.3,145,475,420,1003,80],
         ["54",575,374,73.7,71.3,160,500,420,1010,80],
@@ -334,13 +263,13 @@
       ]
     },
     {
-      "model": "Domane Gen 4",
-      "year": 2020,
-      "lastYear": 2026,
+      "model": "Domane Gen 3",
+      "year": 2019,
+      "lastYear": 2023,
       "category": "endurance",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-gen-4-frameset/p/37302/",
-      "retrieved": "2025-07-17",
-      "archive": "https://web.archive.org/web/20250717133356/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-gen-4-frameset/p/37302/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-5/p/35298/",
+      "retrieved": "2022-08-19",
+      "archive": "https://web.archive.org/web/20220819230141/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-5/p/35298/",
       "aliases": ["Domane"],
       "sizes": [
         ["44",510,360,74.6,70.3,95,390,420,983,80],
@@ -357,11 +286,13 @@
     {
       "model": "Domane Gen 4",
       "year": 2023,
+      "lastYear": 2025,
       "category": "endurance",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-axs-gen-4/p/37346/",
-      "retrieved": "2024-02-29",
-      "archive": "https://web.archive.org/web/20240229012621/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-axs-gen-4/p/37346/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-gen-4-frameset/p/37302/",
+      "retrieved": "2025-07-17",
+      "archive": "https://web.archive.org/web/20250717133356/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-gen-4-frameset/p/37302/",
       "sizes": [
+        ["44",510,360,74.6,70.3,95,390,420,983,80],
         ["47",527,364,74.6,71,110,420,420,986,80],
         ["50",546,368,74.6,71.1,130,450,420,996,80],
         ["52",561,371,74.2,71.3,145,475,420,1003,80],
@@ -391,7 +322,7 @@
     {
       "model": "Domane RSL Gen 4",
       "year": 2023,
-      "lastYear": 2025,
+      "lastYear": 2024,
       "category": "endurance",
       "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-rsl-gen-4-frameset/p/37304/",
       "retrieved": "2024-08-12",
@@ -407,13 +338,15 @@
     {
       "model": "Émonda",
       "year": 2020,
+      "lastYear": 2023,
       "category": "race",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-5/p/24219/",
-      "retrieved": "2019-12-10",
-      "archive": "https://web.archive.org/web/20191210224237/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-5/p/24219/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-frameset/p/30189/",
+      "retrieved": "2020-10-25",
+      "archive": "https://web.archive.org/web/20201025084310/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-frameset/p/30189/",
+      "aliases": ["Émonda ALR"],
       "sizes": [
         ["44",499,362,74.6,70.4,100,408,410,971,72],
-        ["47",522,369,74.6,71.2,115,444,410,974,72],
+        ["47",507,373,74.6,72.1,100,424,410,972,72],
         ["50",535,374,74.6,72.1,130,476,410,974,72],
         ["52",547,379,74.2,72.8,140,493,410,977,72],
         ["54",555,381,73.7,73,155,506,410,981,70],
@@ -427,34 +360,18 @@
     {
       "model": "Émonda",
       "year": 2021,
+      "lastYear": 2025,
       "category": "race",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-frameset/p/30189/",
-      "retrieved": "2020-10-25",
-      "archive": "https://web.archive.org/web/20201025084310/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-frameset/p/30189/",
-      "sizes": [
-        ["44",499,362,74.6,70.4,100,408,410,971,72],
-        ["47",507,373,74.6,72.1,100,424,410,972,72],
-        ["50",535,374,74.6,72.1,130,476,410,974,72],
-        ["52",547,379,74.2,72.8,140,493,410,977,72],
-        ["54",555,381,73.7,73,155,506,410,981,70],
-        ["56",577,387,73.3,73.5,170,533,410,983,70],
-        ["58",596,391,73,73.8,190,553,411,992,68],
-        ["60",615,395,72.8,73.9,210,573,411,1001,68],
-        ["62",634,398,72.5,73.9,230,593,412,1010,68],
-        ["64",654,401,72.3,74,250,613,413,1018,68]
-      ]
-    },
-    {
-      "model": "Émonda",
-      "year": 2026,
-      "category": "race",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-slr/%C3%A9monda-slr-disc-frameset/p/32772/",
-      "retrieved": "2025-07-22",
-      "archive": "https://web.archive.org/web/20250722201540/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-slr/%C3%A9monda-slr-disc-frameset/p/32772/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-7/p/41354/",
+      "retrieved": "2025-07-30",
+      "archive": "https://web.archive.org/web/20250730064002/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-7/p/41354/",
+      "aliases": ["Émonda ALR"],
       "sizes": [
         ["47",507,373,74.6,72.1,100,424,410,972,72],
         ["50",521,378,74.6,72.1,111,453,410,974,72],
         ["52",533,383,74.2,72.8,121,483,410,977,72],
+        ["54",541,386,73.7,73,131,496,410,981,70],
+        ["56",563,391,73.3,73.5,151,525,410,983,70],
         ["58",581,396,73,73.8,171,553,411,992,68],
         ["60",601,399,72.8,73.9,191,573,411,1001,68],
         ["62",620,403,72.5,73.9,211,593,412,1010,68]
@@ -481,71 +398,14 @@
       ]
     },
     {
-      "model": "Émonda ALR",
-      "year": 2020,
-      "lastYear": 2024,
-      "category": "race",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-alr/%C3%A9monda-alr-frameset/p/23613/",
-      "retrieved": "2023-12-11",
-      "archive": "https://web.archive.org/web/20231211192722/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-alr/%C3%A9monda-alr-frameset/p/23613/",
-      "sizes": [
-        ["47",522,369,74.6,71.2,115,444,410,974,72],
-        ["50",535,374,74.6,72.1,130,476,410,974,72],
-        ["52",547,379,74.2,72.8,140,493,410,977,72],
-        ["54",555,381,73.7,73,155,506,410,981,70],
-        ["56",577,387,73.3,73.5,170,533,410,983,70],
-        ["58",596,391,73,73.8,190,553,411,992,68],
-        ["60",615,395,72.8,73.9,210,573,411,1001,68],
-        ["62",634,398,72.5,73.9,230,593,412,1010,68],
-        ["64",654,401,72.3,74,250,613,413,1018,68]
-      ]
-    },
-    {
-      "model": "Émonda ALR",
-      "year": 2021,
-      "lastYear": 2025,
-      "category": "race",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-alr/%C3%A9monda-alr-5/p/41426/",
-      "retrieved": "2025-07-19",
-      "archive": "https://web.archive.org/web/20250719215902/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-alr/%C3%A9monda-alr-5/p/41426/",
-      "aliases": ["Émonda"],
-      "sizes": [
-        ["47",507,373,74.6,72.1,100,424,410,972,72],
-        ["50",521,378,74.6,72.1,111,453,410,974,72],
-        ["52",533,383,74.2,72.8,121,483,410,977,72],
-        ["54",541,386,73.7,73,131,496,410,981,70],
-        ["56",563,391,73.3,73.5,151,525,410,983,70],
-        ["58",581,396,73,73.8,171,553,411,992,68],
-        ["60",601,399,72.8,73.9,191,573,411,1001,68],
-        ["62",620,403,72.5,73.9,211,593,412,1010,68]
-      ]
-    },
-    {
-      "model": "Madone",
-      "year": 2020,
-      "lastYear": 2023,
-      "category": "aero",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7/p/35179/",
-      "retrieved": "2022-11-11",
-      "archive": "https://web.archive.org/web/20221111012847/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7/p/35179/",
-      "sizes": [
-        ["50",521,378,74.6,72.1,111,453,410,974,72],
-        ["52",533,383,74.2,72.8,121,483,410,977,72],
-        ["54",541,386,73.7,73,131,496,410,981,70],
-        ["56",563,391,73.3,73.5,151,525,410,983,70],
-        ["58",581,396,73,73.8,171,553,411,992,68],
-        ["60",601,399,72.8,73.9,191,573,411,1001,68],
-        ["62",620,403,72.5,73.9,211,593,412,1010,68]
-      ]
-    },
-    {
       "model": "Madone Gen 6",
-      "year": 2022,
+      "year": 2020,
       "lastYear": 2023,
       "category": "aero",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-etap-gen-6/p/33355/",
-      "retrieved": "2023-01-31",
-      "archive": "https://web.archive.org/web/20230131100733/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-etap-gen-6/p/33355/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-disc-frameset/p/35084/",
+      "retrieved": "2023-03-29",
+      "archive": "https://web.archive.org/web/20230329063627/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-disc-frameset/p/35084/",
+      "aliases": ["Madone"],
       "sizes": [
         ["47",507,373,74.6,72.1,100,424,410,972,72],
         ["50",521,378,74.6,72.1,111,453,410,974,72],
@@ -559,13 +419,12 @@
     },
     {
       "model": "Madone Gen 7",
-      "year": 2021,
-      "lastYear": 2025,
+      "year": 2023,
+      "lastYear": 2024,
       "category": "aero",
       "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7-gen-7/p/41467/",
       "retrieved": "2024-09-14",
       "archive": "https://web.archive.org/web/20240914131930/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7-gen-7/p/41467/",
-      "aliases": ["Madone"],
       "sizes": [
         ["47",507,373,74.6,72.1,100,424,410,972,72],
         ["50",521,378,74.6,72.1,111,453,410,974,72],
@@ -582,9 +441,9 @@
       "year": 2024,
       "lastYear": 2025,
       "category": "aero",
-      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-axs-gen-8/p/46151/",
-      "retrieved": "2025-06-26",
-      "archive": "https://web.archive.org/web/20250626135255/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-axs-gen-8/p/46151/",
+      "source": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-5-gen-8/p/46218/",
+      "retrieved": "2025-07-18",
+      "archive": "https://web.archive.org/web/20250718232837/https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-5-gen-8/p/46218/",
       "sizes": [
         ["XS",507,370,73.8,71.6,100,404,410,971,72],
         ["S",530,378,73.8,72.2,121,440,410,976,72],

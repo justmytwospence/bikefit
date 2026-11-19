@@ -709,5 +709,19 @@
   }
  ],
  "exclude": [],
- "models": {}
+ "models": {
+  "Tarmac": {
+   "model": "Tarmac SL6"
+  }
+ },
+ "years": [
+  {
+   "model": "Tarmac SL7",
+   "size": "56",
+   "stack": 555,
+   "reach": 398,
+   "year": 2021,
+   "note": "Launched on 28 July 2020 as the 2021 model (https://www.bikeradar.com/news/2021-specialized-tarmac); Specialized's own page is titled 2021 S-Works Tarmac SL7 (https://www.specialized.com/us/en/s-works-tarmac-sl7-dura-ace-di2/p/175292). The pinned SL7 pages start at model year 2022."
+  }
+ ]
 }

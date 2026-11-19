@@ -88,9 +88,11 @@ export function migrate(raw: unknown): AppData | null {
   const d = raw as Record<string, any>;
   if ((d.v !== 1 && d.v !== 2) || !Array.isArray(d.frames) || d.frames.length === 0) return null;
   const base = defaults();
-  const frames = (d.frames as Frame[]).filter((f) => !isOldExample(f));
+  const frames = (d.frames as Frame[]).filter((f) => !isOldExample(f)).map(moved)
+    .filter((f, i, all) => all.findIndex((x) => x.id === f.id) === i);
   if (!frames.length) frames.push(...base.frames);
-  const activeFrameId = frames.some((f) => f.id === d.activeFrameId) ? d.activeFrameId : frames[0].id;
+  const wanted = typeof d.activeFrameId === 'string' ? movedId(d.activeFrameId) : '';
+  const activeFrameId = frames.some((f) => f.id === wanted) ? wanted : frames[0].id;
   let detail: AppData['detail'];
   let locks: Record<ParamKey, boolean>;
   let riderLevel: Level;
@@ -141,6 +143,22 @@ export function migrate(raw: unknown): AppData | null {
       ),
   } as AppData;
 }
+
+/**
+ * Catalog models whose id changed when the catalog's model years were corrected, as old id prefix, new id
+ * prefix, and the years in the old and new names. Saved sizes of them follow, so they keep their size family.
+ */
+const MOVED: [string, string, string, string][] = [
+  ['cat:trek-domane-gen-4-2020-', 'cat:trek-domane-gen-4-2023-', ' 2020–2026 · ', ' 2023–2025 · '],
+];
+function movedId(id: string): string {
+  const hit = MOVED.find(([from]) => id.startsWith(from));
+  return hit ? hit[1] + id.slice(hit[0].length) : id;
+}
+const moved = (f: Frame): Frame => {
+  const hit = MOVED.find(([from]) => f.id.startsWith(from));
+  return hit ? { ...f, id: movedId(f.id), name: f.name.replace(hit[2], hit[3]) } : f;
+};
 
 /** The made-up frames older versions saved for every visitor; dropped now that the catalog has real ones. */
 const OLD_EXAMPLE_IDS = new Set(['endurance-54', 'endurance-56', 'race-54', 'race-56', 'gravel-54', 'gravel-56']);

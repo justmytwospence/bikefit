@@ -72,6 +72,16 @@ describe('migrate', () => {
     expect(migrate(only)!.frames).toEqual(defaults().frames);
     expect(migrate(only)!.activeFrameId).toBe(defaults().activeFrameId);
   });
+  it('follows a catalog model whose id changed with its years', () => {
+    const size = (s: string) => ({ ...defaults().frames[0], id: `cat:trek-domane-gen-4-2020-${s}`, name: `Trek Domane Gen 4 2020–2026 · ${s}` });
+    const mine = { ...defaults().frames[0], id: 'mine', name: 'My frame' };
+    const d: any = { ...defaults(), frames: [size('56'), mine, size('54'), defaults().frames[0]], activeFrameId: 'cat:trek-domane-gen-4-2020-54' };
+    const m = migrate(d)!;
+    expect(m.frames.map((f) => f.id)).toEqual(['cat:trek-domane-gen-4-2023-56', 'mine', 'cat:trek-domane-gen-4-2023-54']);
+    expect(m.frames[0]).toEqual(defaults().frames[0]);
+    expect(m.frames[2].name).toBe('Trek Domane Gen 4 2023–2025 · 54');
+    expect(m.activeFrameId).toBe('cat:trek-domane-gen-4-2023-54');
+  });
   it('stored data with a changed baseline keeps tune mode', () => {
     const changed: any = defaults();
     delete changed.hasSetup;

@@ -111,7 +111,14 @@ const adapter: Adapter = {
       .filter((s) => !seen.has(s.size) && seen.add(s.size));
     // Framesets and some builds list only the sizes they come in; a partial table would read as another geometry.
     if (sizes.length < 5) return [];
-    return [{ model, category, sizes }];
+    // Until 2023 a product page names its model year: beside the title (2019), then as an attribute of the product.
+    const code = page.url.match(/\/p\/(\d+)/)?.[1];
+    const year = Number(
+      $('.buying-zone__model-year').first().text().match(/20\d\d/)?.[0]
+      ?? page.html.match(new RegExp(`product-code="${code}"[^>]*product-model-year="(20\\d\\d)"`))?.[1]
+      ?? page.html.match(new RegExp(`product-model-year="(20\\d\\d)"[^>]*product-code="${code}"`))?.[1],
+    ) || undefined;
+    return [{ model, year, category, sizes }];
   },
 };
 export default adapter;

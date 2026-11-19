@@ -476,7 +476,7 @@
   },
   {
    "model": "Checkpoint ALR Gen 3",
-   "year": 2022,
+   "year": 2025,
    "category": "gravel",
    "source": "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/f/F224-2/checkpoint-alr-5-gen-3/49946/",
    "retrieved": "2026-11-16",
@@ -657,6 +657,9 @@
   }
  ],
  "exclude": [
+  "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/checkpoint-alr-4-gen-3/p/49973/",
+  "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/checkpoint-alr-5-gen-3/p/49946/",
+  "https://www.trekbikes.com/us/en_US/bikes/bikepacking-touring-bikes/checkpoint/checkpoint-alr/checkpoint-alr-frameset-gen-3/p/57659/",
   "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-disc/p/33083/",
   "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-gen-3/p/33083/",
   "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-5-disc/p/33086/",

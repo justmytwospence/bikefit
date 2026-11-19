@@ -3,7 +3,7 @@
   "models": [
     {
       "model": "Crossmachine CX01",
-      "year": 2020,
+      "year": 2019,
       "category": "cyclocross",
       "source": "https://www.bmc-switzerland.com/crossmachine-cx01-two-301609.html",
       "retrieved": "2019-07-17",
@@ -51,48 +51,15 @@
     },
     {
       "model": "Roadmachine",
-      "year": 2020,
-      "category": "endurance",
-      "source": "https://www.bmc-switzerland.com/roadmachine-01-mod-301834.html",
-      "retrieved": "2019-12-10",
-      "archive": "https://web.archive.org/web/20191210080820/https://www.bmc-switzerland.com/roadmachine-01-mod-301834.html",
-      "estimated": ["chainstay","wheelbase"],
-      "sizes": [
-        ["47",516,374,74.2,71.2,112,420,414,981,71],
-        ["51",541,382,74.2,72,139,457,415,992,71],
-        ["54",562,386,74.2,72,156,500,416,1001,71],
-        ["56",586,390,74.2,72,181,522,417,1011,71],
-        ["58",610,394,74.2,72,206,539,418,1021,71],
-        ["61",644,398,74.2,72,242,573,419,1036,71]
-      ]
-    },
-    {
-      "model": "Roadmachine",
-      "year": 2021,
+      "year": 2019,
       "lastYear": 2024,
-      "category": "endurance",
-      "source": "https://bmc-switzerland.com/products/roadmachine-four-metallic-brown-black-road-endurance-bikes-bmc-23-10605-009",
-      "retrieved": "2023-12-09",
-      "archive": "https://web.archive.org/web/20231209174510/https://bmc-switzerland.com/products/roadmachine-four-metallic-brown-black-road-endurance-bikes-bmc-23-10605-009",
+      "category": "gravel",
+      "source": "https://bmc-switzerland.com/products/roadmachine-x-one-bikes-bmc-23-10607-005",
+      "retrieved": "2025-10-14",
+      "archive": "https://web.archive.org/web/20251014174402/https://bmc-switzerland.com/products/roadmachine-x-one-bikes-bmc-23-10607-005",
       "aliases": ["Roadmachine X"],
       "sizes": [
         ["47",516,374,74.2,71.2,112,420,410,982,71],
-        ["51",541,382,74.2,71.2,139,457,410,999,71],
-        ["54",562,386,74.2,72,156,500,410,997,71],
-        ["56",586,390,74.2,72,181,522,410,1008,71],
-        ["58",610,394,74.2,72,206,539,410,1020,71],
-        ["61",644,398,74.2,72,242,573,410,1035,71]
-      ]
-    },
-    {
-      "model": "Roadmachine",
-      "year": 2023,
-      "category": "endurance",
-      "source": "https://www.bmc-switzerland.com/intl_en/bmc-roadmachine-01-mod-carbon-metallic-grey-23.html",
-      "retrieved": "2023-11-28",
-      "archive": "https://web.archive.org/web/20231128153655/https://www.bmc-switzerland.com/intl_en/bmc-roadmachine-01-mod-carbon-metallic-grey-23.html",
-      "sizes": [
-        ["47",516,374,74.2,72,112,420,410,982,71],
         ["51",541,382,74.2,71.2,139,457,410,999,71],
         ["54",562,386,74.2,72,156,500,410,997,71],
         ["56",586,390,74.2,72,181,522,410,1008,71],
@@ -136,8 +103,8 @@
     },
     {
       "model": "Roadmachine X",
-      "year": 2020,
-      "lastYear": 2021,
+      "year": 2019,
+      "lastYear": 2020,
       "category": "gravel",
       "source": "https://www.bmc-switzerland.com/roadmachine-x-302030.html",
       "retrieved": "2020-08-07",
@@ -153,7 +120,7 @@
     },
     {
       "model": "Teammachine ALR",
-      "year": 2020,
+      "year": 2019,
       "lastYear": 2024,
       "category": "race",
       "source": "https://bmc-switzerland.com/products/teammachine-alr-two-bikes-bmc-23-10602-004",
@@ -170,7 +137,7 @@
     {
       "model": "Teammachine R",
       "year": 2024,
-      "lastYear": 2027,
+      "lastYear": 2026,
       "category": "race",
       "source": "https://bmc-switzerland.com/products/teammachine-r-mpc-mod-bike-frames-bmc-00a-000003",
       "retrieved": "2026-09-22",
@@ -187,8 +154,8 @@
     },
     {
       "model": "Teammachine SLR",
-      "year": 2020,
-      "lastYear": 2021,
+      "year": 2019,
+      "lastYear": 2020,
       "category": "race",
       "source": "https://www.bmc-switzerland.com/teammachine-slr02-disc-one-301773.html",
       "retrieved": "2020-08-14",
@@ -237,8 +204,8 @@
     },
     {
       "model": "Teammachine SLR 03",
-      "year": 2020,
-      "lastYear": 2021,
+      "year": 2019,
+      "lastYear": 2020,
       "category": "race",
       "source": "https://www.bmc-switzerland.com/teammachine-slr03-one-301821.html",
       "retrieved": "2020-08-08",
@@ -253,7 +220,7 @@
     },
     {
       "model": "Timemachine Road",
-      "year": 2020,
+      "year": 2019,
       "lastYear": 2026,
       "category": "aero",
       "source": "https://bmc-switzerland.com/products/timemachine-road-01-mod-bike-frames-bmc-19a-000091",
@@ -270,23 +237,8 @@
     },
     {
       "model": "URS",
-      "year": 2020,
-      "category": "gravel",
-      "source": "https://www.bmc-switzerland.com/urs-three-301839.html",
-      "retrieved": "2019-12-15",
-      "archive": "https://web.archive.org/web/20191215190129/https://www.bmc-switzerland.com/urs-three-301839.html",
-      "estimated": ["chainstay"],
-      "sizes": [
-        ["S",538,403,74,70,113,431,428,1041,69],
-        ["M",569,415,74,70,146,459,429,1064,69],
-        ["L",603,419,74,70,172,492,430,1081,69],
-        ["XL",641,429,74,70,207,527,431,1105,69]
-      ]
-    },
-    {
-      "model": "URS",
-      "year": 2021,
-      "lastYear": 2026,
+      "year": 2019,
+      "lastYear": 2025,
       "category": "gravel",
       "source": "https://bmc-switzerland.com/products/urs-01-three-bikes-bmc-22-10619-008",
       "retrieved": "2025-11-05",
@@ -303,9 +255,9 @@
       "year": 2025,
       "lastYear": 2026,
       "category": "gravel",
-      "source": "https://bmc-switzerland.com/products/urs-two-bikes-bmc-26a-000043",
+      "source": "https://bmc-switzerland.com/products/urs-01-lt-one-bikes-bmc-27a-000058",
       "retrieved": "2026-03-20",
-      "archive": "https://web.archive.org/web/20260320100528/https://bmc-switzerland.com/products/urs-two-bikes-bmc-26a-000043",
+      "archive": "https://web.archive.org/web/20260320100914/https://bmc-switzerland.com/products/urs-01-lt-one-bikes-bmc-27a-000058",
       "sizes": [
         ["XS",560,390,74.5,69,133,430,430,1052,76],
         ["S",560,400,74.5,69,133,445,430,1062,76],

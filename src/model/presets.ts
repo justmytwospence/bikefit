@@ -43,7 +43,7 @@ export const DEFAULT_PARAMS: FitParams = {
  * src/data/catalog.test.ts checks it still matches.
  */
 export const DEFAULT_FRAME: Frame = {
-  id: 'cat:trek-domane-gen-4-2020-56', name: 'Trek Domane Gen 4 2020–2026 · 56',
+  id: 'cat:trek-domane-gen-4-2023-56', name: 'Trek Domane Gen 4 2023–2025 · 56',
   stack: 591, reach: 377, seatTubeAngle: 73.3, headTubeAngle: 71.9, headTubeLength: 175,
   seatTubeLength: 525, chainstay: 420, wheelbase: 1008, bbDrop: 78, maxSpacers: 40, tyreWidth: 32,
 };

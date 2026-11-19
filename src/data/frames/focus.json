@@ -4,23 +4,7 @@
     {
       "model": "Atlas",
       "year": 2023,
-      "lastYear": 2024,
-      "category": "gravel",
-      "source": "https://www.focus-bikes.com/int/atlas-8-0",
-      "retrieved": "2025-03-22",
-      "archive": "https://web.archive.org/web/20250322090403/https://www.focus-bikes.com/int/atlas-8-0",
-      "sizes": [
-        ["XS",569,370,74,70.5,115,445,425,1016,75],
-        ["S",574,380,73.5,70.5,120,485,425,1028,75],
-        ["M",583,395,73.5,70.5,130,515,425,1046,75],
-        ["L",611,410,73.5,70.5,150,545,425,1068,75],
-        ["XL",630,420,73.5,70.5,180,585,425,1088,75]
-      ]
-    },
-    {
-      "model": "Atlas",
-      "year": 2024,
-      "lastYear": 2027,
+      "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.focus-bikes.com/int/atlas-8-8",
       "retrieved": "2026-11-14",
@@ -51,22 +35,6 @@
     {
       "model": "Atlas AL",
       "year": 2021,
-      "lastYear": 2024,
-      "category": "gravel",
-      "source": "https://www.focus-bikes.com/int/1066343-atlas-6-9",
-      "retrieved": "2023-10-02",
-      "archive": "https://web.archive.org/web/20231002235604/https://www.focus-bikes.com/int/1066343-atlas-6-9",
-      "sizes": [
-        ["XS",568,370,74,70.5,114,450,425,1015,75],
-        ["S",582,380,73.5,70.5,129,490,425,1030,75],
-        ["M",596,395,73.5,70.5,144,520,425,1051,75],
-        ["L",615,410,73.5,70.5,164,550,425,1072,75],
-        ["XL",643,420,73.5,70.5,194,577,425,1092,75]
-      ]
-    },
-    {
-      "model": "Atlas AL",
-      "year": 2024,
       "lastYear": 2025,
       "category": "gravel",
       "source": "https://www.focus-bikes.com/cz_en/atlas-6-7-eqp",
@@ -82,8 +50,8 @@
     },
     {
       "model": "Atlas AL",
-      "year": 2026,
-      "lastYear": 2027,
+      "year": 2025,
+      "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.focus-bikes.com/int/atlas-6-8-eqp",
       "retrieved": "2026-07-31",
@@ -98,26 +66,45 @@
     },
     {
       "model": "Izalco Max",
-      "year": 2020,
-      "lastYear": 2024,
+      "year": 2019,
+      "lastYear": 2022,
       "category": "race",
-      "source": "https://www.focus-bikes.com/int/1069720-izalco-max-8-8",
-      "retrieved": "2023-09-26",
-      "archive": "https://web.archive.org/web/20230926082411/https://www.focus-bikes.com/int/1069720-izalco-max-8-8",
+      "source": "https://www.focus-bikes.com/int/42845-izalco-max-disc-ultegra-di2",
+      "retrieved": "2022-10-05",
+      "archive": "https://web.archive.org/web/20221005000911/https://www.focus-bikes.com/int/42845-izalco-max-disc-ultegra-di2",
       "aliases": ["Izalco Max Disc"],
       "sizes": [
-        ["XXS",502,360,74,69.5,80,430,410,975,78],
-        ["XS",506,368,73.5,70.5,80,470,410,975,78],
-        ["S",528,378,73.5,71.5,100,490,410,985,78],
-        ["M",544,390,73.5,72,115,510,410,997,78],
-        ["L",554,400,73.5,72,125,530,410,1010,78],
-        ["XL",579,410,73.5,72.5,150,550,410,1024,78],
-        ["XXL",613,420,73.5,72.5,185,590,410,1044,78]
+        ["XXS",510,373,73.8,70.8,110,480,415,980,72],
+        ["XS",515,378,73.6,71.4,115,500,415,982,71],
+        ["S",521,383,73.6,71.7,120,520,415,987,71],
+        ["M",537,390,73.5,72.5,135,540,415,992,70],
+        ["L",565,398,73.5,73.5,160,560,415,998,70],
+        ["XL",583,406,73.4,73.6,180,580,415,1012,69],
+        ["XXL",601,422,73.2,73.7,200,610,415,1033,68]
       ]
     },
     {
       "model": "Izalco Max",
-      "year": 2022,
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "race",
+      "source": "https://www.focus-bikes.com/int/1069718-izalco-max-9-8",
+      "retrieved": "2021-10-24",
+      "archive": "https://web.archive.org/web/20211024061341/https://www.focus-bikes.com/int/1069718-izalco-max-9-8",
+      "aliases": ["Izalco Max Disc"],
+      "sizes": [
+        ["XXS",502,360,74,69.5,80,360,410,975,78],
+        ["XS",506,368,73.5,70.5,80,360,410,975,78],
+        ["S",528,378,73.5,71.5,100,360,410,985,78],
+        ["M",544,390,73.5,72,115,360,410,997,78],
+        ["L",554,400,73.5,72,125,360,410,1010,78],
+        ["XL",579,410,73.5,72.5,150,360,410,1024,78],
+        ["XXL",613,420,73.5,72.5,185,360,410,1044,78]
+      ]
+    },
+    {
+      "model": "Izalco Max",
+      "year": 2021,
       "category": "race",
       "source": "https://www.focus-bikes.com/jp_en/1072082-izalco-max-9-frameset",
       "retrieved": "2021-10-18",
@@ -151,41 +138,13 @@
       ]
     },
     {
-      "model": "Izalco Max Disc",
-      "year": 2021,
-      "category": "race",
-      "source": "https://www.focus-bikes.com/int/1068538-izalco-max-disc-pari",
-      "retrieved": "2021-11-30",
-      "archive": "https://web.archive.org/web/20211130100829/https://www.focus-bikes.com/int/1068538-izalco-max-disc-pari",
-      "sizes": [
-        ["S",528,378,73.5,71.5,100,360,410,985,78],
-        ["M",544,390,73.5,72,115,360,410,997,78],
-        ["L",554,400,73.5,72,125,360,410,1010,78],
-        ["XL",579,410,73.5,72.5,150,360,410,1024,78]
-      ]
-    },
-    {
-      "model": "Izalco Max Disc",
-      "year": 2023,
-      "category": "race",
-      "source": "https://www.focus-bikes.com/int/1068538-izalco-max-disc-pari",
-      "retrieved": "2023-05-31",
-      "archive": "https://web.archive.org/web/20230531004542/https://www.focus-bikes.com/int/1068538-izalco-max-disc-pari",
-      "sizes": [
-        ["S",528,378,73.5,71.5,100,490,410,985,78],
-        ["M",544,390,73.5,72,115,510,410,997,78],
-        ["L",554,400,73.5,72,125,530,410,1010,78],
-        ["XL",579,410,73.5,72.5,150,550,410,1024,78]
-      ]
-    },
-    {
       "model": "Izalco Race",
-      "year": 2020,
-      "lastYear": 2023,
+      "year": 2019,
+      "lastYear": 2022,
       "category": "race",
-      "source": "https://www.focus-bikes.com/int/95704-izalco-race-9-9",
-      "retrieved": "2022-10-02",
-      "archive": "https://web.archive.org/web/20221002054340/https://www.focus-bikes.com/int/95704-izalco-race-9-9",
+      "source": "https://www.focus-bikes.com/int/42958-izalco-race-dura-ace",
+      "retrieved": "2022-10-04",
+      "archive": "https://web.archive.org/web/20221004234015/https://www.focus-bikes.com/int/42958-izalco-race-dura-ace",
       "sizes": [
         ["XS",513,370,75.5,71,115,480,408,970,70],
         ["S",531,380,73.5,72,130,510,408,977,70],
@@ -195,24 +154,8 @@
       ]
     },
     {
-      "model": "Izalco Race",
-      "year": 2022,
-      "category": "race",
-      "source": "https://www.focus-bikes.com/int/95704-izalco-race-9-9",
-      "retrieved": "2021-10-18",
-      "archive": "https://web.archive.org/web/20211018222940/https://www.focus-bikes.com/int/95704-izalco-race-9-9",
-      "estimated": ["seatTubeLength"],
-      "sizes": [
-        ["XS",513,370,75.5,71,115,455,408,970,70],
-        ["S",531,380,73.5,72,130,477,408,977,70],
-        ["M",547,390,73.5,72.5,145,497,408,987,70],
-        ["L",569,400,73.5,73.5,165,525,408,995,70],
-        ["XL",588,415,73.5,73.5,185,549,408,1015,70]
-      ]
-    },
-    {
       "model": "Izalco Race AL",
-      "year": 2020,
+      "year": 2019,
       "category": "race",
       "source": "https://www.focus-bikes.com/int/95673-izalco-race-6-9",
       "retrieved": "2019-12-12",
@@ -227,27 +170,12 @@
     },
     {
       "model": "Izalco Race AL",
-      "year": 2022,
+      "year": 2021,
+      "lastYear": 2022,
       "category": "race",
-      "source": "https://www.focus-bikes.com/int/95627-izalco-race-6-7",
-      "retrieved": "2021-10-19",
-      "archive": "https://web.archive.org/web/20211019130348/https://www.focus-bikes.com/int/95627-izalco-race-6-7",
-      "estimated": ["seatTubeLength"],
-      "sizes": [
-        ["XS",513,370,75.5,71,115,455,408,978,70],
-        ["S",531,380,73.5,72,130,477,408,984,70],
-        ["M",547,390,73.5,72.5,145,497,408,995,70],
-        ["L",569,400,73.5,73.5,165,525,408,1002,70],
-        ["XL",588,415,73.5,73.5,185,549,408,1022,70]
-      ]
-    },
-    {
-      "model": "Izalco Race AL",
-      "year": 2023,
-      "category": "race",
-      "source": "https://www.focus-bikes.com/int/95627-izalco-race-6-7",
-      "retrieved": "2022-10-02",
-      "archive": "https://web.archive.org/web/20221002073845/https://www.focus-bikes.com/int/95627-izalco-race-6-7",
+      "source": "https://www.focus-bikes.com/int/42549-izalco-race-al-105",
+      "retrieved": "2022-10-05",
+      "archive": "https://web.archive.org/web/20221005122215/https://www.focus-bikes.com/int/42549-izalco-race-al-105",
       "sizes": [
         ["XS",513,370,75.5,71,115,480,408,978,70],
         ["S",531,380,73.5,72,130,510,408,984,70],
@@ -258,12 +186,12 @@
     },
     {
       "model": "Izalco Race Disc",
-      "year": 2020,
-      "lastYear": 2023,
+      "year": 2019,
+      "lastYear": 2022,
       "category": "race",
-      "source": "https://www.focus-bikes.com/int/95597-izalco-race-disc-9-9",
-      "retrieved": "2022-10-02",
-      "archive": "https://web.archive.org/web/20221002060358/https://www.focus-bikes.com/int/95597-izalco-race-disc-9-9",
+      "source": "https://www.focus-bikes.com/int/42959-izalco-race-disc-ultegra",
+      "retrieved": "2022-10-04",
+      "archive": "https://web.archive.org/web/20221004222504/https://www.focus-bikes.com/int/42959-izalco-race-disc-ultegra",
       "sizes": [
         ["XS",513,370,75.5,71,115,480,415,978,70],
         ["S",531,380,73.5,72,130,510,415,984,70],
@@ -273,36 +201,20 @@
       ]
     },
     {
-      "model": "Izalco Race Disc",
-      "year": 2022,
-      "category": "race",
-      "source": "https://www.focus-bikes.com/int/95597-izalco-race-disc-9-9",
-      "retrieved": "2021-10-18",
-      "archive": "https://web.archive.org/web/20211018225942/https://www.focus-bikes.com/int/95597-izalco-race-disc-9-9",
-      "estimated": ["seatTubeLength"],
-      "sizes": [
-        ["XS",513,370,75.5,71,115,455,415,978,70],
-        ["S",531,380,73.5,72,130,477,415,984,70],
-        ["M",547,390,73.5,72.5,145,497,415,995,70],
-        ["L",569,400,73.5,73.5,165,525,415,1002,70],
-        ["XL",589,415,73.5,73.5,185,550,415,1022,70]
-      ]
-    },
-    {
       "model": "Mares",
-      "year": 2020,
-      "lastYear": 2023,
+      "year": 2019,
+      "lastYear": 2022,
       "category": "cyclocross",
-      "source": "https://www.focus-bikes.com/int/33952-mares-frameset",
-      "retrieved": "2022-10-03",
-      "archive": "https://web.archive.org/web/20221003144843/https://www.focus-bikes.com/int/33952-mares-frameset",
+      "source": "https://www.focus-bikes.com/int/69442-mares-mechanical-frameset",
+      "retrieved": "2022-10-05",
+      "archive": "https://web.archive.org/web/20221005114148/https://www.focus-bikes.com/int/69442-mares-mechanical-frameset",
       "sizes": [
-        ["XXS",526,367,73.5,70,110,480,425,1003,65],
-        ["XS",536,375,73.5,70,120,510,425,1015,65],
-        ["S",547,382,73.5,70.5,130,540,425,1020,65],
-        ["M",559,390,73.5,71,140,560,425,1027,65],
-        ["L",568,397,74.5,71,150,580,425,1037,65],
-        ["XL",579,405,73.5,71.5,160,600,425,1045,65]
+        ["XS",526,367,73.5,70,110,480,425,1003,65],
+        ["S",536,375,73.5,70,120,510,425,1015,65],
+        ["M",547,382,73.5,70.5,130,540,425,1020,65],
+        ["L",559,390,73.5,71,140,560,425,1027,65],
+        ["XL",568,397,74.5,71,150,580,425,1037,65],
+        ["XXL",579,405,74.5,71.5,160,600,425,1045,65]
       ]
     },
     {
@@ -325,26 +237,9 @@
       "model": "Mares",
       "year": 2022,
       "category": "cyclocross",
-      "source": "https://www.focus-bikes.com/int/33952-mares-frameset",
-      "retrieved": "2021-10-28",
-      "archive": "https://web.archive.org/web/20211028174452/https://www.focus-bikes.com/int/33952-mares-frameset",
-      "estimated": ["seatTubeLength"],
-      "sizes": [
-        ["XXS",526,367,73.5,70,110,475,425,1003,65],
-        ["XS",536,375,73.5,70,120,488,425,1015,65],
-        ["S",547,382,73.5,70.5,130,502,425,1020,65],
-        ["M",559,390,73.5,71,140,518,425,1027,65],
-        ["L",568,397,74.5,71,150,530,425,1037,65],
-        ["XL",579,405,73.5,71.5,160,544,425,1045,65]
-      ]
-    },
-    {
-      "model": "Mares",
-      "year": 2023,
-      "category": "cyclocross",
-      "source": "https://www.focus-bikes.com/int/1030545-mares-9-9",
-      "retrieved": "2022-10-02",
-      "archive": "https://web.archive.org/web/20221002072119/https://www.focus-bikes.com/int/1030545-mares-9-9",
+      "source": "https://www.focus-bikes.com/int/1030131-mares-9-8",
+      "retrieved": "2022-10-03",
+      "archive": "https://web.archive.org/web/20221003154722/https://www.focus-bikes.com/int/1030131-mares-9-8",
       "sizes": [
         ["XS",526,367,73.5,70,110,480,425,1003,65],
         ["S",536,375,73.5,70,120,510,425,1015,65],
@@ -356,12 +251,12 @@
     },
     {
       "model": "Mares AL",
-      "year": 2020,
-      "lastYear": 2023,
+      "year": 2019,
+      "lastYear": 2022,
       "category": "cyclocross",
-      "source": "https://www.focus-bikes.com/int/28960-mares-al-commuter",
+      "source": "https://www.focus-bikes.com/int/185993-mares-6-9",
       "retrieved": "2022-10-05",
-      "archive": "https://web.archive.org/web/20221005125437/https://www.focus-bikes.com/int/28960-mares-al-commuter",
+      "archive": "https://web.archive.org/web/20221005121740/https://www.focus-bikes.com/int/185993-mares-6-9",
       "sizes": [
         ["XS",539,358,73.5,70,120,480,425,999,65],
         ["S",549,367,73.5,70,130,510,425,1010,65],
@@ -372,43 +267,24 @@
       ]
     },
     {
-      "model": "Mares AL",
-      "year": 2022,
-      "category": "cyclocross",
-      "source": "https://www.focus-bikes.com/int/28960-mares-al-commuter",
-      "retrieved": "2021-11-30",
-      "archive": "https://web.archive.org/web/20211130101851/https://www.focus-bikes.com/int/28960-mares-al-commuter",
-      "estimated": ["seatTubeLength"],
-      "sizes": [
-        ["XS",539,358,73.5,70,120,492,425,999,65],
-        ["S",549,367,73.5,70,130,505,425,1010,65],
-        ["M",560,372,73.5,70.5,140,519,425,1015,65],
-        ["L",571,381,73.5,71,150,534,425,1023,65],
-        ["XL",581,386,73.5,71,160,547,425,1031,65],
-        ["XXL",592,395,73.5,71.5,170,561,425,1038,65]
-      ]
-    },
-    {
       "model": "Paralane",
-      "year": 2020,
+      "year": 2019,
       "lastYear": 2023,
       "category": "endurance",
-      "source": "https://www.focus-bikes.com/int/43248-paralane-factory",
-      "retrieved": "2022-12-06",
-      "archive": "https://web.archive.org/web/20221206205852/https://www.focus-bikes.com/int/43248-paralane-factory",
+      "source": "https://www.focus-bikes.com/int/185941-paralane-6-8-gc",
+      "retrieved": "2023-02-07",
+      "archive": "https://web.archive.org/web/20230207121438/https://www.focus-bikes.com/int/185941-paralane-6-8-gc",
+      "aliases": ["Paralane AL"],
       "sizes": [
-        ["XS",534,359,75.5,71,120,455,415,974,75],
-        ["S",564,369,74.5,71.5,150,485,415,990,75],
-        ["M",580,375,73.5,72,165,515,415,996,75],
-        ["L",594,384,73.5,72,180,535,415,1010,75],
-        ["XL",615,394,73.5,72.5,200,555,415,1021,75],
-        ["XXL",630,404,73.5,72.5,215,595,415,1036,75]
+        ["S",564,370,74.5,71.5,150,480,415,990,75],
+        ["M",580,375,73.5,72,165,516,415,996,75],
+        ["L",605,390,73.5,72.5,190,540,415,1014,75],
+        ["XL",630,405,73.5,72.5,215,570,415,1036,75]
       ]
     },
     {
       "model": "Paralane",
       "year": 2021,
-      "lastYear": 2022,
       "category": "endurance",
       "source": "https://www.focus-bikes.com/int/95647-paralane-9-7",
       "retrieved": "2021-10-24",
@@ -418,22 +294,6 @@
         ["M",580,375,73.5,72,165,340,415,996,75],
         ["L",605,390,73.5,72.5,190,340,415,1014,75],
         ["XL",630,405,73.5,72.5,215,340,415,1036,75]
-      ]
-    },
-    {
-      "model": "Paralane",
-      "year": 2022,
-      "category": "endurance",
-      "source": "https://www.focus-bikes.com/int/185837-paralane-8-9",
-      "retrieved": "2021-10-16",
-      "archive": "https://web.archive.org/web/20211016002006/https://www.focus-bikes.com/int/185837-paralane-8-9",
-      "sizes": [
-        ["XS",534,359,75.5,71,120,340,415,974,75],
-        ["S",564,369,74.5,71.5,150,340,415,990,75],
-        ["M",580,375,73.5,72,165,340,415,996,75],
-        ["L",594,384,73.5,72,180,340,415,1010,75],
-        ["XL",615,394,73.5,72.5,200,340,415,1021,75],
-        ["XXL",630,404,73.5,72.5,215,340,415,1036,75]
       ]
     },
     {
@@ -454,12 +314,12 @@
     },
     {
       "model": "Paralane AL",
-      "year": 2020,
-      "lastYear": 2023,
+      "year": 2019,
+      "lastYear": 2022,
       "category": "endurance",
-      "source": "https://www.focus-bikes.com/int/43154-paralane-al-tiagra",
+      "source": "https://www.focus-bikes.com/int/42951-paralane-al-105",
       "retrieved": "2022-10-02",
-      "archive": "https://web.archive.org/web/20221002071335/https://www.focus-bikes.com/int/43154-paralane-al-tiagra",
+      "archive": "https://web.archive.org/web/20221002073523/https://www.focus-bikes.com/int/42951-paralane-al-105",
       "sizes": [
         ["XS",536,360,75.5,71,120,450,415,976,75],
         ["S",566,370,74.5,71.5,150,480,415,991,75],
@@ -471,11 +331,11 @@
     },
     {
       "model": "Paralane AL",
-      "year": 2022,
+      "year": 2021,
       "category": "endurance",
-      "source": "https://www.focus-bikes.com/int/95688-paralane-6-9",
+      "source": "https://www.focus-bikes.com/int/185929-paralane-6-6-commute",
       "retrieved": "2021-10-25",
-      "archive": "https://web.archive.org/web/20211025015549/https://www.focus-bikes.com/int/95688-paralane-6-9",
+      "archive": "https://web.archive.org/web/20211025013910/https://www.focus-bikes.com/int/185929-paralane-6-6-commute",
       "sizes": [
         ["S",564,370,74.5,71.5,150,350,415,990,75],
         ["M",580,375,73.5,72,165,350,415,996,75],

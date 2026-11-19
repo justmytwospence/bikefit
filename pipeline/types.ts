@@ -1,6 +1,7 @@
 import type { BrandFile, FrameCategory, GeometryKey } from '../src/data/schema';
 
 export interface Capture { url: string; timestamp: string; sha256: string }
+/** `year` only orders the manifest; the build dates a page from what it states, its capture and `firstSeen`. */
 export interface PageEntry extends Capture { family: string; year: number; related: Capture[]; firstSeen?: string }
 /** pipeline/manifest/<file>.json */
 export interface Manifest { brand: string; file: string; pages: PageEntry[] }
@@ -8,6 +9,7 @@ export interface Page { url: string; timestamp: string; html: string; related: R
 export type PartialSize = { size: string } & Partial<Record<GeometryKey, number>>;
 export interface Extracted {
   model: string;
+  /** The model year the page states, when it states one. */
   year?: number;
   category: FrameCategory;
   sizes: PartialSize[];
@@ -35,4 +37,9 @@ export interface Overrides {
   exclude: string[];
   /** Model name as extracted to fixes. */
   models: Record<string, { model?: string; category?: FrameCategory; tyreWidth?: number; maxSpacers?: number; aliases?: string[]; drop?: boolean }>;
+  /**
+   * Years the pinned pages cannot show. The built model of this name whose `size` has this stack and reach gets
+   * `year`, and `lastYear` when given; `note` says where the years come from and is not read by the build.
+   */
+  years?: { model: string; size: string; stack: number; reach: number; year: number; lastYear?: number; note: string }[];
 }

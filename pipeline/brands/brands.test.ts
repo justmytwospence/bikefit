@@ -38,6 +38,54 @@ function check(a: Adapter, file: string, url: string, model: string, sizes: stri
 
 describe('adapters', () => {
   it('specialized', () => check(specialized, 'specialized', 'https://www.specialized.com/us/en/tarmac-sl9-expert/p/1', 'Tarmac SL9', ['44', '49', '52', '54', '56', '58', '61'], ['44', 501, 366]));
+  describe('specialized pages', () => {
+    const row = (label: string, values: (number | string)[], unit = 'mm') => `<tr><td>${label}</td>${values.map((v) => `<td>${v}${unit}</td>`).join('')}</tr>`;
+    const table = (over: Record<string, (number | string)[]> = {}, labels = ['49', '52', '54', '56']) => `<table><tr><th></th>${labels.map((l) => `<th>${l}</th>`).join('')}</tr>${[
+      row('Stack', over.stack ?? [514, 527, 544, 565]), row('Reach', over.reach ?? [375, 380, 384, 395]),
+      row('Head Tube Length', [109, 120, 137, 157]), row('Head Tube Angle', over.headTubeAngle ?? [71.75, 72.5, 73, 73.5], '°'),
+      row('Seat Tube Length', over.seatTubeLength ?? [445, 456, 473, 494]), row('Seat Tube Angle', over.seatTubeAngle ?? [75.5, 74, 74, 73.5], '°'),
+      row('Wheelbase', over.wheelbase ?? [973, 975, 978, 991]), row('Chainstay Length', [410, 410, 410, 410]), row('BB Drop', [74, 74, 72, 72]),
+    ].join('')}</table>`;
+    const read = (h1: string, id = 216958, body = table()) => specialized.extract({
+      url: `https://www.specialized.com/us/en/x/p/${id}`, timestamp: '20260101000000', related: {}, html: `<html><body><h1>${h1}</h1>${body}</body></html>`,
+    });
+    it('dates a page by its heading, then its product data, then its id', () => {
+      expect(read('2018 Roubaix Comp', 129154)[0].year).toBe(2018);
+      const data = '<script>self.push("{\\"modelYearLabel\\":\\"Model Year\\"},{\\"modelYear\\":2024,\\"name\\":\\"Tarmac SL7 Sport\\"},{\\"modelYear\\":2019,\\"name\\":\\"Rib Cage\\"}")</script>';
+      expect(read('Tarmac SL7 Sport', 216958, data + table())[0].year).toBe(2024);
+      expect(read('Tarmac SL7 Comp', 199523, '<script>{"modelYear":2022,"group":"Bikes"}</script>' + table())[0].year).toBe(2022);
+      expect(read('Venge Pro', 154594)[0].year).toBe(2019);
+      expect(read('Tarmac Elite', 65269)[0].year).toBe(2017);
+      expect(read('Aethos Comp', 199444)[0].year).toBe(2022);
+      expect(read('Aethos 2 Pro', 4221564)[0].year).toBeUndefined();
+    });
+    it('names generations, the aluminium frames and the Roubaix Team', () => {
+      const named = (h1: string) => read(h1)[0].model;
+      expect(named('Tarmac SL7 Comp - Rival eTap AXS')).toBe('Tarmac SL7');
+      expect(named('Aethos 2 Pro - SRAM Force AXS')).toBe('Aethos 2');
+      expect(named('Diverge 4 Sport Carbon')).toBe('Diverge 4');
+      expect(named('Diverge 9r Frameset')).toBe('Diverge');
+      expect(named('2021 Diverge Base E5')).toBe('Diverge E5');
+      expect(named('Diverge 3 Alloy - Shimano CUES')).toBe('Diverge E5');
+      expect(named('CruX E5 Sport')).toBe('Crux E5');
+      expect(named('2023 S-Works Crux')).toBe('Crux');
+      expect(named('2020 S-Works Roubaix - Team')).toBe('Roubaix Team');
+      expect(named('Allez E5 Elite')).toBe('Allez');
+    });
+    it('rejects a table whose rows are out of size order', () => {
+      expect(read('Allez', 199980, table({ stack: [514, 544, 565, 527] }))).toEqual([]);
+      expect(read('Diverge', 199969, table({ reach: [375, 384, 395, 380] }))).toEqual([]);
+      expect(read('Tarmac SL7 Sport', 4221542, table({ wheelbase: [991, 973, 975, 978] }))).toEqual([]);
+      expect(read('Allez Sprint', 221508, table({ headTubeAngle: [71.75, 72.5, 73.5, 73] }))).toEqual([]);
+      expect(read('Crux', 129089, table({ seatTubeAngle: [73.5, 74, 74, 75.5] }))).toEqual([]);
+      // Real tables dip by a millimetre or two.
+      expect(read('Venge', 128980, table({ reach: [376, 375, 384, 395], wheelbase: [975, 973, 978, 991] }))).toHaveLength(1);
+    });
+    it('reads the size labels of the old site', () => {
+      expect(read('Tarmac', 153988, table({}, ['490.0', '520.0', '540.0', '560.0']))[0].sizes.map((s) => s.size)).toEqual(['49', '52', '54', '56']);
+      expect(read('Diverge', 171315, table({}, ['48.0', '52.0', '54.0', '56.0']))[0].sizes.map((s) => s.size)).toEqual(['48', '52', '54', '56']);
+    });
+  });
   it('canyon', () => check(canyon, 'canyon', 'https://www.canyon.com/en-us/road-bikes/race-bikes/ultimate/cf-slx/ultimate-cf-slx-8-di2/4372.html', 'Ultimate CF SLX', ['2XS', 'XS', 'S', 'M', 'L', 'XL', '2XL'], ['L', 580, 401]));
   it('canyon geometry table, before product data', () => {
     const url = 'https://www.canyon.com/en-us/gravel-bikes/race/grail/cf-slx/grail-cf-slx-9-etap/2738.html';
@@ -55,6 +103,13 @@ describe('adapters', () => {
   it('giant with drawing letters, before 2022', () => {
     check(giant, 'giant-code', 'https://www.giant-bicycles.com/us/contend-sl-2-disc-2019', 'Contend SL', ['S', 'M', 'ML', 'L', 'XL'], ['S', 546, 373]);
   });
+  it('giant reads the model year and the model from the title', () => {
+    const p = page('giant-code', 'https://www.giant-bicycles.com/us/contend-sl-2-disc-2019');
+    expect(giant.extract(p)[0].year).toBe(2019);
+    const titled = (t: string) => giant.extract({ ...p, html: p.html.replace(/<title>[^<]*/, `<title>${t}`).replace('<h1>Contend SL 2 Disc</h1>', '') })[0];
+    expect(titled('TCR Advanced Disc 2 Pro Compact (2022) | bike | Giant Bicycles US')).toMatchObject({ model: 'TCR Advanced', year: 2022 });
+    expect(titled('Revolt Advanced 2 | Giant Bicycles US').year).toBeUndefined();
+  });
   it('accepts and rejects urls', () => {
     expect(specialized.accept('https://www.specialized.com/us/en/turbo-creo-sl/p/1')).toBeNull();
     expect(specialized.accept('https://www.specialized.com/us/en/s-works-tarmac-sl9-sram-red/p/22?x=1')?.family).toBe('tarmac-sl9');
@@ -70,6 +125,15 @@ describe('adapters', () => {
       .toEqual({ url: 'https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-axs-gen-7/p/37420/', family: 'madone-slr-9-gen7' });
     expect(trek.accept('https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-lt/domane-lt-7-gen-2/p/35759/')).toBeNull();
     expect(trek.accept('https://www.trekbikes.com/us/en_US/equipment/bike-accessories/bontrager-elite-recycled-water-bottle-cage/p/26138/')).toBeNull();
+  });
+  it('trek reads the model year a product page states', () => {
+    const p = page('trek', 'https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-7-gen-4/p/57892/');
+    const withBody = (s: string) => trek.extract({ ...p, html: p.html.replace('<geometry-container', `${s}<geometry-container`) })[0].year;
+    expect(trek.extract(p)[0].year).toBeUndefined();
+    expect(withBody('<span class=" buying-zone__model-year text-md">2020</span>')).toBe(2020);
+    expect(withBody('<product-image product-code="57892" :product-is-bike="true" product-model-year="2023" product-name="x">')).toBe(2023);
+    // A tile of another product on the page does not date this one.
+    expect(withBody('<product-image product-code="11111" product-model-year="2021"><span class=" product-tile__model-year">2021</span>')).toBeUndefined();
   });
   it('cervelo', () => {
     check(cervelo, 'cervelo', 'https://www.cervelo.com/en-US/bikes/s5', 'S5', ['48', '51', '54', '56', '58'], ['54', 542, 384]);
