@@ -1,6 +1,6 @@
 <script lang="ts">
   import { noseSetback, railForSetback, setbackRange } from '../model/geometry';
-  import { buildSummary, wrenchList } from '../model/advice';
+  import { wrenchList } from '../model/advice';
   import { contactReadouts } from '../model/readouts';
   import { IMPOSSIBLE_TEXT, possibleRange, type Impossible } from '../model/limits';
   import type { Evaluation, FitParams, Layout } from '../model/types';
@@ -8,13 +8,12 @@
   import { clamp } from '../model/vec';
   import { CUSTOM_HINT, fixedSummary, KNOB_ORDER, PRESETS, presetLocks, presetOf, type Preset } from '../lib/knobs';
   import {
-    activeFrame, app, clearGhost, markAsMine, optimize, resetToBaseline, setHasSetup, ui, undo, useSize,
+    activeFrame, app, clearGhost, optimize, resetToBaseline, setHasSetup, ui,
   } from '../state.svelte';
-  import { sizeVerdictLine } from '../lib/sizes';
-  import { STYLES } from '../model/styles';
   import { measure } from '../lib/measure';
   import ChipRow from './ChipRow.svelte';
   import BikePicker from './BikePicker.svelte';
+  import FitResults from './FitResults.svelte';
   import FrameDetails from './FrameDetails.svelte';
   import Segmented from './Segmented.svelte';
   import SliderField from './SliderField.svelte';
@@ -73,7 +72,6 @@
   }
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 
-  const VERDICT_TEXT = { fits: 'fits', compromise: 'fits with compromises', no: 'does not fit' } as const;
   const preset = $derived(presetOf(app.locks));
   const presetHint = $derived(preset === 'custom' ? CUSTOM_HINT : PRESETS.find((p) => p.value === preset)!.hint);
   const GROUPS: { title: string; keys: ParamKey[] }[] = [
@@ -204,62 +202,7 @@
     </div>
   {/if}
 
-  {#snippet verdictLine()}
-    {#if ui.verdict === 'fits'}<p class="verdict ok">Fits</p>
-    {:else if ui.verdict === 'compromise'}<p class="verdict near">Fits with compromises{ui.flags.length ? ': ' + ui.flags.join('; ') : ''}</p>
-    {:else if ui.verdict === 'no'}<p class="verdict off">Does not fit the {STYLES[app.styleId].name} style</p>{/if}
-  {/snippet}
-
-  {#if !app.hasSetup && ui.verdict}
-    <div class="card changes">
-      <h2>Suggested build</h2>
-      <p>Saddle height {c.saddleHeight} mm</p>
-      <p>{buildSummary(c, resultsLv >= 2)}</p>
-      {@render verdictLine()}
-      {#if ui.sizes}
-        <h3>Sizes</h3>
-        <div class="sizes" role="group" aria-label="Sizes">
-          {#each ui.sizes.options as o (o.frame.id)}
-            {@const r = ui.sizes.rows.find((x) => x.frameId === o.frame.id)!}
-            <button
-              type="button" class="sz {r.result.verdict}" class:on={o.frame.id === app.activeFrameId}
-              aria-pressed={o.frame.id === app.activeFrameId} aria-label="Size {o.size}: {VERDICT_TEXT[r.result.verdict]}"
-              title={VERDICT_TEXT[r.result.verdict]} onclick={() => useSize(o.frame.id)}
-            >{o.size}</button>
-          {/each}
-        </div>
-        <p class="small">{sizeVerdictLine(ui.sizes.rows, app.activeFrameId, (id) => ui.sizes!.options.find((o) => o.frame.id === id)!.size)}</p>
-      {/if}
-      {#if ui.notes && resultsLv >= 2}
-        <h3>Why it stops here</h3>
-        <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
-      {/if}
-      <div class="row">
-        {#if ui.undo}<button type="button" class="btn small" onclick={undo}>Undo</button>{/if}
-        <button type="button" class="btn small" onclick={() => setHasSetup(true)}>Mark as my setup</button>
-      </div>
-    </div>
-  {:else if app.hasSetup && hasChanges}
-    <div class="card changes">
-      <h2>Changes from your setup</h2>
-      <ul>{#each changes as line}<li>{line}</li>{/each}</ul>
-      {#if ui.notes && resultsLv >= 2}
-        <h3>Why it stops here</h3>
-        <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
-      {/if}
-      {@render verdictLine()}
-      <div class="row">
-        {#if ui.undo}<button type="button" class="btn small" onclick={undo}>Undo</button>{/if}
-        <button type="button" class="btn small" onclick={markAsMine}>Mark as my setup</button>
-      </div>
-    </div>
-  {:else if ui.notes && resultsLv >= 2}
-    <div class="card changes">
-      <h3>Result</h3>
-      <ul class="muted">{#each ui.notes as n}<li>{n}</li>{/each}</ul>
-      {@render verdictLine()}
-    </div>
-  {/if}
+  <FitResults {changes} {hasChanges} />
   {#if ui.error}<p class="err">{ui.error}</p>{/if}
 
   <details class="card frame">
@@ -283,35 +226,21 @@
   .lk { font-size: 12px; font-weight: 500; color: var(--muted); display: flex; gap: 6px; align-items: center; min-height: 36px; }
   .rails { margin: -4px 0 10px; }
   .start { margin-top: 6px; }
-  .sizes { display: flex; flex-wrap: wrap; gap: 6px; }
-  .sz { min-width: 44px; min-height: 36px; border-radius: 10px; border: 2px solid transparent; font-weight: 700; background: var(--surface-2); }
-  .sz.fits { color: var(--ok); }
-  .sz.compromise { color: var(--near); }
-  .sz.no { color: var(--off); }
-  .sz.on { border-color: currentColor; background: var(--surface); }
   .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }
   .fixed, .frame { margin-top: 18px; }
   .fixed summary, .frame summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
   .fixed summary b::after, .frame summary b::after { content: ' ▾'; color: var(--muted); }
   .fixed[open] summary b::after, .frame[open] summary b::after { content: ' ▴'; }
-  .changes h2, .readouts h2 { margin-top: 0; }
+  .readouts h2 { margin-top: 0; }
   dl { margin: 0; }
   dl div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; border-bottom: 1px solid var(--line); }
   dl div:last-child { border-bottom: 0; }
   dt { color: var(--muted); }
   dd { margin: 0; font-weight: 600; text-align: right; }
-  h3 { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 12px 0 6px; }
-  ul { margin: 0; padding-left: 18px; }
-  li { margin-bottom: 3px; }
-  .row { display: flex; gap: 8px; margin-top: 12px; }
   .actions {
     display: flex; gap: 10px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
     border-top: 1px solid var(--line); background: var(--surface);
   }
   .grow { flex: 1; }
   .err { color: var(--off); }
-  .verdict { margin: 12px 0 0; font-weight: 600; }
-  .verdict.ok { color: var(--ok); }
-  .verdict.near { color: var(--near); }
-  .verdict.off { color: var(--off); }
 </style>
