@@ -37,11 +37,11 @@
     {
       "model": "Allez",
       "year": 2019,
-      "lastYear": 2020,
+      "lastYear": 2021,
       "category": "race",
-      "source": "https://www.specialized.com/us/en/allez/p/154231",
-      "retrieved": "2019-12-27",
-      "archive": "https://web.archive.org/web/20191227064329/https://www.specialized.com/us/en/allez/p/154231",
+      "source": "https://www.specialized.com/us/en/allez-sport/p/154238",
+      "retrieved": "2021-06-17",
+      "archive": "https://web.archive.org/web/20210617053350/https://www.specialized.com/us/en/allez-sport/p/154238",
       "sizes": [
         ["49",535,374,75.3,72.3,120,460,415,978,77],
         ["52",552,376,73.3,73,135,490,415,978,77],
@@ -56,17 +56,17 @@
       "year": 2020,
       "lastYear": 2026,
       "category": "race",
-      "source": "https://www.specialized.com/us/en/s-works-allez-frameset/p/65522",
-      "retrieved": "2025-11-08",
-      "archive": "https://web.archive.org/web/20251108093706/https://www.specialized.com/us/en/s-works-allez-frameset/p/65522",
+      "source": "https://www.specialized.com/us/en/allez-e5-elite/p/115475",
+      "retrieved": "2025-08-24",
+      "archive": "https://web.archive.org/web/20250824003252/https://www.specialized.com/us/en/allez-e5-elite/p/115475",
       "estimated": ["bbDrop"],
       "sizes": [
-        ["49",523,380,75.5,72.3,120,460,405,970,71],
-        ["52",523,385,74,73,120,480,405,970,71],
-        ["54",547,387,73.5,73,145,500,405,978,71],
-        ["56",574,395,73.3,73.5,170,520,405,986,70],
-        ["58",606,402,73,73.5,205,540,407,1003,70],
-        ["61",631,408,72.5,74,230,580,410,1013,70]
+        ["49",505,387,75.5,72.3,100,460,405,972,71],
+        ["52",527,387,74,73,120,490,407,974,71],
+        ["54",548,387,73.5,73,145,510,407,982,71],
+        ["56",574,392,73.3,73.5,170,530,407,990,70],
+        ["58",606,397,73,73.5,205,550,410,1008,70],
+        ["61",632,401,72.5,74,230,580,410,1014,70]
       ]
     },
     {
@@ -125,6 +125,7 @@
       "source": "https://www.specialized.com/us/en/allez-sprint-comp/p/129269",
       "retrieved": "2023-12-09",
       "archive": "https://web.archive.org/web/20231209112818/https://www.specialized.com/us/en/allez-sprint-comp/p/129269",
+      "aliases": ["Allez"],
       "sizes": [
         ["49",502,375,74,72.3,100,460,405,959,69],
         ["52",514,380,74,73,110,480,405,961,69],
@@ -342,7 +343,7 @@
     },
     {
       "model": "Diverge STR",
-      "year": 2024,
+      "year": 2023,
       "lastYear": 2026,
       "category": "gravel",
       "source": "https://www.specialized.com/us/en/diverge-str-comp-shimano-grx/p/200579",
@@ -447,24 +448,8 @@
     },
     {
       "model": "Roubaix SL4",
-      "year": 2021,
-      "category": "endurance",
-      "source": "https://www.specialized.com/us/en/roubaix-sl4-sport-sram-disc/p/49944",
-      "retrieved": "2025-11-08",
-      "archive": "https://web.archive.org/web/20251108065722/https://www.specialized.com/us/en/roubaix-sl4-sport-sram-disc/p/49944",
-      "estimated": ["bbDrop"],
-      "sizes": [
-        ["490.0",528,378,75.5,72,125,455,412,983,72],
-        ["520.0",547,379,74,72,145,475,412,990,72],
-        ["540.0",564,380,73.5,72,165,495,415,1000,72],
-        ["560.0",590,387,73.3,72.5,190,515,415,1011,73],
-        ["580.0",622,392,73,72.5,225,540,418,1029,73],
-        ["610.0",643,398,72.5,73,245,565,420,1039,73]
-      ]
-    },
-    {
-      "model": "Roubaix SL4",
-      "year": 2026,
+      "year": 2018,
+      "lastYear": 2026,
       "category": "endurance",
       "source": "https://www.specialized.com/us/en/roubaix-sl4-comp/p/104436",
       "retrieved": "2026-03-10",
@@ -477,6 +462,23 @@
         ["56",589,387,73.3,72.5,190,515,415,1010,73],
         ["58",621,392,73,72.5,225,540,418,1029,73],
         ["61",642,398,72.5,73,245,565,420,1038,73]
+      ]
+    },
+    {
+      "model": "Roubaix SL4",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.specialized.com/us/en/roubaix-sl4-sport-sram-disc/p/49944",
+      "retrieved": "2025-11-08",
+      "archive": "https://web.archive.org/web/20251108065722/https://www.specialized.com/us/en/roubaix-sl4-sport-sram-disc/p/49944",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["490.0",528,378,75.5,72,125,455,412,983,72],
+        ["520.0",547,379,74,72,145,475,412,990,72],
+        ["540.0",564,380,73.5,72,165,495,415,1000,73],
+        ["560.0",590,387,73.3,72.5,190,515,415,1011,73],
+        ["580.0",622,392,73,72.5,225,540,418,1029,73],
+        ["610.0",643,398,72.5,73,245,565,420,1039,73]
       ]
     },
     {
@@ -531,6 +533,43 @@
         ["56",565,395,73.5,73.5,163,501,405,985,72],
         ["58",591,402,73.5,73.5,190,522,407,1002,72],
         ["61",612,408,73,74,210,553,410,1012,72]
+      ]
+    },
+    {
+      "model": "Tarmac",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-elite-mid-compact/p/35177",
+      "retrieved": "2026-03-11",
+      "archive": "https://web.archive.org/web/20260311071310/https://www.specialized.com/us/en/tarmac-elite-mid-compact/p/35177",
+      "aliases": ["Tarmac SL3"],
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["490.0",504,386,75.5,72.3,100,460,405,970,71],
+        ["520.0",526,386,74,73,120,490,405,970,71],
+        ["540.0",543,387,73.5,73,145,510,405,981,71],
+        ["560.0",564,395,73.3,73.5,170,530,405,989,70],
+        ["580.0",591,402,73,73.5,205,550,407,1007,70],
+        ["610.0",612,408,72.5,74,230,580,410,1019,70]
+      ]
+    },
+    {
+      "model": "Tarmac",
+      "year": 2022,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.specialized.com/us/en/tarmac-elite/p/65269",
+      "retrieved": "2025-09-14",
+      "archive": "https://web.archive.org/web/20250914062233/https://www.specialized.com/us/en/tarmac-elite/p/65269",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["49",504,386,75.5,72.3,100,460,405,970,71],
+        ["52",526,386,74,73,120,490,405,970,71],
+        ["54",543,387,73.5,73,140,510,405,978,71],
+        ["56",564,395,73.3,73.5,160,530,405,986,70],
+        ["58",591,402,73,73.5,190,550,407,1003,70],
+        ["61",612,408,72.5,74,210,580,410,1013,70]
       ]
     },
     {
@@ -680,34 +719,16 @@
       "year": 2020,
       "lastYear": 2026,
       "category": "aero",
-      "source": "https://www.specialized.com/us/en/venge-expert-disc/p/128980",
-      "retrieved": "2026-02-09",
-      "archive": "https://web.archive.org/web/20260209031133/https://www.specialized.com/us/en/venge-expert-disc/p/128980",
+      "source": "https://www.specialized.com/us/en/venge-elite/p/129243",
+      "retrieved": "2025-10-15",
+      "archive": "https://web.archive.org/web/20251015204202/https://www.specialized.com/us/en/venge-elite/p/129243",
       "sizes": [
-        ["49",505,386,75.5,72.3,110,441,410,974,72],
-        ["52",526,385,74,73,130,461,410,974,72],
-        ["54",543,386,73.5,73,150,481,410,981,69],
-        ["56",564,395,73.3,73.5,170,501,410,992,69],
-        ["58",591,401,73,73.5,200,524,410,1006,68],
-        ["61",612,408,72.5,74,220,554,410,1014,68]
-      ]
-    },
-    {
-      "model": "Venge",
-      "year": 2021,
-      "lastYear": 2026,
-      "category": "aero",
-      "source": "https://www.specialized.com/us/en/s-works-venge-sagan-frameset/p/107431",
-      "retrieved": "2025-09-05",
-      "archive": "https://web.archive.org/web/20250905153316/https://www.specialized.com/us/en/s-works-venge-sagan-frameset/p/107431",
-      "estimated": ["bbDrop"],
-      "sizes": [
-        ["49",506,385,75.5,72.3,100,467,405,970,70],
-        ["52",528,385,74,73,120,487,405,970,70],
-        ["54",544,386,73.5,73,140,507,405,978,70],
-        ["56",566,395,73.3,73.5,160,527,405,986,70],
-        ["58",593,401,73,73.5,190,547,407,1003,70],
-        ["61",614,407,72.5,74,210,577,410,1013,70]
+        ["49",504,385,75.5,72.3,100,467,405,969,72],
+        ["52",526,385,74,73,120,487,405,970,72],
+        ["54",543,386,73.5,73,140,507,405,977,69],
+        ["56",564,395,73.3,73.5,160,527,405,986,69],
+        ["58",591,401,73,73.5,190,547,407,1002,68],
+        ["61",612,407,72.5,74,210,577,410,1012,68]
       ]
     }
   ]

@@ -12,6 +12,15 @@
    "firstSeen": "20190825114146"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-5-disc/p/28035/",
+   "timestamp": "20200813194651",
+   "sha256": "4668eb7556eab64d7501d4a9bd720b42b7c80e55db5e28a04792037a292ceb80",
+   "family": "boone-5",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190819033022"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-6-disc/p/33095/",
    "timestamp": "20210518095437",
    "sha256": "00bda3b16ac5e59ad732edb70e865b2c3b68bfec86b9963d6f7ef54e31c6e706",
@@ -48,6 +57,24 @@
    "firstSeen": "20190823205934"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-disc-frameset/p/28032/",
+   "timestamp": "20210225000445",
+   "sha256": "e59b5c528972c69ffb8263db99a6900f3aab76064832972065a5e812e2cb22ad",
+   "family": "boone-frameset",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190819043310"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/boone/boone-disc-frameset/p/35696/",
+   "timestamp": "20230605023209",
+   "sha256": "8c5f7d010777fb698b5f52eb46dec43ecc540d331bb7959b8ba110d1169bf4f5",
+   "family": "boone-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220406201833"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/drop-bar-gravel-bikes/checkmate/checkmate-slr-9-axs/p/46152/",
    "timestamp": "20250717094713",
    "sha256": "899d99199148d954057e2e87b7bb1bea864dace50eeff8e6a7693f34d0019b51",
@@ -55,6 +82,15 @@
    "year": 2026,
    "related": [],
    "firstSeen": "20250505125505"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/drop-bar-gravel-bikes/checkmate/checkmate-slr-7-axs/p/58668/",
+   "timestamp": "20250717094714",
+   "sha256": "d30ba07d5d0a264197613f2f7250c301778d626c5c1e027d8b3e1a754046f852",
+   "family": "checkmate-slr-7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250717094714"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/drop-bar-gravel-bikes/checkmate/checkmate-slr-frameset/p/46763/",
@@ -127,6 +163,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190818094429"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-alr/checkpoint-alr-4/p/41513/",
+   "timestamp": "20231201132638",
+   "sha256": "472444ac2d9e13791669ec243f5d69e453addaca3c56bdc3c25df647e1cb4f5c",
+   "family": "checkpoint-alr-4",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231005195153"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-alr/checkpoint-alr-4/p/41513/",
@@ -237,6 +282,24 @@
    "firstSeen": "20200807043942"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-frameset-gen-2/p/35076/",
+   "timestamp": "20241119103956",
+   "sha256": "77490f91943158da8ca0753dabfda40e37ca4f13559ba169451e3e3254895339",
+   "family": "checkpoint-sl-2-gen2",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241005163005"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-gen-3-frameset/p/46765/",
+   "timestamp": "20250326064732",
+   "sha256": "f18107b07c83ae9567313fb0b923364730447ffda8fe8182c78e0bf4879c3d50",
+   "family": "checkpoint-sl-3-gen3",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241224175718"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl-5/p/35169/",
    "timestamp": "20230328071619",
    "sha256": "f7adefbbee7316031468a794b854572769bdf719074c4b0721a91c2cbaf735f4",
@@ -300,6 +363,15 @@
    "firstSeen": "20220314062450"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-6-axs/p/35170/",
+   "timestamp": "20240518124005",
+   "sha256": "f6ff0adce38a1de716e2c99f553c54b17e64ac5d94c5c13e572a2dd87069c91d",
+   "family": "checkpoint-sl-6",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230308060737"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-6-axs-gen-3/p/47072/",
    "timestamp": "20241224012035",
    "sha256": "b5435e82ea8e0788423eb9af8859bbc86eb75c972a215ce52ee65901ecc180b8",
@@ -327,6 +399,15 @@
    "firstSeen": "20190819052144"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-7-etap/p/35171/",
+   "timestamp": "20221206033258",
+   "sha256": "f4b3246b3287681254b30db7607ee41f91fbc9c749042ce98532196356d60562",
+   "family": "checkpoint-sl-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220121212517"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-7-axs-gen-2/p/41394/",
    "timestamp": "20250330071039",
    "sha256": "e6c2f69cb9d1a4116e40251633453f339726a5e6b3376b9eaa5717158aec5ba6",
@@ -336,6 +417,15 @@
    "firstSeen": "20250224121929"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-7-axs-gen-3/p/47073/",
+   "timestamp": "20241225024842",
+   "sha256": "a361466424c1ea79e16a2b4bb31a42d120576201bd8ca4209b0fe8160f884126",
+   "family": "checkpoint-sl-7-gen3",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241225024842"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-frameset/p/29828/",
    "timestamp": "20191208204549",
    "sha256": "4f706375916e4ae13e44257c0237d2855f29959a1ce4896c84840a4e03205fb1",
@@ -343,6 +433,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190819032812"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-frameset/p/32693/",
+   "timestamp": "20210624042627",
+   "sha256": "8f94cb44175354a15f940cc078b5b0f5f1a73caa1828f7736687506f7f015bf0",
+   "family": "checkpoint-sl-frameset",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20210308061752"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-sl/checkpoint-sl-frameset/p/35076/",
@@ -361,6 +460,15 @@
    "year": 2023,
    "related": [],
    "firstSeen": "20220626201722"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-slr/checkpoint-slr-6-axs/p/35293/",
+   "timestamp": "20240714221044",
+   "sha256": "9efb0679a5f212363b5b7b909cde7313414a81ceaf1675fd5f261c84e0a313d6",
+   "family": "checkpoint-slr-6",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230308060738"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-slr/checkpoint-slr-7-etap/p/35295/",
@@ -397,6 +505,15 @@
    "year": 2023,
    "related": [],
    "firstSeen": "20211229223453"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/gravel-bikes/checkpoint/checkpoint-slr/checkpoint-slr-9-axs/p/35296/",
+   "timestamp": "20240813144914",
+   "sha256": "f01d17316d8510dfa2665f70ad2ddd6309e91a494cc9237d6ca6a6d7ba9246e2",
+   "family": "checkpoint-slr-9",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230308060738"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/crockett/crockett-4-disc/p/27889/",
@@ -453,6 +570,15 @@
    "firstSeen": "20200924112401"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/cyclocross-bikes/crockett/crockett-disc-frameset/p/35664/",
+   "timestamp": "20230201122730",
+   "sha256": "a3058d9205d3585abedd0ae619d5af625c102993c12d31c02a3daf479c0c4ad4",
+   "family": "crockett-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220701134456"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2/p/23522/",
    "timestamp": "20191115181532",
    "sha256": "6405054294fe95f466e71456628e777a9b03df5fc215cd4fcd7517bb3de019bb",
@@ -462,6 +588,15 @@
    "firstSeen": "20190821121037"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2/p/33037/",
+   "timestamp": "20211022123250",
+   "sha256": "c4d688267cde998164b09a27c7c17b69a1be585d0e3b549e75eafa8d878ec39b",
+   "family": "domane-al-2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201205093209"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-disc/p/33083/",
    "timestamp": "20230614161331",
    "sha256": "d472187331bdc2e06a8e58dbaee69d4e9441d4df6ff6d7e305a8bac3422e7ec0",
@@ -469,6 +604,15 @@
    "year": 2023,
    "related": [],
    "firstSeen": "20201024145136"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-rim/p/33037/",
+   "timestamp": "20250224092004",
+   "sha256": "3137fb3b04da30ba0d629187baa2d8776e75a26271df64d17fa8a137f8b90b9e",
+   "family": "domane-al-2",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230921101126"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-al/domane-al-2-gen-3/p/33083/",
@@ -642,6 +786,15 @@
    "firstSeen": "20230308060734"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-rsl-gen-4-frameset/p/37304/",
+   "timestamp": "20240812165219",
+   "sha256": "4ad4c3366224d014759057c41ec7179ec3238983586204f7e9675f3adac93e6b",
+   "family": "domane-rsl-4-gen4",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230308060734"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-4/p/28295/",
    "timestamp": "20191215080433",
    "sha256": "07d2e1b8ddcc8b0d6b20d091ccfd7625f13b67284a535228b58868fa9d717839",
@@ -687,6 +840,15 @@
    "firstSeen": "20190715184151"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-5/p/35298/",
+   "timestamp": "20220819230141",
+   "sha256": "70ed80f0eb467845607408f8dbb8fd0ab06d08d4bf26919e39d36e4667ec8d8f",
+   "family": "domane-sl-5",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20211005193302"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-5-gen-4/p/36149/",
    "timestamp": "20231004134818",
    "sha256": "2a866e9e70d364b012a3ed48c13ac32b5950ae221db11d1e0bb9fa01998da9c3",
@@ -694,6 +856,15 @@
    "year": 2024,
    "related": [],
    "firstSeen": "20221017004129"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-5-gen-4/p/41348/",
+   "timestamp": "20250719191308",
+   "sha256": "f0cfecb070841d48367bd34562bc935c47791506e8cd586638756fa733e1db2b",
+   "family": "domane-sl-5-gen4",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240615051020"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-6-disc/p/23389/",
@@ -768,11 +939,29 @@
    "firstSeen": "20201101020117"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-7-gen-3/p/35333/",
+   "timestamp": "20231003131523",
+   "sha256": "9fbddfdc5ea9d8195e7f3afbf46765132d788da853050786a60f75ac03e276a9",
+   "family": "domane-sl-7-gen3",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20221209025119"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-7-gen-4/p/36153/",
    "timestamp": "20230314175213",
    "sha256": "710a3121a9b37bda1ed46968993d7cd98f08719c78bea1a8f27f589ca9eac405",
    "family": "domane-sl-7-gen4",
    "year": 2023,
+   "related": [],
+   "firstSeen": "20220909080451"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-sl/domane-sl-7-gen-4/p/36153/",
+   "timestamp": "20250215230824",
+   "sha256": "274cdd63a1ec31c3c8c292d8317048e7f2b5db3ac9503f3c504a79781864d947",
+   "family": "domane-sl-7-gen4",
+   "year": 2025,
    "related": [],
    "firstSeen": "20220909080451"
   },
@@ -814,6 +1003,15 @@
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-gen-4-frameset/p/37303/",
+   "timestamp": "20230323050317",
+   "sha256": "5fed6f0365d86d2657790c35610576b27be7c8352d0356e1134ec6c8978c298a",
+   "family": "domane-slr-4-gen4",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20230308060732"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-gen-4-frameset/p/37303/",
    "timestamp": "20250317183117",
    "sha256": "e25c4516ca62ae02d64d0b4df3600350f1ab9be17543d3a4f4ae583ead78f08c",
    "family": "domane-slr-4-gen4",
@@ -832,12 +1030,30 @@
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-etap/p/35020/",
+   "timestamp": "20210816172115",
+   "sha256": "e1850e5c55aa57bcfecded1398593a674d167242c0b6530093d618dd7d9dbdac",
+   "family": "domane-slr-6",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210507014142"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-etap/p/35020/",
    "timestamp": "20221004235504",
    "sha256": "5bfececd05397a9f38029da5ba023ac12c05446961773b17d22860edc5c8b3a9",
    "family": "domane-slr-6",
    "year": 2023,
    "related": [],
    "firstSeen": "20210507014142"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-etap-gen-3/p/35020/",
+   "timestamp": "20230129164103",
+   "sha256": "c14cf841d4ad7b823c1f8da4f06fdd331b6e58414fd1f739cd0de64a2d6c07c7",
+   "family": "domane-slr-6-gen3",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20230129164103"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-gen-4/p/37344/",
@@ -847,6 +1063,15 @@
    "year": 2023,
    "related": [],
    "firstSeen": "20221104200047"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-6-axs-gen-4/p/37346/",
+   "timestamp": "20240229012621",
+   "sha256": "ed24384cd478847dbc14b763242ef4b82c049dbb84c373b0c8541400ae4195bf",
+   "family": "domane-slr-6-gen4",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230326154411"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-7/p/28715/",
@@ -867,6 +1092,15 @@
    "firstSeen": "20190819033630"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-7-etap/p/34385/",
+   "timestamp": "20220818234319",
+   "sha256": "e41fd94283302f22c30c5955a65429027ab4e98f8569b2caf954d9e22c7bcac6",
+   "family": "domane-slr-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201020152512"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-7-gen-3/p/35486/",
    "timestamp": "20230526233524",
    "sha256": "d4cc1b8144125f82bb6db0b648d46c46866ceb7ad3de98c629dff238ef3170b9",
@@ -885,6 +1119,15 @@
    "firstSeen": "20221104200047"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-7-gen-4/p/37059/",
+   "timestamp": "20250419100112",
+   "sha256": "dd57165d345a2542b2479721e16a60532bc9b710fd8b2e87899c329ca4f803e1",
+   "family": "domane-slr-7-gen4",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20221104200047"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-9/p/30034/",
    "timestamp": "20191215084145",
    "sha256": "e0b7c9f94f122e60f32f3315a832756fa65d4e9b46a16c591e59369395d0621d",
@@ -892,6 +1135,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190819051623"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-9/p/33299/",
+   "timestamp": "20210615031649",
+   "sha256": "b5d14e9e4a918d2f1b1498411b1b60fa6db88d552686da5cb4895d358b1c1e2e",
+   "family": "domane-slr-9",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200919212713"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-9-etap/p/33300/",
@@ -928,6 +1180,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190824024619"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-frameset/p/23162/",
+   "timestamp": "20201025082925",
+   "sha256": "077be404200afd71053c1da4548a0822e2e0c88d0f55e907c60eccbcf99b7acb",
+   "family": "domane-slr-frameset",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190824131311"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/domane/domane-slr/domane-slr-disc-frameset/p/33101/",
@@ -975,6 +1236,15 @@
    "firstSeen": "20190720093845"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-alr/%C3%A9monda-alr-5/p/36100/",
+   "timestamp": "20230717064718",
+   "sha256": "5974c22f7bd7a7cef15c659080a205c0e67779441bad111388f34f21ccb3f61c",
+   "family": "emonda-alr-5",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230514025832"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-alr/%C3%A9monda-alr-frameset/p/23613/",
    "timestamp": "20191122024549",
    "sha256": "6cc34300586c969f6a979837550f315a4dcb7c0a77f20ebc731aa5e8fec60daf",
@@ -1020,6 +1290,33 @@
    "firstSeen": "20190820153633"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-5-disc/p/32560/",
+   "timestamp": "20211023023248",
+   "sha256": "a055ff0e417c3d1c9e193166d831796fa6db1e6de903f515d6d7e9aa27a4332e",
+   "family": "emonda-sl-5",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210202182410"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-5/p/36974/",
+   "timestamp": "20231118165015",
+   "sha256": "06bb0d4e8f2afbebfe1e7f8563f757f61e5b7577bc23d53c70dc2a60617112fd",
+   "family": "emonda-sl-5",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230116183236"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-6-disc/p/32561/",
+   "timestamp": "20210803153417",
+   "sha256": "7d580688449c240ce35cbef90e11166709bc7fc60aa37506df4b7a91a542a9bb",
+   "family": "emonda-sl-6",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210304071611"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-6-etap/p/35029/",
    "timestamp": "20230130174602",
    "sha256": "15f8a2f31cd62aaa4a47a47ef5859dc6dc0267fbd43431fbfc1810c414e90f44",
@@ -1029,6 +1326,15 @@
    "firstSeen": "20210515175602"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-6-axs/p/35029/",
+   "timestamp": "20250319215853",
+   "sha256": "a6bd5842db9b520b1c31e484daddbd80191877316eb6703043213efb5170c782",
+   "family": "emonda-sl-6",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230314175213"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-7-disc-etap/p/27883/",
    "timestamp": "20191207063945",
    "sha256": "d01cbefb2cac319025bdb8cfabf660c3d13757f2acaf56cf7159ff8a09f4ac9a",
@@ -1036,6 +1342,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190819135851"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-7/p/32563/",
+   "timestamp": "20210619003509",
+   "sha256": "f826f0353af346e943ae19d65e36495051051ecb3adb68a60600e944169ad728",
+   "family": "emonda-sl-7",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201020144459"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-7/p/35046/",
@@ -1065,6 +1380,15 @@
    "firstSeen": "20190611182138"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-frameset/p/30189/",
+   "timestamp": "20201025084310",
+   "sha256": "af622029450fcb57b6d4bbca0bdd78b25eaec07caec1bd8b5b931b97b3d68f8e",
+   "family": "emonda-sl-frameset",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201025084310"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-sl/%C3%A9monda-sl-disc-frameset/p/32688/",
    "timestamp": "20230314175213",
    "sha256": "2d4a8b34b491a090ebfc6c332718343cdd0cef5a67db5f43752fb3f630b7b711",
@@ -1081,6 +1405,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190916101526"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-slr/%C3%A9monda-slr-6/p/33138/",
+   "timestamp": "20211020174449",
+   "sha256": "b788508699969e6dbf9bf4adfb693ff3a97dd2d84d3f1db608af52514b232500",
+   "family": "emonda-slr-6",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201020182021"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-slr/%C3%A9monda-slr-6/p/37314/",
@@ -1144,6 +1477,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190819040056"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-slr/%C3%A9monda-slr-9/p/33141/",
+   "timestamp": "20210826165134",
+   "sha256": "3a3018881657c33ec981352c45f3d60d5dc6da874273a1b9eb3e5aff3afabff2",
+   "family": "emonda-slr-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201204063428"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/%C3%A9monda/%C3%A9monda-slr/%C3%A9monda-slr-9/p/35715/",
@@ -1263,11 +1605,29 @@
    "firstSeen": "20200807042938"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7/p/35179/",
+   "timestamp": "20221111012847",
+   "sha256": "49aa143227be703219e98823ddf203e833d625befb9b30a736767c656bd255bb",
+   "family": "madone-sl-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220701140930"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7-axs-gen-6/p/36980/",
    "timestamp": "20231129223218",
    "sha256": "8b8c68b2f3da6a3bb87ab457dc2a5ce3061d78f2d18c7ab509359b5c32336314",
    "family": "madone-sl-7-gen6",
    "year": 2024,
+   "related": [],
+   "firstSeen": "20230923180715"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-sl/madone-sl-7-axs-gen-6/p/36980/",
+   "timestamp": "20240914141820",
+   "sha256": "8b8c68b2f3da6a3bb87ab457dc2a5ce3061d78f2d18c7ab509359b5c32336314",
+   "family": "madone-sl-7-gen6",
+   "year": 2025,
    "related": [],
    "firstSeen": "20230923180715"
   },
@@ -1344,6 +1704,15 @@
    "firstSeen": "20201020142124"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-6-etap-gen-6/p/35023/",
+   "timestamp": "20221005143147",
+   "sha256": "3be1cad603264c6116a107b06ef1231da4462cb097c4cc62c6652c6ee4167f07",
+   "family": "madone-slr-6-gen6",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220630154607"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-6-gen-7/p/37416/",
    "timestamp": "20231208214058",
    "sha256": "2d291e006fa59c0ab4ea03614f600499e956ed0f1c133fcf37a0e57041bfc055",
@@ -1389,6 +1758,24 @@
    "firstSeen": "20220814114900"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-7-gen-7/p/37025/",
+   "timestamp": "20230308060737",
+   "sha256": "e6016af05aca9a70fc8e924bbaa575a8be0778c42cef25ec71695bc20bc9a233",
+   "family": "madone-slr-7-gen7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220816095724"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-7-gen-8/p/46687/",
+   "timestamp": "20250319193819",
+   "sha256": "7f260df5f70373c81f234de84cea92f8eb386c90ceaec7239d8396843458be0a",
+   "family": "madone-slr-7-gen8",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20241212160107"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-8/p/24122/",
    "timestamp": "20191021173514",
    "sha256": "c188686fd90e2571504baaffa7173a32055eee11b6440ef926665768ffbfdfef",
@@ -1416,6 +1803,15 @@
    "firstSeen": "20190716003058"
   },
   {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9/p/33349/",
+   "timestamp": "20210620140105",
+   "sha256": "d29eeeb6d98f16581914d76644225f04a8855151ccb29b30a42212afe5a79f01",
+   "family": "madone-slr-9",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200805163957"
+  },
+  {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-etap/p/33355/",
    "timestamp": "20221001175153",
    "sha256": "d61a481456c0e9289be252560db14cf8c0eec485f57783bf8ad2d0af905391ac",
@@ -1423,6 +1819,15 @@
    "year": 2023,
    "related": [],
    "firstSeen": "20200805154533"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-etap-gen-6/p/33355/",
+   "timestamp": "20230131100733",
+   "sha256": "9e5a04231b9d8640c0122bedbe431628c218b159c6eaeb23d9cdac4971c5d114",
+   "family": "madone-slr-9-gen6",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20221130163737"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-9-axs-gen-7/p/37420/",
@@ -1441,6 +1846,15 @@
    "year": 2020,
    "related": [],
    "firstSeen": "20190825152028"
+  },
+  {
+   "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-frameset/p/24124/",
+   "timestamp": "20210226165022",
+   "sha256": "6264972fc4aaa3f97273dae63bdf987677779eae7ac7fe3481d37b3e26110ce0",
+   "family": "madone-slr-frameset",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190721032632"
   },
   {
    "url": "https://www.trekbikes.com/us/en_US/bikes/road-bikes/performance-road-bikes/madone/madone-slr/madone-slr-frameset/p/33044/",
