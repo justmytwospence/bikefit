@@ -19,4 +19,16 @@ describe('headCenter', () => {
     expect(c.y).toBeGreaterThan(p.shoulder.y);
     expect(c.y + HEAD_R * 1780).toBeLessThan(0.9 * 1780);
   });
+  it('lies on the line from hip through shoulder', () => {
+    const seg = resolveSegments(TEST_BODY);
+    const frame = TEST_FRAMES[1];
+    const layout = forwardLayout(frame, DEFAULT_COMPONENTS, DEFAULT_PARAMS);
+    const ctx = makeContext(frame, DEFAULT_COMPONENTS, 'neutral', 'easy');
+    for (const contact of ['hoods', 'drops'] as const) {
+      const p = riderPose(seg, layout, ctx, contact, 150, 0);
+      const c = headCenter(p, 1780);
+      const cross = (p.shoulder.x - p.hip.x) * (c.y - p.hip.y) - (p.shoulder.y - p.hip.y) * (c.x - p.hip.x);
+      expect(Math.abs(cross) / Math.hypot(p.shoulder.x - p.hip.x, p.shoulder.y - p.hip.y)).toBeLessThan(1e-6);
+    }
+  });
 });
