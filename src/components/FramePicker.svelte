@@ -1,7 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import type { CatalogModel, FrameCategory } from '../data/catalog';
-  import { addCatalogFrame, addCatalogModel, app } from '../state.svelte';
+  import { addCatalogFrame, addCatalogModel } from '../frames';
+  import { app } from '../state.svelte';
   import Segmented from './Segmented.svelte';
 
   let { onclose }: { onclose: () => void } = $props();

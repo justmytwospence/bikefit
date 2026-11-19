@@ -1,9 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { catalogModelFor } from '../lib/sizes';
-  import {
-    activeFrame, addCatalogFrame, app, deleteFrame, duplicateFrame, newFrame, selectFrame,
-  } from '../state.svelte';
+  import { addCatalogFrame, deleteFrame, duplicateFrame, newFrame, selectFrame } from '../frames';
+  import { activeFrame, app } from '../state.svelte';
   import FramePicker from './FramePicker.svelte';
 
   let picking = $state(false);

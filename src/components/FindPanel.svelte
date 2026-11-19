@@ -3,7 +3,8 @@
   import type { Verdict } from '../model/verdict';
   import { groupRows } from '../lib/sizes';
   import { STYLES } from '../model/styles';
-  import { app, compareKey, makePreviewMine, previewRow, runCompareAll, stopPreview, ui } from '../state.svelte';
+  import { compareKey, makePreviewMine, previewRow, runCompareAll, stopPreview } from '../find.svelte';
+  import { app, ui } from '../state.svelte';
   import CatalogBrowser from './CatalogBrowser.svelte';
   import FrameCard from './FrameCard.svelte';
   import Segmented from './Segmented.svelte';
