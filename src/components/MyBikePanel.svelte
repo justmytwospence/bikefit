@@ -88,6 +88,7 @@
   const inScope = $derived(PRESET_FREE[app.scope]);
   const stays = $derived(KNOB_ORDER.filter((k) => !inScope.includes(k)));
   const staysTitle = $derived(stays.every((k) => app.locks[k]) ? 'Stays as it is' : 'Other parts');
+  const allLocked = $derived(inScope.every((k) => app.locks[k]));
   const groups = $derived(
     GROUPS.map((g) => ({ title: g.title, keys: g.keys.filter((k) => inScope.includes(k)) })).filter((g) => g.keys.length > 0),
   );
@@ -117,7 +118,7 @@
         label="Saddle height" min={o.saddleHeightRange[0]} max={o.saddleHeightRange[1]} step={0.5}
         bind:value={app.current.saddleHeight} bind:locked={app.locks.saddleHeight}
         limit={[saddleLim.lo, saddleLim.hi]} stop={stopText(saddleLim, c.saddleHeight)}
-        delta={app.hasSetup ? c.saddleHeight - b.saddleHeight : undefined} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
+        delta={app.hasSetup ? c.saddleHeight - b.saddleHeight : 0} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
       />
       </div>
     {:else if k === 'railOffset'}
@@ -126,7 +127,7 @@
         label="Setback to saddle nose" min={sbMin} max={sbMax} step={0.5}
         bind:value={() => Math.round(setback * 2) / 2, setSetback} bind:locked={app.locks.railOffset}
         limit={[sbLim.lo, sbLim.hi]} stop={stopText(sbLim, Math.round(setback * 2) / 2)}
-        delta={app.hasSetup ? setbackDelta : undefined} hint="Plumb from the saddle nose, behind the BB" onedit={clearGhost}
+        delta={app.hasSetup ? setbackDelta : 0} hint="Plumb from the saddle nose, behind the BB" onedit={clearGhost}
       />
       <p class="muted small rails">
         Rails: {c.railOffset === 0 ? 'centred' : Math.abs(c.railOffset) + ' mm ' + (c.railOffset > 0 ? 'forward' : 'back') + ' of centre'}
@@ -148,7 +149,7 @@
         label="Spacers" min={0} max={frame.maxSpacers} step={o.spacerStep}
         bind:value={app.current.spacers} bind:locked={app.locks.spacers}
         limit={[spacerLim.lo, spacerLim.hi]} stop={stopText(spacerLim, c.spacers)}
-        delta={app.hasSetup ? c.spacers - b.spacers : undefined} hint="Under the stem, above the headset" onedit={clearGhost}
+        delta={app.hasSetup ? c.spacers - b.spacers : 0} hint="Under the stem, above the headset" onedit={clearGhost}
       />
       </div>
     {:else if k === 'stemLength'}
@@ -180,7 +181,7 @@
         label="Cleat position" unit="mm back" min={o.cleatRange[0]} max={o.cleatRange[1]} step={1}
         bind:value={app.current.cleatOffset} bind:locked={app.locks.cleatOffset}
         limit={[cleatLim.lo, cleatLim.hi]} stop={stopText(cleatLim, c.cleatOffset)}
-        delta={app.hasSetup ? c.cleatOffset - b.cleatOffset : undefined} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
+        delta={app.hasSetup ? c.cleatOffset - b.cleatOffset : 0} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
       />
       </div>
     {:else if k === 'crankLength'}
@@ -196,6 +197,12 @@
     {/if}
   {/snippet}
 
+  <div class="lockall">
+    <span class="muted small">A lock keeps a setting as it is.</span>
+    <button type="button" class="btn small" onclick={() => { for (const k of inScope) app.locks[k] = !allLocked; }}>
+      {allLocked ? 'Unlock all' : 'Lock all'}
+    </button>
+  </div>
   {#each groups as g (g.title)}
     <h2>{g.title}</h2>
     {#each g.keys as k (k)}{@render knob(k)}{/each}
@@ -240,6 +247,8 @@
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
   .chiphead { display: flex; justify-content: space-between; align-items: center; min-height: 36px; font-weight: 600; }
   .chips.locked { opacity: 0.55; }
+  .lockall { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 18px; }
+  .lockall .btn { width: 104px; padding: 0; }
   .rails { margin: -4px 0 10px; }
   .start { margin-top: 6px; }
   .fixed, .frame { margin-top: 18px; }
