@@ -3,13 +3,13 @@ import { dropsFromHoods, forwardLayout } from './geometry';
 import { limitCost } from './limits';
 import { evaluateFit } from './pose';
 import { makeContext } from './riding';
-import { buildPenalty, changePenalty, fitCost, fitScore, partPenalty } from './score';
+import { buildPenalty, changePenalty, COMPROMISE_COST, fitCost, fitScore, partPenalty, sizingPenalty } from './score';
 import type {
   Ankling, Components, Effort, Evaluation, FitContext, FitParams, Frame, Layout, ParamKey,
   PartOptions, PoseTarget, Segments,
 } from './types';
 import { clamp, type Vec2 } from './vec';
-import { buildFlags, fitFacts, VERDICT_RANK, verdictOf, type FitFacts, type Verdict } from './verdict';
+import { buildFlags, fitFacts, verdictOf, type FitFacts, type Verdict } from './verdict';
 
 export interface FitProblem {
   segments: Segments;
@@ -26,6 +26,8 @@ export interface FitProblem {
   current: FitParams;
   locks: Partial<Record<ParamKey, boolean>>;
   mode: 'tune' | 'shop';
+  /** The rider's ideal hoods point; new builds are ranked by distance from it. Worked out when absent. */
+  idealHoods?: Vec2;
 }
 
 export interface FitResult {
@@ -51,6 +53,7 @@ function costWith(problem: FitProblem, ctx: FitContext, p: FitParams, steps: num
   let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p) + buildPenalty(p, problem.frame.maxSpacers)
     + limitCost(evaluation, p.saddleHeight - problem.frame.seatTubeLength);
   if (problem.mode === 'tune') cost += changePenalty(p, problem.baseline);
+  else cost += sizingPenalty(p, problem.frame, layout.hoods, problem.idealHoods);
   return { cost, evaluation };
 }
 
@@ -61,7 +64,15 @@ export function costOf(problem: FitProblem, p: FitParams, steps = 36): { cost: n
 
 const snap = (x: number, step: number) => Math.round(x / step) * step;
 
-export function optimizeFit(problem: FitProblem): FitResult {
+type IdealInput = Pick<FitProblem, 'segments' | 'targets' | 'poseWeights' | 'components' | 'ankling' | 'effort' | 'options' | 'idealHoods'>;
+function idealHoodsFor(p: IdealInput): Vec2 {
+  return p.idealHoods ?? idealLayout(
+    p.segments, p.targets, p.poseWeights, makeContext(null, p.components, p.ankling, p.effort), p.components, p.options.crankLengths,
+  ).hoods;
+}
+
+export function optimizeFit(input: FitProblem): FitResult {
+  const problem = input.mode === 'shop' ? { ...input, idealHoods: idealHoodsFor(input) } : input;
   const { options: o, current: b, locks, frame } = problem;
   const ctx = makeContext(frame, problem.components, problem.ankling, problem.effort);
   const pick = <T>(key: ParamKey, list: T[], base: T): T[] => (locks[key] ? [base] : list);
@@ -146,7 +157,11 @@ export function optimizeFit(problem: FitProblem): FitResult {
   };
   result.notes = bindingNotes(problem, result);
   result.flags = buildFlags(problem, bestParams, result.facts);
-  result.verdict = verdictOf(problem, bestEval, result.flags, result.facts.seatpost);
+  result.verdict = verdictOf(problem, bestEval, result.flags, result.facts);
+  if (result.verdict === 'compromise') {
+    result.cost += COMPROMISE_COST;
+    result.score = fitScore(result.cost);
+  }
   return result;
 }
 
@@ -207,26 +222,29 @@ export function idealLayout(
   return { saddle: { x: b.x[0], y: b.x[1] }, hoods: { x: b.x[2], y: b.x[3] }, crankLength: b.crank };
 }
 
+/** Bikes that do not fit last; the rest by cost, which already counts a compromise. */
 export const byVerdictThenCost = (a: CompareRow, b: CompareRow) =>
-  VERDICT_RANK[a.result.verdict] - VERDICT_RANK[b.result.verdict] || a.result.cost - b.result.cost;
+  Number(a.result.verdict === 'no') - Number(b.result.verdict === 'no') || a.result.cost - b.result.cost;
 
 export function compareFrames(
   problemFor: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>,
   frames: Frame[],
   locks: Partial<Record<ParamKey, boolean>> = {},
 ): CompareRow[] {
+  const idealHoods = idealHoodsFor(problemFor);
   return frames
     .map((frame) => ({
       frameId: frame.id,
       frameName: frame.name,
-      result: optimizeFit({ ...problemFor, frame, current: problemFor.baseline, mode: 'shop', locks }),
+      result: optimizeFit({ ...problemFor, idealHoods, frame, current: problemFor.baseline, mode: 'shop', locks }),
     }))
     .sort(byVerdictThenCost);
 }
 
 /** Optimize one problem on several frames (the sizes of a model), best first. Keeps the problem's locks. */
 export function optimizeSizes(problem: FitProblem, frames: Frame[]): CompareRow[] {
+  const p = problem.mode === 'shop' ? { ...problem, idealHoods: idealHoodsFor(problem) } : problem;
   return frames
-    .map((frame) => ({ frameId: frame.id, frameName: frame.name, result: optimizeFit({ ...problem, frame }) }))
+    .map((frame) => ({ frameId: frame.id, frameName: frame.name, result: optimizeFit({ ...p, frame }) }))
     .sort(byVerdictThenCost);
 }

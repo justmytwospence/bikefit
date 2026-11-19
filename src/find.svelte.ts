@@ -87,7 +87,7 @@ export async function runCatalogFit() {
     if (run === catalogRun && ui.catalog && latest) ui.catalog = ui.catalog.with(latest);
   };
   try {
-    const rows = await runCatalog(rest, jobs, (r, done) => {
+    const rows = await runCatalog({ ...rest, idealHoods: ideal.hoods }, jobs, (r, done) => {
       latest = { rows: r, done };
       if (!timer) timer = setTimeout(flush, 250);
     }, snap(app.locks), ideal.hoods);

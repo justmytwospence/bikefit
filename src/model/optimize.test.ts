@@ -41,7 +41,8 @@ describe('optimizeFit', () => {
     const tall = { ...frame('endurance-56'), seatTubeLength: 740 };
     const t = optimizeFit(problem('endurance', tall));
     expect(t.params.saddleHeight - tall.seatTubeLength).toBeGreaterThanOrEqual(POST_SHOWING[0]);
-    expect(t.verdict).toBe('compromise');
+    // A 740 mm seat tube puts the top tube far above the rider's inseam.
+    expect(t.verdict).toBe('no');
     // 30 mm of post on this seat tube puts the saddle beyond the test rider's legs: nothing works.
     const huge = { ...frame('endurance-56'), seatTubeLength: 780 };
     expect(optimizeFit(problem('endurance', huge)).verdict).toBe('no');
@@ -114,7 +115,7 @@ describe('verdicts', () => {
     expect(rows.map((r) => r.frameId)).toEqual(['right', 'tall']);
     expect(rows[0].result.verdict).toBe('fits');
     expect(rows[1].result.verdict).toBe('compromise');
-    expect(rows[1].result.flags.join(' ')).toContain('standover');
+    expect(rows[1].result.flags.join(' ')).toContain('Standover');
   });
   it('optimizes sizes best first and keeps locks', () => {
     const base = problem('endurance', frame('endurance-56'));

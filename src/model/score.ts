@@ -1,4 +1,35 @@
-import type { Band, Evaluation, FitParams, PoseTarget, MetricId } from './types';
+import type { Band, Evaluation, FitParams, Frame, PoseTarget, MetricId } from './types';
+import type { Vec2 } from './vec';
+
+/**
+ * The stem length a frame of this size is sold with, mm: a line through the stock stems of the Tarmac and
+ * Domane size runs (70 to 110 mm) against effective top tube length (reach + stack / tan(seat angle)).
+ */
+export function nominalStem(frame: Frame): number {
+  const ett = frame.reach + frame.stack / Math.tan((frame.seatTubeAngle * Math.PI) / 180);
+  return Math.min(110, Math.max(70, 100 + 0.45 * (ett - 552)));
+}
+
+/** Cost of a build's distance from the rider's ideal hoods point: 0.15 at 20 mm, 0.6 at 40 mm. */
+export const POSITION_WEIGHT = 0.15;
+/** Cost of a stem 20 mm away from the frame's stock length. */
+export const STEM_WEIGHT = 0.2;
+/** Added to the cost of a build that only fits with compromises, so it ranks below a clean one. */
+export const COMPROMISE_COST = 0.1;
+
+/**
+ * What makes one frame or size a better choice than another once the angles are in range: how far the
+ * hoods end up from the ideal point, and how far the parts are from what the frame is sold with.
+ * Used for new builds only; a bike you already ride is scored on its angles.
+ */
+export function sizingPenalty(p: FitParams, frame: Frame, hoods: Vec2, ideal: Vec2 | undefined): number {
+  let c = STEM_WEIGHT * ((p.stemLength - nominalStem(frame)) / 20) ** 2;
+  const a = p.stemAngle;
+  c += a >= 17 ? 0.6 : a >= 10 ? 0.3 : a >= 6 ? 0.15 : a <= -17 ? 0.3 : a === -6 ? 0 : 0.02;
+  if (p.spacers > 25) c += 0.2 * ((p.spacers - 25) / 15) ** 2;
+  if (ideal) c += POSITION_WEIGHT * (Math.hypot(hoods.x - ideal.x, hoods.y - ideal.y) / 20) ** 2;
+  return c;
+}
 
 export function outside(v: number, band: Band): number {
   return Math.max(0, band.min - v, v - band.max);

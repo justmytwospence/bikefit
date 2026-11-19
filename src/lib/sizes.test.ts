@@ -66,11 +66,13 @@ describe('groupRows', () => {
     expect(groups[1].key).toBe('f:mine');
     expect(groups[1].sizes.map((s) => s.size)).toEqual(['']);
   });
-  it('leads a model with its best verdict even when another size has a lower cost', () => {
+  it('leads a model with its lowest cost, but never with a size that does not fit', () => {
     const named = (id: string, name: string, v: 'fits' | 'compromise' | 'no', cost: number) =>
       ({ ...row(id, v, cost), frameName: name }) as CompareRow;
-    const rows = [named('cat:t-61', 'Aethos · 61', 'compromise', 0.1), named('cat:t-58', 'Aethos · 58', 'fits', 0.2)];
-    const [g] = groupRows(rows, [{ id: 'cat:t-58' }, { id: 'cat:t-61' }] as Frame[]);
-    expect(g.best.frameId).toBe('cat:t-58');
+    const frames = [{ id: 'cat:t-58' }, { id: 'cat:t-61' }] as Frame[];
+    const [g] = groupRows([named('cat:t-61', 'Aethos · 61', 'compromise', 0.1), named('cat:t-58', 'Aethos · 58', 'fits', 0.2)], frames);
+    expect(g.best.frameId).toBe('cat:t-61');
+    const [h] = groupRows([named('cat:t-61', 'Aethos · 61', 'no', 0.1), named('cat:t-58', 'Aethos · 58', 'compromise', 0.2)], frames);
+    expect(h.best.frameId).toBe('cat:t-58');
   });
 });

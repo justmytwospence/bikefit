@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest';
+import { nearStems } from '../lib/catalogFit';
 import { resolveSegments } from './body';
-import { optimizeFit } from './optimize';
+import { compareFrames, idealLayout, optimizeFit, type CompareRow } from './optimize';
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
-import { poseWeights } from './riding';
+import { makeContext, poseWeights } from './riding';
+import { nominalStem } from './score';
 import { bandsFor, STYLES } from './styles';
 import type { Frame, StyleId } from './types';
 
@@ -52,13 +54,30 @@ function rider(style: StyleId, heightMm: number) {
   const segments = resolveSegments({ ...DEFAULT_BODY, height: heightMm, inseam, shoeSizeAuto: true });
   const targets = bandsFor(st, 'medium');
   const w = poseWeights(st.defaultHands);
+  const ideal = idealLayout(segments, targets, w, makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort), DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths);
   return {
     segments, inseam, targets, poseWeights: w, ankling: 'neutral' as const, effort: st.defaultEffort,
-    components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS,
+    components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, idealHoods: ideal.hoods,
   };
 }
 
+/** Every size of a reference bike for this rider, as Find a bike checks them, best first. */
+function rank(ref: Ref, style: StyleId, heightMm: number): CompareRow[] {
+  const base = rider(style, heightMm);
+  return frames(ref)
+    .map((f) => compareFrames({ ...base, options: { ...DEFAULT_OPTIONS, ...nearStems(f, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, base.idealHoods) } }, [f])[0])
+    .sort((a, b) => a.result.cost - b.result.cost);
+}
+const sizeOf = (r: CompareRow) => r.frameName.split(' · ')[1];
 const mid = (ref: Ref, i: number) => Math.round((ref.chart[i][0] + ref.chart[i][1]) * 5);
+
+describe('nominalStem', () => {
+  it('is within 12 mm of the stock stem on every reference size', () => {
+    for (const ref of [TARMAC, DOMANE]) {
+      frames(ref).forEach((f, i) => expect(Math.abs(nominalStem(f) - ref.stock[i]), f.id).toBeLessThanOrEqual(12));
+    }
+  });
+});
 
 describe('style anchors', () => {
   // The build each style is anchored on, held fixed while the saddle is optimized.
@@ -84,4 +103,35 @@ describe('style anchors', () => {
     expect(Math.abs(sum.torso - (b.torso!.min + b.torso!.max) / 2)).toBeLessThan(1);
     expect(Math.abs(sum.shoulder - (b.shoulder!.min + b.shoulder!.max) / 2)).toBeLessThan(1.5);
   });
+});
+
+describe('size picks against manufacturer charts', () => {
+  it('Sporty picks the chart size of the race bike at mid-range heights', () => {
+    for (const i of [2, 3, 4]) expect(sizeOf(rank(TARMAC, 'sport', mid(TARMAC, i))[0]), `size index ${i}`).toBe(TARMAC.rows[i][0]);
+  }, 60000);
+  it('Sporty picks the chart size of the endurance bike, or one next to it', () => {
+    for (const i of [2, 3, 4, 5]) {
+      const best = sizeOf(rank(DOMANE, 'sport', mid(DOMANE, i))[0]);
+      expect(Math.abs(DOMANE.rows.findIndex((r) => r[0] === best) - i), `size index ${i}`).toBeLessThanOrEqual(1);
+    }
+  }, 60000);
+  it('Relaxed and Aggressive stay within one size of the chart', () => {
+    for (const [style, ref] of [['endurance', DOMANE], ['endurance', TARMAC], ['race', TARMAC]] as [StyleId, Ref][]) {
+      for (const i of [2, 4]) {
+        const best = sizeOf(rank(ref, style, mid(ref, i))[0]);
+        expect(Math.abs(ref.rows.findIndex((r) => r[0] === best) - i), `${style} ${ref.name} ${i}`).toBeLessThanOrEqual(1);
+      }
+    }
+  }, 120000);
+  it('scores tell sizes apart and rule out the far ones', () => {
+    const rows = rank(TARMAC, 'sport', 1775);
+    const score = (s: string) => rows.find((r) => sizeOf(r) === s)!.result.score;
+    expect(score('56')).toBeGreaterThanOrEqual(95);
+    expect(score('52')).toBeLessThanOrEqual(score('56') - 10);
+    expect(score('44')).toBeLessThan(60);
+    expect(rows.find((r) => sizeOf(r) === '44')!.result.verdict).not.toBe('fits');
+    // A 160 cm rider cannot stand over the largest frame at all.
+    const small = rank(TARMAC, 'sport', 1600);
+    expect(small.find((r) => sizeOf(r) === '61')!.result.verdict).toBe('no');
+  }, 60000);
 });

@@ -14,8 +14,13 @@ export interface FitFacts {
   /** Saddle height minus seat tube length, mm. */
   seatpost: number;
   toeClearance: number;
+  /** Hoods relative to the rider's ideal hoods point, mm (x forward, y up); null when no ideal was given. */
+  offIdeal: { x: number; y: number } | null;
 }
-export const STANDOVER_MIN = 15;
+/** Estimated clearance below which no one could stand over the frame; the estimate runs up to 35 mm high. */
+export const STANDOVER_NO = -40;
+/** Hoods this far from the ideal point make a build a compromise, mm. */
+export const OFF_IDEAL_FLAG = 30;
 export const SEATPOST_MIN = 80;
 export const SEATPOST_MAX = 300;
 export const RAIL_FLAG = 18;
@@ -37,6 +42,9 @@ export function fitFacts(problem: FitProblem, p: FitParams, ev: Evaluation): Fit
     standover: problem.inseam - standoverHeight(problem.frame),
     seatpost: p.saddleHeight - problem.frame.seatTubeLength,
     toeClearance: ev.toeClearance,
+    offIdeal: problem.idealHoods
+      ? { x: layout.hoods.x - problem.idealHoods.x, y: layout.hoods.y - problem.idealHoods.y }
+      : null,
   };
 }
 
@@ -50,16 +58,22 @@ export function buildFlags(problem: FitProblem, p: FitParams, facts: FitFacts): 
   if (p.stemLength < 70) out.push(`Very short stem (${fmtNum(p.stemLength)} mm)`);
   if (p.stemLength > 130) out.push(`Very long stem (${fmtNum(p.stemLength)} mm)`);
   if (Math.abs(p.railOffset) >= RAIL_FLAG) out.push('Saddle at the end of its rails');
-  if (facts.standover < 0) out.push(`No standover clearance (top tube about ${Math.round(-facts.standover)} mm above your inseam)`);
-  else if (facts.standover < STANDOVER_MIN) out.push(`Tight standover (about ${Math.round(facts.standover)} mm)`);
+  if (facts.standover < 0) out.push(`Standover looks tight (top tube estimated ${Math.round(-facts.standover)} mm above your inseam)`);
   if (facts.seatpost < SEATPOST_MIN) out.push(`Little seatpost showing (${Math.round(facts.seatpost)} mm): the frame is tall for you`);
   if (facts.seatpost > SEATPOST_MAX) out.push(`Very long seatpost showing (${Math.round(facts.seatpost)} mm): the frame is small for you`);
+  const off = facts.offIdeal;
+  if (off && Math.hypot(off.x, off.y) > OFF_IDEAL_FLAG) {
+    const parts: string[] = [];
+    if (Math.abs(off.y) >= 10) parts.push(`${Math.round(Math.abs(off.y))} mm ${off.y < 0 ? 'lower' : 'higher'}`);
+    if (Math.abs(off.x) >= 10) parts.push(`${Math.round(Math.abs(off.x))} mm ${off.x < 0 ? 'closer' : 'further away'}`);
+    out.push(`Hoods ${parts.join(' and ')} than your ideal position`);
+  }
   if (facts.toeClearance < -TOE_OVERLAP_FLAG) out.push(`Toe overlaps the front wheel by about ${Math.round(-facts.toeClearance)} mm`);
   return out;
 }
 
-export function verdictOf(problem: FitProblem, ev: Evaluation, flags: string[], postShowing: number): Verdict {
-  if (impossible(ev, postShowing)) return 'no';
+export function verdictOf(problem: FitProblem, ev: Evaluation, flags: string[], facts: FitFacts): Verdict {
+  if (impossible(ev, facts.seatpost) || facts.standover < STANDOVER_NO) return 'no';
   let near = false;
   for (let i = 0; i < problem.targets.length; i++) {
     const bands = problem.targets[i].bands;

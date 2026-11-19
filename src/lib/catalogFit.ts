@@ -1,6 +1,7 @@
 import type { CatalogModel, CatalogSize } from '../data/catalog';
 import { forwardLayout } from '../model/geometry';
 import { DEFAULT_PARAMS } from '../model/presets';
+import { nominalStem } from '../model/score';
 import type { Components, Frame, PartOptions } from '../model/types';
 import type { Vec2 } from '../model/vec';
 
@@ -41,11 +42,12 @@ export const NEAR_STEMS = 10;
 
 /**
  * The stem lengths and angles of the `k` pairs whose hoods, over the frame's spacer range, come nearest the
- * ideal hoods point. Lists keep the order of `options`.
+ * ideal hoods point, favouring lengths near the frame's stock stem. Lists keep the order of `options`.
  */
 export function nearStems(
   frame: Frame, components: Components, options: PartOptions, idealHoods: Vec2, k = NEAR_STEMS,
 ): Pick<PartOptions, 'stemLengths' | 'stemAngles'> {
+  const nom = nominalStem(frame);
   const pairs: { s: number; a: number; d: number }[] = [];
   for (const s of options.stemLengths) {
     for (const a of options.stemAngles) {
@@ -54,7 +56,7 @@ export function nearStems(
         const h = forwardLayout(frame, components, { ...DEFAULT_PARAMS, stemLength: s, stemAngle: a, spacers }).hoods;
         d = Math.min(d, Math.hypot(h.x - idealHoods.x, h.y - idealHoods.y));
       }
-      pairs.push({ s, a, d });
+      pairs.push({ s, a, d: d + 0.5 * Math.abs(s - nom) });
     }
   }
   const taken = pairs.map((p, i) => ({ p, i })).sort((x, y) => x.p.d - y.p.d || x.i - y.i).slice(0, k).map((x) => x.p);
