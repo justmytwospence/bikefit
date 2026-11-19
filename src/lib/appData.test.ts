@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { defaults, hiddenRiderValues, migrate } from './appData';
+import { defaults, migrate } from './appData';
 import { presetLocks } from './knobs';
 
 describe('migrate', () => {
@@ -23,7 +23,8 @@ describe('migrate', () => {
     expect(m.v).toBe(2);
     expect(m.current.cleatOffset).toBe(5);
     expect(m.frames[0].tyreWidth).toBe(30);
-    expect(m.detail).toEqual({ rider: 1, bikeFull: false, results: 1 });
+    expect(m.detail).toEqual({ bikeFull: false, results: 1 });
+    expect(m.riderOpen).toEqual({ ride: false, arms: false, segments: false });
     expect(m.locks).toEqual(presetLocks('parts'));
     expect(m.locks.cleatOffset).toBe(false);
     expect(m.body.shoeSize).toBe(43);
@@ -85,10 +86,12 @@ describe('migrate', () => {
 describe('detail and locks', () => {
   it('folds old section overrides into the levels and keeps stored locks', () => {
     const d: any = defaults();
+    delete d.riderOpen;
     d.detail = { global: 1, overrides: { setup: 3 } };
     d.locks = { ...presetLocks('all'), spacers: true };
     const m = migrate(d)!;
-    expect(m.detail).toEqual({ rider: 3, bikeFull: true, results: 3 });
+    expect(m.detail).toEqual({ bikeFull: true, results: 3 });
+    expect(m.riderOpen).toEqual({ ride: true, arms: true, segments: true });
     expect(m.locks.spacers).toBe(true);
   });
   it('derives a missing or invalid scope from the locks', () => {
@@ -116,28 +119,29 @@ describe('detail and locks', () => {
   });
   it('round-trips the new shape', () => {
     const d: any = defaults();
-    d.detail = { rider: 2, bikeFull: false, results: 3 };
+    d.detail = { bikeFull: false, results: 3 };
+    d.riderOpen = { ride: false, arms: true, segments: false };
     d.locks = presetLocks('tools');
     const m = migrate(d)!;
-    expect(m.detail).toEqual({ rider: 2, bikeFull: false, results: 3 });
+    expect(m.detail).toEqual({ bikeFull: false, results: 3 });
+    expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false });
     expect(m.locks).toEqual(presetLocks('tools'));
   });
-  it('clamps junk levels', () => {
+  it('opens Rider sections from an old Rider level', () => {
+    const d: any = defaults();
+    delete d.riderOpen;
+    d.detail = { rider: 2, bikeFull: false, results: 1 };
+    expect(migrate(d)!.riderOpen).toEqual({ ride: true, arms: true, segments: false });
+    d.detail.rider = 3;
+    expect(migrate(d)!.riderOpen).toEqual({ ride: true, arms: true, segments: true });
+    expect(migrate(d)!.detail).toEqual({ bikeFull: false, results: 1 });
+  });
+  it('clamps junk levels and open flags', () => {
     const d: any = defaults();
     d.detail = { rider: 7, bikeFull: 'x', results: 0 };
-    expect(migrate(d)!.detail).toEqual({ rider: 3, bikeFull: false, results: 1 });
-  });
-  it('counts values hidden by the rider level', () => {
-    const d = defaults();
-    expect(hiddenRiderValues(d)).toBe(0);
-    d.body.armLength = 700;
-    d.body.ankling = 'toePoint';
-    d.effort = 'hard';
-    d.body.overrides = { femur: 440 };
-    expect(hiddenRiderValues(d)).toBe(4);
-    d.detail.rider = 2;
-    expect(hiddenRiderValues(d)).toBe(1);
-    d.detail.rider = 3;
-    expect(hiddenRiderValues(d)).toBe(0);
+    d.riderOpen = { ride: 'yes', arms: true };
+    const m = migrate(d)!;
+    expect(m.detail).toEqual({ bikeFull: false, results: 1 });
+    expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false });
   });
 });

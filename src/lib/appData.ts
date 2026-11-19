@@ -23,6 +23,15 @@ export const LEVEL_OPTIONS = [
 
 const clampLv = (x: unknown) => Math.min(3, Math.max(1, Math.round(Number(x)) || 1)) as Level;
 
+export interface RiderOpen {
+  ride: boolean;
+  arms: boolean;
+  segments: boolean;
+}
+
+/** Older data kept a Rider level instead of open sections: Detailed opened the first two, Expert all three. */
+const openFromLevel = (lv: Level): RiderOpen => ({ ride: lv >= 2, arms: lv >= 2, segments: lv >= 3 });
+
 export interface AppData {
   v: 2;
   body: Body;
@@ -39,7 +48,9 @@ export interface AppData {
   tab: Tab;
   effort: Effort | null;
   hands: HandsPref | null;
-  detail: { rider: Level; bikeFull: boolean; results: Level };
+  detail: { bikeFull: boolean; results: Level };
+  /** Which optional Rider sections are open. */
+  riderOpen: RiderOpen;
   units: Units;
   /** False until the user says they have a bike set up; until then Optimize suggests a build from scratch. */
   hasSetup: boolean;
@@ -63,7 +74,8 @@ export function defaults(): AppData {
     tab: 'rider' as Tab,
     effort: null,
     hands: null,
-    detail: { rider: 1 as Level, bikeFull: false, results: 1 as Level },
+    detail: { bikeFull: false, results: 1 as Level },
+    riderOpen: openFromLevel(1),
     units: 'metric' as Units,
     hasSetup: false,
     seenIntro: false,
@@ -81,14 +93,21 @@ export function migrate(raw: unknown): AppData | null {
   const activeFrameId = frames.some((f) => f.id === d.activeFrameId) ? d.activeFrameId : frames[0].id;
   let detail: AppData['detail'];
   let locks: Record<ParamKey, boolean>;
-  if (d.detail && typeof d.detail === 'object' && 'rider' in d.detail) {
-    detail = { rider: clampLv(d.detail.rider), bikeFull: d.detail.bikeFull === true, results: clampLv(d.detail.results) };
+  let riderLevel: Level;
+  if (d.detail && typeof d.detail === 'object' && 'results' in d.detail) {
+    detail = { bikeFull: d.detail.bikeFull === true, results: clampLv(d.detail.results) };
+    riderLevel = clampLv(d.detail.rider);
     locks = { ...base.locks, ...d.locks };
   } else {
     const g = clampLv(Math.max(1, d.detail?.global ?? 1, ...Object.values(d.detail?.overrides ?? {}).map(Number)));
-    detail = { rider: g, bikeFull: g >= 2, results: g };
+    detail = { bikeFull: g >= 2, results: g };
+    riderLevel = g;
     locks = g === 1 ? presetLocks('parts') : { ...base.locks, ...d.locks };
   }
+  const o = d.riderOpen;
+  const riderOpen: RiderOpen = o && typeof o === 'object'
+    ? { ride: o.ride === true, arms: o.arms === true, segments: o.segments === true }
+    : openFromLevel(riderLevel);
   return {
     ...base,
     ...d,
@@ -107,6 +126,7 @@ export function migrate(raw: unknown): AppData | null {
     locks,
     scope: isPreset(d.scope) ? d.scope : scopeOf(locks),
     detail,
+    riderOpen,
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     activeFrameId,
     tab: migrateTab(d.tab),
@@ -125,16 +145,3 @@ export function migrate(raw: unknown): AppData | null {
 /** The made-up frames older versions saved for every visitor; dropped now that the catalog has real ones. */
 const OLD_EXAMPLE_IDS = new Set(['endurance-54', 'endurance-56', 'race-54', 'race-56', 'gravel-54', 'gravel-56']);
 const isOldExample = (f: Frame) => OLD_EXAMPLE_IDS.has(f.id) && f.name.startsWith('Example ');
-
-export function hiddenRiderValues(d: AppData): number {
-  const lv = d.detail.rider;
-  let n = 0;
-  if (lv < 2) {
-    if (d.body.armLength != null) n++;
-    if (d.body.ankling !== 'neutral') n++;
-    if (d.effort != null) n++;
-    if (d.hands != null) n++;
-  }
-  if (lv < 3) n += Object.keys(d.body.overrides).length;
-  return n;
-}

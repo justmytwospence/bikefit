@@ -21,7 +21,7 @@ The settings menu (gear at the end of the tab row) exports and imports everythin
 
 Each is asked once, in its own place, because you may want different answers to each:
 
-- **Measurements** (bar at the top of Rider): Simple, Detailed or Expert, for how much you have measured yourself; hidden inputs keep their estimated or entered values.
+- **Measurements** (Rider): height, inseam and shoe size up front, then three optional sections under More measurements (Riding effort and hands, Arms and feet, Body segments). Each opens on its own; closed, it shows a one-line summary of what it holds, estimated or entered.
 - **Can change** (bar at the top of Fit my bike): Tools only (saddle, spacers, cleats), New parts (also stem and seatpost) or Everything (also cranks). Those settings are listed for Optimize; the rest wait, collapsed, under Stays as it is. The lock on each setting fixes it where it is, for your own mix, without moving it; Lock all and Unlock all do every listed setting at once.
 - **View** (pill on the drawing): Simple, Detailed or Expert, for how much the drawing, metric strip and results show. A Hands pill beside it switches the drawing between hoods and drops.
 
