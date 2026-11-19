@@ -59,6 +59,7 @@
         <li>Have a bike? Pick it in Fit my bike and press Optimize.</li>
         <li>Shopping? Find a bike ranks the catalog for your body.</li>
       </ol>
+      <p class="muted small">A starting point, not a substitute for a professional fit.</p>
       <button type="button" class="btn small" onclick={() => (app.seenIntro = true)}>Got it</button>
     </div>
   {/if}

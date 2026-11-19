@@ -72,6 +72,12 @@
         <input bind:this={file} type="file" accept=".json,application/json" hidden onchange={upload} />
       </div>
       <p class="muted small">{status || 'The link carries your body, setup and current frame.'}</p>
+      <h2>About</h2>
+      <p class="muted small">A starting point, not a substitute for a professional fit. Nothing leaves this browser.</p>
+      <p class="small">
+        <a href="https://github.com/justmytwospence/bikefit/blob/main/docs/model.md" target="_blank" rel="noopener">How the numbers are worked out</a> ·
+        <a href="https://github.com/justmytwospence/bikefit/issues" target="_blank" rel="noopener">Report a problem</a>
+      </p>
     </div>
   {/if}
 </div>
@@ -82,4 +88,5 @@
   .pop { position: absolute; right: 0; top: 46px; width: 280px; z-index: 20; margin: 0; }
   .pop p { margin: 10px 0 0; }
   .data { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pop a { color: var(--accent); }
 </style>
