@@ -27,7 +27,7 @@
     const drop = Math.round(f.barDrop);
     const parts = [
       drop < 0 ? `Bars ${-drop} mm above the saddle` : `Bars ${drop} mm below the saddle`,
-      f.standover < 0 ? 'no standover clearance' : `standover about ${Math.round(f.standover)} mm`,
+      f.standover < 0 ? 'standover looks tight' : `about ${Math.round(f.standover)} mm of standover clearance`,
     ];
     if (f.toeClearance < 0) parts.push(`toe overlap ${Math.round(-f.toeClearance)} mm`);
     return parts.join(' · ');
@@ -37,7 +37,7 @@
 <div class="card">
   <div class="top">
     <span class="fname">{group.name}</span>
-    {#if showScore}<span class="score" title="Fit score">{row.result.score}</span>{/if}
+    {#if showScore}<span class="score" title="How close this build gets to your ideal position with stock-like parts">{row.result.score}</span>{/if}
     <span class="chip {row.result.verdict}">{CHIP[row.result.verdict]}</span>
   </div>
   {#if group.sizes.length > 1}

@@ -43,7 +43,9 @@
 
   const layout = $derived(forwardLayout(frame, app.components, shown.current));
   const evaluation = $derived(evaluateFit(segments, layout, ctx, targets));
-  const score = $derived(fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current)));
+  const score = $derived(
+    previewing ? ui.preview!.row.result.score : fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current)),
+  );
   const ideal = $derived(
     idealLayout(
       segments, targets, weights, makeContext(null, app.components, app.body.ankling, effort),

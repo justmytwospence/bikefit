@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import type { FrameCategory } from '../data/catalog';
-  import { groupRows } from '../lib/sizes';
+  import { groupRows, type ModelGroup } from '../lib/sizes';
   import { VERDICT_RANK, type Verdict } from '../model/verdict';
   import { catalogKey, hasCachedCatalog, makePreviewMine, previewRow, runCatalogFit } from '../find.svelte';
   import { app, ui } from '../state.svelte';
@@ -37,9 +37,12 @@
     cat && search ? new Set(search.searchCatalog(cat.CATALOG, query, category).map((h) => h.model.id)) : new Set<string>(),
   );
   const byId = $derived(new Map((cat?.CATALOG ?? []).map((m) => [m.id, m])));
+  const lastYear = (g: ModelGroup) => byId.get(ui.catalog!.modelOf[g.best.frameId])?.lastYear ?? 0;
   const all = $derived(
     ui.catalog
-      ? groupRows(ui.catalog.rows, ui.catalog.frames).sort((a, b) => a.best.result.cost - b.best.result.cost)
+      ? groupRows(ui.catalog.rows, ui.catalog.frames).sort((a, b) =>
+          Number(a.best.result.verdict === 'no') - Number(b.best.result.verdict === 'no')
+          || b.best.result.score - a.best.result.score || lastYear(b) - lastYear(a) || a.name.localeCompare(b.name, 'en'))
       : [],
   );
   const matching = $derived(
@@ -63,7 +66,7 @@
   });
 </script>
 
-<p class="muted">Ranks every catalog bike for your body and style. Fixed parts stay as they are.</p>
+<p class="muted">Finds the size of every catalog bike that suits you best. Most bikes fit most riders in the right size, so the score mainly tells sizes apart and drops when a bike needs unusual parts. Equal scores list the newest first.</p>
 <!-- One slot for the button, the progress and the count, so the filters and list never move. -->
 <div class="status">
   {#if ui.catalog?.running}
