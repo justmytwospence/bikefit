@@ -21,7 +21,7 @@ export const PRESETS: { value: Preset; label: string; hint: string }[] = [
   { value: 'all', label: 'Everything', hint: 'Also crank length.' },
 ];
 
-export const CUSTOM_HINT = 'Your own mix: the lock on each part sets whether Optimize may change it.';
+export const isPreset = (x: unknown): x is Preset => x === 'tools' || x === 'parts' || x === 'all';
 
 export function presetLocks(p: Preset): Record<ParamKey, boolean> {
   const out = {} as Record<ParamKey, boolean>;
@@ -35,6 +35,14 @@ export function presetOf(locks: Partial<Record<ParamKey, boolean>>): Preset | 'c
     if (KNOB_ORDER.every((k) => !!locks[k] === want[k])) return p;
   }
   return 'custom';
+}
+
+/** The preset whose knobs Fit my bike lists: the locks' own preset, else the smallest one covering every unlocked knob. */
+export function scopeOf(locks: Partial<Record<ParamKey, boolean>>): Preset {
+  const p = presetOf(locks);
+  if (p !== 'custom') return p;
+  const free = KNOB_ORDER.filter((k) => !locks[k]);
+  return (['tools', 'parts', 'all'] as Preset[]).find((s) => free.every((k) => PRESET_FREE[s].includes(k))) ?? 'all';
 }
 
 /** One line naming the fixed knobs and their current values, in the order given. */

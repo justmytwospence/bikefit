@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { DEFAULT_PARAMS } from '../model/presets';
 import { defaults } from './appData';
-import { fixedSummary, KNOB_ORDER, PRESET_FREE, presetLocks, presetOf, type Preset } from './knobs';
+import { fixedSummary, KNOB_ORDER, PRESET_FREE, presetLocks, presetOf, scopeOf, type Preset } from './knobs';
 
 const free = (p: Preset) => KNOB_ORDER.filter((k) => !presetLocks(p)[k]);
 
@@ -23,6 +23,18 @@ describe('presets', () => {
   });
   it('new data starts on New parts', () => {
     expect(defaults().locks).toEqual(presetLocks('parts'));
+  });
+});
+
+describe('scopeOf', () => {
+  it('maps each preset to itself', () => {
+    for (const p of ['tools', 'parts', 'all'] as Preset[]) expect(scopeOf(presetLocks(p))).toBe(p);
+  });
+  it('picks the smallest preset covering every unlocked knob', () => {
+    expect(scopeOf({ ...presetLocks('parts'), spacers: true })).toBe('parts');
+    expect(scopeOf({ ...presetLocks('tools'), crankLength: false })).toBe('all');
+    expect(scopeOf({ ...presetLocks('tools'), stemLength: false })).toBe('parts');
+    expect(scopeOf({})).toBe('all');
   });
 });
 

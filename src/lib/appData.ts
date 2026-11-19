@@ -1,5 +1,5 @@
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_FRAME, DEFAULT_OPTIONS, DEFAULT_PARAMS } from '../model/presets';
-import { presetLocks } from './knobs';
+import { isPreset, presetLocks, scopeOf, type Preset } from './knobs';
 import type { Units } from './units';
 import type {
   Body, Components, Effort, FitParams, Frame, HandsPref, ParamKey, PartOptions, StyleId,
@@ -34,6 +34,8 @@ export interface AppData {
   current: FitParams;
   baseline: FitParams;
   locks: Record<ParamKey, boolean>;
+  /** What Fit my bike lists as changeable; locks within it only dim. */
+  scope: Preset;
   tab: Tab;
   effort: Effort | null;
   hands: HandsPref | null;
@@ -57,6 +59,7 @@ export function defaults(): AppData {
     current: DEFAULT_PARAMS,
     baseline: DEFAULT_PARAMS,
     locks: presetLocks('parts'),
+    scope: 'parts' as Preset,
     tab: 'rider' as Tab,
     effort: null,
     hands: null,
@@ -102,6 +105,7 @@ export function migrate(raw: unknown): AppData | null {
     current: { ...base.current, ...d.current },
     baseline: { ...base.baseline, ...d.baseline },
     locks,
+    scope: isPreset(d.scope) ? d.scope : scopeOf(locks),
     detail,
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     activeFrameId,

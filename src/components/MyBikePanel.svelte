@@ -6,7 +6,7 @@
   import type { Evaluation, FitParams, Layout } from '../model/types';
   import type { ParamKey } from '../model/types';
   import { clamp } from '../model/vec';
-  import { CUSTOM_HINT, fixedSummary, KNOB_ORDER, PRESETS, presetLocks, presetOf, type Preset } from '../lib/knobs';
+  import { fixedSummary, KNOB_ORDER, PRESET_FREE, PRESETS, presetLocks } from '../lib/knobs';
   import {
     activeFrame, app, clearGhost, optimize, resetToBaseline, setHasSetup, ui,
   } from '../state.svelte';
@@ -15,6 +15,8 @@
   import BikePicker from './BikePicker.svelte';
   import FitResults from './FitResults.svelte';
   import FrameDetails from './FrameDetails.svelte';
+  import LockToggle from './LockToggle.svelte';
+  import QuestionBar from './QuestionBar.svelte';
   import Segmented from './Segmented.svelte';
   import SliderField from './SliderField.svelte';
 
@@ -72,19 +74,25 @@
   }
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 
-  const preset = $derived(presetOf(app.locks));
-  const presetHint = $derived(preset === 'custom' ? CUSTOM_HINT : PRESETS.find((p) => p.value === preset)!.hint);
+  const presetOptions = PRESETS.map((p) => ({ value: p.value, label: p.label, title: p.hint }));
   const GROUPS: { title: string; keys: ParamKey[] }[] = [
     { title: 'Saddle', keys: ['saddleHeight', 'railOffset', 'seatpostSetback'] },
     { title: 'Cockpit', keys: ['spacers', 'stemLength', 'stemAngle'] },
     { title: 'Cranks and cleats', keys: ['cleatOffset', 'crankLength'] },
   ];
-  const fixed = $derived(KNOB_ORDER.filter((k) => app.locks[k]));
+  // The scope, not the locks, decides where a knob sits, so locking one never moves it.
+  const inScope = $derived(PRESET_FREE[app.scope]);
+  const stays = $derived(KNOB_ORDER.filter((k) => !inScope.includes(k)));
+  const staysTitle = $derived(stays.every((k) => app.locks[k]) ? 'Stays as it is' : 'Other parts');
   const groups = $derived(
-    GROUPS.map((g) => ({ title: g.title, keys: g.keys.filter((k) => !app.locks[k]) })).filter((g) => g.keys.length > 0),
+    GROUPS.map((g) => ({ title: g.title, keys: g.keys.filter((k) => inScope.includes(k)) })).filter((g) => g.keys.length > 0),
   );
 </script>
 
+<QuestionBar
+  label="Can change" ariaLabel="What you can change" options={presetOptions}
+  bind:value={() => app.scope, (v) => { app.scope = v; Object.assign(app.locks, presetLocks(v)); }}
+/>
 <div class="scroll">
   <BikePicker />
   {#if !app.hasSetup}
@@ -96,13 +104,6 @@
     <p class="muted small start">Changes are counted from your setup. Optimize prefers adjustments over new parts.</p>
     <button type="button" class="link" onclick={() => setHasSetup(false)}>Start a new build instead</button>
   {/if}
-  <h2>What can you change?</h2>
-  <Segmented
-    options={PRESETS} ariaLabel="What you can change"
-    bind:value={() => preset as Preset, (v) => Object.assign(app.locks, presetLocks(v))}
-  />
-  <p class="muted small start">{presetHint}</p>
-
   {#snippet knob(k: ParamKey)}
     {#if k === 'saddleHeight'}
       <div use:measure={'saddleHeight'}>
@@ -129,9 +130,11 @@
       <div use:measure={'setback'}>
       <div class="chiphead">
         <span>Seatpost setback</span>
-        <label class="lk"><input type="checkbox" bind:checked={app.locks.seatpostSetback} /> Fixed</label>
+        <LockToggle label="Seatpost setback" bind:locked={app.locks.seatpostSetback} />
       </div>
+      <div class="chips" class:locked={app.locks.seatpostSetback}>
       <ChipRow options={o.seatpostSetbacks} bind:value={app.current.seatpostSetback} format={setbackLabel} blocked={blockedChips('seatpostSetback', o.seatpostSetbacks)} onedit={clearGhost} />
+      </div>
       </div>
     {:else if k === 'spacers'}
       <div use:measure={'spacers'}>
@@ -146,20 +149,24 @@
       <div use:measure={'stem'}>
       <div class="chiphead">
         <span>Stem length</span>
-        <label class="lk"><input type="checkbox" bind:checked={app.locks.stemLength} /> Fixed</label>
+        <LockToggle label="Stem length" bind:locked={app.locks.stemLength} />
       </div>
+      <div class="chips" class:locked={app.locks.stemLength}>
       <ChipRow options={o.stemLengths} bind:value={app.current.stemLength} format={(n) => n + ' mm'} blocked={blockedChips('stemLength', o.stemLengths)} onedit={clearGhost} />
+      </div>
       </div>
     {:else if k === 'stemAngle'}
       <div use:measure={'stem'}>
       <div class="chiphead">
         <span>Stem angle</span>
-        <label class="lk"><input type="checkbox" bind:checked={app.locks.stemAngle} /> Fixed</label>
+        <LockToggle label="Stem angle" bind:locked={app.locks.stemAngle} />
       </div>
+      <div class="chips" class:locked={app.locks.stemAngle}>
       <ChipRow
         options={o.stemAngles} bind:value={app.current.stemAngle} blocked={blockedChips('stemAngle', o.stemAngles)}
         format={(n) => (n === 0 ? '0°' : (n > 0 ? '+' : '−') + Math.abs(n) + '°')} onedit={clearGhost}
       />
+      </div>
       </div>
     {:else if k === 'cleatOffset'}
       <div use:measure={'cleat'}>
@@ -174,9 +181,11 @@
       <div use:measure={'crank'}>
       <div class="chiphead">
         <span>Crank length</span>
-        <label class="lk"><input type="checkbox" bind:checked={app.locks.crankLength} /> Fixed</label>
+        <LockToggle label="Crank length" bind:locked={app.locks.crankLength} />
       </div>
+      <div class="chips" class:locked={app.locks.crankLength}>
       <ChipRow options={o.crankLengths} bind:value={app.current.crankLength} format={(n) => n + ' mm'} blocked={blockedChips('crankLength', o.crankLengths)} onedit={clearGhost} />
+      </div>
       </div>
     {/if}
   {/snippet}
@@ -186,10 +195,10 @@
     {#each g.keys as k (k)}{@render knob(k)}{/each}
   {/each}
 
-  {#if fixed.length}
+  {#if stays.length}
     <details class="card fixed">
-      <summary><b>Stays as it is</b><span class="muted small">{fixedSummary(fixed, c, setback)}</span></summary>
-      {#each fixed as k (k)}{@render knob(k)}{/each}
+      <summary><b>{staysTitle}</b><span class="muted small">{fixedSummary(stays, c, setback)}</span></summary>
+      {#each stays as k (k)}{@render knob(k)}{/each}
     </details>
   {/if}
 
@@ -223,7 +232,7 @@
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
   .chiphead { display: flex; justify-content: space-between; align-items: center; min-height: 36px; font-weight: 600; }
-  .lk { font-size: 12px; font-weight: 500; color: var(--muted); display: flex; gap: 6px; align-items: center; min-height: 36px; }
+  .chips.locked { opacity: 0.55; }
   .rails { margin: -4px 0 10px; }
   .start { margin-top: 6px; }
   .link { border: 0; background: transparent; color: var(--accent); font-weight: 600; padding: 8px 0; min-height: 36px; }

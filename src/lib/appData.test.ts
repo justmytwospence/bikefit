@@ -91,6 +91,23 @@ describe('detail and locks', () => {
     expect(m.detail).toEqual({ rider: 3, bikeFull: true, results: 3 });
     expect(m.locks.spacers).toBe(true);
   });
+  it('derives a missing or invalid scope from the locks', () => {
+    const d: any = defaults();
+    delete d.scope;
+    d.locks = presetLocks('tools');
+    expect(migrate(d)!.scope).toBe('tools');
+    d.locks = { ...presetLocks('parts'), spacers: true };
+    expect(migrate(d)!.scope).toBe('parts');
+    d.scope = 'bogus';
+    expect(migrate(d)!.scope).toBe('parts');
+  });
+  it('keeps a stored scope and starts new data on New parts', () => {
+    const d: any = defaults();
+    d.scope = 'all';
+    d.locks = presetLocks('tools');
+    expect(migrate(d)!.scope).toBe('all');
+    expect(defaults().scope).toBe('parts');
+  });
   it('maps an old Simple level to the New parts locks', () => {
     const d: any = defaults();
     d.detail = { global: 1 };
