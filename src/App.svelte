@@ -56,7 +56,7 @@
       segments, forwardLayout(mine, app.components, p),
       makeContext(mine, app.components, app.body.ankling, effort), targets, 36, false,
     ), p.saddleHeight - mine.seatTubeLength));
-  const contact = $derived(resultsLevel >= 2 ? ui.viewPose : 'hoods');
+  const contact = $derived(ui.viewPose);
   const pi = $derived(contact === 'drops' ? 1 : 0);
   // The drops pose has no knee bands of its own; borrow the hoods ones so the knee card stays.
   const shownTarget = $derived(

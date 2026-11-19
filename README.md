@@ -23,7 +23,7 @@ Each is asked once, in its own place, because you may want different answers to 
 
 - **Measurements** (bar at the top of Rider): Simple, Detailed or Expert, for how much you have measured yourself; hidden inputs keep their estimated or entered values.
 - **Can change** (bar at the top of Fit my bike): Tools only (saddle, spacers, cleats), New parts (also stem and seatpost) or Everything (also cranks). Those settings are listed for Optimize; the rest wait, collapsed, under Stays as it is. The lock on each setting fixes it where it is, for your own mix, without moving it; Lock all and Unlock all do every listed setting at once.
-- **View** (pill on the drawing): Simple, Detailed or Expert, for how much the drawing, metric strip and results show. From Detailed on, a Hands pill switches the drawing between hoods and drops.
+- **View** (pill on the drawing): Simple, Detailed or Expert, for how much the drawing, metric strip and results show. A Hands pill beside it switches the drawing between hoods and drops.
 
 Frame geometry shows stack and reach until you ask for all measurements.
 

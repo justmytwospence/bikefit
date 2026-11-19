@@ -225,15 +225,13 @@
       </span>
     {/if}
   </div>
-  <!-- Right-anchored and reversed: View never moves when Hands appears beside it. -->
+  <!-- Right-anchored and reversed, View first at the right edge. -->
   <div class="viewctl">
     <PillSelect
       label="View" ariaLabel="What the drawing shows" options={LEVEL_OPTIONS}
       bind:value={() => String(app.detail.results), (v) => (app.detail.results = Number(v) as Level)}
     />
-    {#if level >= 2}
-      <PillSelect label="Hands" ariaLabel="Hand position drawn" options={poseOptions} bind:value={ui.viewPose} />
-    {/if}
+    <PillSelect label="Hands" ariaLabel="Hand position drawn" options={poseOptions} bind:value={ui.viewPose} />
   </div>
   <button
     type="button" class="play"
