@@ -9,6 +9,7 @@ import { poseWeights } from './model/riding';
 import { bandsFor, STYLES } from './model/styles';
 import type { MeasureId } from './lib/measure';
 import { decodeShare, encodeShare } from './lib/share';
+import { bikeOf, event, reportError, sizeOf } from './lib/analytics';
 import type { FitParams, Frame } from './model/types';
 
 export type { Tab } from './lib/appData';
@@ -24,14 +25,23 @@ function fromLink(): AppData | null {
   return confirm('Open the shared setup? It replaces the setup saved in this browser.') ? d : null;
 }
 
+/** How this page load started, for the App opened event. */
+export let startedFrom: 'new' | 'saved' | 'link' = 'new';
+
 function load(): AppData {
   const shared = fromLink();
-  if (shared) return shared;
+  if (shared) {
+    startedFrom = 'link';
+    return shared;
+  }
   try {
     const raw = localStorage.getItem(KEY) ?? localStorage.getItem(OLD_KEY);
     if (raw) {
       const d = migrate(JSON.parse(raw));
-      if (d) return d;
+      if (d) {
+        startedFrom = 'saved';
+        return d;
+      }
     }
   } catch {
     /* fall through to defaults */
@@ -129,6 +139,7 @@ export function useSize(frameId: string) {
   const row = s?.rows.find((r) => r.frameId === frameId);
   const opt = s?.options.find((o) => o.frame.id === frameId);
   if (!s || !row || !opt) return;
+  event('Size switched', { bike: bikeOf(frameId, opt.frame.name), size: sizeOf(opt.frame.name) });
   if (!app.frames.some((f) => f.id === frameId)) app.frames.push(snap(opt.frame));
   app.activeFrameId = frameId;
   ui.animate = true;
@@ -163,8 +174,10 @@ export async function optimize() {
     ui.notes = result.notes;
     ui.verdict = result.verdict;
     ui.flags = result.flags;
+    event('Optimize', { setup: app.hasSetup ? 'mine' : 'new', verdict: result.verdict });
   } catch (e) {
     ui.error = e instanceof Error ? e.message : String(e);
+    reportError('optimize', e);
   } finally {
     ui.busy = false;
   }
@@ -184,6 +197,7 @@ export function resetToBaseline() {
 }
 
 export function setHasSetup(on: boolean) {
+  event('Setup mode', { setup: on ? 'mine' : 'new' });
   if (on) Object.assign(app.baseline, snap(app.current));
   app.hasSetup = on;
   clearFeedback();
@@ -218,10 +232,15 @@ export function exportJson(): string {
 export function importJson(text: string): boolean {
   try {
     const d = migrate(JSON.parse(text));
-    if (!d) return false;
+    if (!d) {
+      event('Imported', { ok: false });
+      return false;
+    }
     replaceApp(d);
+    event('Imported', { ok: true });
     return true;
   } catch {
+    event('Imported', { ok: false });
     return false;
   }
 }

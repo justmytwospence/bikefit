@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { event } from '../lib/analytics';
   import type { Units } from '../lib/units';
   import { app, exportJson, importJson, shareUrl } from '../state.svelte';
   import Segmented from './Segmented.svelte';
@@ -12,6 +13,7 @@
   let file: HTMLInputElement | undefined = $state();
 
   function download() {
+    event('Exported');
     const url = URL.createObjectURL(new Blob([exportJson()], { type: 'application/json' }));
     const a = document.createElement('a');
     a.href = url;
@@ -28,6 +30,7 @@
     status = importJson(await f.text()) ? 'Imported.' : 'That file is not a bikefit export.';
   }
   async function copyLink() {
+    event('Link copied');
     const url = shareUrl();
     try {
       await navigator.clipboard.writeText(url);
@@ -61,7 +64,7 @@
       <h2>Units</h2>
       <Segmented
         options={units} ariaLabel="Units"
-        bind:value={() => app.units, (v) => (app.units = v as Units)}
+        bind:value={() => app.units, (v) => { app.units = v as Units; event('Units', { units: v }); }}
       />
       <p class="muted small">Body measurements and shoe size (EU or US). Bike geometry and fit settings stay in mm.</p>
       <h2>Your data</h2>
@@ -73,10 +76,10 @@
       </div>
       <p class="muted small">{status || 'The link carries your body, setup and current frame.'}</p>
       <h2>About</h2>
-      <p class="muted small">A starting point, not a substitute for a professional fit. Nothing leaves this browser.</p>
+      <p class="muted small">A starting point, not a substitute for a professional fit. Your measurements and bikes stay in this browser. Anonymous, cookie-free usage counts (which buttons, which catalog bikes and searches, never your numbers) go to Vercel Analytics.</p>
       <p class="small">
-        <a href="https://github.com/justmytwospence/bikefit/blob/main/docs/model.md" target="_blank" rel="noopener">How the numbers are worked out</a> ·
-        <a href="https://github.com/justmytwospence/bikefit/issues" target="_blank" rel="noopener">Report a problem</a>
+        <a href="https://github.com/justmytwospence/bikefit/blob/main/docs/model.md" target="_blank" rel="noopener" onclick={() => event('About link', { link: 'model' })}>How the numbers are worked out</a> ·
+        <a href="https://github.com/justmytwospence/bikefit/issues" target="_blank" rel="noopener" onclick={() => event('About link', { link: 'issues' })}>Report a problem</a>
       </p>
     </div>
   {/if}

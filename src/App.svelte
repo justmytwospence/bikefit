@@ -19,6 +19,7 @@
   import { makeContext, poseWeights } from './model/riding';
   import { fitCost, fitScore, partPenalty } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
+  import { event } from './lib/analytics';
   import { activeFrame, app, clearFeedback, save, ui, type Tab } from './state.svelte';
 
   const segments = $derived(resolveSegments(app.body));
@@ -166,7 +167,7 @@
   <aside class="panel">
     <div class="tabs" role="tablist">
       {#each tabs as t (t.id)}
-        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => (app.tab = t.id)}>{t.label}</button>
+        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => { if (app.tab !== t.id) event('Tab opened', { tab: t.id }); app.tab = t.id; }}>{t.label}</button>
       {/each}
       <SettingsMenu />
     </div>

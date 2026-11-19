@@ -1,3 +1,4 @@
+import { bikeOf, event, reportError } from './lib/analytics';
 import { screenCatalog } from './lib/catalogFit';
 import type { SizeEntry } from './lib/sizes';
 import { runCatalog, runCompare, stopCatalog } from './lib/optimizeClient';
@@ -32,12 +33,14 @@ export async function runCompareAll() {
   ui.busy = true;
   ui.error = '';
   try {
+    event('Compare saved', { frames: app.frames.length });
     const p = problem('shop');
     const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = p;
     ui.compareRows = await runCompare(rest, snap(app.frames));
     ui.compareKey = compareKey();
   } catch (e) {
     ui.error = e instanceof Error ? e.message : String(e);
+    reportError('compare', e);
   } finally {
     ui.busy = false;
   }
@@ -70,6 +73,7 @@ export async function runCatalogFit() {
     ui.catalog = hit;
     return;
   }
+  event('Find bikes', { style: app.styleId });
   const cat = await import('./data/catalog');
   const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = problem('shop');
   const ideal = idealLayout(
@@ -99,6 +103,7 @@ export async function runCatalogFit() {
   } catch (e) {
     const msg = e instanceof Error ? e.message : String(e);
     if (msg !== 'Superseded' && run === catalogRun) ui.error = msg;
+    reportError('catalog', e);
   } finally {
     if (timer) clearTimeout(timer);
     if (run === catalogRun && ui.catalog) {
@@ -112,12 +117,14 @@ export async function runCatalogFit() {
 export function previewRow(row: CompareRow, frames: Frame[]) {
   const f = frames.find((x) => x.id === row.frameId);
   if (!f) return;
+  event('Bike shown', { bike: bikeOf(row.frameId, row.frameName), verdict: row.result.verdict });
   ui.preview = { row: snap(row), frame: snap(f), other: null };
   ui.animate = true;
 }
 
 /** Shows one size of a model; `other` is the size it is too close to call against, drawn in outline behind it. */
 export function previewSize(e: SizeEntry, other: SizeEntry | null) {
+  event('Bike shown', { bike: bikeOf(e.row.frameId, e.row.frameName), verdict: e.row.result.verdict });
   ui.preview = {
     row: snap(e.row), frame: snap(e.frame),
     other: other ? { row: snap(other.row), frame: snap(other.frame), size: other.size } : null,
@@ -134,6 +141,7 @@ export function stopPreview() {
 export function makePreviewMine() {
   const p = ui.preview;
   if (!p) return;
+  event('Bike made mine', { bike: bikeOf(p.row.frameId, p.row.frameName), verdict: p.row.result.verdict });
   if (!app.frames.some((f) => f.id === p.frame.id)) app.frames.push(snap(p.frame));
   useCompareRow(p.row);
   ui.preview = null;

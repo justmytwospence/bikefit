@@ -1,6 +1,7 @@
 <script lang="ts">
   import { HEAD_R, headCenter } from '../draw/body';
   import { distToSegment, placeLabel, type Obstacle } from '../draw/shapes';
+  import { event } from '../lib/analytics';
   import { LEVEL_OPTIONS, type Level } from '../lib/appData';
   import { frameSkeleton } from '../model/geometry';
   import type { RiderPose } from '../model/pose';
@@ -235,7 +236,7 @@
   <div class="viewctl">
     <PillSelect
       label="View" ariaLabel="What the drawing shows" options={LEVEL_OPTIONS}
-      bind:value={() => String(app.detail.results), (v) => (app.detail.results = Number(v) as Level)}
+      bind:value={() => String(app.detail.results), (v) => { app.detail.results = Number(v) as Level; event('View level', { level: Number(v) }); }}
     />
     <PillSelect label="Hands" ariaLabel="Hand position drawn" options={poseOptions} bind:value={ui.viewPose} />
   </div>

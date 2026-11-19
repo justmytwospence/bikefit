@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import type { CatalogModel, FrameCategory } from '../data/catalog';
   import { addCatalogFrame, addCatalogModel } from '../frames';
+  import { searchLogger } from '../lib/analytics';
   import { app } from '../state.svelte';
   import Segmented from './Segmented.svelte';
 
@@ -32,6 +33,11 @@
   $effect(() => {
     query; category;
     limit = 40;
+  });
+
+  const logSearch = searchLogger();
+  $effect(() => {
+    logSearch(query, hits.length);
   });
 
   function pick(m: CatalogModel, size: string) {

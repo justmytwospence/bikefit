@@ -16,6 +16,8 @@
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
     "@tsconfig/svelte": "^5.0.0",
     "@types/node": "^26.6.6",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.1.0",
     "cheerio": "^1.2.0",
     "svelte": "^5.46.4",
     "svelte-check": "^4.3.0",

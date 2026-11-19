@@ -1,3 +1,4 @@
+import { bikeOf, event, sizeOf } from './lib/analytics';
 import type { Frame } from './model/types';
 import { activeFrame, app, clearFeedback } from './state.svelte';
 
@@ -38,6 +39,7 @@ export function deleteFrame(id: string) {
 }
 
 export function addCatalogFrame(f: Frame) {
+  event('Frame chosen', { bike: bikeOf(f.id, f.name), size: sizeOf(f.name) });
   if (!app.frames.some((x) => x.id === f.id)) app.frames.push(structuredClone(f));
   app.activeFrameId = f.id;
   clearFeedback();

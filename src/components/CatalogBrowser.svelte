@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import type { FrameCategory } from '../data/catalog';
+  import { searchLogger } from '../lib/analytics';
   import { groupRows, type ModelGroup } from '../lib/sizes';
   import { VERDICT_RANK, type Verdict } from '../model/verdict';
   import { catalogKey, hasCachedCatalog, makePreviewMine, previewRow, previewSize, runCatalogFit } from '../find.svelte';
@@ -63,6 +64,11 @@
   $effect(() => {
     query; category; brand; show; since;
     limit = 30;
+  });
+
+  const logSearch = searchLogger();
+  $effect(() => {
+    logSearch(query, matching.length);
   });
 </script>
 

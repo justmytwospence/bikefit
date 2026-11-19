@@ -11,6 +11,7 @@
     activeFrame, app, clearGhost, optimize, resetToBaseline, setHasSetup, ui, undo,
   } from '../state.svelte';
   import { measure } from '../lib/measure';
+  import { event } from '../lib/analytics';
   import ChipRow from './ChipRow.svelte';
   import BikePicker from './BikePicker.svelte';
   import FitResults from './FitResults.svelte';
@@ -101,7 +102,7 @@
 
 <QuestionBar
   label="Can change" ariaLabel="What you can change" options={presetOptions}
-  bind:value={() => app.scope, (v) => { app.scope = v; Object.assign(app.locks, presetLocks(v)); }}
+  bind:value={() => app.scope, (v) => { app.scope = v; Object.assign(app.locks, presetLocks(v)); event('Can change', { scope: v }); }}
 />
 <div class="scroll">
   {#if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} />{/if}

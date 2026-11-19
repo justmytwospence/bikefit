@@ -12,6 +12,8 @@ A client-only Svelte app (no server, no secrets). See README.md for what it does
 
 Vercel project `bikefitter` (`prj_sErujeDNIBPNHFGADmQDs8FnNfht`), team `spencers-projects-19cee858` (`team_TwgeP3rwrsOV5S5i2hX1oJIx`); build settings are in `vercel.json`. DNS is at Cloudflare (zone `bikefitter.app`, DNS only, no proxy): the apex `A` records, `dev`, and a wildcard `*` `CNAME` point at Vercel, so a new branch host needs no DNS change. Previews (dev and branch hosts, and every `*.vercel.app` URL) sit behind Vercel's login (Standard Protection), so open them signed in to Vercel; only https://bikefitter.app is public. Each host is its own origin, so its saved rider and bikes (localStorage) are separate.
 
+Vercel Web Analytics and Speed Insights run on every production build (`src/lib/analytics.ts`); previews report under the Preview environment. Never put a measurement or a user-typed name in an event.
+
 CI (`.github/workflows/ci.yml`, job `verify`) runs tests, svelte-check and the build on every push. Vercel builds independently, so a deployment going Ready is not proof that the tests passed: check both.
 
 ## Workflow

@@ -4,6 +4,7 @@
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
   import { STYLES } from '../model/styles';
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
+  import { event, eventOnce } from '../lib/analytics';
   import { app } from '../state.svelte';
   import NumberField from './NumberField.svelte';
   import Segmented from './Segmented.svelte';
@@ -60,7 +61,7 @@
         <li>Shopping? Find a bike ranks the catalog for your body.</li>
       </ol>
       <p class="muted small">A starting point, not a substitute for a professional fit.</p>
-      <button type="button" class="btn small" onclick={() => (app.seenIntro = true)}>Got it</button>
+      <button type="button" class="btn small" onclick={() => { app.seenIntro = true; event('Intro dismissed'); }}>Got it</button>
     </div>
   {/if}
   <h2>Body</h2>
@@ -109,13 +110,16 @@
   <p class="muted small hint">Can you touch your toes with straight legs? Easily = High.</p>
 
   <h2>How you ride</h2>
-  <Segmented options={styleOptions} compact bind:value={app.styleId} ariaLabel="Riding style" />
+  <Segmented
+    options={styleOptions} compact ariaLabel="Riding style"
+    bind:value={() => app.styleId, (v) => { app.styleId = v; event('Style chosen', { style: v }); }}
+  />
   <p class="muted small hint">{style.blurb}</p>
   <h2>More measurements</h2>
   <p class="muted small">Optional. Anything you leave is estimated.</p>
 
   <details class="card sec" bind:open={app.riderOpen.ride}>
-    <summary><b>Riding effort and hands</b><span class="muted small">{rideSummary}</span></summary>
+    <summary onclick={() => { if (!app.riderOpen.ride) event('Measurements opened', { section: 'ride' }); }}><b>Riding effort and hands</b><span class="muted small">{rideSummary}</span></summary>
     <div class="lrow">
       <span>Effort</span>
       {#if app.effort != null}<button type="button" class="relink" onclick={() => (app.effort = null)}>Use default</button>{/if}
@@ -130,12 +134,12 @@
   </details>
 
   <details class="card sec" bind:open={app.riderOpen.arms}>
-    <summary><b>Arms and feet</b><span class="muted small">{armsSummary}</span></summary>
+    <summary onclick={() => { if (!app.riderOpen.arms) event('Measurements opened', { section: 'arms' }); }}><b>Arms and feet</b><span class="muted small">{armsSummary}</span></summary>
     <NumberField
       label="Arm length" unit={armF.unit} min={armF.min} max={armF.max} step={armF.step}
       estimated={app.body.armLength == null} onreset={() => (app.body.armLength = null)}
       hint="Arm hanging straight: bony point of the shoulder to the centre of your closed fist"
-      bind:value={() => toDisplay(arm, armF), (v) => (app.body.armLength = fromDisplay(v, armF))}
+      bind:value={() => toDisplay(arm, armF), (v) => { app.body.armLength = fromDisplay(v, armF); eventOnce('Measurement entered', { field: 'armLength' }); }}
     />
     <div class="label">Ankling</div>
     <Segmented options={ankles} bind:value={app.body.ankling} ariaLabel="Ankling" />
@@ -143,14 +147,14 @@
   </details>
 
   <details class="card sec" bind:open={app.riderOpen.segments}>
-    <summary><b>Body segments</b><span class="muted small">{segSummary}</span></summary>
+    <summary onclick={() => { if (!app.riderOpen.segments) event('Measurements opened', { section: 'segments' }); }}><b>Body segments</b><span class="muted small">{segSummary}</span></summary>
     <p class="muted small">Enter measured values to override the estimates.</p>
     <div class="two">
       {#each keys as k (k)}
         <NumberField
           label={SEGMENT_LABELS[k]} unit={segF.unit} min={segF.min} max={segF.max} step={segF.step}
           estimated={app.body.overrides[k] == null} onreset={() => delete app.body.overrides[k]}
-          bind:value={() => toDisplay(getOv(k), segF), (v) => (app.body.overrides[k] = fromDisplay(v, segF))}
+          bind:value={() => toDisplay(getOv(k), segF), (v) => { app.body.overrides[k] = fromDisplay(v, segF); eventOnce('Measurement entered', { field: k }); }}
         />
       {/each}
     </div>
