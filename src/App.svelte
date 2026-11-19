@@ -19,7 +19,7 @@
   import { makeContext, poseWeights } from './model/riding';
   import { fitCost, fitScore, partPenalty } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
-  import { activeFrame, app, save, ui, type Tab } from './state.svelte';
+  import { activeFrame, app, clearFeedback, save, ui, type Tab } from './state.svelte';
 
   const segments = $derived(resolveSegments(app.body));
   const style = $derived(STYLES[app.styleId]);
@@ -116,6 +116,28 @@
 
   $effect(() => {
     if (app.current.spacers > mine.maxSpacers) app.current.spacers = mine.maxSpacers;
+  });
+
+  // A new build follows the body: when the inseam changes, the saddle height scales with it, so a setup
+  // made for other legs never sits out of reach. A bike you ride keeps its measured numbers.
+  let fitFor = { inseam: app.body.inseam, saddle: app.current.saddleHeight };
+  $effect(() => {
+    const saddle = app.current.saddleHeight;
+    untrack(() => (fitFor = { inseam: app.body.inseam, saddle }));
+  });
+  $effect(() => {
+    const inseam = app.body.inseam;
+    // Wait for typing to settle, so a half-typed inseam never moves the saddle.
+    const t = setTimeout(() => untrack(() => {
+      if (app.hasSetup || inseam === fitFor.inseam || inseam < 600 || inseam > 1050) return;
+      const [lo, hi] = app.options.saddleHeightRange;
+      const next = Math.min(hi, Math.max(lo, Math.round((2 * fitFor.saddle * inseam) / fitFor.inseam) / 2));
+      fitFor = { inseam, saddle: next };
+      ui.animate = true;
+      app.current.saddleHeight = next;
+      clearFeedback();
+    }), 400);
+    return () => clearTimeout(t);
   });
 
   const tabs: { id: Tab; label: string }[] = [
