@@ -4,6 +4,7 @@
   import { addCatalogFrame, deleteFrame, duplicateFrame, newFrame, selectFrame } from '../frames';
   import { activeFrame, app } from '../state.svelte';
   import FramePicker from './FramePicker.svelte';
+  import MoreMenu from './MoreMenu.svelte';
 
   let picking = $state(false);
   const frame = $derived(activeFrame());
@@ -69,10 +70,15 @@
   {/if}
 </div>
 <div class="btns">
-  <button type="button" class="btn small" onclick={() => (picking = !picking)}>Choose from catalog</button>
-  <button type="button" class="btn small" onclick={duplicateFrame}>Duplicate</button>
-  <button type="button" class="btn small" onclick={newFrame}>New</button>
-  <button type="button" class="btn small" disabled={app.frames.length <= 1} onclick={() => deleteFrame(frame.id)}>Delete</button>
+  <button type="button" class="btn small grow" onclick={() => (picking = !picking)}>Choose from catalog</button>
+  <MoreMenu
+    ariaLabel="More bike actions"
+    items={[
+      { label: 'Duplicate this bike', onclick: duplicateFrame },
+      { label: 'New frame of my own', onclick: newFrame },
+      { label: 'Delete this bike', onclick: () => deleteFrame(frame.id), disabled: app.frames.length <= 1 },
+    ]}
+  />
 </div>
 {#if picking}<div class="card picker"><FramePicker onclose={() => (picking = false)} /></div>{/if}
 
@@ -84,4 +90,5 @@
   .pick select { width: 100%; }
   .picker { margin-top: 12px; }
   .btns { display: flex; gap: 8px; margin-top: 10px; }
+  .grow { flex: 1; }
 </style>
