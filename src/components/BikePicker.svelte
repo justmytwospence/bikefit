@@ -54,12 +54,20 @@
 
 <h2>Bike</h2>
 <div class="pick" class:solo={!sizes.length}>
-  <label>
-    <span>Model</span>
-    <select value={bike.key} onchange={(e) => pickBike(e.currentTarget.value)}>
-      {#each bikes as b (b.key)}<option value={b.key}>{b.label}</option>{/each}
-    </select>
-  </label>
+  {#if bikes.length > 1}
+    <label>
+      <span>Model</span>
+      <select value={bike.key} onchange={(e) => pickBike(e.currentTarget.value)}>
+        {#each bikes as b (b.key)}<option value={b.key}>{b.label}</option>{/each}
+      </select>
+    </label>
+  {:else}
+    <!-- A dropdown with one entry only pops up over itself; show the name instead. -->
+    <div class="field">
+      <span>Model</span>
+      <div class="name" title={bike.label}>{bike.label}</div>
+    </div>
+  {/if}
   {#if sizes.length}
     <label>
       <span>Size</span>
@@ -85,7 +93,12 @@
 <style>
   .pick { display: grid; grid-template-columns: minmax(0, 1fr) 96px; gap: 10px; }
   .pick.solo { grid-template-columns: minmax(0, 1fr); }
-  .pick label { display: block; font-weight: 600; font-size: 13px; min-width: 0; }
+  .pick label, .pick .field { display: block; font-weight: 600; font-size: 13px; min-width: 0; }
+  .name {
+    height: 44px; line-height: 44px; padding: 0 12px; border-radius: 12px;
+    background: var(--surface-2); font-size: 15px; font-weight: 400;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
   .pick span { display: block; margin-bottom: 4px; }
   .pick select { width: 100%; }
   .picker { margin-top: 12px; }
