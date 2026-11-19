@@ -15,6 +15,12 @@ import colnago from './colnago';
 import bmc from './bmc';
 import cube from './cube';
 import merida from './merida';
+import cannondale from './cannondale';
+import liv from './liv';
+import factor from './factor';
+import wilier from './wilier';
+import focus from './focus';
+import argon18 from './argon-18';
 import type { Adapter } from '../types';
 
 const page = (file: string, url: string) => ({
@@ -153,5 +159,60 @@ describe('adapters', () => {
       .toEqual({ url: 'https://www.merida-bikes.com/en/bike/3106/scultura-endurance-9000', family: 'scultura-endurance' });
     expect(merida.accept('https://www.merida-bikes.com/en/bike/609/escultura-9000')).toBeNull();
     expect(merida.accept('https://www.merida-bikes.com/en/bike/2001/reacto-track-500')).toBeNull();
+  });
+  it('cannondale', () => {
+    const url = 'https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-105';
+    const api = 'https://www.cannondale.com/en-us/api/products/6481-2021';
+    const p = page('cannondale', url);
+    expect(cannondale.related!(p.html, url)).toEqual([api]);
+    expect(cannondale.extract(p)).toEqual([]);
+    const json = readFileSync(join(__dirname, '..', 'fixtures', 'cannondale-api.json'), 'utf8');
+    const [e] = cannondale.extract({ ...p, related: { [api]: json } });
+    expect([e.model, e.year, e.category]).toEqual(['SuperSix EVO', 2021, 'race']);
+    expect(e.sizes.map((s) => s.size)).toEqual(['44', '48', '51', '54', '56', '58', '60', '62']);
+    const s = e.sizes.find((x) => x.size === '54')!;
+    expect([s.stack, s.reach]).toEqual([554, 384]);
+    expect(cannondale.accept(url + '?sku=x')).toEqual({ url, family: 'supersix-evo/supersix-evo-carbon-disc-105' });
+    expect(cannondale.accept('https://www.cannondale.com/en-us/bikes/road/race/caad14/caad14-frameset')).toBeNull();
+    expect(cannondale.accept('https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-neo-1')).toBeNull();
+  });
+  it('liv', () => {
+    check(liv, 'liv', 'https://www.liv-cycling.com/us/avail-3-2022', 'Avail', ['XS', 'S', 'M', 'L'], ['XS', 530, 372]);
+    expect(liv.accept('https://www.liv-cycling.com/us/avail-ar-3-2020?partnumber=1'))
+      .toEqual({ url: 'https://www.liv-cycling.com/us/avail-ar-3-2020', family: 'avail-ar' });
+    expect(liv.accept('https://www.liv-cycling.com/us/avail-e-plus-2')).toBeNull();
+    expect(liv.accept('https://www.liv-cycling.com/us/avail-1-2015')).toBeNull();
+  });
+  it('factor', () => {
+    check(factor, 'factor', 'https://factorbikes.com/bikes/ostro-vam', 'Ostro VAM', ['45', '49', '52', '54', '56', '58', '61'], ['54', 542, 384]);
+    expect(factor.accept('https://factorbikes.com/products/o2-vam-road-bike/?x=1'))
+      .toEqual({ url: 'https://factorbikes.com/products/o2-vam-road-bike/', family: 'o2-vam' });
+    expect(factor.accept('https://factorbikes.com/models/vam/')?.family).toBe('o2-vam');
+    expect(factor.accept('https://factorbikes.com/bikes/hanzo')).toBeNull();
+    expect(factor.accept('https://factorbikes.com/bikes/ostro-vam-l39ion-edition')).toBeNull();
+  });
+  it('wilier', () => {
+    check(wilier, 'wilier', 'https://wilier.com/en/my2022/int/racing-bikes/gravel-bikes/rave-slr', 'Rave SLR',
+      ['XS', 'S', 'M', 'L', 'XL', 'XXL'], ['M', 551, 384]);
+    expect(wilier.accept('https://www.wilier.com/en/bikes/road/verticale-slr-my2026')?.family).toBe('verticale-slr');
+    expect(wilier.accept('https://www.wilier.com/en/bikes/road/filante-hybrid')).toBeNull();
+    expect(wilier.accept('https://www.wilier.com/en/bikes/road/turbine')).toBeNull();
+  });
+  it('focus', () => {
+    check(focus, 'focus', 'https://www.focus-bikes.com/gb_en/95606-izalco-max-disc-9-8', 'Izalco Max Disc',
+      ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'], ['M', 544, 390]);
+    expect(focus.accept('https://www.focus-bikes.com/gb_en/95606-izalco-max-disc-9-8.html?x=1'))
+      .toEqual({ url: 'https://www.focus-bikes.com/gb_en/95606-izalco-max-disc-9-8', family: 'izalco-max-disc-9-8' });
+    expect(focus.accept('https://www.focus-bikes.com/de_de/atlas-8-9')).toBeNull();
+    expect(focus.accept('https://www.focus-bikes.com/int/paralane2-9-9')).toBeNull();
+    expect(focus.accept('https://www.focus-bikes.com/gb_en/izalco-max-tour-test-2019')).toBeNull();
+  });
+  it('argon 18', () => {
+    check(argon18, 'argon-18', 'https://www.argon18.com/en-us/bikes/all-road/krypton-pro/shimano-ultegra-di2', 'Krypton Pro',
+      ['XXS', 'XS', 'S', 'M', 'L', 'XL'], ['M', 584, 386]);
+    expect(argon18.accept('https://www.argon18.com/en-us/bikes/road/sum-pro/shimano-ultegra-di2?x=1'))
+      .toEqual({ url: 'https://www.argon18.com/en-us/bikes/road/sum-pro/shimano-ultegra-di2', family: 'sum-pro' });
+    expect(argon18.accept('https://www.argon18.com/en-us/bikes/triathlon/e-119-tri-disc')).toBeNull();
+    expect(argon18.accept('https://www.argon18.com/en/bikes/road/performance')).toBeNull();
   });
 });

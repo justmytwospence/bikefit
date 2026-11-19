@@ -558,5 +558,9 @@
   }
  ],
  "exclude": [],
- "models": {}
+ "models": {
+  "SuperSix EVO": {
+   "model": "SuperSix EVO Gen 3"
+  }
+ }
 }
