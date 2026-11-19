@@ -1,0 +1,581 @@
+{
+  "brand": "Wilier",
+  "models": [
+    {
+      "model": "Adlar",
+      "year": 2024,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/bikes/gravel/adlar",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811054955/https://www.wilier.com/en/bikes/gravel/adlar",
+      "estimated": ["headTubeLength","bbDrop"],
+      "sizes": [
+        ["XS",538,395,75,70,112,380,423,1030,73],
+        ["S",562,404,74.5,70,104,410,423,1048,73],
+        ["M",586,413,74,70,130,440,423,1065,73],
+        ["L",610,422,74,70,155,470,423,1083,74],
+        ["XL",634,431,73.5,70,181,510,423,1101,74]
+      ]
+    },
+    {
+      "model": "Cento1 Air",
+      "year": 2020,
+      "category": "race",
+      "source": "https://wilier.com/en/my2020/world/racing-bikes/road-bikes/cento1air",
+      "retrieved": "2019-11-18",
+      "archive": "https://web.archive.org/web/20191118062727/https://wilier.com/en/my2020/world/racing-bikes/road-bikes/cento1air",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",503,378,75,71.3,107,420,404,970,71],
+        ["S",519,383,74.5,72,122,440,404,974,71],
+        ["M",536,387,74,72.5,137,460,405,980,71],
+        ["L",554,392,73.5,73,155,480,405,985,71],
+        ["XL",572,396,73,73,173,500,407,997,71],
+        ["XXL",590,401,72.5,73.5,190,520,407,1002,71]
+      ]
+    },
+    {
+      "model": "Cento1 NDR",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://wilier.com/en/my2021/world/endurance-bikes/road-bikes/cento1ndr",
+      "retrieved": "2021-02-27",
+      "archive": "https://web.archive.org/web/20210227153339/https://wilier.com/en/my2021/world/endurance-bikes/road-bikes/cento1ndr",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",527,369,74.5,71,117,405,406,974,72],
+        ["S",546,374,74,71.5,136,435,406,982,73],
+        ["M",566,379,73.5,72,157,455,408,991,73],
+        ["L",586,384,73.5,72.5,177,475,408,998,73],
+        ["XL",604,389,73,72.5,196,505,411,1012,73],
+        ["XXL",625,395,72.5,72.5,217,535,411,1024,73]
+      ]
+    },
+    {
+      "model": "Cento10 Air",
+      "year": 2023,
+      "category": "aero",
+      "source": "https://wilier.com/en/products/int/road/cento10air",
+      "retrieved": "2023-01-27",
+      "archive": "https://web.archive.org/web/20230127200530/https://wilier.com/en/products/int/road/cento10air",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",503,378,75,71.3,107,420,404,970,70],
+        ["S",519,382,74.5,72,121,440,404,974,70],
+        ["M",536,387,74,72.5,138,460,405,980,70],
+        ["L",554,391,73.5,73,154,480,405,985,70],
+        ["XL",571,396,73,73,173,500,407,997,70],
+        ["XXL",589,400,72.5,73.5,190,520,407,1002,70]
+      ]
+    },
+    {
+      "model": "Cento10 NDR",
+      "year": 2020,
+      "lastYear": 2022,
+      "category": "endurance",
+      "source": "https://wilier.com/en/my2022/int/racing-bikes/road-bikes/cento10ndr",
+      "retrieved": "2023-09-30",
+      "archive": "https://web.archive.org/web/20230930095511/https://wilier.com/en/my2022/int/racing-bikes/road-bikes/cento10ndr",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",527,369,74.5,71,117,405,406,974,72],
+        ["S",546,374,74,71.5,136,435,406,982,73],
+        ["M",566,379,73.5,72,157,455,408,991,73],
+        ["L",586,384,73.5,72.5,177,475,408,998,73],
+        ["XL",604,389,73,72.5,196,505,411,1012,73],
+        ["XXL",625,395,72.5,72.5,217,535,411,1024,73]
+      ]
+    },
+    {
+      "model": "Cento10 Pro",
+      "year": 2020,
+      "category": "aero",
+      "source": "https://wilier.com/en/my2020/world/racing-bikes/road-bikes/cento10pro",
+      "retrieved": "2019-11-21",
+      "archive": "https://web.archive.org/web/20191121192436/https://wilier.com/en/my2020/world/racing-bikes/road-bikes/cento10pro",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",503,378,75,71.3,107,420,404,970,70],
+        ["S",519,382,74.5,72,121,440,404,974,70],
+        ["M",536,387,74,72.5,138,460,405,980,70],
+        ["L",554,391,73.5,73,154,480,407,987,70],
+        ["XL",571,396,73,73,173,500,409,999,70],
+        ["XXL",589,400,72.5,73.5,190,520,410,1002,70]
+      ]
+    },
+    {
+      "model": "Cento10 SL",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://www.wilier.com/en/bikes/road/cento10-sl",
+      "retrieved": "2026-06-10",
+      "archive": "https://web.archive.org/web/20260610155343/https://www.wilier.com/en/bikes/road/cento10-sl",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",503,378,75,71.3,107,420,404,972,70],
+        ["S",519,382,74.5,72,121,440,404,978,70],
+        ["M",536,387,74,72.5,138,460,405,985,70],
+        ["L",554,391,73.5,73,154,480,407,992,70],
+        ["XL",571,396,73,73,173,500,409,999,70],
+        ["XXL",589,400,72.5,73.5,190,520,410,1006,70]
+      ]
+    },
+    {
+      "model": "Filante SL",
+      "year": 2024,
+      "lastYear": 2027,
+      "category": "aero",
+      "source": "https://www.wilier.com/en/bikes/road/filante-sl",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811052954/https://www.wilier.com/en/bikes/road/filante-sl",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",505,380,75.2,70.8,104,432,407,981,70],
+        ["S",521,384,74.5,72,119,462,407,984,70],
+        ["M",538,388,74,72.5,135,482,408,990,70],
+        ["L",555,391,73.5,73,154,502,410,997,70],
+        ["XL",571,395,73,73,166,522,411,1002,70],
+        ["XXL",587,399,72.5,73.5,181,542,411,1006,70]
+      ]
+    },
+    {
+      "model": "Filante SLR",
+      "year": 2021,
+      "lastYear": 2027,
+      "category": "aero",
+      "source": "https://www.wilier.com/en/bikes/road/filante-slr",
+      "retrieved": "2026-08-09",
+      "archive": "https://web.archive.org/web/20260809095343/https://www.wilier.com/en/bikes/road/filante-slr",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",505,380,75.2,70.8,104,432,407,981,70],
+        ["S",521,384,74.5,72,119,462,407,984,70],
+        ["M",538,388,74,72.5,135,482,408,990,70],
+        ["L",555,391,73.5,73,154,502,410,997,70],
+        ["XL",571,395,73,73,166,522,411,1002,70],
+        ["XXL",587,399,72.5,73.5,181,542,411,1006,70]
+      ]
+    },
+    {
+      "model": "Filante SLR ID2",
+      "year": 2026,
+      "category": "aero",
+      "source": "https://www.wilier.com/en/bikes/road/filante-slr-id2",
+      "retrieved": "2025-12-07",
+      "archive": "https://web.archive.org/web/20251207055940/https://www.wilier.com/en/bikes/road/filante-slr-id2",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",505,374,75.2,70.6,99,445,411,981,70],
+        ["S",523,380,74.5,71.5,115,475,411,985,70],
+        ["M",541,387,74,72,132,505,411,993,70],
+        ["L",559,393,73.5,72.5,149,525,411,1000,70],
+        ["XL",577,400,73,73,166,545,413,1010,70],
+        ["XXL",595,408,73,73.5,183,565,413,1019,70]
+      ]
+    },
+    {
+      "model": "Garda",
+      "year": 2022,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/garda",
+      "retrieved": "2023-09-30",
+      "archive": "https://web.archive.org/web/20230930101734/https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/garda",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",515,373,75.2,70.5,112,385,409,981,72],
+        ["S",531,378,74.6,71.7,125,410,409,981,73],
+        ["M",548,383,74,72.2,144,435,411,990,73],
+        ["L",566,388,73.5,72.7,161,465,411,996,73],
+        ["XL",584,393,73,72.8,179,495,414,1009,73],
+        ["XXL",602,398,72.6,73.1,197,525,414,1016,73]
+      ]
+    },
+    {
+      "model": "Garda",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://www.wilier.com/en/bikes/road/garda",
+      "retrieved": "2026-06-15",
+      "archive": "https://web.archive.org/web/20260615013754/https://www.wilier.com/en/bikes/road/garda",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",515,373,75.2,70.5,112,395,409,981,72],
+        ["S",531,378,75,71.7,125,410,409,981,73],
+        ["M",548,383,74,72.2,144,445,411,990,73],
+        ["L",566,388,74,72.7,161,475,411,996,73],
+        ["XL",584,393,73,72.8,179,505,414,1009,73],
+        ["XXL",602,398,73,73.1,197,535,414,1016,73]
+      ]
+    },
+    {
+      "model": "Granturismo SL",
+      "year": 2025,
+      "lastYear": 2027,
+      "category": "endurance",
+      "source": "https://www.wilier.com/en/bikes/road/granturismo-sl",
+      "retrieved": "2026-07-20",
+      "archive": "https://web.archive.org/web/20260720124401/https://www.wilier.com/en/bikes/road/granturismo-sl",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",527,369,74.5,71,117,438,420,989,72],
+        ["S",546,374,74,71.5,136,467,420,996,73],
+        ["M",566,379,73.5,72,157,486,420,1003,73],
+        ["L",586,384,73.5,72.5,177,505,420,1010,73],
+        ["XL",604,389,73,72.5,196,524,420,1021,73],
+        ["XXL",625,395,72.5,72.5,217,543,420,1033,73]
+      ]
+    },
+    {
+      "model": "Granturismo SLR",
+      "year": 2023,
+      "lastYear": 2025,
+      "category": "endurance",
+      "source": "https://www.wilier.com/en/bikes-archive/2025/granturismo-slr-my2025",
+      "retrieved": "2026-07-19",
+      "archive": "https://web.archive.org/web/20260719155316/https://www.wilier.com/en/bikes-archive/2025/granturismo-slr-my2025",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",527,369,74.5,71,117,438,409,977,72],
+        ["S",546,374,74,71.5,136,467,409,985,73],
+        ["M",566,379,73.5,72,157,486,412,995,73],
+        ["L",586,384,73.5,72.5,177,505,412,1002,73],
+        ["XL",604,389,73,72.5,196,524,412,1013,73],
+        ["XXL",625,395,72.5,72.5,217,543,414,1027,73]
+      ]
+    },
+    {
+      "model": "GTR Team",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.wilier.com/en/my2020/int/endurance-bikes/road-bikes/gtr-team",
+      "retrieved": "2019-12-09",
+      "archive": "https://web.archive.org/web/20191209125018/https://www.wilier.com/en/my2020/int/endurance-bikes/road-bikes/gtr-team",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XXS",505,367,75.5,70.5,104,380,406,976,72],
+        ["XS",515,373,75,71,115,395,406,980,72],
+        ["S",531,378,74.5,71.5,130,425,406,987,73],
+        ["M",548,383,74,72,148,445,408,995,73],
+        ["L",566,388,73.5,72.5,166,465,408,1002,73],
+        ["XL",583,394,73,72,184,495,410,1010,73],
+        ["XXL",602,399,72.5,72.5,203,525,411,1018,73]
+      ]
+    },
+    {
+      "model": "GTR Team",
+      "year": 2022,
+      "lastYear": 2027,
+      "category": "endurance",
+      "source": "https://www.wilier.com/en/bikes/road/gtr-team",
+      "retrieved": "2026-07-20",
+      "archive": "https://web.archive.org/web/20260720125807/https://www.wilier.com/en/bikes/road/gtr-team",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",515,373,75,71,115,395,406,980,72],
+        ["S",531,378,74.5,71.5,130,425,406,987,73],
+        ["M",548,383,74,72,148,445,408,995,73],
+        ["L",566,388,73.5,72.5,166,465,408,1002,73],
+        ["XL",583,394,73,72,184,495,410,1010,73],
+        ["XXL",602,399,72.5,72.5,203,525,411,1018,73]
+      ]
+    },
+    {
+      "model": "Jareen",
+      "year": 2020,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/my2020/world/endurance-bikes/gravel-bikes/jareen",
+      "retrieved": "2019-12-07",
+      "archive": "https://web.archive.org/web/20191207234900/https://www.wilier.com/en/my2020/world/endurance-bikes/gravel-bikes/jareen",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS *",533,365,75,70.3,110,405,440,1013,72],
+        ["S",555,373,74.5,71,130,435,440,1026,73],
+        ["M",576,380,74,71.5,150,455,440,1038,73],
+        ["L",595,387,73.5,71.5,170,475,440,1049,73],
+        ["XL",614,393,73,71.5,190,495,440,1060,74],
+        ["XXL",623,403,72.5,71.5,200,525,440,1065,74]
+      ]
+    },
+    {
+      "model": "Jareen",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://wilier.com/en/my2021/int/endurance-bikes/gravel-bikes/jareen",
+      "retrieved": "2021-02-26",
+      "archive": "https://web.archive.org/web/20210226142521/https://wilier.com/en/my2021/int/endurance-bikes/gravel-bikes/jareen",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",524,368,75,70.3,100,405,440,1008,72],
+        ["S",546,376,74.5,71,120,435,440,1021,73],
+        ["M",566,383,74,71.5,140,455,440,1032,73],
+        ["L",585,390,73.5,71.5,160,475,440,1043,73],
+        ["XL",604,396,73,71.5,180,495,440,1054,74],
+        ["XXL",623,404,72.5,71.5,200,525,440,1065,74]
+      ]
+    },
+    {
+      "model": "Jareen",
+      "year": 2023,
+      "lastYear": 2025,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/bikes-archive/2025/jareen",
+      "retrieved": "2026-06-10",
+      "archive": "https://web.archive.org/web/20260610162353/https://www.wilier.com/en/bikes-archive/2025/jareen",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",524,368,75,70.3,100,405,440,1008,72],
+        ["S",546,376,74.5,71,120,435,440,1021,73],
+        ["M",566,383,74,71.5,140,455,440,1032,73],
+        ["L",585,390,73.5,71.5,160,475,440,1043,73],
+        ["XL",604,396,73,71.5,180,495,440,1054,74]
+      ]
+    },
+    {
+      "model": "Jaroon",
+      "year": 2020,
+      "lastYear": 2023,
+      "category": "gravel",
+      "source": "https://wilier.com/en/my2023/int/endurance-bikes/gravel-bikes/jaroon",
+      "retrieved": "2023-09-30",
+      "archive": "https://web.archive.org/web/20230930102512/https://wilier.com/en/my2023/int/endurance-bikes/gravel-bikes/jaroon",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["S",555,373,74.5,71,130,435,440,1026,73],
+        ["M",576,380,74,71.5,150,455,440,1038,73],
+        ["L",595,387,73.5,71.5,170,475,440,1049,73],
+        ["XL",614,393,73,71.5,190,495,440,1060,74]
+      ]
+    },
+    {
+      "model": "Jaroon",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/bikes/gravel/jaroon",
+      "retrieved": "2026-06-14",
+      "archive": "https://web.archive.org/web/20260614154914/https://www.wilier.com/en/bikes/gravel/jaroon",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",548,384,74,70,100,390,440,1037,73],
+        ["S",567,392,74,70,125,420,440,1054,73],
+        ["M",587,401,74,70,150,450,440,1071,73],
+        ["L",606,409,74,70,175,480,440,1088,74],
+        ["XL",626,417,74,70,200,510,440,1104,74]
+      ]
+    },
+    {
+      "model": "Jena",
+      "year": 2020,
+      "lastYear": 2022,
+      "category": "gravel",
+      "source": "https://wilier.com/en/my2022/int/endurance-bikes/gravel-bikes/jena",
+      "retrieved": "2021-10-22",
+      "archive": "https://web.archive.org/web/20211022151140/https://wilier.com/en/my2022/int/endurance-bikes/gravel-bikes/jena",
+      "estimated": ["seatTubeLength","wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",531,363,75,70,100,449,423,1012,72],
+        ["S",556,372,74.3,70.5,125,476,423,1026,73],
+        ["M",582,382,73.7,71,150,504,423,1042,73],
+        ["L",608,391,73.1,71.5,175,532,423,1057,74],
+        ["XL",633,401,72.6,72,200,559,423,1071,74]
+      ]
+    },
+    {
+      "model": "Jena",
+      "year": 2023,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/bikes/gravel/jena",
+      "retrieved": "2026-07-19",
+      "archive": "https://web.archive.org/web/20260719160109/https://www.wilier.com/en/bikes/gravel/jena",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",531,363,75,70,100,380,423,1012,72],
+        ["S",556,372,74.3,70.5,125,410,423,1026,73],
+        ["M",582,382,73.7,71,150,440,423,1042,73],
+        ["L",608,391,73.1,71.5,175,470,423,1057,74],
+        ["XL",633,401,72.6,72,200,510,423,1071,74]
+      ]
+    },
+    {
+      "model": "Montegrappa",
+      "year": 2020,
+      "lastYear": 2023,
+      "category": "endurance",
+      "source": "https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/montegrappa",
+      "retrieved": "2023-07-28",
+      "archive": "https://web.archive.org/web/20230728192638/https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/montegrappa",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",510,371,74.5,70.5,115,405,404,978,72],
+        ["S",534,377,74.2,72,135,435,404,989,73],
+        ["M",555,384,73.9,72.5,155,465,405,998,73],
+        ["L",575,390,73,73,175,495,405,1006,73],
+        ["XL",599,397,73,73,200,535,406,1017,73]
+      ]
+    },
+    {
+      "model": "Rapida",
+      "year": 2026,
+      "category": "race",
+      "source": "https://www.wilier.com/en/bikes/road/rapida",
+      "retrieved": "2026-06-15",
+      "archive": "https://web.archive.org/web/20260615023939/https://www.wilier.com/en/bikes/road/rapida",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",520,372,75.5,70.5,108,412,410,981,71],
+        ["S",538,378,75,71.3,125,442,410,986,71],
+        ["M",556,385,74,72,143,472,412,994,71],
+        ["L",574,390,74,72,162,502,412,1006,71],
+        ["XL",592,396,73,72,183,532,414,1021,71],
+        ["XXL",610,402,73,72,202,562,414,1033,70]
+      ]
+    },
+    {
+      "model": "Rave SL",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/bikes/gravel/rave-sl",
+      "retrieved": "2026-06-14",
+      "archive": "https://web.archive.org/web/20260614165451/https://www.wilier.com/en/bikes/gravel/rave-sl",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",513,370,75,70,98,432,421,997,72],
+        ["S",532,377,74.5,70,118,462,422,1012,72],
+        ["M",551,384,74,71,134,482,423,1017,73],
+        ["L",570,391,73.5,71,154,502,423,1031,73],
+        ["XL",589,398,73,71.5,172,522,425,1041,73],
+        ["XXL",608,405,72.5,72,189,542,427,1051,74]
+      ]
+    },
+    {
+      "model": "Rave SLR",
+      "year": 2022,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/bikes/gravel/rave-slr-gravel",
+      "retrieved": "2026-06-13",
+      "archive": "https://web.archive.org/web/20260613060230/https://www.wilier.com/en/bikes/gravel/rave-slr-gravel",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",513,370,75,70,98,432,421,997,72],
+        ["S",532,377,74.5,70,118,462,422,1012,72],
+        ["M",551,384,74,71,134,482,423,1017,73],
+        ["L",570,391,73.5,71,154,502,423,1031,73],
+        ["XL",589,398,73,71.5,172,522,425,1041,73],
+        ["XXL",608,405,72.5,72,189,542,427,1051,74]
+      ]
+    },
+    {
+      "model": "Rave SLR ID2",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "gravel",
+      "source": "https://www.wilier.com/en/bikes/gravel/rave-slr-id2",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811051123/https://www.wilier.com/en/bikes/gravel/rave-slr-id2",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",532,375,75.5,69.2,107,432,419,1014,72],
+        ["S",546,381,74.7,70,118,462,419,1017,73],
+        ["M",561,387,74,70.8,131,482,421,1022,73],
+        ["L",579,393,73.5,71.2,148,502,421,1031,73],
+        ["XL",597,400,73,71.6,166,522,423,1042,74],
+        ["XXL",617,408,73,72,185,542,423,1052,74]
+      ]
+    },
+    {
+      "model": "Verticale SLR",
+      "year": 2024,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.wilier.com/en/bikes/road/verticale-slr",
+      "retrieved": "2026-04-18",
+      "archive": "https://web.archive.org/web/20260418105236/https://www.wilier.com/en/bikes/road/verticale-slr",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",505,374,75.2,70.6,105,432,405,974,71],
+        ["S",523,380,74.5,71.5,121,462,407,981,71],
+        ["M",541,387,74,72,138,482,408,990,71],
+        ["L",559,393,73.5,72.5,155,502,410,999,71],
+        ["XL",577,400,73,73,172,522,412,1009,71],
+        ["XXL",595,408,73,73.5,189,542,412,1017,70]
+      ]
+    },
+    {
+      "model": "Zero 6",
+      "year": 2019,
+      "lastYear": 2023,
+      "category": "race",
+      "source": "https://wilier.com/en/products/int/road/zero6",
+      "retrieved": "2022-12-08",
+      "archive": "https://web.archive.org/web/20221208114115/https://wilier.com/en/products/int/road/zero6",
+      "estimated": ["wheelbase","bbDrop"],
+      "sizes": [
+        ["XS",503,378,75,71.3,107,420,404,971,71],
+        ["S",519,382,74.5,72,121,440,405,978,71],
+        ["M",536,387,74,72.5,138,460,406,985,71],
+        ["L",554,391,73.5,73,155,480,408,992,71]
+      ]
+    },
+    {
+      "model": "Zero 7",
+      "year": 2019,
+      "category": "race",
+      "source": "https://www.wilier.com/en/my2019/int/racing-bikes/road-bikes/zero7",
+      "retrieved": "2019-07-08",
+      "archive": "https://web.archive.org/web/20190708113228/https://www.wilier.com/en/my2019/int/racing-bikes/road-bikes/zero7",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",503,378,75,71.3,107,420,404,970,71],
+        ["S",519,382,74.5,72,121,440,405,975,71],
+        ["M",536,387,74,72.5,138,460,406,981,71],
+        ["L",554,391,73.5,73,155,480,408,988,71],
+        ["XL",572,396,73,73,173,510,410,1000,71],
+        ["XXL",590,400,72.5,73.5,190,550,411,1006,71]
+      ]
+    },
+    {
+      "model": "Zero SL",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "race",
+      "source": "https://www.wilier.com/en/bikes/road/wilier-0-sl",
+      "retrieved": "2026-06-10",
+      "archive": "https://web.archive.org/web/20260610160833/https://www.wilier.com/en/bikes/road/wilier-0-sl",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",503,376,75.2,70.5,102,412,407,977,71],
+        ["S",519,381,74.6,71.7,118,442,407,979,71],
+        ["M",536,386,74,72.2,136,472,408,988,71],
+        ["L",554,391,73.5,72.7,153,502,410,996,71],
+        ["XL",572,397,73,72.8,172,522,411,1008,71],
+        ["XXL",591,402,72.6,73.1,192,542,412,1017,71]
+      ]
+    },
+    {
+      "model": "Zero SLR",
+      "year": 2020,
+      "lastYear": 2027,
+      "category": "race",
+      "source": "https://www.wilier.com/en/bikes/road/wilier-0-slr",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811051040/https://www.wilier.com/en/bikes/road/wilier-0-slr",
+      "estimated": ["bbDrop"],
+      "sizes": [
+        ["XS",503,376,75.2,70.5,102,412,407,977,71],
+        ["S",519,381,74.6,71.7,118,442,407,979,71],
+        ["M",536,386,74,72.2,136,472,408,988,71],
+        ["L",554,391,73.5,72.7,153,502,410,996,71],
+        ["XL",572,397,73,72.8,172,522,411,1008,71],
+        ["XXL",591,402,72.6,73.1,192,542,412,1017,71]
+      ]
+    }
+  ]
+}

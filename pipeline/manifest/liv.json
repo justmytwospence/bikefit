@@ -1,0 +1,402 @@
+{
+ "brand": "Liv",
+ "file": "liv",
+ "pages": [
+  {
+   "url": "https://www.liv-cycling.com/us/avail-1",
+   "timestamp": "20191221235011",
+   "sha256": "66d57422047f817616ff46514d12652f926c484a34ebbe12a4bb8410ab091425",
+   "family": "avail",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190911175045"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-1",
+   "timestamp": "20210807003520",
+   "sha256": "bc38875d2648b125ee14a1cc0116abac4878194a61013ad10c45170575d4ce9b",
+   "family": "avail",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190911175045"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-3-2021",
+   "timestamp": "20230511112915",
+   "sha256": "cfaa5f319ad6bddf960774dfe9d013778bf571defdade699f820f7a97a258a42",
+   "family": "avail",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201113165832"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-1-2020",
+   "timestamp": "20250716135611",
+   "sha256": "aaa22318c29b2eb241361460e6076f121969751db095d4e855d91147640632d0",
+   "family": "avail",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20190823235616"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-3-2025",
+   "timestamp": "20261109164111",
+   "sha256": "71f419db468da985217098cc6ef033677f8398140d404c7757b2c23079c39885",
+   "family": "avail",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240912021032"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-advanced-2-2020",
+   "timestamp": "20191114194755",
+   "sha256": "0319e53fafa23ae236c7a2ab1b05f0d636a1a8fd2a4a22112056828aae7ad306",
+   "family": "avail-advanced",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190719084220"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-advanced-2",
+   "timestamp": "20211017130935",
+   "sha256": "98a2928d3e45b19a7dbbe5ca6693446441bc56732b92529919d5ac1f5c4d3e78",
+   "family": "avail-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20191022033104"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-advanced-2",
+   "timestamp": "20230610040819",
+   "sha256": "bd7b80a39719d174bceaa6cdf6672f5dc403705e3360a16cf511f599da616d01",
+   "family": "avail-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191022033104"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-advanced-2",
+   "timestamp": "20251117002026",
+   "sha256": "fce43a6f70f803b56e6ee180a5084d20241068292e0f8d136110b145d02804c1",
+   "family": "avail-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20191022033104"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-advanced-2",
+   "timestamp": "20260712115236",
+   "sha256": "8bc79c926377f7503f105abb76528cc14954454a9f9075dc32a7f5976e905a33",
+   "family": "avail-advanced",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20191022033104"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-ar-2-2020",
+   "timestamp": "20191212170138",
+   "sha256": "6a77271edc7aba79b9cbe4824714b50b72c7c47d8fdb739061aa5997926f49ef",
+   "family": "avail-ar",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825011039"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-ar-3",
+   "timestamp": "20211127202657",
+   "sha256": "491e996d17a4518b5700a3e62ff15bc97329ff05ae281da1abe428be305634f2",
+   "family": "avail-ar",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200730050333"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-ar-3",
+   "timestamp": "20230503161959",
+   "sha256": "0e2da08bd38987fc19625ec1714509305e6a4d897f2fb30d7bfad2e98cf1953c",
+   "family": "avail-ar",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200730050333"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-ar-3",
+   "timestamp": "20250907215327",
+   "sha256": "2832bed8d45cffc92be7a30c71ef003e7c4df524a90f5b6245f88c05731a94fd",
+   "family": "avail-ar",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200730050333"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-ar-1",
+   "timestamp": "20260811014942",
+   "sha256": "a25ccad645b85671994627f70b853078a053da659264cc51a6170fa961f211af",
+   "family": "avail-ar",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20200811185521"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-sl-1-disc",
+   "timestamp": "20191209054902",
+   "sha256": "3dd182a4d2d9065eef34be325453f5618495c2c6899d3ec4b6c31e407ac1572e",
+   "family": "avail-sl",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190825185229"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-sl-1-disc-2019",
+   "timestamp": "20210622170050",
+   "sha256": "2ac7fbaa437cd244e9d24c543e2c12fc5875ffdd18c70835199a24182d3cc85b",
+   "family": "avail-sl",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200807004857"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-sl-2-disc-2018",
+   "timestamp": "20220124145744",
+   "sha256": "73b2ec4a374c9e18c800c8319ebb469ac84d5ab1d18378777e2e940595ffe3b7",
+   "family": "avail-sl",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190918034821"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/avail-sl-1-disc-2019",
+   "timestamp": "20250818111802",
+   "sha256": "9771231ed1c27c47cfe76573c4d4cc1b9455b1e98ca7acb1f20b1c818ce77c8a",
+   "family": "avail-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20200807004857"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/brava-advanced-pro-2",
+   "timestamp": "20231206180049",
+   "sha256": "30194c575ff8a1ab1f8f8ecf90804533d233be53ff594241f708fab84c9155af",
+   "family": "brava-advanced",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230609152207"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/brava-advanced-pro-2",
+   "timestamp": "20250422073300",
+   "sha256": "d7a0285c1265cd1b6613d8722becaeeb188dc717d4c650c0d2f78ffeb01e28d5",
+   "family": "brava-advanced",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20230609152207"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/brava-advanced-pro-2-2024",
+   "timestamp": "20260306181038",
+   "sha256": "d9a901f1222b68784c937195e2cf9aa2cbbed6821e83e367e898b5ed942c8ed8",
+   "family": "brava-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250814050026"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/brava-slr",
+   "timestamp": "20191216052622",
+   "sha256": "83cdf68394e10bda1310a5081dcd23c27176a95e5915c5222f4a67fcf24ad933",
+   "family": "brava-slr",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721083148"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/brava-slr",
+   "timestamp": "20210807005038",
+   "sha256": "f0a72f1fb86fe755d3c17ee5d11882e147f519571a35e1b77a9d1b6f2dcc74ce",
+   "family": "brava-slr",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190721083148"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/brava-slr-2020",
+   "timestamp": "20220810104224",
+   "sha256": "8dda4ea16ee28e15795ba1e73204c446b258bf9836ce65a092328d83e1ef88fd",
+   "family": "brava-slr",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819205125"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/brava-slr-2020",
+   "timestamp": "20250818103734",
+   "sha256": "605e73ea3d188fb30326875fd30478243b5acd88dc79eb48290d3a7ac14dc9c5",
+   "family": "brava-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20190819205125"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-2-2021",
+   "timestamp": "20210412221002",
+   "sha256": "c20bcb7f803bedace8568d398953be8e144f8a33f0d98e0b8eca441363b220de",
+   "family": "devote",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201022033034"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-2-be-good-tm--edition",
+   "timestamp": "20231001055418",
+   "sha256": "7eab57c32aff60457a1a0f9b75e0ffb1decfc55e0111d6f9052812fd507ec20d",
+   "family": "devote",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220705123243"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-2",
+   "timestamp": "20260518065054",
+   "sha256": "d9b9acfdc551c0e67778a10eeced890eebbd42b850e6cdd6ab8f3621cdf1df31",
+   "family": "devote",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20210928180539"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-2-2021",
+   "timestamp": "20251225214507",
+   "sha256": "8b3ac3e5443733fdb4215fe9c8a10504c66b982c316697140214a4687fbae09a",
+   "family": "devote",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20201022033034"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-advanced-2",
+   "timestamp": "20211130205024",
+   "sha256": "1bbb95050a4d6ff38b8fa739283a3625e91fb6478fb7c16e823bafe62e63392e",
+   "family": "devote-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210928174612"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-advanced-pro",
+   "timestamp": "20221231023227",
+   "sha256": "852daf68817071020ad5bdce0ce8ee135afa3752ca62f75db76d428e45346f60",
+   "family": "devote-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210922215643"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-advanced-0",
+   "timestamp": "20251211071858",
+   "sha256": "d9e7e20fea86c10f6efd3cd78138a6be77c987a222dd2ba1d56cf29f7d021514",
+   "family": "devote-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240804121934"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/devote-advanced-2",
+   "timestamp": "20260808095918",
+   "sha256": "a612fc8381465a1ef871fbab89601a013136317a24ba8b9741ecfa6ef3be01ec",
+   "family": "devote-advanced",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20210928174612"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/enviliv-advanced-pro-0-disc",
+   "timestamp": "20191019173259",
+   "sha256": "5c64833591a70e91cea40fecfb831203393c9515a902c2cab5df111e734bc2d6",
+   "family": "enviliv-advanced",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191019173259"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/enviliv-advanced-pro-0-disc-2019",
+   "timestamp": "20211024093340",
+   "sha256": "d3a9ff6df8afc30ec970aefbae48bcb6461fde5e766117b8ee464514c07ed0b6",
+   "family": "enviliv-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211024093340"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/enviliv-advanced-pro-0-disc-force-2020",
+   "timestamp": "20230610223151",
+   "sha256": "0874bc10fdca58fac331d6f1d5a8f2fc29b9027e6e2b63cbf6c027a3d6313a17",
+   "family": "enviliv-advanced",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191118134120"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/enviliv-advanced-pro-0-disc-force-2020",
+   "timestamp": "20240719052147",
+   "sha256": "1674b26a8377090c251a16ee4cad88fecb9fe6562f830fc4199b691407d690ef",
+   "family": "enviliv-advanced",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20191118134120"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/enviliv-advanced-pro-0-axs-2027",
+   "timestamp": "20260307230838",
+   "sha256": "90d30ed3da0ebd36311e8abb8f2ce51a2156c2eb5b25224c1eea8dac91deab2e",
+   "family": "enviliv-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260307230838"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/langma-advanced-2",
+   "timestamp": "20191019151941",
+   "sha256": "1b9eab665ac42acb8b204da10a735a3f60b487e58af9878acc782783fda79d9b",
+   "family": "langma-advanced",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190721103204"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/langma-advanced-pro-0-disc-force",
+   "timestamp": "20210801095203",
+   "sha256": "a89a1b84142a17153927234fc2065b56c5b89bca14377115cb55cc375b9561f9",
+   "family": "langma-advanced",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200605031001"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/langma-advanced-disc-2",
+   "timestamp": "20231001055216",
+   "sha256": "e306174845879275073d2bd4ec7f7cb456236a4be81812808f12a4726fdad475",
+   "family": "langma-advanced",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220808103925"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/langma-advanced-0",
+   "timestamp": "20251108163310",
+   "sha256": "b0b1e11318176947f7fe141dbb4bfebc7eaaebb655c234c15b5cbd6879ac69ba",
+   "family": "langma-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250717193913"
+  },
+  {
+   "url": "https://www.liv-cycling.com/us/langma-advanced-pro-0-pc-2025",
+   "timestamp": "20260518070540",
+   "sha256": "d5df5f4c3683b8ee16b40e18ff71513ef83c152ec1bc2333279079ff248f58ae",
+   "family": "langma-advanced",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240806105626"
+  }
+ ]
+}

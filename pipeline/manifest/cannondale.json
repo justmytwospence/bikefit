@@ -1,0 +1,441 @@
+{
+ "brand": "Cannondale",
+ "file": "cannondale",
+ "pages": [
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/caad13/caad13-disc-105",
+   "timestamp": "20211019054930",
+   "sha256": "3505a50cd5688ee0319ae0cd9ef30ab9107b52889f93cb6ff65aebcd6018ac7e",
+   "family": "caad13/caad13-disc-105",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6550-2021",
+     "timestamp": "20230104041929",
+     "sha256": "36e7f77578699ec112771199be4544fa04b5c6e5daade6b5b69a050b79caa9f8"
+    }
+   ],
+   "firstSeen": "20210411214845"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-105",
+   "timestamp": "20211202100447",
+   "sha256": "cc0245a85807e2145c1b17563d3ff022b616159ac59c1ca6df3057c73b6f7371",
+   "family": "supersix-evo/supersix-evo-carbon-disc-105",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6481-2021",
+     "timestamp": "20230510093635",
+     "sha256": "846dedb3249a314a0619e8eccbda3ee9f8bca7cd146c6154de387f793b822a6d"
+    }
+   ],
+   "firstSeen": "20200928042615"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-105",
+   "timestamp": "20230926160415",
+   "sha256": "59551e704039b5d129eb394cb87c38091b4057942a3dfff4b21261a8245180f5",
+   "family": "supersix-evo/supersix-evo-carbon-disc-105",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6481-2021",
+     "timestamp": "20230510093635",
+     "sha256": "846dedb3249a314a0619e8eccbda3ee9f8bca7cd146c6154de387f793b822a6d"
+    }
+   ],
+   "firstSeen": "20200928042615"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-105",
+   "timestamp": "20251108162716",
+   "sha256": "68234f7cca7574507706de0f4ffdbf60a58d65523cdf6193b822bcc0f91a71da",
+   "family": "supersix-evo/supersix-evo-carbon-disc-105",
+   "year": 2026,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6481-2021",
+     "timestamp": "20230510093635",
+     "sha256": "846dedb3249a314a0619e8eccbda3ee9f8bca7cd146c6154de387f793b822a6d"
+    }
+   ],
+   "firstSeen": "20200928042615"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-force-axs",
+   "timestamp": "20230315030930",
+   "sha256": "7f43184a6c76b5e586e5bb6e45a165c592668233747837e3e019dde883d8a62c",
+   "family": "supersix-evo/supersix-evo-carbon-disc-force-axs",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7443-COLL2021",
+     "timestamp": "20240302172053",
+     "sha256": "54be1650c4c4f61bf53bd4fee69f9f69409c98cee0c2602a4f9b829203f3a229"
+    }
+   ],
+   "firstSeen": "20220701185742"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-force-axs",
+   "timestamp": "20240214085406",
+   "sha256": "072fca7cffb580075f0881f6ce4f0eed0a4c64ab6fbac99ec56649bd15246fb9",
+   "family": "supersix-evo/supersix-evo-carbon-disc-force-axs",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7443-COLL2021",
+     "timestamp": "20240302172053",
+     "sha256": "54be1650c4c4f61bf53bd4fee69f9f69409c98cee0c2602a4f9b829203f3a229"
+    }
+   ],
+   "firstSeen": "20220701185742"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-hi-mod-disc-red-etap-axs",
+   "timestamp": "20210518231255",
+   "sha256": "4d81c042f5301fd1c14bccbb4a4c4145b288f44321ca72a9e5f163193c22f694",
+   "family": "supersix-evo/supersix-evo-hi-mod-disc-red-etap-axs",
+   "year": 2021,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7389-2021",
+     "timestamp": "20210518231258",
+     "sha256": "ce924d74389e32bb48b5a967337fc4031797b96f5e31bff0a3d16ce463c30021"
+    }
+   ],
+   "firstSeen": "20230205214932"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-hi-mod-disc-red-etap-axs",
+   "timestamp": "20230205214932",
+   "sha256": "4d81c042f5301fd1c14bccbb4a4c4145b288f44321ca72a9e5f163193c22f694",
+   "family": "supersix-evo/supersix-evo-hi-mod-disc-red-etap-axs",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7389-2021",
+     "timestamp": "20210518231258",
+     "sha256": "ce924d74389e32bb48b5a967337fc4031797b96f5e31bff0a3d16ce463c30021"
+    }
+   ],
+   "firstSeen": "20230205214932"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-tiagra",
+   "timestamp": "20211202091556",
+   "sha256": "f883c4ef216fcbf27c115c1e00c24398c2381a38d06e74464e6dec821c38b520",
+   "family": "synapse-carbon/synapse-carbon-tiagra",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/2901-2021",
+     "timestamp": "20231013165523",
+     "sha256": "9b8038218ecd4b8aa6c428b071f248b36db742d86658383546a795f334a38ed4"
+    }
+   ],
+   "firstSeen": "20211009041317"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-tiagra",
+   "timestamp": "20230929172719",
+   "sha256": "7e851cb992a10269523fee3d7caa580d3f19125c27410e4725f49e8213c026b8",
+   "family": "synapse-carbon/synapse-carbon-tiagra",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/2901-2021",
+     "timestamp": "20231013165523",
+     "sha256": "9b8038218ecd4b8aa6c428b071f248b36db742d86658383546a795f334a38ed4"
+    }
+   ],
+   "firstSeen": "20211009041317"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-womens-105",
+   "timestamp": "20210728013309",
+   "sha256": "2854ea50d82a529ca04bef3b78406b4da61f7c22157d91c017525b69128733c4",
+   "family": "synapse-carbon/synapse-carbon-womens-105",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/3147-2021",
+     "timestamp": "20220919140935",
+     "sha256": "42c6134d13b53ceebe20343d6380d208f791a1e7a2e6ab5fed99c8821ace12e0"
+    }
+   ],
+   "firstSeen": "20210721200423"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-womens-105",
+   "timestamp": "20230927222405",
+   "sha256": "da2faca733c5cac3d34e184bbdc30831bfff3d34738a3d676a54add1e3748d28",
+   "family": "synapse-carbon/synapse-carbon-womens-105",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/3147-2021",
+     "timestamp": "20220919140935",
+     "sha256": "42c6134d13b53ceebe20343d6380d208f791a1e7a2e6ab5fed99c8821ace12e0"
+    }
+   ],
+   "firstSeen": "20210721200423"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-105",
+   "timestamp": "20211202153951",
+   "sha256": "e8797b6ae06d2ccd5e7a3af524805cadcf118b58db573e109b22ac2e6bc94581",
+   "family": "synapse/synapse-105",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7395-2021",
+     "timestamp": "20230530164010",
+     "sha256": "e888c1e3511b9461b4ceea9765d53ebe2b6788ab8d93f4f22ee25634914d94ca"
+    }
+   ],
+   "firstSeen": "20210213224822"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-105",
+   "timestamp": "20231003003159",
+   "sha256": "2264f318592b5c6b66c12efebf5424c9f1451fe5ddfafbb5d8ffe74f136b46ff",
+   "family": "synapse/synapse-105",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7395-2021",
+     "timestamp": "20230530164010",
+     "sha256": "e888c1e3511b9461b4ceea9765d53ebe2b6788ab8d93f4f22ee25634914d94ca"
+    }
+   ],
+   "firstSeen": "20210213224822"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-sora",
+   "timestamp": "20211202215117",
+   "sha256": "dfb3a1446114e242b23da6dbd24fab9a4e41c52156fa6aee74097339eeb66f96",
+   "family": "synapse/synapse-sora",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/0363-2021",
+     "timestamp": "20240109231927",
+     "sha256": "d70e73d4625ae2f60fe6e66451838c375f7ca5ae7e31b1278c9e63657e47c472"
+    }
+   ],
+   "firstSeen": "20210303152048"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-sora",
+   "timestamp": "20231201231518",
+   "sha256": "5af9557f72200f383c3f26dcc0607d4570065b2c7b4ebd7d98a0b8c7e5e8b803",
+   "family": "synapse/synapse-sora",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/0363-2021",
+     "timestamp": "20240109231927",
+     "sha256": "d70e73d4625ae2f60fe6e66451838c375f7ca5ae7e31b1278c9e63657e47c472"
+    }
+   ],
+   "firstSeen": "20210303152048"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-tiagra",
+   "timestamp": "20211016061236",
+   "sha256": "61c1ca908378f050bd3a20ea09db14e5f7440f28389d2926c433c8564b94d936",
+   "family": "synapse/synapse-tiagra",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/2162-2021",
+     "timestamp": "20240101224634",
+     "sha256": "c0beeff63ab932fbe579c54a3530fa9aae4fc88dca739cbc3d6967c3820f7faa"
+    }
+   ],
+   "firstSeen": "20210207160229"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-tiagra",
+   "timestamp": "20230205214936",
+   "sha256": "0cd92f47105f6f2fc7fd8b337ae6b72fda6e34fa32ee3dcac66f9ea632fc543e",
+   "family": "synapse/synapse-tiagra",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/2162-2021",
+     "timestamp": "20240101224634",
+     "sha256": "c0beeff63ab932fbe579c54a3530fa9aae4fc88dca739cbc3d6967c3820f7faa"
+    }
+   ],
+   "firstSeen": "20210207160229"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/systemsix/systemsix-carbon-ultegra",
+   "timestamp": "20211202155139",
+   "sha256": "20fc9707af0fc84df1392e42e4399aa366f82e912c2acc4f2fcb5773063fc9a6",
+   "family": "systemsix/systemsix-carbon-ultegra",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6385-2021",
+     "timestamp": "20221104192604",
+     "sha256": "c8275297b5b1668bb972a7e71e7e638672d9ccdaeb2c53bf40a33ed5f63a9e8a"
+    }
+   ],
+   "firstSeen": "20200612201814"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/race/systemsix/systemsix-carbon-ultegra",
+   "timestamp": "20231208223113",
+   "sha256": "ada04f02dd3b5df0a4d356ffab28fd80da358dd2aa436c9a6d1b6a7e6648c305",
+   "family": "systemsix/systemsix-carbon-ultegra",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6385-2021",
+     "timestamp": "20221104192604",
+     "sha256": "c8275297b5b1668bb972a7e71e7e638672d9ccdaeb2c53bf40a33ed5f63a9e8a"
+    }
+   ],
+   "firstSeen": "20200612201814"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-1",
+   "timestamp": "20211202104322",
+   "sha256": "82a04e10479abf32233dae1a24378d2bf1cedef3e9f5d3e0c02cc4535cff77ac",
+   "family": "topstone-alloy/topstone-1",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7400-2021",
+     "timestamp": "20210815205151",
+     "sha256": "65c389966732ced43211c80cf27fbb95b2681eaa7196a53000cda85b50f55216"
+    }
+   ],
+   "firstSeen": "20210129164505"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-1",
+   "timestamp": "20231211020743",
+   "sha256": "e65019d1dc92ceb15329bd84975ec28df68eea2f2d9811f810a0a9706592923e",
+   "family": "topstone-alloy/topstone-1",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7400-2021",
+     "timestamp": "20210815205151",
+     "sha256": "65c389966732ced43211c80cf27fbb95b2681eaa7196a53000cda85b50f55216"
+    }
+   ],
+   "firstSeen": "20210129164505"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-3",
+   "timestamp": "20210916150412",
+   "sha256": "d1831cec8af95a619c8409a27c5b5438bf950cebb1a0422b72a0cb01fcd870c9",
+   "family": "topstone-alloy/topstone-3",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7402-2021",
+     "timestamp": "20220103225721",
+     "sha256": "050775024d45374550c77f6cd45e567bbd99d59756b2edf15451572ec40ecc6c"
+    }
+   ],
+   "firstSeen": "20210504040507"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-3",
+   "timestamp": "20230926170302",
+   "sha256": "9773549d70a1502377ecbef666e3bc9bdbb7332a7b07f9714f1c1dc3206f0451",
+   "family": "topstone-alloy/topstone-3",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/7402-2021",
+     "timestamp": "20220103225721",
+     "sha256": "050775024d45374550c77f6cd45e567bbd99d59756b2edf15451572ec40ecc6c"
+    }
+   ],
+   "firstSeen": "20210504040507"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-4",
+   "timestamp": "20211021142212",
+   "sha256": "bd4371c5b51c56b672e8973fb620f7e80dd4ea13260f53c14d005e8117570c1f",
+   "family": "topstone-alloy/topstone-4",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/2937-2021",
+     "timestamp": "20230527185357",
+     "sha256": "751c324609e4852ab311ed1144ff066853bc9bf15ac4253a06fbefaf0548c148"
+    }
+   ],
+   "firstSeen": "20210119063001"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-4",
+   "timestamp": "20231203101742",
+   "sha256": "8ea608877dacab1cb0e6e0b38849e7f6bcece7627ba537e3a989317e7cac27c6",
+   "family": "topstone-alloy/topstone-4",
+   "year": 2024,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/2937-2021",
+     "timestamp": "20230527185357",
+     "sha256": "751c324609e4852ab311ed1144ff066853bc9bf15ac4253a06fbefaf0548c148"
+    }
+   ],
+   "firstSeen": "20210119063001"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-105",
+   "timestamp": "20210925064458",
+   "sha256": "0d975e3ce322e97cba44cf30f8700aeb4b772713ddd0690635ac8729011937f1",
+   "family": "topstone-carbon/topstone-carbon-105",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6592-2020",
+     "timestamp": "20220920083627",
+     "sha256": "33a906c91cb9541ec84ad0741f383bd8f9b1b119630238eebcbfe415546f15ad"
+    }
+   ],
+   "firstSeen": "20200508111148"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-105",
+   "timestamp": "20230514000802",
+   "sha256": "e01daab7563ef2e3da862f57eddbebbcfeb8fd655343efbfb769cb7e4d4915a1",
+   "family": "topstone-carbon/topstone-carbon-105",
+   "year": 2023,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/6592-2020",
+     "timestamp": "20220920083627",
+     "sha256": "33a906c91cb9541ec84ad0741f383bd8f9b1b119630238eebcbfe415546f15ad"
+    }
+   ],
+   "firstSeen": "20200508111148"
+  },
+  {
+   "url": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-6",
+   "timestamp": "20220508042304",
+   "sha256": "1d4f485356da3cdc3272f1102c5ea6c144bd2790202eae0f799e0f14f1e047a5",
+   "family": "topstone-carbon/topstone-carbon-6",
+   "year": 2022,
+   "related": [
+    {
+     "url": "https://www.cannondale.com/en-us/api/products/3598-COLL2021",
+     "timestamp": "20230206151153",
+     "sha256": "0d9cf2cad3728901930dc733c35a3f6a530373c0970094139465617637e19acc"
+    }
+   ],
+   "firstSeen": "20220413140911"
+  }
+ ]
+}

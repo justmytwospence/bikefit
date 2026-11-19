@@ -2,18 +2,273 @@
   "brand": "Liv",
   "models": [
     {
-      "model": "Avail Advanced",
-      "year": 2026,
+      "model": "Avail",
+      "year": 2018,
+      "lastYear": 2025,
       "category": "endurance",
-      "source": "https://www.liv-cycling.com/us/avail-advanced-pro-0",
-      "retrieved": "2026-11-16",
-      "aliases": ["Avail","Avail Advanced Pro"],
+      "source": "https://www.liv-cycling.com/us/avail-3-2025",
+      "retrieved": "2026-11-09",
+      "archive": "https://web.archive.org/web/20261109164111/https://www.liv-cycling.com/us/avail-3-2025",
+      "aliases": ["Avail SL"],
+      "sizes": [
+        ["XS",530,372,75,70.5,135,430,420,998,70],
+        ["S",550,372,74.5,72,150,465,420,990,70],
+        ["M",569,377,74,72,170,500,420,1000,70],
+        ["L",588,386,74,72,190,535,420,1016,70]
+      ]
+    },
+    {
+      "model": "Avail Advanced",
+      "year": 2020,
+      "lastYear": 2022,
+      "category": "endurance",
+      "source": "https://www.liv-cycling.com/us/avail-advanced-2",
+      "retrieved": "2023-06-10",
+      "archive": "https://web.archive.org/web/20230610040819/https://www.liv-cycling.com/us/avail-advanced-2",
+      "sizes": [
+        ["XXS",511,363,75,70,110,385,420,988,75],
+        ["XS",527,368,74.5,70.5,125,400,420,995,75],
+        ["S",547,373,74.5,71.5,145,435,420,998,73],
+        ["M",568,377,74,72,165,470,420,1004,73],
+        ["L",587,387,74,72,185,505,420,1020,73]
+      ]
+    },
+    {
+      "model": "Avail Advanced",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://www.liv-cycling.com/us/avail-advanced-2",
+      "retrieved": "2026-07-12",
+      "archive": "https://web.archive.org/web/20260712115236/https://www.liv-cycling.com/us/avail-advanced-2",
       "sizes": [
         ["XXS",510,363,75,69.8,110,385,420,989,75],
         ["XS",528,373,74.5,71,125,405,420,995,75],
         ["S",547,373,74.5,71,145,435,420,1002,75],
         ["M",566,373,74,71,165,465,420,1007,75],
         ["L",589,381,74,72,185,495,420,1013,75]
+      ]
+    },
+    {
+      "model": "Avail AR",
+      "year": 2020,
+      "lastYear": 2025,
+      "category": "endurance",
+      "source": "https://www.liv-cycling.com/us/avail-ar-3",
+      "retrieved": "2025-09-07",
+      "archive": "https://web.archive.org/web/20250907215327/https://www.liv-cycling.com/us/avail-ar-3",
+      "sizes": [
+        ["XS",538,366,74.5,70.5,118,410,422,999,80],
+        ["S",561,369,74.5,71.5,138,445,422,1001,80],
+        ["M",582,373,74,72,158,480,422,1006,80],
+        ["L",601,383,74,72,178,515,422,1022,80]
+      ]
+    },
+    {
+      "model": "Avail AR",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.liv-cycling.com/us/avail-ar-3",
+      "retrieved": "2021-11-27",
+      "archive": "https://web.archive.org/web/20211127202657/https://www.liv-cycling.com/us/avail-ar-3",
+      "sizes": [
+        ["XXS",522,362,75,70,103,375,422,994,80],
+        ["XS",538,366,74.5,70.5,118,410,422,999,80],
+        ["S",561,369,74.5,71.5,138,445,422,1001,80],
+        ["M",582,373,74,72,158,480,422,1006,80],
+        ["L",601,383,74,72,178,515,422,1022,80]
+      ]
+    },
+    {
+      "model": "Avail AR",
+      "year": 2026,
+      "category": "endurance",
+      "source": "https://www.liv-cycling.com/us/avail-ar-1",
+      "retrieved": "2026-08-11",
+      "archive": "https://web.archive.org/web/20260811014942/https://www.liv-cycling.com/us/avail-ar-1",
+      "sizes": [
+        ["XXS",514,362,75,70,120,395,420,986,70],
+        ["XS",530,372,75,70.5,135,430,420,998,70],
+        ["S",550,372,74.5,72,150,465,420,990,70],
+        ["M",569,377,74,72,170,500,420,1000,70],
+        ["L",588,386,74,72,190,535,420,1016,70]
+      ]
+    },
+    {
+      "model": "Avail SL",
+      "year": 2019,
+      "category": "endurance",
+      "source": "https://www.liv-cycling.com/us/avail-sl-1-disc-2019",
+      "retrieved": "2025-08-18",
+      "archive": "https://web.archive.org/web/20250818111802/https://www.liv-cycling.com/us/avail-sl-1-disc-2019",
+      "sizes": [
+        ["XXS",514,362,75,70,120,395,420,986,70],
+        ["XS",530,372,75,70.5,135,430,420,998,70],
+        ["S",550,372,74.5,72,150,465,420,990,70],
+        ["M",569,377,74,72,170,500,420,1000,70],
+        ["L",588,386,74,72,190,535,420,1016,70]
+      ]
+    },
+    {
+      "model": "Brava Advanced",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "cyclocross",
+      "source": "https://www.liv-cycling.com/us/brava-advanced-pro-2-2024",
+      "retrieved": "2026-03-06",
+      "archive": "https://web.archive.org/web/20260306181038/https://www.liv-cycling.com/us/brava-advanced-pro-2-2024",
+      "sizes": [
+        ["XS",514,363,74,70.3,108,490,430,1004,60],
+        ["S",531,368,74,71,123,505,430,1009,60],
+        ["M",547,373,73.5,71.5,138,520,430,1014,60],
+        ["L",566,377,73,71.5,158,535,430,1025,60]
+      ]
+    },
+    {
+      "model": "Brava SLR",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "cyclocross",
+      "source": "https://www.liv-cycling.com/us/brava-slr-2020",
+      "retrieved": "2025-08-18",
+      "archive": "https://web.archive.org/web/20250818103734/https://www.liv-cycling.com/us/brava-slr-2020",
+      "sizes": [
+        ["XS",522,370,74.5,70.5,115,445,430,1013,60],
+        ["S",543,374,74,71,135,475,430,1019,60],
+        ["M",562,389,74,71,155,505,430,1040,60]
+      ]
+    },
+    {
+      "model": "Devote",
+      "year": 2021,
+      "lastYear": 2022,
+      "category": "gravel",
+      "source": "https://www.liv-cycling.com/us/devote-2-be-good-tm--edition",
+      "retrieved": "2023-10-01",
+      "archive": "https://web.archive.org/web/20231001055418/https://www.liv-cycling.com/us/devote-2-be-good-tm--edition",
+      "aliases": ["Devote Advanced"],
+      "sizes": [
+        ["XS",530,378,75,70.5,95,390,430,1013,80],
+        ["S",558,376,75,70.5,125,420,430,1020,80],
+        ["M",588,372,74.5,71,155,465,430,1022,80],
+        ["L",612,380,74.5,71,180,500,430,1039,80]
+      ]
+    },
+    {
+      "model": "Devote",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.liv-cycling.com/us/devote-2",
+      "retrieved": "2026-05-18",
+      "archive": "https://web.archive.org/web/20260518065054/https://www.liv-cycling.com/us/devote-2",
+      "sizes": [
+        ["XS",523,380,74.5,70,90,390,430,1017,80],
+        ["S",544,384,74.5,70.5,110,420,430,1024,80],
+        ["M",574,386,74.5,71,140,465,430,1031,80],
+        ["L",593,391,74.5,71,160,500,430,1043,80]
+      ]
+    },
+    {
+      "model": "Devote Advanced",
+      "year": 2025,
+      "lastYear": 2026,
+      "category": "gravel",
+      "source": "https://www.liv-cycling.com/us/devote-advanced-2",
+      "retrieved": "2026-08-08",
+      "archive": "https://web.archive.org/web/20260808095918/https://www.liv-cycling.com/us/devote-advanced-2",
+      "sizes": [
+        ["XS",523,380,74.5,70,90,390,425,1012,80],
+        ["S",544,384,74.5,70.5,110,420,425,1019,80],
+        ["M",574,386,74.5,71,140,465,425,1026,80],
+        ["L",593,391,74.5,71,160,500,430,1043,80]
+      ]
+    },
+    {
+      "model": "EnviLiv Advanced",
+      "year": 2019,
+      "lastYear": 2020,
+      "category": "aero",
+      "source": "https://www.liv-cycling.com/us/enviliv-advanced-pro-0-disc-force-2020",
+      "retrieved": "2024-07-19",
+      "archive": "https://web.archive.org/web/20240719052147/https://www.liv-cycling.com/us/enviliv-advanced-pro-0-disc-force-2020",
+      "sizes": [
+        ["XS",508,371,75,71,112,465,405,972,70],
+        ["S",525,378,74.5,72,127,500,405,974,68],
+        ["M",546,384,74,72.5,147,520,405,981,68]
+      ]
+    },
+    {
+      "model": "EnviLiv Advanced",
+      "year": 2027,
+      "category": "aero",
+      "source": "https://www.liv-cycling.com/us/enviliv-advanced-pro-0-axs-2027",
+      "retrieved": "2026-03-07",
+      "archive": "https://web.archive.org/web/20260307230838/https://www.liv-cycling.com/us/enviliv-advanced-pro-0-axs-2027",
+      "estimated": ["seatTubeLength","bbDrop"],
+      "sizes": [
+        ["XS",512,373,75,71,115,466,405,975,70],
+        ["S",527,378,74.5,72,130,484,405,977,70],
+        ["M",548,383,74,72.5,150,510,405,984,70],
+        ["L",567,392,73.5,72.5,170,533,405,999,70]
+      ]
+    },
+    {
+      "model": "Langma Advanced",
+      "year": 2019,
+      "category": "race",
+      "source": "https://www.liv-cycling.com/us/langma-advanced-2",
+      "retrieved": "2019-10-19",
+      "archive": "https://web.archive.org/web/20191019151941/https://www.liv-cycling.com/us/langma-advanced-2",
+      "sizes": [
+        ["XXS",492,365,75,70.5,100,385,405,966,70],
+        ["XS",508,371,75,71,115,410,405,972,70],
+        ["S",525,378,74.5,72,130,445,405,974,68],
+        ["M",546,384,74,72.5,150,480,405,981,68],
+        ["L",565,388,73.5,72.5,170,515,405,991,68]
+      ]
+    },
+    {
+      "model": "Langma Advanced",
+      "year": 2020,
+      "category": "race",
+      "source": "https://www.liv-cycling.com/us/langma-advanced-pro-0-disc-force",
+      "retrieved": "2021-08-01",
+      "archive": "https://web.archive.org/web/20210801095203/https://www.liv-cycling.com/us/langma-advanced-pro-0-disc-force",
+      "sizes": [
+        ["XS",508,371,75,71,115,410,405,972,70],
+        ["S",525,378,74.5,72,130,445,405,974,68],
+        ["M",546,384,74,72.5,150,480,405,981,68],
+        ["L",565,388,73.5,72.5,170,515,405,991,68]
+      ]
+    },
+    {
+      "model": "Langma Advanced",
+      "year": 2022,
+      "category": "race",
+      "source": "https://www.liv-cycling.com/us/langma-advanced-disc-2",
+      "retrieved": "2023-10-01",
+      "archive": "https://web.archive.org/web/20231001055216/https://www.liv-cycling.com/us/langma-advanced-disc-2",
+      "sizes": [
+        ["XXS",499,364,75,70,105,390,405,970,72],
+        ["XS",517,370,75,71,120,420,405,973,72],
+        ["S",532,377,74.5,72,135,450,405,977,70],
+        ["M",553,382,74,72.5,155,480,405,984,70],
+        ["L",569,386,73.5,72.5,175,510,405,996,67]
+      ]
+    },
+    {
+      "model": "Langma Advanced",
+      "year": 2025,
+      "category": "race",
+      "source": "https://www.liv-cycling.com/us/langma-advanced-0",
+      "retrieved": "2025-11-08",
+      "archive": "https://web.archive.org/web/20251108163310/https://www.liv-cycling.com/us/langma-advanced-0",
+      "sizes": [
+        ["XXS",499,364,75,70,105,390,405,970,72],
+        ["XS",517,370,75,71,120,420,405,973,72],
+        ["S",532,377,74.5,72,135,450,405,977,70],
+        ["M",553,382,74,72.5,155,480,405,984,70],
+        ["L",572,386,73.5,72.5,175,510,405,994,70]
       ]
     }
   ]

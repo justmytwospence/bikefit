@@ -1,0 +1,2283 @@
+{
+ "brand": "Focus",
+ "file": "focus",
+ "pages": [
+  {
+   "url": "https://www.focus-bikes.com/int/1071947-atlas-6-6-eqp",
+   "timestamp": "20230901135153",
+   "sha256": "e9cd32dba6ec2241a4e6758e9912ac54dd13b4fdcc570d80f96a4f9ee972a296",
+   "family": "atlas-6-6-eqp",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210926091326"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-6-6-eqp",
+   "timestamp": "20241202172113",
+   "sha256": "6801acf355d6edd3d3497bdabd5abe12f99a33ecce836a1fb65c44702fe5cc23",
+   "family": "atlas-6-6-eqp",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425013934"
+  },
+  {
+   "url": "https://www.focus-bikes.com/au_en/1030146-atlas-6-7",
+   "timestamp": "20211129044314",
+   "sha256": "3140f47ea22c4b09931e7d4b4f8ae9f0d389e16b4e3bd8053821f7fb1489a570",
+   "family": "atlas-6-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210304065759"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030146-atlas-6-7",
+   "timestamp": "20231002113022",
+   "sha256": "4975b516bb37aac6274fa6a01565fa85270c58b55f58a0ba050cc551d701c0ae",
+   "family": "atlas-6-7",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210124160707"
+  },
+  {
+   "url": "https://www.focus-bikes.com/de_en/atlas-6-7",
+   "timestamp": "20260113102433",
+   "sha256": "9d21cac8e641c5ae7380a39801ec6bf83b5f44454887510a42de97441acb737d",
+   "family": "atlas-6-7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240524063924"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-6-7",
+   "timestamp": "20251115232757",
+   "sha256": "c29c8328a60d1edd0c398ea7a40423342f6d26a6de3812d61186b8d620637063",
+   "family": "atlas-6-7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425001419"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030135-atlas-6-7-eqp",
+   "timestamp": "20211020035914",
+   "sha256": "6ba95c8b0272df8422ad875ac2b29a21c3077fb6acebe1598b03dad06fe0c8d7",
+   "family": "atlas-6-7-eqp",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210124162725"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030135-atlas-6-7-eqp",
+   "timestamp": "20231203145327",
+   "sha256": "0385c65975dbf39e0a5d2b74af4967576037b791df0a77f22e3c067f71f9b9a6",
+   "family": "atlas-6-7-eqp",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210124162725"
+  },
+  {
+   "url": "https://www.focus-bikes.com/cz_en/atlas-6-7-eqp",
+   "timestamp": "20250614011117",
+   "sha256": "30b87f99b04fca77e296031d9a3b52394b1f78256997a73743a05f37e9206f60",
+   "family": "atlas-6-7-eqp",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240912090132"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030117-atlas-6-8",
+   "timestamp": "20211027102320",
+   "sha256": "42e98618d89fe90ff7b131d475b7cf7b77d710c2eb721d35473b5e3927be0cbb",
+   "family": "atlas-6-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210124150710"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030117-atlas-6-8",
+   "timestamp": "20230531092152",
+   "sha256": "577e40f1c870d7788d87a6db5f855bff92358feb38334b77c9c56bd505096c7c",
+   "family": "atlas-6-8",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210124150710"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-6-8",
+   "timestamp": "20251009045903",
+   "sha256": "c5f151f179e7c9b38870973ebdd170dc22b7775f50698025903d26e3e824cc54",
+   "family": "atlas-6-8",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425013444"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-6-8-eqp",
+   "timestamp": "20251218154006",
+   "sha256": "4e7105aa9f04aaf8676b898e8f3092659c17e3806ed5c1265a6a90084bd8f226",
+   "family": "atlas-6-8-eqp",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260731221906"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-6-8-eqp",
+   "timestamp": "20260731221906",
+   "sha256": "4e7105aa9f04aaf8676b898e8f3092659c17e3806ed5c1265a6a90084bd8f226",
+   "family": "atlas-6-8-eqp",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260731221906"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1066343-atlas-6-9",
+   "timestamp": "20211130083448",
+   "sha256": "f067421851cc5913bff21dc7d037c1710ee007075c975e2f2d94f0c4ac3b5d95",
+   "family": "atlas-6-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210114224544"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1066343-atlas-6-9",
+   "timestamp": "20231002235604",
+   "sha256": "0850ae1e069fc5e3ce0b1a27f008c4f933cbb4185a3bbdde7ce759a1782cc0ab",
+   "family": "atlas-6-9",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210114224544"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-8-0",
+   "timestamp": "20250322090403",
+   "sha256": "7cf39af0115decb9811c260209c9f468a9a05f9c680cedc9d769a91000871eb0",
+   "family": "atlas-8-0",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425020610"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1068562-atlas-8-7",
+   "timestamp": "20231223175659",
+   "sha256": "0d996fe3b1a2f9cc2e8ac5eb89f717e295a50fe8946e5e932a58c05ad1d3d938",
+   "family": "atlas-8-7",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230604195432"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-8-7",
+   "timestamp": "20241203121255",
+   "sha256": "99d33d365def32b158477ef309e8f316e1782b654c153e41ee1f6cc3a665b230",
+   "family": "atlas-8-7",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425013732"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1068556-atlas-8-8",
+   "timestamp": "20231205030214",
+   "sha256": "c96c997867a09335e71dea72474295871df8a453d8f396ac2312e0e3f1e6bd23",
+   "family": "atlas-8-8",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230604212900"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-8-8",
+   "timestamp": "20250712184853",
+   "sha256": "2d55e2c651ba46b81a6b54cd645eb3964bb3fa93c516adcf6b1048bfa208aab8",
+   "family": "atlas-8-8",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425003438"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-8-8",
+   "timestamp": "20261114152938",
+   "sha256": "2d55e2c651ba46b81a6b54cd645eb3964bb3fa93c516adcf6b1048bfa208aab8",
+   "family": "atlas-8-8",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240425003438"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1068560-atlas-8-9",
+   "timestamp": "20231204163032",
+   "sha256": "9a18f44fce0732e4884fda06dcb25ec6c4d2ad98e1b2bec0bd882165179482bc",
+   "family": "atlas-8-9",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230604204712"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/atlas-8-9",
+   "timestamp": "20250212075053",
+   "sha256": "28adb78a767845a3e7f4659f78f1bfaeb829cd102742ec832d658f5ec8316377",
+   "family": "atlas-8-9",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425015729"
+  },
+  {
+   "url": "https://www.focus-bikes.com/de_en/atlas-8-9",
+   "timestamp": "20260520064117",
+   "sha256": "92b405a90fb8fedca3a2956fa4c0c343747987c9fca10687d410badceb63b3c4",
+   "family": "atlas-8-9",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260520064117"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069694-izalco-max-8-7",
+   "timestamp": "20210926101834",
+   "sha256": "1831bb59575e871cc26c0395dd729937a1c89b8ad76b7fe574bd24ddf9f7db7d",
+   "family": "izalco-max-8-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210926101834"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069694-izalco-max-8-7",
+   "timestamp": "20230930002255",
+   "sha256": "2477a4eb6c5548ed4e18b34f0981ee2bb907c060e1851b0564f5dfd41524b80e",
+   "family": "izalco-max-8-7",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210926101834"
+  },
+  {
+   "url": "https://www.focus-bikes.com/de_en/izalco-max-8-7",
+   "timestamp": "20260210161326",
+   "sha256": "02df0344057e960dc7c7159cbf812207ed98a1f71b0cacf7f89f4f46ea8ff691",
+   "family": "izalco-max-8-7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425043248"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-8-7",
+   "timestamp": "20250804154513",
+   "sha256": "28dee72c1fa4756dd8fb11190d9bb0978e49ee9a52740ca1106c152e27abb166",
+   "family": "izalco-max-8-7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425012154"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069720-izalco-max-8-8",
+   "timestamp": "20210922043837",
+   "sha256": "3d1484ebb38f84d5ae63796d858e80f08390154fc12a98d531ff92ccc1a36476",
+   "family": "izalco-max-8-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210922043837"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069720-izalco-max-8-8",
+   "timestamp": "20230926082411",
+   "sha256": "34f81fddda55e6f337a6ac3a62f2c4b21e08f7e7ad31e824bdc51902d33b92ec",
+   "family": "izalco-max-8-8",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210922043837"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-8-8",
+   "timestamp": "20250326013136",
+   "sha256": "2a9be73f47b87c00888b291badd87ef17e8c8c40572c1abc04f805845329d65f",
+   "family": "izalco-max-8-8",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425004703"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069695-izalco-max-8-9",
+   "timestamp": "20210926101621",
+   "sha256": "2568eddc1651fadf2b0492a9d9cc246c4681ed8326cac5f52ba393a7c8e6b404",
+   "family": "izalco-max-8-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210926101621"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069695-izalco-max-8-9",
+   "timestamp": "20230921175958",
+   "sha256": "1854ffc71a81399053bdeb712f84adfea292ac11aacef526fa51874e413b4db4",
+   "family": "izalco-max-8-9",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210926101621"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-8-9",
+   "timestamp": "20250323020346",
+   "sha256": "ec3fd2211213261230b56def3b98d8689737a62a6bad8879d1b506e072493f8c",
+   "family": "izalco-max-8-9",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425023015"
+  },
+  {
+   "url": "https://www.focus-bikes.com/fr_en/izalco-max-8-9",
+   "timestamp": "20260317145505",
+   "sha256": "37a96e6906a794589b893f658439d26ffd714f6dd38e6a550574dec57e10224c",
+   "family": "izalco-max-8-9",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241214062254"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-9-0",
+   "timestamp": "20250116210436",
+   "sha256": "6b2cf7887bd2f7c5dcf81cf0ffbed2f9c36092f4b615cbb649991e401ac3efcd",
+   "family": "izalco-max-9-0",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240519200011"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069706-izalco-max-9-7",
+   "timestamp": "20210926090641",
+   "sha256": "cc9caa5f8df42f4a15a64bb9129c3f63758b1e180b797b1fdaaeb4f1aeb06d29",
+   "family": "izalco-max-9-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210926090641"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069706-izalco-max-9-7",
+   "timestamp": "20230327223844",
+   "sha256": "cc1e36e166c9b564f5335542adf6d0e36cb2b1adf078a3230f8a5be9bd069969",
+   "family": "izalco-max-9-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210926090641"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-9-7",
+   "timestamp": "20250914142504",
+   "sha256": "cf8bc8483e4ee7eccfbd21b5f45b060d3bba95a9bceee441b8bb51a20cacdc62",
+   "family": "izalco-max-9-7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425005045"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069718-izalco-max-9-8",
+   "timestamp": "20211024061341",
+   "sha256": "22c241b75431616da730caf7822b3c27b3da65182f3f8623847c6429467820de",
+   "family": "izalco-max-9-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210926091622"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069718-izalco-max-9-8",
+   "timestamp": "20230927043428",
+   "sha256": "cc26e6e23fa4c7cc2a24d01d6af00d8bf25a0cfde3dcc1409aa750cdefefb9f3",
+   "family": "izalco-max-9-8",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210926091622"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-9-8",
+   "timestamp": "20251020005142",
+   "sha256": "d90aa271bc7278882e56f20651f07d2fd01e034e2f41728d480d4e587d14f252",
+   "family": "izalco-max-9-8",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425023455"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069712-izalco-max-9-9",
+   "timestamp": "20210926100043",
+   "sha256": "c2eac23f817e8d8313789d001563f5e2cb68f29c98bc195af305a308026d8f2d",
+   "family": "izalco-max-9-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210926100043"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1069712-izalco-max-9-9",
+   "timestamp": "20230401045223",
+   "sha256": "ec44a081c383008d04656cc25b6f014bad9cdee8a02e559e59b413c5fc8f2276",
+   "family": "izalco-max-9-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210926100043"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-9-9",
+   "timestamp": "20250322065019",
+   "sha256": "2cf5ce4590ce730237c5b8de88d1a6131683fd8e65e06d0cbe150e543b88a205",
+   "family": "izalco-max-9-9",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425015647"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/izalco-max-9-9",
+   "timestamp": "20260119161328",
+   "sha256": "33c7c84ced0432e84cfd19967e3991c509d599c4d9c198ae29f8876026401db1",
+   "family": "izalco-max-9-9",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425015647"
+  },
+  {
+   "url": "https://www.focus-bikes.com/jp_en/1072082-izalco-max-9-frameset",
+   "timestamp": "20211018112022",
+   "sha256": "ebba1c724bb6d52651f36f205c1428842b3233db0bbf34557d2c87530e7c4aca",
+   "family": "izalco-max-9-frameset",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211018112022"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1072082-izalco-max-9-frameset",
+   "timestamp": "20221209132943",
+   "sha256": "50d105f7232f6e120422c6649b55197411d51093c0769f839e008a961cc8a146",
+   "family": "izalco-max-9-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20210926102246"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45805-izalco-max-di2-frameset",
+   "timestamp": "20191115164917",
+   "sha256": "8d60db71b654c523bea651d79086647e5366195e13a42582cb83c1a355e34a41",
+   "family": "izalco-max-di2-frameset",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722091617"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45805-izalco-max-di2-frameset",
+   "timestamp": "20211019001418",
+   "sha256": "9c0d261208e89424f013af56b4a8db78d26e257459994789d910082d13d89d0e",
+   "family": "izalco-max-di2-frameset",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722091617"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45805-izalco-max-di2-frameset",
+   "timestamp": "20221002073453",
+   "sha256": "8166339efb67d3e1948fb1ed8f8aa67ae0d517f3f575ac9113b3f32fe9a76d77",
+   "family": "izalco-max-di2-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722091617"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/96609-izalco-max-di2-fs",
+   "timestamp": "20191209175218",
+   "sha256": "e4736b006851e0039d700745562476b9266b967f611324b918d2d93ace73ae29",
+   "family": "izalco-max-di2-fs",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718034734"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030542-izalco-max-disc-8-6",
+   "timestamp": "20211020040243",
+   "sha256": "ec72493cdd85ae707d5deaddd1baf61277bf740b984ae3eef0da4db5ccf8dd11",
+   "family": "izalco-max-disc-8-6",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923131641"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030542-izalco-max-disc-8-6",
+   "timestamp": "20220930194133",
+   "sha256": "027f4549698dd00c842d08837cb97174e8dbb22c5947cc1669c058f566d44d6d",
+   "family": "izalco-max-disc-8-6",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923131641"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95617-izalco-max-disc-8-7",
+   "timestamp": "20191122190207",
+   "sha256": "d590e53089b35860a708eb6063c8233ab877c925a40e97362006580c28cb14d4",
+   "family": "izalco-max-disc-8-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718034715"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030541-izalco-max-disc-8-7",
+   "timestamp": "20211019001033",
+   "sha256": "aba73911732ea147219778ab2cb879640be462efcc8e1b24a8f9ddc0ea9edc06",
+   "family": "izalco-max-disc-8-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923140814"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030541-izalco-max-disc-8-7",
+   "timestamp": "20221002073323",
+   "sha256": "98277586a3b896646c07f51e3fd8c4209d5a5c50acb16a9ec0a6c30e40415373",
+   "family": "izalco-max-disc-8-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923140814"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95639-izalco-max-disc-8-8",
+   "timestamp": "20191209181704",
+   "sha256": "b1b551b9ff51d8623522e9ef1f058fe0e5b4f4193c700980b8304783f77c2b2c",
+   "family": "izalco-max-disc-8-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035213"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030540-izalco-max-disc-8-8",
+   "timestamp": "20211018224229",
+   "sha256": "22d19b07ec89cc3c2ba3e0f893abe8a0a2619345e8121ba72c0d247ebf73dc9f",
+   "family": "izalco-max-disc-8-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923121237"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030540-izalco-max-disc-8-8",
+   "timestamp": "20221110200654",
+   "sha256": "6ec3cd40c72a1ce2bf7bdb14391cecd9d3071ab0512fe21ec7cf8e0d413caaea",
+   "family": "izalco-max-disc-8-8",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923121237"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95687-izalco-max-disc-8-9",
+   "timestamp": "20191209185443",
+   "sha256": "340c9ec166b47f5985ea93c84409712a9a3a2db28b361cf8da69de485cb0f4aa",
+   "family": "izalco-max-disc-8-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035737"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95687-izalco-max-disc-8-9",
+   "timestamp": "20211020042425",
+   "sha256": "45213ed10f2fae1c568556775686432ca35d0dbd785778bd229d4466dfc5ee82",
+   "family": "izalco-max-disc-8-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035737"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95687-izalco-max-disc-8-9",
+   "timestamp": "20220930195925",
+   "sha256": "db7f314e91d0d5f408ea60289d383a70df7758630940322f25b478db720f3fd3",
+   "family": "izalco-max-disc-8-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035737"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/96613-izalco-max-disc-8-fs",
+   "timestamp": "20191209192012",
+   "sha256": "e1b2de6fc9b596603ce3a6c62a7bef17800358c2c32917d3f839d9c84b479784",
+   "family": "izalco-max-disc-8-fs",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718040027"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030522-izalco-max-disc-9-6",
+   "timestamp": "20211019002451",
+   "sha256": "876e806409f0c2f2829473fd2e43f7a9fd9806081a1c5e0bd639201cc58fb7cc",
+   "family": "izalco-max-disc-9-6",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923142829"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030522-izalco-max-disc-9-6",
+   "timestamp": "20221002074821",
+   "sha256": "52f375e6d30bd36f9c388ddcc32501e52e2e71ef649e32e156a5c7b8d8a83f92",
+   "family": "izalco-max-disc-9-6",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923142829"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95691-izalco-max-disc-9-7",
+   "timestamp": "20191209183517",
+   "sha256": "f3d7e196200f0968020c0c5b88f4b1b9871de143267fdb601c57c6a8c5d9dc1c",
+   "family": "izalco-max-disc-9-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035422"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186030-izalco-max-disc-9-7",
+   "timestamp": "20210724144246",
+   "sha256": "abfc262872f3af5c1c0c915f5bc9a1492d1f4f2046d5d931a22c065e15c32260",
+   "family": "izalco-max-disc-9-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200924013804"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186030-izalco-max-disc-9-7",
+   "timestamp": "20221206204849",
+   "sha256": "cded615ebd6208b5cc659ddc8a06cfa65f683494bf0c920e9116ff339d260db6",
+   "family": "izalco-max-disc-9-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200924013804"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186030-izalco-max-disc-9-7-axs",
+   "timestamp": "20191113235403",
+   "sha256": "677f1356ae803fe68c0118daf658ed5f83ff93bf0ef4dbb068519841c3da0296",
+   "family": "izalco-max-disc-9-7-axs",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192454"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95606-izalco-max-disc-9-8",
+   "timestamp": "20191209175009",
+   "sha256": "e88232d83b43102f2e6ffc3272021350135d000e11b8abc4a5f820df8bcc5bc1",
+   "family": "izalco-max-disc-9-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718034316"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185836-izalco-max-disc-9-8",
+   "timestamp": "20210803235155",
+   "sha256": "7a1cb5365718a16c27c9ec49aae421e81864de9ca361bdb7dae69111ceadefa5",
+   "family": "izalco-max-disc-9-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192440"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95658-izalco-max-disc-9-9",
+   "timestamp": "20191209161638",
+   "sha256": "115bab5934fb4358832fb41657030c79045f756bef91891723cf8966bfaaaca1",
+   "family": "izalco-max-disc-9-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035443"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030524-izalco-max-disc-9-9",
+   "timestamp": "20210725071310",
+   "sha256": "4a1e775dceb49457a410033b3ecbf2f53f62d041686efc621c5dea3e68e4e42f",
+   "family": "izalco-max-disc-9-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923134335"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030552-izalco-max-disc-9-frameset",
+   "timestamp": "20211019113029",
+   "sha256": "d9931408572d0bbcc0aae360520d2fe4dccbbd5a835a94eaf0c6747acaad1d35",
+   "family": "izalco-max-disc-9-frameset",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923122133"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030552-izalco-max-disc-9-frameset",
+   "timestamp": "20221002055436",
+   "sha256": "82fcee13a2b9fbd605815de0b8f8a29c4507efde7cd1f113852a2fc740381007",
+   "family": "izalco-max-disc-9-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923122133"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/96624-izalco-max-disc-9-fs",
+   "timestamp": "20191209161559",
+   "sha256": "c7bd9512f7cf51e9ab5c22f66101c34caa253b1d840a699bceb44d4125d6c9ee",
+   "family": "izalco-max-disc-9-fs",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035434"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45806-izalco-max-disc-di2-frameset",
+   "timestamp": "20191122190508",
+   "sha256": "3fc808ec3d82e30c42b37cbf01721a5e6a64e703f1eafd4e998f9167bb0dea41",
+   "family": "izalco-max-disc-di2-frameset",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722091105"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45806-izalco-max-disc-di2-frameset",
+   "timestamp": "20211127175005",
+   "sha256": "480d31b0e756dcc11b3b5fc0e8debbe53df77a6f2d4eba89e325396eef80cf49",
+   "family": "izalco-max-disc-di2-frameset",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722091105"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45806-izalco-max-disc-di2-frameset",
+   "timestamp": "20221005122006",
+   "sha256": "583317e7dc76fc94b7f2e4912354d22e30c1779842104efee61d833a3d427815",
+   "family": "izalco-max-disc-di2-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722091105"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/44470-izalco-max-disc-dura-ace-di2",
+   "timestamp": "20191115164353",
+   "sha256": "3425bfd70a2f462e5e6db949d0c7f5f370b4f6c33eed79dd42e03e6d4cf5cb58",
+   "family": "izalco-max-disc-dura-ace-di2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090707"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/44470-izalco-max-disc-dura-ace-di2",
+   "timestamp": "20211020032916",
+   "sha256": "352bd6cb82424f2ac15d2ca2201beab80c60eb900650542c86bd83a8fffe7125",
+   "family": "izalco-max-disc-dura-ace-di2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722090707"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/44470-izalco-max-disc-dura-ace-di2",
+   "timestamp": "20220930190514",
+   "sha256": "f2b1b2bc3485f11b19779409f42f8265914a64d3424f3bebbfd9b15860360ddb",
+   "family": "izalco-max-disc-dura-ace-di2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722090707"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1068538-izalco-max-disc-pari",
+   "timestamp": "20211130100829",
+   "sha256": "f9ef14c92969d2ad193b04dd6a2cee42f3b201b3a3b64656ca55c6b3aca41696",
+   "family": "izalco-max-disc-pari",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20201201160958"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1068538-izalco-max-disc-pari",
+   "timestamp": "20230531004542",
+   "sha256": "5395da077e2ae64eeaec220459655441ed40d599cc01bbd6fd7b535a97dbe49a",
+   "family": "izalco-max-disc-pari",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20201201160958"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43556-izalco-max-disc-red-etap",
+   "timestamp": "20191208085243",
+   "sha256": "5bc391c71a5ada952d8e6d2c9f656304cdc7e809441bbd10c287a2e60598eced",
+   "family": "izalco-max-disc-red-etap",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722091603"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43556-izalco-max-disc-red-etap",
+   "timestamp": "20211020044845",
+   "sha256": "085c5d306ddb9f0d8279ccad44ad903bf053ce352f2a841739747334bc212977",
+   "family": "izalco-max-disc-red-etap",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722091603"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43556-izalco-max-disc-red-etap",
+   "timestamp": "20220930202027",
+   "sha256": "9322a48ef72d3c6550843571d76a94efb7050ea2da04975880de7335f92fc703",
+   "family": "izalco-max-disc-red-etap",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722091603"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42845-izalco-max-disc-ultegra-di2",
+   "timestamp": "20191206152838",
+   "sha256": "73294b28581283ae11653a495150ab2a4e6c4aaf7d1116f6ba455d7c4cbd39ed",
+   "family": "izalco-max-disc-ultegra-di2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722091630"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42845-izalco-max-disc-ultegra-di2",
+   "timestamp": "20211025113441",
+   "sha256": "d87f8077aeafb6eb341d992d58901596dd62263729dc526665a73f235a256397",
+   "family": "izalco-max-disc-ultegra-di2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722091630"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42845-izalco-max-disc-ultegra-di2",
+   "timestamp": "20221005000911",
+   "sha256": "3f9f71dc35e3a7533a5d45dd700ddc9ae710cf832365bc29e67069ef4a66c358",
+   "family": "izalco-max-disc-ultegra-di2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722091630"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43555-izalco-max-dura-ace",
+   "timestamp": "20191115164134",
+   "sha256": "c48874b52c319a9bad62bd2fca20c67998d525d0822fcc16aeb33892c8e4977e",
+   "family": "izalco-max-dura-ace",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090216"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43555-izalco-max-dura-ace",
+   "timestamp": "20211019110747",
+   "sha256": "20edebe9516a303c18454bfb4f293f56a3f45a4e904a48e852ba2a72c9e7ccac",
+   "family": "izalco-max-dura-ace",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722090216"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43555-izalco-max-dura-ace",
+   "timestamp": "20221002054253",
+   "sha256": "3d1aae881ce174a1e1c93da8444aafdc2ce8131da4ac9599f3d1f24e7e203443",
+   "family": "izalco-max-dura-ace",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722090216"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43644-izalco-max-dura-ace-di2",
+   "timestamp": "20191213045151",
+   "sha256": "8c7ae4967722a41b99c37840859d58c65e55bce323f988dd2eb866ada9cfcbb0",
+   "family": "izalco-max-dura-ace-di2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090405"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43644-izalco-max-dura-ace-di2",
+   "timestamp": "20211020030602",
+   "sha256": "50ab6ec1e2328b4afc54383d0aea5752d9b9f1e2701e835556ce5a1d53933d07",
+   "family": "izalco-max-dura-ace-di2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722090405"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43644-izalco-max-dura-ace-di2",
+   "timestamp": "20220930184324",
+   "sha256": "ca1f0b15274412ec35b45118cbb86fb253b4a950d05cecdfc1b10ddee1353144",
+   "family": "izalco-max-dura-ace-di2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722090405"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/68699-izalco-max-mechanical-frameset",
+   "timestamp": "20190722091215",
+   "sha256": "f224138e5ce2b214b46240536b2e1e058576de975973a1e5f55cac55821942d8",
+   "family": "izalco-max-mechanical-frameset",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722091215"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43560-izalco-max-red-etap",
+   "timestamp": "20191113211118",
+   "sha256": "c914e207f524c8993e3d8bfe958e72cc6717bb60b4305c9ad03e98e22a45f9b1",
+   "family": "izalco-max-red-etap",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090654"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43560-izalco-max-red-etap",
+   "timestamp": "20211018230703",
+   "sha256": "1925c13328a0c56bfd8f9d63eb85e8d67e23965f6e6f2e80c2defa312eef256a",
+   "family": "izalco-max-red-etap",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722090654"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43560-izalco-max-red-etap",
+   "timestamp": "20221002061337",
+   "sha256": "2bc96c9a622085a997534e20158996f970ce34f9a65a312d3350494ed1115b85",
+   "family": "izalco-max-red-etap",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722090654"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43245-izalco-max-ultegra",
+   "timestamp": "20191118044927",
+   "sha256": "a4c2a8cfcf9550c3d4ba2eabea7e2f6e21b310bdf700d8f158afe1121da4f410",
+   "family": "izalco-max-ultegra",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090210"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43245-izalco-max-ultegra",
+   "timestamp": "20211025093854",
+   "sha256": "27ecb2ae68d99e937a0e1a7c6f868440cf1def81425b74dd0a47533f042dc5d1",
+   "family": "izalco-max-ultegra",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722090210"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43245-izalco-max-ultegra",
+   "timestamp": "20221004221656",
+   "sha256": "5358874f9109b08416af77374c9780858d4496ffd1b28dfa2134bd496407023c",
+   "family": "izalco-max-ultegra",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722090210"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42844-izalco-max-ultegra-di2",
+   "timestamp": "20191115164514",
+   "sha256": "d51776483982797f5428b43ec924ae0f109a331469e933fa95887d53681cd1d8",
+   "family": "izalco-max-ultegra-di2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090832"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42844-izalco-max-ultegra-di2",
+   "timestamp": "20211127173802",
+   "sha256": "d1f87ec65c2af0db06a5b09a2426035a1ca3754e9d4c5f6c9871327cfa105277",
+   "family": "izalco-max-ultegra-di2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722090832"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42844-izalco-max-ultegra-di2",
+   "timestamp": "20221005120731",
+   "sha256": "c9e98e16d261354dc28329e2ca60e61817ca97d96146febfde402a2dd43e549b",
+   "family": "izalco-max-ultegra-di2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722090832"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42846-izalco-race-105",
+   "timestamp": "20191209155906",
+   "sha256": "7d0fbf6471bc5ca6a0d135ad065d8c1d58c1371eb3fbab1996cd1671f766c284",
+   "family": "izalco-race-105",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131604"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42846-izalco-race-105",
+   "timestamp": "20211028145238",
+   "sha256": "760123a757d8733fe4537d098c9495aa2575edef7ce2a444b74f9e16272fe3d0",
+   "family": "izalco-race-105",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190819131604"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42846-izalco-race-105",
+   "timestamp": "20221003144602",
+   "sha256": "99ccd1e62be98876ba9514957483910e423734accdc1effbaa8fc7b2ac7dab2e",
+   "family": "izalco-race-105",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819131604"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95627-izalco-race-6-7",
+   "timestamp": "20191211093607",
+   "sha256": "9b25e5bac6b001492c6a6b29d39dd7969b195083c4b95c1fd587187ab9fa831c",
+   "family": "izalco-race-6-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819132004"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95627-izalco-race-6-7",
+   "timestamp": "20211019130348",
+   "sha256": "e56bdcd1e6ad05267b12c9062e22f504316e40a902aef7adbedd326f1b8e525e",
+   "family": "izalco-race-6-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190819132004"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95627-izalco-race-6-7",
+   "timestamp": "20221002073845",
+   "sha256": "77796c8f1c5aef109e13613de5854826bff6c17eabb6c0b35ef52c72a0f873b4",
+   "family": "izalco-race-6-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819132004"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95673-izalco-race-6-9",
+   "timestamp": "20191212065722",
+   "sha256": "973ff319bc603fa4cc122005dd9e729961fe98ead8542bc158109f0729cad49d",
+   "family": "izalco-race-6-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819132058"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95693-izalco-race-9-7",
+   "timestamp": "20191209161627",
+   "sha256": "f3e0170b97d4072f238b46415056bf223360a5c2e6d92ae263b2304aade7cc53",
+   "family": "izalco-race-9-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131700"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95693-izalco-race-9-7",
+   "timestamp": "20211020040039",
+   "sha256": "5268f23dd44df9dfac556b1874cd8a7de357e5d53ead620e9bf593d468cd3177",
+   "family": "izalco-race-9-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190819131700"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95693-izalco-race-9-7",
+   "timestamp": "20220930194041",
+   "sha256": "6bb037e431a1ab64d8a63b08bbc9600c8a6abd8e7ec89b25e9437aaf6d38bcb3",
+   "family": "izalco-race-9-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819131700"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95590-izalco-race-9-8",
+   "timestamp": "20191115164554",
+   "sha256": "c3e8e3958ad05eeb33f0b75abd14548276dc5de7e8c2cc2b075572adcb13c9c7",
+   "family": "izalco-race-9-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090953"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95704-izalco-race-9-9",
+   "timestamp": "20191209151043",
+   "sha256": "e4bd5e68f7ae8b5f9a25398b0cd15fa70ee174b6015ea5fab033e863fed4dcbb",
+   "family": "izalco-race-9-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131211"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95704-izalco-race-9-9",
+   "timestamp": "20211018222940",
+   "sha256": "41bd942d2f50f8069059e0c8078864d5ede28639c15cd32bf20852f4422f7c1f",
+   "family": "izalco-race-9-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190819131211"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95704-izalco-race-9-9",
+   "timestamp": "20221002054340",
+   "sha256": "d522d1223a61d365950cdeb28bb89d1c4a01e70dfff428a6c8cc9f7b2f55d38f",
+   "family": "izalco-race-9-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819131211"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42549-izalco-race-al-105",
+   "timestamp": "20191209183346",
+   "sha256": "e6ab8b2b25d56bbcd841fb98cd13819786f58a20dea61ea01e0704e057e5bae1",
+   "family": "izalco-race-al-105",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131641"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42549-izalco-race-al-105",
+   "timestamp": "20211130094845",
+   "sha256": "9563747760dc8bece706272c45aad6f5c5623b4dbe89835ea3014d0e3e51a16f",
+   "family": "izalco-race-al-105",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190819131641"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42549-izalco-race-al-105",
+   "timestamp": "20221005122215",
+   "sha256": "dd20532f4c67540443a612ac033fd772919828a357d577a3b7fd4ee0cd250983",
+   "family": "izalco-race-al-105",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819131641"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43734-izalco-race-al-sora",
+   "timestamp": "20191209183906",
+   "sha256": "a56621d72adc3086bb9266bf1f29b2b7351bd7c0971efe512504b2a7537a4f89",
+   "family": "izalco-race-al-sora",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035503"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43734-izalco-race-al-sora",
+   "timestamp": "20211130095518",
+   "sha256": "bb6040d462e261e22f8912f06d9e4fc4b325d31adcdaa3ad6da157e400c43716",
+   "family": "izalco-race-al-sora",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035503"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43734-izalco-race-al-sora",
+   "timestamp": "20220926161313",
+   "sha256": "85fe01ae0cb041a3a9509f6673fd90c7dbccf5fc58817a4a9e5d9d7719917d52",
+   "family": "izalco-race-al-sora",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035503"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42847-izalco-race-disc-105",
+   "timestamp": "20191209175144",
+   "sha256": "844eac3a01236171eaa34a06a3363a881198f3b0830c5b16a8a00f97a4359df8",
+   "family": "izalco-race-disc-105",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192139"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42847-izalco-race-disc-105",
+   "timestamp": "20211018225429",
+   "sha256": "9346c466cbde24658110a6aa7dc7d677bc9762599a58ad98960238477234d080",
+   "family": "izalco-race-disc-105",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192139"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42847-izalco-race-disc-105",
+   "timestamp": "20221002055811",
+   "sha256": "8dc865038362b60b7701ddf19883f35e3441ce416acd7e944d6f95005dcc23ad",
+   "family": "izalco-race-disc-105",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192139"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186064-izalco-race-disc-9-7",
+   "timestamp": "20191209183223",
+   "sha256": "302dbec0e4f4edb9e493a1e4c7b5466b924bacbd8b64bed974991d6f6997cc12",
+   "family": "izalco-race-disc-9-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102545"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185910-izalco-race-disc-9-8",
+   "timestamp": "20191209181041",
+   "sha256": "01c246aceead0addde552f492464e8e1e1ef0ad4f178d1a0e2653cdc847bc820",
+   "family": "izalco-race-disc-9-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102409"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95597-izalco-race-disc-9-9",
+   "timestamp": "20191209151450",
+   "sha256": "3cb564e668f237048f6681573ef457b28f8c287ec0f6c0cc856c839b90691283",
+   "family": "izalco-race-disc-9-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131402"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95597-izalco-race-disc-9-9",
+   "timestamp": "20211018225942",
+   "sha256": "23b864b55fc8bf3020e1657e7b33a17dea7fb09648f5332278e6f94643ec85ed",
+   "family": "izalco-race-disc-9-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190819131402"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95597-izalco-race-disc-9-9",
+   "timestamp": "20221002060358",
+   "sha256": "b8828dd9ccde11b9d082485735ee192fc5981c7466a8d4ce4cb35b8f867f0b18",
+   "family": "izalco-race-disc-9-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819131402"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42959-izalco-race-disc-ultegra",
+   "timestamp": "20191209175059",
+   "sha256": "c5e854b26efc0b9a490eb4faec5cf1b555022da65fcccbcd48a5306e921d1f50",
+   "family": "izalco-race-disc-ultegra",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717154019"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42959-izalco-race-disc-ultegra",
+   "timestamp": "20211025001919",
+   "sha256": "9ded1f38a6de53dfdcece93cbabe809ae852b521fe07040d04fddec7cf767800",
+   "family": "izalco-race-disc-ultegra",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190717154019"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42959-izalco-race-disc-ultegra",
+   "timestamp": "20221004222504",
+   "sha256": "3c7f72aab88dad5415434ddf2313d45bf8dc7b75c513766e44c61bd91222da51",
+   "family": "izalco-race-disc-ultegra",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190717154019"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42958-izalco-race-dura-ace",
+   "timestamp": "20191113211424",
+   "sha256": "11302b355601dc3bc5f1225252bcbf014e87f79ba8a17667eb26e428647daa2d",
+   "family": "izalco-race-dura-ace",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035653"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42958-izalco-race-dura-ace",
+   "timestamp": "20211025110359",
+   "sha256": "3fb6021954f1a23ea99e6200f33a14ed0ff8f8821d61b18bfb07792fe48f4725",
+   "family": "izalco-race-dura-ace",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035653"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42958-izalco-race-dura-ace",
+   "timestamp": "20221004234015",
+   "sha256": "49797f739722412286fd2ac28162c39564911a683f4b5d1a9951d126bde3fee5",
+   "family": "izalco-race-dura-ace",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035653"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42960-izalco-race-sora",
+   "timestamp": "20191213052156",
+   "sha256": "964407773d86bae1ccdfcbae441847d2b610b74b96e9bfdad68d55685670a645",
+   "family": "izalco-race-sora",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192606"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42960-izalco-race-sora",
+   "timestamp": "20211025013049",
+   "sha256": "eebc3bcae8c2c9e09c2ee022c45e0e531df32f65a0a28cb6cad3311951f251ec",
+   "family": "izalco-race-sora",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192606"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42960-izalco-race-sora",
+   "timestamp": "20221004233133",
+   "sha256": "34d801a41e910beee09a0d600381339e1d3be7e5223cef0170774b08b71262e8",
+   "family": "izalco-race-sora",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192606"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42717-izalco-race-ultegra",
+   "timestamp": "20191211082051",
+   "sha256": "7d1058674a39be71feede27fb4a6af5a002e528dfb97cff02f9fa66a2577e979",
+   "family": "izalco-race-ultegra",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131506"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42717-izalco-race-ultegra",
+   "timestamp": "20211020033638",
+   "sha256": "5335c86896de4a8749b0eab0f71107e601e546fa7f68aa64020a238a67a7e0f2",
+   "family": "izalco-race-ultegra",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190819131506"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42717-izalco-race-ultegra",
+   "timestamp": "20220930191534",
+   "sha256": "dfe9179771eff3e51f1b450d8cece81bb59da31ff602860d9c58e64f86393bd4",
+   "family": "izalco-race-ultegra",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819131506"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42922-izalco-race-ultegra-di2",
+   "timestamp": "20191216130556",
+   "sha256": "53f9a4c2bce6b2d9833c7e6495db0ba7e27db2b47de14805a8e5e653be5feeec",
+   "family": "izalco-race-ultegra-di2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035313"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42922-izalco-race-ultegra-di2",
+   "timestamp": "20211019121200",
+   "sha256": "64ca21a3a37de26f58addfa8acc96590eea0e38c231c05b77a9f9b57de7fb3a7",
+   "family": "izalco-race-ultegra-di2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035313"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42922-izalco-race-ultegra-di2",
+   "timestamp": "20221002063834",
+   "sha256": "c9bcbdaa554f202064ca416c23f0585e53e273e0bb586c031a8fe9307017e363",
+   "family": "izalco-race-ultegra-di2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035313"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45943-mares-105",
+   "timestamp": "20191211081307",
+   "sha256": "d69ab918c1f93bae9be4fd94f867e55741858eb96842a441c64701551bfd47c4",
+   "family": "mares-105",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718034936"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/45943-mares-105",
+   "timestamp": "20211127172108",
+   "sha256": "6885525ec7ec7902d990f809dac86849c8023d5531fed55b39a8da1161e1f924",
+   "family": "mares-105",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718034936"
+  },
+  {
+   "url": "https://www.focus-bikes.com/nl_en/45943-mares-105",
+   "timestamp": "20221203195509",
+   "sha256": "f69abf5dad755b3039ef330108e4c28330a579481a8307968f7067eb5b211405",
+   "family": "mares-105",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190920212659"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95610-mares-6-7",
+   "timestamp": "20191211091345",
+   "sha256": "516fcdd62d4b55f27a7c0b9047b100427a05f228fbd5341ab8a89ffcb88b5edc",
+   "family": "mares-6-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822035932"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95662-mares-6-8",
+   "timestamp": "20191209163037",
+   "sha256": "2e9292a1ad6eb3241c7d66f3d231b274d3f67f1429f9e285d06b2967a28b2343",
+   "family": "mares-6-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822035812"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95608-mares-6-9",
+   "timestamp": "20191211092525",
+   "sha256": "ab94be7e2a6e6cdc9d6ea1780a59e3e10df8b047ec7bfe361922321fa52ae584",
+   "family": "mares-6-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131904"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185993-mares-6-9",
+   "timestamp": "20211215005429",
+   "sha256": "fc2d8377f3d41fcbf7f160cb622dcb8d5097adf8852f7e55eea375e79c9db9c0",
+   "family": "mares-6-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190822102540"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185993-mares-6-9",
+   "timestamp": "20221005121740",
+   "sha256": "0cfcf165696e25a76c9c15201ea2fc9a0ef3951033ebe3aa66c9e518db990780",
+   "family": "mares-6-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190822102540"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95632-mares-9-7",
+   "timestamp": "20191211224630",
+   "sha256": "072d97319c97bcd2541724648f28a3582db5d0d00c3aa9937cc68984ed4254a4",
+   "family": "mares-9-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822035803"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95667-mares-9-8",
+   "timestamp": "20191212064016",
+   "sha256": "eff7410d344c033c734357127fa8694582c9f9857c3a349599ff05a1f873e618",
+   "family": "mares-9-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131909"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030131-mares-9-8",
+   "timestamp": "20211028184524",
+   "sha256": "1b78ce83b501004d19b67e76cb1659f6f8f5382261294ac34d6e5424d7faa5aa",
+   "family": "mares-9-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923142508"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030131-mares-9-8",
+   "timestamp": "20221003154722",
+   "sha256": "8b360ab2d09351dc2c1e4fc7ce8823b053ff4fcaf5a37052712f90f5276eca42",
+   "family": "mares-9-8",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923142508"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95625-mares-9-9",
+   "timestamp": "20191211081201",
+   "sha256": "15a5d730c542dfbfac49c6b6b1754c82b4b6c7d1ed6cb52399fb0534dc912fd5",
+   "family": "mares-9-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822035424"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030545-mares-9-9",
+   "timestamp": "20211018235658",
+   "sha256": "11bfa929e22c5147c2cf1363c6982cfbc54db02e5ef6b9536e2185a1345c3c6a",
+   "family": "mares-9-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923135152"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030545-mares-9-9",
+   "timestamp": "20221002072119",
+   "sha256": "e557dd75cfc0d8a3dab88fff1e804daf14fbf34fd99730a6bd9cb01a6f55ec1b",
+   "family": "mares-9-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923135152"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42955-mares-al-105",
+   "timestamp": "20191118044941",
+   "sha256": "a6c4aa37f2e4352277069d513ba70634d1792a46a71fd1653249e8467062448a",
+   "family": "mares-al-105",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718034443"
+  },
+  {
+   "url": "https://www.focus-bikes.com/au_en/42955-mares-al-105",
+   "timestamp": "20201001091239",
+   "sha256": "a47631b1be06e212b3f8a8309865591ffc7fa8b6204abddb9b7bf6f409abd62b",
+   "family": "mares-al-105",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200106220232"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/28960-mares-al-commuter",
+   "timestamp": "20191113211514",
+   "sha256": "1c1344330bbf73e28248f1f4dd4df117ca71edb179a93d756c82ccb5d97fdfe4",
+   "family": "mares-al-commuter",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035915"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/28960-mares-al-commuter",
+   "timestamp": "20211130101851",
+   "sha256": "97067dc5ee5c5c9abbdae742e8456f2010084086692aad9841db7410ea0faeaa",
+   "family": "mares-al-commuter",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035915"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/28960-mares-al-commuter",
+   "timestamp": "20221005125437",
+   "sha256": "52bd4a76c299e4edfca990ead56cbca408c0a06f60fad1fdbd4fd3821f37351d",
+   "family": "mares-al-commuter",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035915"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/24268-mares-al-tiagra",
+   "timestamp": "20191113211701",
+   "sha256": "4334236ebe1a6d358c191feb7e920ac3fcda8bda9df0f2fc2a1e0e247dd591f9",
+   "family": "mares-al-tiagra",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192738"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42556-mares-apex-1",
+   "timestamp": "20191209181125",
+   "sha256": "00dc9e09eb5372074bc03fa20d6e9221c20cdade25c40f783504b386dbe0bfe2",
+   "family": "mares-apex-1",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035111"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42556-mares-apex-1",
+   "timestamp": "20211019115635",
+   "sha256": "af6c035f10fb7ee106720d643c95288c89b87b3bd8f533eea961775ccb4a4e7f",
+   "family": "mares-apex-1",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035111"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42556-mares-apex-1",
+   "timestamp": "20221002062437",
+   "sha256": "3c2cae73a091c390ac0326888ac416facba31c9d5eb1026e995832fb82824abf",
+   "family": "mares-apex-1",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035111"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42554-mares-force-1",
+   "timestamp": "20191211090753",
+   "sha256": "ccd218f3efc3420f1b0228c3b3dcdacc5f8961eafafc954dceafc0a0fd240154",
+   "family": "mares-force-1",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035808"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42554-mares-force-1",
+   "timestamp": "20211019124301",
+   "sha256": "e9fa9289a75489fb0c30d63552a51d692edae7bbc44f2736e69394c8a83e4d5d",
+   "family": "mares-force-1",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035808"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42554-mares-force-1",
+   "timestamp": "20221002071725",
+   "sha256": "7b466de3bbd3e69383787d9455cf13babc6d4f691ebc03adfd8f2adfce205879",
+   "family": "mares-force-1",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035808"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/33952-mares-frameset",
+   "timestamp": "20191114124321",
+   "sha256": "954382de64d69d9ed3a161c431470c73ba58074173c321833eb310e29ef3ea4f",
+   "family": "mares-frameset",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035328"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/33952-mares-frameset",
+   "timestamp": "20211028174452",
+   "sha256": "698f63eb2448eb45b8482005717764b2b424db8d3d22d5934c7e37c09eb528bf",
+   "family": "mares-frameset",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035328"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/33952-mares-frameset",
+   "timestamp": "20221003144843",
+   "sha256": "db992353a62da9fc45de765e9f673cad72d9c69341506ff053dd2d4d159b9ea1",
+   "family": "mares-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035328"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/69442-mares-mechanical-frameset",
+   "timestamp": "20191122190245",
+   "sha256": "1828bfc9419e337b2b44a2413da4e4d5c8b4de47cee5abec91d3e8d633c2a3f3",
+   "family": "mares-mechanical-frameset",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090629"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/69442-mares-mechanical-frameset",
+   "timestamp": "20211127171231",
+   "sha256": "69c5ff41ae6265444593e15262e523a43f05511ab8c2dcbeabd7b5287dfbcb83",
+   "family": "mares-mechanical-frameset",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722090629"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/69442-mares-mechanical-frameset",
+   "timestamp": "20221005114148",
+   "sha256": "4e7c338fe4fbc72d56fee1386e28cafbb9d1bfdfa63ec40adce2a18a02a84bb4",
+   "family": "mares-mechanical-frameset",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722090629"
+  },
+  {
+   "url": "https://www.focus-bikes.com/gb_en/45944-mares-rival-1",
+   "timestamp": "20191212053154",
+   "sha256": "347f92fe272b208590f5ddedf830d0a4b996967857ee57a4af34386ff8ab1580",
+   "family": "mares-rival-1",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717155134"
+  },
+  {
+   "url": "https://www.focus-bikes.com/gb_en/45944-mares-rival-1",
+   "timestamp": "20211205201052",
+   "sha256": "db5730484bd8639801717aed577f2cba447a9286575e446978e0d2ba8ff13c52",
+   "family": "mares-rival-1",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190717155134"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42961-mares-ultegra",
+   "timestamp": "20191209184203",
+   "sha256": "df6e00dd1162113ba24c642c57a99761df6fed783e8908a1cae2ac3b411ca0e3",
+   "family": "mares-ultegra",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035535"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42961-mares-ultegra",
+   "timestamp": "20211019122902",
+   "sha256": "9382fe3529dfd3d6be4baefcf55cbcf4a35c9211bcaacc2f209a2ac77e2d2da5",
+   "family": "mares-ultegra",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035535"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42961-mares-ultegra",
+   "timestamp": "20221002065635",
+   "sha256": "f32daf07b2e135b49b7a804ab40a636e1713cd7f8bf7f8812225d0b1b7aef132",
+   "family": "mares-ultegra",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718035535"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43246-paralane-105",
+   "timestamp": "20191209155444",
+   "sha256": "637a8d1c6c6c0d0eb03aab268aac7ea953596dc5ee5f2e9879232124cdedee7a",
+   "family": "paralane-105",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718035300"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43246-paralane-105",
+   "timestamp": "20211130093018",
+   "sha256": "85cbe64f5229508a251d0581768acbc8a61bf184c3484f379a11a13931a1a4dc",
+   "family": "paralane-105",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718035300"
+  },
+  {
+   "url": "https://www.focus-bikes.com/be_en/43246-paralane-105",
+   "timestamp": "20221203195311",
+   "sha256": "de04c99bb65e460da4c391385022c9389191069122f20f275bdbcaba62f3bafe",
+   "family": "paralane-105",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191019161040"
+  },
+  {
+   "url": "https://www.focus-bikes.com/au_en/95614-paralane-5-9-gc",
+   "timestamp": "20190917115220",
+   "sha256": "f20693bd824b2facdd0c3537899d151004d29f733ea62588755fca841b0b113e",
+   "family": "paralane-5-9-gc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190717154924"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185929-paralane-6-6-commute",
+   "timestamp": "20191209185852",
+   "sha256": "c354082caa1ba5d80a8bfd0567e4c60107d2fed4c680d0eef890ff40bb98a078",
+   "family": "paralane-6-6-commute",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102735"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185929-paralane-6-6-commute",
+   "timestamp": "20211025013910",
+   "sha256": "ed7f0a69f38d86a555f2a534a0553db3c55fd1790bcb0401343274f2a00c9f16",
+   "family": "paralane-6-6-commute",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190822102735"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185929-paralane-6-6-commute",
+   "timestamp": "20221120132653",
+   "sha256": "3b36294f5e95b1227564f0e2db172eb13dcf27dab477e7910d4373dad67aa9df",
+   "family": "paralane-6-6-commute",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190822102735"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95657-paralane-6-7",
+   "timestamp": "20191212060414",
+   "sha256": "63df36ce66ffcf919268fb3012423327ec6deb430bcf5bc106597e2d4c0a6573",
+   "family": "paralane-6-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102603"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95657-paralane-6-7",
+   "timestamp": "20211230235518",
+   "sha256": "e1e717dd99a8e43a7e399ab03d148bfd22de41979ca4a573aaddc055c97250ce",
+   "family": "paralane-6-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190822102603"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95657-paralane-6-7",
+   "timestamp": "20221002064947",
+   "sha256": "46d01dd605cafe8267ad17d7e815d1ea2f99248a2889c188e8e9a217e86e05e2",
+   "family": "paralane-6-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190822102603"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185989-paralane-6-8",
+   "timestamp": "20191212052704",
+   "sha256": "4d445ca5fb3447786f7dbe8d9564d8aefdc6f504f0a01cffdb75c8b2184cacda",
+   "family": "paralane-6-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102153"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185941-paralane-6-8-gc",
+   "timestamp": "20191209190207",
+   "sha256": "c6dc2209521870d9c3cfc2f333131c06689c5e29179cc48d9a3ea59716b44140",
+   "family": "paralane-6-8-gc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102748"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185941-paralane-6-8-gc",
+   "timestamp": "20211020043121",
+   "sha256": "d33f1213b3cb318d6777841289caa7af63eb965884ab3f9b44208c13127f32f7",
+   "family": "paralane-6-8-gc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190822102748"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185941-paralane-6-8-gc",
+   "timestamp": "20230207121438",
+   "sha256": "85e1204641f306f491fd6d4a671f2d124bf2377b3d7ea15e98771c01dcd3e984",
+   "family": "paralane-6-8-gc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190822102748"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95688-paralane-6-9",
+   "timestamp": "20191122190818",
+   "sha256": "3732936a6f3401d9d25e13603f7fbdf9a1acef6c6f683026be1d0b55d7058c0f",
+   "family": "paralane-6-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722091626"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95688-paralane-6-9",
+   "timestamp": "20211025015549",
+   "sha256": "1dba69cc510c2050bf7d62c5bfa4a5a151fbfdf1e6f4fd2b925328e8fc9857df",
+   "family": "paralane-6-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190722091626"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95688-paralane-6-9",
+   "timestamp": "20221005000656",
+   "sha256": "6351033c645a7741b08626ccd71bad50f775ef4306127dd7608cbe4ab771d378",
+   "family": "paralane-6-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190722091626"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186042-paralane-8-7",
+   "timestamp": "20191209175150",
+   "sha256": "99276bc05a85b64b8dbb55c0988c99f091d5af2c13f112ddf0ed78564d6f8e06",
+   "family": "paralane-8-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102237"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/paralane-8-7",
+   "timestamp": "20241102003725",
+   "sha256": "5b6dd8816c0279a541cc608e0888146867ef447e42e46eac355e3b219982f4ac",
+   "family": "paralane-8-7",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240425011200"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/paralane-8-7",
+   "timestamp": "20260118172047",
+   "sha256": "d1c911ac1f227f9a62356a46994b0d54bf38baaac60431548702fa230de19af9",
+   "family": "paralane-8-7",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425011200"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030544-paralane-8-8",
+   "timestamp": "20211215005414",
+   "sha256": "9ff9871d9a34e89d8f694e031d3107334b877c372f0d5cb9d614bb1fdbdfc9d5",
+   "family": "paralane-8-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200923125124"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/1030544-paralane-8-8",
+   "timestamp": "20221002062553",
+   "sha256": "5059a26769a76e7ff333ef088137393310655a4ff95af3e9d1c2a7599a3ccd63",
+   "family": "paralane-8-8",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200923125124"
+  },
+  {
+   "url": "https://www.focus-bikes.com/fr_en/paralane-8-8",
+   "timestamp": "20260611133503",
+   "sha256": "16be3969acfa6808ddcc02f6d156501ecd5c087a7fc8f2ad945a7ec629996fc6",
+   "family": "paralane-8-8",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250115145557"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/paralane-8-8",
+   "timestamp": "20250719013010",
+   "sha256": "77a86180cddb2c88519ac58d43c97b96563c843f930512c0471d9df54519467d",
+   "family": "paralane-8-8",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425004049"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185837-paralane-8-9",
+   "timestamp": "20191209190913",
+   "sha256": "a616a8ca31eaff3c23ccd8a1710496ef059044d7622c13555ea2b3ff3cf171f6",
+   "family": "paralane-8-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102824"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185837-paralane-8-9",
+   "timestamp": "20211016002006",
+   "sha256": "b67ec46f59cb0c78fe8ab700ec8d34cf1b25016e017a18e971af3bdc06e42437",
+   "family": "paralane-8-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190822102824"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/185837-paralane-8-9",
+   "timestamp": "20220707020529",
+   "sha256": "48d02a7ebacacfffd30233f55717032e0425e26a6723a09b01fd24896154205b",
+   "family": "paralane-8-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190822102824"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/paralane-8-9",
+   "timestamp": "20251027103439",
+   "sha256": "43cfef9903306ddfda7d020200d72af69301d6414516570ea257be059ffa9c0c",
+   "family": "paralane-8-9",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240425023052"
+  },
+  {
+   "url": "https://www.focus-bikes.com/au_en/paralane-8-9",
+   "timestamp": "20261114153046",
+   "sha256": "639850de9eece865bb1d8413380b5495867da23a5f2587cf9d4ac2db3a67b0cb",
+   "family": "paralane-8-9",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20241203194944"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95661-paralane-8-9-gc",
+   "timestamp": "20190819131805",
+   "sha256": "fda7f8a8dcbb205493926cbb2953d17842f2e160831bd1e31e879856b5859595",
+   "family": "paralane-8-9-gc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190819131805"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95642-paralane-9-5",
+   "timestamp": "20191209182743",
+   "sha256": "396d3e60310c1ce5993c8aca582b88d730a0f7ce8af1c70fbea26896212ebc0c",
+   "family": "paralane-9-5",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102535"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95642-paralane-9-5",
+   "timestamp": "20210621010834",
+   "sha256": "63f4432345785213ca8f5711815196a512bc0e7230e9997c3d5f70f7c60aff97",
+   "family": "paralane-9-5",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190822102535"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95642-paralane-9-5",
+   "timestamp": "20221201170213",
+   "sha256": "f6cec94ab449f05ff8447167d4f1622320af7589274ca6b917709bcad7a3fa82",
+   "family": "paralane-9-5",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190822102535"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95642-paralane-9-6",
+   "timestamp": "20190716192424",
+   "sha256": "6f715ff60cd00f211b729730f3500929563cf30e47195097909b9436ed8cba9c",
+   "family": "paralane-9-6",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192424"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186048-paralane-9-6-gc",
+   "timestamp": "20191212052754",
+   "sha256": "7713838f59eff330c1c94bd83e2071f038ab32969aebbdf1c1c3459146050986",
+   "family": "paralane-9-6-gc",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190822102227"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186048-paralane-9-6-gc",
+   "timestamp": "20211025100635",
+   "sha256": "fab7405d957dd314ee898af3396eeef27f5fe45d99cfde3bf71b0e7af57e352d",
+   "family": "paralane-9-6-gc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190822102227"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/186048-paralane-9-6-gc",
+   "timestamp": "20230207174508",
+   "sha256": "c9b7e3a5ff3fb3cef8f683f053bb282a5a2ebf8ad0fc7e8bff21f0019051c6a2",
+   "family": "paralane-9-6-gc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190822102227"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95647-paralane-9-7",
+   "timestamp": "20191211041109",
+   "sha256": "8d8150e1271e6bb28db822b4edfbbe76b7628c6631f90acfebfa47921a9e664e",
+   "family": "paralane-9-7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192648"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95647-paralane-9-7",
+   "timestamp": "20211024123709",
+   "sha256": "abf338f7ff22949b27b80761c6f5ec8486d5006b4ee7b79ea34341c66e5d2afd",
+   "family": "paralane-9-7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192648"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95647-paralane-9-7",
+   "timestamp": "20221202103354",
+   "sha256": "8987739028e644de87c0013ebc7787e4d9283d848e4b370383cc85c3eb52ebcb",
+   "family": "paralane-9-7",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192648"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95631-paralane-9-8",
+   "timestamp": "20191211041643",
+   "sha256": "22ddb192b6dd30bede33c9b69adb57888f89d70010ee39c055dab55fe9455d14",
+   "family": "paralane-9-8",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192700"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95631-paralane-9-8",
+   "timestamp": "20211019000205",
+   "sha256": "3b34af1f5435529c018459defb00a091a3363fb18dbfb67acfd29e47182dfa47",
+   "family": "paralane-9-8",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192700"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95631-paralane-9-8",
+   "timestamp": "20221002072550",
+   "sha256": "f093ec220547d297ab6c1940e2adc637f283b5d97dcfa95db8bab6d52d3ea1f9",
+   "family": "paralane-9-8",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192700"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95592-paralane-9-9",
+   "timestamp": "20191211023544",
+   "sha256": "03c230637c6355f9058e8479b1ca83d53597ed9ff6508953bed5590d63f51fa3",
+   "family": "paralane-9-9",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192125"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95592-paralane-9-9",
+   "timestamp": "20211020030653",
+   "sha256": "9fa4dd1c31796347b5ab7978637156c799a1c54475ca8074a8653f159abdc819",
+   "family": "paralane-9-9",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192125"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/95592-paralane-9-9",
+   "timestamp": "20230207105844",
+   "sha256": "7e73a92aa9bcd257231cf17c2c6d4faaebfad080ebecbc4747c32149fa2acf58",
+   "family": "paralane-9-9",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192125"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42951-paralane-al-105",
+   "timestamp": "20191209192051",
+   "sha256": "30fe65011f4c64ba96d606f3ca6f652c01c6d3e68bc2f07886ebdde219135810",
+   "family": "paralane-al-105",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192717"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42951-paralane-al-105",
+   "timestamp": "20211019125942",
+   "sha256": "bb6b2863bce0ab63e38d32998ddf8079f6cc54d7dc522a614c5ab0c684654cf1",
+   "family": "paralane-al-105",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192717"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42951-paralane-al-105",
+   "timestamp": "20221002073523",
+   "sha256": "663e3c7c4ba28fc051e4a895ad0db79c8902c2f10983ccf6cee1ca147ccb1e39",
+   "family": "paralane-al-105",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192717"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43154-paralane-al-tiagra",
+   "timestamp": "20191114124448",
+   "sha256": "cb9515bb9674852c05d95bd68df1d5d46dcd75b94f5d1b165cf634b0427e62be",
+   "family": "paralane-al-tiagra",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192635"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43154-paralane-al-tiagra",
+   "timestamp": "20211019124140",
+   "sha256": "7aaae4558df4012408b24052cf6cdd788b47ff802a1d9a3cb7e6896a6e273245",
+   "family": "paralane-al-tiagra",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192635"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43154-paralane-al-tiagra",
+   "timestamp": "20221002071335",
+   "sha256": "9822e1446cb3eff3c3e70d8020bdb97eb05654bb094106604d9e04c72883ffa1",
+   "family": "paralane-al-tiagra",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192635"
+  },
+  {
+   "url": "https://www.focus-bikes.com/gb_en/43248-paralane-factory",
+   "timestamp": "20191207184851",
+   "sha256": "67ede0573fdbf21e523a838b32e2433118dd124374949c3c80a69cc27c857c58",
+   "family": "paralane-factory",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190722090841"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43248-paralane-factory",
+   "timestamp": "20210621010952",
+   "sha256": "959b54738b38f2062e07dcd3d204eea60e16e8ad339449532c2228847394c427",
+   "family": "paralane-factory",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190819131623"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43248-paralane-factory",
+   "timestamp": "20221206205852",
+   "sha256": "f453bdf62bf54547426cf4484e099335ca779230429f4f0116438301551b2484",
+   "family": "paralane-factory",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190819131623"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43160-paralane-red-etap",
+   "timestamp": "20191113031637",
+   "sha256": "2db8ffd774ccb9137393cfa13f4830d6bcab1d2006ebee8d3d42c4dd08d18ee7",
+   "family": "paralane-red-etap",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190718034550"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43160-paralane-red-etap",
+   "timestamp": "20211019112249",
+   "sha256": "c16a377a445f977567d34571921fc25a0ca6b522db86906b24ae3672da3cd11b",
+   "family": "paralane-red-etap",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190718034550"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/43160-paralane-red-etap",
+   "timestamp": "20221002054828",
+   "sha256": "ecd75c1b56d7f3fe163b6e86a9c2a3f3894fa2b1ea710a56eeba0d2850a3e21d",
+   "family": "paralane-red-etap",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190718034550"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42956-paralane-ultegra",
+   "timestamp": "20191209193441",
+   "sha256": "17a6632643dc29ee26670f9b7d5d5c42719cc69377bcea941d1ccfab06543e99",
+   "family": "paralane-ultegra",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192811"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42956-paralane-ultegra",
+   "timestamp": "20211028184555",
+   "sha256": "8cf039072becf7189de91360182f197f863b3971d8d8b31e17cb34c36954fb07",
+   "family": "paralane-ultegra",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192811"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42956-paralane-ultegra",
+   "timestamp": "20221003155038",
+   "sha256": "84ac1ba7a1f6efc86243f71289c98d061b19279692ef0231b2ec601913195ac9",
+   "family": "paralane-ultegra",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192811"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42954-paralane-ultegra-di2",
+   "timestamp": "20191209181320",
+   "sha256": "a736d6cdd5249ac39f4261fa53a1af71ee88ab5c79c40131a901d50fb649978e",
+   "family": "paralane-ultegra-di2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190716192349"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42954-paralane-ultegra-di2",
+   "timestamp": "20211130092109",
+   "sha256": "74f4539eda1873febf859de0ae9a0cc87999d897d4946b884d9a283560c023e4",
+   "family": "paralane-ultegra-di2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190716192349"
+  },
+  {
+   "url": "https://www.focus-bikes.com/int/42954-paralane-ultegra-di2",
+   "timestamp": "20220926160158",
+   "sha256": "75f0181dccf038ef394dc1a9a706c102435c3e01341e50300d7a7a0d4aa82dd2",
+   "family": "paralane-ultegra-di2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190716192349"
+  }
+ ]
+}

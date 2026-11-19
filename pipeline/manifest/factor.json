@@ -1,0 +1,330 @@
+{
+ "brand": "Factor",
+ "file": "factor",
+ "pages": [
+  {
+   "url": "https://factorbikes.com/bikes/aluto",
+   "timestamp": "20251221174635",
+   "sha256": "2741eeee71ed43a0b471660b3765518b88059e5912758437cf1062ba66b09954",
+   "family": "aluto",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250919205057"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/aluto",
+   "timestamp": "20260824131029",
+   "sha256": "03501173fb4b5b9513577a5a0bddbcc9dc9e341f60f42eb6dd2aaf3136e1163d",
+   "family": "aluto",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250919205057"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/elara",
+   "timestamp": "20260913141909",
+   "sha256": "f0685d05e066f7aaf02c984cc2cf2a7e13c55bb9f8e912f0f42ca97b13e9f1b4",
+   "family": "elara",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260913141909"
+  },
+  {
+   "url": "https://factorbikes.com/models/ls/",
+   "timestamp": "20211201181928",
+   "sha256": "06a4dad49371677743fd93d8c8ebccb589fd78d0ad0d925df5cf0fa2f29a4685",
+   "family": "ls",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200612090002"
+  },
+  {
+   "url": "https://factorbikes.com/products/ls-gravel-bike/",
+   "timestamp": "20230605001052",
+   "sha256": "c83d3fa97e4c4cdae54aaee33c5dfcde345621ef49c8434df24fb147c474c946",
+   "family": "ls",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220523030404"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/ls",
+   "timestamp": "20251215134555",
+   "sha256": "0e6c0c13bc1f91620870c427f2e37d9be69d280ea7e57c329dfa43581f3482a7",
+   "family": "ls",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230923202518"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/monza",
+   "timestamp": "20251227062546",
+   "sha256": "ccf81dd8064b0c921ab18a4a056c3124b951fd4a889489f693f042e20367db31",
+   "family": "monza",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250424113653"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/monza",
+   "timestamp": "20260824131056",
+   "sha256": "5ded54116c9e16afb9cfe73f4fc990cf9036ca4312dc65ed490b27409218e707",
+   "family": "monza",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250424113653"
+  },
+  {
+   "url": "https://factorbikes.com/models/o2/",
+   "timestamp": "20191215034052",
+   "sha256": "d70d4787edd47417a1c952daa89449edfe1e3e2ca36b6fd8ee3cdea8a8877483",
+   "family": "o2",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190917205925"
+  },
+  {
+   "url": "https://factorbikes.com/models/o2/",
+   "timestamp": "20211201193917",
+   "sha256": "731272428b4695e76b6fc5d3b2107c6a0bf8161ed681ffacbd50d7568db15b13",
+   "family": "o2",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190917205925"
+  },
+  {
+   "url": "https://factorbikes.com/products/o2-road-bike/",
+   "timestamp": "20230402002255",
+   "sha256": "432cb3e5ac24dbd33a5eca5c65d83f04ba7625100c0b05bd421d4c9009fa2510",
+   "family": "o2",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220309202200"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/o2",
+   "timestamp": "20251227085547",
+   "sha256": "c88839c5c10fde56a7d463c8ed5d419c56f8f7dc91705d792cb910b9544e4b5c",
+   "family": "o2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230923220102"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/o2",
+   "timestamp": "20260311005101",
+   "sha256": "5eb4b08e2636fc5fda28121c049aa419c259cdbb911401934fa89a52a905b6d1",
+   "family": "o2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230923220102"
+  },
+  {
+   "url": "https://factorbikes.com/models/vam/",
+   "timestamp": "20191216090213",
+   "sha256": "dfe22b6a1b73ded7b88ed5072a3f0e4ac16a8dc218a5f620e67c021f744ad12f",
+   "family": "o2-vam",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190920054300"
+  },
+  {
+   "url": "https://factorbikes.com/models/vam/",
+   "timestamp": "20211223005602",
+   "sha256": "961437907a05ebb4b5a27ac620e286cadd8c2d312dd973310a09bbd286e80537",
+   "family": "o2-vam",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190920054300"
+  },
+  {
+   "url": "https://factorbikes.com/products/o2-vam-road-bike/",
+   "timestamp": "20230717173602",
+   "sha256": "ef7ee6d822a62e5df546592b06082a75d77f4ee7c4aef1df76cf8d6283d3701c",
+   "family": "o2-vam",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220310110529"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/o2-vam",
+   "timestamp": "20251230031215",
+   "sha256": "191cfb6ddd419077f8b5c18f2712da365fa9e46ab5ece3c0f3995e58a32ecd40",
+   "family": "o2-vam",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230923215432"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/o2-vam",
+   "timestamp": "20260824131031",
+   "sha256": "174e8a74e3b7958de0f46058ec7e7fbc41bd9626f3eb81b47383940527c716fc",
+   "family": "o2-vam",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230923215432"
+  },
+  {
+   "url": "https://factorbikes.com/models/one/",
+   "timestamp": "20191120105758",
+   "sha256": "75db2737f06cef45edf758f6bbc58c8d2acda0a71b139a6a458110265b95a06e",
+   "family": "one",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190917020142"
+  },
+  {
+   "url": "https://factorbikes.com/models/one/",
+   "timestamp": "20211018225352",
+   "sha256": "002067d6b4a03d700e8e4407e5de5a41a293ede76e01c015fa8b172f8f7df72f",
+   "family": "one",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190917020142"
+  },
+  {
+   "url": "https://factorbikes.com/products/one-aero-road-bike/",
+   "timestamp": "20230607115352",
+   "sha256": "4d424878119289b0f66e0555b2aeccaccbeb7f44427e097707c2460a9afa99f8",
+   "family": "one",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220523014055"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/one",
+   "timestamp": "20251230235907",
+   "sha256": "80861ffed85f6bce162a31ca827f9ad3852d49928396aab682dde00ccfccf38e",
+   "family": "one",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230823010521"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/one",
+   "timestamp": "20260825082213",
+   "sha256": "eb45dc5e4014a9b4bc5a05d3670ccbbe9838f77a199e4c80ebf62bb1a6cbd850",
+   "family": "one",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230823010521"
+  },
+  {
+   "url": "https://factorbikes.com/models/one-s/",
+   "timestamp": "20191129103024",
+   "sha256": "5c97abcde586a8ab5098f5bc410048e6130f68724ac52ec34d63e82d0ad5c1fa",
+   "family": "one-s",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190920051725"
+  },
+  {
+   "url": "https://factorbikes.com/models/one-s/",
+   "timestamp": "20210917031548",
+   "sha256": "0c884c4f3ee84e407c37a3a66f56040beaa42e628965113fb84027270e241397",
+   "family": "one-s",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190920051725"
+  },
+  {
+   "url": "https://factorbikes.com/products/ostro-gravel/",
+   "timestamp": "20230208041228",
+   "sha256": "9aa48aa5fb41be157c164960e8c525e83f8f2ef8ad88360e1f4e9078c9865b75",
+   "family": "ostro-gravel",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220923170050"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/ostro-gravel",
+   "timestamp": "20251219002910",
+   "sha256": "09b2d59003abf8f5f7db79bd0c78a5257d36544b40a87acdbcac4eebf5e478fb",
+   "family": "ostro-gravel",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230923203718"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/ostro-gravel",
+   "timestamp": "20260824131056",
+   "sha256": "6c95da1b9bc178cd842425380d39493eecd4dacacc5141bfec88ad0fa11d5029",
+   "family": "ostro-gravel",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230923203718"
+  },
+  {
+   "url": "https://factorbikes.com/models/ostro/",
+   "timestamp": "20211201181122",
+   "sha256": "dcffb6d26d7e1cdc0f490165cf68a7c531501b12aad362822a7263e06c013b9f",
+   "family": "ostro-vam",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200926105800"
+  },
+  {
+   "url": "https://factorbikes.com/products/ostro-vam-aero-road-bike/",
+   "timestamp": "20230401231242",
+   "sha256": "635d23fa195a02229833206cad66478462ea16d276899d7e8e487d9a4f269933",
+   "family": "ostro-vam",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220328234800"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/ostro-vam",
+   "timestamp": "20251215145242",
+   "sha256": "99f9daff0bfccf931c88056ff5b06be62f4e0ee16309b93fccab49c43d070bb0",
+   "family": "ostro-vam",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20230923205012"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/ostro-vam",
+   "timestamp": "20260825082214",
+   "sha256": "6b6f55550da3a1137f7479e7f75f4c5bee4ff4f060c7b2acdc5e137331267b90",
+   "family": "ostro-vam",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20230923205012"
+  },
+  {
+   "url": "https://factorbikes.com/bikes/sarana",
+   "timestamp": "20260824130957",
+   "sha256": "c15e280077fbad600fa4eb2daee3b7f2edc292f2fb9c22c30ee579b7e5c5b767",
+   "family": "sarana",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260502224608"
+  },
+  {
+   "url": "https://factorbikes.com/models/vista/",
+   "timestamp": "20191218123712",
+   "sha256": "c5e9de69297bc4255d246ae88447a40f041962bf5cf96b5905216ef224f20be7",
+   "family": "vista",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190918234946"
+  },
+  {
+   "url": "https://factorbikes.com/models/vista/",
+   "timestamp": "20211201192746",
+   "sha256": "a30ecb4de974c2f5fa1993423883432205942b49e20d6c70f20a8fb3edf11917",
+   "family": "vista",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190918234946"
+  },
+  {
+   "url": "https://factorbikes.com/products/vista-gravel-bike/",
+   "timestamp": "20230401223853",
+   "sha256": "bbfa98a732d89b20043d0f902f84aeceab980b05d692e12c7457c75f8bc89468",
+   "family": "vista",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220523030854"
+  }
+ ]
+}

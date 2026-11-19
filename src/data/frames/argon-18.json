@@ -1,0 +1,300 @@
+{
+  "brand": "Argon 18",
+  "models": [
+    {
+      "model": "Anti Matter",
+      "year": 2026,
+      "category": "gravel",
+      "source": "https://www.argon18.com/en-us/bikes/gravel/anti-matter/anti-matter",
+      "retrieved": "2026-10-13",
+      "archive": "https://web.archive.org/web/20261013002808/https://www.argon18.com/en-us/bikes/gravel/anti-matter/anti-matter",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XS",508,377,74.5,70.7,86,425,425,1004,80],
+        ["S",531,384,74,71.1,101,460,425,1016,78],
+        ["M",555,392,73.5,71.7,122,505,425,1022,78],
+        ["L",580,400,73,71.1,150,550,425,1039,76],
+        ["XL",607,409,72.5,72.2,176,595,425,1052,76]
+      ]
+    },
+    {
+      "model": "Dark Matter",
+      "year": 2021,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.argon18.com/en-us/bikes/gravel/dark-matter/sram-force-axs-xplr",
+      "retrieved": "2025-12-15",
+      "archive": "https://web.archive.org/web/20251215205704/https://www.argon18.com/en-us/bikes/gravel/dark-matter/sram-force-axs-xplr",
+      "sizes": [
+        ["XXS",529,357,75.5,69.5,119,420,428,1008,70],
+        ["XS",549,367,74.9,71,134,450,428,1011,70],
+        ["S",569,377,74.3,71.4,153,485,428,1024,70],
+        ["M",589,387,73.7,72,169,520,428,1030,70],
+        ["L",609,397,73.1,72,190,555,428,1046,70],
+        ["XL",634,407,72.5,72.5,215,590,428,1059,70]
+      ]
+    },
+    {
+      "model": "Dark Matter",
+      "year": 2025,
+      "category": "gravel",
+      "source": "https://www.argon18.com/en-us/bikes/gravel/dark-matter/rival-xplr-axs",
+      "retrieved": "2026-07-14",
+      "archive": "https://web.archive.org/web/20260714065835/https://www.argon18.com/en-us/bikes/gravel/dark-matter/rival-xplr-axs",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XXS",520,370,75.5,68.5,97,420,436,1030,80],
+        ["XS",540,382,74.9,70,87,435,436,1036,80],
+        ["S",561,394,74.3,70.5,106,460,436,1045,78],
+        ["M",582,406,73.7,71,126,495,436,1059,78],
+        ["L",603,418,73.1,71,151,540,436,1080,76],
+        ["XL",629,430,72.5,71,178,585,436,1101,76]
+      ]
+    },
+    {
+      "model": "Equation",
+      "year": 2025,
+      "lastYear": 2027,
+      "category": "race",
+      "source": "https://www.argon18.com/en-us/bikes/road/equation/shimano-105",
+      "retrieved": "2026-10-12",
+      "archive": "https://web.archive.org/web/20261012114834/https://www.argon18.com/en-us/bikes/road/equation/shimano-105",
+      "sizes": [
+        ["XXS",518,359,75.5,70.3,84,420,417,981,80],
+        ["XS",537,369,74.9,71.3,101,450,417,989,80],
+        ["S",558,379,74.3,72,120,485,420,997,78],
+        ["M",578,388,73.7,72,141,520,420,1013,78],
+        ["L",600,397,73.1,72,166,555,420,1030,75],
+        ["XL",623,407,72.5,72.5,189,590,420,1043,75]
+      ]
+    },
+    {
+      "model": "Gallium",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.argon18.com/en/bikes/classic/gallium",
+      "retrieved": "2021-10-27",
+      "archive": "https://web.archive.org/web/20211027125032/https://www.argon18.com/en/bikes/classic/gallium",
+      "aliases": ["Gallium Pro"],
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XXS",474,374,75.5,71,80,420,406,961,65],
+        ["XS",492,382,74.5,72,85,455,406,964,70],
+        ["S",523,389,74,72.7,110,493,406,972,75],
+        ["M",552,395,73.5,72.7,140,530,408,990,75],
+        ["L",575,401,73,72.7,165,565,410,1005,75],
+        ["XL",596,408,72.5,73,185,595,410,1016,75]
+      ]
+    },
+    {
+      "model": "Gallium CS Disc",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.argon18.com/en/bikes/road/gallium-cs-disc",
+      "retrieved": "2021-12-01",
+      "archive": "https://web.archive.org/web/20211201174557/https://www.argon18.com/en/bikes/road/gallium-cs-disc",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XXS",474,374,75.5,71,80,420,415,970,65],
+        ["XS",492,382,74.5,72,85,455,415,973,70],
+        ["S",523,389,74,72.7,110,493,415,981,75],
+        ["M",552,395,73.5,72.7,140,530,415,997,75],
+        ["L",575,401,73,72.7,165,565,415,1010,75],
+        ["XL",596,408,72.5,73,185,595,415,1021,75]
+      ]
+    },
+    {
+      "model": "Gallium CS Disc",
+      "year": 2022,
+      "lastYear": 2025,
+      "category": "race",
+      "source": "https://www.argon18.com/en-us/bikes/road/gallium-cs-disc/shimano-ultegra",
+      "retrieved": "2026-05-20",
+      "archive": "https://web.archive.org/web/20260520041857/https://www.argon18.com/en-us/bikes/road/gallium-cs-disc/shimano-ultegra",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XXS",489,369,75.5,71,86,420,415,970,65],
+        ["XS",506,377,74.5,72,85,455,415,973,70],
+        ["S",538,384,74,72.7,110,493,415,981,75],
+        ["M",566,390,73.5,72.7,140,530,415,997,75],
+        ["L",590,396,73,72.7,165,565,415,1010,75],
+        ["XL",610,404,72.5,73,185,595,415,1021,75]
+      ]
+    },
+    {
+      "model": "Gallium Disc",
+      "year": 2021,
+      "lastYear": 2022,
+      "category": "race",
+      "source": "https://www.argon18.com/en-us/bikes/road/gallium-disc",
+      "retrieved": "2022-12-10",
+      "archive": "https://web.archive.org/web/20221210053731/https://www.argon18.com/en-us/bikes/road/gallium-disc",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XXS",474,374,75.5,71,80,420,415,970,65],
+        ["XS",492,382,74.5,72,85,455,415,973,70],
+        ["S",523,389,74,72.7,110,493,415,981,75],
+        ["M",552,395,73.5,72.7,140,530,415,997,75],
+        ["L",575,401,73,72.7,165,565,415,1010,75],
+        ["XL",596,408,72.5,73,185,595,415,1021,75]
+      ]
+    },
+    {
+      "model": "Gallium Pro Disc",
+      "year": 2021,
+      "lastYear": 2022,
+      "category": "race",
+      "source": "https://www.argon18.com/en-us/bikes/road/gallium-pro-disc",
+      "retrieved": "2022-12-10",
+      "archive": "https://web.archive.org/web/20221210051723/https://www.argon18.com/en-us/bikes/road/gallium-pro-disc",
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XXS",474,374,75.5,71,80,420,415,970,65],
+        ["XS",492,382,74.5,72,85,455,415,973,70],
+        ["S",523,389,74,72.7,110,493,415,981,75],
+        ["M",552,395,73.5,72.7,140,530,415,997,75],
+        ["L",575,401,73,72.7,165,565,415,1010,75],
+        ["XL",596,408,72.5,73,185,595,415,1021,75]
+      ]
+    },
+    {
+      "model": "Grey Matter",
+      "year": 2023,
+      "lastYear": 2024,
+      "category": "gravel",
+      "source": "https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-xplr",
+      "retrieved": "2025-12-15",
+      "archive": "https://web.archive.org/web/20251215205514/https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-xplr",
+      "sizes": [
+        ["XXS",525,358,75.5,69.5,104,420,428,1003,80],
+        ["XS",545,368,74.9,71,119,450,428,1006,80],
+        ["S",565,378,74.3,71.4,144,485,428,1021,75],
+        ["M",585,388,73.7,72,160,520,428,1027,75],
+        ["L",605,398,73.1,72,187,555,430,1048,70],
+        ["XL",630,408,72.5,75.5,211,590,432,1062,70]
+      ]
+    },
+    {
+      "model": "Krypton",
+      "year": 2023,
+      "lastYear": 2027,
+      "category": "endurance",
+      "source": "https://www.argon18.com/en-us/bikes/all-road/krypton/shimano-105-di2",
+      "retrieved": "2026-10-13",
+      "archive": "https://web.archive.org/web/20261013003952/https://www.argon18.com/en-us/bikes/all-road/krypton/shimano-105-di2",
+      "aliases": ["Krypton Pro"],
+      "sizes": [
+        ["XXS",523,357,75.5,70.6,106,420,415,975,80],
+        ["XS",543,367,74.9,71.5,123,450,415,984,80],
+        ["S",563,377,74.3,72.3,142,485,415,989,78],
+        ["M",584,386,73.7,72.3,164,520,415,1005,78],
+        ["L",605,395,73.1,72.3,186,555,415,1020,78],
+        ["XL",628,406,72.5,72.8,208,590,415,1033,78]
+      ]
+    },
+    {
+      "model": "Krypton CS",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-cs-endurance",
+      "retrieved": "2026-02-16",
+      "archive": "https://web.archive.org/web/20260216050020/https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-cs-endurance",
+      "sizes": [
+        ["XXS",519,359,75.5,70.3,91,420,417,981,80],
+        ["XS",539,369,74.9,71.3,108,450,417,989,80],
+        ["S",559,379,74.3,72,127,485,420,997,78],
+        ["M",580,388,73.7,72,149,520,420,1013,78],
+        ["L",601,397,73.1,72,174,555,420,1030,75],
+        ["XL",624,407,72.5,72.5,196,590,420,1043,75]
+      ]
+    },
+    {
+      "model": "Krypton GF",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "endurance",
+      "source": "https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-gf-sram-force-etap-axs",
+      "retrieved": "2026-06-10",
+      "archive": "https://web.archive.org/web/20260610083319/https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-gf-sram-force-etap-axs",
+      "sizes": [
+        ["XXS",519,359,75.5,70.3,91,420,417,981,80],
+        ["XS",539,369,74.9,71.3,108,450,417,989,80],
+        ["S",559,379,74.3,72,127,485,420,997,78],
+        ["M",580,388,73.7,72,149,520,420,1013,78],
+        ["L",601,397,73.1,72,174,555,420,1030,75],
+        ["XL",624,407,72.5,72.5,196,590,420,1043,75]
+      ]
+    },
+    {
+      "model": "Krypton Pro",
+      "year": 2021,
+      "lastYear": 2022,
+      "category": "endurance",
+      "source": "https://www.argon18.com/en-us/bikes/road/krypton-pro",
+      "retrieved": "2023-02-04",
+      "archive": "https://web.archive.org/web/20230204182807/https://www.argon18.com/en-us/bikes/road/krypton-pro",
+      "sizes": [
+        ["XXS",519,359,75.5,70.3,91,420,417,981,80],
+        ["XS",539,369,74.9,71.3,108,450,417,989,80],
+        ["S",559,379,74.3,72,127,485,420,997,78],
+        ["M",580,388,73.7,72,149,520,420,1013,78],
+        ["L",601,397,73.1,72,174,555,420,1030,75],
+        ["XL",624,407,72.5,72.5,196,590,420,1043,75]
+      ]
+    },
+    {
+      "model": "Nitrogen Disc",
+      "year": 2021,
+      "lastYear": 2026,
+      "category": "aero",
+      "source": "https://www.argon18.com/en-us/bikes/legacy-products/nitrogen-disc/nitrogen-disc-sram-force-axs",
+      "retrieved": "2026-01-13",
+      "archive": "https://web.archive.org/web/20260113131121/https://www.argon18.com/en-us/bikes/legacy-products/nitrogen-disc/nitrogen-disc-sram-force-axs",
+      "sizes": [
+        ["XS",487,383,74.5,72,81,430,413,973,70],
+        ["S",516,390,74,72.7,109,485,413,983,70],
+        ["M",546,394,73.5,72.7,141,515,413,996,70],
+        ["L",566,402,73,72.7,162,565,415,1013,70],
+        ["XL",592,409,72.5,73,188,595,415,1024,70]
+      ]
+    },
+    {
+      "model": "Nitrogen Pro",
+      "year": 2026,
+      "lastYear": 2027,
+      "category": "aero",
+      "source": "https://www.argon18.com/en-us/bikes/road/nitrogen-pro/nitrogen-pro-sram-red",
+      "retrieved": "2026-07-14",
+      "archive": "https://web.archive.org/web/20260714070912/https://www.argon18.com/en-us/bikes/road/nitrogen-pro/nitrogen-pro-sram-red",
+      "aliases": ["Nitrogen"],
+      "sizes": [
+        ["XXS",486,370,75,71.2,81,395,410,967,71],
+        ["XS",508,377,74.5,72.1,97,425,410,972,75],
+        ["S",531,384,74,72.7,113,460,410,975,79],
+        ["M",555,392,73.5,72.7,138,505,410,990,79],
+        ["L",580,400,73,72.7,165,550,410,1006,79],
+        ["XL",607,409,72.5,73,192,595,410,1020,79]
+      ]
+    },
+    {
+      "model": "Sum Pro",
+      "year": 2022,
+      "lastYear": 2025,
+      "category": "race",
+      "source": "https://www.argon18.com/en-us/bikes/road/sum-pro/sram-red-axs",
+      "retrieved": "2026-07-14",
+      "archive": "https://web.archive.org/web/20260714061752/https://www.argon18.com/en-us/bikes/road/sum-pro/sram-red-axs",
+      "aliases": ["Sum"],
+      "estimated": ["headTubeLength"],
+      "sizes": [
+        ["XXS",471,375,75,71.2,80,395,410,967,69],
+        ["XS",493,382,74.5,72.1,85,425,410,972,73],
+        ["S",516,389,74,72.7,101,460,410,975,77],
+        ["M",540,397,73.5,72.7,126,505,410,990,77],
+        ["L",565,405,73,72.7,152,550,410,1006,77],
+        ["XL",592,414,72.5,73,180,595,410,1020,77]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+ "brand": "Argon 18",
+ "file": "argon-18",
+ "pages": [
+  {
+   "url": "https://www.argon18.com/en-us/bikes/gravel/anti-matter/anti-matter",
+   "timestamp": "20261013002808",
+   "sha256": "f0fa7a6b6aa3a8d281b1191517fc8d9f8e86b295fb8bc80f94b196b1dc459abd",
+   "family": "anti-matter",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20260610085338"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/dark-matter",
+   "timestamp": "20210924152211",
+   "sha256": "d91d895ec80340709be1b432e21ee2f3d3beb6ac6128a858bbe7c20766bc1afd",
+   "family": "dark-matter",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805102404"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/gravel/dark-matter-int",
+   "timestamp": "20231210075122",
+   "sha256": "32b01f3e6e6eee84a6c32108ca35c24f90e7a44966ae9a4e04459d67538f5266",
+   "family": "dark-matter",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230324134446"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/gravel/dark-matter/sram-force-axs-xplr",
+   "timestamp": "20251215205704",
+   "sha256": "d05e2cb441339272575f7410af1182a7485761a04271e76e742a7d657fce153a",
+   "family": "dark-matter",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240222211502"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/gravel/dark-matter/rival-xplr-axs",
+   "timestamp": "20260714065835",
+   "sha256": "552e6cf9c74b92e1dd0c22ea6a8e2962b0c97f7c8d6599d54e674aa85e435b92",
+   "family": "dark-matter",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250515155753"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/equation/shimano-105",
+   "timestamp": "20251215204703",
+   "sha256": "ca21cbb6924886ee1cb4e44594168c42efacb797e42ce30ef51a2dc6c7d6a80f",
+   "family": "equation",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240807180531"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/equation/shimano-105",
+   "timestamp": "20261012114834",
+   "sha256": "e93b10fc3b7c10f133701d4c90532c75b973953b0445aa494199a5971b47d9cb",
+   "family": "equation",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240807180531"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/classic/gallium",
+   "timestamp": "20211027125032",
+   "sha256": "6c8901b8592163fadd5ff3b9b9b73f7f63d5d06dd38d296e952d879e0cabce11",
+   "family": "gallium",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210508065748"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/gallium-cs-disc",
+   "timestamp": "20211201174557",
+   "sha256": "46fa0975078ceafe09a564c7e63ca5fc0ac4d4df6905291c874bd3cdb5c6170e",
+   "family": "gallium-cs-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805095343"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/gallium-cs-disc-int",
+   "timestamp": "20230324133039",
+   "sha256": "1d4345e37981a275c84814e110f3ce4818b8988a2b3164832aeff31dd1956b40",
+   "family": "gallium-cs-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220528051005"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/gallium-cs-disc/shimano-ultegra",
+   "timestamp": "20260520041857",
+   "sha256": "3c5f1d2f943c1ee755ba123659d0c37aa27df871ae73096789e013b4c9e33b9b",
+   "family": "gallium-cs-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250319093720"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/gallium-cs-disc/sram-rival-etap-axs",
+   "timestamp": "20250809020920",
+   "sha256": "bf6603b1f0850eead1f9ab1c2b57a88f0686fc4749ede109333e50949ad9dae9",
+   "family": "gallium-cs-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240225220126"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/gallium-disc",
+   "timestamp": "20210924153044",
+   "sha256": "ec95fa7b935ac98f0911264d64e048ff4cedd9d8d74780fd619773c2e3f5fd71",
+   "family": "gallium-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805102659"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/gallium-disc",
+   "timestamp": "20221210053731",
+   "sha256": "27bdac37c3f47f98b0ffc27d61be9a94a4a0729562a6ee31c1e14c4a0a7871d7",
+   "family": "gallium-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220528042257"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/classic/gallium-pro",
+   "timestamp": "20211027131651",
+   "sha256": "1a686f4281bf21b5cae1da3c3436b5a64fd05454d249cc933211ae5f216d949a",
+   "family": "gallium-pro",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210508072354"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/gallium-pro-disc",
+   "timestamp": "20210924160220",
+   "sha256": "b444268b985f680f2fc1dc7306c4ff6596ae5e11866025ba2868f0d7b0760b94",
+   "family": "gallium-pro-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805104752"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/gallium-pro-disc",
+   "timestamp": "20221210051723",
+   "sha256": "cccfca7e9e838615ecf28051c63051c67b5dc25544d5f6d4b2bf9033682e66cd",
+   "family": "gallium-pro-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220528041044"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/gravel/grey-matter",
+   "timestamp": "20231210064509",
+   "sha256": "f45277b39685e68dc6d7e3ee704daa6ba81de016ca89910361c893d7f6776566",
+   "family": "grey-matter",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220926053854"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-xplr",
+   "timestamp": "20251215205514",
+   "sha256": "6ec7f2de1853a5a50ce4971003248158dbc90c7db261c877350a731fbea83580",
+   "family": "grey-matter",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240414202157"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/gravel/grey-matter/sram-apex-axs-xplr",
+   "timestamp": "20261012032953",
+   "sha256": "f197a7b025e0e0df2ed9378fd1f53395a8136169edfc227108d88e3bd3631021",
+   "family": "grey-matter",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240414203411"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/all-road/krypton",
+   "timestamp": "20230924200616",
+   "sha256": "cf02db955dffd30ac87582a0c0b163d7d50ab0a216e686392843654045b60abc",
+   "family": "krypton",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20230514104353"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/all-road/krypton/shimano-105-di2",
+   "timestamp": "20251122155139",
+   "sha256": "363c79f78d9b0176d71ccf733d86058bfabc0f99a23d71586f2db47ccadc79c4",
+   "family": "krypton",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241118070301"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/all-road/krypton/shimano-105-di2",
+   "timestamp": "20261013003952",
+   "sha256": "bc8df7d76bf9fb8c3c2ebbd5df1cadf11ffeb20c12d2933a1d98243dba722d61",
+   "family": "krypton",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20241118070301"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/krypton-cs",
+   "timestamp": "20210924162626",
+   "sha256": "f59e213d6e38c5bca656fdf46047160995f060b03b1f5427747696570dc7c559",
+   "family": "krypton-cs",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805110221"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/krypton-cs",
+   "timestamp": "20221210051641",
+   "sha256": "5ee1eb98c2a41ecc5b48c03ce161772debc33d790e102153678da5133105e4f8",
+   "family": "krypton-cs",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220528033819"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-cs-endurance",
+   "timestamp": "20250515153413",
+   "sha256": "ad4cc4000da8f450e3107dca94bc4689de1cbec4e77ecb031d55fbd045c48916",
+   "family": "krypton-cs",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240222203141"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-cs-endurance",
+   "timestamp": "20260216050020",
+   "sha256": "ea44e7cf19decdbd3d4b62978c3ed4b3edf0f214780ae664c9d4f4507705ea89",
+   "family": "krypton-cs",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240222203141"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/krypton-gf",
+   "timestamp": "20211027135447",
+   "sha256": "a5d87a01d6276d14f3ffa855c1752fb6136adcc54353407f232cd763d499657b",
+   "family": "krypton-gf",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805105324"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/krypton-gf",
+   "timestamp": "20221205080013",
+   "sha256": "e89eeb39f40b5606f17d5b11526ae20f6a7e57660f3f0af8160b970494396a62",
+   "family": "krypton-gf",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220527191717"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-gf-sram-force-etap-axs",
+   "timestamp": "20250619145755",
+   "sha256": "3f7ecb1b61611735e58f446ab05daac4231d2fce089359524dabd29588bcc99d",
+   "family": "krypton-gf",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240222194137"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/legacy-products/krypton/krypton-gf-sram-force-etap-axs",
+   "timestamp": "20260610083319",
+   "sha256": "ed66a84eecb416a3571deff2abfb66e735a7efe5a0bd78ccdef52741e613a274",
+   "family": "krypton-gf",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240222194137"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/krypton-pro",
+   "timestamp": "20211027124830",
+   "sha256": "2b4b5aeaad40f41dba6ee25eee3ee1c6868849efcda476d53aee7b997e3d39f6",
+   "family": "krypton-pro",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805101211"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/krypton-pro",
+   "timestamp": "20230204182807",
+   "sha256": "6014aa7b04185aeb433326b9e0755faabe0523e1d52a403911d30c23b088339b",
+   "family": "krypton-pro",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220527182150"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/all-road/krypton-pro/frameset",
+   "timestamp": "20251122172334",
+   "sha256": "cffcb55c7d664653fb05a8f423828aca6072db80657e3dfae81149bc5ad85e8a",
+   "family": "krypton-pro",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240222211159"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/all-road/krypton-pro/frameset",
+   "timestamp": "20260807181713",
+   "sha256": "e9f4264b9ffdc631877efa7746bb32d162f6566595be4eca505937fa7ac0c9dc",
+   "family": "krypton-pro",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20240222211159"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/nitrogen/nitrogen-force-axs",
+   "timestamp": "20251118044238",
+   "sha256": "bdcc1447f8bafe221c83b8d79914214540c5078ab3d73527b756dc17c580e613",
+   "family": "nitrogen",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250920024254"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/nitrogen/nitrogen-shimano-ultegra-di2",
+   "timestamp": "20261012212611",
+   "sha256": "2915a6fdc7772cc7111ec02fcdba6e26e47af41db3b02edc0e48073222ba769e",
+   "family": "nitrogen",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250918082138"
+  },
+  {
+   "url": "https://www.argon18.com/en/bikes/road/nitrogen-disc",
+   "timestamp": "20210924165536",
+   "sha256": "4ae946eefd63105ac204d527692b66fe06e58dc66516b972d6dbc5e2aaa87004",
+   "family": "nitrogen-disc",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20200805112031"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/nitrogen-disc",
+   "timestamp": "20221210054339",
+   "sha256": "d2abfbfba3857db6d0994e9d5388826794470cb7d6c1795391453e4260eddc0d",
+   "family": "nitrogen-disc",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220528042629"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/legacy-products/nitrogen-disc/nitrogen-disc-sram-force-axs",
+   "timestamp": "20250319100040",
+   "sha256": "ad0df0e04784bed2ae70bac4482da2aa47af7e7d1d157a9db3de33d08bff9bb0",
+   "family": "nitrogen-disc",
+   "year": 2025,
+   "related": [],
+   "firstSeen": "20240222212931"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/legacy-products/nitrogen-disc/nitrogen-disc-sram-force-axs",
+   "timestamp": "20260113131121",
+   "sha256": "a18b6588bf2dad34f0d0b9519cb28a80426f6be4104ef4d980fb5ee11a1bf396",
+   "family": "nitrogen-disc",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240222212931"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/nitrogen-pro/nitrogen-pro-sram-red",
+   "timestamp": "20251215203828",
+   "sha256": "f0dc66d317d28660d1d8dd40579a9564c4398fd05fcba925f357e81e854f4378",
+   "family": "nitrogen-pro",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250920163000"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/nitrogen-pro/nitrogen-pro-sram-red",
+   "timestamp": "20260714070912",
+   "sha256": "0de6e8d2d31acfce5db3845df769bc151242a29217bfad059162a825ced2394a",
+   "family": "nitrogen-pro",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250920163000"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/sum",
+   "timestamp": "20221210045034",
+   "sha256": "edecfd63038c8e1d1311c63848693f65e5834200bee5852fc1af4f76c4aa93bc",
+   "family": "sum",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220528034423"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/sum/sram-force-axs",
+   "timestamp": "20251009040140",
+   "sha256": "f8a02df5414b652cdcdf1acedff1aab02e2b46ab78471f6aee72ed6cfd5d7662",
+   "family": "sum",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240225220123"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/sum-pro",
+   "timestamp": "20230324120911",
+   "sha256": "8cde2b8448555c1470ea10b46400ada33399858c2d1689b2370dac9626846718",
+   "family": "sum-pro",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220526082155"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/sum-pro/sram-force-axs-2",
+   "timestamp": "20251118115117",
+   "sha256": "7b1e9f9f76cd1cf00cfabaf8ba8bf690a0b8e877d4f7c75032c0c5cf64587465",
+   "family": "sum-pro",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241206100817"
+  },
+  {
+   "url": "https://www.argon18.com/en-us/bikes/road/sum-pro/sram-red-axs",
+   "timestamp": "20260714061752",
+   "sha256": "83d656412620046f161d3c8844924b6a71502455381b6feab3c948722c2e3dfc",
+   "family": "sum-pro",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20241206113214"
+  }
+ ]
+}

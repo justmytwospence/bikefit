@@ -2,6 +2,23 @@
   "brand": "Cannondale",
   "models": [
     {
+      "model": "CAAD13",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.cannondale.com/en-us/bikes/road/race/caad13/caad13-disc-105",
+      "retrieved": "2021-10-19",
+      "archive": "https://web.archive.org/web/20211019054930/https://www.cannondale.com/en-us/bikes/road/race/caad13/caad13-disc-105",
+      "sizes": [
+        ["48",520,374,74.3,71.2,114,442,408,985,74],
+        ["51",535,378,74.1,71.2,130,481,408,994,74],
+        ["54",555,384,73.7,71.2,154,519,408,1008,72],
+        ["56",575,389,73.3,73,164,540,408,992,72],
+        ["58",595,395,72.9,73,188,562,408,1005,69],
+        ["60",615,400,72.5,73,209,583,408,1016,69],
+        ["62",635,406,72.1,73,230,604,408,1028,69]
+      ]
+    },
+    {
       "model": "CAAD14",
       "year": 2026,
       "category": "race",
@@ -33,6 +50,24 @@
         ["56",565,393,73.5,73,154,510,410,995,72],
         ["58",585,398,73,73,178,532,410,1007,69],
         ["61",615,406,72.5,73,209,570,410,1024,69]
+      ]
+    },
+    {
+      "model": "SuperSix EVO Gen 3",
+      "year": 2021,
+      "category": "race",
+      "source": "https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-105",
+      "retrieved": "2025-11-08",
+      "archive": "https://web.archive.org/web/20251108162716/https://www.cannondale.com/en-us/bikes/road/race/supersix-evo/supersix-evo-carbon-disc-105",
+      "sizes": [
+        ["44",504,370,74.3,70.9,99,400,408,979,74],
+        ["48",519,374,74.3,71.2,114,438,408,985,74],
+        ["51",534,378,74.3,71.2,130,477,408,994,74],
+        ["54",554,384,73.7,71.2,153,515,408,1000,72],
+        ["56",574,390,73.3,73,164,536,408,992,72],
+        ["58",594,395,72.9,73,188,558,408,1005,69],
+        ["60",614,400,72.5,73,209,579,408,1016,69],
+        ["62",634,406,72.1,73,230,600,408,1028,69]
       ]
     },
     {
@@ -69,6 +104,39 @@
       ]
     },
     {
+      "model": "Synapse",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "endurance",
+      "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-tiagra",
+      "retrieved": "2023-02-05",
+      "archive": "https://web.archive.org/web/20230205214936/https://www.cannondale.com/en-us/bikes/road/endurance/synapse/synapse-tiagra",
+      "sizes": [
+        ["48",530,371,74.6,70.8,123,422,413,999,75],
+        ["51",550,376,74.3,71,143,443,413,1010,75],
+        ["54",570,383,73.9,71.9,159,480,413,1004,73],
+        ["56",589,389,73.5,72.1,178,520,413,1014,73],
+        ["58",609,394,73,72.3,202,550,413,1025,70],
+        ["61",639,403,72.5,72.5,232,590,413,1041,70]
+      ]
+    },
+    {
+      "model": "Synapse Carbon",
+      "year": 2020,
+      "category": "endurance",
+      "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-tiagra",
+      "retrieved": "2023-09-29",
+      "archive": "https://web.archive.org/web/20230929172719/https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-tiagra",
+      "sizes": [
+        ["48",530,371,74.6,70.8,122,407,410,996,75],
+        ["51",550,377,74.3,71.7,137,443,410,994,75],
+        ["54",570,382,73.9,71.7,161,480,410,1008,73],
+        ["56",590,386,73.5,73,173,520,410,995,73],
+        ["58",610,393,73,73,197,550,410,1009,70],
+        ["61",640,402,72.5,73,229,590,410,1028,70]
+      ]
+    },
+    {
       "model": "Synapse Carbon",
       "year": 2025,
       "category": "endurance",
@@ -83,6 +151,68 @@
         ["56",590,387,73,71.3,171,520,430,1044,73],
         ["58",610,393,73,71.3,196,550,430,1058,70],
         ["61",640,402,73,71.3,227,590,430,1077,70]
+      ]
+    },
+    {
+      "model": "Synapse Carbon Women's",
+      "year": 2021,
+      "category": "endurance",
+      "source": "https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-womens-105",
+      "retrieved": "2023-09-27",
+      "archive": "https://web.archive.org/web/20230927222405/https://www.cannondale.com/en-us/bikes/road/endurance/synapse-carbon/synapse-carbon-womens-105",
+      "sizes": [
+        ["44",510,365,74.7,70.2,103,370,410,989,75],
+        ["48",530,371,74.6,70.8,122,407,410,996,75],
+        ["51",550,377,74.3,71.7,137,443,410,994,75],
+        ["54",570,381,73.9,71.7,161,480,410,1008,73]
+      ]
+    },
+    {
+      "model": "SystemSix",
+      "year": 2021,
+      "category": "aero",
+      "source": "https://www.cannondale.com/en-us/bikes/road/race/systemsix/systemsix-carbon-ultegra",
+      "retrieved": "2023-12-08",
+      "archive": "https://web.archive.org/web/20231208223113/https://www.cannondale.com/en-us/bikes/road/race/systemsix/systemsix-carbon-ultegra",
+      "sizes": [
+        ["47",500,375,75.1,71.2,88,385,405,974,79],
+        ["51",520,381,74.7,71.2,114,433,405,989,74],
+        ["54",540,386,74.3,73,128,482,405,975,72],
+        ["56",560,392,73.9,73,149,530,405,987,72],
+        ["58",580,398,73.5,73,172,553,405,1000,69],
+        ["60",600,403,73.1,72.9,193,577,405,1012,69],
+        ["62",620,409,72.7,72.9,214,600,405,1024,69]
+      ]
+    },
+    {
+      "model": "Topstone Alloy",
+      "year": 2021,
+      "category": "gravel",
+      "source": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-4",
+      "retrieved": "2023-12-03",
+      "archive": "https://web.archive.org/web/20231203101742/https://www.cannondale.com/en-us/bikes/road/gravel/topstone-alloy/topstone-4",
+      "sizes": [
+        ["XS",518,368,73.1,70,89,410,430,1011,75],
+        ["SM",549,377,73.1,71,118,458,430,1022,75],
+        ["MD",579,385,73.1,71,149,505,430,1040,75],
+        ["LG",610,394,73.1,71,182,553,430,1060,75],
+        ["XL",640,402,73.1,71,214,600,430,1078,75]
+      ]
+    },
+    {
+      "model": "Topstone Carbon",
+      "year": 2020,
+      "lastYear": 2021,
+      "category": "gravel",
+      "source": "https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-6",
+      "retrieved": "2022-05-08",
+      "archive": "https://web.archive.org/web/20220508042304/https://www.cannondale.com/en-us/bikes/road/gravel/topstone-carbon/topstone-carbon-6",
+      "sizes": [
+        ["XS",518,368,73.1,70,97,410,415,999,69],
+        ["SM",549,377,73.1,71.2,131,458,415,1010,64],
+        ["MD",579,385,73.1,71.2,165,505,415,1030,61],
+        ["LG",610,394,73.1,71.2,198,553,415,1040,61],
+        ["XL",640,402,73.1,71.2,232,600,415,1060,59]
       ]
     },
     {

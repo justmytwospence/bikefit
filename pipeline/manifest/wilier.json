@@ -1,0 +1,798 @@
+{
+ "brand": "Wilier",
+ "file": "wilier",
+ "pages": [
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/adlar",
+   "timestamp": "20231218171512",
+   "sha256": "fa5b0e6457fbf676a23be9d04557dd4336c97b30f6cb15ac085a7c03ee203769",
+   "family": "adlar",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231129190036"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/adlar",
+   "timestamp": "20251231184943",
+   "sha256": "7aed6c579522c310276ba81472e6dd9fc1bfe223b2dfc97a2d2b79d7078390db",
+   "family": "adlar",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129190036"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/adlar",
+   "timestamp": "20260811054955",
+   "sha256": "40b5b60ca6bf09c96f24e9b9a55636f4fa14d8288bee36d4fef7adeb92708d21",
+   "family": "adlar",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231129190036"
+  },
+  {
+   "url": "https://wilier.com/en/products/int/road/cento10air",
+   "timestamp": "20230127200530",
+   "sha256": "6e8441bf9be9f0e05cdf27f7850e7783b5955f93b7be58f56428636bd02608b6",
+   "family": "cento10air",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20160702061958"
+  },
+  {
+   "url": "https://www.wilier.com/en/my2020/int/racing-bikes/road-bikes/cento10ndr",
+   "timestamp": "20191005025905",
+   "sha256": "2e17894a9a99a445bdbcbae5e2f64d0fd23f1021c68493ba5cabd52e1c2f9d2f",
+   "family": "cento10ndr",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190912233052"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/racing-bikes/road-bikes/cento10ndr",
+   "timestamp": "20210518235737",
+   "sha256": "cf6fcc31a657d5bbca91a4aa70b2a4c9ee0418d6aaf34392dd7a7b0cb1d12d26",
+   "family": "cento10ndr",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200805230907"
+  },
+  {
+   "url": "https://wilier.com/en/my2022/int/racing-bikes/road-bikes/cento10ndr",
+   "timestamp": "20230930095511",
+   "sha256": "f54f592e8f69e45319061b7725d112d110246b7e092bdf3e14afb1b3862c4222",
+   "family": "cento10ndr",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20210725054039"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/world/racing-bikes/road-bikes/cento10pro",
+   "timestamp": "20191121192436",
+   "sha256": "a03641c0e08b08a7897dd5536d145c5b8dbd8f3f5f2c28a0baf2822a0079175b",
+   "family": "cento10pro",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191021080922"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/int/racing-bikes/road-bikes/cento10pro",
+   "timestamp": "20201030164139",
+   "sha256": "1b170d67d0e857bcae8e4da7e6457e5921143aaf1df2c03e03d6c4e1b394e9dc",
+   "family": "cento10pro",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20191119114320"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/int/racing-bikes/road-bikes/cento10pro",
+   "timestamp": "20221201172145",
+   "sha256": "32d7a6d23e2f97fd6d2865209d35e0decbdb3389b8dbf1dd660146a6a0a728c1",
+   "family": "cento10pro",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20191119114320"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/endurance-bikes/road-bikes/cento10sl",
+   "timestamp": "20210305105844",
+   "sha256": "cc682832959f6d76e937f45631fd68e03f165f0b5f9160e53f6c85fb3b94cdcf",
+   "family": "cento10sl",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200926092938"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/cento10sl",
+   "timestamp": "20231003181600",
+   "sha256": "9d7fe2dc2aecd0e7408ceb4cede82354f7f5bc8282ace0cb80a80af985de9bef",
+   "family": "cento10sl",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220521174212"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/cento10-sl",
+   "timestamp": "20251208142607",
+   "sha256": "0ee6b02cbc89c7b9cbd399e64f7366fe462329deb651d0d410e5e7a5cc8ca508",
+   "family": "cento10sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129191617"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/cento10-sl",
+   "timestamp": "20260610155343",
+   "sha256": "18a93e6c249bcbf5e005ec7e2fed89a45113158fd0fb79c0e2596923c000f442",
+   "family": "cento10sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129191617"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/world/racing-bikes/road-bikes/cento1air",
+   "timestamp": "20191118062727",
+   "sha256": "213df59e971bc56696381bc2b8c5c158e0c3bcdedf07d3de9172d3cf68e64d4b",
+   "family": "cento1air",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191021071005"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/int/racing-bikes/road-bikes/cento1air",
+   "timestamp": "20210929024526",
+   "sha256": "cece3a1bce6d4773ba8996f96a89aeeefe624e2fe8172471c6bd908f1af1a2f9",
+   "family": "cento1air",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190920035732"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/int/racing-bikes/road-bikes/cento1air",
+   "timestamp": "20230127214021",
+   "sha256": "cece3a1bce6d4773ba8996f96a89aeeefe624e2fe8172471c6bd908f1af1a2f9",
+   "family": "cento1air",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20190920035732"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/world/endurance-bikes/road-bikes/cento1ndr",
+   "timestamp": "20191122201700",
+   "sha256": "4d41d1e74eb15b0d9c19b1df9c05c72b5c8ce430dce95bd0f9651d78577dde31",
+   "family": "cento1ndr",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191021075131"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/world/endurance-bikes/road-bikes/cento1ndr",
+   "timestamp": "20210227153339",
+   "sha256": "76ca1cb697671f238603953d29403bf045e8488826a17887317404ab4d273cd1",
+   "family": "cento1ndr",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201126035433"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/endurance-bikes/road-bikes/cento1ndr",
+   "timestamp": "20220808013552",
+   "sha256": "d012ad9febd671e37b6d24e050d3bc400ec8de90ed873698567a406fa9675f97",
+   "family": "cento1ndr",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20200924212137"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/filante-sl",
+   "timestamp": "20231129191658",
+   "sha256": "a7d2d56852df64a2eeff1843a89445d2436dc356af7a40ac2a3c6bf95914a4f1",
+   "family": "filante-sl",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231129181414"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/filante-sl",
+   "timestamp": "20251228024005",
+   "sha256": "1eb6adb3bb8b3052a7fde9030252a44407f25fa72ecbdb28d90cab9bf5ce76d3",
+   "family": "filante-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129181414"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/filante-sl",
+   "timestamp": "20260811052954",
+   "sha256": "3712b3e3f706efbbade86e27934bbba9a9f37d8d08ed2492c3f5c6d288be861b",
+   "family": "filante-sl",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231129181414"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/racing-bikes/road-bikes/filante-slr",
+   "timestamp": "20210302072020",
+   "sha256": "2560a30b710b61c1a0d1ae7c54a6bb63ae8d65d55d1f0e7ae443c2c57d88cd51",
+   "family": "filante-slr",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201110100139"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/racing-bikes/road-bikes/filante-slr",
+   "timestamp": "20230929194833",
+   "sha256": "21a2d67f16490415855bf1ad0c675835eeae9fcc14855be04e49f898e2b9b39d",
+   "family": "filante-slr",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220716112840"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/filante-slr",
+   "timestamp": "20251217072739",
+   "sha256": "948beace3dc5d7fa845a66bbd348ad94a646e5ad3f53a9e7787dbff19817480e",
+   "family": "filante-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129191402"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/filante-slr",
+   "timestamp": "20260809095343",
+   "sha256": "c2afe6b590bbe55dce483796bdbeb1247e87b922afd2e8a7d9aeb879bc8749c1",
+   "family": "filante-slr",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231129191402"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes-archive/2026/filante-slr-id2",
+   "timestamp": "20260614010635",
+   "sha256": "9ad88a0a990937cfe752caed762100c167826d2e258eec10f09e8ecae0b6b731",
+   "family": "filante-slr-id2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260614010635"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/filante-slr-id2",
+   "timestamp": "20251207055940",
+   "sha256": "925d95cd84bb6bd988b51c60657f1f7425cebdf302217b39086c047df452e59a",
+   "family": "filante-slr-id2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20251025182739"
+  },
+  {
+   "url": "https://wilier.com/en/my2022/int/endurance-bikes/road-bikes/garda",
+   "timestamp": "20211016153546",
+   "sha256": "3df94a835d317eb0948e9802933be68497c3386e5f3c4dc7ef5e4f562daa9c69",
+   "family": "garda",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210928150527"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/garda",
+   "timestamp": "20230930101734",
+   "sha256": "0f53081f63ac694324c5e4d74d132da82ae3fdab99e157d7b2c13d058ca1cf26",
+   "family": "garda",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220629160457"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/garda",
+   "timestamp": "20251231144410",
+   "sha256": "cdf812edc64003e5c7b5d3f07d3c420571188547d4ef1e6a3cb0e9f957aa4953",
+   "family": "garda",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129183547"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/garda",
+   "timestamp": "20260615013754",
+   "sha256": "99414d948f057c7ce232526fc9a9486d2ea79f079b545bb784e20e16eb4f4d6b",
+   "family": "garda",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129183547"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/granturismo-sl",
+   "timestamp": "20251229125704",
+   "sha256": "c37b88d05465d89df1cf3776a42bf297ebbfe3e0c81de96e06de6ae4018ea08c",
+   "family": "granturismo-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241007115049"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/granturismo-sl",
+   "timestamp": "20260720124401",
+   "sha256": "0cdcd592bec656855b0d7daea920e24df5cc0d583ca87a4d5e53c9cfeb0ea4b2",
+   "family": "granturismo-sl",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20241007115049"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/granturismo-slr",
+   "timestamp": "20231002165920",
+   "sha256": "a2bcbd8bb798db77015fb4761d9065a1dbde4455cd8a4487d0115d5f056373db",
+   "family": "granturismo-slr",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20221222075023"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/granturismo-slr",
+   "timestamp": "20251206085951",
+   "sha256": "be8cca9136d3a0f26e4c3a837edcfdd21f54b9650e747f3e3f3b8e46f69744d9",
+   "family": "granturismo-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129184427"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes-archive/2025/granturismo-slr-my2025",
+   "timestamp": "20260719155316",
+   "sha256": "da3aaf5ecf7869d42690555f49fa3e743f071d04656a7dc5d19804525611547d",
+   "family": "granturismo-slr",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20251009113420"
+  },
+  {
+   "url": "https://www.wilier.com/en/my2020/int/endurance-bikes/road-bikes/gtr-team",
+   "timestamp": "20191209125018",
+   "sha256": "71009653d7c1b284c4efd9cc32a00f6870df2066ff5b234ca7b17e9288bde36c",
+   "family": "gtr-team",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190920031100"
+  },
+  {
+   "url": "https://wilier.com/en/my2022/int/endurance-bikes/road-bikes/gtr-team",
+   "timestamp": "20211023113356",
+   "sha256": "abfe964fb090aeed6b7af66c87b9b6de26e69b4e5b2b6e9dedbb40802a993efb",
+   "family": "gtr-team",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210507012639"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/gtr-team",
+   "timestamp": "20231002182954",
+   "sha256": "c9d0f7e836e49bc527dfe10d801b09785e3607e8993575f7086bb7407331ce6d",
+   "family": "gtr-team",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220814094741"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/gtr-team",
+   "timestamp": "20251208134244",
+   "sha256": "b21c2ea382cf54e9e54c9169875580cc762c88e2c73fe82df4cf902ace953fd3",
+   "family": "gtr-team",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129190555"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/gtr-team",
+   "timestamp": "20260720125807",
+   "sha256": "cf9f557dbc98ad5dc46d95344034d612f45293b10c058340e366ad67bfa73fcd",
+   "family": "gtr-team",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231129190555"
+  },
+  {
+   "url": "https://www.wilier.com/en/my2020/world/endurance-bikes/gravel-bikes/jareen",
+   "timestamp": "20191207234900",
+   "sha256": "e5863a9e17f624a0a5d31e3b7e86712209d7aa0c17a846f71f19ff7ad7686357",
+   "family": "jareen",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191021075330"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/endurance-bikes/gravel-bikes/jareen",
+   "timestamp": "20210226142521",
+   "sha256": "0cf7bcbdeb2272d2aa5d1d9e7f9c6fda6ac6f4eb26515d6ed021405d418deed1",
+   "family": "jareen",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201027162957"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/gravel-bikes/jareen",
+   "timestamp": "20230530084223",
+   "sha256": "8170ab161eb1ca843cba4a67becb840a75833d90b151979e6be9b9ab0fd080d2",
+   "family": "jareen",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20220626155154"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes-archive/2025/jareen",
+   "timestamp": "20260610162353",
+   "sha256": "f38b555d829ebb8c64710c3afce25c910b23bb40f05a17d34b13cfa72fc61369",
+   "family": "jareen",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20241007122342"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/jareen",
+   "timestamp": "20251217062330",
+   "sha256": "41c0b1c5b4baff84e92bf82c80b29d4c58cb2ffc722fd9f589cb7af604aa464e",
+   "family": "jareen",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129183709"
+  },
+  {
+   "url": "https://wilier.com/en/my2020/world/endurance-bikes/gravel-bikes/jaroon",
+   "timestamp": "20191022143507",
+   "sha256": "d15f3edce2f9b9321bce8acb996bfe810416ad3051ceafaee57891dbdd85d784",
+   "family": "jaroon",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191021070954"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/endurance-bikes/gravel-bikes/jaroon",
+   "timestamp": "20210314231501",
+   "sha256": "dd594dfd4153f08b339fc4b78230935c546b30723cc2540f9f0b1682f60cbab6",
+   "family": "jaroon",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200920174508"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/gravel-bikes/jaroon",
+   "timestamp": "20230930102512",
+   "sha256": "ca7d120ffdf14ea4a738590ee34e7bc09db929d330d68b8f58a37781b2e55735",
+   "family": "jaroon",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220819082434"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/jaroon",
+   "timestamp": "20251017033829",
+   "sha256": "c3bedf13f01e38b41b8d704fdd85dc5438214d958ce3cd74b31413e0b77bbaf3",
+   "family": "jaroon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231128230729"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/jaroon",
+   "timestamp": "20260614154914",
+   "sha256": "42aa5b15b9adad40a35aca647acdda611a4e4641952e0f24986fa4765d5ed3ec",
+   "family": "jaroon",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231128230729"
+  },
+  {
+   "url": "https://www.wilier.com/en/my2020/int/endurance-bikes/gravel-bikes/jena",
+   "timestamp": "20191229032536",
+   "sha256": "e9dacb232ace0de6b520e7e0353f3741d3c75c85233f92371853dd99c8062869",
+   "family": "jena",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20191114234908"
+  },
+  {
+   "url": "https://wilier.com/en/my2022/int/endurance-bikes/gravel-bikes/jena",
+   "timestamp": "20211022151140",
+   "sha256": "9897807bb434568239bbfceb77efd6e7780f0272f3a09e7c851d53b7c839bfaf",
+   "family": "jena",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20210507000317"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/gravel-bikes/jena",
+   "timestamp": "20230602061510",
+   "sha256": "683b656fe87934120df6462ac7afe292faebae9e60fa6193a2d8b59d1553e091",
+   "family": "jena",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20230127122009"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/jena",
+   "timestamp": "20251113120604",
+   "sha256": "3f390f8d4cd702fdb94666b20c66c74fb8129bbc6e462d9b3491bed0b544ef11",
+   "family": "jena",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231013094301"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/jena",
+   "timestamp": "20260719160109",
+   "sha256": "a7ba532c21fd76fde2edb7b20138e28d4b27de1f5b7ad72a577bc98d27ea9555",
+   "family": "jena",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231013094301"
+  },
+  {
+   "url": "https://wilier.com/en/products/int/road/montegrappa",
+   "timestamp": "20190721220930",
+   "sha256": "92fa0a62db231ee7343a5ca5b9d9e75c89e64b60832e6fc59db46f446016ae9a",
+   "family": "montegrappa",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20140926163554"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/endurance-bikes/road-bikes/montegrappa",
+   "timestamp": "20210119151102",
+   "sha256": "296787a7a75a0538147d6b9ca03d0ebb01e253336d2fac0a149d5ebde8644f49",
+   "family": "montegrappa",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20201027141744"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/endurance-bikes/road-bikes/montegrappa",
+   "timestamp": "20230728192638",
+   "sha256": "aba5a53e1c8cb0db56f33d04d6c21a60f6cb8e49d0005db04362f8ce0372906a",
+   "family": "montegrappa",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220702060636"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/rapida",
+   "timestamp": "20260615023939",
+   "sha256": "bcc7f58dcfb96ba82fcc9acdce3d2cbd1f418ebc33df6ebe07a7c44d747beb9c",
+   "family": "rapida",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20260506132846"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/rave-sl",
+   "timestamp": "20231129194334",
+   "sha256": "81f8f10a823925fba61c3e1489988c46d551912ea7c2af65d537e638ddbd729b",
+   "family": "rave-sl",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20231129190520"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/rave-sl",
+   "timestamp": "20251015152432",
+   "sha256": "2a0d50ce4d9ac712e1451f9a109c489b42ffedab28553c1cd1216f2fc688135d",
+   "family": "rave-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129190520"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/rave-sl",
+   "timestamp": "20260614165451",
+   "sha256": "4a893c50c7c87dba69a0ccff084fb939e01dfaa6925e0acb9f1455621cdc6f7e",
+   "family": "rave-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129190520"
+  },
+  {
+   "url": "https://wilier.com/en/my2022/int/racing-bikes/gravel-bikes/rave-slr",
+   "timestamp": "20211101134424",
+   "sha256": "ecc137fc5f8601c013e05551823f8ef2a77ae2147a675338390afe3ccc83f086",
+   "family": "rave-slr",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20211012150559"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/racing-bikes/gravel-bikes/rave-slr",
+   "timestamp": "20231001155727",
+   "sha256": "27cfa69242c521178467bf7ee9799cc4674e488ce90c051663758ae9408ed5c1",
+   "family": "rave-slr",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20221011203613"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/rave-slr-gravel",
+   "timestamp": "20251206091821",
+   "sha256": "b77e907a10c382a82298dce53379328c0b07f1eafe453a233458be85d66990f1",
+   "family": "rave-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240224032759"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/rave-slr-gravel",
+   "timestamp": "20260613060230",
+   "sha256": "d400028101ae3a3eb470671d6ad9ea09103510a04d25d09b9c660dc083230727",
+   "family": "rave-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240224032759"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/rave-slr-id2",
+   "timestamp": "20251230115754",
+   "sha256": "5ee1b89b9801053018c9d2789d8703c366995ffb3957380e6e81684cf5b91272",
+   "family": "rave-slr-id2",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20250712092426"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/gravel/rave-slr-id2",
+   "timestamp": "20260811051123",
+   "sha256": "ddafed72346966d57b3b0096d1dbe3538b09187229cb06360e139321bcfd3b3f",
+   "family": "rave-slr-id2",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20250712092426"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/verticale-slr",
+   "timestamp": "20251117191734",
+   "sha256": "231116010c7acb2b53c8257690cee7a06f063a9f1520c82a6b7d6e712e918b7b",
+   "family": "verticale-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240626020035"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/verticale-slr",
+   "timestamp": "20260418105236",
+   "sha256": "4490204045c5753fc3cab181b96f6b34a4c8aeb36b6239a2b5e71b6b2bf5bb19",
+   "family": "verticale-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20240626020035"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/racing-bikes/road-bikes/wilier-0-sl",
+   "timestamp": "20210302081119",
+   "sha256": "2254cde321e0be915e85752f9e5505cc7b787c869ba9356c3aee5ccce88f18eb",
+   "family": "zero-sl",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200926160225"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/racing-bikes/road-bikes/wilier-0-sl",
+   "timestamp": "20230926000622",
+   "sha256": "a6f0ebb5ee4981289c62ac03b87871ce9c7e4f407605a66c2e8180a462ac368a",
+   "family": "zero-sl",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220814102831"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/wilier-0-sl",
+   "timestamp": "20251113122642",
+   "sha256": "ffce6d24da55204f5d255e82bc2b19d1fccaca5757040edbb2a0a497239b3407",
+   "family": "zero-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231128221514"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/wilier-0-sl",
+   "timestamp": "20260610160833",
+   "sha256": "d79080eaa97b3df544699b3f4698cb689658e6b1191b267ff96a8e55dba0ee9e",
+   "family": "zero-sl",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231128221514"
+  },
+  {
+   "url": "https://www.wilier.com/en/my2020/int/racing-bikes/road-bikes/wilier-zero-slr",
+   "timestamp": "20191122030649",
+   "sha256": "4c3047222ea5ed5bf501bc77ac4e6c0752c6667b5b87b3afe557c6e4b38fb46e",
+   "family": "zero-slr",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190624142738"
+  },
+  {
+   "url": "https://wilier.com/en/my2021/int/racing-bikes/road-bikes/wilier-zero-slr",
+   "timestamp": "20210305095118",
+   "sha256": "b09b7653315f1ce7748749a2814192423db8af8952336ce15fee9ed08f5d3327",
+   "family": "zero-slr",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20200805213722"
+  },
+  {
+   "url": "https://wilier.com/en/my2023/int/racing-bikes/road-bikes/wilier-zero-slr",
+   "timestamp": "20230930134307",
+   "sha256": "8a09e36ced38c50a6b7bb58ec51d1a67967af4bee5ee8c4fa2b7ee1adbf1ed54",
+   "family": "zero-slr",
+   "year": 2024,
+   "related": [],
+   "firstSeen": "20220702043826"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/wilier-0-slr",
+   "timestamp": "20251208125003",
+   "sha256": "cca94b261b46b0f7e2688df0b218926f6dc3cd7e4a03b3bc1f4fa1524e5202e8",
+   "family": "zero-slr",
+   "year": 2026,
+   "related": [],
+   "firstSeen": "20231129185314"
+  },
+  {
+   "url": "https://www.wilier.com/en/bikes/road/wilier-0-slr",
+   "timestamp": "20260811051040",
+   "sha256": "4d548d08f5e23bbeb264f4ac506b90fd1a44a9b93f1871e67312e432337423bf",
+   "family": "zero-slr",
+   "year": 2027,
+   "related": [],
+   "firstSeen": "20231129185314"
+  },
+  {
+   "url": "https://www.wilier.com/en/my2019/int/racing-bikes/road-bikes/zero6-unlimited",
+   "timestamp": "20190708113215",
+   "sha256": "f30b5065801fbe65209a20040ba0948089169b62292a0bb99adfb90c3f65b265",
+   "family": "zero6",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190708113151"
+  },
+  {
+   "url": "https://wilier.com/en/products/int/road/zero6",
+   "timestamp": "20201029231558",
+   "sha256": "d6ce331c9c0b3b412b8761d8b902271552d441e952f79fe3c33a129fa584b124",
+   "family": "zero6",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20160219142035"
+  },
+  {
+   "url": "https://wilier.com/en/products/int/road/zero6",
+   "timestamp": "20221208114115",
+   "sha256": "46b69cb07faea50ab1f5fe062a55d2a66ed2d143359aa83fb050ceeed4b8ca6c",
+   "family": "zero6",
+   "year": 2023,
+   "related": [],
+   "firstSeen": "20160219142035"
+  },
+  {
+   "url": "https://www.wilier.com/en/my2019/int/racing-bikes/road-bikes/zero7",
+   "timestamp": "20190708113228",
+   "sha256": "3df6a61a08433edeed8e3ab1a7d5654bf716411ed87456ec1d66230225bf2246",
+   "family": "zero7",
+   "year": 2020,
+   "related": [],
+   "firstSeen": "20190708113147"
+  },
+  {
+   "url": "https://wilier.com/en/my2019/int/racing-bikes/road-bikes/zero7",
+   "timestamp": "20210422113032",
+   "sha256": "f4cc9877e1712679c5ebf4a0a397e1002cf209ae5af21f6707c6470c39bbf635",
+   "family": "zero7",
+   "year": 2021,
+   "related": [],
+   "firstSeen": "20190708113147"
+  },
+  {
+   "url": "https://wilier.com/en/my2019/int/racing-bikes/road-bikes/zero7",
+   "timestamp": "20220625202751",
+   "sha256": "f4cc9877e1712679c5ebf4a0a397e1002cf209ae5af21f6707c6470c39bbf635",
+   "family": "zero7",
+   "year": 2022,
+   "related": [],
+   "firstSeen": "20190708113147"
+  }
+ ]
+}
