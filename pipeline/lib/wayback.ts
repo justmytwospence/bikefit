@@ -1,4 +1,4 @@
-import { gunzipSync } from 'node:zlib';
+import { gunzipSync, inflateRawSync, inflateSync } from 'node:zlib';
 
 let last = 0;
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -67,12 +67,33 @@ function decode(buf: Buffer): string {
   }
 }
 
+/** First non-whitespace byte (after a UTF-8 BOM) opens markup or JSON. */
+function looksLikeText(buf: Buffer): boolean {
+  let i = buf[0] === 0xef && buf[1] === 0xbb && buf[2] === 0xbf ? 3 : 0;
+  while (i < buf.length && (buf[i] === 0x20 || buf[i] === 0x09 || buf[i] === 0x0a || buf[i] === 0x0d)) i++;
+  return i >= buf.length || buf[i] === 0x3c || buf[i] === 0x7b || buf[i] === 0x5b; // < { [
+}
+
+/** A capture's bytes as text: gunzipped, or inflated when a crawler stored the body still deflated (Common Crawl, 2019). */
+export function decodeBody(buf: Buffer): string {
+  if (buf[0] === 0x1f && buf[1] === 0x8b) buf = gunzipSync(buf);
+  else if (!looksLikeText(buf)) {
+    for (const inflate of [inflateRawSync, inflateSync]) {
+      try {
+        buf = inflate(buf);
+        break;
+      } catch {
+        /* not this encoding */
+      }
+    }
+  }
+  return decode(buf);
+}
+
 export async function raw(url: string, timestamp: string): Promise<string> {
   const res = await getWithRetry(`https://web.archive.org/web/${timestamp}id_/${url}`);
   if (!res.ok) throw new Error(`Wayback ${res.status} for ${url} @ ${timestamp}`);
-  let buf = Buffer.from(await res.arrayBuffer());
-  if (buf[0] === 0x1f && buf[1] === 0x8b) buf = gunzipSync(buf);
-  return decode(buf);
+  return decodeBody(Buffer.from(await res.arrayBuffer()));
 }
 
 export async function latestCapture(url: string, before?: string): Promise<string | null> {
