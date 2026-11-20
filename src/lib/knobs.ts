@@ -1,4 +1,4 @@
-import type { FitParams, ParamKey } from '../model/types';
+import type { ParamKey } from '../model/types';
 
 export type Preset = 'tools' | 'parts' | 'all';
 
@@ -43,20 +43,4 @@ export function scopeOf(locks: Partial<Record<ParamKey, boolean>>): Preset {
   if (p !== 'custom') return p;
   const free = KNOB_ORDER.filter((k) => !locks[k]);
   return (['tools', 'parts', 'all'] as Preset[]).find((s) => free.every((k) => PRESET_FREE[s].includes(k))) ?? 'all';
-}
-
-/** One line naming the fixed knobs and their current values, in the order given. */
-export function fixedSummary(keys: ParamKey[], p: FitParams, setback: number): string {
-  const angle = p.stemAngle === 0 ? '0°' : (p.stemAngle > 0 ? '+' : '−') + Math.abs(p.stemAngle) + '°';
-  const text: Record<ParamKey, string> = {
-    saddleHeight: `Saddle height ${p.saddleHeight} mm`,
-    railOffset: `Saddle nose ${Math.round(setback)} mm behind the BB`,
-    seatpostSetback: p.seatpostSetback === 0 ? 'Inline seatpost' : `Seatpost ${p.seatpostSetback} mm setback`,
-    spacers: `${p.spacers} mm spacers`,
-    stemLength: `${p.stemLength} mm stem`,
-    stemAngle: `Stem ${angle}`,
-    cleatOffset: `Cleats ${p.cleatOffset} mm back`,
-    crankLength: `Cranks ${p.crankLength} mm`,
-  };
-  return keys.map((k) => text[k]).join(' · ');
 }

@@ -9,7 +9,7 @@
   import RiderPanel from './components/RiderPanel.svelte';
   import ScoreCard from './components/ScoreCard.svelte';
   import SettingsMenu from './components/SettingsMenu.svelte';
-  import { betweenSizes, sizeEntries } from './lib/sizes';
+  import { sameParams } from './lib/ladder';
   import { resolveSegments } from './model/body';
   import { forwardLayout } from './model/geometry';
   import { idealLayout } from './model/optimize';
@@ -20,7 +20,7 @@
   import { fitCost, fitScore, partPenalty } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
   import { event } from './lib/analytics';
-  import { activeFrame, app, clearFeedback, save, ui, type Tab } from './state.svelte';
+  import { activeFrame, app, save, setupScore, ui, type Tab } from './state.svelte';
 
   const segments = $derived(resolveSegments(app.body));
   const style = $derived(STYLES[app.styleId]);
@@ -31,24 +31,31 @@
   const mine = $derived(activeFrame());
   const previewing = $derived(app.tab === 'find' && !!ui.preview);
   const frame = $derived(previewing ? ui.preview!.frame : mine);
-  const viewParams = $derived(previewing ? ui.preview!.row.result.params : app.current);
+  /** The setup the settings change; the other one is drawn in outline behind it. */
+  const yours = $derived(ui.editing === 'current' ? app.baseline : app.current);
+  const viewParams = $derived(previewing ? ui.preview!.row.result.params : yours);
+  const other = $derived(previewing ? null : ui.editing === 'current' ? app.current : app.baseline);
+  const otherShown = $derived(
+    other && !sameParams($state.snapshot(other) as FitParams, $state.snapshot(yours) as FitParams)
+      ? ($state.snapshot(other) as FitParams) : null,
+  );
+  const otherLabel = $derived(ui.editing === 'current' ? 'target' : 'current');
   const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
   const resultsLevel = $derived(app.detail.results);
   /** The size the one on the drawing is too close to call against, drawn in outline behind it. */
-  const otherSize = $derived.by(() => {
-    if (previewing) return ui.preview!.other;
-    if (app.tab !== 'mybike' || app.hasSetup || !ui.sizes) return null;
-    const pair = betweenSizes(sizeEntries(ui.sizes.rows, ui.sizes.options));
-    const o = pair && pair.some((e) => e.frame.id === mine.id) ? pair.find((e) => e.frame.id !== mine.id)! : null;
-    return o ? { row: o.row, frame: o.frame, size: o.size } : null;
-  });
+  const otherSize = $derived(previewing ? ui.preview!.other : null);
   const ghostBike = $derived(
     otherSize
       ? {
           frame: otherSize.frame, params: otherSize.row.result.params, label: `size ${otherSize.size}`,
           layout: forwardLayout(otherSize.frame, app.components, otherSize.row.result.params),
         }
-      : null,
+      : otherShown
+        ? {
+            frame: mine, params: otherShown, label: otherLabel, partsOnly: true,
+            layout: forwardLayout(mine, app.components, otherShown),
+          }
+        : null,
   );
 
   const shown = new Tween($state.snapshot(app.current), { duration: 450, easing: cubicOut });
@@ -88,8 +95,8 @@
   const pose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg));
   const farPose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg + 180));
   const ghostPose = $derived(
-    ui.ghost && !previewing
-      ? riderPose(segments, forwardLayout(frame, app.components, ui.ghost), ctx, contact, targets[pi].elbowPref, crankDeg)
+    otherShown
+      ? riderPose(segments, forwardLayout(frame, app.components, otherShown), ctx, contact, targets[pi].elbowPref, crankDeg)
       : null,
   );
   const toeTip = $derived(
@@ -121,28 +128,6 @@
     if (app.current.spacers > mine.maxSpacers) app.current.spacers = mine.maxSpacers;
   });
 
-  // A new build follows the body: when the inseam changes, the saddle height scales with it, so a setup
-  // made for other legs never sits out of reach. A bike you ride keeps its measured numbers.
-  let fitFor = { inseam: app.body.inseam, saddle: app.current.saddleHeight };
-  $effect(() => {
-    const saddle = app.current.saddleHeight;
-    untrack(() => (fitFor = { inseam: app.body.inseam, saddle }));
-  });
-  $effect(() => {
-    const inseam = app.body.inseam;
-    // Wait for typing to settle, so a half-typed inseam never moves the saddle.
-    const t = setTimeout(() => untrack(() => {
-      if (app.hasSetup || inseam === fitFor.inseam || inseam < 600 || inseam > 1050) return;
-      const [lo, hi] = app.options.saddleHeightRange;
-      const next = Math.min(hi, Math.max(lo, Math.round((2 * fitFor.saddle * inseam) / fitFor.inseam) / 2));
-      fitFor = { inseam, saddle: next };
-      ui.animate = true;
-      app.current.saddleHeight = next;
-      clearFeedback();
-    }), 400);
-    return () => clearTimeout(t);
-  });
-
   const tabs: { id: Tab; label: string }[] = [
     { id: 'rider', label: 'Rider' },
     { id: 'mybike', label: 'Fit my bike' },
@@ -154,12 +139,15 @@
   <section class="view">
     <div class="canvas">
       <BikeView
-        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ghostBike} {ideal}
+        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} ghostLabel={otherLabel} {ghostBike} {ideal}
         target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
-      <ScoreCard {score} />
+      <ScoreCard
+        {score}
+        compare={otherShown ? { label: otherLabel === 'current' ? 'Current' : 'Target', score: setupScore(otherShown) } : null}
+      />
     </div>
     <MetricStrip poses={evaluation.poses} {targets} level={resultsLevel} />
   </section>

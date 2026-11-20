@@ -1,5 +1,5 @@
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_FRAME, DEFAULT_OPTIONS, DEFAULT_PARAMS } from '../model/presets';
-import { isPreset, presetLocks, scopeOf, type Preset } from './knobs';
+import { isPreset, KNOB_ORDER, PRESET_FREE, presetLocks, scopeOf } from './knobs';
 import type { Units } from './units';
 import type {
   Body, Components, Effort, FitParams, Frame, HandsPref, ParamKey, PartOptions, StyleId,
@@ -33,18 +33,19 @@ export interface RiderOpen {
 const openFromLevel = (lv: Level): RiderOpen => ({ ride: lv >= 2, arms: lv >= 2, segments: lv >= 3 });
 
 export interface AppData {
-  v: 2;
+  v: 3;
   body: Body;
   styleId: StyleId;
   frames: Frame[];
   activeFrameId: string;
   components: Components;
   options: PartOptions;
+  /** The target: what Fit my bike suggests or you set, edited under Target. */
   current: FitParams;
+  /** Your current setup: the bike as you ride it, edited under Current setup. */
   baseline: FitParams;
+  /** Settings the rider pinned; Optimize leaves them where the target has them. */
   locks: Record<ParamKey, boolean>;
-  /** What Fit my bike lists as changeable; locks within it only dim. */
-  scope: Preset;
   tab: Tab;
   effort: Effort | null;
   hands: HandsPref | null;
@@ -52,15 +53,13 @@ export interface AppData {
   /** Which optional Rider sections are open. */
   riderOpen: RiderOpen;
   units: Units;
-  /** False until the user says they have a bike set up; until then Optimize suggests a build from scratch. */
-  hasSetup: boolean;
   /** Whether the first-run guide on the Rider tab has been dismissed. */
   seenIntro: boolean;
 }
 
 export function defaults(): AppData {
   return structuredClone({
-    v: 2 as const,
+    v: 3 as const,
     body: DEFAULT_BODY,
     styleId: 'endurance' as StyleId,
     frames: [DEFAULT_FRAME],
@@ -68,25 +67,23 @@ export function defaults(): AppData {
     components: DEFAULT_COMPONENTS,
     options: DEFAULT_OPTIONS,
     current: DEFAULT_PARAMS,
-    baseline: DEFAULT_PARAMS,
-    locks: presetLocks('parts'),
-    scope: 'parts' as Preset,
+    baseline: { ...DEFAULT_PARAMS },
+    locks: presetLocks('all'),
     tab: 'rider' as Tab,
     effort: null,
     hands: null,
     detail: { bikeFull: false, results: 1 as Level },
     riderOpen: openFromLevel(1),
     units: 'metric' as Units,
-    hasSetup: false,
     seenIntro: false,
   });
 }
 
-/** Accepts v1 or v2 saved data and fills anything missing from the defaults. */
+/** Accepts v1, v2 or v3 saved data and fills anything missing from the defaults. */
 export function migrate(raw: unknown): AppData | null {
   if (!raw || typeof raw !== 'object') return null;
   const d = raw as Record<string, any>;
-  if ((d.v !== 1 && d.v !== 2) || !Array.isArray(d.frames) || d.frames.length === 0) return null;
+  if ((d.v !== 1 && d.v !== 2 && d.v !== 3) || !Array.isArray(d.frames) || d.frames.length === 0) return null;
   const base = defaults();
   const frames = (d.frames as Frame[]).filter((f) => !isOldExample(f)).map(moved)
     .filter((f, i, all) => all.findIndex((x) => x.id === f.id) === i);
@@ -106,14 +103,26 @@ export function migrate(raw: unknown): AppData | null {
     riderLevel = g;
     locks = g === 1 ? presetLocks('parts') : { ...base.locks, ...d.locks };
   }
+  const { hasSetup, scope, ...rest } = d;
+  let baseline = { ...base.baseline, ...d.baseline };
+  const current = { ...base.current, ...d.current };
+  if (d.v !== 3) {
+    // Older data: pins only count inside the scope the old Fit my bike listed, and a New build becomes the bike you ride.
+    const oldScope = isPreset(scope) ? scope : scopeOf(locks);
+    locks = Object.fromEntries(KNOB_ORDER.map((k) => [k, !!locks[k] && PRESET_FREE[oldScope].includes(k)])) as Record<ParamKey, boolean>;
+    const rode = typeof hasSetup === 'boolean'
+      ? hasSetup
+      : (Object.keys(base.baseline) as ParamKey[]).some((k) => d.baseline?.[k] !== undefined && d.baseline[k] !== base.baseline[k]);
+    if (!rode) baseline = { ...current };
+  }
   const o = d.riderOpen;
   const riderOpen: RiderOpen = o && typeof o === 'object'
     ? { ride: o.ride === true, arms: o.arms === true, segments: o.segments === true }
     : openFromLevel(riderLevel);
   return {
     ...base,
-    ...d,
-    v: 2,
+    ...rest,
+    v: 3,
     body: {
       ...base.body,
       ...d.body,
@@ -123,10 +132,9 @@ export function migrate(raw: unknown): AppData | null {
     },
     components: { ...base.components, ...d.components },
     options: { ...base.options, ...d.options },
-    current: { ...base.current, ...d.current },
-    baseline: { ...base.baseline, ...d.baseline },
+    current,
+    baseline,
     locks,
-    scope: isPreset(d.scope) ? d.scope : scopeOf(locks),
     detail,
     riderOpen,
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
@@ -136,11 +144,6 @@ export function migrate(raw: unknown): AppData | null {
     hands: d.hands ?? null,
     units: d.units === 'imperial' ? 'imperial' : 'metric',
     seenIntro: d.seenIntro ?? true,
-    hasSetup: typeof d.hasSetup === 'boolean'
-      ? d.hasSetup
-      : (Object.keys(base.baseline) as ParamKey[]).some(
-        (k) => d.baseline?.[k] !== undefined && d.baseline[k] !== base.baseline[k],
-      ),
   } as AppData;
 }
 

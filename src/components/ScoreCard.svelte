@@ -2,7 +2,7 @@
   import { STYLES } from '../model/styles';
   import { app } from '../state.svelte';
 
-  let { score }: { score: number } = $props();
+  let { score, compare = null }: { score: number; compare?: { label: string; score: number } | null } = $props();
   const C = 2 * Math.PI * 16;
   const color = $derived(score >= 85 ? 'var(--ok)' : score >= 60 ? 'var(--near)' : 'var(--off)');
   const name = $derived(STYLES[app.styleId].name);
@@ -21,6 +21,7 @@
   <span class="txt">
     <span class="k">Fit for</span>
     <span class="name">{name} <span aria-hidden="true">▾</span></span>
+    {#if compare && compare.score !== score}<span class="was">{compare.label} {compare.score}</span>{/if}
   </span>
   <select aria-label="Riding style" bind:value={app.styleId}>
     {#each Object.values(STYLES) as s (s.id)}<option value={s.id}>{s.name}</option>{/each}
@@ -33,6 +34,7 @@
   select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
   .k { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
   .name { display: block; font-weight: 600; white-space: nowrap; }
+  .was { display: block; font-size: 11px; color: var(--muted); }
   /* Phones: a smaller pill without the label, so it covers less of the drawing. */
   @media (max-width: 479px) {
     .score { gap: 6px; padding-right: 10px; }

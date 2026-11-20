@@ -20,7 +20,7 @@
   import PillSelect from './PillSelect.svelte';
 
   let {
-    frame, components, layout, pose, farPose, ghostPose, ghostBike = null, ideal, target, poseEval, level, height, seg, params,
+    frame, components, layout, pose, farPose, ghostPose, ghostLabel = 'before', ghostBike = null, ideal, target, poseEval, level, height, seg, params,
     toeTip, toeClearance, peakCrank,
   }: {
     frame: Frame;
@@ -29,8 +29,10 @@
     pose: RiderPose;
     farPose: RiderPose;
     ghostPose: RiderPose | null;
+    /** Names the outline drawn behind the rider. */
+    ghostLabel?: string;
     /** A second size of the same bike, drawn in outline behind the first. */
-    ghostBike?: { frame: Frame; layout: Layout; params: FitParams; label: string } | null;
+    ghostBike?: { frame: Frame; layout: Layout; params: FitParams; label: string; partsOnly?: boolean } | null;
     ideal: { saddle: Vec2; hoods: Vec2 };
     target: PoseTarget;
     poseEval: PoseEval;
@@ -151,7 +153,7 @@
 
       <Bike {frame} {components} {layout} {params} />
       {#if ghostBike}
-        <Bike frame={ghostBike.frame} {components} layout={ghostBike.layout} params={ghostBike.params} variant="ghost" />
+        <Bike frame={ghostBike.frame} {components} layout={ghostBike.layout} params={ghostBike.params} variant={ghostBike.partsOnly ? 'parts' : 'ghost'} />
       {/if}
 
       <line x1="0" y1="0" x2={pose.spindle.x} y2={pose.spindle.y} stroke="var(--ink)" stroke-width="16" />
@@ -224,8 +226,8 @@
 
   <div class="legend">
     {#if !inBand}<span><i class="t"></i> suggested</span>{/if}
-    {#if ghostPose}<span><i class="g"></i> before</span>{/if}
-    {#if ghostBike}<span><i class="o"></i> {ghostBike.label}</span>{/if}
+    {#if ghostPose}<span><i class="g"></i> {ghostLabel}</span>{/if}
+    {#if ghostBike && !ghostBike.partsOnly}<span><i class="o"></i> {ghostBike.label}</span>{/if}
     {#if (level >= 2 || toeClearance < 0) && Number.isFinite(toeClearance) && toeClearance < 10}
       <span class="warn" class:bad={toeClearance < 0}>
         {toeClearance < 0 ? 'Toe overlap ' + Math.round(-toeClearance) : 'Toe clearance ' + Math.round(toeClearance)} mm

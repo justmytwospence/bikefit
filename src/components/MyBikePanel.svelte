@@ -6,10 +6,8 @@
   import type { Evaluation, FitParams, Layout } from '../model/types';
   import type { ParamKey } from '../model/types';
   import { clamp } from '../model/vec';
-  import { fixedSummary, KNOB_ORDER, PRESET_FREE, PRESETS, presetLocks } from '../lib/knobs';
-  import {
-    activeFrame, app, clearGhost, optimize, resetToBaseline, setHasSetup, ui, undo,
-  } from '../state.svelte';
+  import { KNOB_ORDER } from '../lib/knobs';
+  import { activeFrame, app, optimize, setKnob, ui, useStep } from '../state.svelte';
   import { measure } from '../lib/measure';
   import { event } from '../lib/analytics';
   import ChipRow from './ChipRow.svelte';
@@ -18,7 +16,6 @@
   import FrameDetails from './FrameDetails.svelte';
   import ImpossibleBanner from './ImpossibleBanner.svelte';
   import LockToggle from './LockToggle.svelte';
-  import QuestionBar from './QuestionBar.svelte';
   import Segmented from './Segmented.svelte';
   import SliderField from './SliderField.svelte';
 
@@ -32,19 +29,22 @@
   const o = $derived(app.options);
   const c = $derived(app.current);
   const b = $derived(app.baseline);
+  /** The setup the settings change. */
+  const ed = $derived(ui.editing === 'current' ? app.baseline : app.current);
+  const isTarget = $derived(ui.editing === 'target');
   const changes = $derived(wrenchList($state.snapshot(b), $state.snapshot(c)));
   const hasChanges = $derived(changes[0] !== 'No changes from your current setup.');
 
-  const setback = $derived(noseSetback(frame, app.components, c));
-  const setbackDelta = $derived(setback - noseSetback(frame, app.components, b));
-  const sbRange = $derived(setbackRange(frame, app.components, c, o.railRange));
-  const readouts = $derived(contactReadouts(layout, $state.snapshot(c), evaluation, resultsLv));
+  const setback = $derived(noseSetback(frame, app.components, ed));
+  const setbackDelta = $derived(noseSetback(frame, app.components, c) - noseSetback(frame, app.components, b));
+  const sbRange = $derived(setbackRange(frame, app.components, ed, o.railRange));
+  const readouts = $derived(contactReadouts(layout, $state.snapshot(ed), evaluation, resultsLv));
 
   // Hard stops: each knob may move only as far as the rider's body can still ride the bike.
-  const cur = $derived($state.snapshot(app.current) as FitParams);
+  const cur = $derived($state.snapshot(ed) as FitParams);
   const with_ = (patch: Partial<FitParams>) => whyImpossible({ ...cur, ...patch });
   const saddleLim = $derived(possibleRange(
-    o.saddleHeightRange[0], o.saddleHeightRange[1], 0.5, c.saddleHeight, (v) => with_({ saddleHeight: v }),
+    o.saddleHeightRange[0], o.saddleHeightRange[1], 0.5, cur.saddleHeight, (v) => with_({ saddleHeight: v }),
   ));
   const sbMin = $derived(Math.ceil(sbRange[0] * 2) / 2);
   const sbMax = $derived(Math.floor(sbRange[1] * 2) / 2);
@@ -52,8 +52,8 @@
     sbMin, sbMax, 0.5, Math.round(setback * 2) / 2,
     (v) => with_({ railOffset: railForSetback(frame, app.components, cur, v) }),
   ));
-  const spacerLim = $derived(possibleRange(0, frame.maxSpacers, o.spacerStep, c.spacers, (v) => with_({ spacers: v })));
-  const cleatLim = $derived(possibleRange(o.cleatRange[0], o.cleatRange[1], 1, c.cleatOffset, (v) => with_({ cleatOffset: v })));
+  const spacerLim = $derived(possibleRange(0, frame.maxSpacers, o.spacerStep, cur.spacers, (v) => with_({ spacers: v })));
+  const cleatLim = $derived(possibleRange(o.cleatRange[0], o.cleatRange[1], 1, cur.cleatOffset, (v) => with_({ cleatOffset: v })));
   type Lim = ReturnType<typeof possibleRange>;
   /** Why the current setup cannot be ridden at all; the banner says so once, instead of every slider. */
   const blocked = $derived(whyImpossible(cur));
@@ -76,46 +76,34 @@
   }
 
   function setSetback(v: number) {
-    app.current.railOffset = clamp(railForSetback(frame, app.components, c, v), o.railRange[0], o.railRange[1]);
+    setKnob('railOffset', clamp(railForSetback(frame, app.components, cur, v), o.railRange[0], o.railRange[1]));
   }
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 
-  const SETUP: { value: 'new' | 'mine'; label: string }[] = [
-    { value: 'new', label: 'New build' },
-    { value: 'mine', label: 'I ride it' },
+  const SIDES: { value: 'current' | 'target'; label: string }[] = [
+    { value: 'current', label: 'Current setup' },
+    { value: 'target', label: 'Target' },
   ];
-  const presetOptions = PRESETS.map((p) => ({ value: p.value, label: p.label, title: p.hint }));
   const GROUPS: { title: string; keys: ParamKey[] }[] = [
     { title: 'Saddle', keys: ['saddleHeight', 'railOffset', 'seatpostSetback'] },
     { title: 'Cockpit', keys: ['spacers', 'stemLength', 'stemAngle'] },
     { title: 'Cranks and cleats', keys: ['cleatOffset', 'crankLength'] },
   ];
-  // The scope, not the locks, decides where a knob sits, so locking one never moves it.
-  const inScope = $derived(PRESET_FREE[app.scope]);
-  const stays = $derived(KNOB_ORDER.filter((k) => !inScope.includes(k)));
-  const staysTitle = $derived(stays.every((k) => app.locks[k]) ? 'Stays as it is' : 'Other parts');
-  const allLocked = $derived(inScope.every((k) => app.locks[k]));
-  const groups = $derived(
-    GROUPS.map((g) => ({ title: g.title, keys: g.keys.filter((k) => inScope.includes(k)) })).filter((g) => g.keys.length > 0),
-  );
+  const allLocked = $derived(KNOB_ORDER.every((k) => app.locks[k]));
 </script>
 
-<QuestionBar
-  label="Can change" ariaLabel="What you can change" options={presetOptions}
-  bind:value={() => app.scope, (v) => { app.scope = v; Object.assign(app.locks, presetLocks(v)); event('Can change', { scope: v }); }}
-/>
 <div class="scroll">
-  {#if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} />{/if}
+  {#if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} setSaddle={(v) => setKnob('saddleHeight', v)} />{/if}
   <BikePicker />
   <h2>Setup</h2>
   <Segmented
-    options={SETUP} ariaLabel="This bike's setup"
-    bind:value={() => (app.hasSetup ? 'mine' : 'new'), (v) => setHasSetup(v === 'mine')}
+    options={SIDES} ariaLabel="Which setup the settings change"
+    bind:value={() => ui.editing, (v) => { ui.editing = v; event('Editing', { side: v }); }}
   />
   <p class="muted small start">
-    {app.hasSetup
-      ? 'Changes are counted from your setup.'
-      : frame.id.startsWith('cat:') ? 'Optimize suggests a build and checks other sizes.' : 'Optimize suggests a build.'}
+    {isTarget
+      ? 'What to change it to. Optimize suggests targets from your current setup.'
+      : 'Your bike as you ride it now. Settings the target leaves alone follow it.'}
   </p>
 
   {#snippet knob(k: ParamKey)}
@@ -123,62 +111,62 @@
       <div use:measure={'saddleHeight'}>
       <SliderField
         label="Saddle height" min={o.saddleHeightRange[0]} max={o.saddleHeightRange[1]} step={0.5}
-        bind:value={app.current.saddleHeight} bind:locked={app.locks.saddleHeight}
-        limit={[saddleLim.lo, saddleLim.hi]} stop={stopText(saddleLim, c.saddleHeight)}
-        delta={app.hasSetup ? c.saddleHeight - b.saddleHeight : 0} hint="BB centre to saddle top, along the seat tube" onedit={clearGhost}
+        bind:value={() => ed.saddleHeight, (v) => setKnob('saddleHeight', v)} bind:locked={app.locks.saddleHeight} showLock={isTarget}
+        limit={[saddleLim.lo, saddleLim.hi]} stop={stopText(saddleLim, cur.saddleHeight)}
+        delta={isTarget ? c.saddleHeight - b.saddleHeight : 0} hint="BB centre to saddle top, along the seat tube"
       />
       </div>
     {:else if k === 'railOffset'}
       <div use:measure={'setback'}>
       <SliderField
         label="Setback to saddle nose" min={sbMin} max={sbMax} step={0.5}
-        bind:value={() => Math.round(setback * 2) / 2, setSetback} bind:locked={app.locks.railOffset}
+        bind:value={() => Math.round(setback * 2) / 2, setSetback} bind:locked={app.locks.railOffset} showLock={isTarget}
         limit={[sbLim.lo, sbLim.hi]} stop={stopText(sbLim, Math.round(setback * 2) / 2)}
-        delta={app.hasSetup ? setbackDelta : 0} hint="Plumb from the saddle nose, behind the BB" onedit={clearGhost}
+        delta={isTarget ? setbackDelta : 0} hint="Plumb from the saddle nose, behind the BB"
       />
       <p class="muted small rails">
-        Rails: {c.railOffset === 0 ? 'centred' : Math.abs(c.railOffset) + ' mm ' + (c.railOffset > 0 ? 'forward' : 'back') + ' of centre'}
+        Rails: {cur.railOffset === 0 ? 'centred' : Math.abs(cur.railOffset) + ' mm ' + (cur.railOffset > 0 ? 'forward' : 'back') + ' of centre'}
       </p>
       </div>
     {:else if k === 'seatpostSetback'}
       <div use:measure={'setback'}>
       <div class="chiphead">
         <span>Seatpost setback</span>
-        <LockToggle label="Seatpost setback" bind:locked={app.locks.seatpostSetback} />
+        {#if isTarget}<LockToggle label="Seatpost setback" bind:locked={app.locks.seatpostSetback} />{/if}
       </div>
-      <div class="chips" class:locked={app.locks.seatpostSetback}>
-      <ChipRow options={o.seatpostSetbacks} bind:value={app.current.seatpostSetback} format={setbackLabel} blocked={blockedChips('seatpostSetback', o.seatpostSetbacks)} onedit={clearGhost} />
+      <div class="chips" class:locked={isTarget && app.locks.seatpostSetback}>
+      <ChipRow options={o.seatpostSetbacks} bind:value={() => ed.seatpostSetback, (v) => setKnob('seatpostSetback', v)} format={setbackLabel} blocked={blockedChips('seatpostSetback', o.seatpostSetbacks)} />
       </div>
       </div>
     {:else if k === 'spacers'}
       <div use:measure={'spacers'}>
       <SliderField
         label="Spacers" min={0} max={frame.maxSpacers} step={o.spacerStep}
-        bind:value={app.current.spacers} bind:locked={app.locks.spacers}
-        limit={[spacerLim.lo, spacerLim.hi]} stop={stopText(spacerLim, c.spacers)}
-        delta={app.hasSetup ? c.spacers - b.spacers : 0} hint="Under the stem, above the headset" onedit={clearGhost}
+        bind:value={() => ed.spacers, (v) => setKnob('spacers', v)} bind:locked={app.locks.spacers} showLock={isTarget}
+        limit={[spacerLim.lo, spacerLim.hi]} stop={stopText(spacerLim, cur.spacers)}
+        delta={isTarget ? c.spacers - b.spacers : 0} hint="Under the stem, above the headset"
       />
       </div>
     {:else if k === 'stemLength'}
       <div use:measure={'stem'}>
       <div class="chiphead">
         <span>Stem length</span>
-        <LockToggle label="Stem length" bind:locked={app.locks.stemLength} />
+        {#if isTarget}<LockToggle label="Stem length" bind:locked={app.locks.stemLength} />{/if}
       </div>
-      <div class="chips" class:locked={app.locks.stemLength}>
-      <ChipRow options={o.stemLengths} bind:value={app.current.stemLength} format={(n) => n + ' mm'} blocked={blockedChips('stemLength', o.stemLengths)} onedit={clearGhost} />
+      <div class="chips" class:locked={isTarget && app.locks.stemLength}>
+      <ChipRow options={o.stemLengths} bind:value={() => ed.stemLength, (v) => setKnob('stemLength', v)} format={(n) => n + ' mm'} blocked={blockedChips('stemLength', o.stemLengths)} />
       </div>
       </div>
     {:else if k === 'stemAngle'}
       <div use:measure={'stem'}>
       <div class="chiphead">
         <span>Stem angle</span>
-        <LockToggle label="Stem angle" bind:locked={app.locks.stemAngle} />
+        {#if isTarget}<LockToggle label="Stem angle" bind:locked={app.locks.stemAngle} />{/if}
       </div>
-      <div class="chips" class:locked={app.locks.stemAngle}>
+      <div class="chips" class:locked={isTarget && app.locks.stemAngle}>
       <ChipRow
-        options={o.stemAngles} bind:value={app.current.stemAngle} blocked={blockedChips('stemAngle', o.stemAngles)}
-        format={(n) => (n === 0 ? '0°' : (n > 0 ? '+' : '−') + Math.abs(n) + '°')} onedit={clearGhost}
+        options={o.stemAngles} bind:value={() => ed.stemAngle, (v) => setKnob('stemAngle', v)} blocked={blockedChips('stemAngle', o.stemAngles)}
+        format={(n) => (n === 0 ? '0°' : (n > 0 ? '+' : '−') + Math.abs(n) + '°')}
       />
       </div>
       </div>
@@ -186,41 +174,36 @@
       <div use:measure={'cleat'}>
       <SliderField
         label="Cleat position" unit="mm back" min={o.cleatRange[0]} max={o.cleatRange[1]} step={1}
-        bind:value={app.current.cleatOffset} bind:locked={app.locks.cleatOffset}
-        limit={[cleatLim.lo, cleatLim.hi]} stop={stopText(cleatLim, c.cleatOffset)}
-        delta={app.hasSetup ? c.cleatOffset - b.cleatOffset : 0} hint="0 = pedal axle under the ball of the foot" onedit={clearGhost}
+        bind:value={() => ed.cleatOffset, (v) => setKnob('cleatOffset', v)} bind:locked={app.locks.cleatOffset} showLock={isTarget}
+        limit={[cleatLim.lo, cleatLim.hi]} stop={stopText(cleatLim, cur.cleatOffset)}
+        delta={isTarget ? c.cleatOffset - b.cleatOffset : 0} hint="0 = pedal axle under the ball of the foot"
       />
       </div>
     {:else if k === 'crankLength'}
       <div use:measure={'crank'}>
       <div class="chiphead">
         <span>Crank length</span>
-        <LockToggle label="Crank length" bind:locked={app.locks.crankLength} />
+        {#if isTarget}<LockToggle label="Crank length" bind:locked={app.locks.crankLength} />{/if}
       </div>
-      <div class="chips" class:locked={app.locks.crankLength}>
-      <ChipRow options={o.crankLengths} bind:value={app.current.crankLength} format={(n) => n + ' mm'} blocked={blockedChips('crankLength', o.crankLengths)} onedit={clearGhost} />
+      <div class="chips" class:locked={isTarget && app.locks.crankLength}>
+      <ChipRow options={o.crankLengths} bind:value={() => ed.crankLength, (v) => setKnob('crankLength', v)} format={(n) => n + ' mm'} blocked={blockedChips('crankLength', o.crankLengths)} />
       </div>
       </div>
     {/if}
   {/snippet}
 
-  <div class="lockall">
-    <span class="muted small">A lock keeps a setting as it is.</span>
-    <button type="button" class="btn small" onclick={() => { for (const k of inScope) app.locks[k] = !allLocked; }}>
-      {allLocked ? 'Unlock all' : 'Lock all'}
-    </button>
-  </div>
-  {#each groups as g (g.title)}
+  {#if isTarget}
+    <div class="lockall">
+      <span class="muted small">A lock keeps a setting where the target has it.</span>
+      <button type="button" class="btn small" onclick={() => { for (const k of KNOB_ORDER) app.locks[k] = !allLocked; }}>
+        {allLocked ? 'Unlock all' : 'Lock all'}
+      </button>
+    </div>
+  {/if}
+  {#each GROUPS as g (g.title)}
     <h2>{g.title}</h2>
     {#each g.keys as k (k)}{@render knob(k)}{/each}
   {/each}
-
-  {#if stays.length}
-    <details class="card fixed">
-      <summary><b>{staysTitle}</b><span class="muted small">{fixedSummary(stays, c, setback)}</span></summary>
-      {#each stays as k (k)}{@render knob(k)}{/each}
-    </details>
-  {/if}
 
   {#if readouts.length}
     <div class="card readouts">
@@ -245,9 +228,9 @@
     {#if ui.busy}<span class="spin"></span>Optimizing…{:else}Optimize{/if}
   </button>
   <button
-    type="button" class="btn sec" disabled={app.hasSetup ? !hasChanges : !ui.undo}
-    onclick={app.hasSetup ? resetToBaseline : undo}
-  >{app.hasSetup ? 'Reset' : 'Undo'}</button>
+    type="button" class="btn sec" disabled={!hasChanges} title="Set the target back to your current setup"
+    onclick={() => useStep(-1)}
+  >Reset</button>
 </div>
 
 <style>
@@ -258,10 +241,10 @@
   .lockall .btn { width: 104px; padding: 0; }
   .rails { margin: -4px 0 10px; }
   .start { margin-top: 6px; }
-  .fixed, .frame { margin-top: 18px; }
-  .fixed summary, .frame summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
-  .fixed summary b::after, .frame summary b::after { content: ' ▾'; color: var(--muted); }
-  .fixed[open] summary b::after, .frame[open] summary b::after { content: ' ▴'; }
+  .frame { margin-top: 18px; }
+  .frame summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
+  .frame summary b::after { content: ' ▾'; color: var(--muted); }
+  .frame[open] summary b::after { content: ' ▴'; }
   .readouts h2 { margin-top: 0; }
   dl { margin: 0; }
   dl div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; border-bottom: 1px solid var(--line); }

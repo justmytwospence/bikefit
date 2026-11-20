@@ -1,5 +1,6 @@
 import { bikeOf, event, reportError } from './lib/analytics';
 import { screenCatalog } from './lib/catalogFit';
+import { stepLocks } from './lib/ladder';
 import type { SizeEntry } from './lib/sizes';
 import { runCatalog, runCompare, stopCatalog } from './lib/optimizeClient';
 import { idealLayout, type CompareRow } from './model/optimize';
@@ -8,6 +9,9 @@ import type { Frame } from './model/types';
 import { app, problem, ui, useCompareRow } from './state.svelte';
 
 const snap = <T>(x: T): T => $state.snapshot(x) as T;
+
+/** A new bike is fitted with the parts a shop swaps (stem, seatpost), keeping your cranks and pinned settings. */
+const findLocks = () => stepLocks('parts', snap(app.locks));
 
 /** Immutable so Svelte does not deep-proxy thousands of rows; replace it with `with` to update. */
 export class CatalogView {
@@ -49,7 +53,7 @@ export async function runCompareAll() {
 export function catalogKey(): string {
   return JSON.stringify(snap({
     body: app.body, styleId: app.styleId, components: app.components,
-    options: app.options, effort: app.effort, hands: app.hands, locks: app.locks,
+    options: app.options, effort: app.effort, hands: app.hands, locks: findLocks(),
   }));
 }
 
@@ -95,7 +99,7 @@ export async function runCatalogFit() {
     const rows = await runCatalog({ ...rest, idealHoods: ideal.hoods }, jobs, (r, done) => {
       latest = { rows: r, done };
       if (!timer) timer = setTimeout(flush, 250);
-    }, snap(app.locks), ideal.hoods);
+    }, findLocks(), ideal.hoods);
     if (timer) clearTimeout(timer);
     latest = { rows, done: jobs.length };
     flush();
