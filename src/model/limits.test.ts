@@ -84,7 +84,7 @@ describe('saddle height limits for the test rider', () => {
 
 describe('impossible', () => {
   const pose = (m: Partial<PoseEval['metrics']>, extra: Partial<PoseEval> = {}): PoseEval => ({
-    contact: 'hoods', overextended: false, legShortfall: 0, overreach: false, pelvicTilt: 12, comX: 0,
+    contact: 'hoods', overextended: false, kneeTopCrank: 0, hipCrank: 0, legShortfall: 0, overreach: false, pelvicTilt: 12, comX: 0,
     metrics: { knee: 145, kneeTop: 70, hip: 60, torso: 45, shoulder: 90, elbow: 155, seatAngle: 73, handLoad: 30, kops: 0, ...m },
     ...extra,
   });

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { HEAD_R, headCenter } from '../draw/body';
-  import { distToSegment, placeLabel, type Obstacle } from '../draw/shapes';
+  import { angleOf, arcPath, distToSegment, placeLabel, type Obstacle } from '../draw/shapes';
   import { event } from '../lib/analytics';
   import { LEVEL_OPTIONS, type Level } from '../lib/appData';
   import { frameSkeleton } from '../model/geometry';
@@ -11,6 +11,10 @@
   } from '../model/types';
   import { deg, type Vec2 } from '../model/vec';
   import { app, ui } from '../state.svelte';
+  import { overlayFor } from '../draw/overlay';
+  import { focus } from '../lib/link.svelte';
+  import type { Units } from '../lib/units';
+  import Hits from './draw/Hits.svelte';
   import Arm from './draw/Arm.svelte';
   import Bike from './draw/Bike.svelte';
   import Leg from './draw/Leg.svelte';
@@ -22,7 +26,7 @@
 
   let {
     frame, components, layout, pose, farPose, ghostPose, ghostBike = null, ideal, target, poseEval, level, height, seg, params,
-    toeTip, toeClearance, peakCrank,
+    toeTip, toeClearance, peakCrank, units,
   }: {
     frame: Frame;
     components: Components;
@@ -42,7 +46,12 @@
     toeTip: Vec2 | null;
     toeClearance: number;
     peakCrank: number;
+    units: Units;
   } = $props();
+
+  /** The linked number the drawing shows, and the angle it names, if any. */
+  const f = $derived(focus());
+  const fm = $derived(f?.startsWith('m:') ? (f.slice(2) as MetricId) : null);
 
   const sk = $derived(frameSkeleton(frame));
   const LINE = 14; // obstacle radius for the skeleton lines, mm
@@ -64,20 +73,7 @@
   const tyre = $derived(frame.tyreWidth);
   const groundY = $derived(frame.bbDrop - (311 + tyre));
 
-  const pt = (c: Vec2, a: number, r: number): Vec2 => ({
-    x: c.x + r * Math.cos((a * Math.PI) / 180),
-    y: c.y + r * Math.sin((a * Math.PI) / 180),
-  });
-  const ang = (a: Vec2, b: Vec2) => deg(Math.atan2(b.y - a.y, b.x - a.x));
-  function arcOf(c: Vec2, a0: number, a1: number, r: number) {
-    const d = ((((a1 - a0) % 360) + 540) % 360) - 180;
-    const p0 = pt(c, a0, r);
-    const p1 = pt(c, a0 + d, r);
-    return {
-      path: `M ${p0.x} ${p0.y} A ${r} ${r} 0 0 ${d > 0 ? 1 : 0} ${p1.x} ${p1.y}`,
-      mid: a0 + d / 2,
-    };
-  }
+
 
   const obstacles = $derived<Obstacle[]>([
     { a: pose.hip, b: pose.knee, r: LINE },
@@ -93,16 +89,16 @@
   const joints = $derived.by(() => {
     const p = pose;
     const defs: { id: MetricId; c: Vec2; a: number; b: number; r: number; value: number }[] = ([
-      { id: 'knee', c: p.knee, a: ang(p.knee, p.hip), b: ang(p.knee, p.ankle), r: 85, value: p.kneeAngle },
-      { id: 'hip', c: p.hip, a: ang(p.hip, p.shoulder), b: ang(p.hip, p.knee), r: 85, value: p.hipAngle },
-      { id: 'shoulder', c: p.shoulder, a: ang(p.shoulder, p.hip), b: ang(p.shoulder, p.elbow), r: 70, value: p.shoulderAngle },
-      { id: 'elbow', c: p.elbow, a: ang(p.elbow, p.shoulder), b: ang(p.elbow, p.hand), r: 65, value: p.elbowAngle },
-      { id: 'torso', c: p.hip, a: 0, b: ang(p.hip, p.shoulder), r: 220, value: p.torsoAngle },
-    ] as typeof defs).filter((d) => (d.id !== 'hip' || ui.playing) && (level >= 2 || d.id === 'knee' || d.id === 'torso' || d.id === 'hip'));
+      { id: fm === 'kneeTop' ? 'kneeTop' : 'knee', c: p.knee, a: angleOf(p.knee, p.hip), b: angleOf(p.knee, p.ankle), r: 85, value: p.kneeAngle },
+      { id: 'hip', c: p.hip, a: angleOf(p.hip, p.shoulder), b: angleOf(p.hip, p.knee), r: 85, value: p.hipAngle },
+      { id: 'shoulder', c: p.shoulder, a: angleOf(p.shoulder, p.hip), b: angleOf(p.shoulder, p.elbow), r: 70, value: p.shoulderAngle },
+      { id: 'elbow', c: p.elbow, a: angleOf(p.elbow, p.shoulder), b: angleOf(p.elbow, p.hand), r: 65, value: p.elbowAngle },
+      { id: 'torso', c: p.hip, a: 0, b: angleOf(p.hip, p.shoulder), r: 220, value: p.torsoAngle },
+    ] as typeof defs).filter((d) => fm === d.id || ((d.id !== 'hip' || ui.playing) && (level >= 2 || d.id === 'knee' || d.id === 'torso' || d.id === 'hip')));
     const placed: Obstacle[] = [];
     const clr = fs * 1.0;
     return defs.map((d) => {
-      const arc = arcOf(d.c, d.a, d.b, d.r);
+      const arc = arcPath(d.c, d.a, d.b, d.r);
       const all = [...obstacles, ...placed];
       const clear = (q: Vec2) => all.every((o) => distToSegment(q, o.a, o.b) > o.r + clr);
       let lbl = placeLabel(d.c, arc.mid, d.r + 40, all, clr, 24, 3);
@@ -114,7 +110,7 @@
       }
       placed.push({ a: lbl, b: lbl, r: fs * 1.2 });
       return {
-        ...d, ...arc, lbl,
+        ...d, ...arc, lbl, on: fm === d.id,
         st: target.bands[d.id] ? status(poseEval.metrics[d.id], target.bands[d.id]!) : 'info',
         shownValue: ui.playing ? d.value : poseEval.metrics[d.id],
       };
@@ -138,6 +134,9 @@
     { key: 'saddle', cur: layout.saddle, tgt: ideal.saddle },
     ...(pose.contact === 'hoods' ? [{ key: 'hand', cur: layout.hoods, tgt: ideal.hoods }] : []),
   ]);
+  const overlay = $derived(
+    f ? overlayFor({ id: f, layout, frame, components, params, pose, poseEval, seg, toe: toeTip, toeClearance, units }) : null,
+  );
   const poseOptions = [
     { value: 'hoods' as const, label: 'Hoods' },
     { value: 'drops' as const, label: 'Drops' },
@@ -145,7 +144,9 @@
 </script>
 
 <div class="wrap" bind:clientWidth={boxW} bind:clientHeight={boxH}>
-  <svg viewBox="{vb.x} {vb.y} {vb.w} {vb.h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Side view of the bike and rider">
+  <!-- A tap on the drawing away from any part lets go of a pinned number; Escape does the same from the keyboard. -->
+  <!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_noninteractive_element_interactions -->
+  <svg viewBox="{vb.x} {vb.y} {vb.w} {vb.h}" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Side view of the bike and rider" onclick={() => (ui.pin = null)}>
     <g transform="scale(1,-1)" stroke-linecap="round" stroke-linejoin="round" fill="none">
       <line x1={vb.x} x2={vb.x + vb.w} y1={groundY} y2={groundY} stroke="var(--line)" stroke-width="4" />
 
@@ -199,7 +200,7 @@
         <circle cx={j.x} cy={j.y} r="16" fill="var(--bg)" stroke="var(--rider)" stroke-width="7" />
       {/each}
 
-      {#if toeTip && toeClearance < 10}
+      {#if toeTip && (toeClearance < 10 || f === 'r:toe')}
         <circle cx={toeTip.x} cy={toeTip.y} r="26" stroke={toeClearance < 0 ? 'var(--off)' : 'var(--near)'} stroke-width="8" />
       {/if}
       {#if level >= 3}
@@ -209,22 +210,26 @@
       {/if}
       <line x1={pose.hip.x} y1={pose.hip.y} x2={pose.hip.x + 220} y2={pose.hip.y} stroke="var(--muted)" stroke-width="4" stroke-dasharray="10 10" />
       {#each joints as j (j.id)}
-        <path d={j.path} stroke="var(--{j.st})" stroke-width="10" />
+        <path d={j.path} stroke="var(--{j.st})" stroke-width={j.on ? 18 : 10} opacity={fm && !j.on ? 0.25 : 1} />
       {/each}
       <g
         font-size={fs} font-weight="700" text-anchor="middle" dominant-baseline="central" fill="var(--ink)"
         style="paint-order:stroke; stroke:var(--bg); stroke-width:{fs * 0.35}px; stroke-linejoin:round"
       >
         {#each joints as j (j.id)}
-          <text transform="translate({j.lbl.x},{j.lbl.y}) scale(1,-1)">{Math.round(j.shownValue)}°</text>
+          <text
+            transform="translate({j.lbl.x},{j.lbl.y}) scale(1,-1)" font-size={j.on ? fs * 1.25 : fs}
+            opacity={fm && !j.on ? 0.35 : 1}
+          >{Math.round(j.shownValue)}°</text>
         {/each}
       </g>
       {#if ghostBike?.partsOnly}<Moves from={ghostBike.layout} to={layout} {fs} {vb} labels={roomy} />{/if}
-      <Measurements id={ui.measure} {layout} {frame} {components} {params} {pose} {fs} />
+      <Measurements o={overlay} {fs} {vb} />
+      <Hits {layout} {pose} joints={joints.map((j) => ({ id: j.id, path: j.path }))} {sk} tab={app.tab} />
     </g>
   </svg>
 
-  {#if ui.measure === 'cleat' || level === 3}
+  {#if f === 'cleat' || f === 'c:footStack' || f === 'b:footLength' || f === 'b:shoe' || level === 3}
     <FootInset {seg} footStack={components.footStack} cleatOffset={params.cleatOffset} />
   {/if}
 

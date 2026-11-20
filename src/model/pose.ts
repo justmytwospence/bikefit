@@ -160,6 +160,8 @@ function evaluatePose(
   let kneeMax = 0;
   let kneeMin = 999;
   let peak = 0;
+  let top = 0;
+  let hipPeak = 0;
   let hipMin = Infinity;
   let kops = 0;
   let over = false;
@@ -202,13 +204,19 @@ function evaluatePose(
       kneeMax = kneeAngle;
       peak = phi;
     }
-    if (kneeAngle < kneeMin) kneeMin = kneeAngle;
+    if (kneeAngle < kneeMin) {
+      kneeMin = kneeAngle;
+      top = phi;
+    }
     const kneeDir = Math.atan2(dy, dx) + beta;
     const kx = hipX + Math.cos(kneeDir) * f;
     let ha = Math.abs(torsoDir - kneeDir);
     if (ha > Math.PI) ha = 2 * Math.PI - ha;
     const hd = (ha * 180) / Math.PI;
-    if (hd < hipMin) hipMin = hd;
+    if (hd < hipMin) {
+      hipMin = hd;
+      hipPeak = phi;
+    }
     if (i === 0) kops = kx + seg.kneeFront - sx;
     legMx +=
       (2 * 0.1 * (hipX + 0.433 * (kx - hipX)) +
@@ -241,6 +249,8 @@ function evaluatePose(
         elbow: up.elbowAngle, seatAngle, handLoad, kops,
       },
       overextended: over,
+      kneeTopCrank: top,
+      hipCrank: hipPeak,
       legShortfall: short,
       overreach: up.overreach,
       pelvicTilt: tilt,

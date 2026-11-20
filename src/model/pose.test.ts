@@ -54,6 +54,11 @@ describe('evaluateFit', () => {
     expect(hl(0)).toBeCloseTo(30.31, 1);
     expect(hl(3.5)).toBeCloseTo(21.11, 1);
   });
+  it('reports where the hip and the knee close most', () => {
+    const pe = evaluateFit(seg, layout, ctx(), targets()).poses[0];
+    expect(Math.abs(riderPose(seg, layout, ctx(), 'hoods', 160, pe.hipCrank).hipAngle - pe.metrics.hip)).toBeLessThan(1);
+    expect(Math.abs(riderPose(seg, layout, ctx(), 'hoods', 160, pe.kneeTopCrank).kneeAngle - pe.metrics.kneeTop)).toBeLessThan(1);
+  });
   it('keeps limb lengths constant', () => {
     const c = ctx();
     const { hip } = riderPose(seg, layout, c, 'hoods', 160, 0);

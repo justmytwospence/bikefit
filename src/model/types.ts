@@ -155,6 +155,10 @@ export interface PoseEval {
   contact: HandContact;
   metrics: Record<MetricId, number>;
   overextended: boolean;
+  /** Crank angle of the smallest knee angle, degrees. */
+  kneeTopCrank: number;
+  /** Crank angle of the smallest hip angle, degrees. */
+  hipCrank: number;
   /** How far short of the pedal the leg is at worst, mm; 0 when it always reaches. */
   legShortfall: number;
   overreach: boolean;

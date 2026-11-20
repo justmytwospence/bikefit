@@ -1,7 +1,8 @@
 <script lang="ts">
   import { PRESETS } from '../lib/knobs';
   import { sameParams } from '../lib/ladder';
-  import { measure, type MeasureId } from '../lib/measure';
+  import { link } from '../lib/link.svelte';
+  import type { SettingLink } from '../lib/linkIds';
   import { changeList, type Change } from '../model/advice';
   import type { Impossible } from '../model/limits';
   import { STYLES } from '../model/styles';
@@ -25,7 +26,7 @@
   const edited = $derived(!!step && !sameParams(step.params, target));
   let open = $state<string | null>(null);
 
-  const MEASURE: Record<Change['id'], MeasureId> = {
+  const MEASURE: Record<Change['id'], SettingLink> = {
     saddle: 'saddleHeight', rails: 'setback', seatpost: 'setback', spacers: 'spacers', stem: 'stem', cranks: 'crank',
     cleats: 'cleat',
   };
@@ -54,7 +55,7 @@
   {:else}
     <ul class="list">
       {#each changes as ch (ch.id)}
-        <li use:measure={MEASURE[ch.id]}>
+        <li use:link={MEASURE[ch.id]}>
           <div class="line">
             <button
               type="button" class="what" aria-expanded={open === ch.id}

@@ -1,59 +1,34 @@
 <script lang="ts">
-  import { dimension } from '../../draw/shapes';
-  import type { MeasureId } from '../../lib/measure';
-  import { steerAxis } from '../../model/geometry';
-  import type { RiderPose } from '../../model/pose';
-  import type { Components, FitParams, Frame, Layout } from '../../model/types';
-  import { add, scale as vscale, type Vec2 } from '../../model/vec';
+  import type { Overlay } from '../../draw/overlay';
+  import type { Vec2 } from '../../model/vec';
 
-  let { id, layout, frame, components, params, pose, fs }: {
-    id: MeasureId | null;
-    layout: Layout;
-    frame: Frame;
-    components: Components;
-    params: FitParams;
-    pose: RiderPose;
-    fs: number;
-  } = $props();
+  /** Draws what a linked number measures, with its name and value. */
+  let { o, fs, vb }: { o: Overlay | null; fs: number; vb: { x: number; w: number } } = $props();
 
-  const h = $derived(steerAxis(frame));
-  const fmt = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
-  const signed = (a: number) => (a === 0 ? '0°' : (a < 0 ? '−' : '+') + fmt(Math.abs(a)) + '°');
-
-  const dim = $derived.by(() => {
-    if (id === 'saddleHeight')
-      return { d: dimension({ x: 0, y: 0 }, layout.seatAxisTop, 90), label: `${fmt(params.saddleHeight)} mm` };
-    if (id === 'spacers' && params.spacers > 0) {
-      const top = add(layout.headTop, vscale(h, params.spacers));
-      return { d: dimension(layout.headTop, top, -60), label: `${fmt(params.spacers)} mm` };
-    }
-    if (id === 'stem')
-      return { d: dimension(layout.stemBase, layout.clamp, 50), label: `${fmt(params.stemLength)} mm ${signed(params.stemAngle)}` };
-    if (id === 'crank')
-      return { d: dimension({ x: 0, y: 0 }, pose.spindle, 40), label: `${fmt(params.crankLength)} mm` };
-    if (id === 'setback')
-      return {
-        d: dimension({ x: layout.nose.x, y: 160 }, { x: 0, y: 160 }, 0),
-        label: `${Math.round(-layout.nose.x)} mm`,
-      };
-    return null;
-  });
   const seg = (a: Vec2, b: Vec2) => `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
+  const line = (pts: Vec2[]) => 'M ' + pts.map((q) => `${q.x} ${q.y}`).join(' L ');
+  const labelX = $derived.by(() => {
+    if (!o) return 0;
+    const w = o.label.length * 0.56 * fs;
+    return Math.min(vb.x + vb.w - w / 2 - 10, Math.max(vb.x + w / 2 + 10, o.at.x));
+  });
 </script>
 
-{#if dim}
+{#if o}
   <g stroke="var(--accent)" fill="none">
-    <path d={seg(dim.d.a, dim.d.b)} stroke-width="5" />
-    {#each dim.d.ticks as t}<path d={seg(t[0], t[1])} stroke-width="5" />{/each}
-    {#each dim.d.ext as e}<path d={seg(e[0], e[1])} stroke-width="3" stroke-dasharray="8 6" />{/each}
-    {#if id === 'setback'}
-      <path d={seg(layout.nose, { x: layout.nose.x, y: 160 })} stroke-width="4" stroke-dasharray="10 8" />
-      <path d={seg({ x: 0, y: 0 }, { x: 0, y: 180 })} stroke-width="4" stroke-dasharray="10 8" />
-    {/if}
+    {#each o.strong as s}<path d={line(s)} stroke-width="16" opacity="0.9" />{/each}
+    {#each o.dims as d}
+      <path d={seg(d.a, d.b)} stroke-width="5" />
+      {#each d.ticks as t}<path d={seg(t[0], t[1])} stroke-width="5" />{/each}
+      {#each d.ext as e}<path d={seg(e[0], e[1])} stroke-width="3" stroke-dasharray="8 6" />{/each}
+    {/each}
+    {#each o.guides as g}<path d={seg(g[0], g[1])} stroke-width="4" stroke-dasharray="10 8" />{/each}
+    {#each o.arcs as a}<path d={a} stroke-width="8" />{/each}
+    {#each o.rings as r}<circle cx={r.c.x} cy={r.c.y} r={r.r} stroke-width="7" />{/each}
   </g>
   <text
-    transform="translate({dim.d.mid.x},{dim.d.mid.y}) scale(1,-1)" text-anchor="middle" dominant-baseline="central"
+    transform="translate({labelX},{o.at.y}) scale(1,-1)" text-anchor="middle" dominant-baseline="central"
     font-size={fs} font-weight="700" fill="var(--accent)"
     style="paint-order:stroke; stroke:var(--bg); stroke-width:{fs * 0.35}px; stroke-linejoin:round"
-  >{dim.label}</text>
+  >{o.label}</text>
 {/if}
