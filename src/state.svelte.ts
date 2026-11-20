@@ -1,5 +1,6 @@
 import type { CatalogView } from './find.svelte';
 import { runOptimize } from './lib/optimizeClient';
+import { KNOB_ORDER } from './lib/knobs';
 import { buildLadder, sameParams, STEPS, stepLocks, stepStart, type Ladder } from './lib/ladder';
 import { defaults, migrate, type AppData } from './lib/appData';
 import { resolveSegments } from './model/body';
@@ -59,8 +60,12 @@ export const ui = $state({
   error: '' as string,
   /** Which setup the Fit my bike settings change. */
   editing: 'current' as 'current' | 'target',
-  /** The three targets Optimize worked out from the current setup. */
+  /** The three targets worked out from the current setup. */
   ladder: null as Ladder | null,
+  /** The ladder step the target follows; null for a target of your own. */
+  rung: null as number | null,
+  /** Whether the ladder is being worked out. */
+  laddering: false,
   notes: null as string[] | null,
   verdict: null as Verdict | null,
   flags: [] as string[],
@@ -134,6 +139,8 @@ export function ladderKey(): string {
   return JSON.stringify(snap({
     baseline: app.baseline, locks: app.locks, body: app.body, styleId: app.styleId, effort: app.effort,
     hands: app.hands, frame: activeFrame(), components: app.components, options: app.options,
+    // Pinned settings start every step where the target has them.
+    pinned: KNOB_ORDER.filter((k) => app.locks[k]).map((k) => [k, app.current[k]]),
   }));
 }
 
@@ -160,22 +167,35 @@ export function setKnob(k: ParamKey, v: number) {
 }
 
 function applyStep(i: number) {
+  const st = ui.ladder?.steps[i];
+  if (!st) return;
   ui.animate = true;
-  const s = i < 0 ? null : ui.ladder?.steps[i];
-  Object.assign(app.current, snap(s ? s.params : app.baseline));
-  ui.notes = s ? s.notes : null;
-  ui.verdict = s ? s.verdict : null;
-  ui.flags = s ? s.flags : [];
+  Object.assign(app.current, snap(st.params));
+  ui.notes = st.notes;
+  ui.verdict = st.verdict;
+  ui.flags = st.flags;
 }
 
-/** Makes one rung of the ladder the target; -1 is the current setup. */
-export function useStep(i: number) {
-  event('Target chosen', { step: i < 0 || !ui.ladder ? 'current' : ui.ladder.steps[i].step });
-  applyStep(i);
+/** Tapping the switch: -1 shows and edits your current setup, a step makes it the target. */
+export function chooseRung(i: number) {
+  event('Target chosen', { step: i < 0 ? 'current' : STEPS[i] });
+  if (i < 0) {
+    ui.editing = 'current';
+    return;
+  }
+  ui.editing = 'target';
+  ui.rung = i;
+  if (ui.ladder?.key === ladderKey()) applyStep(i);
 }
 
-export async function optimize() {
-  ui.busy = true;
+let ladderRun = 0;
+
+/** Works out the three targets from the current setup, unless they are already up to date. */
+export async function refreshLadder() {
+  const key = ladderKey();
+  if (ui.ladder?.key === key) return;
+  const run = ++ladderRun;
+  ui.laddering = true;
   ui.error = '';
   try {
     const p = problem('tune');
@@ -183,28 +203,27 @@ export async function optimize() {
     const results = await Promise.all(
       STEPS.map((s) => runOptimize({ ...p, current: start, locks: stepLocks(s, p.locks) })),
     );
-    const lad = buildLadder(results, setupScore, setupScore(snap(app.baseline)), ladderKey());
+    if (run !== ladderRun) return;
+    const lad = buildLadder(results, setupScore, setupScore(snap(app.baseline)), key);
     ui.ladder = lad;
-    ui.editing = 'target';
-    applyStep(lad.suggested);
-    const picked = lad.suggested < 0 ? null : lad.steps[lad.suggested];
-    event('Optimize', { step: picked ? picked.step : 'current', verdict: picked ? picked.verdict : 'current' });
+    if (ui.rung === null && !sameParams(snap(app.current), snap(app.baseline))) {
+      const i = lad.steps.findIndex((st) => sameParams(st.params, snap(app.current)));
+      if (i >= 0) ui.rung = i;
+    }
+    if (ui.rung !== null) applyStep(ui.rung);
   } catch (e) {
+    if (run !== ladderRun) return;
     ui.error = e instanceof Error ? e.message : String(e);
     reportError('optimize', e);
   } finally {
-    ui.busy = false;
+    if (run === ladderRun) ui.laddering = false;
   }
 }
 
-export function resetToBaseline() {
-  ui.animate = true;
-  Object.assign(app.current, snap(app.baseline));
-  clearResult();
-}
-
+/** You have made the target's changes: the target becomes your current setup. */
 export function markAsMine() {
   Object.assign(app.baseline, snap(app.current));
+  ui.editing = 'current';
   clearFeedback();
 }
 
@@ -214,12 +233,15 @@ export function useCompareRow(row: CompareRow) {
   Object.assign(app.current, snap(row.result.params));
   Object.assign(app.baseline, snap(row.result.params));
   app.tab = 'mybike';
+  ui.editing = 'current';
+  ui.rung = null;
   clearFeedback();
 }
 
 export function replaceApp(d: AppData) {
   Object.assign(app, d);
   ui.editing = sameParams(snap(app.baseline), snap(app.current)) ? 'current' : 'target';
+  ui.rung = null;
   clearFeedback();
   ui.compareRows = null;
   ui.preview = null;

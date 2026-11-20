@@ -4,7 +4,7 @@
  * event: catalog bike names, choices and catalog search text only. Vercel Pro keeps two properties per event.
  *
  * Events: App opened, Tab opened, Intro dismissed, Style chosen, Measurements opened, Measurement entered,
- * Editing, Target chosen, Frame chosen, Optimize, Find bikes, Compare saved, Bike shown,
+ * Target chosen, Frame chosen, Find bikes, Compare saved, Bike shown,
  * Bike made mine, Bike search, View level, Units, Exported, Imported, Link copied, About link, Error.
  */
 import { inject, track } from '@vercel/analytics';

@@ -58,7 +58,7 @@
       <ol>
         <li>Start with your height and inseam, and pick how you ride.</li>
         <li>Then add what you can measure under More measurements: arms, body segments, feet. Each one replaces an estimate.</li>
-        <li>Have a bike? Pick it in Fit my bike and press Optimize.</li>
+        <li>Have a bike? Pick it in Fit my bike, enter its setup and compare the targets.</li>
         <li>Shopping? Find a bike ranks the catalog for your body.</li>
       </ol>
       <p class="muted small">A starting point, not a substitute for a professional fit.</p>

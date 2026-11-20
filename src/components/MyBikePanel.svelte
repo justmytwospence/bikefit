@@ -7,7 +7,7 @@
   import type { ParamKey } from '../model/types';
   import { clamp } from '../model/vec';
   import { KNOB_ORDER } from '../lib/knobs';
-  import { activeFrame, app, optimize, setKnob, ui, useStep } from '../state.svelte';
+  import { activeFrame, app, ladderKey, refreshLadder, setKnob, ui } from '../state.svelte';
   import { measure } from '../lib/measure';
   import { event } from '../lib/analytics';
   import ChipRow from './ChipRow.svelte';
@@ -16,7 +16,7 @@
   import FrameDetails from './FrameDetails.svelte';
   import ImpossibleBanner from './ImpossibleBanner.svelte';
   import LockToggle from './LockToggle.svelte';
-  import Segmented from './Segmented.svelte';
+  import LadderSwitch from './LadderSwitch.svelte';
   import SliderField from './SliderField.svelte';
 
   let { layout, evaluation, whyImpossible, reaches }: {
@@ -80,10 +80,13 @@
   }
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 
-  const SIDES: { value: 'current' | 'target'; label: string }[] = [
-    { value: 'current', label: 'Current setup' },
-    { value: 'target', label: 'Target' },
-  ];
+  // The targets follow your current setup: work them out again shortly after it (or anything they depend on) changes.
+  $effect(() => {
+    const k = ladderKey();
+    if (ui.ladder?.key === k) return;
+    const t = setTimeout(refreshLadder, 400);
+    return () => clearTimeout(t);
+  });
   const GROUPS: { title: string; keys: ParamKey[] }[] = [
     { title: 'Saddle', keys: ['saddleHeight', 'railOffset', 'seatpostSetback'] },
     { title: 'Cockpit', keys: ['spacers', 'stemLength', 'stemAngle'] },
@@ -96,15 +99,7 @@
   {#if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} setSaddle={(v) => setKnob('saddleHeight', v)} />{/if}
   <BikePicker />
   <h2>Setup</h2>
-  <Segmented
-    options={SIDES} ariaLabel="Which setup the settings change"
-    bind:value={() => ui.editing, (v) => { ui.editing = v; event('Editing', { side: v }); }}
-  />
-  <p class="muted small start">
-    {isTarget
-      ? 'What to change it to. Optimize suggests targets from your current setup.'
-      : 'Your bike as you ride it now. Settings the target leaves alone follow it.'}
-  </p>
+  <LadderSwitch />
 
   {#snippet knob(k: ParamKey)}
     {#if k === 'saddleHeight'}
@@ -223,15 +218,6 @@
   </details>
 </div>
 
-<div class="actions">
-  <button type="button" class="btn primary grow" disabled={ui.busy} onclick={optimize}>
-    {#if ui.busy}<span class="spin"></span>Optimizing…{:else}Optimize{/if}
-  </button>
-  <button
-    type="button" class="btn sec" disabled={!hasChanges} title="Set the target back to your current setup"
-    onclick={() => useStep(-1)}
-  >Reset</button>
-</div>
 
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
@@ -240,7 +226,6 @@
   .lockall { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 18px; }
   .lockall .btn { width: 104px; padding: 0; }
   .rails { margin: -4px 0 10px; }
-  .start { margin-top: 6px; }
   .frame { margin-top: 18px; }
   .frame summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
   .frame summary b::after { content: ' ▾'; color: var(--muted); }
@@ -251,11 +236,5 @@
   dl div:last-child { border-bottom: 0; }
   dt { color: var(--muted); }
   dd { margin: 0; font-weight: 600; text-align: right; }
-  .actions {
-    display: flex; gap: 10px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
-    border-top: 1px solid var(--line); background: var(--surface);
-  }
-  .grow { flex: 1; }
-  .sec { width: 96px; }
   .err { color: var(--off); }
 </style>
