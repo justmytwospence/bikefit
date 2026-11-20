@@ -34,9 +34,12 @@
     const hi = b.max + 3 * b.scale;
     return Math.max(0, Math.min(100, ((v - lo) / (hi - lo)) * 100));
   };
+  /** Band ends to one decimal at most: height and flexibility shift them by fractions of a degree. */
+  const end = (n: number) => String(Math.round(n * 10) / 10);
+  const span = (b: Band) => `${end(b.min)}–${end(b.max)}`;
   const text = (k: MetricId, v: number) => (k === 'seatAngle' ? v.toFixed(1) : String(Math.round(v)));
   const range = (r: (readonly [number, Band])[]) => {
-    const parts = [...new Set(r.map(([, b]) => `${b.min}–${b.max}`))];
+    const parts = [...new Set(r.map(([, b]) => span(b)))];
     return parts.join(' / ') + r[0][1].unit;
   };
 </script>
@@ -45,7 +48,7 @@
   {#each ids as k (k)}
     {@const r = rows(k)}
     {@const pair = r.length > 1}
-    <div class="card" role="button" tabindex="0" use:link={{ id: `m:${k}`, pin: true }} title="{METRIC_LABELS[k].long}: {r.map(([i, b]) => `${pair ? NAME[i] + ' ' : ''}target ${b.min}–${b.max}${b.unit}`).join(', ')}">
+    <div class="card" role="button" tabindex="0" use:link={{ id: `m:${k}`, pin: true }} title="{METRIC_LABELS[k].long}: {r.map(([i, b]) => `${pair ? NAME[i] + ' ' : ''}target ${span(b)}${b.unit}`).join(', ')}">
       <div class="name">{METRIC_LABELS[k].short}</div>
       <div class="nums" class:pair>
         {#each r as [i, b] (i)}
