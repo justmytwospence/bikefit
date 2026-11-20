@@ -11,8 +11,11 @@
     components: Components;
     layout: Layout;
     params: FitParams;
-    /** `ghost` draws only the frame, fork and cockpit in outline, for a second size behind the first. */
-    variant?: 'solid' | 'ghost';
+    /**
+     * `ghost` draws only the frame, fork and cockpit in outline, for a second size behind the first; `parts`
+     * draws only the saddle, seatpost and cockpit in outline, for another setup on the same frame.
+     */
+    variant?: 'solid' | 'ghost' | 'parts';
   } = $props();
 
   const sk = $derived(frameSkeleton(frame));
@@ -24,17 +27,28 @@
   const P = (q: Vec2) => `${q.x},${q.y}`;
 </script>
 
-{#if variant === 'ghost'}
+{#snippet cockpitOutline(color: string)}
+<g stroke={color} opacity="0.75">
+  <line x1={layout.headTop.x} y1={layout.headTop.y} x2={spacerTop.x} y2={spacerTop.y} stroke-width="14" />
+  <line x1={layout.stemBase.x} y1={layout.stemBase.y} x2={layout.clamp.x} y2={layout.clamp.y} stroke-width="8" />
+  <path d={barPath(layout.clamp, components.barReach, components.barDrop)} stroke-width="7" />
+</g>
+{/snippet}
+
+{#if variant === 'parts'}
+  <g stroke="var(--muted)" opacity="0.9">
+    <line x1={sk.seatCluster.x} y1={sk.seatCluster.y} x2={post.postTop.x} y2={post.postTop.y} stroke-width="8" />
+    <line x1={post.postTop.x} y1={post.postTop.y} x2={post.head.x} y2={post.head.y} stroke-width="8" />
+    <path d={smoothClosedPath(saddlePoints(layout.saddle, layout.nose))} stroke-width="6" />
+  </g>
+  {@render cockpitOutline('var(--muted)')}
+{:else if variant === 'ghost'}
   <g stroke="var(--accent)" opacity="0.55" stroke-dasharray="26 16">
     <polyline points={[sk.bb, sk.seatCluster, sk.headTop, sk.headBottom, sk.bb].map(P).join(' ')} stroke-width="9" />
     <polyline points={[sk.seatCluster, sk.rearAxle, sk.bb].map(P).join(' ')} stroke-width="7" />
     <path d={forkPath(sk.headBottom, sk.frontAxle, h)} stroke-width="8" />
   </g>
-  <g stroke="var(--accent)" opacity="0.75">
-    <line x1={layout.headTop.x} y1={layout.headTop.y} x2={spacerTop.x} y2={spacerTop.y} stroke-width="14" />
-    <line x1={layout.stemBase.x} y1={layout.stemBase.y} x2={layout.clamp.x} y2={layout.clamp.y} stroke-width="8" />
-    <path d={barPath(layout.clamp, components.barReach, components.barDrop)} stroke-width="7" />
-  </g>
+  {@render cockpitOutline('var(--accent)')}
 {:else}
 {#each [sk.rearAxle, sk.frontAxle] as a}
   <circle cx={a.x} cy={a.y} r={311 + tyre / 2} stroke="var(--frame)" stroke-width={tyre} opacity=".55" />

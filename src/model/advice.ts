@@ -81,22 +81,39 @@ export function buildSummary(p: FitParams, withCleats: boolean): string {
   return `${p.stemLength} mm ${angle} stem · ${p.spacers} mm spacers · ${p.crankLength} mm cranks · ${post}${cleats}`;
 }
 
-export function wrenchList(base: FitParams, next: FitParams): string[] {
-  const out: string[] = [];
+export interface Change {
+  id: 'saddle' | 'rails' | 'seatpost' | 'spacers' | 'stem' | 'cranks' | 'cleats';
+  keys: ParamKey[];
+  /** For "Keep the ... as it is". */
+  label: string;
+  text: string;
+}
+
+/** What to do to get from one setup to another, one entry per part touched. */
+export function changeList(base: FitParams, next: FitParams): Change[] {
+  const out: Change[] = [];
   const dh = next.saddleHeight - base.saddleHeight;
-  if (Math.abs(dh) >= 0.5) out.push(dh > 0 ? `Raise the saddle ${fmtNum(dh)} mm` : `Lower the saddle ${fmtNum(-dh)} mm`);
+  if (Math.abs(dh) >= 0.5)
+    out.push({ id: 'saddle', keys: ['saddleHeight'], label: 'saddle height', text: dh > 0 ? `Raise the saddle ${fmtNum(dh)} mm` : `Lower the saddle ${fmtNum(-dh)} mm` });
   const dr = next.railOffset - base.railOffset;
   if (Math.abs(dr) >= 0.5)
-    out.push(dr > 0 ? `Slide the saddle forward ${fmtNum(dr)} mm on its rails` : `Slide the saddle back ${fmtNum(-dr)} mm on its rails`);
+    out.push({ id: 'rails', keys: ['railOffset'], label: 'saddle position', text: dr > 0 ? `Slide the saddle forward ${fmtNum(dr)} mm on its rails` : `Slide the saddle back ${fmtNum(-dr)} mm on its rails` });
   if (Math.abs(next.seatpostSetback - base.seatpostSetback) >= 0.5)
-    out.push(next.seatpostSetback === 0 ? 'Swap to an inline seatpost' : `Swap to a ${fmtNum(next.seatpostSetback)} mm setback seatpost`);
+    out.push({ id: 'seatpost', keys: ['seatpostSetback'], label: 'seatpost', text: next.seatpostSetback === 0 ? 'Swap to an inline seatpost' : `Swap to a ${fmtNum(next.seatpostSetback)} mm setback seatpost` });
   const ds = next.spacers - base.spacers;
-  if (Math.abs(ds) >= 0.5) out.push(ds > 0 ? `Add ${fmtNum(ds)} mm of spacers under the stem` : `Remove ${fmtNum(-ds)} mm of spacers`);
+  if (Math.abs(ds) >= 0.5)
+    out.push({ id: 'spacers', keys: ['spacers'], label: 'spacers', text: ds > 0 ? `Add ${fmtNum(ds)} mm of spacers under the stem` : `Remove ${fmtNum(-ds)} mm of spacers` });
   if (Math.abs(next.stemLength - base.stemLength) >= 0.5 || Math.abs(next.stemAngle - base.stemAngle) >= 0.5)
-    out.push(`Swap the ${fmtNum(base.stemLength)} mm ${signed(base.stemAngle)} stem for a ${fmtNum(next.stemLength)} mm ${signed(next.stemAngle)} stem`);
-  if (Math.abs(next.crankLength - base.crankLength) >= 0.5) out.push(`Swap to ${fmtNum(next.crankLength)} mm cranks`);
+    out.push({ id: 'stem', keys: ['stemLength', 'stemAngle'], label: 'stem', text: `Swap the ${fmtNum(base.stemLength)} mm ${signed(base.stemAngle)} stem for a ${fmtNum(next.stemLength)} mm ${signed(next.stemAngle)} stem` });
+  if (Math.abs(next.crankLength - base.crankLength) >= 0.5)
+    out.push({ id: 'cranks', keys: ['crankLength'], label: 'cranks', text: `Swap to ${fmtNum(next.crankLength)} mm cranks` });
   const dc = next.cleatOffset - base.cleatOffset;
   if (Math.abs(dc) >= 0.5)
-    out.push(dc > 0 ? `Move the cleats ${fmtNum(dc)} mm back toward the midfoot` : `Move the cleats ${fmtNum(-dc)} mm forward toward the ball of the foot`);
-  return out.length ? out : ['No changes from your current setup.'];
+    out.push({ id: 'cleats', keys: ['cleatOffset'], label: 'cleats', text: dc > 0 ? `Move the cleats ${fmtNum(dc)} mm back toward the midfoot` : `Move the cleats ${fmtNum(-dc)} mm forward toward the ball of the foot` });
+  return out;
+}
+
+export function wrenchList(base: FitParams, next: FitParams): string[] {
+  const c = changeList(base, next);
+  return c.length ? c.map((x) => x.text) : ['No changes from your current setup.'];
 }

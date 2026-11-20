@@ -30,7 +30,7 @@ function getWorker(): Worker {
   return w;
 }
 
-function call<T>(kind: 'optimize' | 'compare' | 'sizes', payload: unknown): Promise<T> {
+function call<T>(kind: 'optimize' | 'compare', payload: unknown): Promise<T> {
   return new Promise<T>((resolve, reject) => {
     const id = nextId++;
     pending.set(id, { resolve, reject });
@@ -39,8 +39,6 @@ function call<T>(kind: 'optimize' | 'compare' | 'sizes', payload: unknown): Prom
 }
 
 export const runOptimize = (problem: FitProblem): Promise<FitResult> => call('optimize', problem);
-export const runSizes = (problem: FitProblem, frames: Frame[]): Promise<CompareRow[]> =>
-  call('sizes', { problem, frames });
 export const runCompare = (
   problem: Omit<FitProblem, 'frame' | 'mode' | 'locks' | 'current'>,
   frames: Frame[],

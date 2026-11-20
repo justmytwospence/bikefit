@@ -17,6 +17,7 @@
   import Torso from './draw/Torso.svelte';
   import FootInset from './FootInset.svelte';
   import Measurements from './draw/Measurements.svelte';
+  import Moves, { moves } from './draw/Moves.svelte';
   import PillSelect from './PillSelect.svelte';
 
   let {
@@ -30,7 +31,7 @@
     farPose: RiderPose;
     ghostPose: RiderPose | null;
     /** A second size of the same bike, drawn in outline behind the first. */
-    ghostBike?: { frame: Frame; layout: Layout; params: FitParams; label: string } | null;
+    ghostBike?: { frame: Frame; layout: Layout; params: FitParams; label: string; partsOnly?: boolean } | null;
     ideal: { saddle: Vec2; hoods: Vec2 };
     target: PoseTarget;
     poseEval: PoseEval;
@@ -57,6 +58,9 @@
   let boxH = $state(0);
   const px = $derived(boxW > 0 && boxH > 0 ? Math.min(boxW / vb.w, boxH / vb.h) : 0.3);
   const fs = $derived(13 / px);
+  /** Narrow drawings list what moved in the legend instead of labelling it on the bike. */
+  const roomy = $derived(boxW >= 600);
+  const moved = $derived(ghostBike?.partsOnly && !roomy ? moves(ghostBike.layout, layout) : []);
   const tyre = $derived(frame.tyreWidth);
   const groundY = $derived(frame.bbDrop - (311 + tyre));
 
@@ -129,7 +133,8 @@
         return b.weight === 0 || outside(poseEval.metrics[k], b) === 0;
       }),
   );
-  const targets = $derived(inBand ? [] : [
+  // The ideal positions are detail for the Detailed and Expert views.
+  const targets = $derived(inBand || level < 2 ? [] : [
     { key: 'saddle', cur: layout.saddle, tgt: ideal.saddle },
     ...(pose.contact === 'hoods' ? [{ key: 'hand', cur: layout.hoods, tgt: ideal.hoods }] : []),
   ]);
@@ -151,7 +156,7 @@
 
       <Bike {frame} {components} {layout} {params} />
       {#if ghostBike}
-        <Bike frame={ghostBike.frame} {components} layout={ghostBike.layout} params={ghostBike.params} variant="ghost" />
+        <Bike frame={ghostBike.frame} {components} layout={ghostBike.layout} params={ghostBike.params} variant={ghostBike.partsOnly ? 'parts' : 'ghost'} />
       {/if}
 
       <line x1="0" y1="0" x2={pose.spindle.x} y2={pose.spindle.y} stroke="var(--ink)" stroke-width="16" />
@@ -185,7 +190,7 @@
           <text
             transform="translate({t.tgt.x + 44},{t.tgt.y + 44}) scale(1,-1)" fill="var(--accent)" stroke="none"
             font-size={fs * 0.8} font-weight="700"
-          >suggested</text>
+          >ideal</text>
         {/if}
       {/each}
 
@@ -214,6 +219,7 @@
           <text transform="translate({j.lbl.x},{j.lbl.y}) scale(1,-1)">{Math.round(j.shownValue)}°</text>
         {/each}
       </g>
+      {#if ghostBike?.partsOnly}<Moves from={ghostBike.layout} to={layout} {fs} {vb} labels={roomy} />{/if}
       <Measurements id={ui.measure} {layout} {frame} {components} {params} {pose} {fs} />
     </g>
   </svg>
@@ -223,9 +229,10 @@
   {/if}
 
   <div class="legend">
-    {#if !inBand}<span><i class="t"></i> suggested</span>{/if}
-    {#if ghostPose}<span><i class="g"></i> before</span>{/if}
-    {#if ghostBike}<span><i class="o"></i> {ghostBike.label}</span>{/if}
+    {#if !inBand && level >= 2}<span><i class="t"></i> ideal position</span>{/if}
+    {#if ghostPose}<span><i class="c"></i> current setup</span>{/if}
+    {#each moved as m (m.key)}<span class="mv">{m.label}</span>{/each}
+    {#if ghostBike && !ghostBike.partsOnly}<span><i class="o"></i> {ghostBike.label}</span>{/if}
     {#if (level >= 2 || toeClearance < 0) && Number.isFinite(toeClearance) && toeClearance < 10}
       <span class="warn" class:bad={toeClearance < 0}>
         {toeClearance < 0 ? 'Toe overlap ' + Math.round(-toeClearance) : 'Toe clearance ' + Math.round(toeClearance)} mm
@@ -256,8 +263,9 @@
   .legend { position: absolute; top: 10px; left: 14px; max-width: calc(100% - 250px); flex-wrap: wrap; display: flex; gap: 4px 12px; font-size: 12px; color: var(--muted); }
   .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
   .legend .t { border: 2px dashed var(--accent); }
-  .legend .g { background: var(--rider); opacity: 0.2; }
+  .legend .c { width: 14px; height: 0; border-radius: 0; border-top: 2px dashed var(--muted); vertical-align: 3px; }
   .legend .o { border: 2px dashed var(--accent); border-radius: 2px; }
+  .mv { color: var(--accent); font-weight: 600; }
   .warn { color: var(--near); font-weight: 600; }
   .warn.bad { color: var(--off); }
   .viewctl { position: absolute; top: 8px; right: 10px; display: flex; flex-direction: row-reverse; gap: 6px; }

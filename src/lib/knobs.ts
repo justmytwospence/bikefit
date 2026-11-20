@@ -1,4 +1,4 @@
-import type { FitParams, ParamKey } from '../model/types';
+import type { ParamKey } from '../model/types';
 
 export type Preset = 'tools' | 'parts' | 'all';
 
@@ -21,42 +21,8 @@ export const PRESETS: { value: Preset; label: string; hint: string }[] = [
   { value: 'all', label: 'Everything', hint: 'Also crank length.' },
 ];
 
-export const isPreset = (x: unknown): x is Preset => x === 'tools' || x === 'parts' || x === 'all';
-
 export function presetLocks(p: Preset): Record<ParamKey, boolean> {
   const out = {} as Record<ParamKey, boolean>;
   for (const k of KNOB_ORDER) out[k] = !PRESET_FREE[p].includes(k);
   return out;
-}
-
-export function presetOf(locks: Partial<Record<ParamKey, boolean>>): Preset | 'custom' {
-  for (const p of ['tools', 'parts', 'all'] as Preset[]) {
-    const want = presetLocks(p);
-    if (KNOB_ORDER.every((k) => !!locks[k] === want[k])) return p;
-  }
-  return 'custom';
-}
-
-/** The preset whose knobs Fit my bike lists: the locks' own preset, else the smallest one covering every unlocked knob. */
-export function scopeOf(locks: Partial<Record<ParamKey, boolean>>): Preset {
-  const p = presetOf(locks);
-  if (p !== 'custom') return p;
-  const free = KNOB_ORDER.filter((k) => !locks[k]);
-  return (['tools', 'parts', 'all'] as Preset[]).find((s) => free.every((k) => PRESET_FREE[s].includes(k))) ?? 'all';
-}
-
-/** One line naming the fixed knobs and their current values, in the order given. */
-export function fixedSummary(keys: ParamKey[], p: FitParams, setback: number): string {
-  const angle = p.stemAngle === 0 ? '0°' : (p.stemAngle > 0 ? '+' : '−') + Math.abs(p.stemAngle) + '°';
-  const text: Record<ParamKey, string> = {
-    saddleHeight: `Saddle height ${p.saddleHeight} mm`,
-    railOffset: `Saddle nose ${Math.round(setback)} mm behind the BB`,
-    seatpostSetback: p.seatpostSetback === 0 ? 'Inline seatpost' : `Seatpost ${p.seatpostSetback} mm setback`,
-    spacers: `${p.spacers} mm spacers`,
-    stemLength: `${p.stemLength} mm stem`,
-    stemAngle: `Stem ${angle}`,
-    cleatOffset: `Cleats ${p.cleatOffset} mm back`,
-    crankLength: `Cranks ${p.crankLength} mm`,
-  };
-  return keys.map((k) => text[k]).join(' · ');
 }

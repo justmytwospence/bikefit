@@ -4,19 +4,21 @@
   import { sizeFamily } from '../lib/sizes';
   import { highestWhere, IMPOSSIBLE_TEXT, nearestPossible, POST_SHOWING, type Impossible } from '../model/limits';
   import type { FitParams, Frame } from '../model/types';
-  import { app, clearGhost, optimize, ui } from '../state.svelte';
+  import { app, ui } from '../state.svelte';
 
   /**
    * One message for a setup the rider's body cannot ride, in place of a stop under every slider: what is
    * wrong, and the nearest fix. When no saddle height works on this frame at all, says the frame is the
    * wrong size and offers the nearest size that fits.
    */
-  let { frame, why, current, whyImpossible, reaches }: {
+  let { frame, why, current, whyImpossible, reaches, setSaddle: apply }: {
     frame: Frame;
     why: Impossible;
     current: FitParams;
     whyImpossible: (p: FitParams) => Impossible | null;
     reaches: (p: FitParams) => boolean;
+    /** Sets the saddle height on the setup being edited. */
+    setSaddle: (v: number) => void;
   } = $props();
 
   type Cat = typeof import('../data/catalog');
@@ -48,8 +50,7 @@
 
   function setSaddle(v: number) {
     ui.animate = true;
-    app.current.saddleHeight = v;
-    clearGhost();
+    apply(v);
   }
   function useSize(f: Frame) {
     if (app.frames.some((x) => x.id === f.id)) selectFrame(f.id);
@@ -77,20 +78,16 @@
     <b>{cap(IMPOSSIBLE_TEXT[why])}.</b>
     <p>
       {saddleFix < current.saddleHeight ? 'Lowering' : 'Raising'} the saddle to {fmt(saddleFix)} mm
-      ({fmt(Math.abs(saddleFix - current.saddleHeight))} mm {saddleFix < current.saddleHeight ? 'down' : 'up'}) fixes it, or let Optimize find a setup.
+      ({fmt(Math.abs(saddleFix - current.saddleHeight))} mm {saddleFix < current.saddleHeight ? 'down' : 'up'}) fixes it, or pick a target above.
     </p>
     <div class="row">
       <button type="button" class="btn small primary" onclick={() => setSaddle(saddleFix!)}>
         {saddleFix < current.saddleHeight ? 'Lower' : 'Raise'} saddle to {fmt(saddleFix)} mm
       </button>
-      <button type="button" class="btn small" disabled={ui.busy} onclick={optimize}>Optimize</button>
     </div>
   {:else}
     <b>{cap(IMPOSSIBLE_TEXT[why])}.</b>
-    <p>No saddle height fixes it with these parts. Optimize can try others.</p>
-    <div class="row">
-      <button type="button" class="btn small primary" disabled={ui.busy} onclick={optimize}>Optimize</button>
-    </div>
+    <p>No saddle height fixes it with these parts. The targets above try others.</p>
   {/if}
 </div>
 

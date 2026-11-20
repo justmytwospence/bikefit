@@ -1,7 +1,7 @@
 import type { Frame } from '../model/types';
 import { nearStems } from '../lib/catalogFit';
 import { walkSizes } from '../lib/sizeWalk';
-import { compareFrames, optimizeFit, optimizeSizes } from '../model/optimize';
+import { compareFrames, optimizeFit } from '../model/optimize';
 
 self.onmessage = (e: MessageEvent) => {
   const { id, kind, payload } = e.data;
@@ -15,9 +15,7 @@ self.onmessage = (e: MessageEvent) => {
               const options = { ...payload.problem.options, ...nearStems(f, payload.problem.components, payload.problem.options, payload.idealHoods) };
               return compareFrames({ ...payload.problem, options }, [f], payload.locks)[0];
             }))
-      : kind === 'sizes'
-        ? optimizeSizes(payload.problem, payload.frames)
-        : compareFrames(payload.problem, payload.frames, payload.locks);
+      : compareFrames(payload.problem, payload.frames, payload.locks);
     self.postMessage({ id, result });
   } catch (err) {
     self.postMessage({ id, error: String(err) });

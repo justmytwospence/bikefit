@@ -7,6 +7,6 @@
 </script>
 
 <polyline
-  points={pts(pose.shoulder, pose.elbow, pose.hand)} stroke="var(--rider)" stroke-width="12" fill="none"
-  opacity={ghost ? 0.25 : 1} stroke-dasharray={ghost ? '18 14' : undefined}
+  points={pts(pose.shoulder, pose.elbow, pose.hand)} stroke={ghost ? 'var(--muted)' : 'var(--rider)'} stroke-width="12" fill="none"
+  opacity={ghost ? 0.7 : 1} stroke-dasharray={ghost ? '14 12' : undefined}
 />
