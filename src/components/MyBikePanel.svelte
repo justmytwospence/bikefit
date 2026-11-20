@@ -2,7 +2,8 @@
   import { contactReadouts } from '../model/readouts';
   import type { Impossible } from '../model/limits';
   import type { Evaluation, FitParams, Layout, ParamKey } from '../model/types';
-  import { activeFrame, app, ladderKey, refreshLadder, setKnob, ui } from '../state.svelte';
+  import { activeFrame, app, currentMismatch, ladderKey, refreshLadder, setKnob, ui } from '../state.svelte';
+  import BodyMismatch from './BodyMismatch.svelte';
   import BikePicker from './BikePicker.svelte';
   import ChangesCard from './ChangesCard.svelte';
   import FrameDetails from './FrameDetails.svelte';
@@ -23,6 +24,8 @@
   const cur = $derived($state.snapshot(ed) as FitParams);
   /** Why the setup cannot be ridden at all; the banner says so once, instead of every slider. */
   const blocked = $derived(whyImpossible(cur));
+  /** A current setup the measurements say could hardly be ridden: the measurements are the likelier mistake. */
+  const mismatch = $derived(currentMismatch());
   const readouts = $derived(contactReadouts(layout, cur, evaluation, resultsLv));
 
   // The targets follow your current setup: work them out again shortly after it (or anything they depend on) changes.
@@ -40,7 +43,8 @@
 </script>
 
 <div class="scroll">
-  {#if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} setSaddle={(v) => setKnob('saddleHeight', v)} />{/if}
+  {#if mismatch}<BodyMismatch {mismatch} />
+  {:else if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} setSaddle={(v) => setKnob('saddleHeight', v)} />{/if}
   <BikePicker />
   <h2>Setup</h2>
   <LadderSwitch />
