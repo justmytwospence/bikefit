@@ -1,5 +1,5 @@
 import type { Segments } from '../model/types';
-import { add, len, scale, sub, type Vec2 } from '../model/vec';
+import { add, deg, len, scale, sub, type Vec2 } from '../model/vec';
 
 const RAD = Math.PI / 180;
 const f = (n: number) => (Math.round(n * 10) / 10).toString();
@@ -234,4 +234,24 @@ export function forkPath(headBottom: Vec2, frontAxle: Vec2, steer: Vec2): string
   const crown = sub(headBottom, scale(steer, 0.15 * Lf));
   const ctrl = sub(headBottom, scale(steer, 0.8 * Lf));
   return `M ${f(headBottom.x)} ${f(headBottom.y)} L ${f(crown.x)} ${f(crown.y)} Q ${f(ctrl.x)} ${f(ctrl.y)} ${f(frontAxle.x)} ${f(frontAxle.y)}`;
+}
+
+/** The point at angle `a` (degrees) and distance `r` from `c`. */
+export const polar = (c: Vec2, a: number, r: number): Vec2 => ({
+  x: c.x + r * Math.cos((a * Math.PI) / 180),
+  y: c.y + r * Math.sin((a * Math.PI) / 180),
+});
+
+/** Direction from a to b, degrees. */
+export const angleOf = (a: Vec2, b: Vec2) => deg(Math.atan2(b.y - a.y, b.x - a.x));
+
+/** The shorter arc around `c` from angle a0 to a1 at radius r, as path data, and its middle angle. */
+export function arcPath(c: Vec2, a0: number, a1: number, r: number) {
+  const d = ((((a1 - a0) % 360) + 540) % 360) - 180;
+  const p0 = polar(c, a0, r);
+  const p1 = polar(c, a0 + d, r);
+  return {
+    path: `M ${p0.x} ${p0.y} A ${r} ${r} 0 0 ${d > 0 ? 1 : 0} ${p1.x} ${p1.y}`,
+    mid: a0 + d / 2,
+  };
 }

@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { link } from '../lib/link.svelte';
+  import type { LinkId } from '../lib/linkIds';
   let {
-    label, value = $bindable(), unit = '', min, max, step = 1, hint, placeholder, estimated = false, onreset,
+    label, value = $bindable(), unit = '', min, max, step = 1, hint, placeholder, estimated = false, onreset, link: linkId,
   }: {
     label: string;
     value: number;
@@ -13,6 +15,8 @@
     estimated?: boolean;
     /** Offered in the label line while the value is your own, to go back to the estimate. */
     onreset?: () => void;
+    /** What this number shows on the drawing while it is hovered or focused. */
+    link?: LinkId;
   } = $props();
 
   const round = (n: number) => Math.round(n * 1000) / 1000;
@@ -29,7 +33,7 @@
   }
 </script>
 
-<label class="nf">
+<label class="nf" use:link={linkId}>
   <span class="l">{label}{#if unit}{' '}<span class="muted">({unit})</span>{/if}{#if estimated} <span class="est">est.</span>{:else if onreset} <button
     type="button" class="relink" onclick={(e) => { e.preventDefault(); onreset(); }}
   >Use estimate</button>{/if}</span>

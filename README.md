@@ -25,6 +25,8 @@ Each is asked once, in its own place, because you may want different answers to 
 - **How far to go** (Targets on Fit my bike): Tools only, New parts or Everything, each worked out from your current setup, so you can see what new parts would buy you.
 - **View** (pill on the drawing): Simple, Detailed or Expert, for how much the drawing, metric strip and results show. A Hands pill beside it switches the drawing between hoods and drops.
 
+Every number is linked to the drawing. Hover or focus one (a fit card, a read-out, a setting, a frame or body measurement; tap a card or read-out to keep it) and the drawing shows what it measures, named and with its value, moving the cranks to where a hip or top-of-stroke knee angle is measured. Hover or tap a part or an angle on the drawing to find its number in the panel; Escape or a tap elsewhere on the drawing lets go.
+
 Frame geometry shows stack and reach until you ask for all measurements.
 
 ## What is modelled

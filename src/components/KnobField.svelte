@@ -3,7 +3,7 @@
   import { IMPOSSIBLE_SHORT, IMPOSSIBLE_TEXT, possibleRange, type Impossible } from '../model/limits';
   import type { FitParams, ParamKey } from '../model/types';
   import { clamp } from '../model/vec';
-  import { measure } from '../lib/measure';
+  import { link } from '../lib/link.svelte';
   import { activeFrame, app, setKnob, ui } from '../state.svelte';
   import ChipRow from './ChipRow.svelte';
   import SliderField from './SliderField.svelte';
@@ -67,7 +67,7 @@
 </script>
 
   {#if k === 'saddleHeight'}
-    <div use:measure={'saddleHeight'}>
+    <div use:link={'saddleHeight'}>
     <SliderField
       label="Saddle height" min={o.saddleHeightRange[0]} max={o.saddleHeightRange[1]} step={0.5}
       bind:value={() => ed.saddleHeight, (v) => setKnob('saddleHeight', v)}
@@ -76,7 +76,7 @@
     />
     </div>
   {:else if k === 'railOffset'}
-    <div use:measure={'setback'}>
+    <div use:link={'setback'}>
     <SliderField
       label="Setback to saddle nose" min={sbMin} max={sbMax} step={0.5}
       bind:value={() => Math.round(setback * 2) / 2, setSetback}
@@ -88,14 +88,14 @@
     </p>
     </div>
   {:else if k === 'seatpostSetback'}
-    <div use:measure={'setback'}>
+    <div use:link={'setback'}>
     <div class="chiphead">Seatpost setback</div>
     <div class="chips">
     <ChipRow options={o.seatpostSetbacks} bind:value={() => ed.seatpostSetback, (v) => setKnob('seatpostSetback', v)} format={setbackLabel} blocked={stops ? blockedChips('seatpostSetback', o.seatpostSetbacks) : undefined} />
     </div>
     </div>
   {:else if k === 'spacers'}
-    <div use:measure={'spacers'}>
+    <div use:link={'spacers'}>
     <SliderField
       label="Spacers" min={0} max={frame.maxSpacers} step={o.spacerStep}
       bind:value={() => ed.spacers, (v) => setKnob('spacers', v)}
@@ -104,14 +104,14 @@
     />
     </div>
   {:else if k === 'stemLength'}
-    <div use:measure={'stem'}>
+    <div use:link={'stem'}>
     <div class="chiphead">Stem length</div>
     <div class="chips">
     <ChipRow options={o.stemLengths} bind:value={() => ed.stemLength, (v) => setKnob('stemLength', v)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('stemLength', o.stemLengths) : undefined} />
     </div>
     </div>
   {:else if k === 'stemAngle'}
-    <div use:measure={'stem'}>
+    <div use:link={'stem'}>
     <div class="chiphead">Stem angle</div>
     <div class="chips">
     <ChipRow
@@ -121,7 +121,7 @@
     </div>
     </div>
   {:else if k === 'cleatOffset'}
-    <div use:measure={'cleat'}>
+    <div use:link={'cleat'}>
     <SliderField
       label="Cleat position" unit="mm back" min={o.cleatRange[0]} max={o.cleatRange[1]} step={1}
       bind:value={() => ed.cleatOffset, (v) => setKnob('cleatOffset', v)}
@@ -130,7 +130,7 @@
     />
     </div>
   {:else if k === 'crankLength'}
-    <div use:measure={'crank'}>
+    <div use:link={'crank'}>
     <div class="chiphead">Crank length</div>
     <div class="chips">
     <ChipRow options={o.crankLengths} bind:value={() => ed.crankLength, (v) => setKnob('crankLength', v)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('crankLength', o.crankLengths) : undefined} />

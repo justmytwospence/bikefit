@@ -4,6 +4,7 @@
   import type { Evaluation, FitParams, Layout, ParamKey } from '../model/types';
   import { activeFrame, app, currentMismatch, ladderKey, refreshLadder, setKnob, ui } from '../state.svelte';
   import BodyMismatch from './BodyMismatch.svelte';
+  import { link } from '../lib/link.svelte';
   import BikePicker from './BikePicker.svelte';
   import ChangesCard from './ChangesCard.svelte';
   import FrameDetails from './FrameDetails.svelte';
@@ -71,7 +72,7 @@
     <div class="card readouts">
       <h2>Contact points</h2>
       <dl>
-        {#each readouts as r (r.id)}<div><dt>{r.label}</dt><dd>{r.value}</dd></div>{/each}
+        {#each readouts as r (r.id)}<div role="button" tabindex="0" class="ro" use:link={{ id: r.link, pin: true }}><dt>{r.label}</dt><dd>{r.value}</dd></div>{/each}
       </dl>
     </div>
   {/if}
@@ -95,6 +96,7 @@
   dl { margin: 0; }
   dl div { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; border-bottom: 1px solid var(--line); }
   dl div:last-child { border-bottom: 0; }
+  .ro { cursor: pointer; }
   dt { color: var(--muted); }
   dd { margin: 0; font-weight: 600; text-align: right; }
   .err { color: var(--off); }

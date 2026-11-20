@@ -17,18 +17,18 @@
     </label>
   {/if}
   <div class="grid">
-    <NumberField label="Stack" unit="mm" min={400} max={800} step={1} bind:value={frame.stack} />
-    <NumberField label="Reach" unit="mm" min={300} max={500} step={1} bind:value={frame.reach} />
+    <NumberField label="Stack" link="f:stack" unit="mm" min={400} max={800} step={1} bind:value={frame.stack} />
+    <NumberField label="Reach" link="f:reach" unit="mm" min={300} max={500} step={1} bind:value={frame.reach} />
     {#if full}
-      <NumberField label="Seat tube angle" unit="°" min={65} max={80} step={0.1} bind:value={frame.seatTubeAngle} />
-      <NumberField label="Head tube angle" unit="°" min={65} max={80} step={0.1} bind:value={frame.headTubeAngle} />
-      <NumberField label="Head tube length" unit="mm" min={80} max={260} step={1} bind:value={frame.headTubeLength} />
-      <NumberField label="Seat tube length" unit="mm" min={330} max={650} step={1} bind:value={frame.seatTubeLength} />
-      <NumberField label="Chainstay" unit="mm" min={380} max={470} step={1} bind:value={frame.chainstay} />
-      <NumberField label="Wheelbase" unit="mm" min={900} max={1200} step={1} bind:value={frame.wheelbase} />
-      <NumberField label="BB drop" unit="mm" min={40} max={90} step={1} bind:value={frame.bbDrop} />
-      <NumberField label="Max spacers" unit="mm" min={0} max={80} step={5} hint="Steerer room above the headset. Catalog frames use a typical value for their category; check yours." bind:value={frame.maxSpacers} />
-      <NumberField label="Tyre width" unit="mm" min={23} max={60} step={1} hint="Catalog frames use a typical width for their category." bind:value={frame.tyreWidth} />
+      <NumberField label="Seat tube angle" link="f:seatTubeAngle" unit="°" min={65} max={80} step={0.1} bind:value={frame.seatTubeAngle} />
+      <NumberField label="Head tube angle" link="f:headTubeAngle" unit="°" min={65} max={80} step={0.1} bind:value={frame.headTubeAngle} />
+      <NumberField label="Head tube length" link="f:headTubeLength" unit="mm" min={80} max={260} step={1} bind:value={frame.headTubeLength} />
+      <NumberField label="Seat tube length" link="f:seatTubeLength" unit="mm" min={330} max={650} step={1} bind:value={frame.seatTubeLength} />
+      <NumberField label="Chainstay" link="f:chainstay" unit="mm" min={380} max={470} step={1} bind:value={frame.chainstay} />
+      <NumberField label="Wheelbase" link="f:wheelbase" unit="mm" min={900} max={1200} step={1} bind:value={frame.wheelbase} />
+      <NumberField label="BB drop" link="f:bbDrop" unit="mm" min={40} max={90} step={1} bind:value={frame.bbDrop} />
+      <NumberField label="Max spacers" link="f:maxSpacers" unit="mm" min={0} max={80} step={5} hint="Steerer room above the headset. Catalog frames use a typical value for their category; check yours." bind:value={frame.maxSpacers} />
+      <NumberField label="Tyre width" link="f:tyreWidth" unit="mm" min={23} max={60} step={1} hint="Catalog frames use a typical width for their category." bind:value={frame.tyreWidth} />
     {/if}
   </div>
 {/key}
@@ -39,19 +39,19 @@
 {#if full}
   <h2>Cockpit and saddle</h2>
   <div class="grid">
-    <NumberField label="Bar reach" unit="mm" min={60} max={110} step={1} bind:value={app.components.barReach} />
-    <NumberField label="Bar drop" unit="mm" min={100} max={160} step={1} bind:value={app.components.barDrop} />
-    <NumberField label="Saddle length" unit="mm" min={230} max={300} step={1} hint="Tip to tail; short-nose saddles are about 245" bind:value={app.components.saddleLength} />
+    <NumberField label="Bar reach" link="c:barReach" unit="mm" min={60} max={110} step={1} bind:value={app.components.barReach} />
+    <NumberField label="Bar drop" link="c:barDrop" unit="mm" min={100} max={160} step={1} bind:value={app.components.barDrop} />
+    <NumberField label="Saddle length" link="c:saddleLength" unit="mm" min={230} max={300} step={1} hint="Tip to tail; short-nose saddles are about 245" bind:value={app.components.saddleLength} />
   </div>
 {/if}
 
 {#if full}
   <h2>Contact details</h2>
   <div class="grid">
-    <NumberField label="Shoe + pedal stack" unit="mm" min={5} max={40} step={1} bind:value={app.components.footStack} />
-    <NumberField label="Headset cap" unit="mm" min={0} max={30} step={1} bind:value={app.components.headsetCap} />
-    <NumberField label="Hood reach" unit="mm" min={0} max={50} step={1} bind:value={app.components.hoodReach} />
-    <NumberField label="Hood rise" unit="mm" min={0} max={50} step={1} bind:value={app.components.hoodRise} />
+    <NumberField label="Shoe + pedal stack" link="c:footStack" unit="mm" min={5} max={40} step={1} bind:value={app.components.footStack} />
+    <NumberField label="Headset cap" link="c:headsetCap" unit="mm" min={0} max={30} step={1} bind:value={app.components.headsetCap} />
+    <NumberField label="Hood reach" link="c:hoodReach" unit="mm" min={0} max={50} step={1} bind:value={app.components.hoodReach} />
+    <NumberField label="Hood rise" link="c:hoodRise" unit="mm" min={0} max={50} step={1} bind:value={app.components.hoodRise} />
   </div>
 
   <h2>Parts the optimizer may choose</h2>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { link } from '../lib/link.svelte';
   import { effectiveShoeSize, resolveSegments, SEGMENT_LABELS } from '../model/body';
   import { ANKLING, EFFORT_LABELS, HANDS_LABELS, shoeLabel } from '../model/riding';
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
@@ -71,27 +72,27 @@
   <div class="two">
     {#if imperial}
       <NumberField
-        label="Height" unit="ft" min={4} max={7} step={1}
+        label="Height" link="b:height" unit="ft" min={4} max={7} step={1}
         bind:value={() => fi.ft, (v) => (app.body.height = fromFeetInches(v, fi.inch))}
       />
       <NumberField
-        label="Height" unit="in" min={0} max={11.5} step={0.5}
+        label="Height" link="b:height" unit="in" min={0} max={11.5} step={0.5}
         bind:value={() => fi.inch, (v) => (app.body.height = fromFeetInches(fi.ft, v))}
       />
     {:else}
       <NumberField
-        label="Height" unit={heightF.unit} min={heightF.min} max={heightF.max} step={heightF.step}
+        label="Height" link="b:height" unit={heightF.unit} min={heightF.min} max={heightF.max} step={heightF.step}
         bind:value={() => toDisplay(app.body.height, heightF), (v) => (app.body.height = fromDisplay(v, heightF))}
       />
     {/if}
     <NumberField
-      label="Inseam" unit={inseamF.unit} min={inseamF.min} max={inseamF.max} step={inseamF.step}
+      label="Inseam" link="b:inseam" unit={inseamF.unit} min={inseamF.min} max={inseamF.max} step={inseamF.step}
       bind:value={() => toDisplay(app.body.inseam, inseamF), (v) => (app.body.inseam = fromDisplay(v, inseamF))}
     />
   </div>
   <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly; 3 to 5 cm more than trouser inseam.</p>
 
-  <div class="shoe">
+  <div class="shoe" use:link={'b:shoe'}>
     <div class="lrow">
       <label for="shoe">Shoe size</label>
       {#if app.body.shoeSizeAuto}<span class="estb">suggested</span>
@@ -137,7 +138,7 @@
   <details class="card sec" bind:open={app.riderOpen.arms}>
     <summary onclick={() => { if (!app.riderOpen.arms) event('Measurements opened', { section: 'arms' }); }}><b>Arms and feet</b><span class="muted small">{armsSummary}</span></summary>
     <NumberField
-      label="Arm length" unit={armF.unit} min={armF.min} max={armF.max} step={armF.step}
+      label="Arm length" link="b:arm" unit={armF.unit} min={armF.min} max={armF.max} step={armF.step}
       estimated={app.body.armLength == null} onreset={() => (app.body.armLength = null)}
       hint="Arm hanging straight: bony point of the shoulder to the centre of your closed fist"
       bind:value={() => toDisplay(arm, armF), (v) => { app.body.armLength = fromDisplay(v, armF); eventOnce('Measurement entered', { field: 'armLength' }); }}
@@ -153,7 +154,7 @@
     <div class="two">
       {#each keys as k (k)}
         <NumberField
-          label={SEGMENT_LABELS[k]} unit={segF.unit} min={segF.min} max={segF.max} step={segF.step}
+          label={SEGMENT_LABELS[k]} link={`b:${k}`} unit={segF.unit} min={segF.min} max={segF.max} step={segF.step}
           estimated={app.body.overrides[k] == null} onreset={() => delete app.body.overrides[k]}
           bind:value={() => toDisplay(getOv(k), segF), (v) => { app.body.overrides[k] = fromDisplay(v, segF); eventOnce('Measurement entered', { field: k }); }}
         />

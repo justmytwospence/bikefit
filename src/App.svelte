@@ -21,6 +21,7 @@
   import { bandsFor, STYLES } from './model/styles';
   import { event } from './lib/analytics';
   import { activeFrame, app, save, setupScore, ui, type Tab } from './state.svelte';
+  import { focus } from './lib/link.svelte';
 
   const segments = $derived(resolveSegments(app.body));
   const style = $derived(STYLES[app.styleId]);
@@ -91,7 +92,14 @@
   const shownTarget = $derived(
     pi === 0 ? targets[0] : { ...targets[1], bands: { ...targets[0].bands, ...targets[1].bands } },
   );
-  const crankDeg = $derived(ui.playing ? ui.crank : evaluation.peakKneeCrank);
+  /** A hip or top-of-stroke knee angle is measured elsewhere in the stroke: show the cranks there while it is linked. */
+  const linked = $derived(focus());
+  const focusCrank = $derived(
+    linked === 'm:hip' ? evaluation.poses[pi].hipCrank
+      : linked === 'm:kneeTop' ? evaluation.poses[pi].kneeTopCrank
+        : linked === 'm:kops' || linked === 'r:toe' ? 0 : null,
+  );
+  const crankDeg = $derived(ui.playing ? ui.crank : (focusCrank ?? evaluation.peakKneeCrank));
   const pose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg));
   const farPose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg + 180));
   const ghostPose = $derived(
@@ -100,8 +108,8 @@
       : null,
   );
   const toeTip = $derived(
-    (resultsLevel >= 2 || evaluation.toeClearance < 0) && Number.isFinite(evaluation.toeClearance)
-      && evaluation.toeClearance < 10
+    Number.isFinite(evaluation.toeClearance)
+      && (linked === 'r:toe' || ((resultsLevel >= 2 || evaluation.toeClearance < 0) && evaluation.toeClearance < 10))
       ? riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, 0).toe
       : null,
   );
@@ -135,6 +143,8 @@
   ];
 </script>
 
+<svelte:window onkeydown={(e) => { if (e.key === 'Escape') ui.pin = null; }} />
+
 <div class="app">
   <section class="view">
     <div class="canvas">
@@ -142,7 +152,7 @@
         {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ghostBike} {ideal}
         target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
         height={app.body.height} seg={segments} params={shown.current}
-        {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
+        {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank} units={app.units}
       />
       <ScoreCard {score} from={otherShown ? setupScore(otherShown) : null} />
     </div>
@@ -152,7 +162,7 @@
   <aside class="panel">
     <div class="tabs" role="tablist">
       {#each tabs as t (t.id)}
-        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => { if (app.tab !== t.id) event('Tab opened', { tab: t.id }); app.tab = t.id; }}>{t.label}</button>
+        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => { if (app.tab !== t.id) event('Tab opened', { tab: t.id }); app.tab = t.id; ui.pin = null; }}>{t.label}</button>
       {/each}
       <SettingsMenu />
     </div>

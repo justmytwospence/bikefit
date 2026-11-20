@@ -12,7 +12,7 @@ import { evaluateFit } from './model/pose';
 import { makeContext, poseWeights } from './model/riding';
 import { fitCost, fitScore, partPenalty } from './model/score';
 import { bandsFor, STYLES } from './model/styles';
-import type { MeasureId } from './lib/measure';
+import type { LinkId } from './lib/linkIds';
 import { decodeShare, encodeShare } from './lib/share';
 import { bikeOf, event, reportError, sizeOf } from './lib/analytics';
 import type { FitParams, Frame, ParamKey } from './model/types';
@@ -76,7 +76,10 @@ export const ui = $state({
   playing: false,
   animate: false,
   viewPose: 'hoods' as 'hoods' | 'drops',
-  measure: null as MeasureId | null,
+  /** The linked number under the pointer or keyboard focus. */
+  hover: null as LinkId | null,
+  /** The linked number tapped to keep it on the drawing. */
+  pin: null as LinkId | null,
   compareSource: 'all' as 'saved' | 'all',
   /** A bike shown on the drawing from Find a bike, with its suggested build; not saved, not yours until made so. */
   preview: null as {
