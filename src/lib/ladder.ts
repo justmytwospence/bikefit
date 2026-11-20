@@ -19,10 +19,17 @@ export function stepLocks(step: Preset, pins: Pins): Record<ParamKey, boolean> {
   return out;
 }
 
-/** Where every step starts: your setup, except pinned knobs, which keep the target's value. */
-export function stepStart(baseline: FitParams, target: FitParams, pins: Pins): FitParams {
-  const out = { ...baseline };
-  for (const k of KNOB_ORDER) if (pins[k]) out[k] = target[k];
+/** Changes too small to bother with go back to the current setup and the rest land on whole millimetres, unless that costs a point. */
+export function settle(p: FitParams, base: FitParams, score: (p: FitParams) => number): FitParams {
+  const floor = score(p);
+  let out = { ...p };
+  for (const [k, min] of [['saddleHeight', 3], ['railOffset', 3], ['cleatOffset', 2]] as const) {
+    const d = out[k] - base[k];
+    const v = Math.abs(d) < min ? base[k] : base[k] + Math.round(d);
+    if (v === out[k]) continue;
+    const next = { ...out, [k]: v };
+    if (score(next) >= floor) out = next;
+  }
   return out;
 }
 
@@ -31,9 +38,9 @@ export interface LadderStep {
   params: FitParams;
   score: number;
   notes: string[];
-  verdict: Verdict;
+  verdict: Verdict | null;
   flags: string[];
-  /** Same setup as the step below: the extra freedom gains nothing. */
+  /** Gains less than a point over the step below (or the current setup): the extra freedom buys nothing. */
   same: boolean;
 }
 
@@ -43,24 +50,32 @@ export interface Ladder {
   /** The current setup's score. */
   current: number;
   steps: LadderStep[];
-  /** Index of the suggested step, or -1 when none beats the current setup. */
+  /** Index of the suggested step, or -1 when the current setup is within three points of the best. */
   suggested: number;
 }
 
 /**
- * Builds the ladder from one optimizer result per step, in STEPS order. A step that ended costlier than the
- * one below takes that one's result. `score` scores a setup the way the score pill does.
+ * Builds the ladder from one optimizer result per step, in STEPS order. A step that gains less than a point over
+ * the rung below (the current setup at the bottom) takes that rung's setup and is marked same. `score` scores a
+ * setup the way the score pill does.
  */
 export function buildLadder(
-  results: FitResult[], score: (p: FitParams) => number, current: number, key: string,
+  results: FitResult[], baseline: FitParams, score: (p: FitParams) => number, key: string,
 ): Ladder {
-  const kept: FitResult[] = [];
-  results.forEach((r, i) => kept.push(i > 0 && r.cost > kept[i - 1].cost ? kept[i - 1] : r));
-  const steps: LadderStep[] = kept.map((r, i) => ({
-    step: STEPS[i], params: r.params, score: score(r.params), notes: r.notes, verdict: r.verdict, flags: r.flags,
-    same: i > 0 && sameParams(r.params, kept[i - 1].params),
-  }));
-  const scores = steps.map((s) => s.score);
-  const best = Math.max(...scores);
-  return { key, current, steps, suggested: best <= current ? -1 : scores.findIndex((s) => s >= best - 3) };
+  const current = score(baseline);
+  type Kept = Omit<LadderStep, 'step' | 'same'>;
+  let prev: Kept = { params: baseline, score: current, notes: [], verdict: null, flags: [] };
+  const steps: LadderStep[] = results.map((r, i) => {
+    const params = settle(r.params, baseline, score);
+    const s = score(params);
+    const gain = s >= prev.score + 1;
+    const kept: Kept = gain ? { params, score: s, notes: r.notes, verdict: r.verdict, flags: r.flags } : prev;
+    prev = kept;
+    return { step: STEPS[i], ...kept, same: !gain };
+  });
+  const best = Math.max(...steps.map((s) => s.score));
+  return {
+    key, current, steps,
+    suggested: current >= best - 3 ? -1 : steps.findIndex((s) => !s.same && s.score >= best - 3),
+  };
 }

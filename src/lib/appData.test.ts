@@ -12,7 +12,8 @@ describe('migrate', () => {
     delete v1.seenIntro;
     delete v1.hasSetup;
     delete v1.current.cleatOffset;
-    delete v1.locks.cleatOffset;
+    v1.locks = presetLocks('parts');
+    delete v1.pins;
     delete v1.body.shoeSizeAuto;
     delete v1.body.sex;
     v1.frames = v1.frames.map((f: any) => {
@@ -25,8 +26,8 @@ describe('migrate', () => {
     expect(m.frames[0].tyreWidth).toBe(30);
     expect(m.detail).toEqual({ bikeFull: false, results: 1 });
     expect(m.riderOpen).toEqual({ ride: false, arms: false, segments: false });
-    expect(Object.values(m.locks).some(Boolean)).toBe(false);
-    expect(m.locks.cleatOffset).toBe(false);
+    expect(Object.values(m.pins).some(Boolean)).toBe(false);
+    expect('locks' in m).toBe(false);
     expect(m.body.shoeSize).toBe(43);
     expect(m.body.shoeSizeAuto).toBe(false);
     expect(m.body.sex).toBe('male');
@@ -103,12 +104,13 @@ describe('migrate', () => {
     same.current.saddleHeight = 730;
     expect(migrate(same)!.baseline.saddleHeight).toBe(730);
   });
-  it('keeps only pins inside an old scope', () => {
-    const m = migrate(v2({ scope: 'parts', locks: { ...presetLocks('parts'), spacers: true } }))!;
-    expect(Object.entries(m.locks).filter(([, v]) => v).map(([k]) => k)).toEqual(['spacers']);
+  it('drops old locks', () => {
+    const m: any = migrate({ ...defaults(), locks: presetLocks('tools') })!;
+    expect(Object.values(m.pins).some(Boolean)).toBe(false);
+    expect('locks' in m).toBe(false);
   });
-  it('keeps v3 locks as they are', () => {
-    expect(migrate({ ...defaults(), locks: { ...presetLocks('all'), crankLength: true } })!.locks.crankLength).toBe(true);
+  it('keeps pins', () => {
+    expect(migrate({ ...defaults(), pins: { ...presetLocks('all'), crankLength: true } })!.pins.crankLength).toBe(true);
   });
   it('drops scope and hasSetup', () => {
     const m: any = migrate(v2({ scope: 'all', hasSetup: true }))!;
@@ -117,32 +119,24 @@ describe('migrate', () => {
   });
 });
 
-describe('detail and locks', () => {
-  it('folds old section overrides into the levels and keeps stored locks', () => {
+describe('detail', () => {
+  it('folds old section overrides into the levels', () => {
     const d: any = defaults();
     delete d.riderOpen;
     d.detail = { global: 1, overrides: { setup: 3 } };
-    d.locks = { ...presetLocks('all'), spacers: true };
     const m = migrate(d)!;
     expect(m.detail).toEqual({ bikeFull: true, results: 3 });
     expect(m.riderOpen).toEqual({ ride: true, arms: true, segments: true });
-    expect(m.locks.spacers).toBe(true);
-  });
-  it('maps an old Simple level to the New parts locks', () => {
-    const d: any = { ...defaults(), v: 2 };
-    d.detail = { global: 1 };
-    d.locks = presetLocks('all');
-    expect(Object.values(migrate(d)!.locks).some(Boolean)).toBe(false);
   });
   it('round-trips the new shape', () => {
     const d: any = defaults();
     d.detail = { bikeFull: false, results: 3 };
     d.riderOpen = { ride: false, arms: true, segments: false };
-    d.locks = { ...presetLocks('all'), spacers: true };
+    d.pins = { ...presetLocks('all'), spacers: true };
     const m = migrate(d)!;
     expect(m.detail).toEqual({ bikeFull: false, results: 3 });
     expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false });
-    expect(m.locks).toEqual({ ...presetLocks('all'), spacers: true });
+    expect(m.pins).toEqual({ ...presetLocks('all'), spacers: true });
   });
   it('opens Rider sections from an old Rider level', () => {
     const d: any = defaults();

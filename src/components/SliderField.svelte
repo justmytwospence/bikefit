@@ -1,8 +1,6 @@
 <script lang="ts">
-  import LockToggle from './LockToggle.svelte';
-
   let {
-    label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, locked = $bindable(false), hint, onedit, showLock = true,
+    label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, hint, onedit,
     limit, stop,
   }: {
     label: string;
@@ -13,10 +11,8 @@
     unit?: string;
     /** Change from your setup; its slot is always kept, so the value never shifts sideways. */
     delta?: number;
-    locked?: boolean;
     hint?: string;
     onedit?: () => void;
-    showLock?: boolean;
     /** The part of [min, max] the slider may move in; the rest of the track is shaded and stops the thumb. */
     limit?: [number, number];
     /** Says why the thumb stopped, shown while it sits against a limit. */
@@ -40,12 +36,11 @@
   }
 </script>
 
-<div class="field" class:locked>
+<div class="field">
   <div class="head">
     <span class="label">{label}</span>
     <span class="val">{Number.isInteger(value) ? value : value.toFixed(1)} {unit}</span>
     <span class="delta" class:none={d < 0.5}>{d < 0.5 ? '0' : (delta > 0 ? '+' : '−') + (d % 1 ? d.toFixed(1) : d)}</span>
-    {#if showLock}<LockToggle {label} bind:locked />{/if}
   </div>
   <input
     type="range" {min} {max} {step} {value} style="--p:{pct}%;--lo:{lo}%;--hi:{hi}%" aria-label={label}
@@ -62,7 +57,6 @@
   .val { font-weight: 600; }
   .delta { font-size: 12px; font-weight: 700; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); padding: 1px 7px; border-radius: 999px; min-width: 48px; text-align: center; }
   .delta.none { visibility: hidden; }
-  .field.locked input[type='range'] { opacity: 0.55; }
   .msg {
     font-size: 12px; color: var(--muted); margin-top: -6px; min-height: 1.4em; line-height: 1.4;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;

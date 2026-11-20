@@ -8,7 +8,7 @@
   const ghost = $derived(variant === 'ghost');
 </script>
 
-<g stroke="var(--rider)" fill="none" opacity={ghost ? 0.25 : 1} stroke-dasharray={ghost ? '18 14' : undefined}>
+<g stroke={ghost ? 'var(--muted)' : 'var(--rider)'} fill="none" opacity={ghost ? 0.7 : 1} stroke-dasharray={ghost ? '14 12' : undefined}>
   <polyline points={pts(pose.hip, pose.shoulder, head)} stroke-width="12" />
   <circle cx={head.x} cy={head.y} r={HEAD_R * height} stroke-width="10" fill={ghost ? 'none' : 'var(--bg)'} />
 </g>

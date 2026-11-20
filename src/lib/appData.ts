@@ -1,5 +1,5 @@
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_FRAME, DEFAULT_OPTIONS, DEFAULT_PARAMS } from '../model/presets';
-import { isPreset, KNOB_ORDER, PRESET_FREE, presetLocks, scopeOf } from './knobs';
+import { KNOB_ORDER, presetLocks } from './knobs';
 import type { Units } from './units';
 import type {
   Body, Components, Effort, FitParams, Frame, HandsPref, ParamKey, PartOptions, StyleId,
@@ -44,8 +44,8 @@ export interface AppData {
   current: FitParams;
   /** Your current setup: the bike as you ride it, edited under Current setup. */
   baseline: FitParams;
-  /** Settings the rider pinned; Optimize leaves them where the target has them. */
-  locks: Record<ParamKey, boolean>;
+  /** Settings the rider said to leave as they are; no target changes them. */
+  pins: Record<ParamKey, boolean>;
   tab: Tab;
   effort: Effort | null;
   hands: HandsPref | null;
@@ -68,7 +68,7 @@ export function defaults(): AppData {
     options: DEFAULT_OPTIONS,
     current: DEFAULT_PARAMS,
     baseline: { ...DEFAULT_PARAMS },
-    locks: presetLocks('all'),
+    pins: presetLocks('all'),
     tab: 'rider' as Tab,
     effort: null,
     hands: null,
@@ -91,25 +91,21 @@ export function migrate(raw: unknown): AppData | null {
   const wanted = typeof d.activeFrameId === 'string' ? movedId(d.activeFrameId) : '';
   const activeFrameId = frames.some((f) => f.id === wanted) ? wanted : frames[0].id;
   let detail: AppData['detail'];
-  let locks: Record<ParamKey, boolean>;
   let riderLevel: Level;
   if (d.detail && typeof d.detail === 'object' && 'results' in d.detail) {
     detail = { bikeFull: d.detail.bikeFull === true, results: clampLv(d.detail.results) };
     riderLevel = clampLv(d.detail.rider);
-    locks = { ...base.locks, ...d.locks };
   } else {
     const g = clampLv(Math.max(1, d.detail?.global ?? 1, ...Object.values(d.detail?.overrides ?? {}).map(Number)));
     detail = { bikeFull: g >= 2, results: g };
     riderLevel = g;
-    locks = g === 1 ? presetLocks('parts') : { ...base.locks, ...d.locks };
   }
-  const { hasSetup, scope, ...rest } = d;
+  const { hasSetup, scope: _s, locks: _l, ...rest } = d;
+  const pins = Object.fromEntries(KNOB_ORDER.map((k) => [k, d.pins?.[k] === true])) as Record<ParamKey, boolean>;
   let baseline = { ...base.baseline, ...d.baseline };
   const current = { ...base.current, ...d.current };
   if (d.v !== 3) {
-    // Older data: pins only count inside the scope the old Fit my bike listed, and a New build becomes the bike you ride.
-    const oldScope = isPreset(scope) ? scope : scopeOf(locks);
-    locks = Object.fromEntries(KNOB_ORDER.map((k) => [k, !!locks[k] && PRESET_FREE[oldScope].includes(k)])) as Record<ParamKey, boolean>;
+    // Older data: a New build becomes the bike you ride.
     const rode = typeof hasSetup === 'boolean'
       ? hasSetup
       : (Object.keys(base.baseline) as ParamKey[]).some((k) => d.baseline?.[k] !== undefined && d.baseline[k] !== base.baseline[k]);
@@ -134,7 +130,7 @@ export function migrate(raw: unknown): AppData | null {
     options: { ...base.options, ...d.options },
     current,
     baseline,
-    locks,
+    pins,
     detail,
     riderOpen,
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),

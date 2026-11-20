@@ -1,6 +1,6 @@
 import { bikeOf, event, reportError } from './lib/analytics';
 import { screenCatalog } from './lib/catalogFit';
-import { stepLocks } from './lib/ladder';
+import { presetLocks } from './lib/knobs';
 import type { SizeEntry } from './lib/sizes';
 import { runCatalog, runCompare, stopCatalog } from './lib/optimizeClient';
 import { idealLayout, type CompareRow } from './model/optimize';
@@ -10,8 +10,8 @@ import { app, problem, ui, useCompareRow } from './state.svelte';
 
 const snap = <T>(x: T): T => $state.snapshot(x) as T;
 
-/** A new bike is fitted with the parts a shop swaps (stem, seatpost), keeping your cranks and pinned settings. */
-const findLocks = () => stepLocks('parts', snap(app.locks));
+/** A new bike is fitted with the parts a shop swaps (stem, seatpost), keeping your cranks. */
+const findLocks = () => presetLocks('parts');
 
 /** Immutable so Svelte does not deep-proxy thousands of rows; replace it with `with` to update. */
 export class CatalogView {

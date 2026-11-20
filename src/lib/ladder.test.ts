@@ -5,7 +5,7 @@ import { poseWeights } from '../model/riding';
 import { bandsFor, STYLES } from '../model/styles';
 import { resolveSegments } from '../model/body';
 import { TEST_BODY, TEST_FRAMES } from '../model/testFrames';
-import { buildLadder, sameParams, STEPS, stepLocks, stepStart } from './ladder';
+import { buildLadder, sameParams, settle, STEPS, stepLocks } from './ladder';
 import { presetLocks } from './knobs';
 
 const P = DEFAULT_PARAMS;
@@ -20,35 +20,50 @@ describe('sameParams', () => {
   });
 });
 
-describe('stepLocks and stepStart', () => {
+describe('stepLocks', () => {
   it('adds pins to the step', () => {
     expect(stepLocks('tools', {})).toEqual(presetLocks('tools'));
     const l = stepLocks('all', { spacers: true });
     expect(Object.entries(l).filter(([, v]) => v).map(([k]) => k)).toEqual(['spacers']);
   });
-  it('starts from the current setup except pins', () => {
-    const t = { ...P, spacers: 5, stemLength: 80 };
-    const s = stepStart(P, t, { spacers: true });
-    expect(s.spacers).toBe(5);
-    expect(s.stemLength).toBe(P.stemLength);
+});
+
+describe('settle', () => {
+  it('drops tiny changes and rounds the rest', () => {
+    const p = { ...P, saddleHeight: P.saddleHeight + 1.5, railOffset: P.railOffset + 18.6 };
+    const s = settle(p, P, () => 80);
+    expect(s.saddleHeight).toBe(P.saddleHeight);
+    expect(s.railOffset).toBe(P.railOffset + 19);
+  });
+  it('keeps a tiny change that is worth a point', () => {
+    const p = { ...P, saddleHeight: P.saddleHeight + 1.5 };
+    const s = settle(p, P, (q) => (q.saddleHeight === P.saddleHeight ? 79 : 80));
+    expect(s.saddleHeight).toBe(P.saddleHeight + 1.5);
   });
 });
 
 describe('buildLadder', () => {
-  it('replaces a costlier step with the one below', () => {
-    const l = buildLadder([fake(1, 700), fake(2, 710), fake(0.5, 720)], () => 80, 70, 'k');
-    expect(l.steps.map((s) => s.params.saddleHeight)).toEqual([700, 700, 720]);
+  const H = P.saddleHeight;
+  const rs = (n: number) => [fake(1, H + 10), fake(1, H + 20), fake(1, H + 30)].slice(0, n);
+  const ladder = (cur: number, a: number, b: number, c: number) =>
+    buildLadder(rs(3), P, byHeight({ [H]: cur, [H + 10]: a, [H + 20]: b, [H + 30]: c }), 'k');
+  it('a step that gains less than a point is the same as the one below', () => {
+    const l = ladder(70, 80, 80, 85);
     expect(l.steps.map((s) => s.same)).toEqual([false, true, false]);
+    expect(l.steps[1].params).toEqual(l.steps[0].params);
+  });
+  it('a first step that gains nothing is the same as the current setup', () => {
+    const l = ladder(80, 80, 90, 90);
+    expect(l.steps.map((s) => s.same)).toEqual([true, false, true]);
+    expect(l.steps[0].params).toEqual(P);
   });
   it('suggests the lowest step within 3 points of the best', () => {
-    const r = [fake(1, 1), fake(1, 2), fake(1, 3)];
-    const sug = (a: number, b: number, c: number) => buildLadder(r, byHeight({ 1: a, 2: b, 3: c }), 50, 'k').suggested;
-    expect(sug(80, 82, 84)).toBe(1);
-    expect(sug(70, 81, 84)).toBe(1);
-    expect(sug(70, 75, 84)).toBe(2);
+    expect(ladder(50, 81, 82, 84).suggested).toBe(0);
+    expect(ladder(50, 70, 82, 84).suggested).toBe(1);
+    expect(ladder(50, 70, 75, 84).suggested).toBe(2);
   });
-  it('suggests none when nothing beats the current setup', () => {
-    expect(buildLadder([fake(1, 1), fake(1, 2), fake(1, 3)], () => 60, 70, 'k').suggested).toBe(-1);
+  it('suggests none when the current setup is within 3 of the best', () => {
+    expect(ladder(82, 84, 84, 85).suggested).toBe(-1);
   });
   it('keeps parts locked on lower steps', () => {
     const st = STYLES.endurance;
@@ -59,8 +74,8 @@ describe('buildLadder', () => {
       components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: P, current: P, locks: {}, mode: 'tune',
     };
     const results = STEPS.map((s) => optimizeFit({ ...p, locks: stepLocks(s, {}) }));
-    const l = buildLadder(results, () => 80, 70, 'k');
-    for (const k of ['stemLength', 'stemAngle', 'seatpostSetback', 'crankLength'] as const) expect(l.steps[0].params[k]).toBe(P[k]);
-    expect(l.steps[1].params.crankLength).toBe(P.crankLength);
+    buildLadder(results, P, () => 80, 'k');
+    for (const k of ['stemLength', 'stemAngle', 'seatpostSetback', 'crankLength'] as const) expect(results[0].params[k]).toBe(P[k]);
+    expect(results[1].params.crankLength).toBe(P.crankLength);
   });
 });

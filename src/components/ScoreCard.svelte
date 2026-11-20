@@ -2,7 +2,7 @@
   import { STYLES } from '../model/styles';
   import { app } from '../state.svelte';
 
-  let { score, compare = null }: { score: number; compare?: { label: string; score: number } | null } = $props();
+  let { score, from = null }: { score: number; from?: number | null } = $props();
   const C = 2 * Math.PI * 16;
   const color = $derived(score >= 85 ? 'var(--ok)' : score >= 60 ? 'var(--near)' : 'var(--off)');
   const name = $derived(STYLES[app.styleId].name);
@@ -21,7 +21,7 @@
   <span class="txt">
     <span class="k">Fit for</span>
     <span class="name">{name} <span aria-hidden="true">▾</span></span>
-    {#if compare && compare.score !== score}<span class="was">{compare.label} {compare.score}</span>{/if}
+    {#if from !== null && from !== score}<span class="was">{from} → {score}</span>{/if}
   </span>
   <select aria-label="Riding style" bind:value={app.styleId}>
     {#each Object.values(STYLES) as s (s.id)}<option value={s.id}>{s.name}</option>{/each}

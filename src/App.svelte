@@ -31,15 +31,15 @@
   const mine = $derived(activeFrame());
   const previewing = $derived(app.tab === 'find' && !!ui.preview);
   const frame = $derived(previewing ? ui.preview!.frame : mine);
-  /** The setup the settings change; the other one is drawn in outline behind it. */
+  /** The setup the settings change. */
   const yours = $derived(ui.editing === 'current' ? app.baseline : app.current);
   const viewParams = $derived(previewing ? ui.preview!.row.result.params : yours);
-  const other = $derived(previewing ? null : ui.editing === 'current' ? app.current : app.baseline);
+  /** While a target is shown on Fit my bike, the current setup is drawn in outline behind it. */
   const otherShown = $derived(
-    other && !sameParams($state.snapshot(other) as FitParams, $state.snapshot(yours) as FitParams)
-      ? ($state.snapshot(other) as FitParams) : null,
+    !previewing && app.tab === 'mybike' && ui.editing === 'target'
+      && !sameParams($state.snapshot(app.baseline) as FitParams, $state.snapshot(app.current) as FitParams)
+      ? ($state.snapshot(app.baseline) as FitParams) : null,
   );
-  const otherLabel = $derived(ui.editing === 'current' ? 'target' : 'current');
   const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
   const resultsLevel = $derived(app.detail.results);
   /** The size the one on the drawing is too close to call against, drawn in outline behind it. */
@@ -52,7 +52,7 @@
         }
       : otherShown
         ? {
-            frame: mine, params: otherShown, label: otherLabel, partsOnly: true,
+            frame: mine, params: otherShown, label: 'current setup', partsOnly: true,
             layout: forwardLayout(mine, app.components, otherShown),
           }
         : null,
@@ -139,15 +139,12 @@
   <section class="view">
     <div class="canvas">
       <BikeView
-        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} ghostLabel={otherLabel} {ghostBike} {ideal}
+        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ghostBike} {ideal}
         target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank}
       />
-      <ScoreCard
-        {score}
-        compare={otherShown ? { label: otherLabel === 'current' ? 'Current' : 'Target', score: setupScore(otherShown) } : null}
-      />
+      <ScoreCard {score} from={otherShown ? setupScore(otherShown) : null} />
     </div>
     <MetricStrip poses={evaluation.poses} {targets} level={resultsLevel} />
   </section>
