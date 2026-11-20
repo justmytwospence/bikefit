@@ -3,6 +3,7 @@ import { runOptimize } from './lib/optimizeClient';
 import { KNOB_ORDER } from './lib/knobs';
 import { buildLadder, sameParams, STEPS, stepLocks, type Ladder } from './lib/ladder';
 import { defaults, migrate, type AppData } from './lib/appData';
+import { bodyMismatch, type Mismatch } from './lib/mismatch';
 import { resolveSegments } from './model/body';
 import type { CompareRow, FitProblem } from './model/optimize';
 import type { Verdict } from './model/verdict';
@@ -248,6 +249,12 @@ export function release(k: ParamKey) {
   event('Change restored', { setting: k });
   app.pins[k] = false;
   void refreshLadder();
+}
+
+/** Why the current setup and the body measurements cannot both be right, if they cannot. */
+export function currentMismatch(): Mismatch | null {
+  const pr = problem('tune');
+  return bodyMismatch(pr, snap(app.body), pr.baseline);
 }
 
 /** You have made the target's changes: the target becomes your current setup. */
