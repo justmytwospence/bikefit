@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Info from './Info.svelte';
   import { event } from '../lib/analytics';
   import { FEEDBACK_EMAIL, feedbackMailto, ISSUES_URL } from '../lib/feedback';
   import type { Units } from '../lib/units';
@@ -62,20 +63,19 @@
   </button>
   {#if open}
     <div class="pop card">
-      <h2>Units</h2>
+      <h2>Units <Info text="Body measurements and shoe size. Bike geometry and fit settings stay in mm." /></h2>
       <Segmented
         options={units} ariaLabel="Units"
         bind:value={() => app.units, (v) => { app.units = v as Units; event('Units', { units: v }); }}
       />
-      <p class="muted small">Body measurements and shoe size (EU or US). Bike geometry and fit settings stay in mm.</p>
-      <h2>Your data</h2>
+      <h2>Your data <Info text="Your measurements and bikes stay in this browser. The link carries your body, setup and current frame." /></h2>
       <div class="data">
         <button type="button" class="btn small" onclick={download}>Export</button>
         <button type="button" class="btn small" onclick={() => file?.click()}>Import</button>
         <button type="button" class="btn small" onclick={copyLink}>Copy link</button>
         <input bind:this={file} type="file" accept=".json,application/json" hidden onchange={upload} />
       </div>
-      <p class="muted small">{status || 'The link carries your body, setup and current frame.'}</p>
+      {#if status}<p class="muted small">{status}</p>{/if}
       <h2>About</h2>
       <p class="muted small">A starting point, not a substitute for a professional fit. Your measurements and bikes stay in this browser. Anonymous, cookie-free usage counts (which buttons, which catalog bikes and searches, never your numbers) go to Vercel Analytics.</p>
       <p class="small">

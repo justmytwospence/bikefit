@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Info from './Info.svelte';
   import { onMount } from 'svelte';
   import type { FrameCategory } from '../data/catalog';
   import { searchLogger } from '../lib/analytics';
@@ -78,7 +79,6 @@
   });
 </script>
 
-<p class="muted">Finds the size of every catalog bike that suits you best. The score is how close that size gets you to your position with the parts it is sold with, so bikes built for another riding style score lower. Equal scores list the newest first.</p>
 <!-- One slot for the button, the progress and the count, so the filters and list never move. -->
 <div class="status">
   {#if ui.catalog?.running}
@@ -90,7 +90,7 @@
     </button>
   {:else}
     <p class="muted small">
-      {matching.length} bikes{area ? ' in the selected area' : ''}
+      {matching.length} bikes{area ? ' in the selected area' : ''}<Info text="Each bike's best size for you. The score is how close it gets you to your position with the parts it is sold with, so bikes built for another riding style score lower. Equal scores list the newest first." />
       {#if area}<button type="button" class="clear" onclick={() => (area = null)}>Clear</button>{/if}
     </p>
   {/if}
@@ -114,7 +114,7 @@
     <Segmented compact ariaLabel="Verdicts shown" options={shows} bind:value={show} />
   </div>
   <details class="chart" open>
-    <summary>Stack and reach</summary>
+    <summary>Stack and reach <Info text="Each dot is a bike's best size for you; the cross is the stack and reach that would put your hands where they belong with a stock stem. Drag to select an area, tap a dot to show it." /></summary>
     <StackReachChart
       groups={filtered} extent={all} bind:area
       onpick={(g) => { const e = bestEntry(g); previewSize(e, null); }}
@@ -135,7 +135,6 @@
     <button type="button" class="btn small" onclick={() => (limit += 30)}>Show more</button>
   {/if}
 {/if}
-<p class="muted small foot">Each model's sizes are checked outward from the one nearest your ideal bar position, until they stop fitting.</p>
 
 <style>
   .status { min-height: 44px; display: flex; flex-direction: column; justify-content: center; gap: 4px; margin: 8px 0; }
@@ -149,6 +148,5 @@
   .chart summary { cursor: pointer; font-weight: 600; min-height: 36px; display: flex; align-items: center; }
   .clear { border: 0; background: transparent; color: var(--accent); font: inherit; font-weight: 600; padding: 0 4px; }
   .dim { opacity: 0.5; }
-  .foot { margin-top: 14px; }
   .err { color: var(--off); }
 </style>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Info from './Info.svelte';
   import type { Verdict } from '../model/verdict';
   import { groupRows } from '../lib/sizes';
   import { compareKey, makePreviewMine, previewRow, previewSize, runCompareAll, stopPreview } from '../find.svelte';
@@ -32,7 +33,6 @@
   {#if ui.compareSource === 'all'}
     <CatalogBrowser />
   {:else}
-    <p class="muted">Sorts your saved frames by fit. Sizes of one model share a card.</p>
     <button type="button" class="btn primary full" disabled={ui.busy} onclick={runCompareAll}>
       {#if ui.busy}<span class="spin"></span>Comparing…{:else if stale}Out of date: compare again{:else}Compare {app.frames.length} frames{/if}
     </button>
@@ -60,22 +60,13 @@
   {#if ui.preview}
     {@const v = ui.preview.row.result.verdict}
     <div class="info">
-      {#if ui.peek?.kind === 'bike' && ui.peek.row.frameId !== ui.preview.row.frameId}
-        <b class="nm">{ui.peek.row.frameName}</b>
-        <span class="small muted">Previewing</span>
-      {:else}
-        <b class="nm">{ui.preview.row.frameName}</b>
-        <span class="small verdict {v}">{VERDICT_TEXT[v]}</span>
-      {/if}
+      <b class="nm">{ui.preview.row.frameName}</b>
+      <span class="small verdict {v}">{VERDICT_TEXT[v]}</span>
     </div>
     <button type="button" class="btn small primary" onclick={makePreviewMine}>Make it my bike</button>
     <button type="button" class="btn small x" aria-label="Stop showing" onclick={stopPreview}>✕</button>
   {:else}
-    {#if ui.peek?.kind === 'bike'}
-      <p class="muted small">Previewing {ui.peek.row.frameName}. Tap Show to keep it on the drawing.</p>
-    {:else}
-      <p class="muted small">Point at a bike to preview it; tap Show to keep it on the drawing.</p>
-    {/if}
+    <span class="muted small">No bike shown</span>
   {/if}
 </div>
 
@@ -86,7 +77,6 @@
     padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
     border-top: 1px solid var(--line); background: var(--surface);
   }
-  .showbar p { margin: 0; }
   .info { flex: 1; min-width: 0; display: flex; flex-direction: column; }
   .nm { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .x { width: 40px; padding: 0; }

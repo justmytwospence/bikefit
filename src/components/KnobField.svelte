@@ -45,8 +45,8 @@
   /** Says why the thumb cannot go further, while it sits against a limit. */
   function stopText(l: Lim, v: number): string | undefined {
     if (blocked) return undefined;
-    if (v <= l.lo && l.lowWhy) return `Stops here: ${IMPOSSIBLE_SHORT[l.lowWhy]}`;
-    if (v >= l.hi && l.highWhy) return `Stops here: ${IMPOSSIBLE_SHORT[l.highWhy]}`;
+    if (v <= l.lo && l.lowWhy) return `Stops: ${IMPOSSIBLE_SHORT[l.lowWhy]}`;
+    if (v >= l.hi && l.highWhy) return `Stops: ${IMPOSSIBLE_SHORT[l.highWhy]}`;
     return undefined;
   }
   /** Part choices the rider could not ride; the current one always stays available. */

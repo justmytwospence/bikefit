@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Info from './Info.svelte';
   import { link } from '../lib/link.svelte';
   import { compareSizes } from '../lib/sizeCompare';
   import type { SizeEntry } from '../lib/sizes';
@@ -22,8 +23,7 @@
 </script>
 
 <div class="between">
-  <p class="head">Between sizes {cmp.sizes[0]} and {cmp.sizes[1]}</p>
-  <p class="muted small">Both put you in the same position. Tap one to see it; the other stays on the drawing in outline.</p>
+  <p class="head">Between sizes {cmp.sizes[0]} and {cmp.sizes[1]} <Info text="Both put you in the same position; tap one to see it, the other stays on the drawing in outline. Each bar is how high a size puts the bars with its stock stem, from no spacers to all of them; the dot is where this riding style normally sits, the line your bar height." /></p>
   <SizeMap {entries} {activeId} {onpick} {peekOf} />
   <table>
     <thead>

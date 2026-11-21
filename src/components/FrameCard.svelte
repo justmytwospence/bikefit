@@ -102,7 +102,7 @@
 </div>
 
 <style>
-  .card.peeked { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .card.peeked { box-shadow: inset 0 0 0 1px var(--line), 0 0 0 4px color-mix(in srgb, var(--accent) 7%, transparent); }
   .btnrow { display: flex; gap: 8px; flex-wrap: wrap; }
   .sizes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
   .sz { min-width: 44px; min-height: 36px; border-radius: 10px; border: 2px solid transparent; font-weight: 700; background: var(--surface-2); }

@@ -66,7 +66,6 @@
       {@render groups()}
     </details>
   {:else}
-    <p class="muted small intro">Your bike as you ride it now. The targets are worked out from it.</p>
     {@render groups()}
   {/if}
 
@@ -89,7 +88,6 @@
 
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
-  .intro { margin: 10px 0 0; }
   .frame, .all { margin-top: 18px; }
   .frame summary, .all summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-height: 44px; justify-content: center; }
   .frame summary b::after, .all summary b::after { content: ' ▾'; color: var(--muted); }

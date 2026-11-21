@@ -150,10 +150,6 @@
       />
     {/if}
   </svg>
-  <figcaption class="muted small">
-    Each dot is a bike's best size for you. The cross is the stack and reach that would put your hands where they
-    belong with a stock stem and spacers. Drag to select an area; the list shows only those bikes. Tap a dot to show it.
-  </figcaption>
 </figure>
 
 <style>
@@ -165,5 +161,4 @@
   .you { stroke: var(--accent); stroke-width: 1.5; fill: var(--accent); pointer-events: none; }
   .you text { font-size: 9.5px; font-weight: 700; stroke: none; }
   .brush { fill: color-mix(in srgb, var(--accent) 12%, transparent); stroke: var(--accent); stroke-width: 1; pointer-events: none; }
-  figcaption { margin-top: 6px; }
 </style>

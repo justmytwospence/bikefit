@@ -10,6 +10,7 @@
   import {
     app, chooseRung, keepAsIs, ladderKey, markAsMine, setupScore, ui,
   } from '../state.svelte';
+  import Info from './Info.svelte';
   import KnobField from './KnobField.svelte';
 
   /** What the chosen target asks you to do, one line per part, each adjustable or rejectable. */
@@ -41,12 +42,9 @@
 
 <div class="card changes">
   <div class="head">
-    <h2>{ui.rung !== null ? PRESETS[ui.rung].label : 'Your own target'}</h2>
+    <h2>{ui.rung !== null ? PRESETS[ui.rung].label : 'Your own target'} <Info text={ui.rung !== null ? PRESETS[ui.rung].hint : 'Pick a step above to start again from a suggested target.'} /></h2>
     {#if changes.length}<span class="gain {tone(to)}">{from} → {to}</span>{/if}
   </div>
-  <p class="muted small sub">
-    {ui.rung !== null ? PRESETS[ui.rung].hint : 'Pick a step above to start again from a suggested target.'}
-  </p>
 
   {#if ui.laddering && !ladder}
     <p class="muted">Working out what to change…</p>
@@ -104,7 +102,7 @@
   .gain.ok { color: var(--ok); }
   .gain.near { color: var(--near); }
   .gain.off { color: var(--off); }
-  .sub { margin: 4px 0 10px; }
+  .head + * { margin-top: 10px; }
   .list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
   .line { display: flex; gap: 6px; align-items: stretch; }
   .what {

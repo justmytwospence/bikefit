@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Info from './Info.svelte';
   let {
     label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, hint, onedit,
     limit, stop,
@@ -11,6 +12,7 @@
     unit?: string;
     /** Change from your setup; its slot is always kept, so the value never shifts sideways. */
     delta?: number;
+    /** What the number measures, behind an (i) by the label. */
     hint?: string;
     onedit?: () => void;
     /** The part of [min, max] the slider may move in; the rest of the track is shaded and stops the thumb. */
@@ -38,7 +40,7 @@
 
 <div class="field">
   <div class="head">
-    <span class="label">{label}</span>
+    <span class="label">{label}{#if hint}<Info text={hint} label="About {label.toLowerCase()}" />{/if}</span>
     <span class="val">{Number.isInteger(value) ? value : value.toFixed(1)} {unit}</span>
     <span class="delta" class:none={d < 0.5}>{d < 0.5 ? '0' : (delta > 0 ? '+' : '−') + (d % 1 ? d.toFixed(1) : d)}</span>
   </div>
@@ -47,7 +49,7 @@
     class:limited={!!limit && (lo > 0 || hi < 100)} oninput={input}
   />
   <!-- Always one line, so a stop message never pushes the next control down. -->
-  <div class="msg" class:stop={!!stop} role={stop ? 'status' : undefined} title={stop ?? hint}>{stop ?? hint ?? ''}</div>
+  <div class="msg" role={stop ? 'status' : undefined} title={stop}>{stop ?? ''}</div>
 </div>
 
 <style>
@@ -58,8 +60,7 @@
   .delta { font-size: 12px; font-weight: 700; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); padding: 1px 7px; border-radius: 999px; min-width: 48px; text-align: center; }
   .delta.none { visibility: hidden; }
   .msg {
-    font-size: 12px; color: var(--muted); margin-top: -6px; min-height: 1.4em; line-height: 1.4;
+    font-size: 12px; color: var(--off); font-weight: 600; margin-top: -6px; min-height: 1.4em; line-height: 1.4;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
-  .msg.stop { color: var(--off); font-weight: 600; }
 </style>

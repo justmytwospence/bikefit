@@ -8,6 +8,7 @@
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
   import { event, eventOnce } from '../lib/analytics';
   import { app, ui } from '../state.svelte';
+  import Info from './Info.svelte';
   import NumberField from './NumberField.svelte';
   import Segmented from './Segmented.svelte';
 
@@ -59,18 +60,16 @@
     <div class="card intro">
       <b>Start here</b>
       <ol>
-        <li>Start with your height and inseam, and pick how you ride.</li>
-        <li>Then add what you can measure under More measurements: arms, body segments, feet. Each one replaces an estimate.</li>
-        <li>Have a bike? Pick it in Fit my bike, enter its setup and compare the targets.</li>
-        <li>Shopping? Find a bike ranks the catalog for your body.</li>
+        <li>Height, inseam, riding style</li>
+        <li>Fit my bike: tune your bike</li>
+        <li>Find a bike: rank the catalog</li>
       </ol>
-      <p class="muted small">A starting point, not a substitute for a professional fit.</p>
       <button type="button" class="btn small" onclick={() => { app.seenIntro = true; event('Intro dismissed'); }}>Got it</button>
     </div>
   {/if}
-  <h2>Body</h2>
+  <h2>Body <Info text="Body type sets typical proportions. Anything you measure overrides them." /></h2>
   <Segmented options={sexes} bind:value={app.body.sex} ariaLabel="Body type" />
-  <p class="muted small hint sexhint">Sets typical proportions. Your own measurements override them.</p>
+  <div class="gap"></div>
   <div class="two">
     {#if imperial}
       <NumberField
@@ -88,21 +87,19 @@
       />
     {/if}
     <NumberField
-      label="Inseam" link="b:inseam" unit={inseamF.unit} min={inseamF.min} max={inseamF.max} step={inseamF.step}
+      label="Inseam" link="b:inseam" hint="Barefoot, floor to crotch with a book pressed up firmly: 3 to 5 cm more than your trouser inseam." unit={inseamF.unit} min={inseamF.min} max={inseamF.max} step={inseamF.step}
       bind:value={() => toDisplay(app.body.inseam, inseamF), (v) => (app.body.inseam = fromDisplay(v, inseamF))}
     />
   </div>
-  <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly; 3 to 5 cm more than trouser inseam.</p>
   {#if app.body.height < 1550 || app.body.height > 1930}
     <p class="small edge">
-      Below about 155 cm or above about 193 cm, every bike scores lower: the smallest and largest frames are
-      made for riders nearer the middle. Compare bikes with each other rather than reading the score on its own.
+      Scores run low at your height <Info text="Below about 155 cm or above about 193 cm, every bike scores lower: the smallest and largest frames are made for riders nearer the middle. Compare bikes with each other rather than reading the score on its own." />
     </p>
   {/if}
 
   <div class="shoe" use:link={'b:shoe'}>
     <div class="lrow">
-      <label for="shoe">Shoe size</label>
+      <label for="shoe">Cycling shoe size</label>
       {#if app.body.shoeSizeAuto}<span class="estb">suggested</span>
       {:else}<button type="button" class="relink" onclick={() => (app.body.shoeSizeAuto = true)}>Use suggested</button>{/if}
     </div>
@@ -113,30 +110,25 @@
       {#each shoes as s (s)}<option value={String(s)}>{shoeLabel(s, app.units)}</option>{/each}
     </select>
   </div>
-  <p class="muted small hint">The size of your cycling shoes.</p>
 
-  <h2>Flexibility</h2>
+  <h2>Flexibility <Info text="Can you touch your toes with straight legs? Easily is High." /></h2>
   <Segmented options={flex} bind:value={app.body.flexibility} ariaLabel="Flexibility" />
-  <p class="muted small hint">Can you touch your toes with straight legs? Easily = High.</p>
 
-  <h2>How you ride</h2>
+  <h2>How you ride <Info text="{style.name}: {style.blurb}" /></h2>
   <Segmented
     options={styleOptions} compact ariaLabel="Riding style"
     onhover={(v) => (v && v !== app.styleId ? enterPeek(STYLE_OWNER, () => ({ kind: 'style', styleId: v })) : leavePeek(STYLE_OWNER))}
     bind:value={() => app.styleId, (v) => { app.styleId = v; event('Style chosen', { style: v }); }}
   />
-  <p class="muted small hint">{style.blurb}</p>
-  <h2>More measurements</h2>
-  <p class="muted small">Optional, but each one you measure replaces an estimate from your height, inseam and body type.</p>
+  <h2>More measurements <Info text="Optional. Each one you measure replaces an estimate from your height, inseam and body type." /></h2>
 
   <details class="card sec" bind:open={app.riderOpen.ride}>
     <summary onclick={() => { if (!app.riderOpen.ride) event('Measurements opened', { section: 'ride' }); }}><b>Riding effort and hands</b><span class="muted small">{rideSummary}</span></summary>
     <div class="lrow">
-      <span>Effort</span>
+      <span>Effort <Info text={EFFORT_LABELS[effort].hint} /></span>
       {#if app.effort != null}<button type="button" class="relink" onclick={() => (app.effort = null)}>Use default</button>{/if}
     </div>
     <Segmented options={efforts} ariaLabel="Effort" bind:value={() => effort, (v) => (app.effort = v)} />
-    <p class="muted small hint">{EFFORT_LABELS[effort].hint}</p>
     <div class="lrow">
       <span>Where your hands are</span>
       {#if app.hands != null}<button type="button" class="relink" onclick={() => (app.hands = null)}>Use default</button>{/if}
@@ -152,14 +144,12 @@
       hint="Arm hanging straight: bony point of the shoulder to the centre of your closed fist"
       bind:value={() => toDisplay(arm, armF), (v) => { app.body.armLength = fromDisplay(v, armF); eventOnce('Measurement entered', { field: 'armLength' }); }}
     />
-    <div class="label">Ankling</div>
+    <div class="label">Ankling <Info text={ANKLING[app.body.ankling].hint} /></div>
     <Segmented options={ankles} bind:value={app.body.ankling} ariaLabel="Ankling" />
-    <p class="muted small hint">{ANKLING[app.body.ankling].hint}</p>
   </details>
 
   <details class="card sec" bind:open={app.riderOpen.segments}>
     <summary onclick={() => { if (!app.riderOpen.segments) event('Measurements opened', { section: 'segments' }); }}><b>Body segments</b><span class="muted small">{segSummary}</span></summary>
-    <p class="muted small">Enter measured values to override the estimates.</p>
     <div class="two">
       {#each keys as k (k)}
         <NumberField
@@ -176,8 +166,7 @@
 <style>
   .scroll { flex: 1; overflow-y: auto; padding: 16px; }
   .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .hint { margin-top: 6px; }
-  .sexhint { margin-bottom: 14px; }
+  .gap { height: 12px; }
   .estb { font-size: 11px; font-weight: 600; color: var(--muted); background: var(--surface-2); border-radius: 999px; padding: 1px 6px; margin-left: 2px; }
   .label { display: block; font-weight: 600; font-size: 13px; margin: 12px 0 4px; }
   /* A label with an optional reset link on the right; the row's height never changes. */

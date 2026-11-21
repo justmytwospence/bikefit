@@ -63,10 +63,6 @@
         </g>
       {/each}
     </svg>
-    <figcaption class="muted small">
-      Each bar is how high a size puts the bars with its stock stem, from no spacers to all of them; the dot is
-      where this riding style normally sits. The line is your bar height.
-    </figcaption>
   </figure>
 {/if}
 
@@ -87,5 +83,4 @@
   .note { font-size: 9.5px; fill: var(--muted); }
   .row.on .note, .row.on .size { fill: var(--ink); }
   .hit { fill: transparent; cursor: pointer; outline: none; }
-  figcaption { margin-top: 6px; }
 </style>

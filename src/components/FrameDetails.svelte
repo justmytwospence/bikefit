@@ -60,7 +60,6 @@
     <div><b>Stem angle</b> {list(o.stemAngles, '°')}</div>
     <div><b>Cranks</b> {list(o.crankLengths, '')} mm</div>
     <div><b>Seatpost setback</b> {list(o.seatpostSetbacks, '')} mm</div>
-    <p class="muted" style="margin:8px 0 0">Defaults cover common parts.</p>
   </div>
 {/if}
 

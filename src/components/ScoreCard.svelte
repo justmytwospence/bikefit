@@ -72,7 +72,6 @@
             </li>
           {/each}
         </ul>
-        <p class="muted small">Point at a line to see it on the drawing.</p>
       {:else}
         <p class="muted small">Every angle is inside its range.</p>
       {/if}
