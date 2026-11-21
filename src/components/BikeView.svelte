@@ -268,15 +268,15 @@
   {/if}
 
   <div class="legend">
+    <!-- All three chips always, at a fixed width, so the rest of the legend never moves as the counts change. -->
     {#each CHIPS as [s, text] (s)}
-      {#if counts[s] > 0}
         <button
-          type="button" class="st" class:on={statusFocus === s} style="--c: var(--{s})" aria-pressed={ui.statusPin === s}
+          type="button" class="st" class:on={statusFocus === s} class:none={counts[s] === 0} disabled={counts[s] === 0}
+          style="--c: var(--{s})" aria-pressed={ui.statusPin === s}
           title="Highlight the angles {text}"
           onpointerenter={(e) => e.pointerType !== 'touch' && (ui.statusHover = s)} onpointerleave={() => (ui.statusHover = null)}
           onclick={() => { ui.statusPin = ui.statusPin === s ? null : s; if (ui.statusPin) event('Status highlighted', { status: s }); }}
         ><i></i>{counts[s]}<span class="sr"> {text}</span></button>
-      {/if}
     {/each}
     {#if !inBand && level >= 2}<span><i class="t"></i> ideal position</span>{/if}
     {#if ghostPose}<span><i class="c"></i> current setup</span>{/if}
@@ -314,9 +314,11 @@
   .legend .t { border: 2px dashed var(--accent); }
   .legend .c { width: 14px; height: 0; border-radius: 0; border-top: 2px dashed var(--muted); vertical-align: 3px; }
   .legend .o { border: 2px dashed var(--accent); border-radius: 2px; }
-  .st { border: 0; background: transparent; font: inherit; color: var(--muted); padding: 0 2px; display: inline-flex; align-items: center; }
+  .st { border: 0; background: transparent; font: inherit; color: var(--muted); padding: 0 2px; display: inline-flex; align-items: center; min-width: 3.2ch; font-variant-numeric: tabular-nums; }
+  .st.none { opacity: 0.4; }
   .legend .st i { background: var(--c); }
-  .st.on { color: var(--ink); font-weight: 700; }
+  .st.on { color: var(--ink); }
+  .st.on i { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--c); }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .mv { color: var(--accent); font-weight: 600; }
   .warn { color: var(--near); font-weight: 600; }

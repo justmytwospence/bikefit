@@ -51,7 +51,6 @@
   <BikePicker />
   <h2>Setup</h2>
   <LadderSwitch />
-  <p class="muted small drag">Drag the saddle or the bars on the drawing to move them.</p>
 
   {#snippet groups()}
     {#each GROUPS as g (g.title)}

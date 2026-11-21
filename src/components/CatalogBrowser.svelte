@@ -116,7 +116,7 @@
   <details class="chart" open>
     <summary>Stack and reach</summary>
     <StackReachChart
-      groups={filtered} bind:area
+      groups={filtered} extent={all} bind:area
       onpick={(g) => { const e = bestEntry(g); previewSize(e, null); }}
     />
   </details>

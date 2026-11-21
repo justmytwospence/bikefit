@@ -9,8 +9,10 @@
    * Every model's best size at its frame reach and stack, coloured by verdict, with the frame that would put
    * your hands where they belong. Drag to select an area; the list below shows only those bikes.
    */
-  let { groups, area = $bindable(null), onpick }: {
+  let { groups, extent, area = $bindable(null), onpick }: {
     groups: ModelGroup[];
+    /** Every bike checked, filters aside: the axes fit these, so changing a filter never rescales the chart. */
+    extent: ModelGroup[];
     area?: Area | null;
     onpick: (g: ModelGroup) => void;
   } = $props();
@@ -29,11 +31,15 @@
   /** Which model each size belongs to, to highlight the one being shown. */
   const modelOfFrame = $derived(new Map(groups.flatMap((g) => g.sizes.map((s) => [s.row.frameId, g.key] as const))));
   const dom = $derived.by(() => {
-    const rs = points.map((p) => p.reach);
-    const ss = points.map((p) => p.stack);
+    const all = chartPoints(extent);
+    const rs = all.map((p) => p.reach);
+    const ss = all.map((p) => p.stack);
     if (ideal) { rs.push(ideal.reach); ss.push(ideal.stack); }
     if (!rs.length) return { r0: 350, r1: 450, s0: 500, s1: 650 };
-    return { r0: Math.min(...rs) - 10, r1: Math.max(...rs) + 10, s0: Math.min(...ss) - 10, s1: Math.max(...ss) + 10 };
+    // Rounded out to whole grid steps, so the axes only move when a bike lands past them.
+    const lo = (v: number, s: number) => Math.floor((v - 5) / s) * s;
+    const hi = (v: number, s: number) => Math.ceil((v + 5) / s) * s;
+    return { r0: lo(Math.min(...rs), 20), r1: hi(Math.max(...rs), 20), s0: lo(Math.min(...ss), 40), s1: hi(Math.max(...ss), 40) };
   });
   const sx = (r: number) => L + ((r - dom.r0) / (dom.r1 - dom.r0)) * (W - L - R);
   const sy = (s: number) => T + (1 - (s - dom.s0) / (dom.s1 - dom.s0)) * (H - T - B);

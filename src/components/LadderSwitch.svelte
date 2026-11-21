@@ -41,7 +41,6 @@
 
   const note = $derived.by(() => {
     if (!shown) return ui.laddering ? 'Working out what to change…' : '';
-    if (!fresh) return '';
     if (shown.steps.every((s) => s.same)) {
       return pinned.length
         ? 'Nothing to change while these stay as they are.'
@@ -86,7 +85,11 @@
     </button>
   {/each}
 </div>
-{#if note}<p class="muted small note">{note}</p>{/if}
+<!-- One fixed two-line slot, so nothing below moves as the targets are worked out again. While they are, the last note
+     stays, faded. -->
+<p class="muted small note" class:stale={!!note && !!shown && !fresh} title={note || undefined}>
+  {note || 'Drag the saddle or the bars on the drawing to move them.'}
+</p>
 {#if pinned.length}
   <div class="pins">
     <span class="muted small">Kept as it is:</span>
@@ -114,7 +117,11 @@
   .near { color: var(--near); }
   .off { color: var(--off); }
   .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-left: 4px; vertical-align: 2px; }
-  .note { margin: 6px 0 0; }
+  .note {
+    margin: 6px 0 0; height: 2lh; overflow: hidden; transition: opacity 0.2s;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2;
+  }
+  .note.stale { opacity: 0.5; }
   .pins { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 8px; }
   .pin {
     border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 10px; font-size: 13px;
