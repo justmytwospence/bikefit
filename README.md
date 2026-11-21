@@ -29,6 +29,8 @@ Every number is linked to the drawing. Hover or focus one (a fit card, a read-ou
 
 Pointing at a choice previews it on the drawing without making it: a target on the Setup switch, a bike or one of its sizes in Find a bike, a riding style under How you ride (the score pill shows that style's score). Mouse and pen only; a tap still chooses.
 
+In Find a bike, the lines of a between-sizes comparison are linked too: point at the stem, spacers, seatpost, toe or wheelbase line and the drawing measures it on the size shown, with the other size's measure muted behind it. Pointing at the score ring lists what costs points (each line is linked to its angle), and the counts in the drawing's legend highlight the angles in range, just outside or outside.
+
 Frame geometry shows stack and reach until you ask for all measurements.
 
 ## What is modelled

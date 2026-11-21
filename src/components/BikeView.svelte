@@ -150,6 +150,16 @@
   const overlay = $derived(
     f ? overlayFor({ id: f, layout, frame, components, params, pose, poseEval, seg, toe: toeTip, toeClearance, units }) : null,
   );
+  /** What a size comparison line measures on the other size, drawn muted behind. */
+  const ghostOverlay = $derived(
+    f && ghostBike && !ghostBike.partsOnly
+      && (f.startsWith('f:') || f.startsWith('c:') || ['saddleHeight', 'setback', 'spacers', 'stem', 'crank', 'r:seatpost'].includes(f))
+      ? overlayFor({
+          id: f, layout: ghostBike.layout, frame: ghostBike.frame, components, params: ghostBike.params,
+          pose, poseEval, seg, toe: null, toeClearance: Infinity, units,
+        })
+      : null,
+  );
   const poseOptions = [
     { value: 'hoods' as const, label: 'Hoods' },
     { value: 'drops' as const, label: 'Drops' },
@@ -237,6 +247,7 @@
         {/each}
       </g>
       {#if ghostBike?.partsOnly}<Moves from={ghostBike.layout} to={layout} {fs} {vb} labels={roomy} />{/if}
+      <Measurements o={ghostOverlay} {fs} {vb} ghost />
       <Measurements o={overlay} {fs} {vb} />
       <Hits {layout} {pose} joints={joints.map((j) => ({ id: j.id, path: j.path }))} {sk} tab={app.tab} />
     </g>

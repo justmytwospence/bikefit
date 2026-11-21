@@ -3,7 +3,7 @@
   import type { Vec2 } from '../../model/vec';
 
   /** Draws what a linked number measures, with its name and value. */
-  let { o, fs, vb }: { o: Overlay | null; fs: number; vb: { x: number; w: number } } = $props();
+  let { o, fs, vb, ghost = false }: { o: Overlay | null; fs: number; vb: { x: number; w: number }; ghost?: boolean } = $props();
 
   const seg = (a: Vec2, b: Vec2) => `M ${a.x} ${a.y} L ${b.x} ${b.y}`;
   const line = (pts: Vec2[]) => 'M ' + pts.map((q) => `${q.x} ${q.y}`).join(' L ');
@@ -15,7 +15,7 @@
 </script>
 
 {#if o}
-  <g stroke="var(--accent)" fill="none">
+  <g stroke={ghost ? 'var(--muted)' : 'var(--accent)'} fill="none" opacity={ghost ? 0.8 : 1}>
     {#each o.strong as s}<path d={line(s)} stroke-width="16" opacity="0.9" />{/each}
     {#each o.dims as d}
       <path d={seg(d.a, d.b)} stroke-width="5" />
@@ -26,9 +26,9 @@
     {#each o.arcs as a}<path d={a} stroke-width="8" />{/each}
     {#each o.rings as r}<circle cx={r.c.x} cy={r.c.y} r={r.r} stroke-width="7" />{/each}
   </g>
-  <text
+  {#if !ghost}<text
     transform="translate({labelX},{o.at.y}) scale(1,-1)" text-anchor="middle" dominant-baseline="central"
     font-size={fs} font-weight="700" fill="var(--accent)"
     style="paint-order:stroke; stroke:var(--bg); stroke-width:{fs * 0.35}px; stroke-linejoin:round"
-  >{o.label}</text>
+  >{o.label}</text>{/if}
 {/if}

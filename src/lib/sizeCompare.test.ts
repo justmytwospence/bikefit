@@ -38,6 +38,12 @@ describe('compareSizes', () => {
     expect(line('Toe and front wheel')).toMatchObject({ values: ['4 mm clear', '16 mm clear'], better: 1 });
     expect(line('Wheelbase').values).toEqual(['978 mm', '991 mm']);
   });
+  it('lines carry drawing links', () => {
+    expect(line('Stem').link).toBe('stem');
+    expect(line('Wheelbase').link).toBe('f:wheelbase');
+    expect(line('Seatpost showing').link).toBe('r:seatpost');
+    expect(line('Standover clearance').link).toBeUndefined();
+  });
   it('sums each size up in a sentence', () => {
     expect(c.gist[0]).toBe('54 is the smaller, lower frame: 25 mm of spacers you can take out to go lower, more seatpost showing, quicker steering.');
     expect(c.gist[1]).toBe('56 is the larger, taller frame: 25 mm of spacers you can add to come up, steadier steering.');

@@ -27,7 +27,7 @@ const ALL: LinkId[] = [
   'm:knee', 'm:kneeTop', 'm:hip', 'm:torso', 'm:shoulder', 'm:elbow', 'm:seatAngle', 'm:handLoad', 'm:kops',
   'f:stack', 'f:reach', 'f:seatTubeAngle', 'f:headTubeAngle', 'f:headTubeLength', 'f:seatTubeLength', 'f:chainstay',
   'f:wheelbase', 'f:bbDrop', 'f:maxSpacers', 'f:tyreWidth',
-  'c:barReach', 'c:barDrop', 'c:saddleLength', 'c:footStack', 'c:headsetCap', 'c:hoodReach', 'c:hoodRise',
+  'r:seatpost', 'c:barReach', 'c:barDrop', 'c:saddleLength', 'c:footStack', 'c:headsetCap', 'c:hoodReach', 'c:hoodRise',
   'b:height', 'b:inseam', 'b:arm', 'b:femur', 'b:tibia', 'b:torso', 'b:upperArm', 'b:forearmGrip', 'b:footLength', 'b:shoe',
   'r:reach', 'r:drop', 'r:toe', 'r:hoods',
 ];
@@ -48,6 +48,11 @@ describe('overlayFor', () => {
     expect(o.strong).toEqual([[pose.hip, pose.knee]]);
     expect(o.label.endsWith(' mm')).toBe(true);
     expect(at('b:femur', { units: 'imperial' })!.label.endsWith(' in')).toBe(true);
+  });
+  it('seatpost overlay measures saddle height minus seat tube', () => {
+    const o = at('r:seatpost', { params: { ...DEFAULT_PARAMS, saddleHeight: frame.seatTubeLength + 120 } })!;
+    expect(o.label).toBe('Seatpost showing 120 mm');
+    expect(at('r:seatpost', { params: { ...DEFAULT_PARAMS, saddleHeight: frame.seatTubeLength - 5 } })).toBeNull();
   });
   it('toe clearance needs a toe', () => {
     expect(at('r:toe', { toe: null })).toBeNull();

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { link } from '../lib/link.svelte';
   import { compareSizes } from '../lib/sizeCompare';
   import type { SizeEntry } from '../lib/sizes';
   import { peek } from '../lib/peek.svelte';
@@ -39,7 +40,7 @@
     </thead>
     <tbody>
       {#each cmp.lines as l (l.label)}
-        <tr>
+        <tr use:link={l.link ? { id: l.link, pin: true } : undefined}>
           <th scope="row">{l.label}</th>
           <td class:win={l.better === 0}>{l.values[0]}</td>
           <td class:win={l.better === 1}>{l.values[1]}</td>
@@ -63,6 +64,8 @@
   .pick { min-height: 34px; padding: 0 10px; border-radius: 10px; border: 2px solid transparent; background: var(--surface-2); font-weight: 700; color: var(--ok); }
   .pick.on { border-color: currentColor; background: var(--surface); }
   .pts { font-weight: 600; color: var(--muted); margin-left: 4px; }
+  tr:global(.linked) th, tr:global(.linked) td { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  tr:global([data-link]) { cursor: pointer; }
   .gist { margin-top: 8px; }
   .gist + .gist { margin-top: 4px; }
 </style>

@@ -155,6 +155,11 @@ export function overlayFor(i: OverlayInput): Overlay | null {
         label: `Hoods ${mm(L.hoods.x)} forward, ${mm(L.hoods.y)} up`, at: add(L.hoods, v(0, 90)), dims: [],
         guides: [[bb, v(L.hoods.x, 0)], [v(L.hoods.x, 0), L.hoods]], strong: [], arcs: [], rings: [{ c: L.hoods, r: 30 }],
       };
+    case 'r:seatpost': {
+      const showing = p.saddleHeight - frame.seatTubeLength;
+      if (showing <= 0) return null;
+      return dimO(`Seatpost showing ${mm(showing)}`, dimension(sk.seatCluster, L.seatAxisTop, 90));
+    }
     case 'r:toe': {
       if (!i.toe || !Number.isFinite(i.toeClearance)) return null;
       const t = Math.round(i.toeClearance);

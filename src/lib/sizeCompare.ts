@@ -1,4 +1,5 @@
 import { fmtNum } from '../model/advice';
+import type { LinkId } from './linkIds';
 import type { SizeEntry } from './sizes';
 
 export interface CompareLine {
@@ -7,6 +8,8 @@ export interface CompareLine {
   values: [string, string];
   /** Which side most riders would call the better one for this line, when one is. */
   better: 0 | 1 | null;
+  /** The part of the drawing this line measures, when there is one. */
+  link?: LinkId;
 }
 
 export interface SizeComparison {
@@ -37,10 +40,10 @@ export function compareSizes(small: SizeEntry, large: SizeEntry): SizeComparison
   const fb = b.row.result.facts;
   const up = (e: SizeEntry) => e.frame.maxSpacers - e.row.result.params.spacers;
   const lines: CompareLine[] = [
-    { label: 'Stem', values: [stem(a), stem(b)], better: null },
-    { label: 'Room to lower the bars', values: [mm(pa.spacers), mm(pb.spacers)], better: higher(pa.spacers, pb.spacers) },
-    { label: 'Room to raise the bars', values: [mm(up(a)), mm(up(b))], better: higher(up(a), up(b)) },
-    { label: 'Seatpost showing', values: [mm(fa.seatpost), mm(fb.seatpost)], better: null },
+    { label: 'Stem', values: [stem(a), stem(b)], better: null, link: 'stem' },
+    { label: 'Room to lower the bars', values: [mm(pa.spacers), mm(pb.spacers)], better: higher(pa.spacers, pb.spacers), link: 'spacers' },
+    { label: 'Room to raise the bars', values: [mm(up(a)), mm(up(b))], better: higher(up(a), up(b)), link: 'f:maxSpacers' },
+    { label: 'Seatpost showing', values: [mm(fa.seatpost), mm(fb.seatpost)], better: null, link: 'r:seatpost' },
     {
       label: 'Standover clearance',
       values: [fa.standover < 0 ? 'tight' : mm(fa.standover), fb.standover < 0 ? 'tight' : mm(fb.standover)],
@@ -49,9 +52,9 @@ export function compareSizes(small: SizeEntry, large: SizeEntry): SizeComparison
   ];
   if (Number.isFinite(fa.toeClearance) && Number.isFinite(fb.toeClearance) && (fa.toeClearance < 20 || fb.toeClearance < 20)) {
     const toe = (t: number) => (t < 0 ? `${Math.round(-t)} mm overlap` : `${Math.round(t)} mm clear`);
-    lines.push({ label: 'Toe and front wheel', values: [toe(fa.toeClearance), toe(fb.toeClearance)], better: higher(fa.toeClearance, fb.toeClearance) });
+    lines.push({ label: 'Toe and front wheel', values: [toe(fa.toeClearance), toe(fb.toeClearance)], better: higher(fa.toeClearance, fb.toeClearance), link: 'r:toe' });
   }
-  lines.push({ label: 'Wheelbase', values: [mm(a.frame.wheelbase), mm(b.frame.wheelbase)], better: null });
+  lines.push({ label: 'Wheelbase', values: [mm(a.frame.wheelbase), mm(b.frame.wheelbase)], better: null, link: 'f:wheelbase' });
   const wb = Math.round(b.frame.wheelbase - a.frame.wheelbase);
   const handling = wb >= 5 ? [', quicker steering', ', steadier steering'] : ['', ''];
   return {

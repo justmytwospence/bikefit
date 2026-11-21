@@ -9,4 +9,4 @@ export type BodyLink = 'height' | 'inseam' | 'arm' | 'femur' | 'tibia' | 'torso'
 
 /** Everything in the panel that has a counterpart on the drawing. */
 export type LinkId = SettingLink | `m:${MetricId}` | `f:${FrameLink}` | `c:${PartLink}` | `b:${BodyLink}`
-  | 'r:reach' | 'r:drop' | 'r:toe' | 'r:hoods';
+  | 'r:reach' | 'r:drop' | 'r:toe' | 'r:hoods' | 'r:seatpost';

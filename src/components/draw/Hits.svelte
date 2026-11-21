@@ -24,6 +24,7 @@
         { id: 'f:chainstay', d: line(sk.rearAxle, sk.bb) },
       );
     }
+    if (tab === 'find') out.push({ id: 'f:wheelbase', d: line(sk.rearAxle, sk.frontAxle) });
     if (tab === 'rider') {
       out.push(
         { id: 'b:femur', d: line(pose.hip, pose.knee) },
@@ -34,6 +35,7 @@
       );
     }
     out.push(
+      { id: 'r:seatpost', d: line(sk.seatCluster, layout.seatAxisTop) },
       { id: 'saddleHeight', d: line({ x: layout.saddle.x - 120, y: layout.saddle.y }, layout.nose) },
       { id: 'spacers', d: line(layout.headTop, layout.stemBase) },
       { id: 'stem', d: line(layout.stemBase, layout.clamp) },
