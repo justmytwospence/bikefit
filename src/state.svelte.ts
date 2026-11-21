@@ -59,6 +59,8 @@ export const app: AppData = $state(load());
 export const ui = $state({
   busy: false,
   error: '' as string,
+  /** This browser refused to save (private mode, storage full or blocked). */
+  storageFailed: false,
   /** Which setup the Fit my bike settings change. */
   editing: 'current' as 'current' | 'target',
   /** The three targets worked out from the current setup. */
@@ -96,8 +98,9 @@ ui.editing = sameParams($state.snapshot(app.baseline) as FitParams, $state.snaps
 export function save() {
   try {
     localStorage.setItem(KEY, JSON.stringify($state.snapshot(app)));
+    if (ui.storageFailed) ui.storageFailed = false;
   } catch {
-    /* storage unavailable */
+    if (!ui.storageFailed) ui.storageFailed = true;
   }
 }
 

@@ -128,3 +128,7 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px colo
   box-shadow: var(--shadow); font-size: 14px;
 }
 .crash span { flex: 1 1 240px; }
+.warn {
+  margin: 0; padding: 8px 14px; font-size: 13px; background: color-mix(in srgb, var(--near) 15%, var(--surface));
+  border-bottom: 1px solid var(--line);
+}

@@ -166,6 +166,9 @@
       {/each}
       <SettingsMenu />
     </div>
+    {#if ui.storageFailed}
+      <p class="warn" role="status">This browser is not saving what you enter, so it will be gone when you leave. Export it from the settings menu (gear) to keep it.</p>
+    {/if}
     <div class="body">
       {#if app.tab === 'rider'}<RiderPanel />
       {:else if app.tab === 'mybike'}<MyBikePanel {layout} {evaluation} {whyImpossible} {reaches} />
