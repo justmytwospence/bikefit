@@ -38,6 +38,8 @@ Adopting the first two alone puts saddle heights about 5 cm too low, so they wai
 
 Every angle the app shows is predicted from your measurements; it never sees you. To check the one that matters most, film yourself from the side on a trainer, camera level with your hip and square to the bike, and measure the knee angle with the pedal at the bottom of the stroke in a tool that lets you place the angle by hand, such as Kinovea. Fonda et al. 2014 found 2D video valid for the knee there, reading about 2° less flexion than 3D capture. Automatic pose estimation is looser: Bini et al. 2023 found OpenPose 4 to 8° from marker tracking at the hip and knee. The knee moves about 1° per 2.5 mm of saddle height, so the note under the saddle height slider (the heights that keep the knee in range) is about 24 mm wide.
 
+Saddle moves of 10 mm or more carry a note to make them about 5 mm at a time. That is common fitting practice, not a measured threshold.
+
 ## Styles and size picks
 
 The torso, hip, shoulder and hand-load bands of each style are centred on what the model itself reads for a stock build of the size the manufacturer recommends:

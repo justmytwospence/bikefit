@@ -66,6 +66,7 @@
               onclick={() => keepAsIs(ch.keys)}
             >✕</button>
           </div>
+          {#if ch.note}<p class="muted small step">{ch.note}</p>{/if}
           {#if open === ch.id}
             <div class="knobs">{#each ch.keys as k (k)}<KnobField {k} {whyImpossible} />{/each}</div>
           {/if}
@@ -114,6 +115,7 @@
     flex: none; width: 44px; border: 0; border-radius: 10px; background: var(--surface-2); color: var(--muted);
   }
   .x:hover { color: var(--off); }
+  .step { margin: 4px 12px 2px; }
   .knobs { padding: 6px 4px 2px; }
   .edited { display: flex; gap: 8px; align-items: center; margin: 10px 0 0; }
   .link { border: 0; background: none; padding: 0; color: var(--accent); font-weight: 600; text-decoration: underline; }

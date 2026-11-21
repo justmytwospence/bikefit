@@ -81,12 +81,18 @@ export function buildSummary(p: FitParams, withCleats: boolean): string {
   return `${p.stemLength} mm ${angle} stem · ${p.spacers} mm spacers · ${p.crankLength} mm cranks · ${post}${cleats}`;
 }
 
+/** A saddle move this large, mm, is better made in steps. */
+export const BIG_MOVE = 10;
+const STAGED = 'A big move: make it about 5 mm at a time, a few rides apart.';
+
 export interface Change {
   id: 'saddle' | 'rails' | 'seatpost' | 'spacers' | 'stem' | 'cranks' | 'cleats';
   keys: ParamKey[];
   /** For "Keep the ... as it is". */
   label: string;
   text: string;
+  /** How to make the change, when it needs saying. */
+  note?: string;
 }
 
 /** What to do to get from one setup to another, one entry per part touched. */
@@ -94,10 +100,10 @@ export function changeList(base: FitParams, next: FitParams): Change[] {
   const out: Change[] = [];
   const dh = next.saddleHeight - base.saddleHeight;
   if (Math.abs(dh) >= 0.5)
-    out.push({ id: 'saddle', keys: ['saddleHeight'], label: 'saddle height', text: dh > 0 ? `Raise the saddle ${fmtNum(dh)} mm` : `Lower the saddle ${fmtNum(-dh)} mm` });
+    out.push({ id: 'saddle', keys: ['saddleHeight'], label: 'saddle height', ...(Math.abs(dh) >= BIG_MOVE ? { note: STAGED } : {}), text: dh > 0 ? `Raise the saddle ${fmtNum(dh)} mm` : `Lower the saddle ${fmtNum(-dh)} mm` });
   const dr = next.railOffset - base.railOffset;
   if (Math.abs(dr) >= 0.5)
-    out.push({ id: 'rails', keys: ['railOffset'], label: 'saddle position', text: dr > 0 ? `Slide the saddle forward ${fmtNum(dr)} mm on its rails` : `Slide the saddle back ${fmtNum(-dr)} mm on its rails` });
+    out.push({ id: 'rails', keys: ['railOffset'], label: 'saddle position', ...(Math.abs(dr) >= BIG_MOVE ? { note: STAGED } : {}), text: dr > 0 ? `Slide the saddle forward ${fmtNum(dr)} mm on its rails` : `Slide the saddle back ${fmtNum(-dr)} mm on its rails` });
   if (Math.abs(next.seatpostSetback - base.seatpostSetback) >= 0.5)
     out.push({ id: 'seatpost', keys: ['seatpostSetback'], label: 'seatpost', text: next.seatpostSetback === 0 ? 'Swap to an inline seatpost' : `Swap to a ${fmtNum(next.seatpostSetback)} mm setback seatpost` });
   const ds = next.spacers - base.spacers;

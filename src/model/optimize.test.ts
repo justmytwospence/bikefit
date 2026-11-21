@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
-import { wrenchList } from './advice';
+import { changeList, wrenchList } from './advice';
 import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, type FitProblem } from './optimize';
 import { standoverHeight } from './verdict';
 import { POST_SHOWING } from './limits';
@@ -163,6 +163,12 @@ describe('wrenchList', () => {
       'Raise the saddle 8 mm',
       'Swap the 100 mm −6° stem for a 110 mm −6° stem',
     ]);
+  });
+  it('marks a big saddle move for staging', () => {
+    const staged = 'A big move: make it about 5 mm at a time, a few rides apart.';
+    expect(changeList(DEFAULT_PARAMS, { ...DEFAULT_PARAMS, saddleHeight: 755 })[0].note).toBe(staged);
+    expect(changeList(DEFAULT_PARAMS, { ...DEFAULT_PARAMS, saddleHeight: 743 })[0].note).toBeUndefined();
+    expect(changeList(DEFAULT_PARAMS, { ...DEFAULT_PARAMS, railOffset: -12 })[0].note).toBe(staged);
   });
   it('describes cleat moves', () => {
     expect(wrenchList(DEFAULT_PARAMS, { ...DEFAULT_PARAMS, cleatOffset: 10 })).toEqual([
