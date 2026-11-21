@@ -127,7 +127,7 @@ export function migrate(raw: unknown): AppData | null {
       shoeSize: d.body?.shoeSize ?? base.body.shoeSize,
     },
     components: { ...base.components, ...d.components },
-    options: { ...base.options, ...d.options },
+    options: base.options,
     current,
     baseline,
     pins,

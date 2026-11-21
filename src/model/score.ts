@@ -129,7 +129,7 @@ export interface ScorePart {
  * 100 - score the setup lost in proportion to each term's cost, so the rows add up to what is missing.
  */
 export function scoreBreakdown(
-  ev: Evaluation, targets: PoseTarget[], weights: number[], p: FitParams,
+  ev: Evaluation, targets: PoseTarget[], weights: number[], p: FitParams, crankRef: number,
 ): { score: number; parts: ScorePart[] } {
   const cost = new Map<ScoreTerm, number>();
   const add = (id: ScoreTerm, c: number) => cost.set(id, (cost.get(id) ?? 0) + c);
@@ -143,7 +143,7 @@ export function scoreBreakdown(
   });
   if (short >= 0) add('legShort', 50 + 0.5 * short);
   if (reach) add('overreach', 50);
-  add('parts', partPenalty(p));
+  add('parts', partPenalty(p, crankRef));
   const total = [...cost.values()].reduce((a, b) => a + b, 0);
   const score = fitScore(total);
   const parts = [...cost].filter(([, c]) => c > 0).map(([id, c]) => ({
@@ -152,12 +152,30 @@ export function scoreBreakdown(
   return { score, parts: parts.sort((a, b) => b.cost - a.cost) };
 }
 
-export function partPenalty(p: FitParams): number {
+/** Crank length as a share of inseam: what a stock mid-size build gives (172.5 mm at 84 cm). */
+export const CRANK_SHARE = 0.205;
+/** Cost of a crank 5 mm longer than the proportional length; one 5 mm shorter costs half (Ferrer-Roca et al. 2017: in doubt, the shorter). */
+export const CRANK_WEIGHT = 0.004;
+/** The crank length in proportion to the legs, within what road cranksets are commonly sold in, mm. */
+export const crankFor = (inseam: number): number => Math.min(175, Math.max(150, CRANK_SHARE * inseam));
+
+/** The lengths the targets may choose: the option nearest crankFor and one either side, plus the one in use. */
+export function cranksNear(options: number[], inseam: number, keep?: number): number[] {
+  const ref = crankFor(inseam);
+  const sorted = [...options].sort((a, b) => a - b);
+  let i = 0;
+  sorted.forEach((c, j) => { if (Math.abs(c - ref) < Math.abs(sorted[i] - ref)) i = j; });
+  const out = sorted.slice(Math.max(0, i - 1), i + 2);
+  if (keep !== undefined && !out.includes(keep)) out.push(keep);
+  return out.sort((a, b) => a - b);
+}
+
+export function partPenalty(p: FitParams, crankRef: number): number {
   let c = 0;
   if (p.stemLength > 130 || p.stemLength < 70) c += 0.3;
   if (Math.abs(p.stemAngle) >= 17) c += 0.15;
-  if (p.crankLength === 160) c += 0.1;
-  else if (p.crankLength === 165 || p.crankLength === 175) c += 0.03;
+  const over = p.crankLength - crankRef;
+  c += (over > 0 ? CRANK_WEIGHT : CRANK_WEIGHT / 2) * (over / 5) ** 2;
   c += 0.00002 * (p.stemLength - 100) ** 2;
   c += 0.0004 * (p.cleatOffset - 5) ** 2;
   return c;
@@ -177,7 +195,7 @@ export function buildPenalty(p: FitParams, maxSpacers: number): number {
 export function changePenalty(p: FitParams, base: FitParams): number {
   let c = 0;
   if (p.stemLength !== base.stemLength || p.stemAngle !== base.stemAngle) c += 0.25;
-  if (p.crankLength !== base.crankLength) c += 0.4;
+  if (p.crankLength !== base.crankLength) c += 0.15;
   if (p.seatpostSetback !== base.seatpostSetback) c += 0.25;
   c +=
     0.00002 *

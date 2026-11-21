@@ -7,11 +7,11 @@ import { standoverHeight } from './verdict';
 import { POST_SHOWING } from './limits';
 import { evaluateFit } from './pose';
 import { TEST_BODY, TEST_FRAMES } from './testFrames';
-import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
+import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
 import { makeContext, poseWeights } from './riding';
 import { outside } from './score';
 import { bandsFor, STYLES } from './styles';
-import type { Evaluation, Frame, MetricId, PoseTarget, StyleId } from './types';
+import type { Body, Evaluation, Frame, MetricId, PoseTarget, StyleId } from './types';
 
 const segments = resolveSegments(TEST_BODY);
 const frame = (id: string) => TEST_FRAMES.find((f) => f.id === id)!;
@@ -138,7 +138,7 @@ describe('idealLayout', () => {
     const st = STYLES[id];
     const targets = bandsFor(st, 'medium');
     const ctx = makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort);
-    const ideal = idealLayout(segments, targets, poseWeights(st.defaultHands), ctx, DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths);
+    const ideal = idealLayout(segments, targets, poseWeights(st.defaultHands), ctx, DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths, TEST_BODY.inseam);
     const L = {
       saddle: ideal.saddle, nose: { x: ideal.saddle.x + 150, y: ideal.saddle.y }, hoods: ideal.hoods,
       drops: dropsFromHoods(ideal.hoods, DEFAULT_COMPONENTS), crankLength: ideal.crankLength, cleatOffset: 5,
@@ -164,3 +164,72 @@ describe('wrenchList', () => {
     expect(wrenchList(DEFAULT_PARAMS, { ...DEFAULT_PARAMS })).toEqual(['No changes from your current setup.']);
   });
 });
+
+describe('cranks in proportion to the legs (optimizer)', () => {
+  const rider = (style: StyleId, body: Body) => {
+    const st = STYLES[style];
+    return {
+      segments: resolveSegments(body), inseam: body.inseam, targets: bandsFor(st, body.flexibility, body.height),
+      poseWeights: poseWeights(st.defaultHands), ankling: 'neutral' as const, effort: st.defaultEffort,
+      components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, stock: st.stock,
+    };
+  };
+  const small: Body = { ...TEST_BODY, sex: 'female', height: 1580, inseam: 720, shoeSize: 38 };
+  it('the ideal position of a small rider uses a short crank and an ordinary seat angle', () => {
+    const r = rider('endurance', small);
+    const ideal = idealLayout(r.segments, r.targets, r.poseWeights, makeContext(null, DEFAULT_COMPONENTS, 'neutral', r.effort), DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths, small.inseam);
+    expect(ideal.crankLength).toBe(150);
+    const seatAngle = (Math.atan2(ideal.saddle.y, -ideal.saddle.x) * 180) / Math.PI;
+    expect(seatAngle).toBeGreaterThan(72);
+    expect(seatAngle).toBeLessThan(74.5);
+  });
+  it('the ideal position of the default rider keeps a 172.5 mm crank', () => {
+    const r = rider('endurance', TEST_BODY);
+    const ideal = idealLayout(r.segments, r.targets, r.poseWeights, makeContext(null, DEFAULT_COMPONENTS, 'neutral', r.effort), DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths, TEST_BODY.inseam);
+    expect(ideal.crankLength).toBe(172.5);
+  });
+  it('does not shorten the cranks to make up for a frame that is too tall', () => {
+    const odd: Frame = { ...frame('race-56'), id: 'odd', stack: 650, reach: 340 };
+    const p: FitProblem = { ...rider('race', TEST_BODY), frame: odd, current: DEFAULT_PARAMS, locks: {}, mode: 'shop' };
+    expect([170, 172.5, 175]).toContain(optimizeFit(p).params.crankLength);
+  });
+  it('a small rider fits a small frame once the cranks suit her legs', () => {
+    const domane47: Frame = {
+      id: 'domane-47', name: 'domane 47', stack: 527, reach: 364, seatTubeAngle: 74.6, headTubeAngle: 71, headTubeLength: 110,
+      seatTubeLength: 420, chainstay: 420, wheelbase: 986, bbDrop: 80, maxSpacers: 40, tyreWidth: 32,
+    };
+    const r = rider('endurance', small);
+    const locks = { crankLength: true };
+    const long = compareFrames(r, [domane47], locks)[0].result;
+    const right = compareFrames({ ...r, baseline: { ...DEFAULT_PARAMS, crankLength: 150 } }, [domane47], locks)[0].result;
+    expect(right.params.crankLength).toBe(150);
+    expect(right.score).toBeGreaterThanOrEqual(long.score + 10);
+  });
+});
+
+
+describe('crank swaps on a bike you ride', () => {
+  const tune = (body: Body, f: Frame, setup: Partial<typeof DEFAULT_PARAMS>): FitProblem => {
+    const st = STYLES.endurance;
+    const cur = { ...DEFAULT_PARAMS, ...setup };
+    return {
+      segments: resolveSegments(body), inseam: body.inseam, targets: bandsFor(st, 'medium', body.height), poseWeights: poseWeights(st.defaultHands),
+      ankling: 'neutral', effort: st.defaultEffort, frame: f, components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS,
+      baseline: cur, current: cur, locks: {}, mode: 'tune', stock: st.stock,
+    };
+  };
+  it('suggests shorter cranks to a small rider on long ones', () => {
+    const domane47: Frame = {
+      id: 'domane-47', name: 'domane 47', stack: 527, reach: 364, seatTubeAngle: 74.6, headTubeAngle: 71, headTubeLength: 110,
+      seatTubeLength: 420, chainstay: 420, wheelbase: 986, bbDrop: 80, maxSpacers: 40, tyreWidth: 32,
+    };
+    const body: Body = { ...DEFAULT_BODY, sex: 'female', height: 1580, inseam: 720 };
+    const r = optimizeFit(tune(body, domane47, { saddleHeight: 600, stemLength: 80, crankLength: 170, spacers: 20 }));
+    expect(r.params.crankLength).toBe(150);
+  });
+  it('leaves the cranks of an average rider alone', () => {
+    const r = optimizeFit(tune(DEFAULT_BODY, frame('endurance-56'), { saddleHeight: 705 }));
+    expect(r.params.crankLength).toBe(172.5);
+  });
+});
+

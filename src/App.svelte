@@ -17,7 +17,7 @@
   import { evaluateFit, riderPose } from './model/pose';
   import type { FitParams } from './model/types';
   import { makeContext, poseWeights } from './model/riding';
-  import { fitCost, fitScore, partPenalty, scoreBreakdown } from './model/score';
+  import { crankFor, fitCost, fitScore, partPenalty, scoreBreakdown } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
   import { event } from './lib/analytics';
   import { activeFrame, app, save, setupScore, ui, type Tab } from './state.svelte';
@@ -85,16 +85,17 @@
     untrack(() => (ui.animate = false));
   });
 
+  const crankRef = $derived(crankFor(app.body.inseam));
   const layout = $derived(forwardLayout(frame, app.components, shown.current));
   const evaluation = $derived(evaluateFit(segments, layout, ctx, targets));
   const score = $derived(
-    previewing ? shownBike!.row.result.score : fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current)),
+    previewing ? shownBike!.row.result.score : fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current, crankRef)),
   );
-  const breakdown = $derived(previewing ? null : scoreBreakdown(evaluation, targets, weights, shown.current));
+  const breakdown = $derived(previewing ? null : scoreBreakdown(evaluation, targets, weights, shown.current, crankRef));
   const ideal = $derived(
     idealLayout(
       segments, targets, weights, makeContext(null, app.components, app.body.ankling, effort),
-      app.components, app.options.crankLengths,
+      app.components, app.options.crankLengths, app.body.inseam,
     ),
   );
   /** Why the rider could not ride these settings at all, for Fit my bike's hard stops. */

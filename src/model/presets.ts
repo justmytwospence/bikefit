@@ -18,13 +18,16 @@ export const DEFAULT_COMPONENTS: Components = {
 export const DEFAULT_OPTIONS: PartOptions = {
   stemLengths: [60, 70, 80, 90, 100, 110, 120, 130, 140],
   stemAngles: [-17, -10, -6, 0, 6, 10, 17],
-  crankLengths: [160, 165, 170, 172.5, 175],
+  crankLengths: [150, 155, 160, 165, 170, 172.5, 175],
   seatpostSetbacks: [0, 15, 25],
   saddleHeightRange: [550, 900],
   railRange: [-20, 20],
   cleatRange: [0, 20],
   spacerStep: 5,
 };
+
+/** Crank lengths a rider can enter for the bike they ride; the targets choose from DEFAULT_OPTIONS.crankLengths. */
+export const CRANK_CHOICES = [145, 150, 155, 160, 165, 167.5, 170, 172.5, 175, 177.5, 180];
 
 export const DEFAULT_PARAMS: FitParams = {
   saddleHeight: 735,

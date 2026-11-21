@@ -2,10 +2,13 @@
   import { noseSetback, railForSetback, setbackRange } from '../model/geometry';
   import { IMPOSSIBLE_SHORT, IMPOSSIBLE_TEXT, possibleRange, type Impossible } from '../model/limits';
   import type { FitParams, ParamKey } from '../model/types';
+  import { CRANK_CHOICES } from '../model/presets';
+  import { crankFor } from '../model/score';
   import { clamp } from '../model/vec';
   import { link } from '../lib/link.svelte';
   import { activeFrame, app, setKnob, ui } from '../state.svelte';
   import ChipRow from './ChipRow.svelte';
+  import Info from './Info.svelte';
   import SliderField from './SliderField.svelte';
 
   /** One fit setting's control, on the setup being edited. */
@@ -131,9 +134,9 @@
     </div>
   {:else if k === 'crankLength'}
     <div use:link={'crank'}>
-    <div class="chiphead">Crank length</div>
+    <div class="chiphead">Crank length<Info text="Targets choose among the lengths nearest 20.5% of your inseam ({Math.round(crankFor(app.body.inseam))} mm). Set any length by hand." label="About crank length" /></div>
     <div class="chips">
-    <ChipRow options={o.crankLengths} bind:value={() => ed.crankLength, (v) => setKnob('crankLength', v)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('crankLength', o.crankLengths) : undefined} />
+    <ChipRow options={CRANK_CHOICES} bind:value={() => ed.crankLength, (v) => setKnob('crankLength', v)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('crankLength', CRANK_CHOICES) : undefined} />
     </div>
     </div>
   {/if}

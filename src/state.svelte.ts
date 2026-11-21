@@ -10,7 +10,7 @@ import type { Verdict } from './model/verdict';
 import { forwardLayout } from './model/geometry';
 import { evaluateFit } from './model/pose';
 import { makeContext, poseWeights } from './model/riding';
-import { fitCost, fitScore, partPenalty, type Status } from './model/score';
+import { crankFor, fitCost, fitScore, partPenalty, type Status } from './model/score';
 import { bandsFor, STYLES } from './model/styles';
 import type { LinkId } from './lib/linkIds';
 import { decodeShare, encodeShare } from './lib/share';
@@ -168,7 +168,7 @@ export function setupScore(p: FitParams): number {
   const pr = problem('tune');
   const ctx = makeContext(pr.frame, pr.components, pr.ankling, pr.effort);
   const ev = evaluateFit(pr.segments, forwardLayout(pr.frame, pr.components, p), ctx, pr.targets);
-  return fitScore(fitCost(ev, pr.targets, pr.poseWeights) + partPenalty(p));
+  return fitScore(fitCost(ev, pr.targets, pr.poseWeights) + partPenalty(p, crankFor(pr.inseam)));
 }
 
 /**

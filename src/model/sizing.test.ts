@@ -99,7 +99,7 @@ function rider(style: StyleId, heightMm: number) {
   const segments = resolveSegments({ ...DEFAULT_BODY, height: heightMm, inseam, shoeSizeAuto: true });
   const targets = bandsFor(st, 'medium', heightMm);
   const w = poseWeights(st.defaultHands);
-  const ideal = idealLayout(segments, targets, w, makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort), DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths);
+  const ideal = idealLayout(segments, targets, w, makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort), DEFAULT_COMPONENTS, DEFAULT_OPTIONS.crankLengths, inseam);
   return {
     segments, inseam, targets, poseWeights: w, ankling: 'neutral' as const, effort: st.defaultEffort,
     components: DEFAULT_COMPONENTS, options: DEFAULT_OPTIONS, baseline: DEFAULT_PARAMS, idealHoods: ideal.hoods, stock: st.stock,

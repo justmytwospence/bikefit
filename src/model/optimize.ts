@@ -3,7 +3,7 @@ import { dropsFromHoods, forwardLayout } from './geometry';
 import { limitCost } from './limits';
 import { evaluateFit } from './pose';
 import { makeContext } from './riding';
-import { buildPenalty, changePenalty, COMPROMISE_COST, fitCost, fitScore, frameCost, partPenalty, sizingPenalty } from './score';
+import { buildPenalty, changePenalty, COMPROMISE_COST, crankFor, cranksNear, fitCost, fitScore, frameCost, partPenalty, sizingPenalty } from './score';
 import type {
   Ankling, Components, Effort, Evaluation, FitContext, FitParams, Frame, Layout, ParamKey,
   PartOptions, PoseTarget, Segments, StockCockpit,
@@ -52,7 +52,7 @@ export interface CompareRow {
 function costWith(problem: FitProblem, ctx: FitContext, p: FitParams, steps: number, withToe = false) {
   const layout = forwardLayout(problem.frame, problem.components, p);
   const evaluation = evaluateFit(problem.segments, layout, ctx, problem.targets, steps, withToe);
-  let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p) + buildPenalty(p, problem.frame.maxSpacers)
+  let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p, crankFor(problem.inseam)) + buildPenalty(p, problem.frame.maxSpacers)
     + limitCost(evaluation, p.saddleHeight - problem.frame.seatTubeLength);
   if (problem.mode === 'tune') cost += changePenalty(p, problem.baseline);
   else cost += sizingPenalty(p, problem.frame, layout.hoods, problem.idealHoods);
@@ -66,10 +66,10 @@ export function costOf(problem: FitProblem, p: FitParams, steps = 36): { cost: n
 
 const snap = (x: number, step: number) => Math.round(x / step) * step;
 
-type IdealInput = Pick<FitProblem, 'segments' | 'targets' | 'poseWeights' | 'components' | 'ankling' | 'effort' | 'options' | 'idealHoods'>;
+type IdealInput = Pick<FitProblem, 'segments' | 'inseam' | 'targets' | 'poseWeights' | 'components' | 'ankling' | 'effort' | 'options' | 'idealHoods'>;
 function idealHoodsFor(p: IdealInput): Vec2 {
   return p.idealHoods ?? idealLayout(
-    p.segments, p.targets, p.poseWeights, makeContext(null, p.components, p.ankling, p.effort), p.components, p.options.crankLengths,
+    p.segments, p.targets, p.poseWeights, makeContext(null, p.components, p.ankling, p.effort), p.components, p.options.crankLengths, p.inseam,
   ).hoods;
 }
 
@@ -80,7 +80,7 @@ export function optimizeFit(input: FitProblem): FitResult {
   const pick = <T>(key: ParamKey, list: T[], base: T): T[] => (locks[key] ? [base] : list);
   const stems = pick('stemLength', o.stemLengths, b.stemLength);
   const angles = pick('stemAngle', o.stemAngles, b.stemAngle);
-  const cranks = pick('crankLength', o.crankLengths, b.crankLength);
+  const cranks = pick('crankLength', cranksNear(o.crankLengths, problem.inseam, b.crankLength), b.crankLength);
   const setbacks = pick('seatpostSetback', o.seatpostSetbacks, b.seatpostSetback);
 
   // Continuous variables: saddleHeight, railOffset, spacers, cleatOffset.
@@ -178,15 +178,17 @@ export function idealLayout(
   ctx: FitContext,
   comp: Components,
   crankLengths: number[],
+  inseam: number,
 ): { saddle: Vec2; hoods: Vec2; crankLength: number } {
   const H = segments.stature;
   const s0 = [-0.126 * H, 0.396 * H, 0.322 * H, 0.372 * H];
   let best: { cost: number; x: number[]; crank: number } | null = null;
-  for (const crank of crankLengths) {
+  const crankRef = crankFor(inseam);
+  for (const crank of cranksNear(crankLengths, inseam)) {
     const pen = partPenalty({
       saddleHeight: 0, railOffset: 0, seatpostSetback: 0, spacers: 0, stemLength: 100, stemAngle: 0,
       crankLength: crank, cleatOffset: 5,
-    });
+    }, crankRef);
     const cost = (x: number[]) => {
       const hoods = { x: x[2], y: x[3] };
       const layout: Layout = {

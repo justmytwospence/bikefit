@@ -9,6 +9,7 @@ The model's constants come from published measurements where they exist, not fro
 | Tissue and saddle padding under the sit bones | 20 mm | Sonenblum et al. 2020 (5.6 to 32 mm, seated on foam) | Weak |
 | Sit bones behind the saddle reference point | 40 mm | Assumption | None |
 | Thigh, shank and ankle as fractions of stature | 0.245, 0.246, 0.039 H | Winter (Drillis and Contini); de Leva 1996 agrees | Strong |
+| Crank length | 20.5% of inseam, 150 to 175 mm; the targets choose among the nearest three lengths | The ratio of a stock mid-size build (172.5 mm at an 84 cm inseam). Martin and Spirduso 2001: maximum power varies 4% from 120 to 220 mm cranks. Barratt et al. 2011: no change in joint powers from 150 to 190 mm at an optimised cadence. Ferrer-Roca et al. 2017: 5 mm more adds 1.8 to 3.4° of hip and knee flexion and no efficiency, "the shorter one might be recommended" | Calibrated; the studies only say length matters little |
 | Torso and arm length against leg length | −0.6 mm of torso and +0.34 mm of arm per mm of inseam beyond 0.472 × stature, within ±5% of stature | ANSUR II public data (4,082 men, 1,986 women): acromion height minus trochanterion height, and shoulder-to-grip length, regressed on crotch height and stature | Moderate (R² 0.53 with stature) |
 | Knee extension band | 30 to 40° of flexion (140 to 150° included) | Ferrer-Roca et al. 2012; Millour et al. 2019; Swart and Holliday 2019 | Moderate |
 | Torso, hip, shoulder and hand-load bands | per style | Anchored on stock builds of manufacturer-recommended sizes (below) | Calibrated, not research |
@@ -23,10 +24,12 @@ Known gaps:
 - ANSUR II crotch height is 0.481 of stature, not the 0.47 used to scale the legs.
 - Hand load reads about 10 points above the one measured figure found (about 15% of body weight at 2 W/kg).
 - Size picks are anchored on Specialized's and Trek's charts. Canyon's charts put the same rider about half a size (Ultimate) to a full size (Endurace) smaller on frames of the same dimensions, so the pick can be one size above Canyon's own advice.
-- Riders under about 155 cm and over about 193 cm score lower on every bike: the smallest and largest frames are proportionally too long and too short for them.
+- Riders under about 155 cm still score lower on the smallest frames (72 on a Tarmac 44 and 82 on a Domane 47 at the middle of their chart ranges, against 97 to 98 for mid sizes), and the tallest riders score about 90 on a Domane 62. Before cranks followed leg length the same two small frames scored 55 and 77.
 - The standover estimate reads up to 38 mm high on sloping frames (the Domane), so it only flags a frame below zero estimated clearance and rules one out below −40 mm.
 
 Reaching the pedal: the foot keeps the rider's chosen ankling while it can, and points its toes (the Toes point curve) when the leg would otherwise come up short. The saddle is out of reach only when even that fails, so the limit does not depend on the ankling chosen. For a 175 cm rider with an 81 cm inseam it sits at about 750 mm, 32 mm above 0.883 × inseam.
+
+Cranks: the score charges 0.004 per (5 mm)² a crank is longer than the proportional length and half that when shorter, enough to break ties and no more. The knee and hip angles at the top of the stroke do the rest. Find a bike fits every bike with the crank of your ideal position. On a bike you ride, a crank swap is suggested only when it gains about seven points.
 
 Adopting the first two alone puts saddle heights about 5 cm too low, so they wait for a source that pins down the whole chain. Standover is an estimate from stack and seat tube length. Saddle height from height and inseam is good to about ±15 mm; set it finally by knee angle or feel.
 

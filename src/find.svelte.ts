@@ -10,7 +10,7 @@ import { app, problem, ui, useCompareRow } from './state.svelte';
 
 const snap = <T>(x: T): T => $state.snapshot(x) as T;
 
-/** A new bike is fitted with the parts a shop swaps (stem, seatpost), keeping your cranks. */
+/** A new bike is fitted with the parts a shop swaps (stem, seatpost), and the crank length your legs call for. */
 const findLocks = () => presetLocks('parts');
 
 /** Immutable so Svelte does not deep-proxy thousands of rows; replace it with `with` to update. */
@@ -82,7 +82,7 @@ export async function runCatalogFit() {
   const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = problem('shop');
   const ideal = idealLayout(
     rest.segments, rest.targets, rest.poseWeights,
-    makeContext(null, rest.components, rest.ankling, rest.effort), rest.components, rest.options.crankLengths,
+    makeContext(null, rest.components, rest.ankling, rest.effort), rest.components, rest.options.crankLengths, rest.inseam,
   );
   const jobs = screenCatalog(cat.CATALOG, cat.toFrame, rest.components, ideal.hoods);
   const modelOf: Record<string, string> = {};
@@ -96,7 +96,7 @@ export async function runCatalogFit() {
     if (run === catalogRun && ui.catalog && latest) ui.catalog = ui.catalog.with(latest);
   };
   try {
-    const rows = await runCatalog({ ...rest, idealHoods: ideal.hoods }, jobs, (r, done) => {
+    const rows = await runCatalog({ ...rest, baseline: { ...rest.baseline, crankLength: ideal.crankLength }, idealHoods: ideal.hoods }, jobs, (r, done) => {
       latest = { rows: r, done };
       if (!timer) timer = setTimeout(flush, 250);
     }, findLocks(), ideal.hoods);

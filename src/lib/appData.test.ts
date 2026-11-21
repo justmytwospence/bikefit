@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { defaults, migrate } from './appData';
 import { presetLocks } from './knobs';
+import { DEFAULT_OPTIONS } from '../model/presets';
 
 describe('migrate', () => {
   it('upgrades v1 data', () => {
@@ -154,5 +155,12 @@ describe('detail', () => {
     const m = migrate(d)!;
     expect(m.detail).toEqual({ bikeFull: false, results: 1 });
     expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false });
+  });
+});
+
+describe('saved part options', () => {
+  it('are replaced by the current ones', () => {
+    const old: any = { ...defaults(), options: { ...DEFAULT_OPTIONS, crankLengths: [160, 165, 170, 172.5, 175] } };
+    expect(migrate(old)!.options).toEqual(DEFAULT_OPTIONS);
   });
 });
