@@ -17,6 +17,7 @@
   import { evaluateFit, riderPose } from './model/pose';
   import type { FitParams } from './model/types';
   import { makeContext, poseWeights } from './model/riding';
+  import { TOE_OVERLAP_FLAG } from './model/verdict';
   import { crankFor, fitCost, fitScore, partPenalty, scoreBreakdown } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
   import { event } from './lib/analytics';
@@ -129,7 +130,7 @@
   );
   const toeTip = $derived(
     Number.isFinite(evaluation.toeClearance)
-      && (linked === 'r:toe' || ((resultsLevel >= 2 || evaluation.toeClearance < 0) && evaluation.toeClearance < 10))
+      && (linked === 'r:toe' || ((resultsLevel >= 2 || evaluation.toeClearance < -TOE_OVERLAP_FLAG) && evaluation.toeClearance < 10))
       ? riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, 0).toe
       : null,
   );

@@ -2,6 +2,7 @@
   import { link } from '../lib/link.svelte';
   import type { Level } from '../lib/appData';
   import { metricCost, status } from '../model/score';
+  import { TOE_OVERLAP_FLAG } from '../model/verdict';
   import { ui } from '../state.svelte';
   import { METRIC_LABELS, METRIC_ORDER, SIMPLE_METRICS } from '../model/styles';
   import type { Band, MetricId, PoseEval, PoseTarget } from '../model/types';
@@ -36,9 +37,9 @@
   const overextended = $derived(poses.some((p) => p.overextended));
   const shortfall = $derived(Math.max(...poses.map((p) => p.legShortfall)));
 
-  /** Toe and front wheel: a card like the angles, overlap red, under 10 mm of room amber. */
+  /** Toe and front wheel: amber under 10 mm of room and for the overlap most road bikes have, red past TOE_OVERLAP_FLAG. */
   const toe = $derived(Number.isFinite(toeClearance) ? Math.round(toeClearance) : null);
-  const toeSt = $derived(toe === null ? 'info' : toe < 0 ? 'off' : toe < 10 ? 'near' : 'ok');
+  const toeSt = $derived(toe === null ? 'info' : toe < -TOE_OVERLAP_FLAG ? 'off' : toe < 10 ? 'near' : 'ok');
   const TOE_LO = -40;
   const TOE_HI = 80;
   const toePos = (v: number) => Math.max(0, Math.min(100, ((v - TOE_LO) / (TOE_HI - TOE_LO)) * 100));
@@ -88,7 +89,7 @@
   {/each}
   <div
     class="card" class:dim={!!statusFocus && toeSt !== statusFocus} role="button" tabindex="0" use:link={{ id: 'r:toe', pin: true }}
-    title="Toe and front wheel at the closest point of the pedal stroke, with the bars straight"
+    title="Toe and front wheel at the closest point of the pedal stroke, with the bars straight. Some overlap is normal on road bikes and only matters in slow, tight turns."
   >
     <div class="name">Toe</div>
     <div class="nums"><div class="num">{toe === null ? '–' : Math.abs(toe)}<span>mm</span></div></div>

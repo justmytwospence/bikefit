@@ -6,6 +6,7 @@
   import { frameSkeleton } from '../model/geometry';
   import type { RiderPose } from '../model/pose';
   import { outside, status } from '../model/score';
+  import { TOE_OVERLAP_FLAG } from '../model/verdict';
   import type {
     Components, FitParams, Frame, Layout, MetricId, PartOptions, PoseEval, PoseTarget, Segments,
   } from '../model/types';
@@ -233,7 +234,7 @@
       {/each}
 
       {#if toeTip && (toeClearance < 10 || f === 'r:toe')}
-        <circle cx={toeTip.x} cy={toeTip.y} r="26" stroke={toeClearance < 0 ? 'var(--off)' : 'var(--near)'} stroke-width="8" />
+        <circle cx={toeTip.x} cy={toeTip.y} r="26" stroke={toeClearance < -TOE_OVERLAP_FLAG ? 'var(--off)' : 'var(--near)'} stroke-width="8" />
       {/if}
       {#if level >= 3}
         <line x1={poseEval.comX} y1={groundY} x2={poseEval.comX} y2={pose.hip.y} stroke="var(--accent)" stroke-width="5" stroke-dasharray="14 10" />
