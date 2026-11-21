@@ -15,7 +15,7 @@ Four concepts are kept separate:
 
 The catalog (`src/data/frames/`, one JSON file per brand, each model with its source URL and a web.archive.org snapshot) holds manufacturer geometry for drop-bar bikes from 2018 on.
 
-The settings menu (gear at the end of the tab row) exports and imports everything as `bikefit.json`, and copies a link carrying your body, setup and current frame. Opening a link asks before replacing what this browser has saved; your measurements and bikes never leave the browser otherwise. Anonymous, cookie-free usage counts go to Vercel Web Analytics and Speed Insights (`src/lib/analytics.ts` lists every event).
+The settings menu (gear at the end of the tab row) exports and imports everything as `bikefit.json`, and copies a link carrying your body, setup and current frame. Its About section has the feedback address and the issue tracker. Opening a link asks before replacing what this browser has saved; your measurements and bikes never leave the browser otherwise. Anonymous, cookie-free usage counts go to Vercel Web Analytics and Speed Insights (`src/lib/analytics.ts` lists every event).
 
 ## Three questions
 

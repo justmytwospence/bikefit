@@ -1,5 +1,6 @@
 <script lang="ts">
   import { event } from '../lib/analytics';
+  import { FEEDBACK_EMAIL, feedbackMailto, ISSUES_URL } from '../lib/feedback';
   import type { Units } from '../lib/units';
   import { app, exportJson, importJson, shareUrl } from '../state.svelte';
   import Segmented from './Segmented.svelte';
@@ -79,7 +80,8 @@
       <p class="muted small">A starting point, not a substitute for a professional fit. Your measurements and bikes stay in this browser. Anonymous, cookie-free usage counts (which buttons, which catalog bikes and searches, never your numbers) go to Vercel Analytics.</p>
       <p class="small">
         <a href="https://github.com/justmytwospence/bikefit/blob/main/docs/model.md" target="_blank" rel="noopener" onclick={() => event('About link', { link: 'model' })}>How the numbers are worked out</a> ·
-        <a href="https://github.com/justmytwospence/bikefit/issues" target="_blank" rel="noopener" onclick={() => event('About link', { link: 'issues' })}>Report a problem</a>
+        Feedback: <a href={feedbackMailto()} onclick={() => event('About link', { link: 'email' })}>{FEEDBACK_EMAIL}</a> ·
+        <a href={ISSUES_URL} target="_blank" rel="noopener" onclick={() => event('About link', { link: 'issues' })}>Report a problem on GitHub</a>
       </p>
     </div>
   {/if}
