@@ -91,6 +91,12 @@
     />
   </div>
   <p class="muted small">Inseam: barefoot, floor to crotch with a book pressed up firmly; 3 to 5 cm more than trouser inseam.</p>
+  {#if app.body.height < 1550 || app.body.height > 1930}
+    <p class="small edge">
+      Below about 155 cm or above about 193 cm, every bike scores lower: the smallest and largest frames are
+      made for riders nearer the middle. Compare bikes with each other rather than reading the score on its own.
+    </p>
+  {/if}
 
   <div class="shoe" use:link={'b:shoe'}>
     <div class="lrow">
@@ -181,5 +187,6 @@
   .sec summary b::after { content: ' ▾'; color: var(--muted); }
   .sec[open] summary b::after { content: ' ▴'; }
   .sec[open] summary { margin-bottom: 8px; }
+  .edge { margin-top: -4px; padding: 8px 10px; border-radius: 10px; background: color-mix(in srgb, var(--near) 15%, var(--surface)); }
   .intro ol { margin: 6px 0 10px; padding-left: 20px; }
 </style>
