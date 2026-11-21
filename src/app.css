@@ -119,7 +119,14 @@ input[type="range"]:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 4px colo
   * { transition: none !important; animation-duration: 0.01ms !important; }
 }
 /* A number in the panel while the drawing shows it. */
-.linked { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 10px; }
+[data-link] { transition: box-shadow 0.15s; }
+.linked {
+  --tint: color-mix(in srgb, var(--accent) 7%, transparent);
+  /* An overlay, so cards keep their own background under the tint. */
+  background-image: linear-gradient(var(--tint), var(--tint));
+  box-shadow: 0 0 0 4px var(--tint);
+  border-radius: 8px;
+}
 
 .crash {
   position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom)); z-index: 1000;
