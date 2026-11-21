@@ -31,6 +31,8 @@ Pointing at a choice previews it on the drawing without making it: a target on t
 
 In Find a bike, the lines of a between-sizes comparison are linked too: point at the stem, spacers, seatpost, toe or wheelbase line and the drawing measures it on the size shown, with the other size's measure muted behind it. Pointing at the score ring lists what costs points (each line is linked to its angle), and the counts in the drawing's legend highlight the angles in range, just outside or outside.
 
+On Fit my bike you can also drag the saddle (height and setback) or the bars (spacers and stem length, in the steps a shop sells) on the drawing; a target stops where your body could not ride it, as the sliders do. Dragging the pedal turns the cranks on any tab, and Play carries on from there.
+
 Frame geometry shows stack and reach until you ask for all measurements.
 
 ## What is modelled

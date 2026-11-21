@@ -31,6 +31,8 @@
 
   // The targets follow your current setup: work them out again shortly after it (or anything they depend on) changes.
   $effect(() => {
+    // Not while a part is being dragged on the drawing: the targets are worked out once it lands.
+    if (ui.dragging) return;
     const k = ladderKey();
     if (ui.ladder?.key === k) return;
     const t = setTimeout(refreshLadder, 400);
@@ -49,6 +51,7 @@
   <BikePicker />
   <h2>Setup</h2>
   <LadderSwitch />
+  <p class="muted small drag">Drag the saddle or the bars on the drawing to move them.</p>
 
   {#snippet groups()}
     {#each GROUPS as g (g.title)}

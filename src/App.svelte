@@ -118,7 +118,7 @@
       : linked === 'm:kneeTop' ? evaluation.poses[pi].kneeTopCrank
         : linked === 'm:kops' || linked === 'r:toe' ? 0 : null,
   );
-  const crankDeg = $derived(ui.playing ? ui.crank : (focusCrank ?? evaluation.peakKneeCrank));
+  const crankDeg = $derived(ui.playing ? ui.crank : (focusCrank ?? ui.manualCrank ?? evaluation.peakKneeCrank));
   const pose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg));
   const farPose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg + 180));
   const ghostPose = $derived(
@@ -172,6 +172,7 @@
         target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank} units={app.units}
+        editable={app.tab === 'mybike' && !previewing && !peekSetup} {whyImpossible} options={app.options}
       />
       <ScoreCard {score} {styleId} {breakdown} previewStyle={styleId !== app.styleId} from={otherShown ? setupScore(otherShown) : null} />
     </div>

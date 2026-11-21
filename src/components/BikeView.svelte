@@ -7,13 +7,15 @@
   import type { RiderPose } from '../model/pose';
   import { outside, status } from '../model/score';
   import type {
-    Components, FitParams, Frame, Layout, MetricId, PoseEval, PoseTarget, Segments,
+    Components, FitParams, Frame, Layout, MetricId, PartOptions, PoseEval, PoseTarget, Segments,
   } from '../model/types';
+  import type { Impossible } from '../model/limits';
   import { deg, type Vec2 } from '../model/vec';
   import { app, ui } from '../state.svelte';
   import { overlayFor } from '../draw/overlay';
   import { focus } from '../lib/link.svelte';
   import type { Units } from '../lib/units';
+  import Handles from './draw/Handles.svelte';
   import Hits from './draw/Hits.svelte';
   import Arm from './draw/Arm.svelte';
   import Bike from './draw/Bike.svelte';
@@ -26,7 +28,7 @@
 
   let {
     frame, components, layout, pose, farPose, ghostPose, ghostBike = null, ideal, target, poseEval, level, height, seg, params,
-    toeTip, toeClearance, peakCrank, units,
+    toeTip, toeClearance, peakCrank, units, editable, whyImpossible, options,
   }: {
     frame: Frame;
     components: Components;
@@ -47,6 +49,10 @@
     toeClearance: number;
     peakCrank: number;
     units: Units;
+    /** Whether the saddle and bars can be dragged. */
+    editable: boolean;
+    whyImpossible: (p: FitParams) => Impossible | null;
+    options: PartOptions;
   } = $props();
 
   /** The linked number the drawing shows, and the angle it names, if any. */
@@ -107,7 +113,7 @@
       { id: 'shoulder', c: p.shoulder, a: angleOf(p.shoulder, p.hip), b: angleOf(p.shoulder, p.elbow), r: 70, value: p.shoulderAngle },
       { id: 'elbow', c: p.elbow, a: angleOf(p.elbow, p.shoulder), b: angleOf(p.elbow, p.hand), r: 65, value: p.elbowAngle },
       { id: 'torso', c: p.hip, a: 0, b: angleOf(p.hip, p.shoulder), r: 220, value: p.torsoAngle },
-    ] as typeof defs).filter((d) => fm === d.id || ((d.id !== 'hip' || ui.playing) && (level >= 2 || d.id === 'knee' || d.id === 'torso' || d.id === 'hip')));
+    ] as typeof defs).filter((d) => fm === d.id || ((d.id !== 'hip' || ui.playing || ui.manualCrank !== null) && (level >= 2 || d.id === 'knee' || d.id === 'torso' || d.id === 'hip')));
     const placed: Obstacle[] = [];
     const clr = fs * 1.0;
     return defs.map((d) => {
@@ -125,13 +131,16 @@
       return {
         ...d, ...arc, lbl, on: fm === d.id,
         st: target.bands[d.id] ? status(poseEval.metrics[d.id], target.bands[d.id]!) : 'info',
-        shownValue: ui.playing ? d.value : poseEval.metrics[d.id],
+        shownValue: ui.playing || ui.manualCrank !== null ? d.value : poseEval.metrics[d.id],
       };
     });
   });
 
   function togglePlay() {
-    if (!ui.playing) ui.crank = peakCrank;
+    if (!ui.playing) {
+      ui.crank = ui.manualCrank ?? peakCrank;
+      ui.manualCrank = null;
+    }
     ui.playing = !ui.playing;
   }
 
@@ -250,6 +259,7 @@
       <Measurements o={ghostOverlay} {fs} {vb} ghost />
       <Measurements o={overlay} {fs} {vb} />
       <Hits {layout} {pose} joints={joints.map((j) => ({ id: j.id, path: j.path }))} {sk} tab={app.tab} />
+      <Handles {layout} {pose} {frame} {components} {options} {editable} {whyImpossible} />
     </g>
   </svg>
 
