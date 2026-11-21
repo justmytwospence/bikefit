@@ -116,6 +116,42 @@ export function fitCost(ev: Evaluation, targets: PoseTarget[], weights: number[]
   return c + (short >= 0 ? 50 + 0.5 * short : 0) + (reach ? 50 : 0);
 }
 
+export type ScoreTerm = MetricId | 'legShort' | 'overreach' | 'parts';
+export interface ScorePart {
+  id: ScoreTerm;
+  cost: number;
+  /** This term's share of the points the score is short of 100. */
+  points: number;
+}
+
+/**
+ * The score's cost split by what causes it, the way `fitCost` plus `partPenalty` add it up. Points share the
+ * 100 - score the setup lost in proportion to each term's cost, so the rows add up to what is missing.
+ */
+export function scoreBreakdown(
+  ev: Evaluation, targets: PoseTarget[], weights: number[], p: FitParams,
+): { score: number; parts: ScorePart[] } {
+  const cost = new Map<ScoreTerm, number>();
+  const add = (id: ScoreTerm, c: number) => cost.set(id, (cost.get(id) ?? 0) + c);
+  let short = -1;
+  let reach = false;
+  targets.forEach((t, i) => {
+    const pe = ev.poses[i];
+    for (const k of Object.keys(t.bands) as MetricId[]) add(k, weights[i] * metricCost(pe.metrics[k], t.bands[k]!));
+    if (pe.overextended) short = Math.max(short, pe.legShortfall);
+    if (pe.overreach) reach = true;
+  });
+  if (short >= 0) add('legShort', 50 + 0.5 * short);
+  if (reach) add('overreach', 50);
+  add('parts', partPenalty(p));
+  const total = [...cost.values()].reduce((a, b) => a + b, 0);
+  const score = fitScore(total);
+  const parts = [...cost].filter(([, c]) => c > 0).map(([id, c]) => ({
+    id, cost: c, points: total > 0 ? (c / total) * (100 - score) : 0,
+  }));
+  return { score, parts: parts.sort((a, b) => b.cost - a.cost) };
+}
+
 export function partPenalty(p: FitParams): number {
   let c = 0;
   if (p.stemLength > 130 || p.stemLength < 70) c += 0.3;

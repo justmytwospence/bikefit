@@ -17,7 +17,7 @@
   import { evaluateFit, riderPose } from './model/pose';
   import type { FitParams } from './model/types';
   import { makeContext, poseWeights } from './model/riding';
-  import { fitCost, fitScore, partPenalty } from './model/score';
+  import { fitCost, fitScore, partPenalty, scoreBreakdown } from './model/score';
   import { bandsFor, STYLES } from './model/styles';
   import { event } from './lib/analytics';
   import { activeFrame, app, save, setupScore, ui, type Tab } from './state.svelte';
@@ -90,6 +90,7 @@
   const score = $derived(
     previewing ? shownBike!.row.result.score : fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current)),
   );
+  const breakdown = $derived(previewing ? null : scoreBreakdown(evaluation, targets, weights, shown.current));
   const ideal = $derived(
     idealLayout(
       segments, targets, weights, makeContext(null, app.components, app.body.ankling, effort),
@@ -172,7 +173,7 @@
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank} units={app.units}
       />
-      <ScoreCard {score} {styleId} previewStyle={styleId !== app.styleId} from={otherShown ? setupScore(otherShown) : null} />
+      <ScoreCard {score} {styleId} {breakdown} previewStyle={styleId !== app.styleId} from={otherShown ? setupScore(otherShown) : null} />
     </div>
     <MetricStrip poses={evaluation.poses} {targets} level={resultsLevel} />
   </section>

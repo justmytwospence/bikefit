@@ -1,6 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { fitScore, metricCost, status } from './score';
-import { STYLES } from './styles';
+import { forwardLayout } from './geometry';
+import { evaluateFit } from './pose';
+import { DEFAULT_COMPONENTS, DEFAULT_PARAMS } from './presets';
+import { makeContext, poseWeights } from './riding';
+import { fitCost, fitScore, metricCost, partPenalty, scoreBreakdown, status } from './score';
+import { TEST_BODY, TEST_FRAMES } from './testFrames';
+import { resolveSegments } from './body';
+import { bandsFor, STYLES } from './styles';
 import type { Band } from './types';
 
 const band: Band = { min: 40, max: 50, weight: 1, scale: 5, center: 0.05, unit: '°' };
@@ -32,5 +38,27 @@ describe('score', () => {
   it('fitScore(0) is 100', () => expect(fitScore(0)).toBe(100));
   it('elbow is informational in every style', () => {
     for (const s of Object.values(STYLES)) for (const p of s.poses) expect(p.bands.elbow!.weight).toBe(0);
+  });
+});
+
+describe('scoreBreakdown', () => {
+  const frame = TEST_FRAMES.find((f) => f.id === 'endurance-56')!;
+  const seg = resolveSegments(TEST_BODY);
+  const targets = bandsFor(STYLES.endurance, 'medium');
+  const weights = poseWeights('hoods');
+  const run = (p = DEFAULT_PARAMS) => {
+    const ev = evaluateFit(seg, forwardLayout(frame, DEFAULT_COMPONENTS, p), makeContext(frame, DEFAULT_COMPONENTS, 'neutral', 'easy'), targets);
+    return { ev, b: scoreBreakdown(ev, targets, weights, p) };
+  };
+  it('adds up to fitCost plus partPenalty', () => {
+    const { ev, b } = run();
+    const total = fitCost(ev, targets, weights) + partPenalty(DEFAULT_PARAMS);
+    expect(b.parts.reduce((a, x) => a + x.cost, 0)).toBeCloseTo(total, 9);
+    expect(b.score).toBe(fitScore(total));
+    expect(b.parts.reduce((a, x) => a + x.points, 0)).toBeCloseTo(100 - b.score, 9);
+  });
+  it('an unreachable saddle shows up as legShort', () => {
+    const { b } = run({ ...DEFAULT_PARAMS, saddleHeight: 900 });
+    expect(b.parts[0].id).toBe('legShort');
   });
 });
