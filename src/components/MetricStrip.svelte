@@ -7,7 +7,11 @@
   import type { Band, MetricId, PoseEval, PoseTarget } from '../model/types';
 
   /** Both hand positions, hoods first; the score already weighs them both. */
-  let { poses, targets, level }: { poses: PoseEval[]; targets: PoseTarget[]; level: Level } = $props();
+  let { poses, targets, level, toeClearance }: {
+    poses: PoseEval[]; targets: PoseTarget[]; level: Level;
+    /** Gap between the toe and the front tyre at its closest, mm; below zero they overlap. */
+    toeClearance: number;
+  } = $props();
 
   /** Leg and saddle metrics barely move between hoods and drops, so they show the hoods value only. */
   const LEG: MetricId[] = ['knee', 'kneeTop', 'seatAngle', 'kops'];
@@ -32,6 +36,12 @@
   const overextended = $derived(poses.some((p) => p.overextended));
   const shortfall = $derived(Math.max(...poses.map((p) => p.legShortfall)));
 
+  /** Toe and front wheel: a card like the angles, overlap red, under 10 mm of room amber. */
+  const toe = $derived(Number.isFinite(toeClearance) ? Math.round(toeClearance) : null);
+  const toeSt = $derived(toe === null ? 'info' : toe < 0 ? 'off' : toe < 10 ? 'near' : 'ok');
+  const TOE_LO = -40;
+  const TOE_HI = 80;
+  const toePos = (v: number) => Math.max(0, Math.min(100, ((v - TOE_LO) / (TOE_HI - TOE_LO)) * 100));
   const pos = (v: number, b: Band) => {
     const lo = b.min - 3 * b.scale;
     const hi = b.max + 3 * b.scale;
@@ -71,11 +81,23 @@
       <!-- The warning takes the range line's place, so the strip (and the drawing above it) never resizes. -->
       {#if k === 'knee' && overextended}
         {@const n = Math.max(1, Math.round(shortfall))}
-        <div class="range warn" title="Can't reach the pedal: {n} mm short">Leg {n} mm short</div>
+        <div class="range alert" title="Can't reach the pedal: {n} mm short">Leg {n} mm short</div>
       {:else if status(poses[0].metrics[k], r[0][1]) !== 'info'}<div class="range">{range(r)}</div>{/if}
       {#if level === 3}<div class="cost">cost {r.map(([i, b]) => metricCost(poses[i].metrics[k], b).toFixed(2)).join(' / ')}</div>{/if}
     </div>
   {/each}
+  <div
+    class="card" class:dim={!!statusFocus && toeSt !== statusFocus} role="button" tabindex="0" use:link={{ id: 'r:toe', pin: true }}
+    title="Toe and front wheel at the closest point of the pedal stroke, with the bars straight"
+  >
+    <div class="name">Toe</div>
+    <div class="nums"><div class="num">{toe === null ? '–' : Math.abs(toe)}<span>mm</span></div></div>
+    <div class="bar">
+      <div class="band" style="left:{toePos(0)}%; width:{100 - toePos(0)}%"></div>
+      {#if toe !== null}<div class="dot" style="left:{toePos(toe)}%; background:var(--{toeSt})"></div>{/if}
+    </div>
+    <div class="range" class:alert={toeSt === 'off'}>{toe === null ? 'clear' : toe < 0 ? 'overlap' : 'clear'}</div>
+  </div>
 </div>
 
 <style>
@@ -102,7 +124,7 @@
   .bar.thin .band { border-radius: 3px; }
   .bar.thin .dot { width: 6px; height: 6px; margin-left: -3px; }
   .range { font-size: 11px; color: var(--muted); margin-top: 3px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .range.warn { color: var(--off); font-weight: 600; }
+  .range.alert { color: var(--off); font-weight: 600; }
   .cost { font-size: 11px; color: var(--muted); margin-top: 3px; }
   @media (min-width: 900px) {
     .strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(78px, 1fr)); overflow: visible; padding: 10px 16px; }

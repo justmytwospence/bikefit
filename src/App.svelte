@@ -176,7 +176,7 @@
       />
       <ScoreCard {score} {styleId} {breakdown} previewStyle={styleId !== app.styleId} from={otherShown ? setupScore(otherShown) : null} />
     </div>
-    <MetricStrip poses={evaluation.poses} {targets} level={resultsLevel} />
+    <MetricStrip poses={evaluation.poses} {targets} level={resultsLevel} toeClearance={evaluation.toeClearance} />
   </section>
 
   <aside class="panel">

@@ -282,11 +282,6 @@
     {#if ghostPose}<span><i class="c"></i> current setup</span>{/if}
     {#each moved as m (m.key)}<span class="mv">{m.label}</span>{/each}
     {#if ghostBike && !ghostBike.partsOnly}<span><i class="o"></i> {ghostBike.label}</span>{/if}
-    {#if (level >= 2 || toeClearance < 0) && Number.isFinite(toeClearance) && toeClearance < 10}
-      <span class="warn" class:bad={toeClearance < 0}>
-        {toeClearance < 0 ? 'Toe overlap ' + Math.round(-toeClearance) : 'Toe clearance ' + Math.round(toeClearance)} mm
-      </span>
-    {/if}
   </div>
   <!-- Right-anchored and reversed, View first at the right edge. -->
   <div class="viewctl">
@@ -321,8 +316,6 @@
   .st.on i { box-shadow: 0 0 0 2px var(--surface), 0 0 0 3.5px var(--c); }
   .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .mv { color: var(--accent); font-weight: 600; }
-  .warn { color: var(--near); font-weight: 600; }
-  .warn.bad { color: var(--off); }
   .viewctl { position: absolute; top: 8px; right: 10px; display: flex; flex-direction: row-reverse; gap: 6px; }
   /* Phones: the pills get their own row above the drawing instead of covering it. */
   @media (max-width: 479px) {
