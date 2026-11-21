@@ -3,6 +3,7 @@ import { runOptimize } from './lib/optimizeClient';
 import { KNOB_ORDER } from './lib/knobs';
 import { buildLadder, sameParams, STEPS, stepLocks, type Ladder } from './lib/ladder';
 import { defaults, migrate, type AppData } from './lib/appData';
+import { kneeRange } from './lib/kneeRange';
 import { bodyMismatch, type Mismatch } from './lib/mismatch';
 import { resolveSegments } from './model/body';
 import type { CompareRow, FitProblem } from './model/optimize';
@@ -269,6 +270,12 @@ export function release(k: ParamKey) {
   event('Change restored', { setting: k });
   app.pins[k] = false;
   void refreshLadder();
+}
+
+/** The saddle heights that keep the knee in range with the rest of this setup. */
+export function kneeRangeFor(p: FitParams): [number, number] | null {
+  const pr = problem('tune');
+  return kneeRange(pr, p, pr.options.saddleHeightRange);
 }
 
 /** Why the current setup and the body measurements cannot both be right, if they cannot. */

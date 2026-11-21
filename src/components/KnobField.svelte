@@ -6,7 +6,7 @@
   import { crankFor } from '../model/score';
   import { clamp } from '../model/vec';
   import { link } from '../lib/link.svelte';
-  import { activeFrame, app, setKnob, ui } from '../state.svelte';
+  import { activeFrame, app, kneeRangeFor, setKnob, ui } from '../state.svelte';
   import ChipRow from './ChipRow.svelte';
   import Info from './Info.svelte';
   import SliderField from './SliderField.svelte';
@@ -66,6 +66,7 @@
   function setSetback(v: number) {
     setKnob('railOffset', clamp(railForSetback(frame, app.components, cur, v), o.railRange[0], o.railRange[1]));
   }
+  const kneeOk = $derived(k === 'saddleHeight' ? kneeRangeFor(cur) : null);
   const setbackLabel = (n: number) => (n === 0 ? 'Inline' : n + ' mm');
 </script>
 
@@ -75,7 +76,9 @@
       label="Saddle height" min={o.saddleHeightRange[0]} max={o.saddleHeightRange[1]} step={0.5}
       bind:value={() => ed.saddleHeight, (v) => setKnob('saddleHeight', v)}
       limit={stops ? [saddleLim.lo, saddleLim.hi] : undefined} stop={stops ? stopText(saddleLim, cur.saddleHeight) : undefined}
-      delta={isTarget ? c.saddleHeight - b.saddleHeight : 0} hint="BB centre to saddle top, along the seat tube"
+      delta={isTarget ? c.saddleHeight - b.saddleHeight : 0}
+      note={kneeOk ? `Knee in range: ${kneeOk[0]}–${kneeOk[1]} mm` : undefined}
+      hint="BB centre to saddle top, along the seat tube. The model is good to about ±15 mm: fine-tune by feel, or check your knee angle on a side-on video."
     />
     </div>
   {:else if k === 'railOffset'}

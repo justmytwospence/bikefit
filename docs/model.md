@@ -34,6 +34,10 @@ Cranks: the score charges 0.004 per (5 mm)² a crank is longer than the proporti
 
 Adopting the first two alone puts saddle heights about 5 cm too low, so they wait for a source that pins down the whole chain. Standover is an estimate from stack and seat tube length. Saddle height from height and inseam is good to about ±15 mm; set it finally by knee angle or feel.
 
+## Checking it on video
+
+Every angle the app shows is predicted from your measurements; it never sees you. To check the one that matters most, film yourself from the side on a trainer, camera level with your hip and square to the bike, and measure the knee angle with the pedal at the bottom of the stroke in a tool that lets you place the angle by hand, such as Kinovea. Fonda et al. 2014 found 2D video valid for the knee there, reading about 2° less flexion than 3D capture. Automatic pose estimation is looser: Bini et al. 2023 found OpenPose 4 to 8° from marker tracking at the hip and knee. The knee moves about 1° per 2.5 mm of saddle height, so the note under the saddle height slider (the heights that keep the knee in range) is about 24 mm wide.
+
 ## Styles and size picks
 
 The torso, hip, shoulder and hand-load bands of each style are centred on what the model itself reads for a stock build of the size the manufacturer recommends:

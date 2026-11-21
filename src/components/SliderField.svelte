@@ -2,7 +2,7 @@
   import Info from './Info.svelte';
   let {
     label, value = $bindable(), min, max, step, unit = 'mm', delta = 0, hint, onedit,
-    limit, stop,
+    limit, stop, note,
   }: {
     label: string;
     value: number;
@@ -19,6 +19,8 @@
     limit?: [number, number];
     /** Says why the thumb stopped, shown while it sits against a limit. */
     stop?: string;
+    /** A quiet line shown where the stop message goes, when nothing stopped the thumb. */
+    note?: string;
   } = $props();
   const at = (v: number) => Math.max(0, Math.min(100, ((v - min) / (max - min)) * 100));
   const pct = $derived(at(value));
@@ -49,7 +51,7 @@
     class:limited={!!limit && (lo > 0 || hi < 100)} oninput={input}
   />
   <!-- Always one line, so a stop message never pushes the next control down. -->
-  <div class="msg" role={stop ? 'status' : undefined} title={stop}>{stop ?? ''}</div>
+  <div class="msg" class:note={!stop && !!note} role={stop ? 'status' : undefined} title={stop ?? note}>{stop ?? note ?? ''}</div>
 </div>
 
 <style>
@@ -63,4 +65,5 @@
     font-size: 12px; color: var(--off); font-weight: 600; margin-top: -6px; min-height: 1.4em; line-height: 1.4;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
   }
+  .msg.note { color: var(--muted); font-weight: 400; }
 </style>
