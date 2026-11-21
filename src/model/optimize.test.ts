@@ -110,6 +110,15 @@ describe('verdicts', () => {
   it('estimates standover from stack and seat tube', () => {
     expect(standoverHeight(frame('endurance-56'))).toBeCloseTo(820.4, 0);
   });
+  it('allows 20 mm for shoes before calling the standover tight', () => {
+    const snug = optimizeFit(problem('endurance', sized('snug', 595, 383, 602)));
+    expect(snug.facts.standover).toBeGreaterThan(0);
+    expect(snug.facts.standover).toBeLessThan(20);
+    expect(snug.flags.join(' ')).not.toContain('Standover');
+    const tight = optimizeFit(problem('endurance', sized('tight', 595, 383, 660)));
+    expect(tight.facts.standover).toBeLessThan(0);
+    expect(tight.flags.join(' ')).toContain('Standover');
+  });
   it('flags a frame too tall to stand over and ranks it below one that fits', () => {
     const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = problem('endurance', frame('endurance-56'));
     const rows = compareFrames(rest, [sized('tall', 640, 400, 600), sized('right', 585, 380, 520)]);
@@ -204,6 +213,7 @@ describe('cranks in proportion to the legs (optimizer)', () => {
     const right = compareFrames({ ...r, baseline: { ...DEFAULT_PARAMS, crankLength: 150 } }, [domane47], locks)[0].result;
     expect(right.params.crankLength).toBe(150);
     expect(right.score).toBeGreaterThanOrEqual(long.score + 10);
+    expect(right.verdict).toBe('fits');
   });
 });
 

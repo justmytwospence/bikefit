@@ -9,7 +9,7 @@ export type Verdict = 'fits' | 'compromise' | 'no';
 export interface FitFacts {
   /** Saddle top above the bar clamp, mm. */
   barDrop: number;
-  /** Inseam minus the estimated top tube height, mm. */
+  /** Inseam plus shoes minus the estimated top tube height, mm. */
   standover: number;
   /** Saddle height minus seat tube length, mm. */
   seatpost: number;
@@ -19,6 +19,8 @@ export interface FitFacts {
   /** Where the frame's stock stem can put the hoods, relative to the ideal point; null when no ideal was given. */
   stockRange: StockRange | null;
 }
+/** What cycling shoes add to a barefoot inseam when standing over the bike, mm. */
+export const SHOE_SOLE = 20;
 /** A frame whose stock spacer range passes this far from the ideal point is a compromise, mm. */
 export const FRAME_FLAG = 25;
 /** Estimated clearance below which no one could stand over the frame; the estimate runs up to 35 mm high. */
@@ -43,7 +45,7 @@ export function fitFacts(problem: FitProblem, p: FitParams, ev: Evaluation): Fit
   const layout = forwardLayout(problem.frame, problem.components, p);
   return {
     barDrop: layout.saddle.y - layout.clamp.y,
-    standover: problem.inseam - standoverHeight(problem.frame),
+    standover: problem.inseam + SHOE_SOLE - standoverHeight(problem.frame),
     seatpost: p.saddleHeight - problem.frame.seatTubeLength,
     toeClearance: ev.toeClearance,
     offIdeal: problem.idealHoods
@@ -73,7 +75,7 @@ export function buildFlags(problem: FitProblem, p: FitParams, facts: FitFacts): 
   if (p.stemLength < 70) out.push(`Very short stem (${fmtNum(p.stemLength)} mm)`);
   if (p.stemLength > 130) out.push(`Very long stem (${fmtNum(p.stemLength)} mm)`);
   if (Math.abs(p.railOffset) >= RAIL_FLAG) out.push('Saddle at the end of its rails');
-  if (facts.standover < 0) out.push(`Standover looks tight (top tube estimated ${Math.round(-facts.standover)} mm above your inseam)`);
+  if (facts.standover < 0) out.push(`Standover looks tight (top tube estimated ${Math.max(1, Math.round(-facts.standover))} mm too high, in cycling shoes)`);
   if (facts.seatpost < SEATPOST_MIN) out.push(`Little seatpost showing (${Math.round(facts.seatpost)} mm): the frame is tall for you`);
   if (facts.seatpost > SEATPOST_MAX) out.push(`Very long seatpost showing (${Math.round(facts.seatpost)} mm): the frame is small for you`);
   const off = facts.offIdeal;

@@ -70,6 +70,6 @@ Vercel deploys every branch from Git: `main` to https://bikefitter.app, `dev` to
 
 ## Where the numbers come from
 
-The model's constants, their published sources, what was checked and the known gaps are in [docs/model.md](docs/model.md). Standover is an estimate from stack and seat tube length. Saddle height from height and inseam is good to about ±15 mm; set it finally by knee angle or feel.
+The model's constants, their published sources, what was checked and the known gaps are in [docs/model.md](docs/model.md). Standover is an estimate from stack and seat tube length, with 20 mm allowed for shoes. Saddle height from height and inseam is good to about ±15 mm; set it finally by knee angle or feel.
 
 A starting point, not a substitute for a professional fit.
