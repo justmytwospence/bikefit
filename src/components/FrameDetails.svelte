@@ -17,8 +17,8 @@
     </label>
   {/if}
   <div class="grid">
-    <NumberField label="Stack" link="f:stack" unit="mm" min={400} max={800} step={1} bind:value={frame.stack} />
-    <NumberField label="Reach" link="f:reach" unit="mm" min={300} max={500} step={1} bind:value={frame.reach} />
+    <NumberField label="Stack" link="f:stack" hint="BB centre up to the top of the head tube, vertically. On the bike: floor to the top of the head tube, minus floor to the BB centre." unit="mm" min={400} max={800} step={1} bind:value={frame.stack} />
+    <NumberField label="Reach" link="f:reach" hint="BB centre forward to the top of the head tube, horizontally. With the rear tyre against a wall: wall to the top of the head tube, minus wall to the BB centre." unit="mm" min={300} max={500} step={1} bind:value={frame.reach} />
     {#if full}
       <NumberField label="Seat tube angle" link="f:seatTubeAngle" unit="°" min={65} max={80} step={0.1} bind:value={frame.seatTubeAngle} />
       <NumberField label="Head tube angle" link="f:headTubeAngle" unit="°" min={65} max={80} step={0.1} bind:value={frame.headTubeAngle} />

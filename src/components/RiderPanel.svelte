@@ -115,7 +115,7 @@
     </select>
   </div>
 
-  <h2>Flexibility <Info text="Can you touch your toes with straight legs? Easily is High." /></h2>
+  <h2>Flexibility <Info text="Stand with straight legs and reach for the floor. Low: fingertips stop short of your toes. Medium: you reach your toes. High: palms flat on the floor. It moves your bars about 3 cm: higher for Low, lower for High." /></h2>
   <Segmented options={flex} bind:value={app.body.flexibility} ariaLabel="Flexibility" />
 
   <h2>How you ride <Info text="{style.name}: {style.blurb}" /></h2>
