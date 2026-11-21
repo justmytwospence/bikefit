@@ -2,6 +2,7 @@
   import { link } from '../lib/link.svelte';
   import type { Level } from '../lib/appData';
   import { metricCost, status } from '../model/score';
+  import { ui } from '../state.svelte';
   import { METRIC_LABELS, METRIC_ORDER, SIMPLE_METRICS } from '../model/styles';
   import type { Band, MetricId, PoseEval, PoseTarget } from '../model/types';
 
@@ -26,6 +27,8 @@
     poses
       .map((_, i) => [i, targets[i]?.bands[k]] as const)
       .filter((r): r is readonly [number, Band] => !!r[1] && (r[0] === 0 || !LEG.includes(k)));
+  /** The status the drawing's legend points at: cards with no angle in it fade. */
+  const statusFocus = $derived(ui.statusHover ?? ui.statusPin);
   const overextended = $derived(poses.some((p) => p.overextended));
   const shortfall = $derived(Math.max(...poses.map((p) => p.legShortfall)));
 
@@ -48,7 +51,7 @@
   {#each ids as k (k)}
     {@const r = rows(k)}
     {@const pair = r.length > 1}
-    <div class="card" role="button" tabindex="0" use:link={{ id: `m:${k}`, pin: true }} title="{METRIC_LABELS[k].long}: {r.map(([i, b]) => `${pair ? NAME[i] + ' ' : ''}target ${span(b)}${b.unit}`).join(', ')}">
+    <div class="card" class:dim={!!statusFocus && !r.some(([i, b]) => status(poses[i].metrics[k], b) === statusFocus)} role="button" tabindex="0" use:link={{ id: `m:${k}`, pin: true }} title="{METRIC_LABELS[k].long}: {r.map(([i, b]) => `${pair ? NAME[i] + ' ' : ''}target ${span(b)}${b.unit}`).join(', ')}">
       <div class="name">{METRIC_LABELS[k].short}</div>
       <div class="nums" class:pair>
         {#each r as [i, b] (i)}
@@ -82,7 +85,8 @@
     backdrop-filter: blur(12px); border-top: 1px solid var(--line);
   }
   .strip::-webkit-scrollbar { display: none; }
-  .card { cursor: pointer; flex: 1 0 92px; margin: 0; scroll-snap-align: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; }
+  .card { transition: opacity 0.15s; cursor: pointer; flex: 1 0 92px; margin: 0; scroll-snap-align: start; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; }
+  .card.dim { opacity: 0.35; }
   .name { font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); white-space: nowrap; }
   .nums { display: flex; gap: 10px; align-items: baseline; }
   .num { font-size: 22px; font-weight: 600; line-height: 1.2; white-space: nowrap; }

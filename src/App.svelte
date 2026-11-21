@@ -162,7 +162,7 @@
   ];
 </script>
 
-<svelte:window onkeydown={(e) => { if (e.key === 'Escape') ui.pin = null; }} />
+<svelte:window onkeydown={(e) => { if (e.key === 'Escape') { ui.pin = null; ui.statusPin = null; ui.manualCrank = null; } }} />
 
 <div class="app">
   <section class="view">

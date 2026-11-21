@@ -52,6 +52,19 @@
   /** The linked number the drawing shows, and the angle it names, if any. */
   const f = $derived(focus());
   const fm = $derived(f?.startsWith('m:') ? (f.slice(2) as MetricId) : null);
+  /** The status the legend's chips point at: angles in other states fade. */
+  const statusFocus = $derived(ui.statusHover ?? ui.statusPin);
+  const counts = $derived.by(() => {
+    const c = { ok: 0, near: 0, off: 0 } as Record<'ok' | 'near' | 'off', number>;
+    for (const k of Object.keys(target.bands) as MetricId[]) {
+      const b = target.bands[k]!;
+      if (b.weight === 0) continue;
+      const st = status(poseEval.metrics[k], b);
+      if (st !== 'info') c[st]++;
+    }
+    return c;
+  });
+  const CHIPS = [['ok', 'in range'], ['near', 'just outside range'], ['off', 'outside range']] as const;
 
   const sk = $derived(frameSkeleton(frame));
   const LINE = 14; // obstacle radius for the skeleton lines, mm
@@ -210,7 +223,7 @@
       {/if}
       <line x1={pose.hip.x} y1={pose.hip.y} x2={pose.hip.x + 220} y2={pose.hip.y} stroke="var(--muted)" stroke-width="4" stroke-dasharray="10 10" />
       {#each joints as j (j.id)}
-        <path d={j.path} stroke="var(--{j.st})" stroke-width={j.on ? 18 : 10} opacity={fm && !j.on ? 0.25 : 1} />
+        <path d={j.path} stroke="var(--{j.st})" stroke-width={j.on ? 18 : 10} opacity={(fm && !j.on) || (statusFocus && j.st !== statusFocus) ? 0.25 : 1} />
       {/each}
       <g
         font-size={fs} font-weight="700" text-anchor="middle" dominant-baseline="central" fill="var(--ink)"
@@ -219,7 +232,7 @@
         {#each joints as j (j.id)}
           <text
             transform="translate({j.lbl.x},{j.lbl.y}) scale(1,-1)" font-size={j.on ? fs * 1.25 : fs}
-            opacity={fm && !j.on ? 0.35 : 1}
+            opacity={(fm && !j.on) || (statusFocus && j.st !== statusFocus) ? 0.35 : 1}
           >{Math.round(j.shownValue)}°</text>
         {/each}
       </g>
@@ -234,6 +247,16 @@
   {/if}
 
   <div class="legend">
+    {#each CHIPS as [s, text] (s)}
+      {#if counts[s] > 0}
+        <button
+          type="button" class="st" class:on={statusFocus === s} style="--c: var(--{s})" aria-pressed={ui.statusPin === s}
+          title="Highlight the angles {text}"
+          onpointerenter={(e) => e.pointerType !== 'touch' && (ui.statusHover = s)} onpointerleave={() => (ui.statusHover = null)}
+          onclick={() => { ui.statusPin = ui.statusPin === s ? null : s; if (ui.statusPin) event('Status highlighted', { status: s }); }}
+        ><i></i>{counts[s]}<span class="sr"> {text}</span></button>
+      {/if}
+    {/each}
     {#if !inBand && level >= 2}<span><i class="t"></i> ideal position</span>{/if}
     {#if ghostPose}<span><i class="c"></i> current setup</span>{/if}
     {#each moved as m (m.key)}<span class="mv">{m.label}</span>{/each}
@@ -270,6 +293,10 @@
   .legend .t { border: 2px dashed var(--accent); }
   .legend .c { width: 14px; height: 0; border-radius: 0; border-top: 2px dashed var(--muted); vertical-align: 3px; }
   .legend .o { border: 2px dashed var(--accent); border-radius: 2px; }
+  .st { border: 0; background: transparent; font: inherit; color: var(--muted); padding: 0 2px; display: inline-flex; align-items: center; }
+  .legend .st i { background: var(--c); }
+  .st.on { color: var(--ink); font-weight: 700; }
+  .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
   .mv { color: var(--accent); font-weight: 600; }
   .warn { color: var(--near); font-weight: 600; }
   .warn.bad { color: var(--off); }
