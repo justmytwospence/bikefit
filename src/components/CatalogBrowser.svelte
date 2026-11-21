@@ -3,11 +3,13 @@
   import type { FrameCategory } from '../data/catalog';
   import { searchLogger } from '../lib/analytics';
   import { groupRows, type ModelGroup } from '../lib/sizes';
+  import { bestEntry, inArea, type Area } from '../lib/stackReach';
   import { VERDICT_RANK, type Verdict } from '../model/verdict';
   import { catalogKey, hasCachedCatalog, makePreviewMine, previewRow, previewSize, runCatalogFit } from '../find.svelte';
   import { app, ui } from '../state.svelte';
   import FrameCard from './FrameCard.svelte';
   import Segmented from './Segmented.svelte';
+  import StackReachChart from './StackReachChart.svelte';
 
   type Cat = typeof import('../data/catalog');
   type Search = typeof import('../data/search');
@@ -19,6 +21,8 @@
   let show = $state<Verdict>('compromise');
   let limit = $state(30);
   let since = $state(0);
+  /** The part of the stack and reach chart selected, if any. */
+  let area = $state<Area | null>(null);
 
   onMount(async () => {
     const [c, s] = await Promise.all([import('../data/catalog'), import('../data/search')]);
@@ -46,7 +50,7 @@
           || b.best.result.score - a.best.result.score || lastYear(b) - lastYear(a) || a.name.localeCompare(b.name, 'en'))
       : [],
   );
-  const matching = $derived(
+  const filtered = $derived(
     all.filter((g) => {
       const id = ui.catalog!.modelOf[g.best.frameId];
       const m = byId.get(id);
@@ -54,6 +58,8 @@
         && VERDICT_RANK[g.best.result.verdict] <= VERDICT_RANK[show];
     }),
   );
+  const pointOf = (g: ModelGroup) => bestEntry(g).frame;
+  const matching = $derived(area ? filtered.filter((g) => inArea(pointOf(g), area!)) : filtered);
   const stale = $derived(!!ui.catalog && !ui.catalog.running && ui.catalog.key !== catalogKey());
   const withCleats = $derived(app.detail.results >= 2);
 
@@ -62,7 +68,7 @@
   });
 
   $effect(() => {
-    query; category; brand; show; since;
+    query; category; brand; show; since; area;
     limit = 30;
   });
 
@@ -83,7 +89,10 @@
       {ui.catalog ? 'Out of date: check again' : 'Find bikes that fit'}
     </button>
   {:else}
-    <p class="muted small">{matching.length} bikes</p>
+    <p class="muted small">
+      {matching.length} bikes{area ? ' in the selected area' : ''}
+      {#if area}<button type="button" class="clear" onclick={() => (area = null)}>Clear</button>{/if}
+    </p>
   {/if}
 </div>
 {#if ui.error}<p class="err">{ui.error}</p>{/if}
@@ -104,6 +113,13 @@
     </div>
     <Segmented compact ariaLabel="Verdicts shown" options={shows} bind:value={show} />
   </div>
+  <details class="chart" open>
+    <summary>Stack and reach</summary>
+    <StackReachChart
+      groups={filtered} bind:area
+      onpick={(g) => { const e = bestEntry(g); previewSize(e, null); }}
+    />
+  </details>
   <div class="list" class:dim={stale}>
     {#each matching.slice(0, limit) as g (g.key)}
       <FrameCard
@@ -130,6 +146,8 @@
   .filters { display: flex; flex-direction: column; gap: 8px; margin: 10px 0; }
   .scrollx { overflow-x: auto; }
   .list { margin-top: 8px; }
+  .chart summary { cursor: pointer; font-weight: 600; min-height: 36px; display: flex; align-items: center; }
+  .clear { border: 0; background: transparent; color: var(--accent); font: inherit; font-weight: 600; padding: 0 4px; }
   .dim { opacity: 0.5; }
   .foot { margin-top: 14px; }
   .err { color: var(--off); }
