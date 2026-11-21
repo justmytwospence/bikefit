@@ -174,9 +174,11 @@ export function setupScore(p: FitParams): number {
 
 /**
  * Sets one knob on the side being edited. A knob the target leaves where the current setup has it follows
- * an edit of the current setup, so entering your bike never makes changes.
+ * an edit of the current setup, so entering your bike never makes changes. `glide` moves the drawing there
+ * (a part picked from a list); without it the drawing follows at once (a slider, a drag).
  */
-export function setKnob(k: ParamKey, v: number) {
+export function setKnob(k: ParamKey, v: number, glide = false) {
+  if (glide) ui.animate = true;
   if (ui.editing === 'current') {
     if (app.current[k] === app.baseline[k]) app.current[k] = v;
     app.baseline[k] = v;
@@ -210,6 +212,7 @@ function applyStep(i: number) {
 /** Tapping the switch: -1 shows and edits your current setup, a step makes it the target. */
 export function chooseRung(i: number) {
   event('Target chosen', { step: i < 0 ? 'current' : STEPS[i] });
+  ui.animate = true;
   if (i < 0) {
     ui.editing = 'current';
     return;
@@ -258,6 +261,7 @@ export async function refreshLadder() {
 /** Rejects a suggested change: these settings stay as your bike has them, and the targets are worked out again. */
 export function keepAsIs(keys: ParamKey[]) {
   event('Change rejected', { setting: keys[0] });
+  ui.animate = true;
   for (const k of keys) {
     app.pins[k] = true;
     app.current[k] = app.baseline[k];

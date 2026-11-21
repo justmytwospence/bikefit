@@ -1,6 +1,6 @@
 <script lang="ts">
   import { cubicOut } from 'svelte/easing';
-  import { Tween } from 'svelte/motion';
+  import { prefersReducedMotion, Tween } from 'svelte/motion';
   import { untrack } from 'svelte';
   import BikeView from './components/BikeView.svelte';
   import FindPanel from './components/FindPanel.svelte';
@@ -14,8 +14,9 @@
   import { forwardLayout } from './model/geometry';
   import { idealLayout } from './model/optimize';
   import { impossible } from './model/limits';
-  import { evaluateFit, riderPose } from './model/pose';
-  import type { FitParams } from './model/types';
+  import { evaluateFit, riderPose, type RiderPose } from './model/pose';
+  import type { Components, FitParams, Frame, Layout, Segments } from './model/types';
+  import type { Vec2 } from './model/vec';
   import { makeContext, poseWeights } from './model/riding';
   import { TOE_OVERLAP_FLAG } from './model/verdict';
   import { crankFor, fitCost, fitScore, partPenalty, scoreBreakdown } from './model/score';
@@ -44,6 +45,26 @@
   /** The setup the settings change. */
   const yours = $derived(ui.editing === 'current' ? app.baseline : app.current);
   const viewParams = $derived(previewing ? shownBike!.row.result.params : peekSetup ? peekSetup.params : yours);
+  /**
+   * What the drawing shows moves to a new value instead of jumping there: the frame, the body, the parts, the
+   * hand position and the cranks. The numbers that decide anything (limits, targets, the ideal position) use the
+   * real values above. Nothing moves for people who ask for reduced motion.
+   */
+  const MOVE = 450;
+  const ms = (n: number) => (prefersReducedMotion.current ? 0 : n);
+  /** Moves a tween to a new value; one equal to where it is already heading starts nothing. */
+  function move<T>(t: Tween<T>, to: T, duration = MOVE) {
+    if (JSON.stringify(to) !== JSON.stringify(untrack(() => t.target))) t.set(to, { duration: ms(duration) });
+  }
+  const frameT = new Tween(untrack(() => $state.snapshot(frame) as Frame), { easing: cubicOut });
+  $effect(() => move(frameT, $state.snapshot(frame) as Frame));
+  const segT = new Tween(untrack(() => segments), { easing: cubicOut });
+  $effect(() => move(segT, segments));
+  const compT = new Tween(untrack(() => $state.snapshot(app.components) as Components), { easing: cubicOut });
+  $effect(() => move(compT, $state.snapshot(app.components) as Components));
+  const dFrame = $derived(frameT.current);
+  const dSeg: Segments = $derived(segT.current);
+  const dComp = $derived(compT.current);
   /** While a target is shown on Fit my bike, the current setup is drawn in outline behind it. */
   const otherShown = $derived(
     !previewing && app.tab === 'mybike'
@@ -51,7 +72,7 @@
       && !sameParams($state.snapshot(app.baseline) as FitParams, (peekSetup ? peekSetup.params : $state.snapshot(app.current)) as FitParams)
       ? ($state.snapshot(app.baseline) as FitParams) : null,
   );
-  const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
+  const ctx = $derived(makeContext(dFrame, dComp, app.body.ankling, effort));
   const resultsLevel = $derived(app.detail.results);
   /** The size the one on the drawing is too close to call against, drawn in outline behind it. */
   const otherSize = $derived(previewing ? shownBike!.other : null);
@@ -72,8 +93,8 @@
           }
       : otherShown
         ? {
-            frame: mine, params: otherShown, label: 'current setup', partsOnly: true,
-            layout: forwardLayout(mine, app.components, otherShown),
+            frame: dFrame, params: otherShown, label: 'current setup', partsOnly: true,
+            layout: forwardLayout(dFrame, dComp, otherShown),
           }
         : null,
   );
@@ -82,16 +103,31 @@
   $effect(() => {
     const next = $state.snapshot(viewParams);
     const animate = untrack(() => ui.animate);
-    shown.set(next, { duration: animate ? 450 : 0 });
+    shown.set(next, { duration: ms(animate ? MOVE : 0) });
     untrack(() => (ui.animate = false));
+  });
+  // A request to animate that changed nothing on the drawing must not make the next slider move glide.
+  $effect(() => {
+    if (!ui.animate) return;
+    const t = setTimeout(() => (ui.animate = false), 50);
+    return () => clearTimeout(t);
   });
 
   const crankRef = $derived(crankFor(app.body.inseam));
-  const layout = $derived(forwardLayout(frame, app.components, shown.current));
-  const evaluation = $derived(evaluateFit(segments, layout, ctx, targets));
-  const score = $derived(
+  const layout = $derived(forwardLayout(dFrame, dComp, shown.current));
+  const evaluation = $derived(evaluateFit(dSeg, layout, ctx, targets));
+  const rawScore = $derived(
     previewing ? shownBike!.row.result.score : fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current, crankRef)),
   );
+  /** A bike on show has one score for its whole build, so going from one bike to the next the number counts across. */
+  const scoreT = new Tween(untrack(() => rawScore));
+  let wasPreviewing = false;
+  $effect(() => {
+    const p = previewing;
+    scoreT.set(rawScore, { duration: ms(p || wasPreviewing ? 300 : 0) });
+    wasPreviewing = p;
+  });
+  const score = $derived(Math.round(scoreT.current));
   const breakdown = $derived(previewing ? null : scoreBreakdown(evaluation, targets, weights, shown.current, crankRef));
   const ideal = $derived(
     idealLayout(
@@ -99,6 +135,8 @@
       app.components, app.options.crankLengths, app.body.inseam,
     ),
   );
+  const idealT = new Tween(untrack(() => ideal), { easing: cubicOut });
+  $effect(() => move(idealT, ideal));
   /** Why the rider could not ride these settings at all, for Fit my bike's hard stops. */
   const evalMine = (p: FitParams) => evaluateFit(
     segments, forwardLayout(mine, app.components, p),
@@ -121,17 +159,32 @@
         : linked === 'm:kops' || linked === 'r:toe' ? 0 : null,
   );
   const crankDeg = $derived(ui.playing ? ui.crank : (focusCrank ?? ui.manualCrank ?? evaluation.peakKneeCrank));
-  const pose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg));
-  const farPose = $derived(riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, crankDeg + 180));
-  const ghostPose = $derived(
-    otherShown
-      ? riderPose(segments, forwardLayout(frame, app.components, otherShown), ctx, contact, targets[pi].elbowPref, crankDeg)
-      : null,
-  );
+  /** The cranks turn to a new angle the short way round; Play and a dragged pedal are followed as they are. */
+  const crankT = new Tween(untrack(() => crankDeg), { easing: cubicOut });
+  $effect(() => {
+    const from = untrack(() => crankT.current);
+    const to = from + ((((crankDeg - from) % 360) + 540) % 360) - 180;
+    crankT.set(to, { duration: ms(ui.playing || ui.dragging === 'crank' ? 0 : 300) });
+  });
+  const crankNow = $derived(((crankT.current % 360) + 360) % 360);
+  /** The hands slide between the hoods and the drops, and the elbow bends to what the position assumes. */
+  const handT = new Tween(untrack(() => pi), { easing: cubicOut });
+  $effect(() => move(handT, pi, 300));
+  const elbowT = new Tween(untrack(() => targets[pi].elbowPref), { easing: cubicOut });
+  $effect(() => move(elbowT, targets[pi].elbowPref, 300));
+  function poseAt(lay: Layout, deg: number): RiderPose {
+    const m = handT.current;
+    const mid: Vec2 = { x: lay.hoods.x + (lay.drops.x - lay.hoods.x) * m, y: lay.hoods.y + (lay.drops.y - lay.hoods.y) * m };
+    const hand = m <= 0 ? lay.hoods : m >= 1 ? lay.drops : mid;
+    return { ...riderPose(dSeg, { ...lay, hoods: hand }, ctx, 'hoods', elbowT.current, deg), contact };
+  }
+  const pose = $derived(poseAt(layout, crankNow));
+  const farPose = $derived(poseAt(layout, crankNow + 180));
+  const ghostPose = $derived(otherShown ? poseAt(forwardLayout(dFrame, dComp, otherShown), crankNow) : null);
   const toeTip = $derived(
     Number.isFinite(evaluation.toeClearance)
       && (linked === 'r:toe' || ((resultsLevel >= 2 || evaluation.toeClearance < -TOE_OVERLAP_FLAG) && evaluation.toeClearance < 10))
-      ? riderPose(segments, layout, ctx, contact, targets[pi].elbowPref, 0).toe
+      ? poseAt(layout, 0).toe
       : null,
   );
 
@@ -170,9 +223,9 @@
   <section class="view">
     <div class="canvas">
       <BikeView
-        {frame} components={app.components} {layout} {pose} {farPose} {ghostPose} {ghostBike} {ideal}
+        frame={dFrame} components={dComp} {layout} {pose} {farPose} {ghostPose} {ghostBike} ideal={idealT.current}
         target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
-        height={app.body.height} seg={segments} params={shown.current}
+        height={dSeg.stature} seg={dSeg} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank} units={app.units}
         editable={app.tab === 'mybike' && !previewing && !peekSetup} {whyImpossible} options={app.options}
       />
@@ -184,7 +237,7 @@
   <aside class="panel">
     <div class="tabs" role="tablist">
       {#each tabs as t (t.id)}
-        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => { if (app.tab !== t.id) event('Tab opened', { tab: t.id }); app.tab = t.id; ui.pin = null; clearPeek(); }}>{t.label}</button>
+        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => { if (app.tab !== t.id) { event('Tab opened', { tab: t.id }); ui.animate = true; } app.tab = t.id; ui.pin = null; clearPeek(); }}>{t.label}</button>
       {/each}
       <SettingsMenu />
     </div>

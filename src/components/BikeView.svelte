@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { fade } from 'svelte/transition';
   import { HEAD_R, headCenter } from '../draw/body';
   import { angleOf, arcPath, distToSegment, placeLabel, type Obstacle } from '../draw/shapes';
   import { event } from '../lib/analytics';
@@ -190,16 +191,20 @@
 
       <Bike {frame} {components} {layout} {params} />
       {#if ghostBike}
-        <Bike frame={ghostBike.frame} {components} layout={ghostBike.layout} params={ghostBike.params} variant={ghostBike.partsOnly ? 'parts' : 'ghost'} />
+        <g transition:fade={{ duration: 200 }}>
+          <Bike frame={ghostBike.frame} {components} layout={ghostBike.layout} params={ghostBike.params} variant={ghostBike.partsOnly ? 'parts' : 'ghost'} />
+        </g>
       {/if}
 
       <line x1="0" y1="0" x2={pose.spindle.x} y2={pose.spindle.y} stroke="var(--ink)" stroke-width="16" />
       <circle cx="0" cy="0" r="16" fill="var(--ink)" stroke="none" />
 
       {#if ghostPose}
-        <Torso pose={ghostPose} {height} variant="ghost" />
-        <Leg pose={ghostPose} {seg} footStack={components.footStack} cleatOffset={params.cleatOffset} variant="ghost" />
-        <Arm pose={ghostPose} variant="ghost" />
+        <g transition:fade={{ duration: 200 }}>
+          <Torso pose={ghostPose} {height} variant="ghost" />
+          <Leg pose={ghostPose} {seg} footStack={components.footStack} cleatOffset={params.cleatOffset} variant="ghost" />
+          <Arm pose={ghostPose} variant="ghost" />
+        </g>
       {/if}
 
       <Torso {pose} {height} />

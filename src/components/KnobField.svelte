@@ -97,7 +97,7 @@
     <div use:link={'setback'}>
     <div class="chiphead">Seatpost setback</div>
     <div class="chips">
-    <ChipRow options={o.seatpostSetbacks} bind:value={() => ed.seatpostSetback, (v) => setKnob('seatpostSetback', v)} format={setbackLabel} blocked={stops ? blockedChips('seatpostSetback', o.seatpostSetbacks) : undefined} />
+    <ChipRow options={o.seatpostSetbacks} bind:value={() => ed.seatpostSetback, (v) => setKnob('seatpostSetback', v, true)} format={setbackLabel} blocked={stops ? blockedChips('seatpostSetback', o.seatpostSetbacks) : undefined} />
     </div>
     </div>
   {:else if k === 'spacers'}
@@ -113,7 +113,7 @@
     <div use:link={'stem'}>
     <div class="chiphead">Stem length</div>
     <div class="chips">
-    <ChipRow options={o.stemLengths} bind:value={() => ed.stemLength, (v) => setKnob('stemLength', v)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('stemLength', o.stemLengths) : undefined} />
+    <ChipRow options={o.stemLengths} bind:value={() => ed.stemLength, (v) => setKnob('stemLength', v, true)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('stemLength', o.stemLengths) : undefined} />
     </div>
     </div>
   {:else if k === 'stemAngle'}
@@ -121,7 +121,7 @@
     <div class="chiphead">Stem angle</div>
     <div class="chips">
     <ChipRow
-      options={o.stemAngles} bind:value={() => ed.stemAngle, (v) => setKnob('stemAngle', v)} blocked={stops ? blockedChips('stemAngle', o.stemAngles) : undefined}
+      options={o.stemAngles} bind:value={() => ed.stemAngle, (v) => setKnob('stemAngle', v, true)} blocked={stops ? blockedChips('stemAngle', o.stemAngles) : undefined}
       format={(n) => (n === 0 ? '0°' : (n > 0 ? '+' : '−') + Math.abs(n) + '°')}
     />
     </div>
@@ -139,7 +139,7 @@
     <div use:link={'crank'}>
     <div class="chiphead">Crank length<Info text="Targets choose among the lengths nearest 20.5% of your inseam ({Math.round(crankFor(app.body.inseam))} mm). Set any length by hand." label="About crank length" /></div>
     <div class="chips">
-    <ChipRow options={CRANK_CHOICES} bind:value={() => ed.crankLength, (v) => setKnob('crankLength', v)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('crankLength', CRANK_CHOICES) : undefined} />
+    <ChipRow options={CRANK_CHOICES} bind:value={() => ed.crankLength, (v) => setKnob('crankLength', v, true)} format={(n) => n + ' mm'} blocked={stops ? blockedChips('crankLength', CRANK_CHOICES) : undefined} />
     </div>
     </div>
   {/if}

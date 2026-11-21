@@ -118,7 +118,7 @@
   .num small { display: block; font-size: 10px; font-weight: 600; line-height: 1.1; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
   .num span { font-size: 13px; color: var(--muted); margin-left: 1px; }
   .bar { position: relative; height: 10px; margin-top: 4px; background: var(--surface-2); border-radius: 5px; }
-  .band { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--ok) 28%, transparent); border-radius: 5px; }
+  .band { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--ok) 28%, transparent); border-radius: 5px; transition: left 0.2s, width 0.2s; }
   .dot { position: absolute; top: 0; width: 10px; height: 10px; margin-left: -5px; border-radius: 50%; transition: left 0.2s; }
   .bar.thin { height: 6px; border-radius: 3px; }
   .bar.thin + .bar.thin { margin-top: 3px; }
