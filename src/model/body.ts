@@ -20,13 +20,27 @@ export function effectiveShoeSize(body: Body): number {
   return body.shoeSizeAuto ? suggestShoeSize(body.sex, body.height) : body.shoeSize;
 }
 
+/** Inseam as a share of stature at which torso and arms take their average length: the ratio the style bands were calibrated at (docs/model.md). */
+export const INSEAM_SHARE = 0.472;
+/**
+ * Torso lost and arm gained, mm per mm of inseam beyond INSEAM_SHARE at the same stature. ANSUR II (4,082 men,
+ * 1,986 women): acromion height minus trochanterion height falls 0.62 (men) and 0.59 (women) mm per mm of crotch
+ * height; shoulder-to-grip length rises 0.34 and 0.43 mm.
+ */
+export const TORSO_PER_INSEAM = -0.6;
+export const ARM_PER_INSEAM = 0.34;
+/** Proportions are held within this share of stature of average: ANSUR II spans 0.42 to 0.54, and beyond that a mistyped measurement is likelier. */
+export const LEGGY_LIMIT = 0.05;
+
 export function resolveSegments(body: Body): Segments {
   const H = body.height;
   const k = body.inseam / (0.47 * H);
   const f = SEX_FACTORS[body.sex];
+  const leggy = Math.min(LEGGY_LIMIT * H, Math.max(-LEGGY_LIMIT * H, body.inseam - INSEAM_SHARE * H));
   const arm = 0.186 * H + 0.189 * H * (f.forearmGrip ?? 1);
-  const armScale = body.armLength ? body.armLength / arm : 1;
+  const armScale = (body.armLength ? body.armLength : arm + ARM_PER_INSEAM * leggy) / arm;
   const base = {
+    stature: H,
     femur: 0.245 * H * k * (f.femur ?? 1),
     tibia: 0.246 * H * k * (f.tibia ?? 1),
     ankleHeight: 0.039 * H * k * (f.ankleHeight ?? 1),
@@ -37,7 +51,7 @@ export function resolveSegments(body: Body): Segments {
     pelvisFwd: 0.0178 * H,
     pelvicShare: { low: 0.35, medium: 0.5, high: 0.6 }[body.flexibility],
     kneeFront: 0.022 * H,
-    torso: 0.288 * H * (f.torso ?? 1),
+    torso: 0.288 * H * (f.torso ?? 1) + TORSO_PER_INSEAM * leggy,
     upperArm: 0.186 * H * armScale,
     forearmGrip: 0.189 * H * (f.forearmGrip ?? 1) * armScale,
     headRadius: 0.06 * H,

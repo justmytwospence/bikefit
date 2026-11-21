@@ -130,7 +130,7 @@ export function riderPose(
 ): RiderPose {
   const { hip, up, tilt } = solvePelvis(seg, layout.saddle, layout[contact], elbowPref);
   const leg = solveLeg(seg, hip, layout, ctx, crankDeg);
-  const H = seg.torso / 0.288;
+  const H = seg.stature;
   const head = add(add(up.shoulder, scale(unit(sub(up.shoulder, hip)), 0.03 * H)), { x: 0.02 * H, y: 0.03 * H });
   return {
     hip, knee: leg.knee, ankle: leg.ankle, ball: leg.ball, toe: leg.toe, spindle: leg.spindle,
@@ -224,7 +224,7 @@ function evaluatePose(
         (2 * 0.0145 * (ax + bx)) / 2) / steps;
   }
   // Whole-body centre of mass (x only) and the share of weight on the hands.
-  const H = seg.torso / 0.288;
+  const H = seg.stature;
   const S = up.shoulder;
   const E = up.elbow;
   const su = unit(sub(S, hip));

@@ -9,8 +9,11 @@ The model's constants come from published measurements where they exist, not fro
 | Tissue and saddle padding under the sit bones | 20 mm | Sonenblum et al. 2020 (5.6 to 32 mm, seated on foam) | Weak |
 | Sit bones behind the saddle reference point | 40 mm | Assumption | None |
 | Thigh, shank and ankle as fractions of stature | 0.245, 0.246, 0.039 H | Winter (Drillis and Contini); de Leva 1996 agrees | Strong |
+| Torso and arm length against leg length | −0.6 mm of torso and +0.34 mm of arm per mm of inseam beyond 0.472 × stature, within ±5% of stature | ANSUR II public data (4,082 men, 1,986 women): acromion height minus trochanterion height, and shoulder-to-grip length, regressed on crotch height and stature | Moderate (R² 0.53 with stature) |
 | Knee extension band | 30 to 40° of flexion (140 to 150° included) | Ferrer-Roca et al. 2012; Millour et al. 2019; Swart and Holliday 2019 | Moderate |
 | Torso, hip, shoulder and hand-load bands | per style | Anchored on stock builds of manufacturer-recommended sizes (below) | Calibrated, not research |
+
+Sternal-notch height is not asked for: with stature and crotch height known, it lifts the torso fit only from R² 0.53 to 0.56.
 
 Checked, not tuned: Peveler et al. 2005 (0.883 x inseam gives about 24° of static knee flexion), Bini and Hume 2016 and Millour et al. 2019 (pedalling adds about 8°), Millour et al. 2021 (30 to 40° for medium inseams).
 

@@ -179,7 +179,7 @@ export function idealLayout(
   comp: Components,
   crankLengths: number[],
 ): { saddle: Vec2; hoods: Vec2; crankLength: number } {
-  const H = segments.torso / 0.288;
+  const H = segments.stature;
   const s0 = [-0.126 * H, 0.396 * H, 0.322 * H, 0.372 * H];
   let best: { cost: number; x: number[]; crank: number } | null = null;
   for (const crank of crankLengths) {

@@ -4,10 +4,33 @@ import { DEFAULT_BODY } from './presets';
 import { TEST_BODY } from './testFrames';
 
 describe('resolveSegments', () => {
+  it('carries the stature', () => expect(resolveSegments(TEST_BODY).stature).toBe(1780));
   it('estimates segments from height and inseam', () => {
     const s = resolveSegments(TEST_BODY);
     expect(s.femur).toBeCloseTo(437.87, 1);
-    expect(s.torso).toBeCloseTo(512.64, 2);
+    expect(s.torso).toBeCloseTo(512.736, 2);
+    expect(s.upperArm + s.forearmGrip).toBeCloseTo(667.446, 2);
+  });
+  it('average proportions keep the average torso and arms', () => {
+    const s = resolveSegments({ ...TEST_BODY, inseam: 0.472 * 1780 });
+    expect(s.torso).toBeCloseTo(0.288 * 1780, 6);
+    expect(s.upperArm + s.forearmGrip).toBeCloseTo(0.375 * 1780, 6);
+  });
+  it('long legs shorten the torso and lengthen the arms; short legs do the opposite', () => {
+    const long = resolveSegments({ ...TEST_BODY, inseam: 900 });
+    expect(long.torso).toBeCloseTo(476.736, 2);
+    expect(long.upperArm + long.forearmGrip).toBeCloseTo(687.846, 2);
+    const short = resolveSegments({ ...TEST_BODY, inseam: 780 });
+    expect(short.torso).toBeCloseTo(548.736, 2);
+    expect(short.upperArm + short.forearmGrip).toBeCloseTo(647.046, 2);
+  });
+  it('stops at proportions no one has', () => {
+    expect(resolveSegments({ ...TEST_BODY, inseam: 1000 }).torso).toBeCloseTo(0.288 * 1780 - 0.6 * 0.05 * 1780, 6);
+  });
+  it('a measured arm length or torso wins', () => {
+    const s = resolveSegments({ ...TEST_BODY, inseam: 900, armLength: 700, overrides: { torso: 520 } });
+    expect(s.upperArm + s.forearmGrip).toBeCloseTo(700, 6);
+    expect(s.torso).toBe(520);
   });
   it('derives foot length from shoe size, not height', () => {
     const own = { ...DEFAULT_BODY, shoeSizeAuto: false };
@@ -28,15 +51,16 @@ describe('resolveSegments', () => {
     const s = resolveSegments({ ...TEST_BODY, overrides: { femur: 450, tibia: 0, torso: NaN } });
     expect(s.femur).toBe(450);
     expect(s.tibia).toBeCloseTo(0.246 * 1780 * (840 / (0.47 * 1780)), 6);
-    expect(s.torso).toBeCloseTo(512.64, 2);
+    expect(s.torso).toBeCloseTo(512.736, 2);
   });
   it('pelvic share follows flexibility', () => {
     const share = (f: 'low' | 'medium' | 'high') => resolveSegments({ ...TEST_BODY, flexibility: f }).pelvicShare;
     expect([share('low'), share('medium'), share('high')]).toEqual([0.35, 0.5, 0.6]);
   });
   it('female proportions scale from the male ones', () => {
-    const m = resolveSegments(TEST_BODY);
-    const f = resolveSegments({ ...TEST_BODY, sex: 'female' });
+    const avg = { ...TEST_BODY, inseam: 0.472 * 1780 };
+    const m = resolveSegments(avg);
+    const f = resolveSegments({ ...avg, sex: 'female' });
     expect(f.torso).toBeCloseTo(m.torso * 0.978, 6);
     expect(f.forearmGrip).toBeCloseTo(m.forearmGrip * 0.982, 6);
     expect(f.femur).toBeCloseTo(m.femur * 0.989, 6);

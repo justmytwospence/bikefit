@@ -46,7 +46,11 @@
     `${EFFORT_LABELS[effort].label} effort · ${HANDS_LABELS[handsPref]}`
       + (app.effort == null && app.hands == null ? ' (style default)' : ''),
   );
-  const arm = $derived(app.body.armLength ?? 0.375 * app.body.height);
+  const armEst = $derived.by(() => {
+    const s = resolveSegments({ ...app.body, armLength: null, overrides: {} });
+    return s.upperArm + s.forearmGrip;
+  });
+  const arm = $derived(app.body.armLength ?? armEst);
   const armsSummary = $derived(
     `Arm length ${app.body.armLength == null ? 'est. ' : ''}${toDisplay(arm, armF)} ${armF.unit}`
       + ` · ${ANKLING[app.body.ankling].label} ankling`,

@@ -7,6 +7,8 @@ export type Effort = 'easy' | 'tempo' | 'hard';
 export type HandsPref = 'hoods' | 'mixed' | 'drops';
 
 export interface Segments {
+  /** Stature, mm. */
+  stature: number;
   femur: number;
   tibia: number;
   ankleHeight: number;
