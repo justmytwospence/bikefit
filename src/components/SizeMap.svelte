@@ -1,16 +1,19 @@
 <script lang="ts">
+  import { peek } from '../lib/peek.svelte';
   import type { SizeEntry } from '../lib/sizes';
+  import type { Peek } from '../state.svelte';
 
   /**
    * How high each size can put the bars with its stock stem, against the rider's own bar height: one bar per
    * size from no spacers to all of them, a dot where the riding style normally sits, and how much closer or
    * further the bars are at the rider's height.
    */
-  let { entries, activeId = null, onpick }: {
+  let { entries, activeId = null, onpick, peekOf }: {
     entries: SizeEntry[];
     /** Frame id of the size on the drawing, if any. */
     activeId?: string | null;
     onpick?: (e: SizeEntry) => void;
+    peekOf?: (e: SizeEntry) => Peek;
   } = $props();
 
   const SPAN = 60; // mm either side of the rider's bar height
@@ -53,6 +56,7 @@
             <rect
               class="hit" x="0" y={y - ROW / 2} width="300" height={ROW}
               role="button" tabindex="-1" aria-label="Show size {r.e.size}" onclick={() => onpick(r.e)}
+              use:peek={() => peekOf?.(r.e) ?? null}
               onkeydown={(ev) => { if (ev.key === 'Enter') onpick(r.e); }}
             />
           {/if}

@@ -1,12 +1,14 @@
 <script lang="ts" generics="T extends string">
   let {
-    options, value = $bindable(), ariaLabel, compact = false, onchange,
+    options, value = $bindable(), ariaLabel, compact = false, onchange, onhover,
   }: {
     options: { value: T; label: string; title?: string }[];
     value: T;
     ariaLabel: string;
     compact?: boolean;
     onchange?: () => void;
+    /** The option the pointer rests on, or null when it leaves. */
+    onhover?: (v: T | null) => void;
   } = $props();
 
   function select(v: T) {
@@ -30,6 +32,7 @@
     <button
       type="button" role="radio" aria-checked={value === o.value} title={o.title}
       tabindex={value === o.value ? 0 : -1} class:on={value === o.value} onclick={() => select(o.value)}
+      onpointerenter={(e) => e.pointerType !== 'touch' && onhover?.(o.value)} onpointerleave={() => onhover?.(null)}
     >{o.label}</button>
   {/each}
 </div>

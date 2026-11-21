@@ -1,16 +1,20 @@
 <script lang="ts">
   import { compareSizes } from '../lib/sizeCompare';
   import type { SizeEntry } from '../lib/sizes';
+  import { peek } from '../lib/peek.svelte';
+  import type { Peek } from '../state.svelte';
   import SizeMap from './SizeMap.svelte';
 
   /** The two sizes a rider sits between, side by side: where each puts the bars and what else differs. */
-  let { pair, entries, activeId = null, onpick }: {
+  let { pair, entries, activeId = null, onpick, peekOf }: {
     /** Smaller size first. */
     pair: [SizeEntry, SizeEntry];
     /** Every size of the model, for the map. */
     entries: SizeEntry[];
     activeId?: string | null;
     onpick: (e: SizeEntry) => void;
+    /** What pointing at a size shows on the drawing. */
+    peekOf: (e: SizeEntry) => Peek;
   } = $props();
 
   const cmp = $derived(compareSizes(pair[0], pair[1]));
@@ -19,14 +23,14 @@
 <div class="between">
   <p class="head">Between sizes {cmp.sizes[0]} and {cmp.sizes[1]}</p>
   <p class="muted small">Both put you in the same position. Tap one to see it; the other stays on the drawing in outline.</p>
-  <SizeMap {entries} {activeId} {onpick} />
+  <SizeMap {entries} {activeId} {onpick} {peekOf} />
   <table>
     <thead>
       <tr>
         <th></th>
         {#each pair as e (e.frame.id)}
           <th>
-            <button type="button" class="pick" class:on={e.frame.id === activeId} aria-pressed={e.frame.id === activeId} onclick={() => onpick(e)}>
+            <button type="button" class="pick" class:on={e.frame.id === activeId} aria-pressed={e.frame.id === activeId} onclick={() => onpick(e)} use:peek={() => peekOf(e)}>
               {e.size} <span class="pts">{e.row.result.score}</span>
             </button>
           </th>

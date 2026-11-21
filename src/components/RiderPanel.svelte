@@ -3,16 +3,18 @@
   import { effectiveShoeSize, resolveSegments, SEGMENT_LABELS } from '../model/body';
   import { ANKLING, EFFORT_LABELS, HANDS_LABELS, shoeLabel } from '../model/riding';
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
+  import { enterPeek, leavePeek } from '../lib/peek.svelte';
   import { STYLES } from '../model/styles';
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
   import { event, eventOnce } from '../lib/analytics';
-  import { app } from '../state.svelte';
+  import { app, ui } from '../state.svelte';
   import NumberField from './NumberField.svelte';
   import Segmented from './Segmented.svelte';
 
   const est = $derived(resolveSegments({ ...app.body, overrides: {} }));
   const keys = Object.keys(SEGMENT_LABELS) as (keyof typeof SEGMENT_LABELS)[];
-  const style = $derived(STYLES[app.styleId]);
+  const style = $derived(STYLES[ui.peek?.kind === 'style' ? ui.peek.styleId : app.styleId]);
+  const STYLE_OWNER = {};
   const styleOptions = Object.values(STYLES).map((s) => ({ value: s.id, label: s.name }));
   const shoes = Array.from({ length: 29 }, (_, i) => 36 + i * 0.5);
 
@@ -120,6 +122,7 @@
   <h2>How you ride</h2>
   <Segmented
     options={styleOptions} compact ariaLabel="Riding style"
+    onhover={(v) => (v && v !== app.styleId ? enterPeek(STYLE_OWNER, () => ({ kind: 'style', styleId: v })) : leavePeek(STYLE_OWNER))}
     bind:value={() => app.styleId, (v) => { app.styleId = v; event('Style chosen', { style: v }); }}
   />
   <p class="muted small hint">{style.blurb}</p>

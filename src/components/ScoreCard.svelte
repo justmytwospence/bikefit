@@ -1,11 +1,14 @@
 <script lang="ts">
   import { STYLES } from '../model/styles';
   import { app } from '../state.svelte';
+  import type { StyleId } from '../model/types';
 
-  let { score, from = null }: { score: number; from?: number | null } = $props();
+  let { score, styleId, previewStyle = false, from = null }: {
+    score: number; styleId: StyleId; previewStyle?: boolean; from?: number | null;
+  } = $props();
   const C = 2 * Math.PI * 16;
   const color = $derived(score >= 85 ? 'var(--ok)' : score >= 60 ? 'var(--near)' : 'var(--off)');
-  const name = $derived(STYLES[app.styleId].name);
+  const name = $derived(STYLES[styleId].name);
 </script>
 
 <label class="score" title="How closely this setup matches the {name} style, on the hoods and in the drops, weighted by how you ride. Choose another style here.">
@@ -19,7 +22,7 @@
     <text x="20" y="24.5" text-anchor="middle" font-size="13" font-weight="700" fill="currentColor">{score}</text>
   </svg>
   <span class="txt">
-    <span class="k">Fit for</span>
+    <span class="k">{previewStyle ? 'Preview' : 'Fit for'}</span>
     <span class="name">{name} <span aria-hidden="true">▾</span></span>
     {#if from !== null && from !== score}<span class="was">{from} → {score}</span>{/if}
   </span>

@@ -60,13 +60,22 @@
   {#if ui.preview}
     {@const v = ui.preview.row.result.verdict}
     <div class="info">
-      <b class="nm">{ui.preview.row.frameName}</b>
-      <span class="small verdict {v}">{VERDICT_TEXT[v]}</span>
+      {#if ui.peek?.kind === 'bike' && ui.peek.row.frameId !== ui.preview.row.frameId}
+        <b class="nm">{ui.peek.row.frameName}</b>
+        <span class="small muted">Previewing</span>
+      {:else}
+        <b class="nm">{ui.preview.row.frameName}</b>
+        <span class="small verdict {v}">{VERDICT_TEXT[v]}</span>
+      {/if}
     </div>
     <button type="button" class="btn small primary" onclick={makePreviewMine}>Make it my bike</button>
     <button type="button" class="btn small x" aria-label="Stop showing" onclick={stopPreview}>✕</button>
   {:else}
-    <p class="muted small">Tap Show on a bike to try it on the drawing.</p>
+    {#if ui.peek?.kind === 'bike'}
+      <p class="muted small">Previewing {ui.peek.row.frameName}. Tap Show to keep it on the drawing.</p>
+    {:else}
+      <p class="muted small">Point at a bike to preview it; tap Show to keep it on the drawing.</p>
+    {/if}
   {/if}
 </div>
 

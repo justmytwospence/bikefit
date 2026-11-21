@@ -3,6 +3,8 @@
   import type { CompareRow } from '../model/optimize';
   import type { Verdict } from '../model/verdict';
   import { betweenSizes, type ModelGroup, type SizeEntry, type Standing } from '../lib/sizes';
+  import { peek } from '../lib/peek.svelte';
+  import { ui, type Peek } from '../state.svelte';
   import SizeCompare from './SizeCompare.svelte';
 
   let { group, withCleats, showScore = false, showing = null, onshow, onuse }: {
@@ -43,13 +45,22 @@
   });
   /** The other half of a between-sizes pair, when this size is one half. */
   const otherOf = (e: SizeEntry): SizeEntry | null => (pair && pair.includes(e) ? pair.find((x) => x !== e)! : null);
+  /** What pointing at a size shows on the drawing, with its between-sizes partner in outline. */
+  function bikePeek(e: SizeEntry): Peek {
+    const o = otherOf(e);
+    return {
+      kind: 'bike', row: e.row, frame: e.frame,
+      other: o ? { row: o.row, frame: o.frame, size: o.size } : null,
+    };
+  }
+  const peekId = $derived(ui.peek?.kind === 'bike' ? ui.peek.row.frameId : null);
   function show(e: SizeEntry) {
     shownId = e.row.frameId;
     onshow(e, otherOf(e));
   }
 </script>
 
-<div class="card">
+<div class="card" class:peeked={peekId !== null && group.sizes.some((s) => s.row.frameId === peekId)} use:peek={() => bikePeek(entry)}>
   <div class="top">
     <span class="fname">{group.name}</span>
     {#if showScore}<span class="score" title="How close this size gets to your ideal position with the parts it is sold with">{row.result.score}</span>{/if}
@@ -62,12 +73,13 @@
           type="button" class="sz {s.standing}" class:on={s === entry}
           aria-pressed={s === entry} aria-label="Size {s.size}: {STANDING_TEXT[s.standing]}"
           title="{STANDING_TEXT[s.standing]} ({s.row.result.score})" onclick={() => show(s)}
+          use:peek={() => bikePeek(s)}
         >{s.size}</button>
       {/each}
     </div>
   {/if}
   {#if pair}
-    <SizeCompare {pair} entries={group.sizes} activeId={showing} onpick={show} />
+    <SizeCompare {pair} entries={group.sizes} activeId={showing} onpick={show} peekOf={bikePeek} />
   {/if}
   <div class="small">{buildSummary(row.result.params, withCleats)}</div>
   <div class="small muted">{facts}</div>
@@ -90,6 +102,7 @@
 </div>
 
 <style>
+  .card.peeked { outline: 2px solid var(--accent); outline-offset: -1px; }
   .btnrow { display: flex; gap: 8px; flex-wrap: wrap; }
   .sizes { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
   .sz { min-width: 44px; min-height: 36px; border-radius: 10px; border: 2px solid transparent; font-weight: 700; background: var(--surface-2); }

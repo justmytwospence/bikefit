@@ -27,6 +27,8 @@ Each is asked once, in its own place, because you may want different answers to 
 
 Every number is linked to the drawing. Hover or focus one (a fit card, a read-out, a setting, a frame or body measurement; tap a card or read-out to keep it) and the drawing shows what it measures, named and with its value, moving the cranks to where a hip or top-of-stroke knee angle is measured. Hover or tap a part or an angle on the drawing to find its number in the panel; Escape or a tap elsewhere on the drawing lets go.
 
+Pointing at a choice previews it on the drawing without making it: a target on the Setup switch, a bike or one of its sizes in Find a bike, a riding style under How you ride (the score pill shows that style's score). Mouse and pen only; a tap still chooses.
+
 Frame geometry shows stack and reach until you ask for all measurements.
 
 ## What is modelled

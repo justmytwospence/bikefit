@@ -2,6 +2,7 @@
   import { KNOB_ORDER, PRESETS } from '../lib/knobs';
   import { PARAM_LABELS } from '../model/advice';
   import type { FitParams } from '../model/types';
+  import { peek } from '../lib/peek.svelte';
   import { app, chooseRung, ladderKey, release, setupScore, ui } from '../state.svelte';
 
   /** The switch at the top of Fit my bike: your current setup, then the three targets worked out from it. */
@@ -15,6 +16,15 @@
   function lower(i: number): string {
     for (let j = i - 1; j >= 0; j--) if (shown && !shown.steps[j].same) return PRESETS[j].label;
     return 'your current setup';
+  }
+  const snap = <T,>(x: T) => $state.snapshot(x) as T;
+  /** What pointing at a rung shows on the drawing: nothing for the one chosen or one that is not worked out yet. */
+  function peekFor(o: { value: number; name: string; same: boolean }) {
+    if (o.value === value || o.same || (o.value >= 0 && (!shown || !fresh))) return null;
+    return {
+      kind: 'setup' as const, label: o.name,
+      params: o.value === -1 ? snap(app.baseline) as FitParams : shown!.steps[o.value].params,
+    };
   }
   const options = $derived([
     { value: -1, name: 'Current', title: 'Your current setup', score: currentScore as number | null, same: false, suggested: false },
@@ -65,7 +75,7 @@
     <button
       type="button" role="radio" aria-checked={value === o.value} title={o.title} disabled={o.same}
       tabindex={value === o.value || (value === -2 && o.value === -1) ? 0 : -1}
-      class:on={value === o.value} onclick={() => chooseRung(o.value)}
+      class:on={value === o.value} onclick={() => chooseRung(o.value)} use:peek={() => peekFor(o)}
     >
       <span class="name">{o.name}{#if o.suggested}<i class="dot" aria-label="suggested"></i>{/if}</span>
       <span class="score" class:stale={o.value >= 0 && !fresh}>

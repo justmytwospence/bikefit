@@ -22,35 +22,53 @@
   import { event } from './lib/analytics';
   import { activeFrame, app, save, setupScore, ui, type Tab } from './state.svelte';
   import { focus } from './lib/link.svelte';
+  import { clearPeek } from './lib/peek.svelte';
 
   const segments = $derived(resolveSegments(app.body));
-  const style = $derived(STYLES[app.styleId]);
+  /** What the pointer rests on, drawn in place of the committed choice. */
+  const peekNow = $derived(ui.peek);
+  const styleId = $derived(peekNow?.kind === 'style' ? peekNow.styleId : app.styleId);
+  const style = $derived(STYLES[styleId]);
   const targets = $derived(bandsFor(style, app.body.flexibility, app.body.height));
   const weights = $derived(poseWeights(app.hands ?? style.defaultHands));
   const effort = $derived(app.effort ?? style.defaultEffort);
   /** Your own bike; the drawing shows another one only while Find a bike has one on show. */
   const mine = $derived(activeFrame());
-  const previewing = $derived(app.tab === 'find' && !!ui.preview);
-  const frame = $derived(previewing ? ui.preview!.frame : mine);
+  const peekBike = $derived(app.tab === 'find' && peekNow?.kind === 'bike' ? peekNow : null);
+  const peekSetup = $derived(app.tab === 'mybike' && peekNow?.kind === 'setup' ? peekNow : null);
+  /** The bike drawn from Find a bike: the one pointed at, else the one kept on show. */
+  const shownBike = $derived(peekBike ?? (app.tab === 'find' ? ui.preview : null));
+  const previewing = $derived(!!shownBike);
+  const frame = $derived(previewing ? shownBike!.frame : mine);
   /** The setup the settings change. */
   const yours = $derived(ui.editing === 'current' ? app.baseline : app.current);
-  const viewParams = $derived(previewing ? ui.preview!.row.result.params : yours);
+  const viewParams = $derived(previewing ? shownBike!.row.result.params : peekSetup ? peekSetup.params : yours);
   /** While a target is shown on Fit my bike, the current setup is drawn in outline behind it. */
   const otherShown = $derived(
-    !previewing && app.tab === 'mybike' && ui.editing === 'target'
-      && !sameParams($state.snapshot(app.baseline) as FitParams, $state.snapshot(app.current) as FitParams)
+    !previewing && app.tab === 'mybike'
+      && (ui.editing === 'target' || !!peekSetup)
+      && !sameParams($state.snapshot(app.baseline) as FitParams, (peekSetup ? peekSetup.params : $state.snapshot(app.current)) as FitParams)
       ? ($state.snapshot(app.baseline) as FitParams) : null,
   );
   const ctx = $derived(makeContext(frame, app.components, app.body.ankling, effort));
   const resultsLevel = $derived(app.detail.results);
   /** The size the one on the drawing is too close to call against, drawn in outline behind it. */
-  const otherSize = $derived(previewing ? ui.preview!.other : null);
+  const otherSize = $derived(previewing ? shownBike!.other : null);
+  /** The bike kept on show stays in outline while another one is pointed at. */
+  const keptBike = $derived(
+    peekBike && ui.preview && ui.preview.frame.id !== peekBike.frame.id && !peekBike.other ? ui.preview : null,
+  );
   const ghostBike = $derived(
     otherSize
       ? {
           frame: otherSize.frame, params: otherSize.row.result.params, label: `size ${otherSize.size}`,
           layout: forwardLayout(otherSize.frame, app.components, otherSize.row.result.params),
         }
+      : keptBike
+        ? {
+            frame: keptBike.frame, params: keptBike.row.result.params, label: keptBike.row.frameName,
+            layout: forwardLayout(keptBike.frame, app.components, keptBike.row.result.params),
+          }
       : otherShown
         ? {
             frame: mine, params: otherShown, label: 'current setup', partsOnly: true,
@@ -70,7 +88,7 @@
   const layout = $derived(forwardLayout(frame, app.components, shown.current));
   const evaluation = $derived(evaluateFit(segments, layout, ctx, targets));
   const score = $derived(
-    previewing ? ui.preview!.row.result.score : fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current)),
+    previewing ? shownBike!.row.result.score : fitScore(fitCost(evaluation, targets, weights) + partPenalty(shown.current)),
   );
   const ideal = $derived(
     idealLayout(
@@ -154,7 +172,7 @@
         height={app.body.height} seg={segments} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank} units={app.units}
       />
-      <ScoreCard {score} from={otherShown ? setupScore(otherShown) : null} />
+      <ScoreCard {score} {styleId} previewStyle={styleId !== app.styleId} from={otherShown ? setupScore(otherShown) : null} />
     </div>
     <MetricStrip poses={evaluation.poses} {targets} level={resultsLevel} />
   </section>
@@ -162,7 +180,7 @@
   <aside class="panel">
     <div class="tabs" role="tablist">
       {#each tabs as t (t.id)}
-        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => { if (app.tab !== t.id) event('Tab opened', { tab: t.id }); app.tab = t.id; ui.pin = null; }}>{t.label}</button>
+        <button type="button" role="tab" aria-selected={app.tab === t.id} class:on={app.tab === t.id} onclick={() => { if (app.tab !== t.id) event('Tab opened', { tab: t.id }); app.tab = t.id; ui.pin = null; clearPeek(); }}>{t.label}</button>
       {/each}
       <SettingsMenu />
     </div>

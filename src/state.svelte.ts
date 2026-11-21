@@ -10,14 +10,20 @@ import type { Verdict } from './model/verdict';
 import { forwardLayout } from './model/geometry';
 import { evaluateFit } from './model/pose';
 import { makeContext, poseWeights } from './model/riding';
-import { fitCost, fitScore, partPenalty } from './model/score';
+import { fitCost, fitScore, partPenalty, type Status } from './model/score';
 import { bandsFor, STYLES } from './model/styles';
 import type { LinkId } from './lib/linkIds';
 import { decodeShare, encodeShare } from './lib/share';
 import { bikeOf, event, reportError, sizeOf } from './lib/analytics';
-import type { FitParams, Frame, ParamKey } from './model/types';
+import type { FitParams, Frame, ParamKey, StyleId } from './model/types';
 
 export type { Tab } from './lib/appData';
+
+/** What the drawing shows while the pointer rests on a choice, without making it. */
+export type Peek =
+  | { kind: 'setup'; params: FitParams; label: string }
+  | { kind: 'bike'; row: CompareRow; frame: Frame; other: { row: CompareRow; frame: Frame; size: string } | null }
+  | { kind: 'style'; styleId: StyleId };
 
 const KEY = 'bikefit:v2';
 const OLD_KEY = 'bikefit:v1';
@@ -91,6 +97,14 @@ export const ui = $state({
     other: { row: CompareRow; frame: Frame; size: string } | null;
   } | null,
   catalog: null as CatalogView | null,
+  /** A choice the pointer rests on, drawn in place of the committed one. */
+  peek: null as Peek | null,
+  /** The part being dragged on the drawing. */
+  dragging: null as 'saddle' | 'bars' | 'crank' | null,
+  /** The pedal angle set by hand, degrees. */
+  manualCrank: null as number | null,
+  statusHover: null as Status | null,
+  statusPin: null as Status | null,
 });
 
 ui.editing = sameParams($state.snapshot(app.baseline) as FitParams, $state.snapshot(app.current) as FitParams) ? 'current' : 'target';
@@ -277,6 +291,7 @@ export function useCompareRow(row: CompareRow) {
   Object.assign(app.current, snap(row.result.params));
   Object.assign(app.baseline, snap(row.result.params));
   app.tab = 'mybike';
+  ui.peek = null;
   // A different bike: nothing the rider kept on the old one carries over.
   for (const k of KNOB_ORDER) app.pins[k] = false;
   ui.editing = 'current';
@@ -291,6 +306,7 @@ export function replaceApp(d: AppData) {
   clearFeedback();
   ui.compareRows = null;
   ui.preview = null;
+  ui.peek = null;
 }
 
 export function exportJson(): string {
