@@ -17,7 +17,7 @@ The model's constants come from published measurements where they exist, not fro
 
 Sternal-notch height is not asked for: with stature and crotch height known, it lifts the torso fit only from R² 0.53 to 0.56.
 
-Checked, not tuned: Peveler et al. 2005 (0.883 x inseam gives about 24° of static knee flexion), Bini and Hume 2016 and Millour et al. 2019 (pedalling adds about 8°), Millour et al. 2021 (30 to 40° for medium inseams).
+Checked, not tuned: Swart and Holliday 2019 (knee flexion at bottom dead centre of 33 to 43° at low intensity and 30 to 40° at high; the model's 30 to 40° is read at the most open point of the stroke, at or just past bottom dead centre), Holliday and Swart 2021 (elbow flexion of 19° ± 8° in 50 trained cyclists; the model assumes 22 to 25°), Peveler et al. 2005 (0.883 x inseam gives about 24° of static knee flexion), Bini and Hume 2016 and Millour et al. 2019 (pedalling adds about 8°), Millour et al. 2021 (30 to 40° for medium inseams).
 
 Known gaps:
 
@@ -84,3 +84,14 @@ What this gives, and what `sizing.test.ts` checks:
 - On bikes the bands were not anchored on (Canyon Ultimate and Endurace, Giant TCR) the pick stays within one size of the maker's chart.
 
 Angle bands, hand-load bands and body proportions live in `src/model/styles.ts`, `src/model/body.ts` and `src/model/pose.ts`.
+
+## References added with the proportion and crank changes
+
+- ANSUR II public data: https://www.openlab.psu.edu/datasets/ansur2/
+- Martin and Spirduso 2001, Eur J Appl Physiol, doi:10.1007/s004210100400
+- Barratt et al. 2011, Med Sci Sports Exerc, doi:10.1249/MSS.0b013e3182125e96
+- Ferrer-Roca et al. 2017, J Sports Sci, doi:10.1080/02640414.2016.1215490
+- Swart and Holliday 2019, Curr Sports Med Rep, doi:10.1249/JSR.0000000000000665
+- Holliday and Swart 2021, Sports Med Health Sci, doi:10.1016/j.smhs.2021.02.007
+- Fonda et al. 2014, J Sports Sci, doi:10.1080/02640414.2013.868919
+- Bini et al. 2023, J Sports Sci, doi:10.1080/02640414.2023.2194725
