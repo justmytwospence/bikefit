@@ -3,11 +3,15 @@
  *
  *   npm run preview:domain -- <branch>            add the domain to the Vercel project for that branch
  *   npm run preview:domain -- <branch> --remove   remove it
+ *   npm run preview:domain -- --build             from the Vercel build: add the building branch's
  *
  * DNS needs nothing per branch: Cloudflare has a DNS-only wildcard CNAME for *.bikefitter.app, and
  * bikefitter.app is on the Vercel team, so a new hostname is verified at once with no TXT record.
+ * Adding one to a branch that already deployed points it at that deployment at once; later
+ * deployments of the branch take it over as each becomes Ready.
  *
- * Credentials: VERCEL_TOKEN, else the Vercel CLI's own login.
+ * Credentials: PREVIEW_DOMAIN_TOKEN (a Vercel token, set for Preview builds), else VERCEL_TOKEN,
+ * else the Vercel CLI's own login.
  */
 
 import { readFileSync } from 'node:fs';
@@ -20,6 +24,8 @@ const PROJECT = 'bikefitter';
 const ZONE = 'bikefitter.app';
 /** Hosts that are not feature branches: production, dev, and names a branch must not take. */
 const RESERVED = ['main', 'dev', 'www', 'api', 'mail'];
+/** Branches with a domain of their own, never a preview hostname. */
+const OWN_DOMAIN = ['main', 'dev'];
 
 /** The preview hostname of a branch: one DNS label, lowercase, at most 63 characters. */
 export function previewHost(branch: string): string {
@@ -35,7 +41,8 @@ export function previewHost(branch: string): string {
 }
 
 function vercelToken(): string {
-  if (process.env.VERCEL_TOKEN) return process.env.VERCEL_TOKEN;
+  const env = process.env.PREVIEW_DOMAIN_TOKEN || process.env.VERCEL_TOKEN;
+  if (env) return env;
   const dirs = [
     join(homedir(), 'Library/Application Support/com.vercel.cli'),
     join(process.env.XDG_DATA_HOME ?? join(homedir(), '.local/share'), 'com.vercel.cli'),
@@ -83,11 +90,38 @@ async function remove(host: string) {
   }
 }
 
+/** The Vercel build's branch, or why it gets no preview hostname. */
+export function buildBranch(env: NodeJS.ProcessEnv): { branch: string } | { skip: string } {
+  if (env.VERCEL_ENV !== 'preview') return { skip: `a ${env.VERCEL_ENV ?? 'local'} build` };
+  const branch = env.VERCEL_GIT_COMMIT_REF;
+  if (!branch) return { skip: 'no Git branch' };
+  if (OWN_DOMAIN.includes(branch)) return { skip: `${branch} has its own domain` };
+  if (!env.PREVIEW_DOMAIN_TOKEN) return { skip: 'PREVIEW_DOMAIN_TOKEN is not set' };
+  return { branch };
+}
+
+/** From the Vercel build: never fails it, a missing hostname is not worth a failed preview. */
+async function fromBuild() {
+  const target = buildBranch(process.env);
+  if ('skip' in target) {
+    console.log(`preview domain: skipped (${target.skip})`);
+    return;
+  }
+  try {
+    const host = previewHost(target.branch);
+    await add(host, target.branch);
+    console.log(`preview domain: https://${host}`);
+  } catch (e) {
+    console.warn(`preview domain: not added: ${e instanceof Error ? e.message : e}`);
+  }
+}
+
 async function main() {
   const args = process.argv.slice(2);
+  if (args.includes('--build')) return fromBuild();
   const branch = args.find((a) => !a.startsWith('--'));
   const removing = args.includes('--remove');
-  if (!branch) throw new Error('usage: npm run preview:domain -- <branch> [--remove]');
+  if (!branch) throw new Error('usage: npm run preview:domain -- <branch> [--remove] | --build');
   const host = previewHost(branch);
   if (removing) {
     await remove(host);

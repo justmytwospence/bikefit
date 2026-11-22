@@ -66,7 +66,7 @@ Needs Node 22 (`.nvmrc`).
 
 ## Deployment
 
-Vercel deploys every branch from Git: `main` to https://bikefitter.app, `dev` to https://dev.bikefitter.app, and a feature branch to `https://<branch>.bikefitter.app` once `npm run preview:domain -- <branch>` has added it. CI runs the tests, svelte-check and the build on every push. AGENTS.md has the branch workflow.
+Vercel deploys every branch from Git: `main` to https://bikefitter.app, `dev` to https://dev.bikefitter.app, and a feature branch to `https://<branch>.bikefitter.app`, a host its Preview build adds by itself (`npm run preview:domain -- <branch>` adds one by hand, `-- <branch> --remove` takes it away after the branch lands). CI runs the tests, svelte-check and the build on every push. AGENTS.md has the branch workflow.
 
 ## Where the numbers come from
 
