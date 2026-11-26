@@ -8,6 +8,7 @@
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
   import { event, eventOnce } from '../lib/analytics';
   import { app, ui } from '../state.svelte';
+  import FitReportCard from './FitReportCard.svelte';
   import Info from './Info.svelte';
   import NumberField from './NumberField.svelte';
   import Segmented from './Segmented.svelte';
@@ -165,6 +166,8 @@
     </div>
     <button type="button" class="btn small" disabled={!measured} onclick={() => (app.body.overrides = {})}>Use all estimates</button>
   </details>
+
+  <FitReportCard />
 </div>
 
 <style>

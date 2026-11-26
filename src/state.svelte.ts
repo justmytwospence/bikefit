@@ -16,6 +16,7 @@ import { bandsFor, STYLES } from './model/styles';
 import type { LinkId } from './lib/linkIds';
 import { decodeShare, encodeShare } from './lib/share';
 import { bikeOf, event, reportError, sizeOf } from './lib/analytics';
+import { matchPosition, offsetText, reportFromSetup, reportPosition } from './model/fitReport';
 import type { FitParams, Frame, ParamKey, StyleId } from './model/types';
 
 export type { Tab } from './lib/appData';
@@ -104,6 +105,8 @@ export const ui = $state({
   dragging: null as 'saddle' | 'bars' | 'crank' | null,
   /** The pedal angle set by hand, degrees. */
   manualCrank: null as number | null,
+  /** What the last fit report action did, shown on Fit my bike. */
+  reportNote: null as string | null,
   statusHover: null as Status | null,
   statusPin: null as Status | null,
 });
@@ -146,6 +149,7 @@ export function problem(mode: 'tune' | 'shop'): FitProblem {
 }
 
 export function clearResult() {
+  ui.reportNote = null;
   ui.notes = null;
   ui.verdict = null;
   ui.flags = [];
@@ -160,7 +164,7 @@ export function clearFeedback() {
 export function ladderKey(): string {
   return JSON.stringify(snap({
     baseline: app.baseline, pins: app.pins, body: app.body, styleId: app.styleId, effort: app.effort,
-    hands: app.hands, frame: activeFrame(), components: app.components, options: app.options,
+    hands: app.hands, report: app.report, frame: activeFrame(), components: app.components, options: app.options,
   }));
 }
 
@@ -308,6 +312,40 @@ export function useCompareRow(row: CompareRow) {
   ui.editing = 'current';
   ui.rung = null;
   clearFeedback();
+}
+
+/** Starts a fit report from the bike as it is now. */
+export function addReport() {
+  app.report = reportFromSetup(activeFrame(), snap(app.components), snap(app.baseline));
+  app.riderOpen.report = true;
+  event('Fit report', { action: 'added' });
+}
+
+export function removeReport() {
+  app.report = null;
+  event('Fit report', { action: 'removed' });
+}
+
+/** Sets the active bike from the fit report: as the bike you ride now, or as the target to move towards. */
+export function applyReport(as: 'current' | 'target') {
+  if (!app.report) return;
+  const comp = snap(app.components);
+  const m = matchPosition(activeFrame(), comp, reportPosition(snap(app.report), comp), app.options, snap(app.baseline));
+  if (as === 'current') {
+    Object.assign(app.baseline, m.params);
+    Object.assign(app.current, m.params);
+  } else {
+    Object.assign(app.current, m.params);
+  }
+  ui.editing = as;
+  ui.rung = null;
+  ui.animate = true;
+  app.tab = 'mybike';
+  clearFeedback();
+  const lead = as === 'current' ? 'Set from your fit report.' : 'Your fit report as the target.';
+  const close = Math.hypot(m.saddleOff.x, m.saddleOff.y) < 2 && Math.hypot(m.hoodsOff.x, m.hoodsOff.y) < 5;
+  ui.reportNote = close ? lead : `${lead} The nearest the parts allow: saddle ${offsetText(m.saddleOff)}, hoods ${offsetText(m.hoodsOff)}.`;
+  event('Fit report', { action: as });
 }
 
 export function replaceApp(d: AppData) {

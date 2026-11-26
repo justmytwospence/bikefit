@@ -1,5 +1,6 @@
 import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_FRAME, DEFAULT_OPTIONS, DEFAULT_PARAMS } from '../model/presets';
 import { KNOB_ORDER, presetLocks } from './knobs';
+import { validReport, type FitReport } from '../model/fitReport';
 import type { Units } from './units';
 import type {
   Body, Components, Effort, FitParams, Frame, HandsPref, ParamKey, PartOptions, StyleId,
@@ -27,10 +28,11 @@ export interface RiderOpen {
   ride: boolean;
   arms: boolean;
   segments: boolean;
+  report: boolean;
 }
 
 /** Older data kept a Rider level instead of open sections: Detailed opened the first two, Expert all three. */
-const openFromLevel = (lv: Level): RiderOpen => ({ ride: lv >= 2, arms: lv >= 2, segments: lv >= 3 });
+const openFromLevel = (lv: Level): RiderOpen => ({ ride: lv >= 2, arms: lv >= 2, segments: lv >= 3, report: false });
 
 export interface AppData {
   v: 3;
@@ -52,6 +54,8 @@ export interface AppData {
   detail: { bikeFull: boolean; results: Level };
   /** Which optional Rider sections are open. */
   riderOpen: RiderOpen;
+  /** Numbers typed in from a professional fit report, or null. */
+  report: FitReport | null;
   units: Units;
   /** Whether the first-run guide on the Rider tab has been dismissed. */
   seenIntro: boolean;
@@ -74,6 +78,7 @@ export function defaults(): AppData {
     hands: null,
     detail: { bikeFull: false, results: 1 as Level },
     riderOpen: openFromLevel(1),
+    report: null,
     units: 'metric' as Units,
     seenIntro: false,
   });
@@ -113,7 +118,7 @@ export function migrate(raw: unknown): AppData | null {
   }
   const o = d.riderOpen;
   const riderOpen: RiderOpen = o && typeof o === 'object'
-    ? { ride: o.ride === true, arms: o.arms === true, segments: o.segments === true }
+    ? { ride: o.ride === true, arms: o.arms === true, segments: o.segments === true, report: o.report === true }
     : openFromLevel(riderLevel);
   return {
     ...base,
@@ -133,6 +138,7 @@ export function migrate(raw: unknown): AppData | null {
     pins,
     detail,
     riderOpen,
+    report: validReport(d.report),
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     activeFrameId,
     tab: migrateTab(d.tab),

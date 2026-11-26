@@ -48,6 +48,7 @@
 <div class="scroll">
   {#if mismatch}<BodyMismatch {mismatch} />
   {:else if blocked}<ImpossibleBanner {frame} why={blocked} current={cur} {whyImpossible} {reaches} setSaddle={(v) => setKnob('saddleHeight', v)} />{/if}
+  {#if ui.reportNote}<p class="card small note">{ui.reportNote}</p>{/if}
   <BikePicker />
   <h2>Setup</h2>
   <LadderSwitch />

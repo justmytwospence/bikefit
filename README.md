@@ -17,11 +17,15 @@ The catalog (`src/data/frames/`, one JSON file per brand, each model with its so
 
 The settings menu (gear at the end of the tab row) exports and imports everything as `bikefit.json`, and copies a link carrying your body, setup and current frame. Its About section has the feedback address and the issue tracker. Opening a link asks before replacing what this browser has saved; your measurements and bikes never leave the browser otherwise. Anonymous, cookie-free usage counts go to Vercel Web Analytics and Speed Insights (`src/lib/analytics.ts` lists every event).
 
+## Fit reports
+
+Under Fit report on the Rider tab, type in the numbers from a professional fit, named as on a Retül Zin report: saddle height, seat angle, saddle setback, saddle angle, the reach and drop of the hoods (BB to grip reach and grip drop) and the cranks. Enter as my current setup puts the active bike's saddle, seatpost, stem and spacers where the report has them; Make it the target shows the changes to get there from your current setup. Parts come in steps, so when the nearest build is off by a few millimetres, a note says by how much.
+
 ## Three questions
 
 Each is asked once, in its own place, because you may want different answers to each:
 
-- **Measurements** (Rider): height, inseam and shoe size up front, then three optional sections under More measurements (Riding effort and hands, Arms and feet, Body segments). Each opens on its own; closed, it shows a one-line summary of what it holds, estimated or entered.
+- **Measurements** (Rider): height, inseam and shoe size up front, then optional sections under More measurements (Riding effort and hands, Arms and feet, Body segments) and a Fit report. Each opens on its own; closed, it shows a one-line summary of what it holds, estimated or entered.
 - **How far to go** (Targets on Fit my bike): Tools only, New parts or Everything, each worked out from your current setup, so you can see what new parts would buy you.
 - **View** (pill on the drawing): Simple, Detailed or Expert, for how much the drawing, metric strip and results show. A Hands pill beside it switches the drawing between hoods and drops.
 

@@ -5,7 +5,7 @@
  *
  * Events: App opened, Tab opened, Intro dismissed, Style chosen, Measurements opened, Measurement entered,
  * Target chosen, Change rejected, Change restored, Inseam matched, Linked, Frame chosen, Find bikes, Compare saved, Bike shown,
- * Bike made mine, Bike search, View level, Units, Exported, Imported, Link copied, About link, Score explained, Status highlighted, Dragged, Chart brushed, Error.
+ * Fit report, Bike made mine, Bike search, View level, Units, Exported, Imported, Link copied, About link, Score explained, Status highlighted, Dragged, Chart brushed, Error.
  */
 import { inject, track } from '@vercel/analytics';
 import { injectSpeedInsights } from '@vercel/speed-insights';

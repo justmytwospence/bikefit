@@ -26,7 +26,7 @@ describe('migrate', () => {
     expect(m.current.cleatOffset).toBe(5);
     expect(m.frames[0].tyreWidth).toBe(30);
     expect(m.detail).toEqual({ bikeFull: false, results: 1 });
-    expect(m.riderOpen).toEqual({ ride: false, arms: false, segments: false });
+    expect(m.riderOpen).toEqual({ ride: false, arms: false, segments: false, report: false });
     expect(Object.values(m.pins).some(Boolean)).toBe(false);
     expect('locks' in m).toBe(false);
     expect(m.body.shoeSize).toBe(43);
@@ -127,25 +127,25 @@ describe('detail', () => {
     d.detail = { global: 1, overrides: { setup: 3 } };
     const m = migrate(d)!;
     expect(m.detail).toEqual({ bikeFull: true, results: 3 });
-    expect(m.riderOpen).toEqual({ ride: true, arms: true, segments: true });
+    expect(m.riderOpen).toEqual({ ride: true, arms: true, segments: true, report: false });
   });
   it('round-trips the new shape', () => {
     const d: any = defaults();
     d.detail = { bikeFull: false, results: 3 };
-    d.riderOpen = { ride: false, arms: true, segments: false };
+    d.riderOpen = { ride: false, arms: true, segments: false, report: true };
     d.pins = { ...presetLocks('all'), spacers: true };
     const m = migrate(d)!;
     expect(m.detail).toEqual({ bikeFull: false, results: 3 });
-    expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false });
+    expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false, report: true });
     expect(m.pins).toEqual({ ...presetLocks('all'), spacers: true });
   });
   it('opens Rider sections from an old Rider level', () => {
     const d: any = defaults();
     delete d.riderOpen;
     d.detail = { rider: 2, bikeFull: false, results: 1 };
-    expect(migrate(d)!.riderOpen).toEqual({ ride: true, arms: true, segments: false });
+    expect(migrate(d)!.riderOpen).toEqual({ ride: true, arms: true, segments: false, report: false });
     d.detail.rider = 3;
-    expect(migrate(d)!.riderOpen).toEqual({ ride: true, arms: true, segments: true });
+    expect(migrate(d)!.riderOpen).toEqual({ ride: true, arms: true, segments: true, report: false });
     expect(migrate(d)!.detail).toEqual({ bikeFull: false, results: 1 });
   });
   it('clamps junk levels and open flags', () => {
@@ -154,7 +154,7 @@ describe('detail', () => {
     d.riderOpen = { ride: 'yes', arms: true };
     const m = migrate(d)!;
     expect(m.detail).toEqual({ bikeFull: false, results: 1 });
-    expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false });
+    expect(m.riderOpen).toEqual({ ride: false, arms: true, segments: false, report: false });
   });
 });
 
@@ -162,5 +162,26 @@ describe('saved part options', () => {
   it('are replaced by the current ones', () => {
     const old: any = { ...defaults(), options: { ...DEFAULT_OPTIONS, crankLengths: [160, 165, 170, 172.5, 175] } };
     expect(migrate(old)!.options).toEqual(DEFAULT_OPTIONS);
+  });
+});
+
+describe('new settings and the fit report', () => {
+  const report = { label: 'x', saddleHeight: 698, seatAngle: 74, saddleSetback: -59, saddleAngle: 0, gripReach: 550, gripDrop: -14, crankLength: 172.5 };
+  it('fills the new setup fields from older data', () => {
+    const d: any = defaults();
+    delete d.current.saddleTilt;
+    delete d.baseline.barRoll;
+    delete d.report;
+    const m = migrate(d)!;
+    expect(m.current.saddleTilt).toBe(0);
+    expect(m.baseline.barRoll).toBe(0);
+    expect(m.report).toBeNull();
+  });
+  it('keeps a valid report and drops a broken one', () => {
+    const d: any = defaults();
+    d.report = report;
+    expect(migrate(d)!.report).toEqual(report);
+    d.report = { ...report, gripReach: null };
+    expect(migrate(d)!.report).toBeNull();
   });
 });

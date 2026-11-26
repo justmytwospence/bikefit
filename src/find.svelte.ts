@@ -28,7 +28,7 @@ export function compareKey(): string {
   return JSON.stringify(
     snap({
       body: app.body, styleId: app.styleId, frames: app.frames, components: app.components,
-      options: app.options, effort: app.effort, hands: app.hands,
+      options: app.options, effort: app.effort, hands: app.hands, report: app.report,
     }),
   );
 }
@@ -53,7 +53,7 @@ export async function runCompareAll() {
 export function catalogKey(): string {
   return JSON.stringify(snap({
     body: app.body, styleId: app.styleId, components: app.components,
-    options: app.options, effort: app.effort, hands: app.hands, locks: findLocks(),
+    options: app.options, effort: app.effort, hands: app.hands, report: app.report, locks: findLocks(),
   }));
 }
 
