@@ -12,6 +12,8 @@ export const PARAM_LABELS: Record<ParamKey, string> = {
   stemAngle: 'Stem angle',
   crankLength: 'Crank length',
   cleatOffset: 'Cleat position',
+  saddleTilt: 'Saddle angle',
+  barRoll: 'Bar rotation',
 };
 
 export const fmtNum = (n: number) => (Number.isInteger(n) ? String(n) : n.toFixed(1));
@@ -86,7 +88,7 @@ export const BIG_MOVE = 10;
 const STAGED = 'A big move: make it about 5 mm at a time, a few rides apart.';
 
 export interface Change {
-  id: 'saddle' | 'rails' | 'seatpost' | 'spacers' | 'stem' | 'cranks' | 'cleats';
+  id: 'saddle' | 'rails' | 'tilt' | 'seatpost' | 'spacers' | 'stem' | 'bars' | 'cranks' | 'cleats';
   keys: ParamKey[];
   /** For "Keep the ... as it is". */
   label: string;
@@ -104,6 +106,11 @@ export function changeList(base: FitParams, next: FitParams): Change[] {
   const dr = next.railOffset - base.railOffset;
   if (Math.abs(dr) >= 0.5)
     out.push({ id: 'rails', keys: ['railOffset'], label: 'saddle position', ...(Math.abs(dr) >= BIG_MOVE ? { note: STAGED } : {}), text: dr > 0 ? `Slide the saddle forward ${fmtNum(dr)} mm on its rails` : `Slide the saddle back ${fmtNum(-dr)} mm on its rails` });
+  const dt = next.saddleTilt - base.saddleTilt;
+  if (Math.abs(dt) >= 0.5) {
+    const angleText = (t: number) => (t === 0 ? 'level' : t < 0 ? `${fmtNum(-t)}° nose down` : `${fmtNum(t)}° nose up`);
+    out.push({ id: 'tilt', keys: ['saddleTilt'], label: 'saddle angle', text: next.saddleTilt === 0 ? `Level the saddle (now ${angleText(base.saddleTilt)})` : `Tilt the saddle to ${angleText(next.saddleTilt)} (now ${angleText(base.saddleTilt)})` });
+  }
   if (Math.abs(next.seatpostSetback - base.seatpostSetback) >= 0.5)
     out.push({ id: 'seatpost', keys: ['seatpostSetback'], label: 'seatpost', text: next.seatpostSetback === 0 ? 'Swap to an inline seatpost' : `Swap to a ${fmtNum(next.seatpostSetback)} mm setback seatpost` });
   const ds = next.spacers - base.spacers;
@@ -111,6 +118,9 @@ export function changeList(base: FitParams, next: FitParams): Change[] {
     out.push({ id: 'spacers', keys: ['spacers'], label: 'spacers', text: ds > 0 ? `Add ${fmtNum(ds)} mm of spacers under the stem` : `Remove ${fmtNum(-ds)} mm of spacers` });
   if (Math.abs(next.stemLength - base.stemLength) >= 0.5 || Math.abs(next.stemAngle - base.stemAngle) >= 0.5)
     out.push({ id: 'stem', keys: ['stemLength', 'stemAngle'], label: 'stem', text: `Swap the ${fmtNum(base.stemLength)} mm ${signed(base.stemAngle)} stem for a ${fmtNum(next.stemLength)} mm ${signed(next.stemAngle)} stem` });
+  const db = next.barRoll - base.barRoll;
+  if (Math.abs(db) >= 0.5)
+    out.push({ id: 'bars', keys: ['barRoll'], label: 'bar rotation', note: 'Loosen the stem faceplate; the hoods turn with the bar.', text: db > 0 ? `Rotate the bars up ${fmtNum(db)}°` : `Rotate the bars down ${fmtNum(-db)}°` });
   if (Math.abs(next.crankLength - base.crankLength) >= 0.5)
     out.push({ id: 'cranks', keys: ['crankLength'], label: 'cranks', text: `Swap to ${fmtNum(next.crankLength)} mm cranks` });
   const dc = next.cleatOffset - base.cleatOffset;

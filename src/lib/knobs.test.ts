@@ -5,8 +5,8 @@ import { KNOB_ORDER, PRESET_FREE, presetLocks, type Preset } from './knobs';
 const free = (p: Preset) => KNOB_ORDER.filter((k) => !presetLocks(p)[k]);
 
 describe('presets', () => {
-  it('tools frees the four tool knobs', () => {
-    expect(free('tools').sort()).toEqual(['cleatOffset', 'railOffset', 'saddleHeight', 'spacers']);
+  it('tools frees the five tool knobs', () => {
+    expect(free('tools').sort()).toEqual(['cleatOffset', 'railOffset', 'saddleHeight', 'saddleTilt', 'spacers']);
   });
   it('are cumulative and everything has no locks', () => {
     for (const k of PRESET_FREE.tools) expect(PRESET_FREE.parts).toContain(k);

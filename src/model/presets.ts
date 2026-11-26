@@ -23,6 +23,8 @@ export const DEFAULT_OPTIONS: PartOptions = {
   saddleHeightRange: [550, 900],
   railRange: [-20, 20],
   cleatRange: [0, 20],
+  saddleTiltRange: [-10, 5],
+  barRollRange: [-10, 10],
   spacerStep: 5,
 };
 
@@ -38,6 +40,8 @@ export const DEFAULT_PARAMS: FitParams = {
   stemAngle: -6,
   crankLength: 172.5,
   cleatOffset: 5,
+  saddleTilt: 0,
+  barRoll: 0,
 };
 
 /**

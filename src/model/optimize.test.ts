@@ -3,6 +3,7 @@ import { resolveSegments } from './body';
 import { dropsFromHoods } from './geometry';
 import { changeList, wrenchList } from './advice';
 import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, type FitProblem } from './optimize';
+import { presetLocks } from '../lib/knobs';
 import { standoverHeight } from './verdict';
 import { POST_SHOWING } from './limits';
 import { evaluateFit } from './pose';
@@ -83,6 +84,17 @@ describe('optimizeFit', () => {
     const r = optimizeFit(p);
     expect(r.params.saddleHeight).toBe(760);
     expect(r.params.crankLength).toBe(170);
+  });
+  it('levels a nose-down saddle in the tools step', () => {
+    const current = { ...DEFAULT_PARAMS, saddleTilt: -6 };
+    const p = { ...problem('endurance', frame('endurance-56'), 'tune'), baseline: current, current, locks: presetLocks('tools') };
+    expect(Math.abs(optimizeFit(p).params.saddleTilt)).toBeLessThanOrEqual(1.5);
+  });
+  it('never changes bar rotation', () => {
+    const current = { ...DEFAULT_PARAMS, barRoll: 4 };
+    const t = optimizeFit({ ...problem('endurance', frame('endurance-56'), 'tune'), baseline: current, current });
+    expect(t.params.barRoll).toBe(4);
+    expect(optimizeFit(problem('endurance', frame('endurance-56'))).params.barRoll).toBe(0);
   });
   it('recovers from a saddle too high to reach the pedals', () => {
     const p = { ...problem('endurance', frame('endurance-56'), 'tune'), current: { ...DEFAULT_PARAMS, saddleHeight: 880 } };

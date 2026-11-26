@@ -35,6 +35,10 @@ describe('settle', () => {
     expect(s.saddleHeight).toBe(P.saddleHeight);
     expect(s.railOffset).toBe(P.railOffset + 19);
   });
+  it('puts a saddle angle move under a degree back', () => {
+    const s = settle({ ...P, saddleTilt: -0.5 }, P, () => 80);
+    expect(s.saddleTilt).toBe(P.saddleTilt);
+  });
   it('keeps a tiny change that is worth a point', () => {
     const p = { ...P, saddleHeight: P.saddleHeight + 1.5 };
     const s = settle(p, P, (q) => (q.saddleHeight === P.saddleHeight ? 79 : 80));

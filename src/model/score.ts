@@ -178,6 +178,7 @@ export function partPenalty(p: FitParams, crankRef: number): number {
   c += (over > 0 ? CRANK_WEIGHT : CRANK_WEIGHT / 2) * (over / 5) ** 2;
   c += 0.00002 * (p.stemLength - 100) ** 2;
   c += 0.0004 * (p.cleatOffset - 5) ** 2;
+  c += 0.004 * p.saddleTilt ** 2 + 0.002 * p.barRoll ** 2;
   return c;
 }
 
@@ -202,7 +203,8 @@ export function changePenalty(p: FitParams, base: FitParams): number {
     ((p.saddleHeight - base.saddleHeight) ** 2 +
       (p.railOffset - base.railOffset) ** 2 +
       (p.spacers - base.spacers) ** 2 +
-      (p.cleatOffset - base.cleatOffset) ** 2);
+      (p.cleatOffset - base.cleatOffset) ** 2) +
+    0.001 * ((p.saddleTilt - base.saddleTilt) ** 2 + (p.barRoll - base.barRoll) ** 2);
   return c;
 }
 

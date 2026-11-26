@@ -83,20 +83,21 @@ export function optimizeFit(input: FitProblem): FitResult {
   const cranks = pick('crankLength', cranksNear(o.crankLengths, problem.inseam, b.crankLength), b.crankLength);
   const setbacks = pick('seatpostSetback', o.seatpostSetbacks, b.seatpostSetback);
 
-  // Continuous variables: saddleHeight, railOffset, spacers, cleatOffset.
-  const lo = [o.saddleHeightRange[0], o.railRange[0], 0, o.cleatRange[0]];
-  const hi = [o.saddleHeightRange[1], o.railRange[1], frame.maxSpacers, o.cleatRange[1]];
-  const lockedC = [!!locks.saddleHeight, !!locks.railOffset, !!locks.spacers, !!locks.cleatOffset];
-  const baseC = [b.saddleHeight, b.railOffset, b.spacers, b.cleatOffset];
-  const grid = [0.5, 0.5, o.spacerStep, 1];
+  // Continuous variables: saddleHeight, railOffset, spacers, cleatOffset, saddleTilt (new builds keep the saddle level).
+  const shop = problem.mode === 'shop';
+  const lo = [o.saddleHeightRange[0], o.railRange[0], 0, o.cleatRange[0], o.saddleTiltRange[0]];
+  const hi = [o.saddleHeightRange[1], o.railRange[1], frame.maxSpacers, o.cleatRange[1], o.saddleTiltRange[1]];
+  const lockedC = [!!locks.saddleHeight, !!locks.railOffset, !!locks.spacers, !!locks.cleatOffset, !!locks.saddleTilt || shop];
+  const baseC = [b.saddleHeight, b.railOffset, b.spacers, b.cleatOffset, shop ? 0 : b.saddleTilt];
+  const grid = [0.5, 0.5, o.spacerStep, 1, 0.5];
 
-  const startRaw = problem.mode === 'tune' ? baseC : [0.883 * problem.inseam, 0, 20, 5];
+  const startRaw = problem.mode === 'tune' ? baseC : [0.883 * problem.inseam, 0, 20, 5, 0];
   const start = startRaw.map((x, i) => (lockedC[i] ? baseC[i] : clamp(snap(x, grid[i]), lo[i], hi[i])));
 
-  type Combo = Omit<FitParams, 'saddleHeight' | 'railOffset' | 'spacers' | 'cleatOffset'>;
+  type Combo = Omit<FitParams, 'saddleHeight' | 'railOffset' | 'spacers' | 'cleatOffset' | 'saddleTilt'>;
   interface Cand { cost: number; x: number[]; combo: Combo }
   const mkP = (c: Combo, x: number[]): FitParams => ({
-    saddleHeight: x[0], railOffset: x[1], spacers: x[2], cleatOffset: x[3], ...c,
+    saddleHeight: x[0], railOffset: x[1], spacers: x[2], cleatOffset: x[3], saddleTilt: x[4], ...c,
   });
 
   const search = (combo: Combo, from: number[], steps: number[], mins: number[], samples: number): Cand => {
@@ -106,7 +107,7 @@ export function optimizeFit(input: FitProblem): FitResult {
     const step = [...steps];
     while (evals < 500) {
       let improved = false;
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < x.length; i++) {
         if (lockedC[i]) continue;
         for (const dir of [1, -1]) {
           const y = [...x];
@@ -124,24 +125,24 @@ export function optimizeFit(input: FitProblem): FitResult {
       }
       if (improved) continue;
       if (step.every((s, i) => lockedC[i] || s <= mins[i])) break;
-      for (let i = 0; i < 4; i++) step[i] = Math.max(mins[i], step[i] / 2);
+      for (let i = 0; i < step.length; i++) step[i] = Math.max(mins[i], step[i] / 2);
     }
     return { cost: cx, x, combo };
   };
 
   // Stage 1: coarse search (12 crank samples) on every combination. Stage 2: refine the best few.
   const coarse: Cand[] = [];
-  const startStep = [16, 8, 2 * o.spacerStep, 4];
-  const coarseMin = [2, 2, o.spacerStep, 2];
+  const startStep = [16, 8, 2 * o.spacerStep, 4, 2];
+  const coarseMin = [2, 2, o.spacerStep, 2, 1];
   for (const stemLength of stems)
     for (const stemAngle of angles)
       for (const crankLength of cranks)
         for (const seatpostSetback of setbacks)
-          coarse.push(search({ stemLength, stemAngle, crankLength, seatpostSetback }, start, startStep, coarseMin, 12));
+          coarse.push(search({ stemLength, stemAngle, crankLength, seatpostSetback, barRoll: shop ? 0 : b.barRoll }, start, startStep, coarseMin, 12));
   coarse.sort((p, q) => p.cost - q.cost);
   let best: Cand | null = null;
   for (const c of coarse.slice(0, 8)) {
-    const r = search(c.combo, c.x, [2, 2, o.spacerStep, 2], [0.5, 0.5, o.spacerStep, 1], 36);
+    const r = search(c.combo, c.x, [2, 2, o.spacerStep, 2, 1], [0.5, 0.5, o.spacerStep, 1, 0.5], 36);
     if (!best || r.cost < best.cost) best = r;
   }
   const bestParams = mkP(best!.combo, best!.x);
@@ -187,7 +188,7 @@ export function idealLayout(
   for (const crank of cranksNear(crankLengths, inseam)) {
     const pen = partPenalty({
       saddleHeight: 0, railOffset: 0, seatpostSetback: 0, spacers: 0, stemLength: 100, stemAngle: 0,
-      crankLength: crank, cleatOffset: 5,
+      crankLength: crank, cleatOffset: 5, saddleTilt: 0, barRoll: 0,
     }, crankRef);
     const cost = (x: number[]) => {
       const hoods = { x: x[2], y: x[3] };

@@ -81,12 +81,13 @@ export function solveUpperBody(seg: Segments, hip: Vec2, hand: Vec2, elbowPref: 
 }
 
 /** The hip joint sits above the sit bones, tipped forward as the torso gets lower. */
-export function solvePelvis(seg: Segments, saddle: Vec2, hand: Vec2, elbowPref: number) {
+export function solvePelvis(seg: Segments, saddle: Vec2, hand: Vec2, elbowPref: number, saddleTiltDeg = 0) {
+  const sr = saddleTiltDeg * RAD;
   const hipAt = (tiltDeg: number): Vec2 => {
     const t = tiltDeg * RAD;
     return {
-      x: saddle.x - SIT_BACK + seg.pelvisFwd * Math.cos(t) + seg.pelvisUp * Math.sin(t),
-      y: saddle.y + SEAT_TISSUE + seg.pelvisUp * Math.cos(t) - seg.pelvisFwd * Math.sin(t),
+      x: saddle.x - SIT_BACK * Math.cos(sr) + seg.pelvisFwd * Math.cos(t) + seg.pelvisUp * Math.sin(t),
+      y: saddle.y - SIT_BACK * Math.sin(sr) + SEAT_TISSUE + seg.pelvisUp * Math.cos(t) - seg.pelvisFwd * Math.sin(t),
     };
   };
   let tilt = PELVIS_BASE_TILT;
@@ -128,7 +129,7 @@ export interface RiderPose {
 export function riderPose(
   seg: Segments, layout: Layout, ctx: FitContext, contact: HandContact, elbowPref: number, crankDeg: number,
 ): RiderPose {
-  const { hip, up, tilt } = solvePelvis(seg, layout.saddle, layout[contact], elbowPref);
+  const { hip, up, tilt } = solvePelvis(seg, layout.saddle, layout[contact], elbowPref, layout.saddleTilt ?? 0);
   const leg = solveLeg(seg, hip, layout, ctx, crankDeg);
   const H = seg.stature;
   const head = add(add(up.shoulder, scale(unit(sub(up.shoulder, hip)), 0.03 * H)), { x: 0.02 * H, y: 0.03 * H });
@@ -147,7 +148,7 @@ function evaluatePose(
   seg: Segments, layout: Layout, ctx: FitContext, target: PoseTarget, steps: number,
 ): { ev: PoseEval; peak: number } {
   const hand = layout[target.handContact];
-  const { hip, up, tilt } = solvePelvis(seg, layout.saddle, hand, target.elbowPref);
+  const { hip, up, tilt } = solvePelvis(seg, layout.saddle, hand, target.elbowPref, layout.saddleTilt ?? 0);
   const hipX = hip.x;
   const hipY = hip.y;
   const torsoDir = Math.atan2(up.shoulder.y - hipY, up.shoulder.x - hipX);
@@ -238,7 +239,14 @@ function evaluatePose(
   const Fp = ctx.wkg / (omega * (crank / 1000) * 9.81);
   const xp = 0.64 * crank;
   const xs = layout.saddle.x;
-  const handLoad = (Math.max(0, comX - xs - Fp * (xp - xs)) / (hand.x - xs)) * 100;
+  const vertical = (Math.max(0, comX - xs - Fp * (xp - xs)) / (hand.x - xs)) * 100;
+  // A nose-down saddle pushes the rider forward by the seat load times the tangent of its tilt; without friction the hands hold that.
+  const tiltDeg = layout.saddleTilt ?? 0;
+  let handLoad = vertical;
+  if (tiltDeg < 0) {
+    const seat = Math.max(0, 100 - vertical - 100 * Fp);
+    handLoad = Math.hypot(vertical, seat * Math.tan(-tiltDeg * RAD));
+  }
   const seatAngle = deg(Math.atan2(layout.saddle.y, -layout.saddle.x));
   return {
     peak,

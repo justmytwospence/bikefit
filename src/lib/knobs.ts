@@ -3,10 +3,10 @@ import type { ParamKey } from '../model/types';
 export type Preset = 'tools' | 'parts' | 'all';
 
 export const KNOB_ORDER: ParamKey[] = [
-  'saddleHeight', 'railOffset', 'seatpostSetback', 'spacers', 'stemLength', 'stemAngle', 'cleatOffset', 'crankLength',
+  'saddleHeight', 'railOffset', 'seatpostSetback', 'saddleTilt', 'spacers', 'stemLength', 'stemAngle', 'barRoll', 'cleatOffset', 'crankLength',
 ];
 
-const TOOLS: ParamKey[] = ['saddleHeight', 'railOffset', 'spacers', 'cleatOffset'];
+const TOOLS: ParamKey[] = ['saddleHeight', 'railOffset', 'saddleTilt', 'spacers', 'cleatOffset'];
 
 /** The knobs Optimize may change at each preset; each preset adds to the one before. */
 export const PRESET_FREE: Record<Preset, ParamKey[]> = {

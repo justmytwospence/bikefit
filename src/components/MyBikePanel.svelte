@@ -39,8 +39,8 @@
     return () => clearTimeout(t);
   });
   const GROUPS: { title: string; keys: ParamKey[] }[] = [
-    { title: 'Saddle', keys: ['saddleHeight', 'railOffset', 'seatpostSetback'] },
-    { title: 'Cockpit', keys: ['spacers', 'stemLength', 'stemAngle'] },
+    { title: 'Saddle', keys: ['saddleHeight', 'railOffset', 'seatpostSetback', 'saddleTilt'] },
+    { title: 'Cockpit', keys: ['spacers', 'stemLength', 'stemAngle', 'barRoll'] },
     { title: 'Cranks and cleats', keys: ['cleatOffset', 'crankLength'] },
   ];
 </script>

@@ -42,6 +42,8 @@
   ));
   const spacerLim = $derived(possibleRange(0, frame.maxSpacers, o.spacerStep, cur.spacers, (v) => with_({ spacers: v })));
   const cleatLim = $derived(possibleRange(o.cleatRange[0], o.cleatRange[1], 1, cur.cleatOffset, (v) => with_({ cleatOffset: v })));
+  const tiltLim = $derived(possibleRange(o.saddleTiltRange[0], o.saddleTiltRange[1], 0.5, cur.saddleTilt, (v) => with_({ saddleTilt: v })));
+  const rollLim = $derived(possibleRange(o.barRollRange[0], o.barRollRange[1], 0.5, cur.barRoll, (v) => with_({ barRoll: v })));
   type Lim = ReturnType<typeof possibleRange>;
   /** Whether the setup cannot be ridden at all; a banner says so once, instead of every slider. */
   const blocked = $derived(whyImpossible(cur));
@@ -92,6 +94,26 @@
     <p class="muted small rails">
       Rails: {cur.railOffset === 0 ? 'centred' : Math.abs(cur.railOffset) + ' mm ' + (cur.railOffset > 0 ? 'forward' : 'back') + ' of centre'}
     </p>
+    </div>
+  {:else if k === 'saddleTilt'}
+    <div use:link={'tilt'}>
+    <SliderField
+      label="Saddle angle" unit="°" min={o.saddleTiltRange[0]} max={o.saddleTiltRange[1]} step={0.5}
+      bind:value={() => ed.saddleTilt, (v) => setKnob('saddleTilt', v)}
+      limit={stops ? [tiltLim.lo, tiltLim.hi] : undefined} stop={stops ? stopText(tiltLim, cur.saddleTilt) : undefined}
+      delta={isTarget ? c.saddleTilt - b.saddleTilt : 0}
+      hint="Saddle top from horizontal: + nose up, − nose down. Most fits start level; a nose-down saddle pushes you forward onto your hands."
+    />
+    </div>
+  {:else if k === 'barRoll'}
+    <div use:link={'barRoll'}>
+    <SliderField
+      label="Bar rotation" unit="°" min={o.barRollRange[0]} max={o.barRollRange[1]} step={0.5}
+      bind:value={() => ed.barRoll, (v) => setKnob('barRoll', v)}
+      limit={stops ? [rollLim.lo, rollLim.hi] : undefined} stop={stops ? stopText(rollLim, cur.barRoll) : undefined}
+      delta={isTarget ? c.barRoll - b.barRoll : 0}
+      hint="Turns the bar in the stem clamp, carrying the hoods with it: + rolls the hoods up and back, − down and forward. Targets leave it where you set it: it is mostly about wrist comfort and the drops, which the model cannot judge."
+    />
     </div>
   {:else if k === 'seatpostSetback'}
     <div use:link={'setback'}>

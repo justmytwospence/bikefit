@@ -1,7 +1,7 @@
 import type { MetricId } from '../model/types';
 
 /** Fit settings, by the part of the drawing they move. */
-export type SettingLink = 'saddleHeight' | 'setback' | 'cleat' | 'spacers' | 'stem' | 'crank';
+export type SettingLink = 'saddleHeight' | 'setback' | 'cleat' | 'spacers' | 'stem' | 'crank' | 'tilt' | 'barRoll';
 export type FrameLink = 'stack' | 'reach' | 'seatTubeAngle' | 'headTubeAngle' | 'headTubeLength' | 'seatTubeLength'
   | 'chainstay' | 'wheelbase' | 'bbDrop' | 'maxSpacers' | 'tyreWidth';
 export type PartLink = 'barReach' | 'barDrop' | 'saddleLength' | 'footStack' | 'headsetCap' | 'hoodReach' | 'hoodRise';

@@ -82,6 +82,10 @@ export interface FitParams {
   stemAngle: number;
   crankLength: number;
   cleatOffset: number;
+  /** Saddle top from horizontal, degrees: + nose up. */
+  saddleTilt: number;
+  /** Bar rotation in the stem clamp, degrees: + rolls the hoods up and back. */
+  barRoll: number;
 }
 export type ParamKey = keyof FitParams;
 
@@ -93,6 +97,8 @@ export interface PartOptions {
   saddleHeightRange: [number, number];
   railRange: [number, number];
   cleatRange: [number, number];
+  saddleTiltRange: [number, number];
+  barRollRange: [number, number];
   spacerStep: number;
 }
 
@@ -103,6 +109,10 @@ export interface Layout {
   drops: Vec2;
   crankLength: number;
   cleatOffset: number;
+  /** Degrees; absent means level. */
+  saddleTilt?: number;
+  /** Degrees; absent means 0. */
+  barRoll?: number;
   stemBase: Vec2;
   clamp: Vec2;
   headTop: Vec2;

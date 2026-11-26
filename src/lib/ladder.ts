@@ -23,7 +23,7 @@ export function stepLocks(step: Preset, pins: Pins): Record<ParamKey, boolean> {
 export function settle(p: FitParams, base: FitParams, score: (p: FitParams) => number): FitParams {
   const floor = score(p);
   let out = { ...p };
-  for (const [k, min] of [['saddleHeight', 3], ['railOffset', 3], ['cleatOffset', 2]] as const) {
+  for (const [k, min] of [['saddleHeight', 3], ['railOffset', 3], ['cleatOffset', 2], ['saddleTilt', 1]] as const) {
     const d = out[k] - base[k];
     const v = Math.abs(d) < min ? base[k] : base[k] + Math.round(d);
     if (v === out[k]) continue;

@@ -21,7 +21,7 @@
   const shown = $derived((open || hovering) && !!breakdown);
   const LABEL: Record<string, string> = {
     legShort: "Leg can't reach the pedal", overreach: "Hands can't reach the bars",
-    parts: 'Unusual parts (stem, cranks, cleats)',
+    parts: 'Unusual parts or settings (stem, cranks, cleats, saddle or bar angle)',
   };
   const label = (id: string) => LABEL[id] ?? METRIC_LABELS[id as MetricId].long;
   const rows = $derived((breakdown?.parts ?? []).filter((x) => Math.round(x.points) >= 1).slice(0, 5));

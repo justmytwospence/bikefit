@@ -29,7 +29,7 @@
 
   const MEASURE: Record<Change['id'], SettingLink> = {
     saddle: 'saddleHeight', rails: 'setback', seatpost: 'setback', spacers: 'spacers', stem: 'stem', cranks: 'crank',
-    cleats: 'cleat',
+    cleats: 'cleat', tilt: 'tilt', bars: 'barRoll',
   };
   const tone = (s: number) => (s >= 85 ? 'ok' : s >= 60 ? 'near' : 'off');
 </script>

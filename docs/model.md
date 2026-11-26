@@ -10,6 +10,9 @@ The model's constants come from published measurements where they exist, not fro
 | Sit bones behind the saddle reference point | 40 mm | Assumption | None |
 | Thigh, shank and ankle as fractions of stature | 0.245, 0.246, 0.039 H | Winter (Drillis and Contini); de Leva 1996 agrees | Strong |
 | Crank length | 20.5% of inseam, 150 to 175 mm; the targets choose among the nearest three lengths | The ratio of a stock mid-size build (172.5 mm at an 84 cm inseam). Martin and Spirduso 2001: maximum power varies 4% from 120 to 220 mm cranks. Barratt et al. 2011: no change in joint powers from 150 to 190 mm at an optimised cadence. Ferrer-Roca et al. 2017: 5 mm more adds 1.8 to 3.4° of hip and knee flexion and no efficiency, "the shorter one might be recommended" | Calibrated; the studies only say length matters little |
+| Saddle angle | Pivots about the saddle reference point, moving the sit bones with it; costs 0.004 per degree² in the score | Assumption | None |
+| Nose-down bracing | Seat load × tan(tilt) with no friction, combined with the vertical hand share as their hypotenuse | Brand et al. 2019 (Res Q Exerc Sport, doi 10.1080/02701367.2019.1665620): an inclined saddle raised elbow-extensor activation by about 23%. No study gives a hand load figure | Weak |
+| Bar rotation | Turns the hoods and drops about the clamp; geometry only, 0.002 per degree²; targets never change it | Assumption | None |
 | Shoes at standover | 20 mm | Assumption | None |
 | Torso and arm length against leg length | −0.6 mm of torso and +0.34 mm of arm per mm of inseam beyond 0.472 × stature, within ±5% of stature | ANSUR II public data (4,082 men, 1,986 women): acromion height minus trochanterion height, and shoulder-to-grip length, regressed on crotch height and stature | Moderate (R² 0.53 with stature) |
 | Knee extension band | 30 to 40° of flexion (140 to 150° included) | Ferrer-Roca et al. 2012; Millour et al. 2019; Swart and Holliday 2019 | Moderate |
@@ -21,6 +24,7 @@ Checked, not tuned: Swart and Holliday 2019 (knee flexion at bottom dead centre 
 
 Known gaps:
 
+- The efficiency Wilkinson and Kram 2021 (Eur J Appl Physiol, doi 10.1007/s00421-021-04841-y) found from a nose-down saddle on a climb (20.5 to 20.8% gross efficiency at 8° nose-down on an 8° slope) is not modelled, and neither is wrist comfort from bar rotation.
 - The pedal angle through the stroke is flatter in Kautz et al. 1991 than modelled.
 - ANSUR II crotch height is 0.481 of stature, not the 0.47 used to scale the legs.
 - Hand load reads about 10 points above the one measured figure found (about 15% of body weight at 2 W/kg).

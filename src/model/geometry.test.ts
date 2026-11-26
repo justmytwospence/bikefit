@@ -42,4 +42,19 @@ describe('nose setback', () => {
     expect(noseSetback(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, railOffset: rail })).toBeCloseTo(60, 0);
     expect(Math.abs(noseSetback(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, railOffset: rail }) - 60)).toBeLessThanOrEqual(0.25);
   });
+  it('bar rotation turns the hoods and drops about the clamp', () => {
+    const a = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, P);
+    const up = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, barRoll: 5 });
+    const down = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, barRoll: -5 });
+    const d = (L: typeof a) => Math.hypot(L.hoods.x - L.clamp.x, L.hoods.y - L.clamp.y);
+    expect(Math.abs(d(up) - d(a))).toBeLessThan(1e-9);
+    expect(up.hoods.y).toBeGreaterThan(a.hoods.y);
+    expect(down.hoods.y).toBeLessThan(a.hoods.y);
+  });
+  it('saddle angle tilts the nose about the saddle point', () => {
+    const a = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, P);
+    const t = forwardLayout(SPIKE_FRAME, DEFAULT_COMPONENTS, { ...P, saddleTilt: -5 });
+    expect(t.saddle).toEqual(a.saddle);
+    expect(t.nose.y).toBeCloseTo(a.saddle.y - 150 * Math.sin((5 * Math.PI) / 180), 6);
+  });
 });

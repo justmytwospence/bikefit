@@ -3,7 +3,7 @@ import type { Units } from '../lib/units';
 import { frameSkeleton, steerAxis } from '../model/geometry';
 import type { RiderPose } from '../model/pose';
 import type { Components, FitParams, Frame, Layout, PoseEval, Segments } from '../model/types';
-import { add, scale, sub, unit, type Vec2 } from '../model/vec';
+import { add, rotate, scale, sub, unit, type Vec2 } from '../model/vec';
 import { angleOf, arcPath, dimension, polar } from './shapes';
 
 /** What the drawing shows for one linked number: dimension lines, guides, highlighted parts, arcs and a label. */
@@ -73,6 +73,18 @@ export function overlayFor(i: OverlayInput): Overlay | null {
     case 'm:knee': case 'm:kneeTop': case 'm:hip': case 'm:torso': case 'm:shoulder': case 'm:elbow':
     case 'cleat': case 'c:footStack':
       return null;
+    case 'tilt':
+      return {
+        label: `Saddle angle ${signed(p.saddleTilt)}`, at: v(L.saddle.x, L.saddle.y + 90), dims: [],
+        guides: [[v(L.saddle.x - 140, L.saddle.y), v(L.nose.x + 40, L.saddle.y)]],
+        strong: [[add(L.saddle, rotate(v(-120, 0), p.saddleTilt)), L.nose]], arcs: [], rings: [],
+      };
+    case 'barRoll':
+      return {
+        label: `Bar rotation ${signed(p.barRoll)}`, at: v(L.clamp.x, L.clamp.y + 110), dims: [],
+        guides: [[L.clamp, v(L.clamp.x + 160, L.clamp.y)]], strong: [[L.clamp, L.hoods], [L.clamp, L.drops]],
+        arcs: [], rings: [],
+      };
     case 'saddleHeight':
       return dimO(`Saddle height ${fmt(p.saddleHeight)} mm`, dimension(bb, L.seatAxisTop, 90));
     case 'spacers': {
