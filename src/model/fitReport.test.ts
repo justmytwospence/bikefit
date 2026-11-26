@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { forwardLayout } from './geometry';
-import { matchPosition, reportFromSetup, reportPosition, validReport, offsetText, type FitReport } from './fitReport';
+import { fittedStyle, matchPosition, offsetText, reportFromSetup, reportInseam, reportLayout, reportPosition, validReport, type FitReport } from './fitReport';
+import { resolveSegments } from './body';
+import { evaluateFit } from './pose';
+import { makeContext } from './riding';
+import { fitCost, fitScore } from './score';
+import { DEFAULT_BODY } from './presets';
 import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
 import { TEST_FRAMES } from './testFrames';
 import type { Frame } from './types';
@@ -58,5 +63,25 @@ describe('fit report positions', () => {
     expect(validReport({ ...RETUL, saddleHeight: undefined })).toBeNull();
     expect(validReport({ ...RETUL, label: undefined })!.label).toBe('');
     expect(validReport(null)).toBeNull();
+  });
+});
+
+const BODY = { ...DEFAULT_BODY, height: 1750, inseam: 805, ankling: 'toePoint' as const };
+
+describe('My fit', () => {
+  it('centres the bands on the report', () => {
+    const f = fittedStyle(RETUL, resolveSegments(BODY), COMP, 'toePoint', 'tempo');
+    const st = f.style!;
+    const ev = evaluateFit(resolveSegments(BODY), reportLayout(RETUL, COMP), makeContext(null, COMP, 'toePoint', 'tempo'), st.poses, 36, false);
+    expect(fitScore(fitCost(ev, st.poses, [1, 0.3]))).toBeGreaterThanOrEqual(99);
+    expect(ev.poses[0].metrics.saddleOff).toBe(0);
+    expect(ev.poses[0].metrics.handOff).toBe(0);
+  });
+  it('reports a pedal the body cannot reach', () => {
+    const short = { ...BODY, inseam: 650 };
+    expect(fittedStyle(RETUL, resolveSegments(short), COMP, 'toePoint', 'tempo').problem).toBe('pedal');
+    const n = reportInseam(RETUL, BODY, COMP, 'tempo')!;
+    expect(n).toBeGreaterThanOrEqual(790);
+    expect(n).toBeLessThanOrEqual(820);
   });
 });

@@ -1,6 +1,6 @@
 import { forwardLayout } from './geometry';
 import { DEFAULT_PARAMS } from './presets';
-import type { Band, Components, Evaluation, FitParams, Frame, PoseTarget, MetricId, StockCockpit } from './types';
+import type { Band, Components, Evaluation, FitParams, Frame, PoseTarget, MetricId, StockCockpit, Style } from './types';
 import type { Vec2 } from './vec';
 
 
@@ -159,9 +159,17 @@ export const CRANK_WEIGHT = 0.004;
 /** The crank length in proportion to the legs, within what road cranksets are commonly sold in, mm. */
 export const crankFor = (inseam: number): number => Math.min(175, Math.max(150, CRANK_SHARE * inseam));
 
+/** The crank length the score measures against: the one a fit report rides, else in proportion to the legs. */
+export const crankRefFor = (style: Pick<Style, 'position'>, inseam: number): number =>
+  style.position?.crankLength ?? crankFor(inseam);
+
 /** The lengths the targets may choose: the option nearest crankFor and one either side, plus the one in use. */
 export function cranksNear(options: number[], inseam: number, keep?: number): number[] {
-  const ref = crankFor(inseam);
+  return cranksAround(options, crankFor(inseam), keep);
+}
+
+/** The option nearest a reference length and one either side, plus the one in use. */
+export function cranksAround(options: number[], ref: number, keep?: number): number[] {
   const sorted = [...options].sort((a, b) => a - b);
   let i = 0;
   sorted.forEach((c, j) => { if (Math.abs(c - ref) < Math.abs(sorted[i] - ref)) i = j; });

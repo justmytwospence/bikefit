@@ -29,7 +29,7 @@
   import PillSelect from './PillSelect.svelte';
 
   let {
-    frame, components, layout, pose, farPose, ghostPose, ghostBike = null, ideal, target, poseEval, level, height, seg, params,
+    frame, components, layout, pose, farPose, ghostPose, ghostBike = null, ideal, idealLabel = 'ideal', target, poseEval, level, height, seg, params,
     toeTip, toeClearance, peakCrank, units, editable, whyImpossible, options,
   }: {
     frame: Frame;
@@ -41,6 +41,8 @@
     /** A second size of the same bike, drawn in outline behind the first. */
     ghostBike?: { frame: Frame; layout: Layout; params: FitParams; label: string; partsOnly?: boolean } | null;
     ideal: { saddle: Vec2; hoods: Vec2 };
+    /** What the ideal marks are called: 'your fit' when they come from a fit report. */
+    idealLabel?: string;
     target: PoseTarget;
     poseEval: PoseEval;
     level: Level;
@@ -229,7 +231,7 @@
           <text
             transform="translate({t.tgt.x + 44},{t.tgt.y + 44}) scale(1,-1)" fill="var(--accent)" stroke="none"
             font-size={fs * 0.8} font-weight="700"
-          >ideal</text>
+          >{idealLabel}</text>
         {/if}
       {/each}
 
@@ -284,7 +286,7 @@
           onclick={() => { ui.statusPin = ui.statusPin === s ? null : s; if (ui.statusPin) event('Status highlighted', { status: s }); }}
         ><i></i>{counts[s]}<span class="sr"> {text}</span></button>
     {/each}
-    {#if !inBand && level >= 2}<span><i class="t"></i> ideal position</span>{/if}
+    {#if !inBand && level >= 2}<span><i class="t"></i> {idealLabel} position</span>{/if}
     {#if ghostPose}<span><i class="c"></i> current setup</span>{/if}
     {#each moved as m (m.key)}<span class="mv">{m.label}</span>{/each}
     {#if ghostBike && !ghostBike.partsOnly}<span><i class="o"></i> {ghostBike.label}</span>{/if}

@@ -19,10 +19,10 @@
   import type { Vec2 } from './model/vec';
   import { makeContext, poseWeights } from './model/riding';
   import { TOE_OVERLAP_FLAG } from './model/verdict';
-  import { crankFor, fitCost, fitScore, partPenalty, scoreBreakdown } from './model/score';
-  import { bandsFor, STYLES } from './model/styles';
+  import { crankRefFor, fitCost, fitScore, partPenalty, scoreBreakdown } from './model/score';
+  import { bandsFor } from './model/styles';
   import { event } from './lib/analytics';
-  import { activeFrame, app, save, setupScore, ui, type Tab } from './state.svelte';
+  import { activeFrame, app, save, setupScore, styleOf, ui, type Tab } from './state.svelte';
   import { focus } from './lib/link.svelte';
   import { clearPeek } from './lib/peek.svelte';
 
@@ -30,7 +30,7 @@
   /** What the pointer rests on, drawn in place of the committed choice. */
   const peekNow = $derived(ui.peek);
   const styleId = $derived(peekNow?.kind === 'style' ? peekNow.styleId : app.styleId);
-  const style = $derived(STYLES[styleId]);
+  const style = $derived(styleOf(styleId));
   const targets = $derived(bandsFor(style, app.body.flexibility, app.body.height));
   const weights = $derived(poseWeights(app.hands ?? style.defaultHands));
   const effort = $derived(app.effort ?? style.defaultEffort);
@@ -113,7 +113,7 @@
     return () => clearTimeout(t);
   });
 
-  const crankRef = $derived(crankFor(app.body.inseam));
+  const crankRef = $derived(crankRefFor(style, app.body.inseam));
   const layout = $derived(forwardLayout(dFrame, dComp, shown.current));
   const evaluation = $derived(evaluateFit(dSeg, layout, ctx, targets));
   const rawScore = $derived(
@@ -130,7 +130,7 @@
   const score = $derived(Math.round(scoreT.current));
   const breakdown = $derived(previewing ? null : scoreBreakdown(evaluation, targets, weights, shown.current, crankRef));
   const ideal = $derived(
-    idealLayout(
+    style.position ?? idealLayout(
       segments, targets, weights, makeContext(null, app.components, app.body.ankling, effort),
       app.components, app.options.crankLengths, app.body.inseam,
     ),
@@ -223,7 +223,7 @@
   <section class="view">
     <div class="canvas">
       <BikeView
-        frame={dFrame} components={dComp} {layout} {pose} {farPose} {ghostPose} {ghostBike} ideal={idealT.current}
+        frame={dFrame} components={dComp} {layout} {pose} {farPose} {ghostPose} {ghostBike} ideal={idealT.current} idealLabel={style.position ? 'your fit' : 'ideal'}
         target={shownTarget} poseEval={evaluation.poses[pi]} level={resultsLevel}
         height={dSeg.stature} seg={dSeg} params={shown.current}
         {toeTip} toeClearance={evaluation.toeClearance} peakCrank={evaluation.peakKneeCrank} units={app.units}

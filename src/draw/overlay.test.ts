@@ -23,7 +23,7 @@ const base: Omit<OverlayInput, 'id'> = {
 const at = (id: LinkId, extra: Partial<OverlayInput> = {}) => overlayFor({ ...base, ...extra, id });
 
 const ALL: LinkId[] = [
-  'saddleHeight', 'setback', 'cleat', 'spacers', 'stem', 'crank', 'tilt', 'barRoll',
+  'saddleHeight', 'setback', 'cleat', 'spacers', 'stem', 'crank', 'tilt', 'barRoll', 'm:saddleOff', 'm:handOff',
   'm:knee', 'm:kneeTop', 'm:hip', 'm:torso', 'm:shoulder', 'm:elbow', 'm:seatAngle', 'm:handLoad', 'm:kops',
   'f:stack', 'f:reach', 'f:seatTubeAngle', 'f:headTubeAngle', 'f:headTubeLength', 'f:seatTubeLength', 'f:chainstay',
   'f:wheelbase', 'f:bbDrop', 'f:maxSpacers', 'f:tyreWidth',

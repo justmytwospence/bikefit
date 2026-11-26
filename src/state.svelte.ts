@@ -11,13 +11,13 @@ import type { Verdict } from './model/verdict';
 import { forwardLayout } from './model/geometry';
 import { evaluateFit } from './model/pose';
 import { makeContext, poseWeights } from './model/riding';
-import { crankFor, fitCost, fitScore, partPenalty, type Status } from './model/score';
+import { crankRefFor, fitCost, fitScore, partPenalty, type Status } from './model/score';
 import { bandsFor, STYLES } from './model/styles';
 import type { LinkId } from './lib/linkIds';
 import { decodeShare, encodeShare } from './lib/share';
 import { bikeOf, event, reportError, sizeOf } from './lib/analytics';
-import { matchPosition, offsetText, reportFromSetup, reportPosition } from './model/fitReport';
-import type { FitParams, Frame, ParamKey, StyleId } from './model/types';
+import { fittedStyle, matchPosition, offsetText, reportFromSetup, reportPosition, type Fitted } from './model/fitReport';
+import type { FitParams, Frame, ParamKey, Style, StyleId } from './model/types';
 
 export type { Tab } from './lib/appData';
 
@@ -128,8 +128,36 @@ export function activeFrame(): Frame {
   return app.frames.find((f) => f.id === app.activeFrameId) ?? app.frames[0];
 }
 
+let fittedMemo: { key: string; value: Fitted } | null = null;
+
+/** My fit worked out from the saved report and body, or null without a report. */
+export function fittedNow(): Fitted | null {
+  if (!app.report) return null;
+  const effort = app.effort ?? 'tempo';
+  const key = JSON.stringify(snap({ r: app.report, b: app.body, c: app.components, e: effort }));
+  if (fittedMemo?.key !== key) {
+    fittedMemo = {
+      key, value: fittedStyle(snap(app.report), resolveSegments(snap(app.body)), snap(app.components), app.body.ankling, effort),
+    };
+  }
+  return fittedMemo.value;
+}
+
+/** The riding style with this id; My fit stands in as Sporty while its report is missing or cannot be ridden. */
+export function styleOf(id: StyleId = app.styleId): Style {
+  if (id !== 'fitted') return STYLES[id];
+  return fittedNow()?.style ?? STYLES.sport;
+}
+
+/** The riding styles to choose from: My fit joins them while the report can be ridden. */
+export function styleChoices(): { id: StyleId; name: string }[] {
+  const out: { id: StyleId; name: string }[] = Object.values(STYLES).map((s) => ({ id: s.id, name: s.name }));
+  if (fittedNow()?.style) out.push({ id: 'fitted', name: 'My fit' });
+  return out;
+}
+
 export function problem(mode: 'tune' | 'shop'): FitProblem {
-  const st = STYLES[app.styleId];
+  const st = styleOf();
   return snap({
     segments: resolveSegments(app.body),
     inseam: app.body.inseam,
@@ -145,6 +173,8 @@ export function problem(mode: 'tune' | 'shop'): FitProblem {
     locks: app.pins,
     mode,
     stock: st.stock,
+    crankRef: crankRefFor(st, app.body.inseam),
+    ...(st.position ? { idealHoods: st.position.hoods } : {}),
   });
 }
 
@@ -173,7 +203,7 @@ export function setupScore(p: FitParams): number {
   const pr = problem('tune');
   const ctx = makeContext(pr.frame, pr.components, pr.ankling, pr.effort);
   const ev = evaluateFit(pr.segments, forwardLayout(pr.frame, pr.components, p), ctx, pr.targets);
-  return fitScore(fitCost(ev, pr.targets, pr.poseWeights) + partPenalty(p, crankFor(pr.inseam)));
+  return fitScore(fitCost(ev, pr.targets, pr.poseWeights) + partPenalty(p, pr.crankRef!));
 }
 
 /**
@@ -323,6 +353,7 @@ export function addReport() {
 
 export function removeReport() {
   app.report = null;
+  if (app.styleId === 'fitted') app.styleId = 'endurance';
   event('Fit report', { action: 'removed' });
 }
 

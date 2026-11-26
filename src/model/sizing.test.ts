@@ -7,7 +7,7 @@ import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } fro
 import { makeContext, poseWeights } from './riding';
 import { nominalStem } from './score';
 import { bandsFor, STYLES } from './styles';
-import type { Frame, StyleId } from './types';
+import type { Frame, BaseStyleId } from './types';
 
 type Row = [size: string, stack: number, reach: number, sta: number, hta: number, ht: number, st: number, cs: number, wb: number, bbDrop: number];
 interface Ref { name: string; maxSpacers: number; tyreWidth: number; rows: Row[]; stock: number[]; chart: [number, number][] }
@@ -93,7 +93,7 @@ const frames = (ref: Ref): Frame[] => ref.rows.map(([size, stack, reach, sta, ht
   headTubeLength: ht, seatTubeLength: st, chainstay: cs, wheelbase: wb, bbDrop, maxSpacers: ref.maxSpacers, tyreWidth: ref.tyreWidth,
 }));
 
-function rider(style: StyleId, heightMm: number) {
+function rider(style: BaseStyleId, heightMm: number) {
   const inseam = Math.round(0.472 * heightMm);
   const st = STYLES[style];
   const segments = resolveSegments({ ...DEFAULT_BODY, height: heightMm, inseam, shoeSizeAuto: true });
@@ -108,7 +108,7 @@ function rider(style: StyleId, heightMm: number) {
 
 const memo = new Map<string, SizeEntry[]>();
 /** Every size of a reference bike for this rider, as Find a bike checks them, in size order with their standing. */
-function sizes(ref: Ref, style: StyleId, heightMm: number): SizeEntry[] {
+function sizes(ref: Ref, style: BaseStyleId, heightMm: number): SizeEntry[] {
   const key = `${ref.name}/${style}/${heightMm}`;
   let out = memo.get(key);
   if (!out) {
@@ -135,7 +135,7 @@ describe('nominalStem', () => {
 
 describe('style anchors', () => {
   // The build each style is anchored on, held fixed while the saddle is optimized.
-  const cases: [StyleId, Ref, number, number][] = [
+  const cases: [BaseStyleId, Ref, number, number][] = [
     ['endurance', DOMANE, 25, 0],
     ['sport', TARMAC, 20, 0],
     ['race', TARMAC, 0, 10],
@@ -161,7 +161,7 @@ describe('style anchors', () => {
 });
 
 describe('size picks against manufacturer charts', () => {
-  const anchors: [StyleId, Ref][] = [['sport', TARMAC], ['endurance', DOMANE], ['race', TARMAC]];
+  const anchors: [BaseStyleId, Ref][] = [['sport', TARMAC], ['endurance', DOMANE], ['race', TARMAC]];
   it.each(anchors)('%s: a rider in the middle of any chart size gets that size', (style, ref) => {
     ref.chart.forEach((_, i) => expect(ref.rows[pickIndex(sizes(ref, style, mid(ref, i)))][0], `chart size ${ref.rows[i][0]}`).toBe(ref.rows[i][0]));
   }, 120000);
@@ -186,12 +186,12 @@ describe('size picks against manufacturer charts', () => {
     expect(sizes(TARMAC, 'sport', 1600).find((x) => x.size === '61')!.standing).toBe('no');
   }, 60000);
   it('marks a bike down for a style it was not built for', () => {
-    const best = (ref: Ref, style: StyleId, h: number) => { const e = sizes(ref, style, h); return e[pickIndex(e)].row.result; };
+    const best = (ref: Ref, style: BaseStyleId, h: number) => { const e = sizes(ref, style, h); return e[pickIndex(e)].row.result; };
     expect(best(TARMAC, 'endurance', 1775).score).toBeLessThanOrEqual(best(DOMANE, 'endurance', 1770).score - 15);
     expect(best(DOMANE, 'sport', 1770).score).toBeLessThanOrEqual(best(TARMAC, 'sport', 1775).score - 15);
     expect(best(TARMAC, 'endurance', 1775).verdict).toBe('compromise');
   }, 60000);
-  const others: [StyleId, Ref][] = [['sport', ULTIMATE], ['endurance', ENDURACE], ['sport', TCR]];
+  const others: [BaseStyleId, Ref][] = [['sport', ULTIMATE], ['endurance', ENDURACE], ['sport', TCR]];
   it.each(others)('%s on a bike of another make stays within one size of its chart', (style, ref) => {
     ref.chart.forEach((_, i) => expect(Math.abs(pickIndex(sizes(ref, style, mid(ref, i))) - i), `chart size ${ref.rows[i][0]}`).toBeLessThanOrEqual(1));
   }, 120000);

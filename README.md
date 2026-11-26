@@ -19,7 +19,7 @@ The settings menu (gear at the end of the tab row) exports and imports everythin
 
 ## Fit reports
 
-Under Fit report on the Rider tab, type in the numbers from a professional fit, named as on a Retül Zin report: saddle height, seat angle, saddle setback, saddle angle, the reach and drop of the hoods (BB to grip reach and grip drop) and the cranks. Enter as my current setup puts the active bike's saddle, seatpost, stem and spacers where the report has them; Make it the target shows the changes to get there from your current setup. Parts come in steps, so when the nearest build is off by a few millimetres, a note says by how much.
+Under Fit report on the Rider tab, type in the numbers from a professional fit, named as on a Retül Zin report: saddle height, seat angle, saddle setback, saddle angle, the reach and drop of the hoods (BB to grip reach and grip drop) and the cranks. Enter as my current setup puts the active bike's saddle, seatpost, stem and spacers where the report has them; Make it the target shows the changes to get there from your current setup. Parts come in steps, so when the nearest build is off by a few millimetres, a note says by how much. Aim at this position adds My fit to the riding styles: the score, the ideal marks on the drawing, the targets and Find a bike then all measure against the report's saddle and hoods, and the angles your body makes there.
 
 ## Three questions
 

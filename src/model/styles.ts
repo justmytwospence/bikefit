@@ -1,17 +1,17 @@
-import type { Band, Flexibility, MetricId, PoseTarget, Style, StyleId } from './types';
+import type { Band, BaseStyleId, Flexibility, MetricId, PoseTarget, Style } from './types';
 
 const W: Record<MetricId, number> = {
-  knee: 1, kneeTop: 0.5, hip: 0.6, torso: 1, shoulder: 0.6, elbow: 0, seatAngle: 0.4, handLoad: 0.5, kops: 0,
+  knee: 1, kneeTop: 0.5, hip: 0.6, torso: 1, shoulder: 0.6, elbow: 0, seatAngle: 0.4, handLoad: 0.5, kops: 0, saddleOff: 1, handOff: 1,
 };
 
-function band(k: MetricId, r: [number, number]): Band {
+export function band(k: MetricId, r: [number, number]): Band {
   return {
     min: r[0],
     max: r[1],
     weight: W[k],
-    scale: k === 'kops' ? 10 : k === 'seatAngle' ? 1.5 : k === 'handLoad' ? 4 : 5,
-    center: k === 'kneeTop' ? 0 : 0.05,
-    unit: k === 'kops' ? 'mm' : k === 'handLoad' ? '%' : '°',
+    scale: k === 'kops' ? 10 : k === 'seatAngle' ? 1.5 : k === 'handLoad' ? 4 : k === 'saddleOff' ? 6 : k === 'handOff' ? 15 : 5,
+    center: k === 'kneeTop' || k === 'saddleOff' || k === 'handOff' ? 0 : 0.05,
+    unit: k === 'kops' || k === 'saddleOff' || k === 'handOff' ? 'mm' : k === 'handLoad' ? '%' : '°',
   };
 }
 
@@ -22,7 +22,7 @@ function bands(r: Partial<Record<MetricId, [number, number]>>): Partial<Record<M
 }
 
 function style(
-  id: StyleId, name: string, blurb: string, defaults: Pick<Style, 'defaultEffort' | 'defaultHands' | 'stock'>,
+  id: BaseStyleId, name: string, blurb: string, defaults: Pick<Style, 'defaultEffort' | 'defaultHands' | 'stock'>,
   hoodsElbow: number,
   hoods: Partial<Record<MetricId, [number, number]>>,
   drops: Partial<Record<MetricId, [number, number]>>,
@@ -37,7 +37,7 @@ function style(
 }
 
 /** Band centres are anchored on stock builds of manufacturer-recommended sizes; see docs/model.md and sizing.test.ts. */
-export const STYLES: Record<StyleId, Style> = {
+export const STYLES: Record<BaseStyleId, Style> = {
   endurance: style(
     'endurance', 'Relaxed', 'Upright and comfortable for long days, like an endurance bike.',
     { defaultEffort: 'easy', defaultHands: 'hoods', stock: { spacerShare: 0.65, stemExtra: 0 } }, 158,
@@ -85,6 +85,8 @@ export const REF_HEIGHT = 1750;
 export const SHOULDER_PER_CM = 0.12;
 
 export function bandsFor(style: Style, flexibility: Flexibility, height = REF_HEIGHT): PoseTarget[] {
+  // My fit's bands are already centred on the rider's own report: no shift for flexibility or height.
+  if (style.position) return style.poses.map((p) => ({ ...p, bands: { ...p.bands } }));
   const shift = flexibility === 'low' ? 3 : flexibility === 'high' ? -2 : 0;
   const reach = (-SHOULDER_PER_CM * (height - REF_HEIGHT)) / 10;
   return style.poses.map((p) => {
@@ -109,10 +111,12 @@ export const METRIC_LABELS: Record<MetricId, { short: string; long: string }> = 
   elbow: { short: 'Elbow', long: 'Elbow angle (the model assumes this bend; shown for reference)' },
   seatAngle: { short: 'Seat angle', long: 'Effective seat angle: bottom bracket to saddle, from horizontal' },
   handLoad: { short: 'Hand load', long: 'Estimated share of body weight on the hands at your effort level. It follows saddle setback and effort; stem changes barely move it.' },
+  saddleOff: { short: 'Saddle vs fit', long: 'Saddle distance from your fit report position' },
+  handOff: { short: 'Hoods vs fit', long: 'Hoods distance from your fit report position' },
   kops: { short: 'Knee/pedal', long: "Knee ahead of the pedal axle at 3 o'clock (for information)" },
 };
 
 export const METRIC_ORDER: MetricId[] = [
-  'knee', 'kneeTop', 'hip', 'torso', 'shoulder', 'elbow', 'seatAngle', 'handLoad', 'kops',
+  'saddleOff', 'handOff', 'knee', 'kneeTop', 'hip', 'torso', 'shoulder', 'elbow', 'seatAngle', 'handLoad', 'kops',
 ];
-export const SIMPLE_METRICS: MetricId[] = ['knee', 'hip', 'torso', 'handLoad'];
+export const SIMPLE_METRICS: MetricId[] = ['saddleOff', 'handOff', 'knee', 'hip', 'torso', 'handLoad'];

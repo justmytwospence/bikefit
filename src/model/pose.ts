@@ -255,6 +255,8 @@ function evaluatePose(
       metrics: {
         knee: kneeMax, kneeTop: kneeMin, hip: hipMin, torso: up.torsoAngle, shoulder: up.shoulderAngle,
         elbow: up.elbowAngle, seatAngle, handLoad, kops,
+        saddleOff: target.ref ? len(sub(layout.saddle, target.ref.saddle)) : 0,
+        handOff: target.ref ? len(sub(hand, target.ref.hand)) : 0,
       },
       overextended: over,
       kneeTopCrank: top,

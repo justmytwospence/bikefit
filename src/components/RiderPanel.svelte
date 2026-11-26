@@ -4,10 +4,9 @@
   import { ANKLING, EFFORT_LABELS, HANDS_LABELS, shoeLabel } from '../model/riding';
   import { feetInches, fromDisplay, fromFeetInches, lengthField, toDisplay } from '../lib/units';
   import { enterPeek, leavePeek } from '../lib/peek.svelte';
-  import { STYLES } from '../model/styles';
   import type { Ankling, Effort, Flexibility, HandsPref, Sex } from '../model/types';
   import { event, eventOnce } from '../lib/analytics';
-  import { app, ui } from '../state.svelte';
+  import { app, styleChoices, styleOf, ui } from '../state.svelte';
   import FitReportCard from './FitReportCard.svelte';
   import Info from './Info.svelte';
   import NumberField from './NumberField.svelte';
@@ -15,9 +14,9 @@
 
   const est = $derived(resolveSegments({ ...app.body, overrides: {} }));
   const keys = Object.keys(SEGMENT_LABELS) as (keyof typeof SEGMENT_LABELS)[];
-  const style = $derived(STYLES[ui.peek?.kind === 'style' ? ui.peek.styleId : app.styleId]);
+  const style = $derived(styleOf(ui.peek?.kind === 'style' ? ui.peek.styleId : app.styleId));
   const STYLE_OWNER = {};
-  const styleOptions = Object.values(STYLES).map((s) => ({ value: s.id, label: s.name }));
+  const styleOptions = $derived(styleChoices().map((s) => ({ value: s.id, label: s.name })));
   const shoes = Array.from({ length: 29 }, (_, i) => 36 + i * 0.5);
 
   const sexes: { value: Sex; label: string }[] = [

@@ -120,6 +120,9 @@ export function migrate(raw: unknown): AppData | null {
   const riderOpen: RiderOpen = o && typeof o === 'object'
     ? { ride: o.ride === true, arms: o.arms === true, segments: o.segments === true, report: o.report === true }
     : openFromLevel(riderLevel);
+  const report = validReport(d.report);
+  const styleId: StyleId = d.styleId === 'fitted' ? (report ? 'fitted' : 'endurance')
+    : ['endurance', 'sport', 'race', 'gravel'].includes(d.styleId) ? d.styleId : 'endurance';
   return {
     ...base,
     ...rest,
@@ -138,7 +141,8 @@ export function migrate(raw: unknown): AppData | null {
     pins,
     detail,
     riderOpen,
-    report: validReport(d.report),
+    report,
+    styleId,
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     activeFrameId,
     tab: migrateTab(d.tab),

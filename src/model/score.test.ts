@@ -3,7 +3,7 @@ import { forwardLayout } from './geometry';
 import { evaluateFit } from './pose';
 import { DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } from './presets';
 import { makeContext, poseWeights } from './riding';
-import { crankFor, cranksNear, fitCost, fitScore, metricCost, partPenalty, scoreBreakdown, status } from './score';
+import { crankFor, cranksAround, cranksNear, fitCost, fitScore, metricCost, partPenalty, scoreBreakdown, status } from './score';
 import { TEST_BODY, TEST_FRAMES } from './testFrames';
 import { resolveSegments } from './body';
 import { bandsFor, STYLES } from './styles';
@@ -68,6 +68,9 @@ describe('cranks in proportion to the legs', () => {
     expect(crankFor(840)).toBeCloseTo(172.2, 6);
     expect(crankFor(690)).toBe(150);
     expect(crankFor(930)).toBe(175);
+  });
+  it('cranksAround centres on a given length', () => {
+    expect(cranksAround([150, 155, 160, 165, 170, 172.5, 175], 172.5)).toEqual([170, 172.5, 175]);
   });
   it('cranksNear offers the nearest length and one either side, plus the one in use', () => {
     const o = DEFAULT_OPTIONS.crankLengths;

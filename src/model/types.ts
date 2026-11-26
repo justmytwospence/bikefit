@@ -120,7 +120,7 @@ export interface Layout {
 }
 
 export type MetricId =
-  | 'knee' | 'kneeTop' | 'hip' | 'torso' | 'shoulder' | 'elbow' | 'seatAngle' | 'handLoad' | 'kops';
+  | 'knee' | 'kneeTop' | 'hip' | 'torso' | 'shoulder' | 'elbow' | 'seatAngle' | 'handLoad' | 'kops' | 'saddleOff' | 'handOff';
 export interface Band {
   min: number;
   max: number;
@@ -134,8 +134,12 @@ export interface PoseTarget {
   handContact: HandContact;
   elbowPref: number;
   bands: Partial<Record<MetricId, Band>>;
+  /** The contact points the saddleOff and handOff bands measure from. */
+  ref?: { saddle: Vec2; hand: Vec2 };
 }
-export type StyleId = 'endurance' | 'sport' | 'race' | 'gravel';
+export type BaseStyleId = 'endurance' | 'sport' | 'race' | 'gravel';
+/** My fit is a style made from a fit report. */
+export type StyleId = BaseStyleId | 'fitted';
 /**
  * The cockpit a style is anchored on, relative to what a frame is sold with: where the stem sits in the
  * frame's spacer range (0 slammed, 1 at the top) and how much longer than stock it is, mm.
@@ -153,6 +157,8 @@ export interface Style {
   defaultEffort: Effort;
   defaultHands: HandsPref;
   poses: PoseTarget[]; // [0] hoods, [1] drops
+  /** Set by My fit: the report position every score and target aims at. */
+  position?: { saddle: Vec2; hoods: Vec2; crankLength: number };
 }
 
 export interface FitContext {

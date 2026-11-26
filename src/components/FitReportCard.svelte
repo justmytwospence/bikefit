@@ -1,8 +1,10 @@
 <script lang="ts">
+  import { event } from '../lib/analytics';
   import { forwardLayout } from '../model/geometry';
-  import { offsetText, reportPosition } from '../model/fitReport';
+  import { offsetText, reportInseam, reportPosition } from '../model/fitReport';
+  import { lengthField, toDisplay } from '../lib/units';
   import type { FitParams } from '../model/types';
-  import { activeFrame, addReport, app, applyReport, removeReport } from '../state.svelte';
+  import { activeFrame, addReport, app, applyReport, fittedNow, removeReport } from '../state.svelte';
   import NumberField from './NumberField.svelte';
 
   /** The numbers off a professional fit report, to set the active bike from or to aim at. */
@@ -11,6 +13,21 @@
   const summary = $derived(
     r ? `${r.label || 'Your fit'} · saddle ${r.saddleHeight} mm · hoods ${r.gripReach} mm out, ${r.gripDrop} mm` : 'None entered',
   );
+  const fitted = $derived(fittedNow());
+  const inseamF = $derived(lengthField(app.units, 'cm', 600, 1050));
+  const show = (mm: number) => `${toDisplay(mm, inseamF)} ${inseamF.unit}`;
+  const suggestedInseam = $derived(
+    fitted?.problem === 'pedal' && r ? reportInseam($state.snapshot(r), $state.snapshot(app.body), app.components, app.effort ?? 'tempo') : null,
+  );
+  function aim() {
+    app.styleId = 'fitted';
+    event('Style chosen', { style: 'fitted' });
+  }
+  function matchInseam() {
+    if (suggestedInseam === null) return;
+    app.body.inseam = suggestedInseam;
+    event('Inseam matched');
+  }
   const onThisBike = $derived.by(() => {
     if (!r) return '';
     const pos = reportPosition($state.snapshot(r), app.components);
@@ -39,6 +56,21 @@
       <NumberField label="Crank length" unit="mm" min={145} max={180} step={2.5} bind:value={app.report!.crankLength} />
     </div>
     <p class="muted small">{onThisBike}</p>
+    {#if fitted?.style}
+      {#if app.styleId === 'fitted'}
+        <p class="muted small">Every target and Find a bike now aim at this position (My fit).</p>
+      {:else}
+        <p><button type="button" class="btn small primary" onclick={aim}>Aim at this position</button></p>
+      {/if}
+    {:else if fitted?.problem === 'pedal'}
+      <p class="warn small">
+        With a {show(app.body.inseam)} inseam your foot could not reach the pedal in this position.
+        {#if suggestedInseam !== null}The fit suggests an inseam near {show(suggestedInseam)}.{/if}
+      </p>
+      {#if suggestedInseam !== null}<p><button type="button" class="btn small primary" onclick={matchInseam}>Set inseam to {show(suggestedInseam)}</button></p>{/if}
+    {:else if fitted?.problem === 'bars'}
+      <p class="warn small">In this position the hoods are out of reach for your arm and torso lengths: check the hoods numbers or your arm length.</p>
+    {/if}
     <div class="row">
       <button type="button" class="btn small" onclick={() => applyReport('current')}>Enter as my current setup</button>
       <button type="button" class="btn small" onclick={() => applyReport('target')}>Make it the target</button>
@@ -57,6 +89,7 @@
   .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .name { display: block; margin-bottom: 12px; font-weight: 600; font-size: 13px; }
   .name span { display: block; margin-bottom: 4px; }
+  .warn { padding: 8px 10px; border-radius: 10px; background: color-mix(in srgb, var(--near) 15%, var(--surface)); }
   .row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
   .relink { border: 0; background: transparent; color: var(--accent); font-weight: 600; font-size: 12px; padding: 0 6px; min-height: 28px; }
 </style>

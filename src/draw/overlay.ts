@@ -70,6 +70,7 @@ export function overlayFor(i: OverlayInput): Overlay | null {
   };
 
   switch (i.id) {
+    case 'm:saddleOff': case 'm:handOff':
     case 'm:knee': case 'm:kneeTop': case 'm:hip': case 'm:torso': case 'm:shoulder': case 'm:elbow':
     case 'cleat': case 'c:footStack':
       return null;

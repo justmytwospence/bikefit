@@ -177,6 +177,13 @@ describe('new settings and the fit report', () => {
     expect(m.baseline.barRoll).toBe(0);
     expect(m.report).toBeNull();
   });
+  it('turns My fit back into a stock style without a report', () => {
+    const d: any = defaults();
+    d.styleId = 'fitted';
+    expect(migrate(d)!.styleId).toBe('endurance');
+    d.report = report;
+    expect(migrate(d)!.styleId).toBe('fitted');
+  });
   it('keeps a valid report and drops a broken one', () => {
     const d: any = defaults();
     d.report = report;

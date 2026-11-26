@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { resolveSegments } from './body';
-import { dropsFromHoods } from './geometry';
+import { fittedStyle, reportPosition } from './fitReport';
+import { dropsFromHoods, forwardLayout } from './geometry';
 import { changeList, wrenchList } from './advice';
 import { byVerdictThenCost, compareFrames, costOf, idealLayout, optimizeFit, optimizeSizes, type FitProblem } from './optimize';
 import { presetLocks } from '../lib/knobs';
@@ -12,12 +13,12 @@ import { DEFAULT_BODY, DEFAULT_COMPONENTS, DEFAULT_OPTIONS, DEFAULT_PARAMS } fro
 import { makeContext, poseWeights } from './riding';
 import { outside } from './score';
 import { bandsFor, STYLES } from './styles';
-import type { Body, Evaluation, Frame, MetricId, PoseTarget, StyleId } from './types';
+import type { Body, Evaluation, Frame, MetricId, PoseTarget, BaseStyleId } from './types';
 
 const segments = resolveSegments(TEST_BODY);
 const frame = (id: string) => TEST_FRAMES.find((f) => f.id === id)!;
 
-function problem(style: StyleId, f: Frame, mode: 'shop' | 'tune' = 'shop'): FitProblem {
+function problem(style: BaseStyleId, f: Frame, mode: 'shop' | 'tune' = 'shop'): FitProblem {
   const st = STYLES[style];
   return {
     segments, inseam: TEST_BODY.inseam, targets: bandsFor(st, 'medium'), poseWeights: poseWeights(st.defaultHands),
@@ -96,6 +97,27 @@ describe('optimizeFit', () => {
     expect(t.params.barRoll).toBe(4);
     expect(optimizeFit(problem('endurance', frame('endurance-56'))).params.barRoll).toBe(0);
   });
+  it('My fit targets reproduce the report on another bike', () => {
+    const report = { label: '', saddleHeight: 698, seatAngle: 74, saddleSetback: -59, saddleAngle: 0, gripReach: 550, gripDrop: -14, crankLength: 172.5 };
+    const comp = { ...DEFAULT_COMPONENTS, hoodReach: 22, hoodRise: 28 };
+    const grizl: Frame = {
+      id: 'grizl-s', name: 'Grizl S', stack: 556, reach: 397, seatTubeAngle: 73.5, headTubeAngle: 71, headTubeLength: 118,
+      seatTubeLength: 492, chainstay: 435, wheelbase: 1036, bbDrop: 75, maxSpacers: 40, tyreWidth: 40,
+    };
+    const body = { ...DEFAULT_BODY, height: 1750, inseam: 805, ankling: 'toePoint' as const };
+    const seg = resolveSegments(body);
+    const fitted = fittedStyle(report, seg, comp, 'toePoint', 'tempo').style!;
+    const pos = reportPosition(report, comp);
+    const start = { ...DEFAULT_PARAMS, crankLength: 172.5 };
+    const r = optimizeFit({
+      segments: seg, inseam: 805, targets: bandsFor(fitted, 'medium'), poseWeights: poseWeights('hoods'), ankling: 'toePoint',
+      effort: 'tempo', frame: grizl, components: comp, options: DEFAULT_OPTIONS, baseline: start, current: start, locks: {},
+      mode: 'tune', crankRef: 172.5,
+    });
+    const L = forwardLayout(grizl, comp, r.params);
+    expect(Math.hypot(L.hoods.x - pos.hoods.x, L.hoods.y - pos.hoods.y)).toBeLessThan(8);
+    expect(Math.hypot(L.saddle.x - pos.saddle.x, L.saddle.y - pos.saddle.y)).toBeLessThan(3);
+  });
   it('recovers from a saddle too high to reach the pedals', () => {
     const p = { ...problem('endurance', frame('endurance-56'), 'tune'), current: { ...DEFAULT_PARAMS, saddleHeight: 880 } };
     const r = optimizeFit(p);
@@ -155,7 +177,7 @@ describe('verdicts', () => {
 });
 
 describe('idealLayout', () => {
-  it.each(['endurance', 'sport', 'race', 'gravel'] as StyleId[])('puts every %s metric of both poses in band', (id) => {
+  it.each(['endurance', 'sport', 'race', 'gravel'] as BaseStyleId[])('puts every %s metric of both poses in band', (id) => {
     const st = STYLES[id];
     const targets = bandsFor(st, 'medium');
     const ctx = makeContext(null, DEFAULT_COMPONENTS, 'neutral', st.defaultEffort);
@@ -193,7 +215,7 @@ describe('wrenchList', () => {
 });
 
 describe('cranks in proportion to the legs (optimizer)', () => {
-  const rider = (style: StyleId, body: Body) => {
+  const rider = (style: BaseStyleId, body: Body) => {
     const st = STYLES[style];
     return {
       segments: resolveSegments(body), inseam: body.inseam, targets: bandsFor(st, body.flexibility, body.height),

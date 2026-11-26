@@ -5,10 +5,9 @@
   import type { SettingLink } from '../lib/linkIds';
   import { changeList, type Change } from '../model/advice';
   import type { Impossible } from '../model/limits';
-  import { STYLES } from '../model/styles';
   import type { FitParams } from '../model/types';
   import {
-    app, chooseRung, keepAsIs, ladderKey, markAsMine, setupScore, ui,
+    app, chooseRung, keepAsIs, ladderKey, markAsMine, setupScore, styleOf, ui,
   } from '../state.svelte';
   import Info from './Info.svelte';
   import KnobField from './KnobField.svelte';
@@ -37,7 +36,7 @@
 {#snippet verdictLine()}
   {#if ui.verdict === 'fits'}<p class="verdict ok">Fits</p>
   {:else if ui.verdict === 'compromise'}<p class="verdict near">Fits with compromises{ui.flags.length ? ': ' + ui.flags.join('; ') : ''}</p>
-  {:else if ui.verdict === 'no'}<p class="verdict off">Does not fit the {STYLES[app.styleId].name} style</p>{/if}
+  {:else if ui.verdict === 'no'}<p class="verdict off">Does not fit the {styleOf().name} style</p>{/if}
 {/snippet}
 
 <div class="card changes">

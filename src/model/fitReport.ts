@@ -1,6 +1,12 @@
+import { resolveSegments } from './body';
 import { dropsFromHoods, forwardLayout, railForSetback } from './geometry';
+import { evaluateFit } from './pose';
 import { DEFAULT_PARAMS } from './presets';
-import type { Components, FitParams, Frame, Layout, PartOptions } from './types';
+import { makeContext } from './riding';
+import { band, STYLES } from './styles';
+import type {
+  Ankling, Body, Components, Effort, FitParams, Frame, Layout, MetricId, PartOptions, PoseTarget, Segments, Style,
+} from './types';
 import { clamp, deg, rad, type Vec2 } from './vec';
 
 /**
@@ -152,4 +158,64 @@ export function validReport(x: unknown): FitReport | null {
   const out: Record<string, unknown> = { label: typeof d.label === 'string' ? d.label : '' };
   for (const k of NUMBERS) out[k] = d[k];
   return out as unknown as FitReport;
+}
+
+export type Fitted = { style: Style; problem: null } | { style: null; problem: 'pedal' | 'bars' };
+
+/**
+ * My fit: the Sporty bands moved to sit on the angles the rider's body makes at the report position, plus
+ * bands that hold the saddle and hoods where the report has them. Null style when the body cannot ride it.
+ */
+export function fittedStyle(r: FitReport, seg: Segments, comp: Components, ankling: Ankling, effort: Effort): Fitted {
+  const pos = reportPosition(r, comp);
+  const sport = STYLES.sport;
+  const ev = evaluateFit(seg, reportLayout(r, comp), makeContext(null, comp, ankling, effort), sport.poses, 36, false);
+  if (ev.poses.some((p) => p.overextended)) return { style: null, problem: 'pedal' };
+  if (ev.poses.some((p) => p.overreach)) return { style: null, problem: 'bars' };
+  const poses: PoseTarget[] = sport.poses.map((p, i) => {
+    const bands: PoseTarget['bands'] = {};
+    for (const k of Object.keys(p.bands) as MetricId[]) {
+      const src = p.bands[k]!;
+      if (src.weight > 0 && k !== 'kneeTop') {
+        const m = ev.poses[i].metrics[k];
+        const half = (src.max - src.min) / 2;
+        bands[k] = { ...src, min: m - half, max: m + half };
+      } else bands[k] = { ...src };
+    }
+    if (i === 0) {
+      bands.saddleOff = band('saddleOff', [0, 3]);
+      bands.handOff = band('handOff', [0, 5]);
+    }
+    return { ...p, bands, ...(i === 0 ? { ref: { saddle: pos.saddle, hand: pos.hoods } } : {}) };
+  });
+  return {
+    problem: null,
+    style: {
+      id: 'fitted', name: 'My fit', cockpit: 'dropbar', defaultEffort: 'tempo', defaultHands: 'hoods', stock: sport.stock,
+      blurb: `The position from your fit report${r.label ? ` (${r.label})` : ''}: the same saddle and hoods, and the angles your body makes there.`,
+      poses, position: { saddle: pos.saddle, hoods: pos.hoods, crankLength: pos.crankLength },
+    },
+  };
+}
+
+const MAX_INSEAM = 1050;
+
+/** The inseam that puts the knee at 145 degrees in the report's position, mm; null when legs are measured by hand or none up to 1050 mm does. */
+export function reportInseam(r: FitReport, body: Body, comp: Components, effort: Effort): number | null {
+  if ([body.overrides.femur, body.overrides.tibia].some((v) => typeof v === 'number' && v > 0)) return null;
+  const layout = reportLayout(r, comp);
+  const ctx = makeContext(null, comp, body.ankling, effort);
+  const knee = (inseam: number) => {
+    const p = evaluateFit(resolveSegments({ ...body, inseam }), layout, ctx, STYLES.sport.poses, 36, false).poses[0];
+    return p.overextended ? 180 : p.metrics.knee;
+  };
+  if (knee(MAX_INSEAM) > 145) return null;
+  let lo = 500;
+  let hi = MAX_INSEAM;
+  for (let i = 0; i < 20; i++) {
+    const m = (lo + hi) / 2;
+    if (knee(m) <= 145) hi = m;
+    else lo = m;
+  }
+  return Math.ceil(hi / 5) * 5;
 }

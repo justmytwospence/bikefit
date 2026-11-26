@@ -6,7 +6,7 @@ import { runCatalog, runCompare, stopCatalog } from './lib/optimizeClient';
 import { idealLayout, type CompareRow } from './model/optimize';
 import { makeContext } from './model/riding';
 import type { Frame } from './model/types';
-import { app, problem, ui, useCompareRow } from './state.svelte';
+import { app, problem, styleOf, ui, useCompareRow } from './state.svelte';
 
 const snap = <T>(x: T): T => $state.snapshot(x) as T;
 
@@ -80,7 +80,8 @@ export async function runCatalogFit() {
   event('Find bikes', { style: app.styleId });
   const cat = await import('./data/catalog');
   const { frame: _f, mode: _m, locks: _l, current: _c, ...rest } = problem('shop');
-  const ideal = idealLayout(
+  const st = styleOf();
+  const ideal = st.position ?? idealLayout(
     rest.segments, rest.targets, rest.poseWeights,
     makeContext(null, rest.components, rest.ankling, rest.effort), rest.components, rest.options.crankLengths, rest.inseam,
   );

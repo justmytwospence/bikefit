@@ -3,7 +3,7 @@ import { dropsFromHoods, forwardLayout } from './geometry';
 import { limitCost } from './limits';
 import { evaluateFit } from './pose';
 import { makeContext } from './riding';
-import { buildPenalty, changePenalty, COMPROMISE_COST, crankFor, cranksNear, fitCost, fitScore, frameCost, partPenalty, sizingPenalty } from './score';
+import { buildPenalty, changePenalty, COMPROMISE_COST, crankFor, cranksAround, cranksNear, fitCost, fitScore, frameCost, partPenalty, sizingPenalty } from './score';
 import type {
   Ankling, Components, Effort, Evaluation, FitContext, FitParams, Frame, Layout, ParamKey,
   PartOptions, PoseTarget, Segments, StockCockpit,
@@ -30,6 +30,8 @@ export interface FitProblem {
   idealHoods?: Vec2;
   /** The cockpit the riding style is anchored on; new builds are ranked by how far it sits from the ideal point. */
   stock?: StockCockpit;
+  /** The crank length the score measures against, when not in proportion to the legs (a fit report's). */
+  crankRef?: number;
 }
 
 export interface FitResult {
@@ -52,7 +54,7 @@ export interface CompareRow {
 function costWith(problem: FitProblem, ctx: FitContext, p: FitParams, steps: number, withToe = false) {
   const layout = forwardLayout(problem.frame, problem.components, p);
   const evaluation = evaluateFit(problem.segments, layout, ctx, problem.targets, steps, withToe);
-  let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p, crankFor(problem.inseam)) + buildPenalty(p, problem.frame.maxSpacers)
+  let cost = fitCost(evaluation, problem.targets, problem.poseWeights) + partPenalty(p, problem.crankRef ?? crankFor(problem.inseam)) + buildPenalty(p, problem.frame.maxSpacers)
     + limitCost(evaluation, p.saddleHeight - problem.frame.seatTubeLength);
   if (problem.mode === 'tune') cost += changePenalty(p, problem.baseline);
   else cost += sizingPenalty(p, problem.frame, layout.hoods, problem.idealHoods);
@@ -80,7 +82,9 @@ export function optimizeFit(input: FitProblem): FitResult {
   const pick = <T>(key: ParamKey, list: T[], base: T): T[] => (locks[key] ? [base] : list);
   const stems = pick('stemLength', o.stemLengths, b.stemLength);
   const angles = pick('stemAngle', o.stemAngles, b.stemAngle);
-  const cranks = pick('crankLength', cranksNear(o.crankLengths, problem.inseam, b.crankLength), b.crankLength);
+  const cranks = pick('crankLength', problem.crankRef !== undefined
+    ? cranksAround(o.crankLengths, problem.crankRef, b.crankLength)
+    : cranksNear(o.crankLengths, problem.inseam, b.crankLength), b.crankLength);
   const setbacks = pick('seatpostSetback', o.seatpostSetbacks, b.seatpostSetback);
 
   // Continuous variables: saddleHeight, railOffset, spacers, cleatOffset, saddleTilt (new builds keep the saddle level).

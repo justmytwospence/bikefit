@@ -2,8 +2,8 @@
   import { event } from '../lib/analytics';
   import { link } from '../lib/link.svelte';
   import type { ScorePart } from '../model/score';
-  import { METRIC_LABELS, STYLES } from '../model/styles';
-  import { app } from '../state.svelte';
+  import { METRIC_LABELS } from '../model/styles';
+  import { app, styleChoices, styleOf } from '../state.svelte';
   import type { MetricId, StyleId } from '../model/types';
 
   let { score, styleId, previewStyle = false, from = null, breakdown = null }: {
@@ -13,7 +13,7 @@
   } = $props();
   const C = 2 * Math.PI * 16;
   const color = $derived(score >= 85 ? 'var(--ok)' : score >= 60 ? 'var(--near)' : 'var(--off)');
-  const name = $derived(STYLES[styleId].name);
+  const name = $derived(styleOf(styleId).name);
 
   let root: HTMLElement | undefined = $state();
   let open = $state(false);
@@ -55,7 +55,7 @@
       {#if from !== null && from !== score}<span class="was">{from} → {score}</span>{/if}
     </span>
     <select aria-label="Riding style" bind:value={app.styleId}>
-      {#each Object.values(STYLES) as s (s.id)}<option value={s.id}>{s.name}</option>{/each}
+      {#each styleChoices() as s (s.id)}<option value={s.id}>{s.name}</option>{/each}
     </select>
   </label>
   {#if shown}
