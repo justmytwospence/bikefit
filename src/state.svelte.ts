@@ -14,7 +14,7 @@ import { makeContext, poseWeights } from './model/riding';
 import { crankRefFor, fitCost, fitScore, partPenalty, type Status } from './model/score';
 import { bandsFor, STYLES } from './model/styles';
 import type { LinkId } from './lib/linkIds';
-import { decodeShare, encodeShare } from './lib/share';
+import { encodeShare, readShareHash } from './lib/share';
 import { bikeOf, event, reportError, sizeOf } from './lib/analytics';
 import { fittedStyle, matchPosition, offsetText, reportFromSetup, reportPosition, type Fitted } from './model/fitReport';
 import type { FitParams, Frame, ParamKey, Style, StyleId } from './model/types';
@@ -31,8 +31,8 @@ const KEY = 'bikefit:v2';
 const OLD_KEY = 'bikefit:v1';
 
 function fromLink(): AppData | null {
-  if (typeof location === 'undefined' || !location.hash.startsWith('#d=')) return null;
-  const d = decodeShare(location.hash.slice(3));
+  if (typeof location === 'undefined' || !/^#[dz]=/.test(location.hash)) return null;
+  const d = readShareHash(location.hash);
   history.replaceState(null, '', location.pathname + location.search);
   if (!d) return null;
   return confirm('Open the shared setup? It replaces the setup saved in this browser.') ? d : null;
@@ -85,7 +85,6 @@ export const ui = $state({
   crank: 0,
   playing: false,
   animate: false,
-  viewPose: 'hoods' as 'hoods' | 'drops',
   /** The linked number under the pointer or keyboard focus. */
   hover: null as LinkId | null,
   /** The linked number tapped to keep it on the drawing. */
@@ -411,5 +410,5 @@ export function importJson(text: string): boolean {
 }
 
 export function shareUrl(): string {
-  return `${location.origin}${location.pathname}#d=${encodeShare($state.snapshot(app) as AppData)}`;
+  return `${location.origin}${location.pathname}#z=${encodeShare($state.snapshot(app) as AppData)}`;
 }

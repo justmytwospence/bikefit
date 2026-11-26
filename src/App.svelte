@@ -145,7 +145,7 @@
   const whyImpossible = $derived((p: FitParams) => impossible(evalMine(p), p.saddleHeight - mine.seatTubeLength));
   /** Whether the foot reaches the pedal with these settings, whatever the frame allows. */
   const reaches = $derived((p: FitParams) => !evalMine(p).poses.some((x) => x.overextended));
-  const contact = $derived(ui.viewPose);
+  const contact = $derived(app.viewPose);
   const pi = $derived(contact === 'drops' ? 1 : 0);
   // The drops pose has no knee bands of its own; borrow the hoods ones so the knee card stays.
   const shownTarget = $derived(

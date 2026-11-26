@@ -68,7 +68,7 @@
         options={units} ariaLabel="Units"
         bind:value={() => app.units, (v) => { app.units = v as Units; event('Units', { units: v }); }}
       />
-      <h2>Your data <Info text="Your measurements and bikes stay in this browser. The link carries your body, setup and current frame." /></h2>
+      <h2>Your data <Info text="Your measurements and bikes stay in this browser. The link carries everything: your body, every bike and setup, your fit report and what the drawing shows." /></h2>
       <div class="data">
         <button type="button" class="btn small" onclick={download}>Export</button>
         <button type="button" class="btn small" onclick={() => file?.click()}>Import</button>

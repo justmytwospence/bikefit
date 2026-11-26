@@ -297,7 +297,7 @@
       label="View" ariaLabel="What the drawing shows" options={LEVEL_OPTIONS}
       bind:value={() => String(app.detail.results), (v) => { app.detail.results = Number(v) as Level; event('View level', { level: Number(v) }); }}
     />
-    <PillSelect label="Hands" ariaLabel="Hand position drawn" options={poseOptions} bind:value={ui.viewPose} />
+    <PillSelect label="Hands" ariaLabel="Hand position drawn" options={poseOptions} bind:value={app.viewPose} />
   </div>
   <button
     type="button" class="play"

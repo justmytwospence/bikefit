@@ -56,6 +56,8 @@ export interface AppData {
   riderOpen: RiderOpen;
   /** Numbers typed in from a professional fit report, or null. */
   report: FitReport | null;
+  /** Which hand position the drawing shows. */
+  viewPose: 'hoods' | 'drops';
   units: Units;
   /** Whether the first-run guide on the Rider tab has been dismissed. */
   seenIntro: boolean;
@@ -79,6 +81,7 @@ export function defaults(): AppData {
     detail: { bikeFull: false, results: 1 as Level },
     riderOpen: openFromLevel(1),
     report: null,
+    viewPose: 'hoods' as const,
     units: 'metric' as Units,
     seenIntro: false,
   });
@@ -143,6 +146,7 @@ export function migrate(raw: unknown): AppData | null {
     riderOpen,
     report,
     styleId,
+    viewPose: d.viewPose === 'drops' ? 'drops' : 'hoods',
     frames: frames.map((f) => ({ ...f, tyreWidth: f.tyreWidth ?? 30 })),
     activeFrameId,
     tab: migrateTab(d.tab),
