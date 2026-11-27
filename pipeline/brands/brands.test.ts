@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
+import { Socket } from 'node:net';
 import { describe, expect, it } from 'vitest';
 import canyon from './canyon';
 import cervelo from './cervelo';
@@ -22,6 +23,12 @@ import wilier from './wilier';
 import focus from './focus';
 import argon18 from './argon-18';
 import type { Adapter } from '../types';
+import { enforceOffline } from '../test-offline';
+
+enforceOffline();
+// Fixtures are minimized manufacturer/Wayback responses, identified by the URLs below.
+// Refresh deliberately from the corresponding pinned archive capture and retain only parser inputs;
+// never fetch during this suite. Inline HTML cases are synthetic.
 
 const page = (file: string, url: string) => ({
   url, timestamp: '20260101000000', related: {}, html: readFileSync(join(__dirname, '..', 'fixtures', `${file}.html`), 'utf8'),
@@ -37,6 +44,10 @@ function check(a: Adapter, file: string, url: string, model: string, sizes: stri
 }
 
 describe('adapters', () => {
+  it('blocks network access in parser tests', () => {
+    expect(() => fetch('https://example.invalid')).toThrow('network disabled');
+    expect(() => new Socket().connect(443, 'example.invalid')).toThrow('network disabled');
+  });
   it('specialized', () => check(specialized, 'specialized', 'https://www.specialized.com/us/en/tarmac-sl9-expert/p/1', 'Tarmac SL9', ['44', '49', '52', '54', '56', '58', '61'], ['44', 501, 366]));
   describe('specialized pages', () => {
     const row = (label: string, values: (number | string)[], unit = 'mm') => `<tr><td>${label}</td>${values.map((v) => `<td>${v}${unit}</td>`).join('')}</tr>`;
