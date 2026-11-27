@@ -36,6 +36,17 @@ function allIn(targets: PoseTarget[], ev: Evaluation) {
 }
 
 describe('optimizeFit', () => {
+  const enduranceProblem = problem('endurance', frame('endurance-56'));
+  let endurance: ReturnType<typeof optimizeFit>;
+  const counts = { coarse: 0, refined: 0 };
+  const enduranceSolve = () => {
+    if (!endurance) {
+      const start = performance.now();
+      endurance = optimizeFit(enduranceProblem, (stage) => counts[stage]++);
+      console.info(`endurance solve: ${Math.round(performance.now() - start)}ms`, counts);
+    }
+    return endurance;
+  };
   it('keeps the seatpost inside what a post can do on a far too small frame', () => {
     const tiny = { ...frame('race-54'), seatTubeLength: 360 };
     const r = optimizeFit(problem('endurance', tiny));
@@ -50,12 +61,13 @@ describe('optimizeFit', () => {
     expect(optimizeFit(problem('endurance', huge)).verdict).toBe('no');
   });
   it('fits endurance on the endurance frame', () => {
-    const p = problem('endurance', frame('endurance-56'));
-    const t = performance.now();
-    const r = optimizeFit(p);
-    // A guard against the optimizer getting several times slower, not a benchmark: CI runners take about 1.6 s.
-    expect(performance.now() - t).toBeLessThan(3000);
-    expect(allIn(p.targets, r.evaluation)).toBe(true);
+    const r = enduranceSolve();
+    // Baseline on TEST_BODY / endurance-56: 32,124 coarse and 446 refined evaluations.
+    expect(counts.coarse).toBeLessThanOrEqual(35_500);
+    expect(counts.refined).toBeLessThanOrEqual(500);
+    expect(counts.coarse).toBeGreaterThan(0);
+    expect(counts.refined).toBeGreaterThan(0);
+    expect(allIn(enduranceProblem.targets, r.evaluation)).toBe(true);
     expect(r.params.stemLength).toBeLessThanOrEqual(120);
   });
   it('fits race on the race frame', () => {
@@ -125,7 +137,7 @@ describe('optimizeFit', () => {
     expect(r.score).toBeGreaterThan(90);
   });
   it('avoids an upturned stem and maxed spacers when a neutral build fits', () => {
-    const r = optimizeFit(problem('endurance', frame('endurance-56')));
+    const r = enduranceSolve();
     expect(r.params.stemAngle).toBeLessThan(10);
     expect(r.params.spacers).toBeLessThan(40);
     expect(r.flags).toEqual([]);

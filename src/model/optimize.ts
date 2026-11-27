@@ -75,7 +75,7 @@ function idealHoodsFor(p: IdealInput): Vec2 {
   ).hoods;
 }
 
-export function optimizeFit(input: FitProblem): FitResult {
+export function optimizeFit(input: FitProblem, observeEvaluation?: (stage: 'coarse' | 'refined') => void): FitResult {
   const problem = input.mode === 'shop' ? { ...input, idealHoods: idealHoodsFor(input) } : input;
   const { options: o, current: b, locks, frame } = problem;
   const ctx = makeContext(frame, problem.components, problem.ankling, problem.effort);
@@ -106,6 +106,7 @@ export function optimizeFit(input: FitProblem): FitResult {
 
   const search = (combo: Combo, from: number[], steps: number[], mins: number[], samples: number): Cand => {
     let x = [...from];
+    observeEvaluation?.(samples === 12 ? 'coarse' : 'refined');
     let cx = costWith(problem, ctx, mkP(combo, x), samples).cost;
     let evals = 1;
     const step = [...steps];
@@ -117,6 +118,7 @@ export function optimizeFit(input: FitProblem): FitResult {
           const y = [...x];
           y[i] = clamp(y[i] + dir * step[i], lo[i], hi[i]);
           if (y[i] === x[i]) continue;
+          observeEvaluation?.(samples === 12 ? 'coarse' : 'refined');
           const cy = costWith(problem, ctx, mkP(combo, y), samples).cost;
           evals++;
           if (cy < cx - 1e-9) {
